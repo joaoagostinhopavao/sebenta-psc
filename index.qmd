@@ -1,0 +1,54 @@
+# Prefácio {.unnumbered}
+
+```{=html}
+<div class="hero">
+  <div class="hero-badge">UTAD · 2026/2027</div>
+  <h1>Plataformas Sociais e Cooperativas</h1>
+  <h2>Sebenta de estudo</h2>
+  <p>Universidade de Trás-os-Montes e Alto Douro</p>
+</div>
+```
+
+Esta sebenta é um documento de estudo autónomo para a componente teórica da
+disciplina de **Plataformas Sociais e Cooperativas** (PSC), 3.º ano / 1.º
+semestre da Licenciatura em Comunicação e Multimédia, cobrindo os
+fundamentos teóricos, dados estatísticos e métricas das plataformas
+sociais e cooperativas.
+
+A componente prática da UC — onde os alunos usam plataformas colaborativas
+reais para desenvolver um projecto de estratégia de comunicação/marca — é
+leccionada em separado e não é coberta por esta sebenta.
+
+## Organização da sebenta {.unnumbered}
+
+A sebenta está organizada em três blocos temáticos, que seguem o programa
+oficial da UC:
+
+1. **Plataformas Sociais** — fundamentos teóricos, dados estatísticos e
+   métricas de análise de redes sociais
+2. **Plataformas Cooperativas** — teorias e modelos de colaboração, e os
+   diferentes tipos de plataformas cooperativas (comunicação, ambientes
+   virtuais, democracia electrónica, desenvolvimento colaborativo,
+   aprendizagem, recomendação)
+3. **Plataformas Mobile** — computação móvel e ubíqua aplicada à
+   colaboração
+
+## Fonte e actualização {.unnumbered}
+
+Os capítulos desta sebenta partem do livro *Sistemas Colaborativos*
+(Pimentel & Fuks, Editora Campus/Elsevier, 2011), disponibilizado
+gratuitamente pelos autores e adoptado como bibliografia de referência da
+UC. O texto original está em português do Brasil e reflecte o estado da
+arte de 2011; esta sebenta reformula os conteúdos em português europeu,
+actualiza exemplos, dados estatísticos e referências, e introduz
+perspectivas mais recentes onde relevante (ex: inteligência artificial
+generativa, hashtags nas redes sociais actuais).
+
+## Como usar esta sebenta {.unnumbered}
+
+Os exemplos ao longo do texto reflectem plataformas e dados actuais.
+Cada capítulo corresponde a uma aula teórica da UC.
+
+## Autor {.unnumbered}
+
+**João Pavão** — UTAD

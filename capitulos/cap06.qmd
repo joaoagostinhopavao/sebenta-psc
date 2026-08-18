@@ -1,0 +1,10 @@
+---
+title: "Ambientes Virtuais Colaborativos"
+author: "João Pavão"
+date: 2026-08-18
+lang: pt-PT
+---
+
+## Introdução {#sec-06-intro .unnumbered}
+
+*Conteúdo por desenvolver.*

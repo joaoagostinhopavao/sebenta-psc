@@ -1,0 +1,162 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Plataformas Sociais e Cooperativas",
+    "section": "",
+    "text": "Prefácio\nEsta sebenta é um documento de estudo autónomo para a componente teórica da disciplina de Plataformas Sociais e Cooperativas (PSC), 3.º ano / 1.º semestre da Licenciatura em Comunicação e Multimédia, cobrindo os fundamentos teóricos, dados estatísticos e métricas das plataformas sociais e cooperativas.\nA componente prática da UC — onde os alunos usam plataformas colaborativas reais para desenvolver um projecto de estratégia de comunicação/marca — é leccionada em separado e não é coberta por esta sebenta.",
+    "crumbs": [
+      "Prefácio"
+    ]
+  },
+  {
+    "objectID": "index.html#organização-da-sebenta",
+    "href": "index.html#organização-da-sebenta",
+    "title": "Plataformas Sociais e Cooperativas",
+    "section": "Organização da sebenta",
+    "text": "Organização da sebenta\nA sebenta está organizada em três blocos temáticos, que seguem o programa oficial da UC:\n\nPlataformas Sociais — fundamentos teóricos, dados estatísticos e métricas de análise de redes sociais\nPlataformas Cooperativas — teorias e modelos de colaboração, e os diferentes tipos de plataformas cooperativas (comunicação, ambientes virtuais, democracia electrónica, desenvolvimento colaborativo, aprendizagem, recomendação)\nPlataformas Mobile — computação móvel e ubíqua aplicada à colaboração",
+    "crumbs": [
+      "Prefácio"
+    ]
+  },
+  {
+    "objectID": "index.html#fonte-e-actualização",
+    "href": "index.html#fonte-e-actualização",
+    "title": "Plataformas Sociais e Cooperativas",
+    "section": "Fonte e actualização",
+    "text": "Fonte e actualização\nOs capítulos desta sebenta partem do livro Sistemas Colaborativos (Pimentel & Fuks, Editora Campus/Elsevier, 2011), disponibilizado gratuitamente pelos autores e adoptado como bibliografia de referência da UC. O texto original está em português do Brasil e reflecte o estado da arte de 2011; esta sebenta reformula os conteúdos em português europeu, actualiza exemplos, dados estatísticos e referências, e introduz perspectivas mais recentes onde relevante (ex: inteligência artificial generativa, hashtags nas redes sociais actuais).",
+    "crumbs": [
+      "Prefácio"
+    ]
+  },
+  {
+    "objectID": "index.html#como-usar-esta-sebenta",
+    "href": "index.html#como-usar-esta-sebenta",
+    "title": "Plataformas Sociais e Cooperativas",
+    "section": "Como usar esta sebenta",
+    "text": "Como usar esta sebenta\nOs exemplos ao longo do texto reflectem plataformas e dados actuais. Cada capítulo corresponde a uma aula teórica da UC.",
+    "crumbs": [
+      "Prefácio"
+    ]
+  },
+  {
+    "objectID": "index.html#autor",
+    "href": "index.html#autor",
+    "title": "Plataformas Sociais e Cooperativas",
+    "section": "Autor",
+    "text": "Autor\nJoão Pavão — UTAD",
+    "crumbs": [
+      "Prefácio"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap01.html",
+    "href": "capitulos/cap01.html",
+    "title": "1  Sociedade em Rede e Ciberespaço",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Sociedade em Rede e Ciberespaço</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap02.html",
+    "href": "capitulos/cap02.html",
+    "title": "2  Redes Sociais: Fundamentos e Dados Estatísticos",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Redes Sociais: Fundamentos e Dados Estatísticos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap03.html",
+    "href": "capitulos/cap03.html",
+    "title": "3  Redes Sociais: Métricas e Folksonomia",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Redes Sociais: Métricas e Folksonomia</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap04.html",
+    "href": "capitulos/cap04.html",
+    "title": "4  Teorias e Modelos de Colaboração",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Teorias e Modelos de Colaboração</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap05.html",
+    "href": "capitulos/cap05.html",
+    "title": "5  Sistemas de Comunicação para Colaboração",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Sistemas de Comunicação para Colaboração</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap06.html",
+    "href": "capitulos/cap06.html",
+    "title": "6  Ambientes Virtuais Colaborativos",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Ambientes Virtuais Colaborativos</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap07.html",
+    "href": "capitulos/cap07.html",
+    "title": "7  Democracia Electrónica",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Democracia Electrónica</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap08.html",
+    "href": "capitulos/cap08.html",
+    "title": "8  Desenvolvimento Colaborativo de Software",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Desenvolvimento Colaborativo de Software</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap09.html",
+    "href": "capitulos/cap09.html",
+    "title": "9  Aprendizagem Colaborativa e Conhecimento Colectivo",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Aprendizagem Colaborativa e Conhecimento Colectivo</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap10.html",
+    "href": "capitulos/cap10.html",
+    "title": "10  Sistemas de Recomendação e IA Colaborativa",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Sistemas de Recomendação e IA Colaborativa</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap11.html",
+    "href": "capitulos/cap11.html",
+    "title": "11  Mobilidade, Ubiquidade e Interacção",
+    "section": "",
+    "text": "Introdução\nConteúdo por desenvolver.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mobilidade, Ubiquidade e Interacção</span>"
+    ]
+  }
+]

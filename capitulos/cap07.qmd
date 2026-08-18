@@ -1,0 +1,10 @@
+---
+title: "Democracia Electrónica"
+author: "João Pavão"
+date: 2026-08-18
+lang: pt-PT
+---
+
+## Introdução {#sec-07-intro .unnumbered}
+
+*Conteúdo por desenvolver.*

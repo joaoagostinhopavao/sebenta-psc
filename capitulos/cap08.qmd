@@ -1,0 +1,10 @@
+---
+title: "Desenvolvimento Colaborativo de Software"
+author: "João Pavão"
+date: 2026-08-18
+lang: pt-PT
+---
+
+## Introdução {#sec-08-intro .unnumbered}
+
+*Conteúdo por desenvolver.*
