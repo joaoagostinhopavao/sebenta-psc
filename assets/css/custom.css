@@ -270,3 +270,13 @@ thead {
   background: #fff;
   min-height: 80px;
 }
+
+/* ============================================================
+   Referências — Quarto marca a lista de bibliografia com
+   style="display: none" no HTML gerado (a regra que normalmente a
+   revela faz parte do CSS base do Quarto, omitido por termos
+   document-css:false via tema/CSS próprios). Repor a visibilidade.
+   ============================================================ */
+#refs {
+  display: block !important;
+}
