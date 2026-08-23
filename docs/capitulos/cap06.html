@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-PT" xml:lang="pt-PT"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="João Pavão">
+
+<title>6&nbsp; Ambientes Virtuais Colaborativos – Plataformas Sociais e Cooperativas</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../capitulos/cap07.html" rel="next">
+<link href="../capitulos/cap05.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de84f8d6bb715db06a919283c2d1e787.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-9a023c9ade86a60361e96e3e3f11bc54.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-61bc4ac84974e0785b3107ee93e74bfb.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-bc9f1d3aef906c45e091843ae87821a0.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Nenhum resultado",
+    "search-matching-documents-text": "documentos correspondentes",
+    "search-copy-link-title": "Copiar link para a busca",
+    "search-hide-matches-text": "Esconder correspondências adicionais",
+    "search-more-match-text": "mais correspondência neste documento",
+    "search-more-matches-text": "mais correspondências neste documento",
+    "search-clear-button-title": "Limpar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Procurar"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="../assets/css/custom.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../capitulos/cap06.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ambientes Virtuais Colaborativos</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Procurar" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Plataformas Sociais e Cooperativas</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo escuro"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Procurar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Prefácio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Sociedade em Rede e Ciberespaço</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Redes Sociais: Fundamentos e Dados Estatísticos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Redes Sociais: Métricas e Folksonomia</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Teorias e Modelos de Colaboração</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Sistemas de Comunicação para Colaboração</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap06.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ambientes Virtuais Colaborativos</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Eletrónica</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Desenvolvimento Colaborativo de Software</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Coletivo</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Sistemas de Recomendação e IA Colaborativa</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../capitulos/cap11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interação</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Índice</h2>
+   
+  <ul>
+  <li><a href="#sec-06-intro" id="toc-sec-06-intro" class="nav-link active" data-scroll-target="#sec-06-intro">Introdução</a></li>
+  <li><a href="#sec-06-cve" id="toc-sec-06-cve" class="nav-link" data-scroll-target="#sec-06-cve"><span class="header-section-number">6.1</span> O que é um Ambiente Virtual Colaborativo?</a></li>
+  <li><a href="#sec-06-elementos" id="toc-sec-06-elementos" class="nav-link" data-scroll-target="#sec-06-elementos"><span class="header-section-number">6.2</span> Elementos de um CVE</a></li>
+  <li><a href="#sec-06-imersao" id="toc-sec-06-imersao" class="nav-link" data-scroll-target="#sec-06-imersao"><span class="header-section-number">6.3</span> Imersão</a></li>
+  <li><a href="#sec-06-historia" id="toc-sec-06-historia" class="nav-link" data-scroll-target="#sec-06-historia"><span class="header-section-number">6.4</span> Breve História dos CVEs</a></li>
+  <li><a href="#sec-06-identidade" id="toc-sec-06-identidade" class="nav-link" data-scroll-target="#sec-06-identidade"><span class="header-section-number">6.5</span> Identidade, Interação e Presença</a></li>
+  <li><a href="#sec-06-comunidades" id="toc-sec-06-comunidades" class="nav-link" data-scroll-target="#sec-06-comunidades"><span class="header-section-number">6.6</span> Comunidades Virtuais</a></li>
+  <li><a href="#sec-06-sintese" id="toc-sec-06-sintese" class="nav-link" data-scroll-target="#sec-06-sintese"><span class="header-section-number">6.7</span> Síntese</a></li>
+  <li><a href="#sec-06-reflexao" id="toc-sec-06-reflexao" class="nav-link" data-scroll-target="#sec-06-reflexao"><span class="header-section-number">6.8</span> Para Refletir</a></li>
+  <li><a href="#sec-06-referencias" id="toc-sec-06-referencias" class="nav-link" data-scroll-target="#sec-06-referencias">Referências</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ambientes Virtuais Colaborativos</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Autor</div>
+    <div class="quarto-title-meta-contents">
+             <p>João Pavão </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Data de Publicação</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">20 de agosto de 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap06.jpg');">
+  <div class="hero-badge">Capítulo 6</div>
+  <h1>Ambientes Virtuais Colaborativos</h1>
+</div>
+<section id="sec-06-intro" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-06-intro">Introdução</h2>
+<p>Os dois capítulos anteriores trataram da colaboração mediada por texto e por voz, os sistemas de comunicação (<a href="cap05.html#sec-05-cmc" class="quarto-xref"><span>Secção 5.1</span></a>) e os sistemas que apoiam a coordenação e a cooperação (<a href="cap05.html#sec-05-coord-coop" class="quarto-xref"><span>Secção 5.6</span></a>). Este capítulo explora uma forma diferente de mediar a colaboração: em vez de um canal por onde passam mensagens, o computador passa a simular um <strong>mundo partilhado</strong>, dentro do qual os participantes se encontram, navegam e interagem. É essa mudança de metáfora, de canal de comunicação para espaço partilhado, que distingue os Ambientes Virtuais Colaborativos.</p>
+</section>
+<section id="sec-06-cve" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="sec-06-cve"><span class="header-section-number">6.1</span> O que é um Ambiente Virtual Colaborativo?</h2>
+<p>Um <strong>Ambiente Virtual Colaborativo</strong>, ou <strong>CVE</strong> (<em>Collaborative Virtual Environment</em>), é um sistema de realidade virtual distribuído que simula graficamente, em tempo real, um mundo real ou imaginário, onde utilizadores, representados pelos seus <strong>avatares</strong>, estão simultaneamente presentes, navegam e interagem com objetos e com outros utilizadores <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span>.</p>
+<p>O conceito de CVE começou a popularizar-se junto com o termo <strong>ciberespaço</strong>, cunhado por William Gibson no romance <em>Neuromancer</em> <span class="citation" data-cites="Gibson1984">(<a href="cap01.html#ref-Gibson1984" role="doc-biblioref">Gibson 1984</a>)</span> e já discutido no Cap.1 (<a href="cap01.html#sec-01-sociedade-rede-castells" class="quarto-xref"><span>Secção 1.2.2</span></a>). Embora a origem seja a ficção científica, e a imersão física mostrada em filmes como <em>Matrix</em> e <em>Avatar</em> continue distante da tecnologia real, o conceito popularizado por Gibson influenciou de forma significativa tanto os investigadores como os programadores de sistemas de realidade virtual.</p>
+</section>
+<section id="sec-06-elementos" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="sec-06-elementos"><span class="header-section-number">6.2</span> Elementos de um CVE</h2>
+<p>Três elementos são comuns a qualquer CVE, independentemente do nome que a literatura lhe dê, <em>Networked Virtual Environment</em>, <em>Metaverse</em>, entre outros (<a href="#fig-06-elementos" class="quarto-xref">Figura&nbsp;<span>6.1</span></a>):</p>
+<ul>
+<li><strong>Mundo virtual</strong>: o elemento fundamental de um CVE, um espaço imaginário composto por uma descrição de objetos e pelas regras que os governam. A relação entre a descrição do mundo e a sua execução computacional é comparável à relação entre o guião de uma peça de teatro e a sua encenação em palco, com a diferença de que, num CVE, os utilizadores são também atores.</li>
+<li><strong>Avatares</strong>: os objetos virtuais usados para representar cada participante. Cada mundo virtual é diferente, e para atuar nele é preciso incorporar um avatar próprio desse mundo.</li>
+<li><strong>Interatividade</strong>: a capacidade de o mundo virtual responder às ações dos utilizadores, seja quando estes navegam e modificam a sua posição, seja quando selecionam e manipulam objetos. É a interatividade que distingue estar num CVE de assistir a um filme de animação.</li>
+</ul>
+<div id="fig-06-elementos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-06-elementos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap06/elementos-cve.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-06-elementos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.1: Os três elementos de um CVE: o mundo virtual é o espaço partilhado, habitado por avatares, através de uma interação contínua.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-06-imersao" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="sec-06-imersao"><span class="header-section-number">6.3</span> Imersão</h2>
+<p>A soma de uma representação gráfica adequada do mundo virtual com uma boa interatividade contribui para o sentimento de <strong>imersão</strong>, a sensação de “estar lá” dentro do mundo virtual. Distinguem-se dois tipos de imersão <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span>:</p>
+<ul>
+<li><strong>Imersão mental</strong>: o objetivo dos criadores de conteúdo desde muito antes dos CVEs existirem, o engajamento e o envolvimento do consumidor com esse conteúdo. A imersão mental pode ocorrer, por exemplo, ao ler-se um bom livro, sem qualquer representação física.</li>
+<li><strong>Imersão física</strong>: estimula sinteticamente os sentidos, por meio da tecnologia, para fazer crer que o próprio corpo está no mundo virtual. Atualmente, é estimulada principalmente pela representação visual tridimensional (estereoscopia), pelo áudio espacial e por dispositivos de interação que captam os movimentos do utilizador. Os capacetes de realidade virtual atuais, como o <code>Meta Quest</code> ou o <code>Apple Vision Pro</code>, são a forma mais acessível, hoje, de obter imersão física.</li>
+</ul>
+<p>Os CVEs vão além da imersão mental por investirem também na imersão física. Na ficção científica, como nos filmes já referidos, a imersão física é completa, ao ponto de o corpo real do utilizador deixar de ser distinguível do avatar. Na prática, a maioria dos CVEs atuais ainda não possui recursos de estereoscopia, mesmo sendo mundos virtuais em três dimensões: não se deve confundir um CVE 3D, um espaço com três dimensões de navegação, com um “filme em 3D” ou com um dispositivo de realidade virtual estereoscópico, ainda que nada impeça que um CVE seja também estereoscópico.</p>
+</section>
+<section id="sec-06-historia" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="sec-06-historia"><span class="header-section-number">6.4</span> Breve História dos CVEs</h2>
+<p>O primeiro CVE de que há registo, o <em>Maze War</em>, foi criado em 1974 num centro de investigação da NASA: um jogo em que os utilizadores andavam por um labirinto atirando uns nos outros, e que já continha ideias que se tornariam padrão nos CVEs, a navegação em primeira pessoa e a comunicação por mensagens instantâneas. Os esforços mais massivos partiram do Departamento de Defesa dos Estados Unidos: o <code>SIMNET</code>, desenvolvido a partir de 1983, treinava unidades militares em batalhas virtuais simuladas, e deu origem a normas técnicas ainda hoje influentes na simulação distribuída (<a href="#fig-06-historia" class="quarto-xref">Figura&nbsp;<span>6.2</span></a>).</p>
+<div id="fig-06-historia" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-06-historia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap06/historia-cves.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-06-historia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.2: Linha do tempo dos Ambientes Virtuais Colaborativos, do primeiro CVE de que há registo aos ambientes sociais massivos atuais.
+</figcaption>
+</figure>
+</div>
+<p>Entre os CVEs mais influentes da sua época contam-se o Second Life (2003, Linden Lab) e o World of Warcraft (2004, Blizzard). Ambos partilham a definição de CVE, mas têm propósitos muito diferentes: o <code>World of Warcraft</code> é um jogo, com um mundo de fantasia definido pelos seus criadores, enquanto o <code>Second Life</code> é um CVE de “propósito geral”, construído pelos próprios utilizadores, com uma economia virtual própria convertível em moeda real. Mais recentemente, plataformas como o <code>VRChat</code>, o <code>Meta Horizon Worlds</code> e o <code>Roblox</code> retomam esta mesma ideia de mundo social massivo, agora com suporte nativo para dispositivos de realidade virtual.</p>
+</section>
+<section id="sec-06-identidade" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="sec-06-identidade"><span class="header-section-number">6.5</span> Identidade, Interação e Presença</h2>
+<p>Uma das ideias centrais por trás dos CVEs não é inventar novas metáforas, mas sim reproduzir, no mundo virtual, noções já existentes no mundo real: identidade, localização, presença e o andamento das atividades dos outros participantes (<a href="#fig-06-ipp" class="quarto-xref">Figura&nbsp;<span>6.3</span></a>) <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span>.</p>
+<div id="fig-06-ipp" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-06-ipp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap06/identidade-interacao-presenca.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-06-ipp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.3: Identidade, interação e presença: três noções do mundo real que os CVEs reproduzem no mundo virtual.
+</figcaption>
+</figure>
+</div>
+<p>A <strong>identidade</strong> está relacionada com o avatar do utilizador: espera-se que este seja reconhecível de imediato como um avatar, e distinguível de outros avatares, tal como reconhecemos de imediato outra pessoa e a distinguimos de outras pessoas no mundo real.</p>
+<p>A <strong>interação</strong> entre utilizadores de um CVE depende diretamente da representação do avatar, que fornece as principais informações de perceção sobre os outros participantes, a localização, a orientação e a disponibilidade, num sentido muito próximo ao já discutido a propósito da perceção em sistemas de cooperação (<a href="cap05.html#sec-05-cooperacao" class="quarto-xref"><span>Secção 5.6.2</span></a>). A movimentação de um avatar antecipa as intenções do utilizador que representa: virar as costas durante uma conversa mostra desinteresse, tal como aproximar-se de outro avatar pode indicar vontade de interagir com ele.</p>
+<p>A <strong>presença</strong>, originalmente chamada de “telepresença”, é “a perceção ilusória de não mediação” <span class="citation" data-cites="LombardDitton1997">(<a href="cap01.html#ref-LombardDitton1997" role="doc-biblioref">Lombard e Ditton 1997</a>)</span>: o utilizador não perceciona um meio durante a sua interação, comportando-se como se esse meio não existisse. Distinguem-se a presença física, a sensação de estar num lugar real ou virtual, e a presença social, a sensação de estar, física ou psicologicamente, com outra pessoa. Num CVE, a presença envolve as duas dimensões: a sensação de estar no mundo virtual (imersão) e, ao mesmo tempo, a sensação de lá estar acompanhado.</p>
+</section>
+<section id="sec-06-comunidades" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="sec-06-comunidades"><span class="header-section-number">6.6</span> Comunidades Virtuais</h2>
+<p>Seja qual for o seu propósito, jogo, socialização, educação ou economia, um CVE dá quase sempre origem a uma <strong>comunidade virtual</strong>, com regras sociais próprias e uma cultura particular. A metáfora espacial dos CVEs promove tanto encontros casuais entre desconhecidos como a colaboração entre conhecidos, de uma forma geralmente mais motivadora do que os sistemas colaborativos desktop discutidos nos capítulos anteriores.</p>
+<p>Como em qualquer sociedade, comportamentos inadequados também acontecem nos CVEs: vandalismo, perturbação de outros utilizadores, ou mesmo assédio, ecos, num espaço tridimensional, do <em>flaming</em>, da trollagem e do cyberbullying já discutidos a propósito da comunicação por texto (<a href="cap05.html#sec-05-flaming" class="quarto-xref"><span>Secção 5.4</span></a>, <a href="cap01.html#sec-01-cyberbullying" class="quarto-xref"><span>Secção 1.5.3</span></a>). As empresas responsáveis por estes ambientes precisam de lidar com estes comportamentos tal como qualquer outra plataforma social.</p>
+</section>
+<section id="sec-06-sintese" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="sec-06-sintese"><span class="header-section-number">6.7</span> Síntese</h2>
+<p>Este capítulo introduziu os Ambientes Virtuais Colaborativos:</p>
+<ol type="1">
+<li>Um <strong>CVE</strong> simula um mundo partilhado, em vez de servir apenas como canal de comunicação, composto por um mundo virtual, avatares e interatividade <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span></li>
+<li>A <strong>imersão</strong> pode ser mental (o engajamento com o conteúdo) ou física (a estimulação sintética dos sentidos, hoje sobretudo através de capacetes ou óculos de realidade virtual)</li>
+<li>O primeiro CVE de que há registo foi o <code>Maze War</code> (1974); o <code>SIMNET</code>
+<ol start="1983" type="1">
+<li>trouxe os primeiros esforços massivos de desenvolvimento; o <code>Second Life</code> e o <code>World of Warcraft</code> continuam, décadas depois, entre os CVEs mais bem-sucedidos</li>
+</ol></li>
+<li>Os CVEs reproduzem noções do mundo real: <strong>identidade</strong> (o reconhecimento do avatar), <strong>interação</strong> (mediada pela perceção que o avatar fornece) e <strong>presença</strong> (a sensação ilusória de não mediação) <span class="citation" data-cites="LombardDitton1997">(<a href="cap01.html#ref-LombardDitton1997" role="doc-biblioref">Lombard e Ditton 1997</a>)</span></li>
+<li>Todo o CVE dá origem a uma <strong>comunidade virtual</strong>, com regras sociais próprias, onde também podem ocorrer comportamentos inadequados</li>
+</ol>
+</section>
+<section id="sec-06-reflexao" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="sec-06-reflexao"><span class="header-section-number">6.8</span> Para Refletir</h2>
+<p>Se já usaste algum ambiente virtual colaborativo, um jogo multijogador, uma reunião em realidade virtual, ou uma plataforma como o <code>Roblox</code> ou o <code>VRChat</code>, pensa no teu avatar: até que ponto ele representa a tua identidade real? O que escolheste mudar, e porquê?</p>
+<p>E quanto à presença social: consegues identificar um momento em que te sentiste genuinamente “acompanhado” num espaço virtual, mesmo sabendo que as outras pessoas estavam fisicamente longe?</p>
+</section>
+<section id="sec-06-referencias" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-06-referencias">Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Gibson1984" class="csl-entry" role="listitem">
+Gibson, William. 1984. <em>Neuromancer</em>. New York: Ace Books.
+</div>
+<div id="ref-LombardDitton1997" class="csl-entry" role="listitem">
+Lombard, Matthew, e Theresa Ditton. 1997. <span>«At the Heart of It All: The Concept of Presence»</span>. <em>Journal of Computer-Mediated Communication</em> 3 (2).
+</div>
+<div id="ref-Raposo2011" class="csl-entry" role="listitem">
+Raposo, Alberto Barbosa. 2011. <span>«Ambientes Virtuais Colaborativos»</span>. Em <em>Sistemas Colaborativos</em>, editado por Mariano Pimentel e Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiada");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiada");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../capitulos/cap05.html" class="pagination-link" aria-label="Sistemas de Comunicação para Colaboração">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Sistemas de Comunicação para Colaboração</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../capitulos/cap07.html" class="pagination-link" aria-label="Democracia Eletrónica">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Eletrónica</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Plataformas Sociais e Cooperativas — UTAD</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

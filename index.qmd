@@ -39,16 +39,14 @@ oficial da UC:
 
 ## Fonte e atualização {.unnumbered}
 
-Para além da diversa bibliografia devidamente indicada e compilada, os capítulos deste documento baseiam-se no livro *Sistemas Colaborativos*
+Para além da diversa bibliografia devidamente indicada e compilada, os capítulos deste documento baseiam-se no livro " *Sistemas Colaborativos* "
 (Pimentel & Fuks, Editora Campus/Elsevier, 2011), disponibilizado
-publicamente pelos autores e adotado como bibliografia de referência da
-UC. O texto original está em português americano e reflecte o estado da
-arte de 2011, quando foi concebido; o presente documento reformula os conteúdos em português europeu,
-atualiza exemplos, dados estatísticos e referências, e introduz
-perspetivas mais recentes onde foi achado relevante para uma moderna consolidação de conceitos (ex: inteligência artificial generativa, *hashtags* nas redes sociais atuais), suportado em referências científicas atuais.
-Por outro lado, simplifica e adapta as matérias relacionadas com as plataformas sociais e colaborativas  às condições reais desta UC no contexto mais amplo do curso de Comunicação e Multimédia.
-Recomendamos vivamente aos alunos a leitura da obra acima referida, que está indicada como bibliografia de referência, pela qualidade dos conceitos aí descritos com clareza assim como pela estrutura do livro, slides e exercícios que constituem uma verdadeira viagem pela temática relacionada com a transição digital assente nas plataformas colaborativas. 
-
+publicamente pelos seus autores e adotado como bibliografia de referência da
+UC.
+O presente documento trata das matérias relacionadas com as plataformas sociais e colaborativas adaptando-as às condições reais desta UC e introduz
+perspetivas mais recentes e relevantes para uma moderna consolidação de conceitos (ex: inteligência artificial generativa, *hashtags* nas redes sociais atuais), suportados em referências científicas atuais.
+A leitura da dos *Sistemas Colaborativos*
+(Pimentel & Fuks, Editora Campus/Elsevier, 2011) continua a ser uma referêna válida e eindicada para todos os alunos.
 
 ## Como usar este documento {.unnumbered}
 
