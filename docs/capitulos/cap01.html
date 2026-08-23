@@ -21,41 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Electrónica</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Eletrónica</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -205,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Colectivo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Coletivo</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -217,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interacção</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interação</span></span></a>
   </div>
 </li>
     </ul>
@@ -231,6 +217,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#sec-01-intro" id="toc-sec-01-intro" class="nav-link active" data-scroll-target="#sec-01-intro">Introdução</a></li>
+  <li><a href="#sec-01-revolucoes" id="toc-sec-01-revolucoes" class="nav-link" data-scroll-target="#sec-01-revolucoes"><span class="header-section-number">1.1</span> As Revoluções da Sociedade</a>
+  <ul class="collapse">
+  <li><a href="#sec-01-revolucao-facto" id="toc-sec-01-revolucao-facto" class="nav-link" data-scroll-target="#sec-01-revolucao-facto"><span class="header-section-number">1.1.1</span> Uma revolução de facto?</a></li>
+  </ul></li>
+  <li><a href="#sec-01-sociedade-rede" id="toc-sec-01-sociedade-rede" class="nav-link" data-scroll-target="#sec-01-sociedade-rede"><span class="header-section-number">1.2</span> A Sociedade em Rede</a>
+  <ul class="collapse">
+  <li><a href="#sec-01-redes-nao-tecnologicas" id="toc-sec-01-redes-nao-tecnologicas" class="nav-link" data-scroll-target="#sec-01-redes-nao-tecnologicas"><span class="header-section-number">1.2.1</span> Redes sociais: um fenómeno anterior à tecnologia</a></li>
+  <li><a href="#sec-01-sociedade-rede-castells" id="toc-sec-01-sociedade-rede-castells" class="nav-link" data-scroll-target="#sec-01-sociedade-rede-castells"><span class="header-section-number">1.2.2</span> O que muda, então, com a tecnologia?</a></li>
+  <li><a href="#sec-01-nomear" id="toc-sec-01-nomear" class="nav-link" data-scroll-target="#sec-01-nomear"><span class="header-section-number">1.2.3</span> Como nomear esta nova sociedade?</a></li>
+  </ul></li>
+  <li><a href="#sec-01-ciberespaco" id="toc-sec-01-ciberespaco" class="nav-link" data-scroll-target="#sec-01-ciberespaco"><span class="header-section-number">1.3</span> O Ciberespaço</a>
+  <ul class="collapse">
+  <li><a href="#sec-01-metropole" id="toc-sec-01-metropole" class="nav-link" data-scroll-target="#sec-01-metropole"><span class="header-section-number">1.3.1</span> O ciberespaço como a nova metrópole</a></li>
+  <li><a href="#sec-01-integracao-fisica" id="toc-sec-01-integracao-fisica" class="nav-link" data-scroll-target="#sec-01-integracao-fisica"><span class="header-section-number">1.3.2</span> Um espaço integrado ao físico</a></li>
+  </ul></li>
+  <li><a href="#sec-01-geracoes" id="toc-sec-01-geracoes" class="nav-link" data-scroll-target="#sec-01-geracoes"><span class="header-section-number">1.4</span> Gerações Digitais e o “Ser Humano Digital”</a></li>
+  <li><a href="#sec-01-riscos" id="toc-sec-01-riscos" class="nav-link" data-scroll-target="#sec-01-riscos"><span class="header-section-number">1.5</span> O Lado Sombrio da Sociedade em Rede</a>
+  <ul class="collapse">
+  <li><a href="#sec-01-privacidade" id="toc-sec-01-privacidade" class="nav-link" data-scroll-target="#sec-01-privacidade"><span class="header-section-number">1.5.1</span> Privacidade: o paradoxo da partilha</a></li>
+  <li><a href="#sec-01-vicio" id="toc-sec-01-vicio" class="nav-link" data-scroll-target="#sec-01-vicio"><span class="header-section-number">1.5.2</span> Vício tecnológico</a></li>
+  <li><a href="#sec-01-cyberbullying" id="toc-sec-01-cyberbullying" class="nav-link" data-scroll-target="#sec-01-cyberbullying"><span class="header-section-number">1.5.3</span> Cyberbullying</a></li>
+  </ul></li>
+  <li><a href="#sec-01-numeros" id="toc-sec-01-numeros" class="nav-link" data-scroll-target="#sec-01-numeros"><span class="header-section-number">1.6</span> A Sociedade em Números</a></li>
+  <li><a href="#sec-01-sintese" id="toc-sec-01-sintese" class="nav-link" data-scroll-target="#sec-01-sintese"><span class="header-section-number">1.7</span> Síntese</a></li>
+  <li><a href="#sec-01-reflexao" id="toc-sec-01-reflexao" class="nav-link" data-scroll-target="#sec-01-reflexao"><span class="header-section-number">1.8</span> Para Refletir</a></li>
+  <li><a href="#sec-01-referencias" id="toc-sec-01-referencias" class="nav-link" data-scroll-target="#sec-01-referencias">Referências</a></li>
   </ul>
 </nav>
     </div>
@@ -239,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Sociedade em Rede e Ciberespaço</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Sociedade em Rede e Ciberespaço</span></h1>
 </div>
 
 
@@ -268,12 +280,379 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap01.jpg');">
+  <div class="hero-badge">Capítulo 1</div>
+  <h1>Sociedade em Rede e Ciberespaço</h1>
+</div>
 <section id="sec-01-intro" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="sec-01-intro">Introdução</h2>
-<p><em>Conteúdo por desenvolver.</em></p>
+<p>Este capítulo introduz os fundamentos teóricos do primeiro bloco da unidade curricular, <strong>Plataformas Sociais</strong>, situando as plataformas sociais e cooperativas no contexto mais amplo da transição para uma sociedade organizada em rede. Antes de se estudarem as redes sociais, métricas ou modelos de colaboração em concreto, importa compreender <strong>porque razão</strong> essas plataformas emergiram e <strong>que tipo de sociedade</strong> as tornou possíveis e necessárias.</p>
+</section>
+<section id="sec-01-revolucoes" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="sec-01-revolucoes"><span class="header-section-number">1.1</span> As Revoluções da Sociedade</h2>
+<p>A história das sociedades pode ler-se como uma sucessão de revoluções organizadas cada uma à volta de uma técnica dominante: a sociedade de <strong>caça e recolha</strong>, baseada no domínio da técnica de caça; a sociedade <strong>agrícola</strong>, organizada à volta da técnica do cultivo; a sociedade <strong>industrial</strong>, alimentada pela energia a vapor e, posteriormente, pela eletricidade; e a sociedade <strong>em rede</strong>, estruturada em torno da rede de computadores.</p>
+<p>Cada uma destas transições não foi apenas tecnológica: mudou também os modos de produção, o espaço e hábitos de convivência, a organização social e os próprios estilos de agir, viver e ser de quem nela viveu. É esta última transição, da sociedade industrial para a sociedade em rede, que enquadra o estudo das plataformas sociais e cooperativas.</p>
+<section id="sec-01-revolucao-facto" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="sec-01-revolucao-facto"><span class="header-section-number">1.1.1</span> Uma revolução de facto?</h3>
+<p>Que as redes de computadores estão a mudar profundamente a sociedade parece hoje evidente, mas vale a pena situar essa mudança num espaço de tempo mais alargado de tecnologias de comunicação, para perceber que não se trata de um fenómeno isolado, mas de uma aceleração contínua:</p>
+<ul>
+<li><strong>Década de 1900</strong> - rádio (difusão de mensagens sonoras em massa, de <em>um</em>-para-<em>muitos</em>)</li>
+<li><strong>Década de 1920</strong> - televisão (difusão de som e imagem em massa, de <em>um</em>-para-<em>muitos</em>)</li>
+<li><strong>Década de 1950</strong> - aparecimento dos primeiros computadores, isolados</li>
+<li><strong>Década de 1960</strong> - rede de computadores e, mais tarde, a rede de redes: a Internet</li>
+<li><strong>Décadas de 1970–1980</strong> - popularização dos microcomputadores</li>
+<li><strong>Década de 1990</strong> - a Web e o início da computação em nuvem</li>
+<li><strong>Década de 2000</strong> - Web 2.0 e meios de comunicação sociais <em>online</em></li>
+<li><strong>A partir de 2010</strong> - computação ubíqua, Internet das Coisas e Inteligência Artificial</li>
+</ul>
+<p>Cada uma destas etapas ampliou o alcance e a velocidade da comunicação humana, mas foi a passagem de redes de <strong>difusão</strong> (rádio, televisão) para redes de <strong>interação</strong> (Internet) que criou as condições para o tipo de plataformas que esta unidade curricular estuda.</p>
+</section>
+</section>
+<section id="sec-01-sociedade-rede" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="sec-01-sociedade-rede"><span class="header-section-number">1.2</span> A Sociedade em Rede</h2>
+<section id="sec-01-redes-nao-tecnologicas" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="sec-01-redes-nao-tecnologicas"><span class="header-section-number">1.2.1</span> Redes sociais: um fenómeno anterior à tecnologia</h3>
+<p>Antes de avançar, importa desfazer um equívoco comum: a <strong>rede social</strong>, enquanto conceito, não é uma invenção tecnológica. Organizar-se em redes de relações, sejam elas de família, parentesco, amizade, vizinhança ou comércio, é uma característica estrutural do ser humano enquanto animal social, muito anterior a qualquer computador. O estudo científico sistemático destas redes remonta a 1934, quando o psiquiatra Jacob Moreno lançou as bases da <strong>sociometria</strong> ao mapear, através de diagramas a que chamou <em>sociogramas</em>, os laços de atração e rejeição entre indivíduos de um grupo, o mesmo tipo de representação gráfica que retomaremos no capítulo seguinte para analisar redes sociais digitais <span class="citation" data-cites="Moreno1934">(<a href="cap01.html#ref-Moreno1934" role="doc-biblioref">Moreno 1934</a>)</span>.</p>
+<p>O que a tecnologia digital trouxe não foi o conceito de rede social, mas sim uma mudança de <strong>escala, alcance e meio</strong>: redes que antes se limitavam a algumas dezenas de contactos presenciais podem hoje estender-se a milhares de ligações, mediadas por plataformas, e deixam um rasto de dados que pode ser analisado de formas antes impossíveis. A distinção é importante para todo o resto desta unidade curricular: estudamos <em>plataformas</em> sociais, o suporte tecnológico, sem esquecer que aquilo que elas medeiam é um comportamento humano bem mais antigo do que elas.</p>
+</section>
+<section id="sec-01-sociedade-rede-castells" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="sec-01-sociedade-rede-castells"><span class="header-section-number">1.2.2</span> O que muda, então, com a tecnologia?</h3>
+<p>É a este nível, o da estrutura da sociedade global, não o da existência de redes individuais que se situa o conceito de <strong>sociedade em rede</strong>, desenvolvido de forma sistemática pelo sociólogo Manuel Castells. Castells não afirma que as redes sociais nasceram com a tecnologia; afirma que a <strong>lógica de rede</strong>, descentralizada, sem um centro único, organizada em nós e ligações, se tornou o <strong>princípio organizativo dominante</strong> de toda a sociedade contemporânea. Porquê? Porque as tecnologias de informação e comunicação baseadas na microeletrónica permitem que essa lógica opere à escala global e em tempo real <span class="citation" data-cites="Castells2004">(<a href="cap01.html#ref-Castells2004" role="doc-biblioref">Castells 2004</a>)</span>.</p>
+<p>Esta ideia tem uma consequência direta para o estudo das plataformas sociais e cooperativas: uma rede social digital <strong>não substitui nem inventa o fenómeno social subjacente</strong>: é uma instância tecnológica que medeia o comportamento humano universal, operando numa escala e a uma velocidade que a microeletrónica possibilita. A lógica de funcionamento em rede, com os seus nós, ligações, fluxos de informação, ausência de centro único, aplica-se tanto à sociedade como um todo, como a cada plataforma específica que se vai estudar ao longo do semestre.</p>
+</section>
+<section id="sec-01-nomear" class="level3" data-number="1.2.3">
+<h3 data-number="1.2.3" class="anchored" data-anchor-id="sec-01-nomear"><span class="header-section-number">1.2.3</span> Como nomear esta nova sociedade?</h3>
+<p>Não existe consenso total sobre a designação mais adequada para a sociedade que emerge desta transição. Encontram-se na literatura designações como <em>sociedade da informação</em>, <em>sociedade do conhecimento</em>, <em>sociedade da comunicação</em>, <em>sociedade em rede</em> ou <em>sociedade conectada</em>. Cada uma destas designações aponta para uma perspetiva diferente da mesma transformação: a informação como matéria-prima, o conhecimento como valor acrescentado, a comunicação como processo, ou a ligação em rede como estrutura. Ao longo deste documento usaremos preferencialmente <em>sociedade em rede</em>, por ser a que melhor captura a estrutura organizativa subjacente às plataformas que estudaremos.</p>
+</section>
+</section>
+<section id="sec-01-ciberespaco" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="sec-01-ciberespaco"><span class="header-section-number">1.3</span> O Ciberespaço</h2>
+<p>O termo <strong>ciberespaço</strong> foi cunhado pelo escritor de ficção científica William Gibson, primeiro no conto “Burning Chrome” (1982) e popularizado no romance <em>Neuromancer</em> (1984) <span class="citation" data-cites="Gibson1984">(<a href="cap01.html#ref-Gibson1984" role="doc-biblioref">Gibson 1984</a>)</span>. O significado atribuído ao termo alterou-se substancialmente desde então: do espaço puramente imaginário da ficção científica para o espaço de interação social real que hoje ocupamos através dos nossos ecrãs.</p>
+<p>Neste espaço, constituído tecnicamente por circuitos digitais e impulsos elétricos (que compõem os <em>bits</em>), desenvolvem-se práticas sociais reais: novas formas de trabalhar, conviver, aprender e colaborar. É precisamente neste espaço que se situam as plataformas sociais e cooperativas que são objeto de estudo desta unidade curricular.</p>
+<section id="sec-01-metropole" class="level3" data-number="1.3.1">
+<h3 data-number="1.3.1" class="anchored" data-anchor-id="sec-01-metropole"><span class="header-section-number">1.3.1</span> O ciberespaço como a nova metrópole</h3>
+<p>A Revolução Industrial deu origem aos grandes centros urbano-industriais, para onde afluíram populações de zonas rurais em busca de trabalho: as cidades, com um significado diferente de até então. Estas deixaram de ser apenas centros administrativos ou culturais para passar a ser locais de concentração de trabalhadores e suas famílias. A cidade tornou-se, historicamente, o espaço de moradia, trabalho e socialização por excelência. O ciberespaço desempenha hoje um papel estrutural semelhante: um espaço que concentra atividade económica, política e cultural, e que se tornou, ele próprio, um dos temas centrais de reflexão sobre o mundo contemporâneo, tal como a cidade industrial o foi para os pensadores do século XIX e início do século XX.</p>
+</section>
+<section id="sec-01-integracao-fisica" class="level3" data-number="1.3.2">
+<h3 data-number="1.3.2" class="anchored" data-anchor-id="sec-01-integracao-fisica"><span class="header-section-number">1.3.2</span> Um espaço integrado ao físico</h3>
+<p>O ciberespaço já não se limita à experiência mediada por um ecrã. A integração entre o digital e o físico é hoje uma das tendências mais marcantes da computação contemporânea, antecipada com notável precisão por Mark Weiser, cientista da Xerox PARC, no seu artigo seminal “The Computer for the 21st Century” <span class="citation" data-cites="Weiser1991">(<a href="cap01.html#ref-Weiser1991" role="doc-biblioref">Weiser 1991</a>)</span>. Weiser propôs o conceito de <strong>computação ubíqua</strong> (<em>ubiquitous computing</em>): tecnologias tão bem integradas no dia-a-dia que se tornam invisíveis, na medida em que deixam de ser vistas como “computadores” e passam a fazer parte do ambiente.</p>
+<p>Esta visão concretiza-se hoje em três fenómenos interligados:</p>
+<ul>
+<li><strong>Internet das Coisas (IoT)</strong> - objetos do dia-a-dia, antes estáticos, tornam-se dinâmicos e interligados: telemóveis, câmaras de segurança, automóveis e eletrodomésticos comunicam entre si e com serviços na nuvem.</li>
+<li><strong>Integração no ambiente</strong> - a tecnologia deixa de estar concentrada num único dispositivo e passa a estar distribuída, discreta, presente em múltiplos pontos do ambiente</li>
+<li><strong>Web sensível ao contexto</strong> - os resultados que recebemos de um motor de busca ou de uma aplicação dependem cada vez mais da nossa localização, idioma e circunstância específica</li>
+</ul>
+<p>Estes três fenómenos têm implicações diretas para as plataformas cooperativas que estudaremos nos blocos seguintes: a colaboração deixa de estar confinada a um ecrã e a um momento específico, e passa a poder ocorrer em qualquer lugar, a qualquer momento, tema que se retomará em detalhe no capítulo sobre mobilidade e ubiquidade.</p>
+</section>
+</section>
+<section id="sec-01-geracoes" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="sec-01-geracoes"><span class="header-section-number">1.4</span> Gerações Digitais e o “Ser Humano Digital”</h2>
+<p>A relação de cada pessoa com a tecnologia depende, em larga medida, do momento histórico em que esta foi introduzida na sua vida. O investigador e autor Marc Prensky introduziu, em 2001, a distinção entre <strong>nativos digitais</strong>, os que nasceram já rodeados de tecnologia digital, e <strong>imigrantes digitais</strong>, os que tiveram de se adaptar a ela ao longo da vida adulta <span class="citation" data-cites="Prensky2001">(<a href="cap01.html#ref-Prensky2001" role="doc-biblioref">Prensky 2001</a>)</span>. Embora esta dicotomia tenha sido posteriormente criticada por simplificar excessivamente um fenómeno mais gradual e heterogéneo, continua a ser uma referência incontornável para pensar como diferentes gerações se relacionam com as plataformas sociais e cooperativas.</p>
+<p>De forma mais fina, é comum distinguirem-se hoje várias gerações digitais:</p>
+<ul>
+<li><strong>Baby Boomers</strong> (nascidos entre 1946 e 1964) - viveram a introdução gradual do computador pessoal já em idade adulta</li>
+<li><strong>Geração X</strong> (1965–1980) - testemunhou o surgimento dos computadores pessoais e da Internet ainda em fase de formação</li>
+<li><strong>Millennials / Geração Y</strong> (1981–1996) - nativos digitais na aceção original de Prensky, cresceram com a Internet já disponível</li>
+<li><strong>Geração Z</strong> (1997–2012) - nasceu já com redes sociais, <em>smartphones</em> e conectividade permanente como parte integrante do quotidiano</li>
+<li><strong>Geração Alpha</strong> (2010–2024) - primeira geração a crescer sem memória de um mundo sem redes sociais, assistentes de voz e conteúdo gerado por algoritmos de recomendação; sobrepõe-se parcialmente à Geração Z, uma vez que as fronteiras entre gerações não são datas exatas, mas zonas de transição</li>
+</ul>
+<p>À data deste capítulo, está já em curso uma nova geração, a <strong>Geração Beta</strong> (a partir de 2025), a que pertencerão as crianças nascidas neste período. Por ser demasiado recente, ainda não existe investigação consistente sobre a sua relação com a tecnologia <span class="citation" data-cites="McCrindle2026">(<a href="cap01.html#ref-McCrindle2026" role="doc-biblioref">McCrindle Research 2026</a>)</span>.</p>
+<p>Esta distinção geracional será relevante quando estudarmos, no capítulo seguinte, a adoção e utilização das redes sociais: diferentes gerações não só usam plataformas diferentes, como as usam de formas qualitativamente distintas.</p>
+</section>
+<section id="sec-01-riscos" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="sec-01-riscos"><span class="header-section-number">1.5</span> O Lado Sombrio da Sociedade em Rede</h2>
+<p>A transição para a sociedade em rede, tal como as transições sociais anteriores, não trouxe apenas novas oportunidades de interação e colaboração: trouxe também novos riscos, que qualquer estudo de plataformas sociais e cooperativas deve reconhecer em vez de ignorar. Três destes riscos merecem destaque particular:</p>
+<section id="sec-01-privacidade" class="level3" data-number="1.5.1">
+<h3 data-number="1.5.1" class="anchored" data-anchor-id="sec-01-privacidade"><span class="header-section-number">1.5.1</span> Privacidade: o paradoxo da partilha</h3>
+<p>A investigadora Susan Barnes descreveu, já em 2006, aquilo que designou por <strong>paradoxo da privacidade</strong>: existe uma discrepância sistemática entre a preocupação que as pessoas dizem ter com a sua privacidade e o comportamento que efetivamente adotam nas redes sociais, partilhando livremente informação pessoal que mais tarde as surpreende ao ser vista por audiências não pretendidas <span class="citation" data-cites="Barnes2006">(<a href="cap01.html#ref-Barnes2006" role="doc-biblioref">Barnes 2006</a>)</span>. Este paradoxo mantém-se plenamente atual: a arquitetura das plataformas sociais é desenhada para incentivar a partilha, e a compreensão real das suas implicações, quem vê o quê e durante quanto tempo, continua a ser <strong>muito limitada</strong> para a generalidade dos utilizadores. Esta limitação coloca graves problemas utilizadores das redes sociais, não só de privacidade, mas também de cibersegurança, que os podem vir a afetar seriamente na sua vida real.</p>
+</section>
+<section id="sec-01-vicio" class="level3" data-number="1.5.2">
+<h3 data-number="1.5.2" class="anchored" data-anchor-id="sec-01-vicio"><span class="header-section-number">1.5.2</span> Vício tecnológico</h3>
+<p>O uso excessivo de redes sociais e de outras plataformas digitais tem vindo a ser estudado como um fenómeno com características de dependência comportamental. Uma análise bibliométrica recente identifica um crescimento sustentado da investigação científica sobre vício em redes sociais desde meados da década de 2010, associando o uso problemático a défices de controlo dos impulsos, perturbação do sono e impacto negativo no bem-estar psicológico <span class="citation" data-cites="PellegrinoEtAl2022">(<a href="cap01.html#ref-PellegrinoEtAl2022" role="doc-biblioref">Pellegrino, Stasi, e Bhatiasevi 2022</a>)</span>. Tal como a computação ubíqua tornou a tecnologia omnipresente (<a href="#sec-01-integracao-fisica" class="quarto-xref"><span>Secção 1.3.2</span></a>), essa mesma omnipresença é também o que torna mais difícil desligar “da rede”.</p>
+</section>
+<section id="sec-01-cyberbullying" class="level3" data-number="1.5.3">
+<h3 data-number="1.5.3" class="anchored" data-anchor-id="sec-01-cyberbullying"><span class="header-section-number">1.5.3</span> Cyberbullying</h3>
+<p>A dimensão sombria da comunicação em rede tem também uma face social direta: o <strong>cyberbullying</strong>, ou assédio praticado através de meios digitais. Uma revisão abrangente da literatura mostra que as taxas de vitimização por <em>cyberbullying</em> entre crianças e adolescentes têm vindo a aumentar de forma consistente na última década, com impacto documentado na saúde mental, incluindo sintomas depressivos e, nos casos mais graves, levando a comportamentos suicidas <span class="citation" data-cites="ZhuEtAl2021">(<a href="cap01.html#ref-ZhuEtAl2021" role="doc-biblioref">Zhu et al. 2021</a>)</span>. Ao contrário do assédio presencial, o <em>cyberbullying</em> beneficia do anonimato e da ausência de fronteiras espaciais e temporais do ciberespaço (<a href="#sec-01-ciberespaco" class="quarto-xref"><span>Secção 1.3</span></a>): a exposição não termina quando a vítima sai de um determinado local físico, nem se limita a determinados horários.</p>
+<p>Compreender o impacto nas vítimas é só metade do problema: importa também perguntar porque agridem os próprios agressores. Segundo Ijose, os <em>cyberbullies</em> apresentam tipicamente um sentido de autoestima reduzido e raramente têm noção real do dano que provocam, precisamente porque o meio digital lhes retira o acesso às pistas sociais: expressão facial, tom de voz, postura corporal, que, numa interação presencial, tornariam esse dano visível de imediato <span class="citation" data-cites="Ijose2011">(<a href="cap01.html#ref-Ijose2011" role="doc-biblioref">Ijose 2011</a>)</span>.</p>
+<p>Para além da literatura académica, existe também um conjunto relevante de obras de divulgação dirigidas diretamente aos mais jovens, o público mais exposto a este fenómeno. É o caso de <em>Bullying</em>, de Anne Rooney, que organiza o tema em torno de perguntas frequentes (“O que é o cyberbullying?”, “Porque me estão a fazer bullying?”, “Como posso pará-lo?”), numa linguagem acessível a adolescentes e sem pressupor conhecimento técnico prévio <span class="citation" data-cites="Rooney2015">(<a href="cap01.html#ref-Rooney2015" role="doc-biblioref">Rooney 2015</a>)</span>. Este tipo de recurso cumpre um papel complementar ao da investigação científica: traduz os resultados em orientação prática e imediatamente utilizável por quem vive a situação.</p>
+<p>Privacidade, vício e <em>cyberbullying</em>, os três riscos identificados nas secções anteriores, não são efeitos colaterais acidentais das plataformas sociais e cooperativas, mas consequências diretas das mesmas características que as tornam poderosas: a facilidade de partilha, a disponibilidade permanente e o alcance social alargado. Qualquer análise ou conceção de plataformas cooperativas, tema central desta unidade curricular, deve ter estes riscos em conta desde a fase de desenho, e não apenas como correção posterior.</p>
+</section>
+</section>
+<section id="sec-01-numeros" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="sec-01-numeros"><span class="header-section-number">1.6</span> A Sociedade em Números</h2>
+<p>Para além do enquadramento teórico, é importante situar esta transição em dados concretos e atuais. Segundo o relatório <em>Measuring Digital Development: Facts and Figures 2024</em>, da União Internacional de Telecomunicações (ITU), <strong>5,5 mil milhões de pessoas</strong> estavam online em 2024, ou seja, 68% da população mundial, contra 65% um ano antes. A taxa de crescimento está, ela própria, a acelerar (de 2,7% para 3,4% ao ano). Mas o inverso desse número é igualmente relevante: <strong>2,6 mil milhões de pessoas, um terço da humanidade, continuam offline</strong> <span class="citation" data-cites="ITU2024">(<a href="cap01.html#ref-ITU2024" role="doc-biblioref">International Telecommunication Union 2024</a>)</span>.</p>
+<p>A conectividade está longe de ser uniforme. Nos países de rendimento elevado, o acesso à Internet aproxima-se da universalidade; nos países de rendimento baixo, apenas 27% da população está online. O mesmo padrão repete-se noutros eixos: 83% da população urbana usa a Internet, contra 48% da população rural; e, a nível de género, 70% dos homens usam a Internet a nível mundial, contra 65% das mulheres <span class="citation" data-cites="ITU2024">(<a href="cap01.html#ref-ITU2024" role="doc-biblioref">International Telecommunication Union 2024</a>)</span>. Persiste, portanto, um <strong>fosso digital</strong> multidimensional: geográfico, económico, territorial e de género, que qualquer análise de plataformas sociais e cooperativas deve ter em conta.</p>
+<p>Vale a pena cruzar esta fonte institucional com os dados do setor que usaremos no próximo capítulo: o relatório <em>Digital 2024</em> da We Are Social/Meltwater, com análise da Kepios, estimava, para janeiro de 2024, 5,35 mil milhões de utilizadores de Internet (66,2% da população mundial) <span class="citation" data-cites="WeAreSocial2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024</a>)</span>, um valor próximo, mas não idêntico, ao da ITU para esse mesmo ano (68%). As diferenças entre fontes referentes ao mesmo período resultam de metodologias de recolha distintas (inquéritos versus estimativas administrativas), mas a <strong>convergência da ordem de grandeza</strong> entre duas fontes independentes é, em si, um dado relevante: reforça a confiança na leitura de que a maioria da humanidade está hoje ligada.</p>
+<p>Esta desigualdade de acesso é um dado estrutural que qualquer análise de plataformas sociais e cooperativas deve ter em conta: a “sociedade em rede” não é uma condição universalmente partilhada, mas uma transição que avança a ritmos muito diferentes consoante o contexto geográfico, económico e social. Estes dados serão aprofundados no próximo capítulo, dedicado especificamente às estatísticas de utilização das redes sociais.</p>
+</section>
+<section id="sec-01-sintese" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="sec-01-sintese"><span class="header-section-number">1.7</span> Síntese</h2>
+<p>Este capítulo situou o estudo das plataformas sociais e cooperativas numa transição histórica mais ampla, da sociedade industrial para a sociedade em rede, e introduziu cinco ideias que atravessarão toda esta unidade curricular:</p>
+<ol type="1">
+<li>As redes sociais digitais são instâncias concretas de um princípio organizativo mais geral, a <strong>sociedade em rede</strong> <span class="citation" data-cites="Castells2004">(<a href="cap01.html#ref-Castells2004" role="doc-biblioref">Castells 2004</a>)</span></li>
+<li>O <strong>ciberespaço</strong> deixou de ser um espaço puramente mediado por ecrã, estando cada vez mais integrado ao mundo físico através da computação ubíqua <span class="citation" data-cites="Weiser1991">(<a href="cap01.html#ref-Weiser1991" role="doc-biblioref">Weiser 1991</a>)</span></li>
+<li>A relação com estas tecnologias varia significativamente consoante a <strong>geração</strong> a que cada pessoa pertence <span class="citation" data-cites="Prensky2001">(<a href="cap01.html#ref-Prensky2001" role="doc-biblioref">Prensky 2001</a>)</span></li>
+<li>Esta mesma transição tem um <strong>lado sombrio</strong>: privacidade, vício tecnológico e cyberbullying, que deve ser considerado desde a conceção das plataformas, não apenas corrigido depois de instalado <span class="citation" data-cites="Barnes2006 PellegrinoEtAl2022 ZhuEtAl2021">(<a href="cap01.html#ref-Barnes2006" role="doc-biblioref">Barnes 2006</a>; <a href="cap01.html#ref-PellegrinoEtAl2022" role="doc-biblioref">Pellegrino, Stasi, e Bhatiasevi 2022</a>; <a href="cap01.html#ref-ZhuEtAl2021" role="doc-biblioref">Zhu et al. 2021</a>)</span></li>
+<li>A adoção desta sociedade em rede é <strong>desigual</strong>, e essa desigualdade tem expressão estatística concreta <span class="citation" data-cites="ITU2023">(<a href="cap01.html#ref-ITU2023" role="doc-biblioref">International Telecommunication Union 2023</a>)</span></li>
+</ol>
+</section>
+<section id="sec-01-reflexao" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="sec-01-reflexao"><span class="header-section-number">1.8</span> Para Refletir</h2>
+<p>Perante uma mudança tão rápida quanto a descrita neste capítulo, é comum encontrarem-se duas posturas opostas: uma visão nostálgica e apreensiva face à perda de modos de vida anteriores, e uma visão excessivamente otimista que vê na tecnologia a solução automática para os problemas da sociedade. Que postura reconheces em ti, ou nas pessoas à tua volta?</p>
+<p>Pensa também nos riscos discutidos na secção anterior: já sentiste, ou observaste em alguém próximo, o paradoxo da privacidade descrito por Barnes: dizer que a privacidade importa, mas partilhar sem pensar duas vezes? Já tiveste dificuldade em desligar-te de uma plataforma social? E que responsabilidade cabe a quem desenha estas plataformas na prevenção do cyberbullying: é só uma questão de moderação de conteúdo, ou também de arquitetura do próprio sistema?</p>
+</section>
+<section id="sec-01-referencias" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-01-referencias">Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-AraujoEtAl2011" class="csl-entry" role="listitem">
+Araujo, Renata Mendes de, Claudia Cappelli, Bruna Diirr, Priscila
+Engiel, and Rafael Lage Tavares. 2011. <span>“Democracia
+Eletrônica.”</span> In <em>Sistemas Colaborativos</em>, edited by
+Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Arnstein1969" class="csl-entry" role="listitem">
+Arnstein, Sherry R. 1969. <span>“A Ladder of Citizen
+Participation.”</span> <em>Journal of the American Institute of
+Planners</em> 35 (4): 216–24.
+</div>
+<div id="ref-Austin1962" class="csl-entry" role="listitem">
+Austin, John L. 1962. <em>How to Do Things with Words</em>. Oxford:
+Clarendon Press.
+</div>
+<div id="ref-Axelrod1984" class="csl-entry" role="listitem">
+Axelrod, Robert. 1984. <em>The Evolution of Cooperation</em>. New York:
+Basic Books.
+</div>
+<div id="ref-Barnes2006" class="csl-entry" role="listitem">
+Barnes, Susan B. 2006. <span>“A Privacy Paradox: Social Networking in
+the United States.”</span> <em>First Monday</em> 11 (9).
+</div>
+<div id="ref-Borges2011" class="csl-entry" role="listitem">
+Borges, Marcos R. S. 2011. <span>“Conhecimento Coletivo.”</span> In
+<em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo
+Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Castells2004" class="csl-entry" role="listitem">
+Castells, Manuel. 2004. <span>“Informationalism, Networks, and the
+Network Society: A Theoretical Blueprint.”</span> In <em>The Network
+Society: A Cross-Cultural Perspective</em>, edited by Manuel Castells,
+3–45. Cheltenham: Edward Elgar.
+</div>
+<div id="ref-CastroMenezes2011" class="csl-entry" role="listitem">
+Castro, Alberto, and Crediné Menezes. 2011. <span>“Aprendizagem
+Colaborativa Com Suporte Computacional.”</span> In <em>Sistemas
+Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de
+Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-WeAreSocial2024" class="csl-entry" role="listitem">
+DataReportal, Meltwater and We Are Social. 2024a. <span>“Digital 2024:
+Global Overview Report.”</span> <a href="https://datareportal.com/reports/digital-2024-global-overview-report">https://datareportal.com/reports/digital-2024-global-overview-report</a>.
+</div>
+<div id="ref-DataReportalPortugal2024" class="csl-entry" role="listitem">
+———. 2024b. <span>“Digital 2024: Portugal.”</span> <a href="https://datareportal.com/reports/digital-2024-portugal">https://datareportal.com/reports/digital-2024-portugal</a>.
+</div>
+<div id="ref-DourishBellotti1992" class="csl-entry" role="listitem">
+Dourish, Paul, and Victoria Bellotti. 1992. <span>“Awareness and
+Coordination in Shared Workspaces.”</span> In <em>Proceedings of the ACM
+Conference on Computer Supported Cooperative Work (CSCW’92)</em>,
+107–14. Toronto.
+</div>
+<div id="ref-EllisEtAl1991" class="csl-entry" role="listitem">
+Ellis, Clarence A., Simon J. Gibbs, and Gail L. Rein. 1991.
+<span>“Groupware: Some Issues and Experiences.”</span>
+<em>Communications of the ACM</em> 34 (1): 39–58.
+</div>
+<div id="ref-Engestrom1987" class="csl-entry" role="listitem">
+Engeström, Yrjö. 1987. <em>Learning by Expanding: An
+Activity-Theoretical Approach to Developmental Research</em>. Helsinki:
+Orienta-Konsultit Oy.
+</div>
+<div id="ref-FilippoEtAl2011" class="csl-entry" role="listitem">
+Filippo, Denise, José Viterbo Filho, Markus Endler, and Hugo Fuks. 2011.
+<span>“Mobilidade e Ubiquidade Para Colaboração.”</span> In <em>Sistemas
+Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de
+Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Freeman1978" class="csl-entry" role="listitem">
+Freeman, Linton C. 1978. <span>“Centrality in Social Networks Conceptual
+Clarification.”</span> <em>Social Networks</em> 1 (3): 215–39. <a href="https://doi.org/10.1016/0378-8733(78)90021-7">https://doi.org/10.1016/0378-8733(78)90021-7</a>.
+</div>
+<div id="ref-FuksEtAl2011" class="csl-entry" role="listitem">
+Fuks, Hugo, Alberto Barbosa Raposo, Marco Aurélio Gerosa, Mariano
+Pimentel, Denise Filippo, and Carlos José Pereira de Lucena. 2011.
+<span>“Teorias e Modelos de Colaboração.”</span> In <em>Sistemas
+Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de
+Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-GarciaEtAl2011" class="csl-entry" role="listitem">
+Garcia, Ana Cristina Bicharra, Adriana Santarosa Vivacqua, Kate
+Cerqueira Revoredo, and Flavia Cristina Bernardini. 2011.
+<span>“Inteligência Artificial Para Sistemas Colaborativos.”</span> In
+<em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo
+Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Gerbaudo2026" class="csl-entry" role="listitem">
+Gerbaudo, Paolo. 2026. <span>“TikTok and the Algorithmic Transformation
+of Social Media Publics: From Social Networks to Social Interest
+Clusters.”</span> <em>New Media &amp; Society</em> 28 (3): 1019–36. <a href="https://doi.org/10.1177/14614448241304106">https://doi.org/10.1177/14614448241304106</a>.
+</div>
+<div id="ref-Gibson1984" class="csl-entry" role="listitem">
+Gibson, William. 1984. <em>Neuromancer</em>. New York: Ace Books.
+</div>
+<div id="ref-Gomes2004" class="csl-entry" role="listitem">
+Gomes, Wilson. 2004. <em>Transformações Da Política Na Era Da
+Comunicação de Massa</em>. São Paulo: Paulus.
+</div>
+<div id="ref-Hardin1968" class="csl-entry" role="listitem">
+Hardin, Garrett. 1968. <span>“The Tragedy of the Commons.”</span>
+<em>Science</em> 162 (3859): 1243–48.
+</div>
+<div id="ref-IbbaEtAl2015" class="csl-entry" role="listitem">
+Ibba, Simona, Matteo Orrù, Filippo Eros Pani, and Simone Porru. 2015.
+<span>“Hashtag of Instagram: From Folksonomy to Complex Network.”</span>
+In <em>Proceedings of the 7th International Joint Conference on
+Knowledge Discovery, Knowledge Engineering and Knowledge Management
+(IC3K 2015), Volume 2: KEOD</em>, 279–84. SCITEPRESS.
+</div>
+<div id="ref-Ijose2011" class="csl-entry" role="listitem">
+Ijose, Adetutu. 2011. <em>Cyber Bullying: Why and How Cyber Bullies
+Operate</em>. Smashwords.
+</div>
+<div id="ref-ISO2018Usability" class="csl-entry" role="listitem">
+International Organization for Standardization. 2018. <span>“ISO
+9241-11:2018 — Ergonomics of Human-System Interaction, Part 11:
+Usability: Definitions and Concepts.”</span> Geneva: ISO.
+</div>
+<div id="ref-ITU2023" class="csl-entry" role="listitem">
+International Telecommunication Union. 2023. <span>“Measuring Digital
+Development: Facts and Figures 2023.”</span> Geneva: ITU.
+</div>
+<div id="ref-ITU2024" class="csl-entry" role="listitem">
+———. 2024. <span>“Measuring Digital Development: Facts and Figures
+2024.”</span> Geneva: ITU.
+</div>
+<div id="ref-LombardDitton1997" class="csl-entry" role="listitem">
+Lombard, Matthew, and Theresa Ditton. 1997. <span>“At the Heart of It
+All: The Concept of Presence.”</span> <em>Journal of Computer-Mediated
+Communication</em> 3 (2).
+</div>
+<div id="ref-McCrindle2026" class="csl-entry" role="listitem">
+McCrindle Research. 2026. <span>“The Generations Defined.”</span> <a href="https://mccrindle.com.au/article/topic/demographics/the-generations-defined/" class="uri">https://mccrindle.com.au/article/topic/demographics/the-generations-defined/</a>.
+<a href="https://mccrindle.com.au/article/topic/demographics/the-generations-defined/">https://mccrindle.com.au/article/topic/demographics/the-generations-defined/</a>.
+</div>
+<div id="ref-MeiraEtAl2011a" class="csl-entry" role="listitem">
+Meira, Silvio Romero de Lemos, Ricardo Araújo Costa, Paulyne Matthews
+Jucá, and Edeilson Milhomem da Silva. 2011. <span>“Redes
+Sociais.”</span> In <em>Sistemas Colaborativos</em>, edited by Mariano
+Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Milgram1967" class="csl-entry" role="listitem">
+Milgram, Stanley. 1967. <span>“The Small World Problem.”</span>
+<em>Psychology Today</em> 1: 61–67.
+</div>
+<div id="ref-Moreno1934" class="csl-entry" role="listitem">
+Moreno, Jacob L. 1934. <em>Who Shall Survive? A New Approach to the
+Problem of Human Interrelations</em>. Washington, DC: Nervous; Mental
+Disease Publishing Co.
+</div>
+<div id="ref-MottaEtAl2011" class="csl-entry" role="listitem">
+Motta, Claudia Lage Rebello da, Ana Cristina Bicharra Garcia, Adriana
+Santarosa Vivacqua, Flávia Maria Santoro, and Jonice de Oliveira
+Sampaio. 2011. <span>“Sistemas de Recomendação.”</span> In <em>Sistemas
+Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de
+Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Nielsen1993" class="csl-entry" role="listitem">
+Nielsen, Jakob. 1993. <em>Usability Engineering</em>. Boston: Academic
+Press.
+</div>
+<div id="ref-PellegrinoEtAl2022" class="csl-entry" role="listitem">
+Pellegrino, Andrea, Alessia Stasi, and Veera Bhatiasevi. 2022.
+<span>“Research Trends in Social Media Addiction and Problematic Social
+Media Use: A Bibliometric Analysis.”</span> <em>Frontiers in
+Psychiatry</em> 13: 1017506.
+</div>
+<div id="ref-PimentelEtAl2011" class="csl-entry" role="listitem">
+Pimentel, Mariano, Marco Aurélio Gerosa, and Hugo Fuks. 2011.
+<span>“Sistemas de Comunicação Para Colaboração.”</span> In <em>Sistemas
+Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de
+Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Prates2011" class="csl-entry" role="listitem">
+Prates, Raquel Oliveira. 2011. <span>“Interação Em Sistemas
+Colaborativos.”</span> In <em>Sistemas Colaborativos</em>, edited by
+Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Preece2000" class="csl-entry" role="listitem">
+Preece, Jenny. 2000. <em>Online Communities: Designing Usability,
+Supporting Sociability</em>. Chichester: Wiley.
+</div>
+<div id="ref-Prensky2001" class="csl-entry" role="listitem">
+Prensky, Marc. 2001. <span>“Digital Natives, Digital Immigrants.”</span>
+<em>On the Horizon</em> 9 (5): 1–6.
+</div>
+<div id="ref-Raposo2011" class="csl-entry" role="listitem">
+Raposo, Alberto Barbosa. 2011. <span>“Ambientes Virtuais
+Colaborativos.”</span> In <em>Sistemas Colaborativos</em>, edited by
+Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Rooney2015" class="csl-entry" role="listitem">
+Rooney, Anne. 2015. <em>Bullying</em>. Chicago: Encyclopaedia
+Britannica, Inc.
+</div>
+<div id="ref-SantoroEtAl2011" class="csl-entry" role="listitem">
+Santoro, Flávia Maria, Hadeliane Iendrike, and Renata Mendes de Araujo.
+2011. <span>“Colaboração Em Processos de Negócio.”</span> In
+<em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo
+Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-VieiraEtAl2011" class="csl-entry" role="listitem">
+Santos, Vaninha Vieira dos, Patrícia Tedesco, and Ana Carolina Salgado.
+2011. <span>“Percepção e Contexto.”</span> In <em>Sistemas
+Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de
+Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-SouzaCS2005" class="csl-entry" role="listitem">
+Souza, Clarisse Sieckenius de. 2005. <em>The Semiotic Engineering of
+Human-Computer Interaction</em>. Cambridge, MA: MIT Press.
+</div>
+<div id="ref-SouzaEtAl2011" class="csl-entry" role="listitem">
+Souza, Cleidson R. B. de, Sabrina Marczak, and Rafael Prikladnicki.
+2011. <span>“Desenvolvimento Colaborativo de Software.”</span> In
+<em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo
+Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-VanderWal2007" class="csl-entry" role="listitem">
+Vander Wal, Thomas. 2007. <span>“Folksonomy Coinage and
+Definition.”</span> <a href="http://www.vanderwal.net/folksonomy.html">http://www.vanderwal.net/folksonomy.html</a>.
+</div>
+<div id="ref-VivacquaGarcia2011" class="csl-entry" role="listitem">
+Vivacqua, Adriana Santarosa, and Ana Cristina Bicharra Garcia. 2011.
+<span>“Ontologia de Colaboração.”</span> In <em>Sistemas
+Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de
+Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-W3CWAI2023" class="csl-entry" role="listitem">
+W3C Web Accessibility Initiative. 2023. <span>“Web Content Accessibility
+Guidelines (WCAG) 2.2.”</span> 2023. <a href="https://www.w3.org/TR/WCAG22/">https://www.w3.org/TR/WCAG22/</a>.
+</div>
+<div id="ref-Weiser1991" class="csl-entry" role="listitem">
+Weiser, Mark. 1991. <span>“The Computer for the 21st Century.”</span>
+<em>Scientific American</em> 265 (3): 94–104.
+</div>
+<div id="ref-Winograd1987" class="csl-entry" role="listitem">
+Winograd, Terry. 1987. <span>“A Language/Action Perspective on the
+Design of Cooperative Work.”</span> <em>Human-Computer Interaction</em>
+3 (1): 3–30.
+</div>
+<div id="ref-ZhuEtAl2021" class="csl-entry" role="listitem">
+Zhu, Chengyan, Shiqing Huang, Richard Evans, and Wei Zhang. 2021.
+<span>“Cyberbullying Among Adolescents and Children: A Comprehensive
+Review of the Global Situation, Risk Factors, and Preventive
+Measures.”</span> <em>Frontiers in Public Health</em> 9: 634909.
+</div>
+</div>
 
-
-<!-- -->
 
 </section>
 
@@ -509,57 +888,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -901,18 +1229,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Redes Sociais: Fundamentos e Dados Estatísticos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Sociedade em Rede e Ciberespaço"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "João Pavão"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-08-18</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt-PT</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introdução {#sec-01-intro .unnumbered}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>*Conteúdo por desenvolver.*</span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

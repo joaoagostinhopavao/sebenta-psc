@@ -23,7 +23,7 @@ Sebenta-PSC/
 ## Renderização
 
 ```bash
-# HTML interactivo
+# HTML interativo
 quarto render --to html
 
 # PDF via LuaLaTeX
@@ -39,6 +39,8 @@ Projecto criado em 2026-08-18. Capítulos ainda por escrever — ver
 `Planeamento de UUCC/PSC/Planeamento PSC.canvas` no vault Obsidian para o
 plano de distribuição de conteúdo pelas 11 aulas.
 
-## Autor
+## Autores
 
-João Pavão — UTAD, 2026
+João Pavão — UTAD, 2026 (componente teórica, autor dos capítulos)
+
+Diana Carvalho — UTAD (componente prática)

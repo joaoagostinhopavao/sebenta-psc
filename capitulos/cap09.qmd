@@ -1,10 +1,159 @@
 ---
-title: "Aprendizagem Colaborativa e Conhecimento Colectivo"
+title: "Aprendizagem Colaborativa e Conhecimento Coletivo"
 author: "João Pavão"
-date: 2026-08-18
+date: 2026-08-20
 lang: pt-PT
 ---
 
+```{=html}
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap09.jpg');">
+  <div class="hero-badge">Capítulo 9</div>
+  <h1>Aprendizagem Colaborativa e Conhecimento Coletivo</h1>
+</div>
+```
+
 ## Introdução {#sec-09-intro .unnumbered}
 
-*Conteúdo por desenvolver.*
+As primeiras tentativas de usar o computador no ensino, décadas antes
+da internet como a conhecemos hoje, viam o computador como uma espécie
+de professor automatizado: um sistema que apresentava conteúdo,
+verificava respostas e reforçava comportamentos corretos, segundo
+princípios behavioristas de instrução programada. Este capítulo trata
+de um paradigma diferente, consolidado a partir dos anos 1970 e
+reforçado pela chegada dos sistemas colaborativos: a **aprendizagem
+como processo social**, em que o conhecimento não é transmitido de um
+professor-computador para um aluno passivo, mas construído em conjunto
+por quem aprende [@CastroMenezes2011].
+
+## Aprendizagem Colaborativa {#sec-09-aprendizagem-colaborativa}
+
+Aprender é uma atividade decorrente da contínua procura de adaptação ao
+meio físico e social: aprende-se muito com os outros, resolvendo
+problemas em conjunto, obtendo explicações sobre problemas já
+resolvidos, debatendo vantagens e desvantagens de uma escolha, e
+construindo sínteses coletivas [@CastroMenezes2011]. A **aprendizagem
+colaborativa** assenta em dois princípios: os estudantes trabalham
+juntos na procura de aprender, e são responsáveis não só pela sua
+própria aprendizagem, mas também pela aprendizagem dos colegas. Estes
+princípios implicam objetivos coletivos que, quanto melhor forem
+cumpridos, maiores são as possibilidades de aprendizagem de cada
+participante [@CastroMenezes2011].
+
+## Métodos de Aprendizagem Colaborativa {#sec-09-metodos}
+
+Três métodos, com décadas de uso comprovado em contexto escolar,
+ilustram formas concretas de estruturar a aprendizagem colaborativa
+(@fig-09-metodos) [@CastroMenezes2011]:
+
+![Três métodos de aprendizagem colaborativa amplamente usados em contexto escolar, cada um estruturando de forma diferente a interdependência entre os estudantes.](../assets/images/cap09/metodos-aprendizagem.png){#fig-09-metodos}
+
+- ***Jigsaw*** ("quebra-cabeças"): a turma organiza-se em grupos, e cada
+  membro de um grupo estuda, num "grupo de especialistas", uma parte
+  diferente do tema. De seguida, cada estudante regressa ao grupo
+  original para ensinar aos colegas a parte que estudou. Como cada
+  estudante detém uma peça do "quebra-cabeças" que os outros não têm, a
+  interdependência entre eles é total: sem a contribuição de todos, o
+  grupo não reconstrói o tema completo.
+- **Controvérsia Académica**: os estudantes são organizados em pares
+  que defendem posições opostas sobre um tema, apresentam os melhores
+  argumentos possíveis para a sua posição, discutem abertamente,
+  invertem depois as posições que defendiam, e terminam construindo, em
+  conjunto, uma síntese que integra as melhores ideias de ambos os
+  lados.
+- **Investigação em Grupo**: pequenos grupos investigam, de forma
+  autónoma, um tema de interesse comum, desde a definição da pergunta
+  de investigação até à apresentação de um relatório final,
+  combinando investigação, interação social, interpretação individual e
+  motivação intrínseca.
+
+Apesar de diferentes entre si, os três métodos partilham componentes
+essenciais: objetivos de grupo que incentivam os estudantes a apoiarem-se
+uns aos outros; responsabilidade individual, que exige que cada membro
+domine os conceitos que explica aos colegas; e oportunidade igual de
+sucesso, reconhecendo cada estudante pelo seu esforço, independentemente
+das suas capacidades de partida [@CastroMenezes2011].
+
+## Conhecimento Coletivo {#sec-09-conhecimento-coletivo}
+
+Muitos dos problemas que hoje se resolvem em organizações são
+demasiado complexos e multidisciplinares para uma só pessoa. O
+**conhecimento coletivo** é a combinação dos conhecimentos individuais
+de um grupo com um objetivo comum, e é mais rico do que a simples soma
+desses conhecimentos individuais, porque a combinação de diferentes
+perspetivas revela relações que não são visíveis quando cada
+conhecimento é apresentado de forma isolada [@Borges2011].
+
+Um problema recorrente é a recuperação de conhecimento sobre eventos
+passados que não foram devidamente documentados quando ocorreram. Neste
+processo, distinguem-se três versões de um mesmo episódio
+(@fig-09-versoes) [@Borges2011]: a **versão conhecida**, guardada na
+mente de quem testemunhou o episódio, um conhecimento tácito e abstrato
+até ser transmitido; a **versão relatada**, o relato que resulta da
+transmissão desse conhecimento, oralmente ou por escrito; e a **versão
+real**, o que de facto aconteceu, um conceito também abstrato, que
+raramente é possível reconstituir por completo.
+
+![As três versões de um episódio: a versão conhecida, guardada na memória, é transmitida com perdas para a versão relatada, que se aproxima, sem nunca coincidir por completo, da versão real do que aconteceu.](../assets/images/cap09/versoes-conhecimento.png){#fig-09-versoes}
+
+Em qualquer transmissão de conhecimento, seja por socialização
+(explicação oral) seja por externalização (registo escrito), há perdas:
+ninguém reproduz tudo o que sabe ao fazer um relato, e a socialização
+sofre ainda do efeito "telefone sem fio", em que o conhecimento se
+altera a cada nova transmissão [@Borges2011].
+
+## *Group Storytelling* {#sec-09-storytelling}
+
+O ***group storytelling***, ou contagem de histórias em grupo, é uma
+técnica de recuperação coletiva do conhecimento em que várias pessoas
+contribuem, de forma síncrona ou assíncrona, para reconstituir um
+episódio, aproximando a versão relatada da versão conhecida por cada
+participante [@Borges2011]. A técnica atribui, tipicamente, quatro
+papéis aos participantes: o **contador**, que relata a sua versão dos
+factos; o **facilitador**, que procura inconsistências, contradições e
+lacunas entre os vários relatos; o **revisor**, que identifica passagens
+ambíguas ou incompletas; e o **administrador**, que organiza a dinâmica
+e convida os participantes.
+
+Como diferentes pessoas relatam o mesmo episódio de formas diferentes,
+consoante a sua própria perspetiva, os relatos individuais podem
+relacionar-se de várias formas: **confirmação**, quando um relato
+confirma outro; **inconsistência**, quando dois relatos se contradizem;
+**precedência**, quando um evento antecede outro no tempo; e ***gap***,
+quando falta informação entre dois relatos para que a história faça
+sentido. Explicitar estas relações é o que transforma um conjunto de
+relatos individuais numa verdadeira história coletiva, mais rica do que
+qualquer um dos relatos isolados.
+
+## Síntese {#sec-09-sintese}
+
+Este capítulo tratou da aprendizagem como processo social e da
+construção coletiva do conhecimento:
+
+1. A **aprendizagem colaborativa** substitui o computador-professor por
+   uma construção conjunta do conhecimento entre estudantes que se
+   responsabilizam uns pelos outros [@CastroMenezes2011]
+2. Os métodos ***Jigsaw***, **Controvérsia Académica** e **Investigação em
+   Grupo** estruturam, de formas diferentes, a interdependência entre
+   estudantes [@CastroMenezes2011]
+3. O **conhecimento coletivo** é mais rico do que a soma dos
+   conhecimentos individuais de um grupo, e distingue-se em versão
+   conhecida, relatada e real [@Borges2011]
+4. O ***group storytelling*** recupera coletivamente o conhecimento sobre
+   um episódio, através de papéis definidos e da explicitação de relações
+   entre relatos individuais [@Borges2011]
+
+## Para Refletir {#sec-09-reflexao}
+
+Pensa num trabalho de grupo em que usaste um dos três métodos
+discutidos, mesmo sem lhe saberes o nome: qual deles, e como correu a
+interdependência entre os membros do grupo?
+
+E quanto ao *group storytelling*: já reconstituíste, com colegas ou
+amigos, a história de um acontecimento partilhado, cada um a partir da
+sua própria versão? Que inconsistências ou lacunas encontraram entre os
+vossos relatos?
+
+## Referências {#sec-09-referencias .unnumbered}
+
+::: {#refs}
+:::

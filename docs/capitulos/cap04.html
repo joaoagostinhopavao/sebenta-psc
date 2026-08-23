@@ -21,41 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Electrónica</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Eletrónica</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -205,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Colectivo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Coletivo</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -217,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interacção</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interação</span></span></a>
   </div>
 </li>
     </ul>
@@ -231,6 +217,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#sec-04-intro" id="toc-sec-04-intro" class="nav-link active" data-scroll-target="#sec-04-intro">Introdução</a></li>
+  <li><a href="#sec-04-modelar" id="toc-sec-04-modelar" class="nav-link" data-scroll-target="#sec-04-modelar"><span class="header-section-number">4.1</span> Porque Modelar a Colaboração?</a></li>
+  <li><a href="#sec-04-jogos" id="toc-sec-04-jogos" class="nav-link" data-scroll-target="#sec-04-jogos"><span class="header-section-number">4.2</span> Teoria dos Jogos</a>
+  <ul class="collapse">
+  <li><a href="#sec-04-dilema" id="toc-sec-04-dilema" class="nav-link" data-scroll-target="#sec-04-dilema"><span class="header-section-number">4.2.1</span> O Dilema dos Prisioneiros</a></li>
+  <li><a href="#sec-04-tft" id="toc-sec-04-tft" class="nav-link" data-scroll-target="#sec-04-tft"><span class="header-section-number">4.2.2</span> <em>Tit-for-Tat</em>: a Evolução da Colaboração</a></li>
+  <li><a href="#sec-04-comuns" id="toc-sec-04-comuns" class="nav-link" data-scroll-target="#sec-04-comuns"><span class="header-section-number">4.2.3</span> A Tragédia dos Comuns</a></li>
+  </ul></li>
+  <li><a href="#sec-04-atividade" id="toc-sec-04-atividade" class="nav-link" data-scroll-target="#sec-04-atividade"><span class="header-section-number">4.3</span> Teoria da Atividade</a></li>
+  <li><a href="#sec-04-3c" id="toc-sec-04-3c" class="nav-link" data-scroll-target="#sec-04-3c"><span class="header-section-number">4.4</span> Modelo 3C de Colaboração</a></li>
+  <li><a href="#sec-04-ontologia" id="toc-sec-04-ontologia" class="nav-link" data-scroll-target="#sec-04-ontologia"><span class="header-section-number">4.5</span> Ontologia de Colaboração</a>
+  <ul class="collapse">
+  <li><a href="#sec-04-ontologia-grupos" id="toc-sec-04-ontologia-grupos" class="nav-link" data-scroll-target="#sec-04-ontologia-grupos"><span class="header-section-number">4.5.1</span> Formação de Grupos</a></li>
+  <li><a href="#sec-04-ontologia-comunicacao" id="toc-sec-04-ontologia-comunicacao" class="nav-link" data-scroll-target="#sec-04-ontologia-comunicacao"><span class="header-section-number">4.5.2</span> Comunicação</a></li>
+  <li><a href="#sec-04-ontologia-coordenacao" id="toc-sec-04-ontologia-coordenacao" class="nav-link" data-scroll-target="#sec-04-ontologia-coordenacao"><span class="header-section-number">4.5.3</span> Coordenação</a></li>
+  <li><a href="#sec-04-ontologia-cooperacao" id="toc-sec-04-ontologia-cooperacao" class="nav-link" data-scroll-target="#sec-04-ontologia-cooperacao"><span class="header-section-number">4.5.4</span> Cooperação</a></li>
+  <li><a href="#sec-04-ontologia-sintese" id="toc-sec-04-ontologia-sintese" class="nav-link" data-scroll-target="#sec-04-ontologia-sintese"><span class="header-section-number">4.5.5</span> Síntese da Ontologia</a></li>
+  </ul></li>
+  <li><a href="#sec-04-sintese" id="toc-sec-04-sintese" class="nav-link" data-scroll-target="#sec-04-sintese"><span class="header-section-number">4.6</span> Síntese</a></li>
+  <li><a href="#sec-04-reflexao" id="toc-sec-04-reflexao" class="nav-link" data-scroll-target="#sec-04-reflexao"><span class="header-section-number">4.7</span> Para Refletir</a></li>
+  <li><a href="#sec-04-referencias" id="toc-sec-04-referencias" class="nav-link" data-scroll-target="#sec-04-referencias">Referências</a></li>
   </ul>
 </nav>
     </div>
@@ -239,7 +245,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Teorias e Modelos de Colaboração</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Teorias e Modelos de Colaboração</span></h1>
 </div>
 
 
@@ -256,7 +262,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 de agosto de 2026</p>
+      <p class="date">20 de agosto de 2026</p>
     </div>
   </div>
   
@@ -268,12 +274,232 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap04.jpg');">
+  <div class="hero-badge">Capítulo 4</div>
+  <h1>Teorias e Modelos de Colaboração</h1>
+</div>
 <section id="sec-04-intro" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="sec-04-intro">Introdução</h2>
-<p><em>Conteúdo por desenvolver.</em></p>
+<p>Os três capítulos anteriores trataram das <strong>plataformas sociais</strong>: como a sociedade se organiza em rede, como essas redes se tornaram plataformas digitais, e como analisá-las através de métricas e de folksonomia. Este capítulo inicia um novo bloco, dedicado às <strong>plataformas colaborativas</strong>, cujo objeto de estudo já não é a rede social em si, mas o <strong>trabalho em grupo</strong> que ela pode suportar.</p>
+<p>Antes de desenhar ou avaliar qualquer sistema colaborativo, é preciso perceber que a colaboração não é um fenómeno vago ou puramente intuitivo: pode ser <strong>modelada</strong>, isto é, descrita através de teorias e modelos formais que ajudam a compreender porque as pessoas colaboram, o que a colaboração exige, e onde tende a falhar. Este capítulo apresenta quatro desses modelos: a Teoria dos Jogos, a Teoria da Atividade, o Modelo 3C de Colaboração e uma ontologia de colaboração que integra os conceitos anteriores <span class="citation" data-cites="FuksEtAl2011 VivacquaGarcia2011">(<a href="cap01.html#ref-FuksEtAl2011" role="doc-biblioref">Fuks et al. 2011</a>; <a href="cap01.html#ref-VivacquaGarcia2011" role="doc-biblioref">Vivacqua e Garcia 2011</a>)</span>.</p>
+</section>
+<section id="sec-04-modelar" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-04-modelar"><span class="header-section-number">4.1</span> Porque Modelar a Colaboração?</h2>
+<p>Um <strong>modelo científico</strong> é uma representação abstrata, lógica ou matemática, de um fenómeno, construída para explicar, analisar e prever esse fenómeno de forma sistemática <span class="citation" data-cites="FuksEtAl2011">(<a href="cap01.html#ref-FuksEtAl2011" role="doc-biblioref">Fuks et al. 2011</a>)</span>. Uma das formas mais conhecidas de definir um modelo é através de uma fórmula matemática, mas também podem ser modelos gráficos, diagramas ou esquemas, como os que se seguem. Modelar a colaboração permite: em vez de decidir por intuição como apoiar o trabalho de um grupo, é possível analisar <strong>que tipo</strong> de trabalho está a ser feito, comparar situações diferentes com os mesmos conceitos, e escolher ou desenhar sistemas colaborativos com base nessa análise.</p>
+<p>Os modelos apresentados neste capítulo respondem a perguntas diferentes, mas complementares:</p>
+<ul>
+<li>A <strong>Teoria dos Jogos</strong> explica porque é racional colaborar, ou não colaborar, quando o resultado de cada participante depende também das decisões dos outros.</li>
+<li>A <strong>Teoria da Atividade</strong> explica como um ser humano, individualmente ou em grupo, realiza uma atividade mediada por ferramentas, numa comunidade regida por regras.</li>
+<li>O <strong>Modelo 3C</strong> decompõe qualquer trabalho colaborativo em três dimensões, comunicação, coordenação e cooperação, que qualquer sistema de suporte à colaboração tem de contemplar.</li>
+<li>A <strong>Ontologia de Colaboração</strong> integra estes conceitos numa rede de termos comuns, útil para quem projeta sistemas colaborativos.</li>
+</ul>
+</section>
+<section id="sec-04-jogos" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-04-jogos"><span class="header-section-number">4.2</span> Teoria dos Jogos</h2>
+<p>A <strong>Teoria dos Jogos</strong> estuda cenários de tomada de decisão estratégica, em que o resultado final de cada participante depende não só da sua própria decisão, mas também das decisões dos restantes participantes. Cada jogador escolhe a sua estratégia depois de avaliar a situação dos adversários e de antecipar as estratégias que estes poderão adotar <span class="citation" data-cites="FuksEtAl2011">(<a href="cap01.html#ref-FuksEtAl2011" role="doc-biblioref">Fuks et al. 2011</a>)</span>. A teoria tem origem na matemática e na economia, e os seus primeiros estudos remontam ao século XVIII, mas foi sobretudo a partir da publicação de <em>The Theory of Games and Economic Behavior</em>, por John von Neumann e Oscar Morgenstern em 1944, e da noção de equilíbrio proposta por John Nash na década de 1950, que se consolidou como área autónoma.</p>
+<p>Um conceito central para classificar estes cenários é a soma dos ganhos de todos os jogadores. Num <strong>jogo de soma nula</strong> (<em>zero-sum game</em>), o ganho de um jogador corresponde exatamente à perda dos restantes, a soma total mantém-se sempre igual a zero: é o caso de um jogo de xadrez, ou de uma partida de póker. Num <strong>jogo de soma não nula</strong> (<em>non-zero-sum game</em>), o resultado global pode variar consoante as decisões tomadas: é possível que todos os jogadores ganhem, ou percam, em conjunto. Como se vê a seguir, o Dilema dos Prisioneiros é um exemplo clássico de jogo de soma não nula.</p>
+<section id="sec-04-dilema" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="sec-04-dilema"><span class="header-section-number">4.2.1</span> O Dilema dos Prisioneiros</h3>
+<p>O exemplo mais conhecido da Teoria dos Jogos aplicado à colaboração é o <strong>Dilema dos Prisioneiros</strong>, formalizado pelo matemático Albert W. Tucker. Dois suspeitos são detidos pela polícia e interrogados em salas separadas, sem poderem comunicar entre si. Não há provas suficientes para os condenar por um crime maior, apenas por uma acusação menor, a menos que um deles confesse. A cada um é proposto o mesmo acordo:</p>
+<ul>
+<li>Se <strong>ambos ficarem em silêncio</strong>, cada um cumpre 6 meses de prisão.</li>
+<li>Se <strong>um confessar e o outro ficar em silêncio</strong>, quem confessa fica livre e quem se cala cumpre 10 anos.</li>
+<li>Se <strong>ambos confessarem</strong>, cada um cumpre 6 anos.</li>
+</ul>
+<div id="fig-04-dilema-cena" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-04-dilema-cena-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap04/dilema-prisioneiro-cena.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-04-dilema-cena-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.1: Os dois suspeitos, em celas separadas e sem poderem comunicar entre si, ponderam cada um se deve confessar ou ficar em silêncio.
+</figcaption>
+</figure>
+</div>
+<p>Estas quatro situações formam a <strong>matriz de ganhos</strong> do jogo (<a href="#fig-04-dilema" class="quarto-xref">Figura&nbsp;<span>4.2</span></a>). Analisada individualmente, a melhor estratégia para qualquer um dos suspeitos é confessar: se o cúmplice ficar em silêncio, confessar liberta-o de imediato; se o cúmplice também confessar, ainda assim confessar dá uma pena menor do que ficar calado sozinho. O paradoxo é que, se <strong>ambos</strong> raciocinarem desta forma individualmente racional, ambos confessam e cumprem 6 anos, um resultado pior para os dois do que se tivessem colaborado e ficado ambos em silêncio, cumprindo apenas 6 meses <span class="citation" data-cites="FuksEtAl2011">(<a href="cap01.html#ref-FuksEtAl2011" role="doc-biblioref">Fuks et al. 2011</a>)</span>.</p>
+<div id="fig-04-dilema" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-04-dilema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap04/dilema-prisioneiro.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-04-dilema-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.2: A matriz de ganhos do Dilema dos Prisioneiros: o resultado de cada suspeito depende da sua própria decisão e da decisão do cúmplice.
+</figcaption>
+</figure>
+</div>
+<p>O Dilema dos Prisioneiros mostra como a Teoria dos Jogos apoia a compreensão de situações reais de colaboração: esclarece conceitos como autointeresse, matriz de ganhos e jogos de soma não nula. Aplica-se a cenários tão diversos como a negociação entre empresas concorrentes, a gestão de um recurso partilhado por vários utilizadores, ou a decisão de contribuir, ou não, para um projeto coletivo.</p>
+</section>
+<section id="sec-04-tft" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="sec-04-tft"><span class="header-section-number">4.2.2</span> <em>Tit-for-Tat</em>: a Evolução da Colaboração</h3>
+<p>Se, isoladamente, o Dilema dos Prisioneiros sugere que confessar, traindo o cúmplice, é sempre a estratégia racional, a situação muda quando o mesmo jogo se repete várias vezes entre os mesmos participantes. Na década de 1970, o cientista político Robert Axelrod organizou competições em que investigadores submetiam estratégias para versões repetidas do Dilema dos Prisioneiros, competindo umas contra as outras ao longo de muitas rondas. A estratégia vencedora, batizada <strong><em>tit-for-tat</em></strong> (“olho por olho”), foi proposta pelo matemático Anatol Rapoport e segue apenas três regras <span class="citation" data-cites="Axelrod1984">(<a href="cap01.html#ref-Axelrod1984" role="doc-biblioref">Axelrod 1984</a>)</span>:</p>
+<ol type="1">
+<li>Contribui primeiro: nunca sejas o primeiro a trair.</li>
+<li>Se fores traído, retalia na ronda seguinte.</li>
+<li>Depois de retaliar, está disposto a perdoar e a voltar a colaborar.</li>
+</ol>
+<p>Numa versão repetida do jogo, colaborar deixa de ser irracional: a expectativa de voltar a encontrar o mesmo adversário faz com que a traição tenha um custo futuro, a retaliação do outro jogador. O <em>tit-for-tat</em> mostrou-se, em repetidas simulações, mais eficaz a longo prazo do que estratégias puramente egoístas, e é usado até hoje como explicação de como a colaboração pode emergir e manter-se num cenário competitivo, sem qualquer autoridade central a impor cooperação <span class="citation" data-cites="Axelrod1984">(<a href="cap01.html#ref-Axelrod1984" role="doc-biblioref">Axelrod 1984</a>)</span>. A mesma lógica ajuda a entender fenómenos tão distintos como acordos comerciais informais entre empresas ou a reciprocidade observada no comportamento de vários animais sociais.</p>
+</section>
+<section id="sec-04-comuns" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="sec-04-comuns"><span class="header-section-number">4.2.3</span> A Tragédia dos Comuns</h3>
+<p>Nem todos os jogos relacionados com colaboração opõem apenas dois jogadores. A <strong>Tragédia dos Comuns</strong> (<em>tragedy of the commons</em>), descrita pelo ecologista Garrett Hardin em 1968 <span class="citation" data-cites="Hardin1968">(<a href="cap01.html#ref-Hardin1968" role="doc-biblioref">Hardin 1968</a>)</span>, ilustra o que acontece quando vários participantes partilham um recurso comum e limitado.</p>
+<p>Imagine-se um terreno de pastagem partilhado por vários pastores, cada um com o seu próprio rebanho. Para cada pastor, individualmente, acrescentar mais uma ovelha ao seu rebanho é sempre vantajoso: o lucro dessa ovelha extra é inteiramente seu, enquanto o custo do desgaste da pastagem é repartido por todos os pastores que a partilham. Como este raciocínio é válido para qualquer pastor, todos tendem a acrescentar o máximo de animais que conseguirem. Chegado a determinado ponto, porém, o número total de animais ultrapassa a capacidade da pastagem para se regenerar: o pasto deixa de crescer, deixa de alimentar qualquer animal, e todos os pastores saem a perder, incluindo aqueles que tinham sido mais comedidos.</p>
+<p>A Tragédia dos Comuns mostra que, quando o ganho de uma decisão individual é privado mas o custo é partilhado por todo o grupo, a soma das decisões racionais de cada participante pode destruir o próprio recurso de que todos dependem. Por este motivo, a colaboração sustentável em torno de um recurso partilhado raramente sobrevive apenas com base na boa vontade: exige regras explícitas, aceites por todo o grupo, e mecanismos que penalizem quem as viole, desde a reprovação social até sanções formais, como multas ou a exclusão do grupo. É precisamente este papel das regras enquanto elemento da colaboração que a Teoria da Atividade, discutida de seguida, formaliza.</p>
+</section>
+</section>
+<section id="sec-04-atividade" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-04-atividade"><span class="header-section-number">4.3</span> Teoria da Atividade</h2>
+<p>Enquanto a Teoria dos Jogos se concentra na decisão estratégica, a <strong>Teoria da Atividade</strong> explica como os seres humanos realizam atividades em situações do quotidiano, individualmente e em sociedade, sendo particularmente útil para compreender a colaboração mediada por tecnologia <span class="citation" data-cites="FuksEtAl2011">(<a href="cap01.html#ref-FuksEtAl2011" role="doc-biblioref">Fuks et al. 2011</a>)</span>.</p>
+<p>Nesta teoria, a <strong>atividade</strong> é a unidade mínima de significado para compreender as ações de um <strong>sujeito</strong>, uma pessoa ou um grupo, que age sobre um <strong>objeto</strong>, algo concreto como um documento, ou abstrato como uma decisão a tomar, com o fim de alcançar um objetivo. Um conceito central da teoria é que essa ação nunca é direta: é sempre <strong>mediada por artefactos</strong>, ferramentas físicas, como um computador, ou cognitivas, como uma linguagem ou uma notação matemática. O artefacto atua sobre o objeto, mas também tem uma ação reversa sobre o próprio sujeito, molda a forma como este pensa e resolve problemas <span class="citation" data-cites="FuksEtAl2011">(<a href="cap01.html#ref-FuksEtAl2011" role="doc-biblioref">Fuks et al. 2011</a>)</span>.</p>
+<p>Numa perspetiva coletiva, o sujeito não age isolado: está inserido numa <strong>comunidade</strong>. Essa dimensão coletiva acrescenta dois novos elementos de mediação: a <strong>divisão de trabalho</strong>, que organiza como o objeto é transformado em resultado entre os vários sujeitos da comunidade, e as <strong>regras</strong>, normas implícitas ou explícitas, convenções e relações sociais estabelecidas na comunidade. O modelo completo, adaptado de Yrjö Engeström <span class="citation" data-cites="Engestrom1987">(<a href="cap01.html#ref-Engestrom1987" role="doc-biblioref">Engeström 1987</a>)</span>, é representado na <a href="#fig-04-atividade" class="quarto-xref">Figura&nbsp;<span>4.3</span></a>.</p>
+<div id="fig-04-atividade" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-04-atividade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap04/teoria-atividade.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-04-atividade-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.3: Modelo de Atividade: um sujeito age sobre um objeto para alcançar um resultado, sempre mediado por artefactos; na dimensão coletiva, essa ação é também mediada pela divisão de trabalho e pelas regras da comunidade.
+</figcaption>
+</figure>
+</div>
+<p>Um exemplo aplicado à sala de aula ilustra o modelo: o sujeito é um estudante ou um grupo de estudantes; o objeto é o problema ou o trabalho a realizar; o artefacto é o sistema computacional, o computador, ou mesmo a linguagem usada para comunicar; a comunidade é a turma; a divisão de trabalho é a forma como as tarefas do trabalho de grupo são repartidas; e as regras são, por exemplo, os critérios de avaliação definidos pelo docente. Ao introduzir um novo artefacto, como uma plataforma colaborativa, muda-se a forma como a atividade é realizada, o que pode criar novos problemas mas também novas possibilidades, e é exatamente aqui que o desenho de sistemas colaborativos intervém.</p>
+</section>
+<section id="sec-04-3c" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-04-3c"><span class="header-section-number">4.4</span> Modelo 3C de Colaboração</h2>
+<p>O <strong>Modelo 3C de Colaboração</strong> analisa qualquer trabalho em grupo em três dimensões: <strong>comunicação</strong>, <strong>coordenação</strong> e <strong>cooperação</strong>. Tem origem numa classificação proposta por Ellis, Gibbs e Rein em 1991 para os sistemas de suporte ao trabalho em grupo <span class="citation" data-cites="EllisEtAl1991">(<a href="cap01.html#ref-EllisEtAl1991" role="doc-biblioref">Ellis, Gibbs, e Rein 1991</a>)</span>, mais tarde formalizada como modelo próprio:</p>
+<ul>
+<li><strong>Comunicação</strong>: a troca de mensagens entre pessoas, através da qual se negoceia e se assumem compromissos.</li>
+<li><strong>Coordenação</strong>: a gestão de pessoas, atividades e recursos, para que o trabalho de vários participantes se articule sem conflitos nem desperdício de esforço.</li>
+<li><strong>Cooperação</strong>: a atuação conjunta no espaço de trabalho partilhado, para a produção efetiva de objetos ou informação.</li>
+</ul>
+<p>Estas três dimensões não são independentes: inter-relacionam-se para que a colaboração aconteça (<a href="#fig-04-3c" class="quarto-xref">Figura&nbsp;<span>4.4</span></a>). Ao comunicar, os participantes tomam decisões que exigem coordenação; ao coordenar, reorganizam tarefas que podem exigir nova comunicação; e a cooperação efetiva no espaço partilhado gera informação que realimenta tanto a coordenação como a comunicação.</p>
+<div id="fig-04-3c" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-04-3c-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap04/modelo-3c.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-04-3c-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.4: O Modelo 3C de Colaboração: comunicação, coordenação e cooperação inter-relacionam-se para que o trabalho em grupo aconteça.
+</figcaption>
+</figure>
+</div>
+<p>A colaboração não é a única forma de organizar o trabalho em grupo. Um modelo alternativo, típico de organizações militares e da linha de montagem industrial clássica, é o de <strong>Comando e Controlo</strong> (C2): uma autoridade central decide o que deve ser feito e define previamente todas as tarefas, substituindo a coordenação distribuída pela supervisão direta, e eliminando praticamente a necessidade de comunicação e negociação entre quem executa o trabalho. Para que um trabalho em grupo seja verdadeiramente caracterizado como colaboração, e não apenas como execução coordenada de ordens, é preciso que ocorram, de facto, comunicação, coordenação <strong>e</strong> cooperação, tal como representado no Modelo 3C.</p>
+</section>
+<section id="sec-04-ontologia" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="sec-04-ontologia"><span class="header-section-number">4.5</span> Ontologia de Colaboração</h2>
+<p>Os três modelos anteriores explicam aspetos distintos da colaboração, mas usam, por vezes, termos e níveis de detalhe diferentes. Uma <strong>ontologia</strong> é a descrição de um domínio, negociada por uma comunidade, para um determinado fim: cria uma base terminológica comum, o que facilita a comunicação entre quem trabalha na área e permite que sistemas computacionais produzam informação de forma inteligível sobre esse domínio <span class="citation" data-cites="VivacquaGarcia2011">(<a href="cap01.html#ref-VivacquaGarcia2011" role="doc-biblioref">Vivacqua e Garcia 2011</a>)</span>.</p>
+<p>Partindo do mesmo modelo de Ellis e colaboradores usado no Modelo 3C <span class="citation" data-cites="EllisEtAl1991">(<a href="cap01.html#ref-EllisEtAl1991" role="doc-biblioref">Ellis, Gibbs, e Rein 1991</a>)</span>, a ontologia de colaboração organiza-se em quatro partes, cada uma com um conceito central <span class="citation" data-cites="VivacquaGarcia2011">(<a href="cap01.html#ref-VivacquaGarcia2011" role="doc-biblioref">Vivacqua e Garcia 2011</a>)</span>: a <strong>formação de grupos</strong>, a <strong>comunicação</strong>, a <strong>coordenação</strong> e a <strong>cooperação</strong>.</p>
+<section id="sec-04-ontologia-grupos" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="sec-04-ontologia-grupos"><span class="header-section-number">4.5.1</span> Formação de Grupos</h3>
+<p>O elemento central desta parte é o <strong>participante</strong>. Um participante assume tarefas, é parte de um grupo e participa nas negociações que definem os objetivos comuns; para tal, requer duas coisas essenciais: <strong>confiança</strong>, a crença partilhada de que se pode contar com os outros participantes, e <strong>motivação</strong>, sem a qual dificilmente se compromete com uma proposta. O grupo, por sua vez, realiza uma atividade que gera um produto, e esse produto é ele próprio um tipo de objetivo (<a href="#fig-04-ontologia-grupos" class="quarto-xref">Figura&nbsp;<span>4.5</span></a>).</p>
+<div id="fig-04-ontologia-grupos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-04-ontologia-grupos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap04/ontologia-grupos.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-04-ontologia-grupos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.5: Ontologia sobre formação de grupos: o participante como elemento central, com os seus atributos (crenças, confiança, competência, motivação) e as suas relações com o grupo, os objetivos e as tarefas.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-04-ontologia-comunicacao" class="level3" data-number="4.5.2">
+<h3 data-number="4.5.2" class="anchored" data-anchor-id="sec-04-ontologia-comunicacao"><span class="header-section-number">4.5.2</span> Comunicação</h3>
+<p>O elemento central é a <strong>mensagem</strong>. Um emissor codifica e envia uma mensagem, que segue um protocolo de comunicação partilhado com o recetor, e que o recetor recebe e interpreta; ambos partilham ainda um senso comum que torna a interpretação possível. A mensagem tem também três atributos que a condicionam: a <strong>forma</strong> (linguística, simbólica, corporal, entre outras), o <strong>meio de transmissão</strong> (desde o presencial ao sistema computacional) e o <strong>síncronismo</strong> (síncrona ou assíncrona). É através da mensagem que a negociação se realiza, e é dela que resultam os compromissos assumidos pelos participantes (<a href="#fig-04-ontologia-comunicacao" class="quarto-xref">Figura&nbsp;<span>4.6</span></a>).</p>
+<div id="fig-04-ontologia-comunicacao" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-04-ontologia-comunicacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap04/ontologia-comunicacao.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-04-ontologia-comunicacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.6: Ontologia sobre comunicação: a mensagem como elemento central, codificada pelo emissor e interpretada pelo recetor, condicionada pela forma, pelo meio de transmissão e pelo síncronismo.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-04-ontologia-coordenacao" class="level3" data-number="4.5.3">
+<h3 data-number="4.5.3" class="anchored" data-anchor-id="sec-04-ontologia-coordenacao"><span class="header-section-number">4.5.3</span> Coordenação</h3>
+<p>O elemento central é o <strong>plano de trabalho</strong>, apoiado pelo sistema colaborativo e estabelecido pela negociação. O plano de trabalho define os papéis de cada participante e o acoplamento entre atividades, define ainda políticas, prazos e a alocação de recursos, e organiza a atividade em tarefas concretas. O acompanhamento controla o cumprimento dos prazos e o estado de completude de cada tarefa, que por sua vez requer os recursos necessários à sua execução (<a href="#fig-04-ontologia-coordenacao" class="quarto-xref">Figura&nbsp;<span>4.7</span></a>).</p>
+<div id="fig-04-ontologia-coordenacao" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-04-ontologia-coordenacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap04/ontologia-coordenacao.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-04-ontologia-coordenacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.7: Ontologia sobre coordenação: o plano de trabalho como elemento central, definindo papéis, políticas, prazos e tarefas, e apoiado pelo acompanhamento do seu cumprimento.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-04-ontologia-cooperacao" class="level3" data-number="4.5.4">
+<h3 data-number="4.5.4" class="anchored" data-anchor-id="sec-04-ontologia-cooperacao"><span class="header-section-number">4.5.4</span> Cooperação</h3>
+<p>O elemento central é a <strong>atividade</strong>, realizada por um grupo com uma determinada distribuição geográfica (colocalizada ou remota) e um determinado acoplamento entre participantes. A atividade é realizada num espaço de trabalho partilhado, e gera um produto, composto por artefactos concretos. Essa produção decompõe-se em tarefas, que requerem recursos e que podem ser individuais ou partilhadas por vários participantes em simultâneo (<a href="#fig-04-ontologia-cooperacao" class="quarto-xref">Figura&nbsp;<span>4.8</span></a>).</p>
+<div id="fig-04-ontologia-cooperacao" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-04-ontologia-cooperacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap04/ontologia-cooperacao.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-04-ontologia-cooperacao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.8: Ontologia sobre cooperação: a atividade como elemento central, realizada num espaço partilhado e produtora de artefactos através de tarefas que requerem recursos.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-04-ontologia-sintese" class="level3" data-number="4.5.5">
+<h3 data-number="4.5.5" class="anchored" data-anchor-id="sec-04-ontologia-sintese"><span class="header-section-number">4.5.5</span> Síntese da Ontologia</h3>
+<p>A <a href="#fig-04-ontologia" class="quarto-xref">Figura&nbsp;<span>4.9</span></a> sintetiza estas quatro partes: a colaboração acontece quando participantes motivados se agrupam em torno de um objetivo comum, comunicam através de mensagens para negociar tarefas e assumir compromissos, coordenam o trabalho através de um plano que organiza essas tarefas, e cooperam, produzindo artefactos num espaço partilhado. Sem qualquer um destes quatro elementos, dificilmente há colaboração <span class="citation" data-cites="VivacquaGarcia2011">(<a href="cap01.html#ref-VivacquaGarcia2011" role="doc-biblioref">Vivacqua e Garcia 2011</a>)</span>.</p>
+<div id="fig-04-ontologia" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-04-ontologia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap04/ontologia-colaboracao.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-04-ontologia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4.9: Síntese da ontologia de colaboração: os quatro blocos, formação de grupos, comunicação, coordenação e cooperação, e o respetivo conceito central de cada um.
+</figcaption>
+</figure>
+</div>
+<p>Uma ontologia de colaboração é útil sobretudo para quem projeta sistemas colaborativos: ajuda a verificar que aspetos importantes do trabalho em grupo, como a confiança entre participantes ou a existência de um plano de trabalho explícito, não estão a ser esquecidos no desenho de um novo sistema.</p>
+</section>
+</section>
+<section id="sec-04-sintese" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="sec-04-sintese"><span class="header-section-number">4.6</span> Síntese</h2>
+<p>Este capítulo apresentou quatro modelos que fundamentam o estudo da colaboração:</p>
+<ol type="1">
+<li>A <strong>Teoria dos Jogos</strong> distingue jogos de soma nula, em que o ganho de um implica a perda equivalente de outro, de jogos de soma não nula, em que o resultado global pode variar; o <strong>Dilema dos Prisioneiros</strong> é um exemplo do segundo tipo, e mostra que a decisão individualmente racional pode ser coletivamente pior do que colaborar <span class="citation" data-cites="FuksEtAl2011">(<a href="cap01.html#ref-FuksEtAl2011" role="doc-biblioref">Fuks et al. 2011</a>)</span></li>
+<li>Em versões repetidas do jogo, a estratégia <em>tit-for-tat</em> mostra como a colaboração pode emergir e manter-se sem autoridade central <span class="citation" data-cites="Axelrod1984">(<a href="cap01.html#ref-Axelrod1984" role="doc-biblioref">Axelrod 1984</a>)</span></li>
+<li>A <strong>Tragédia dos Comuns</strong> mostra que a soma de decisões individualmente racionais pode destruir um recurso partilhado, justificando a necessidade de regras e penalizações na colaboração <span class="citation" data-cites="Hardin1968">(<a href="cap01.html#ref-Hardin1968" role="doc-biblioref">Hardin 1968</a>)</span></li>
+<li>A <strong>Teoria da Atividade</strong> descreve como um sujeito age sobre um objeto, sempre mediado por artefactos e, na dimensão coletiva, também pela divisão de trabalho e pelas regras da comunidade <span class="citation" data-cites="Engestrom1987">(<a href="cap01.html#ref-Engestrom1987" role="doc-biblioref">Engeström 1987</a>)</span></li>
+<li>O <strong>Modelo 3C</strong> decompõe a colaboração em comunicação, coordenação e cooperação, distinguindo-a do modelo de Comando e Controlo <span class="citation" data-cites="EllisEtAl1991">(<a href="cap01.html#ref-EllisEtAl1991" role="doc-biblioref">Ellis, Gibbs, e Rein 1991</a>)</span></li>
+<li>A <strong>Ontologia de Colaboração</strong> integra estes conceitos, atribuindo um elemento central a cada uma das quatro partes: participante, mensagem, plano de trabalho e atividade <span class="citation" data-cites="VivacquaGarcia2011">(<a href="cap01.html#ref-VivacquaGarcia2011" role="doc-biblioref">Vivacqua e Garcia 2011</a>)</span></li>
+</ol>
+</section>
+<section id="sec-04-reflexao" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="sec-04-reflexao"><span class="header-section-number">4.7</span> Para Refletir</h2>
+<p>Pensa num trabalho de grupo em que participaste recentemente: consegues identificar, nesse trabalho, os três Cs, comunicação, coordenação e cooperação? Havia algum deles claramente mais fraco do que os outros, e que problemas concretos é que isso causou?</p>
+<p>E quanto ao <em>tit-for-tat</em>: consegues pensar nalguma relação, de trabalho, de amizade ou entre organizações, em que a colaboração se mantém precisamente porque se espera voltar a interagir com a outra parte no futuro? Consegues também pensar num exemplo de Tragédia dos Comuns que tenhas observado, e que regras ou penalizações, formais ou informais, existem, ou deveriam existir, para o evitar?</p>
+</section>
+<section id="sec-04-referencias" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-04-referencias">Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Axelrod1984" class="csl-entry" role="listitem">
+Axelrod, Robert. 1984. <em>The Evolution of Cooperation</em>. New York: Basic Books.
+</div>
+<div id="ref-EllisEtAl1991" class="csl-entry" role="listitem">
+Ellis, Clarence A., Simon J. Gibbs, e Gail L. Rein. 1991. <span>«Groupware: Some Issues and Experiences»</span>. <em>Communications of the ACM</em> 34 (1): 39–58.
+</div>
+<div id="ref-Engestrom1987" class="csl-entry" role="listitem">
+Engeström, Yrjö. 1987. <em>Learning by Expanding: An Activity-Theoretical Approach to Developmental Research</em>. Helsinki: Orienta-Konsultit Oy.
+</div>
+<div id="ref-FuksEtAl2011" class="csl-entry" role="listitem">
+Fuks, Hugo, Alberto Barbosa Raposo, Marco Aurélio Gerosa, Mariano Pimentel, Denise Filippo, e Carlos José Pereira de Lucena. 2011. <span>«Teorias e Modelos de Colaboração»</span>. Em <em>Sistemas Colaborativos</em>, editado por Mariano Pimentel e Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Hardin1968" class="csl-entry" role="listitem">
+Hardin, Garrett. 1968. <span>«The Tragedy of the Commons»</span>. <em>Science</em> 162 (3859): 1243–48.
+</div>
+<div id="ref-VivacquaGarcia2011" class="csl-entry" role="listitem">
+Vivacqua, Adriana Santarosa, e Ana Cristina Bicharra Garcia. 2011. <span>«Ontologia de Colaboração»</span>. Em <em>Sistemas Colaborativos</em>, editado por Mariano Pimentel e Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+</div>
 
-
-<!-- -->
 
 </section>
 
@@ -509,57 +735,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -901,18 +1076,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Sistemas de Comunicação para Colaboração</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Teorias e Modelos de Colaboração"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "João Pavão"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-08-18</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt-PT</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introdução {#sec-04-intro .unnumbered}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>*Conteúdo por desenvolver.*</span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -21,41 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Electrónica</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Eletrónica</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -205,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Colectivo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Coletivo</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -217,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interacção</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interação</span></span></a>
   </div>
 </li>
     </ul>
@@ -231,6 +217,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#sec-06-intro" id="toc-sec-06-intro" class="nav-link active" data-scroll-target="#sec-06-intro">Introdução</a></li>
+  <li><a href="#sec-06-cve" id="toc-sec-06-cve" class="nav-link" data-scroll-target="#sec-06-cve"><span class="header-section-number">6.1</span> O que é um Ambiente Virtual Colaborativo?</a></li>
+  <li><a href="#sec-06-elementos" id="toc-sec-06-elementos" class="nav-link" data-scroll-target="#sec-06-elementos"><span class="header-section-number">6.2</span> Elementos de um CVE</a></li>
+  <li><a href="#sec-06-imersao" id="toc-sec-06-imersao" class="nav-link" data-scroll-target="#sec-06-imersao"><span class="header-section-number">6.3</span> Imersão</a></li>
+  <li><a href="#sec-06-historia" id="toc-sec-06-historia" class="nav-link" data-scroll-target="#sec-06-historia"><span class="header-section-number">6.4</span> Breve História dos CVEs</a></li>
+  <li><a href="#sec-06-identidade" id="toc-sec-06-identidade" class="nav-link" data-scroll-target="#sec-06-identidade"><span class="header-section-number">6.5</span> Identidade, Interação e Presença</a></li>
+  <li><a href="#sec-06-comunidades" id="toc-sec-06-comunidades" class="nav-link" data-scroll-target="#sec-06-comunidades"><span class="header-section-number">6.6</span> Comunidades Virtuais</a></li>
+  <li><a href="#sec-06-sintese" id="toc-sec-06-sintese" class="nav-link" data-scroll-target="#sec-06-sintese"><span class="header-section-number">6.7</span> Síntese</a></li>
+  <li><a href="#sec-06-reflexao" id="toc-sec-06-reflexao" class="nav-link" data-scroll-target="#sec-06-reflexao"><span class="header-section-number">6.8</span> Para Refletir</a></li>
+  <li><a href="#sec-06-referencias" id="toc-sec-06-referencias" class="nav-link" data-scroll-target="#sec-06-referencias">Referências</a></li>
   </ul>
 </nav>
     </div>
@@ -239,7 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ambientes Virtuais Colaborativos</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Ambientes Virtuais Colaborativos</span></h1>
 </div>
 
 
@@ -256,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 de agosto de 2026</p>
+      <p class="date">20 de agosto de 2026</p>
     </div>
   </div>
   
@@ -268,12 +263,117 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap06.jpg');">
+  <div class="hero-badge">Capítulo 6</div>
+  <h1>Ambientes Virtuais Colaborativos</h1>
+</div>
 <section id="sec-06-intro" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="sec-06-intro">Introdução</h2>
-<p><em>Conteúdo por desenvolver.</em></p>
+<p>Os dois capítulos anteriores trataram da colaboração mediada por texto e por voz, os sistemas de comunicação (<a href="cap05.html#sec-05-cmc" class="quarto-xref"><span>Secção 5.1</span></a>) e os sistemas que apoiam a coordenação e a cooperação (<a href="cap05.html#sec-05-coord-coop" class="quarto-xref"><span>Secção 5.6</span></a>). Este capítulo explora uma forma diferente de mediar a colaboração: em vez de um canal por onde passam mensagens, o computador passa a simular um <strong>mundo partilhado</strong>, dentro do qual os participantes se encontram, navegam e interagem. É essa mudança de metáfora, de canal de comunicação para espaço partilhado, que distingue os Ambientes Virtuais Colaborativos.</p>
+</section>
+<section id="sec-06-cve" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="sec-06-cve"><span class="header-section-number">6.1</span> O que é um Ambiente Virtual Colaborativo?</h2>
+<p>Um <strong>Ambiente Virtual Colaborativo</strong>, ou <strong>CVE</strong> (<em>Collaborative Virtual Environment</em>), é um sistema de realidade virtual distribuído que simula graficamente, em tempo real, um mundo real ou imaginário, onde utilizadores, representados pelos seus <strong>avatares</strong>, estão simultaneamente presentes, navegam e interagem com objetos e com outros utilizadores <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span>.</p>
+<p>O conceito de CVE começou a popularizar-se junto com o termo <strong>ciberespaço</strong>, cunhado por William Gibson no romance <em>Neuromancer</em> <span class="citation" data-cites="Gibson1984">(<a href="cap01.html#ref-Gibson1984" role="doc-biblioref">Gibson 1984</a>)</span> e já discutido no Cap.1 (<a href="cap01.html#sec-01-sociedade-rede-castells" class="quarto-xref"><span>Secção 1.2.2</span></a>). Embora a origem seja a ficção científica, e a imersão física mostrada em filmes como <em>Matrix</em> e <em>Avatar</em> continue distante da tecnologia real, o conceito popularizado por Gibson influenciou de forma significativa tanto os investigadores como os programadores de sistemas de realidade virtual.</p>
+</section>
+<section id="sec-06-elementos" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="sec-06-elementos"><span class="header-section-number">6.2</span> Elementos de um CVE</h2>
+<p>Três elementos são comuns a qualquer CVE, independentemente do nome que a literatura lhe dê, <em>Networked Virtual Environment</em>, <em>Metaverse</em>, entre outros (<a href="#fig-06-elementos" class="quarto-xref">Figura&nbsp;<span>6.1</span></a>):</p>
+<ul>
+<li><strong>Mundo virtual</strong>: o elemento fundamental de um CVE, um espaço imaginário composto por uma descrição de objetos e pelas regras que os governam. A relação entre a descrição do mundo e a sua execução computacional é comparável à relação entre o guião de uma peça de teatro e a sua encenação em palco, com a diferença de que, num CVE, os utilizadores são também atores.</li>
+<li><strong>Avatares</strong>: os objetos virtuais usados para representar cada participante. Cada mundo virtual é diferente, e para atuar nele é preciso incorporar um avatar próprio desse mundo.</li>
+<li><strong>Interatividade</strong>: a capacidade de o mundo virtual responder às ações dos utilizadores, seja quando estes navegam e modificam a sua posição, seja quando selecionam e manipulam objetos. É a interatividade que distingue estar num CVE de assistir a um filme de animação.</li>
+</ul>
+<div id="fig-06-elementos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-06-elementos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap06/elementos-cve.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-06-elementos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.1: Os três elementos de um CVE: o mundo virtual é o espaço partilhado, habitado por avatares, através de uma interação contínua.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-06-imersao" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="sec-06-imersao"><span class="header-section-number">6.3</span> Imersão</h2>
+<p>A soma de uma representação gráfica adequada do mundo virtual com uma boa interatividade contribui para o sentimento de <strong>imersão</strong>, a sensação de “estar lá” dentro do mundo virtual. Distinguem-se dois tipos de imersão <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span>:</p>
+<ul>
+<li><strong>Imersão mental</strong>: o objetivo dos criadores de conteúdo desde muito antes dos CVEs existirem, o engajamento e o envolvimento do consumidor com esse conteúdo. A imersão mental pode ocorrer, por exemplo, ao ler-se um bom livro, sem qualquer representação física.</li>
+<li><strong>Imersão física</strong>: estimula sinteticamente os sentidos, por meio da tecnologia, para fazer crer que o próprio corpo está no mundo virtual. Atualmente, é estimulada principalmente pela representação visual tridimensional (estereoscopia), pelo áudio espacial e por dispositivos de interação que captam os movimentos do utilizador. Os capacetes de realidade virtual atuais, como o <code>Meta Quest</code> ou o <code>Apple Vision Pro</code>, são a forma mais acessível, hoje, de obter imersão física.</li>
+</ul>
+<p>Os CVEs vão além da imersão mental por investirem também na imersão física. Na ficção científica, como nos filmes já referidos, a imersão física é completa, ao ponto de o corpo real do utilizador deixar de ser distinguível do avatar. Na prática, a maioria dos CVEs atuais ainda não possui recursos de estereoscopia, mesmo sendo mundos virtuais em três dimensões: não se deve confundir um CVE 3D, um espaço com três dimensões de navegação, com um “filme em 3D” ou com um dispositivo de realidade virtual estereoscópico, ainda que nada impeça que um CVE seja também estereoscópico.</p>
+</section>
+<section id="sec-06-historia" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="sec-06-historia"><span class="header-section-number">6.4</span> Breve História dos CVEs</h2>
+<p>O primeiro CVE de que há registo, o <em>Maze War</em>, foi criado em 1974 num centro de investigação da NASA: um jogo em que os utilizadores andavam por um labirinto atirando uns nos outros, e que já continha ideias que se tornariam padrão nos CVEs, a navegação em primeira pessoa e a comunicação por mensagens instantâneas. Os esforços mais massivos partiram do Departamento de Defesa dos Estados Unidos: o <code>SIMNET</code>, desenvolvido a partir de 1983, treinava unidades militares em batalhas virtuais simuladas, e deu origem a normas técnicas ainda hoje influentes na simulação distribuída (<a href="#fig-06-historia" class="quarto-xref">Figura&nbsp;<span>6.2</span></a>).</p>
+<div id="fig-06-historia" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-06-historia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap06/historia-cves.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-06-historia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.2: Linha do tempo dos Ambientes Virtuais Colaborativos, do primeiro CVE de que há registo aos ambientes sociais massivos atuais.
+</figcaption>
+</figure>
+</div>
+<p>Entre os CVEs mais influentes da sua época contam-se o Second Life (2003, Linden Lab) e o World of Warcraft (2004, Blizzard). Ambos partilham a definição de CVE, mas têm propósitos muito diferentes: o <code>World of Warcraft</code> é um jogo, com um mundo de fantasia definido pelos seus criadores, enquanto o <code>Second Life</code> é um CVE de “propósito geral”, construído pelos próprios utilizadores, com uma economia virtual própria convertível em moeda real. Mais recentemente, plataformas como o <code>VRChat</code>, o <code>Meta Horizon Worlds</code> e o <code>Roblox</code> retomam esta mesma ideia de mundo social massivo, agora com suporte nativo para dispositivos de realidade virtual.</p>
+</section>
+<section id="sec-06-identidade" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="sec-06-identidade"><span class="header-section-number">6.5</span> Identidade, Interação e Presença</h2>
+<p>Uma das ideias centrais por trás dos CVEs não é inventar novas metáforas, mas sim reproduzir, no mundo virtual, noções já existentes no mundo real: identidade, localização, presença e o andamento das atividades dos outros participantes (<a href="#fig-06-ipp" class="quarto-xref">Figura&nbsp;<span>6.3</span></a>) <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span>.</p>
+<div id="fig-06-ipp" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-06-ipp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap06/identidade-interacao-presenca.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-06-ipp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;6.3: Identidade, interação e presença: três noções do mundo real que os CVEs reproduzem no mundo virtual.
+</figcaption>
+</figure>
+</div>
+<p>A <strong>identidade</strong> está relacionada com o avatar do utilizador: espera-se que este seja reconhecível de imediato como um avatar, e distinguível de outros avatares, tal como reconhecemos de imediato outra pessoa e a distinguimos de outras pessoas no mundo real.</p>
+<p>A <strong>interação</strong> entre utilizadores de um CVE depende diretamente da representação do avatar, que fornece as principais informações de perceção sobre os outros participantes, a localização, a orientação e a disponibilidade, num sentido muito próximo ao já discutido a propósito da perceção em sistemas de cooperação (<a href="cap05.html#sec-05-cooperacao" class="quarto-xref"><span>Secção 5.6.2</span></a>). A movimentação de um avatar antecipa as intenções do utilizador que representa: virar as costas durante uma conversa mostra desinteresse, tal como aproximar-se de outro avatar pode indicar vontade de interagir com ele.</p>
+<p>A <strong>presença</strong>, originalmente chamada de “telepresença”, é “a perceção ilusória de não mediação” <span class="citation" data-cites="LombardDitton1997">(<a href="cap01.html#ref-LombardDitton1997" role="doc-biblioref">Lombard e Ditton 1997</a>)</span>: o utilizador não perceciona um meio durante a sua interação, comportando-se como se esse meio não existisse. Distinguem-se a presença física, a sensação de estar num lugar real ou virtual, e a presença social, a sensação de estar, física ou psicologicamente, com outra pessoa. Num CVE, a presença envolve as duas dimensões: a sensação de estar no mundo virtual (imersão) e, ao mesmo tempo, a sensação de lá estar acompanhado.</p>
+</section>
+<section id="sec-06-comunidades" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="sec-06-comunidades"><span class="header-section-number">6.6</span> Comunidades Virtuais</h2>
+<p>Seja qual for o seu propósito, jogo, socialização, educação ou economia, um CVE dá quase sempre origem a uma <strong>comunidade virtual</strong>, com regras sociais próprias e uma cultura particular. A metáfora espacial dos CVEs promove tanto encontros casuais entre desconhecidos como a colaboração entre conhecidos, de uma forma geralmente mais motivadora do que os sistemas colaborativos desktop discutidos nos capítulos anteriores.</p>
+<p>Como em qualquer sociedade, comportamentos inadequados também acontecem nos CVEs: vandalismo, perturbação de outros utilizadores, ou mesmo assédio, ecos, num espaço tridimensional, do <em>flaming</em>, da trollagem e do cyberbullying já discutidos a propósito da comunicação por texto (<a href="cap05.html#sec-05-flaming" class="quarto-xref"><span>Secção 5.4</span></a>, <a href="cap01.html#sec-01-cyberbullying" class="quarto-xref"><span>Secção 1.5.3</span></a>). As empresas responsáveis por estes ambientes precisam de lidar com estes comportamentos tal como qualquer outra plataforma social.</p>
+</section>
+<section id="sec-06-sintese" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="sec-06-sintese"><span class="header-section-number">6.7</span> Síntese</h2>
+<p>Este capítulo introduziu os Ambientes Virtuais Colaborativos:</p>
+<ol type="1">
+<li>Um <strong>CVE</strong> simula um mundo partilhado, em vez de servir apenas como canal de comunicação, composto por um mundo virtual, avatares e interatividade <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span></li>
+<li>A <strong>imersão</strong> pode ser mental (o engajamento com o conteúdo) ou física (a estimulação sintética dos sentidos, hoje sobretudo através de capacetes ou óculos de realidade virtual)</li>
+<li>O primeiro CVE de que há registo foi o <code>Maze War</code> (1974); o <code>SIMNET</code>
+<ol start="1983" type="1">
+<li>trouxe os primeiros esforços massivos de desenvolvimento; o <code>Second Life</code> e o <code>World of Warcraft</code> continuam, décadas depois, entre os CVEs mais bem-sucedidos</li>
+</ol></li>
+<li>Os CVEs reproduzem noções do mundo real: <strong>identidade</strong> (o reconhecimento do avatar), <strong>interação</strong> (mediada pela perceção que o avatar fornece) e <strong>presença</strong> (a sensação ilusória de não mediação) <span class="citation" data-cites="LombardDitton1997">(<a href="cap01.html#ref-LombardDitton1997" role="doc-biblioref">Lombard e Ditton 1997</a>)</span></li>
+<li>Todo o CVE dá origem a uma <strong>comunidade virtual</strong>, com regras sociais próprias, onde também podem ocorrer comportamentos inadequados</li>
+</ol>
+</section>
+<section id="sec-06-reflexao" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="sec-06-reflexao"><span class="header-section-number">6.8</span> Para Refletir</h2>
+<p>Se já usaste algum ambiente virtual colaborativo, um jogo multijogador, uma reunião em realidade virtual, ou uma plataforma como o <code>Roblox</code> ou o <code>VRChat</code>, pensa no teu avatar: até que ponto ele representa a tua identidade real? O que escolheste mudar, e porquê?</p>
+<p>E quanto à presença social: consegues identificar um momento em que te sentiste genuinamente “acompanhado” num espaço virtual, mesmo sabendo que as outras pessoas estavam fisicamente longe?</p>
+</section>
+<section id="sec-06-referencias" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-06-referencias">Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Gibson1984" class="csl-entry" role="listitem">
+Gibson, William. 1984. <em>Neuromancer</em>. New York: Ace Books.
+</div>
+<div id="ref-LombardDitton1997" class="csl-entry" role="listitem">
+Lombard, Matthew, e Theresa Ditton. 1997. <span>«At the Heart of It All: The Concept of Presence»</span>. <em>Journal of Computer-Mediated Communication</em> 3 (2).
+</div>
+<div id="ref-Raposo2011" class="csl-entry" role="listitem">
+Raposo, Alberto Barbosa. 2011. <span>«Ambientes Virtuais Colaborativos»</span>. Em <em>Sistemas Colaborativos</em>, editado por Mariano Pimentel e Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+</div>
 
-
-<!-- -->
 
 </section>
 
@@ -509,57 +609,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -897,22 +946,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../capitulos/cap07.html" class="pagination-link" aria-label="Democracia Electrónica">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Electrónica</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../capitulos/cap07.html" class="pagination-link" aria-label="Democracia Eletrónica">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Eletrónica</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Ambientes Virtuais Colaborativos"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "João Pavão"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-08-18</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt-PT</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introdução {#sec-06-intro .unnumbered}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>*Conteúdo por desenvolver.*</span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

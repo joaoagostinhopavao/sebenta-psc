@@ -1,25 +1,29 @@
 # Prefácio {.unnumbered}
 
 ```{=html}
-<div class="hero">
+<div class="hero hero-cover" style="background-image: linear-gradient(90deg, rgba(31,10,46,0.95) 0%, rgba(31,10,46,0.92) 45%, rgba(31,10,46,0.5) 62%, rgba(31,10,46,0.05) 78%, rgba(31,10,46,0) 100%), url('assets/images/heroes/index-web.jpg');">
   <div class="hero-badge">UTAD · 2026/2027</div>
   <h1>Plataformas Sociais e Cooperativas</h1>
   <h2>Sebenta de estudo</h2>
   <p>Universidade de Trás-os-Montes e Alto Douro</p>
+  <div class="hero-meta">
+    <span>João Pavão</span>
+    <span>Diana Carvalho</span>
+    <span class="hero-meta-date">18 de Agosto de 2026</span>
+  </div>
 </div>
 ```
 
-Esta sebenta é um documento de estudo autónomo para a componente teórica da
+Este documento, é um documento de apoio ao estudo autónomo para a componente teórica da
 disciplina de **Plataformas Sociais e Cooperativas** (PSC), 3.º ano / 1.º
 semestre da Licenciatura em Comunicação e Multimédia, cobrindo os
 fundamentos teóricos, dados estatísticos e métricas das plataformas
 sociais e cooperativas.
 
-A componente prática da UC — onde os alunos usam plataformas colaborativas
-reais para desenvolver um projecto de estratégia de comunicação/marca — é
-leccionada em separado e não é coberta por esta sebenta.
+Na componente prática da UC —  os alunos usam plataformas colaborativas
+reais para desenvolver um projeto de estratégia de comunicação/marca cujos  ensinamentos vão para além dos fundamentos que são desenvolvidos nestes apontamentos teóricos. Elas integram esta UC de uma forma natural na lógica da UC e do curso dotando os alunos de competências profissionais importantes, facilitando a sua integração no mercado de trabalho.
 
-## Organização da sebenta {.unnumbered}
+## Organização do documento {.unnumbered}
 
 A sebenta está organizada em três blocos temáticos, que seguem o programa
 oficial da UC:
@@ -28,27 +32,31 @@ oficial da UC:
    métricas de análise de redes sociais
 2. **Plataformas Cooperativas** — teorias e modelos de colaboração, e os
    diferentes tipos de plataformas cooperativas (comunicação, ambientes
-   virtuais, democracia electrónica, desenvolvimento colaborativo,
+   virtuais, democracia eletrónica, desenvolvimento colaborativo,
    aprendizagem, recomendação)
 3. **Plataformas Mobile** — computação móvel e ubíqua aplicada à
    colaboração
 
-## Fonte e actualização {.unnumbered}
+## Fonte e atualização {.unnumbered}
 
-Os capítulos desta sebenta partem do livro *Sistemas Colaborativos*
+Para além da diversa bibliografia devidamente indicada e compilada, os capítulos deste documento baseiam-se no livro *Sistemas Colaborativos*
 (Pimentel & Fuks, Editora Campus/Elsevier, 2011), disponibilizado
-gratuitamente pelos autores e adoptado como bibliografia de referência da
-UC. O texto original está em português do Brasil e reflecte o estado da
-arte de 2011; esta sebenta reformula os conteúdos em português europeu,
-actualiza exemplos, dados estatísticos e referências, e introduz
-perspectivas mais recentes onde relevante (ex: inteligência artificial
-generativa, hashtags nas redes sociais actuais).
+publicamente pelos autores e adotado como bibliografia de referência da
+UC. O texto original está em português americano e reflecte o estado da
+arte de 2011, quando foi concebido; o presente documento reformula os conteúdos em português europeu,
+atualiza exemplos, dados estatísticos e referências, e introduz
+perspetivas mais recentes onde foi achado relevante para uma moderna consolidação de conceitos (ex: inteligência artificial generativa, *hashtags* nas redes sociais atuais), suportado em referências científicas atuais.
+Por outro lado, simplifica e adapta as matérias relacionadas com as plataformas sociais e colaborativas  às condições reais desta UC no contexto mais amplo do curso de Comunicação e Multimédia.
+Recomendamos vivamente aos alunos a leitura da obra acima referida, que está indicada como bibliografia de referência, pela qualidade dos conceitos aí descritos com clareza assim como pela estrutura do livro, slides e exercícios que constituem uma verdadeira viagem pela temática relacionada com a transição digital assente nas plataformas colaborativas. 
 
-## Como usar esta sebenta {.unnumbered}
 
-Os exemplos ao longo do texto reflectem plataformas e dados actuais.
-Cada capítulo corresponde a uma aula teórica da UC.
+## Como usar este documento {.unnumbered}
 
-## Autor {.unnumbered}
+Os exemplos ao longo do texto refletem plataformas e dados actuais.
+Cada capítulo corresponde a uma aula teórica da UC. A recomendação dos professores é que os alunos leiam um capítulo antes da aula respetiva, e que usem este documento como apoio ao estudo autónomo, para rever conceitos e esclarecer dúvidas. A sebenta não substitui a presença nas aulas, nem a participação nas discussões em sala de aula.
 
-**João Pavão** — UTAD
+## Autores {.unnumbered}
+
+**João Pavão** — UTAD, componente teórica
+
+**Diana Carvalho** — UTAD, componente prática

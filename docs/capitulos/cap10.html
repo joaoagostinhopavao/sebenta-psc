@@ -21,41 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Electrónica</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Eletrónica</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -205,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Colectivo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Coletivo</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -217,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interacção</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interação</span></span></a>
   </div>
 </li>
     </ul>
@@ -231,6 +217,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#sec-10-intro" id="toc-sec-10-intro" class="nav-link active" data-scroll-target="#sec-10-intro">Introdução</a></li>
+  <li><a href="#sec-10-recomendacao" id="toc-sec-10-recomendacao" class="nav-link" data-scroll-target="#sec-10-recomendacao"><span class="header-section-number">10.1</span> Sistemas de Recomendação</a>
+  <ul class="collapse">
+  <li><a href="#sec-10-metodos-recomendacao" id="toc-sec-10-metodos-recomendacao" class="nav-link" data-scroll-target="#sec-10-metodos-recomendacao"><span class="header-section-number">10.1.1</span> Métodos de Recomendação</a></li>
+  </ul></li>
+  <li><a href="#sec-10-ia-colaborativa" id="toc-sec-10-ia-colaborativa" class="nav-link" data-scroll-target="#sec-10-ia-colaborativa"><span class="header-section-number">10.2</span> Inteligência Artificial para Sistemas Colaborativos</a></li>
+  <li><a href="#sec-10-atualizacao" id="toc-sec-10-atualizacao" class="nav-link" data-scroll-target="#sec-10-atualizacao"><span class="header-section-number">10.3</span> A Atualização: IA Generativa e <em>Copilots</em> Colaborativos</a></li>
+  <li><a href="#sec-10-sintese" id="toc-sec-10-sintese" class="nav-link" data-scroll-target="#sec-10-sintese"><span class="header-section-number">10.4</span> Síntese</a></li>
+  <li><a href="#sec-10-reflexao" id="toc-sec-10-reflexao" class="nav-link" data-scroll-target="#sec-10-reflexao"><span class="header-section-number">10.5</span> Para Refletir</a></li>
+  <li><a href="#sec-10-referencias" id="toc-sec-10-referencias" class="nav-link" data-scroll-target="#sec-10-referencias">Referências</a></li>
   </ul>
 </nav>
     </div>
@@ -239,7 +234,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Sistemas de Recomendação e IA Colaborativa</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
+<h1 class="title"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Sistemas de Recomendação e IA Colaborativa</span></h1>
 </div>
 
 
@@ -256,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 de agosto de 2026</p>
+      <p class="date">20 de agosto de 2026</p>
     </div>
   </div>
   
@@ -268,12 +263,91 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap10.jpg');">
+  <div class="hero-badge">Capítulo 10</div>
+  <h1>Sistemas de Recomendação e IA Colaborativa</h1>
+</div>
 <section id="sec-10-intro" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="sec-10-intro">Introdução</h2>
-<p><em>Conteúdo por desenvolver.</em></p>
+<p>O capítulo anterior mostrou como o conhecimento coletivo emerge da combinação de contribuições humanas. Este capítulo trata de um passo seguinte: sistemas que usam <strong>Inteligência Artificial</strong> (IA) para automatizar parte desse trabalho coletivo, seja sugerindo o que pode interessar a alguém a partir do comportamento de outros, seja apoiando diretamente a comunicação, a coordenação e a cooperação de um grupo.</p>
+</section>
+<section id="sec-10-recomendacao" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="sec-10-recomendacao"><span class="header-section-number">10.1</span> Sistemas de Recomendação</h2>
+<p>Um <strong>Sistema de Recomendação</strong> é um filtro de informação que apresenta, a partir de grandes volumes de dados, os itens que provavelmente interessam a um utilizador específico, sejam produtos, filmes, música ou conteúdo <span class="citation" data-cites="MottaEtAl2011">(<a href="cap01.html#ref-MottaEtAl2011" role="doc-biblioref">Motta et al. 2011</a>)</span>. O princípio subjacente é simples: “o que é relevante para mim também pode ser relevante para alguém com interesses semelhantes”. Praticamente toda a gente já usou um destes sistemas sem lhe prestar atenção, das sugestões de produtos da <code>Amazon</code> às listas “Descobertas da Semana” do <code>Spotify</code> ou às recomendações de séries do <code>Netflix</code>.</p>
+<section id="sec-10-metodos-recomendacao" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="sec-10-metodos-recomendacao"><span class="header-section-number">10.1.1</span> Métodos de Recomendação</h3>
+<p>Existem três grandes famílias de métodos para gerar recomendações (<a href="#fig-10-metodos" class="quarto-xref">Figura&nbsp;<span>10.1</span></a>) <span class="citation" data-cites="MottaEtAl2011">(<a href="cap01.html#ref-MottaEtAl2011" role="doc-biblioref">Motta et al. 2011</a>)</span>:</p>
+<div id="fig-10-metodos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-10-metodos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap10/metodos-recomendacao.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-10-metodos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.1: Três métodos para gerar recomendações, do mais simples de implementar ao que melhor tira partido do comportamento coletivo.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Recuperação direta da informação</strong>: o sistema devolve itens que correspondem literalmente aos critérios de pesquisa do utilizador. É o método mais simples, mas a qualidade da recomendação depende inteiramente da pesquisa feita.</li>
+<li><strong>Filtragem colaborativa</strong>: prevê o interesse de um utilizador num item a partir da correlação entre as suas avaliações e as de outros utilizadores com gostos semelhantes. É este o método que torna um Sistema de Recomendação verdadeiramente <strong>colaborativo</strong>: a contribuição de cada avaliação individual melhora a recomendação para toda a comunidade, ainda que essa colaboração seja assíncrona e os benefícios não sejam percebidos no momento da contribuição.</li>
+<li><strong>Filtragem por conteúdo</strong>: prevê o interesse de um utilizador a partir das características do próprio conteúdo, comparando-as com o perfil de preferências já demonstrado por esse utilizador, independentemente do comportamento de outros.</li>
+</ul>
+<p>A filtragem colaborativa é eficaz, mas tem um custo computacional elevado e sofre do problema da <strong>partida a frio</strong>: um item novo, ainda sem avaliações, não pode ser recomendado por este método, por melhor que seja. A filtragem por conteúdo resolve esse problema específico, mas depende de uma descrição rica e estruturada do conteúdo para funcionar bem. Por isso, a maioria dos sistemas de recomendação atuais combina vários métodos, entre os quais estes dois.</p>
+</section>
+</section>
+<section id="sec-10-ia-colaborativa" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="sec-10-ia-colaborativa"><span class="header-section-number">10.2</span> Inteligência Artificial para Sistemas Colaborativos</h2>
+<p>Além de recomendar, técnicas de IA podem apoiar diretamente as três dimensões do Modelo 3C (<a href="cap04.html#sec-04-3c" class="quarto-xref"><span>Secção 4.4</span></a>): a comunicação, a coordenação e a cooperação <span class="citation" data-cites="GarciaEtAl2011">(<a href="cap01.html#ref-GarciaEtAl2011" role="doc-biblioref">Garcia et al. 2011</a>)</span> (<a href="#fig-10-mapeamento" class="quarto-xref">Figura&nbsp;<span>10.2</span></a>).</p>
+<div id="fig-10-mapeamento" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-10-mapeamento-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap10/mapeamento-ia-3c.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-10-mapeamento-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;10.2: Mapeamento de técnicas de Inteligência Artificial para cada dimensão do Modelo 3C de Colaboração.
+</figcaption>
+</figure>
+</div>
+<p>Algumas técnicas fundamentais, já maduras antes da IA generativa que se segue, incluem:</p>
+<ul>
+<li><strong>Ontologias</strong>: já discutidas no Cap.4 (<a href="cap04.html#sec-04-ontologia" class="quarto-xref"><span>Secção 4.5</span></a>), ajudam a garantir que emissor e recetor partilham as mesmas estruturas de linguagem, apoiando a comunicação.</li>
+<li><strong>Mineração de dados</strong>: extrai padrões de grandes volumes de interações que seriam impossíveis de analisar manualmente, por exemplo, para recomendar competências ou identificar comportamentos recorrentes num grupo.</li>
+<li><strong>Sistemas especialistas e multiagentes</strong>: apoiam a coordenação, detetando conflitos entre tarefas concorrentes, sugerindo a alocação de recursos ou gerindo a reputação dos participantes de um grupo.</li>
+<li><strong>Sistemas autonómicos</strong>: monitorizam e protegem o espaço de trabalho partilhado, apoiando a cooperação de forma robusta e segura.</li>
+</ul>
+</section>
+<section id="sec-10-atualizacao" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="sec-10-atualizacao"><span class="header-section-number">10.3</span> A Atualização: IA Generativa e <em>Copilots</em> Colaborativos</h2>
+<p>A área de IA aplicada à colaboração transformou-se profundamente na década seguinte à publicação destas técnicas, com a chegada dos grandes modelos de linguagem (<em>Large Language Models</em>, LLM) e da <strong>IA generativa</strong>: sistemas como o <code>ChatGPT</code>, o <code>Gemini</code> ou o <code>Claude</code>, capazes de gerar texto, código e imagens a partir de um pedido em linguagem natural.</p>
+<p>O impacto mais direto sobre a colaboração é o surgimento dos <strong><em>copilots</em></strong>, assistentes de IA integrados diretamente nas ferramentas colaborativas já discutidas neste livro. No desenvolvimento de software (<a href="cap08.html#sec-08-versao" class="quarto-xref"><span>Secção 8.3</span></a>), o <code>GitHub Copilot</code> sugere código diretamente no editor, tornando-se um terceiro participante silencioso ao lado da programação em pares. Em ferramentas de escrita colaborativa, como o <code>Google Docs</code> ou o <code>Notion</code>, assistentes de IA sugerem, resumem e reescrevem conteúdo produzido em conjunto. E em sistemas de comunicação (<a href="cap05.html#sec-05-cmc" class="quarto-xref"><span>Secção 5.1</span></a>), assistentes de reunião transcrevem, resumem e distribuem atas automaticamente entre os participantes, uma forma automatizada de <strong>memória</strong>, o mesmo aspeto já discutido a propósito da Democracia Eletrónica (<a href="cap07.html#sec-07-aspetos" class="quarto-xref"><span>Secção 7.3</span></a>).</p>
+<p>Estes <em>copilots</em> não substituem as técnicas mais antigas de IA discutidas neste capítulo, antes as complementam: um assistente de escrita colaborativa ainda beneficia de uma ontologia de domínio bem definida, e um sistema de recomendação ainda depende de filtragem colaborativa para saber o que sugerir. A diferença está na naturalidade da interação, hoje possível através de linguagem natural em vez de comandos ou formulários estruturados.</p>
+</section>
+<section id="sec-10-sintese" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="sec-10-sintese"><span class="header-section-number">10.4</span> Síntese</h2>
+<p>Este capítulo tratou da aplicação da Inteligência Artificial aos sistemas colaborativos:</p>
+<ol type="1">
+<li>Um <strong>Sistema de Recomendação</strong> filtra grandes volumes de informação para sugerir o que provavelmente interessa a um utilizador, através de recuperação direta, filtragem colaborativa ou filtragem por conteúdo <span class="citation" data-cites="MottaEtAl2011">(<a href="cap01.html#ref-MottaEtAl2011" role="doc-biblioref">Motta et al. 2011</a>)</span></li>
+<li>A <strong>filtragem colaborativa</strong> é o método mais diretamente colaborativo, mas sofre do problema da partida a frio para itens novos</li>
+<li>Técnicas de IA como <strong>ontologias</strong>, <strong>mineração de dados</strong>, <strong>sistemas especialistas e multiagentes</strong> e <strong>sistemas autonómicos</strong> apoiam, cada uma, uma ou mais dimensões do Modelo 3C <span class="citation" data-cites="GarciaEtAl2011">(<a href="cap01.html#ref-GarciaEtAl2011" role="doc-biblioref">Garcia et al. 2011</a>)</span></li>
+<li>A <strong>IA generativa</strong> deu origem aos <strong><em>copilots</em></strong> colaborativos, assistentes integrados diretamente nas ferramentas de desenvolvimento, escrita e comunicação já discutidas neste livro</li>
+</ol>
+</section>
+<section id="sec-10-reflexao" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="sec-10-reflexao"><span class="header-section-number">10.5</span> Para Refletir</h2>
+<p>Pensa numa recomendação recente que recebeste, de um filme, produto ou música, que te surpreendeu pela positiva: consegues perceber se resultou de filtragem colaborativa (baseada em pessoas parecidas contigo) ou de filtragem por conteúdo (baseada no que já consumiste)?</p>
+<p>E quanto aos <em>copilots</em>: já usaste algum assistente de IA integrado numa ferramenta colaborativa? Que tarefa te poupou, e que decisões continuaste a reservar para ti e para os teus colegas?</p>
+</section>
+<section id="sec-10-referencias" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-10-referencias">Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-GarciaEtAl2011" class="csl-entry" role="listitem">
+Garcia, Ana Cristina Bicharra, Adriana Santarosa Vivacqua, Kate Cerqueira Revoredo, e Flavia Cristina Bernardini. 2011. <span>«Inteligência Artificial para Sistemas Colaborativos»</span>. Em <em>Sistemas Colaborativos</em>, editado por Mariano Pimentel e Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-MottaEtAl2011" class="csl-entry" role="listitem">
+Motta, Claudia Lage Rebello da, Ana Cristina Bicharra Garcia, Adriana Santarosa Vivacqua, Flávia Maria Santoro, e Jonice de Oliveira Sampaio. 2011. <span>«Sistemas de Recomendação»</span>. Em <em>Sistemas Colaborativos</em>, editado por Mariano Pimentel e Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+</div>
 
-
-<!-- -->
 
 </section>
 
@@ -509,57 +583,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -892,27 +915,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../capitulos/cap09.html" class="pagination-link" aria-label="Aprendizagem Colaborativa e Conhecimento Colectivo">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Colectivo</span></span>
+      <a href="../capitulos/cap09.html" class="pagination-link" aria-label="Aprendizagem Colaborativa e Conhecimento Coletivo">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Coletivo</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../capitulos/cap11.html" class="pagination-link" aria-label="Mobilidade, Ubiquidade e Interacção">
-        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interacção</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../capitulos/cap11.html" class="pagination-link" aria-label="Mobilidade, Ubiquidade e Interação">
+        <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interação</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Sistemas de Recomendação e IA Colaborativa"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "João Pavão"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-08-18</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt-PT</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introdução {#sec-10-intro .unnumbered}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>*Conteúdo por desenvolver.*</span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

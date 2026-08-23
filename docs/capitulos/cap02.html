@@ -21,41 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Electrónica</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Eletrónica</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -205,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Colectivo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Coletivo</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -217,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interacção</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interação</span></span></a>
   </div>
 </li>
     </ul>
@@ -231,6 +217,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#sec-02-intro" id="toc-sec-02-intro" class="nav-link active" data-scroll-target="#sec-02-intro">Introdução</a></li>
+  <li><a href="#sec-02-seis-graus" id="toc-sec-02-seis-graus" class="nav-link" data-scroll-target="#sec-02-seis-graus"><span class="header-section-number">2.1</span> Os Seis Graus de Separação</a></li>
+  <li><a href="#sec-02-geracoes" id="toc-sec-02-geracoes" class="nav-link" data-scroll-target="#sec-02-geracoes"><span class="header-section-number">2.2</span> As Gerações de Redes Sociais na Web</a>
+  <ul class="collapse">
+  <li><a href="#sec-02-quarta-geracao" id="toc-sec-02-quarta-geracao" class="nav-link" data-scroll-target="#sec-02-quarta-geracao"><span class="header-section-number">2.2.1</span> E depois da terceira geração?</a></li>
+  </ul></li>
+  <li><a href="#sec-02-finalidades" id="toc-sec-02-finalidades" class="nav-link" data-scroll-target="#sec-02-finalidades"><span class="header-section-number">2.3</span> Finalidades das Redes Sociais</a></li>
+  <li><a href="#sec-02-numeros" id="toc-sec-02-numeros" class="nav-link" data-scroll-target="#sec-02-numeros"><span class="header-section-number">2.4</span> A Adoção das Redes Sociais em Números</a></li>
+  <li><a href="#sec-02-sintese" id="toc-sec-02-sintese" class="nav-link" data-scroll-target="#sec-02-sintese"><span class="header-section-number">2.5</span> Síntese</a></li>
+  <li><a href="#sec-02-reflexao" id="toc-sec-02-reflexao" class="nav-link" data-scroll-target="#sec-02-reflexao"><span class="header-section-number">2.6</span> Para Refletir</a></li>
+  <li><a href="#sec-02-referencias" id="toc-sec-02-referencias" class="nav-link" data-scroll-target="#sec-02-referencias">Referências</a></li>
   </ul>
 </nav>
     </div>
@@ -239,7 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Redes Sociais: Fundamentos e Dados Estatísticos</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Redes Sociais: Fundamentos e Dados Estatísticos</span></h1>
 </div>
 
 
@@ -256,7 +252,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 de agosto de 2026</p>
+      <p class="date">19 de agosto de 2026</p>
     </div>
   </div>
   
@@ -268,12 +264,142 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap02.jpg');">
+  <div class="hero-badge">Capítulo 2</div>
+  <h1>Redes Sociais: Fundamentos e Dados Estatísticos</h1>
+</div>
 <section id="sec-02-intro" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="sec-02-intro">Introdução</h2>
-<p><em>Conteúdo por desenvolver.</em></p>
+<p>O capítulo anterior estabeleceu uma distinção fundamental: a rede social, enquanto conceito, é anterior à tecnologia (<a href="cap01.html#sec-01-redes-nao-tecnologicas" class="quarto-xref"><span>Secção 1.2.1</span></a>), e aquilo que a computação em rede trouxe foi sobretudo uma mudança de escala, alcance e meio (<a href="cap01.html#sec-01-sociedade-rede-castells" class="quarto-xref"><span>Secção 1.2.2</span></a>). Este capítulo aprofunda essa segunda parte: como é que as redes sociais, enquanto fenómeno humano milenar, se transformaram nas plataformas de redes sociais na web que hoje conhecemos, que forma assumiram ao longo do tempo, para que servem e qual a sua adoção real, hoje, em Portugal e no mundo.</p>
+</section>
+<section id="sec-02-seis-graus" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-02-seis-graus"><span class="header-section-number">2.1</span> Os Seis Graus de Separação</h2>
+<p>Em 1967, o psicólogo social Stanley Milgram conduziu um conjunto de experiências que se tornariam uma referência incontornável no estudo das redes sociais. Pediu a centenas de pessoas em diferentes estados dos Estados Unidos que fizessem chegar uma carta a um destinatário final que não conheciam pessoalmente, através da rede de conhecidos diretos de cada participante. O objetivo era medir quantos intermediários, em média, eram necessários para ligar duas pessoas escolhidas ao acaso <span class="citation" data-cites="Milgram1967">(<a href="cap01.html#ref-Milgram1967" role="doc-biblioref">Milgram 1967</a>)</span>.</p>
+<p>Os resultados são frequentemente simplificados. Das centenas de cartas enviadas, apenas uma minoria completou o percurso: a maioria das cadeias interrompeu-se antes de chegar ao destino. Entre as cartas que chegaram, o número médio de intermediários situou-se por volta de cinco a seis. A ideia de que “todos estamos ligados por seis graus de separação” não é, portanto, uma conclusão exata e universal da experiência de Milgram, mas antes uma popularização: a expressão remonta a um conto do escritor húngaro Frigyes Karinthy, publicado em 1929, e só se tornou popular décadas mais tarde através da peça <em>Six Degrees of Separation</em>, de John Guare (1990). O próprio Milgram nunca usou essa expressão nos seus textos.</p>
+<p>O que a experiência de Milgram demonstrou de forma mais sólida foi outra coisa, mais interessante para o estudo das redes sociais: que uma rede de relações pessoais, aparentemente local e limitada, tem uma estrutura que permite alcançar qualquer outro nó dessa rede através de um número surpreendentemente pequeno de ligações. Foi precisamente esta propriedade estrutural, a de “mundo pequeno” (<em>small world</em>), que os primeiros sistemas de redes sociais na web foram desenhados para explorar e tornar visível.</p>
+</section>
+<section id="sec-02-geracoes" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-02-geracoes"><span class="header-section-number">2.2</span> As Gerações de Redes Sociais na Web</h2>
+<p>As redes sociais na web são ambientes virtuais onde cada participante constrói a sua própria rede de relações, baseada nalgum tipo de ligação com outros participantes. É possível identificar, na sua evolução, três gerações sucessivas de sistemas <span class="citation" data-cites="MeiraEtAl2011a">(<a href="cap01.html#ref-MeiraEtAl2011a" role="doc-biblioref">Meira et al. 2011</a>)</span>:</p>
+<ul>
+<li><strong>Primeira geração</strong>: sistemas baseados em comunicação pessoal direta, organizados à volta de listas de contactos para troca de mensagens instantâneas. O <code>ICQ</code> e o <code>MSN Messenger</code> são exemplos característicos desta geração.</li>
+<li><strong>Segunda geração</strong>: sistemas que procuraram replicar, num ambiente virtual, as redes de afinidade e de conhecidos já existentes no mundo real. O <code>Orkut</code>, o <code>Friendster</code>, o <code>MySpace</code>, o <code>Facebook</code> e o <code>LinkedIn</code> formalizaram esse tipo de relacionamento, com tal sucesso que as redes sociais se tornaram mais populares do que o correio eletrónico.</li>
+<li><strong>Terceira geração</strong>: sistemas em que as redes sociais passaram a apoiar diretamente a resolução de problemas concretos: armazenar e trocar experiências entre pessoas em situações semelhantes, gerir conhecimento organizacional, manter memória institucional e gerar ligações novas entre pessoas e organizações que não se conheciam previamente.</li>
+</ul>
+<p>A <a href="#fig-02-geracoes" class="quarto-xref">Figura&nbsp;<span>2.1</span></a> ilustra a primeira e a segunda geração com os logótipos reais das plataformas referidas: note-se como a segunda geração já inclui plataformas que, mais tarde, viriam a dominar por completo o panorama das redes sociais.</p>
+<div id="fig-02-geracoes" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-geracoes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap02/geracoes-icones.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-geracoes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2.1: As duas primeiras gerações de redes sociais na web, ilustradas com os logótipos das plataformas que as definiram.
+</figcaption>
+</figure>
+</div>
+<section id="sec-02-quarta-geracao" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="sec-02-quarta-geracao"><span class="header-section-number">2.2.1</span> E depois da terceira geração?</h3>
+<p>Esta classificação em três gerações foi proposta em 2011, quando o <code>Facebook</code>, o <code>Orkut</code> e o <code>LinkedIn</code> definiam o panorama das redes sociais. Entretanto, mais de uma década de evolução tecnológica sugere uma transformação suficientemente profunda para justificar um novo patamar.</p>
+<p>As primeiras três gerações partilham um traço em comum: a visibilidade de um conteúdo depende, sobretudo, da rede de ligações explícitas do utilizador, o chamado <strong>grafo social</strong> (<em>social graph</em>), ou seja, quem segue quem. O <code>TikTok</code>, popularizado a partir de 2018, alterou este princípio de forma estrutural: o seu algoritmo de recomendação, a “Para Ti” (<em>For You</em>), decide o que mostrar a cada utilizador com base sobretudo no comportamento observado (tempo de visualização, interações, semelhança de conteúdo), e não em quem esse utilizador segue. Passa-se, assim, de um <strong>grafo social</strong> para um <strong>grafo de interesses</strong> (<em>interest graph</em>): a proximidade que importa deixa de ser “quem conheces” e passa a ser “o que consomes”. Este modelo foi progressivamente adotado pelas restantes plataformas, incluindo o <code>Instagram</code> e o <code>YouTube</code>, através dos seus formatos de vídeo curto (<em>Reels</em>, <em>Shorts</em>).</p>
+<p>Representando cada rede como um grafo, um conjunto de nós ligados por arestas, a diferença entre os dois modelos torna-se visível (<a href="#fig-02-grafos" class="quarto-xref">Figura&nbsp;<span>2.2</span></a>). No grafo social, os nós são pessoas e as arestas representam ligações explícitas entre elas: quem segue quem, quem é amigo de quem. No grafo de interesses, a proximidade deixa de ser entre pessoas e passa a ser entre uma pessoa e os temas com que interage: duas pessoas podem nunca se ter seguido, nem se conhecerem, e ainda assim serem “vizinhas” na rede, por consumirem o mesmo tipo de conteúdo. A forma de calcular e visualizar estes grafos, através de métricas como distância, centralidade ou densidade, será desenvolvida no capítulo seguinte.</p>
+<div id="fig-02-grafos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-grafos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap02/grafo-social-vs-interesses.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-grafos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2.2: Grafo social (ligações explícitas entre pessoas) e grafo de interesses (agrupamento por semelhança de comportamento).
+</figcaption>
+</figure>
+</div>
+<p>O sociólogo Paolo Gerbaudo descreve esta mudança como a passagem de “públicos em rede” (<em>networked publics</em>), organizados por ligações interpessoais explícitas, para “públicos agrupados” (<em>clustered publics</em>), organizados algoritmicamente por semelhança comportamental <span class="citation" data-cites="Gerbaudo2026">(<a href="cap01.html#ref-Gerbaudo2026" role="doc-biblioref">Gerbaudo 2026</a>)</span>. Segundo o autor, esta transformação tem implicações que vão além da experiência individual: torna mais opaco o funcionamento dos sistemas que decidem o que cada pessoa vê, e acentua a fragmentação do espaço público digital em grupos de interesse cada vez mais fechados sobre si próprios. Este ponto liga-se diretamente ao “lado sombrio” da sociedade em rede já discutido no capítulo anterior (<a href="cap01.html#sec-01-riscos" class="quarto-xref"><span>Secção 1.5</span></a>), e será retomado quando se estudarem os sistemas de recomendação.</p>
+</section>
+</section>
+<section id="sec-02-finalidades" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="sec-02-finalidades"><span class="header-section-number">2.3</span> Finalidades das Redes Sociais</h2>
+<p>Independentemente da geração ou da lógica de funcionamento, as redes sociais podem também classificar-se pela finalidade principal para que foram desenhadas <span class="citation" data-cites="MeiraEtAl2011a">(<a href="cap01.html#ref-MeiraEtAl2011a" role="doc-biblioref">Meira et al. 2011</a>)</span>:</p>
+<ul>
+<li><strong>Partilha</strong>: publicação e distribuição de conteúdo, como fotografias ou vídeos (exemplos históricos: <code>Flickr</code>, <code>YouTube</code>)</li>
+<li><strong>Profissional</strong>: manutenção de contactos e relações de trabalho (exemplo: <code>LinkedIn</code>)</li>
+<li><strong>Plataforma</strong>: infraestrutura de identidade digital que outros serviços usam para autenticação e interligação (exemplo histórico: <code>Ning</code>)</li>
+<li><strong>Entretenimento</strong>: interação social com fins predominantemente lúdicos (exemplos históricos: <code>MySpace</code>, <code>hi5</code>)</li>
+</ul>
+<p>A <a href="#fig-02-finalidades" class="quarto-xref">Figura&nbsp;<span>2.3</span></a> reúne os logótipos das plataformas que melhor ilustram cada uma destas quatro finalidades.</p>
+<div id="fig-02-finalidades" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-finalidades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap02/finalidades-icones.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-finalidades-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2.3: As quatro finalidades das redes sociais, ilustradas com os logótipos das plataformas de referência em cada uma.
+</figcaption>
+</figure>
+</div>
+<p>Esta classificação foi proposta em 2011, e a fronteira entre estas quatro finalidades está hoje ainda mais esbatida do que estava então: o <code>Instagram</code> acumula partilha, entretenimento e, cada vez mais, comércio; o <code>LinkedIn</code> passou a distribuir conteúdo em formato de vídeo curto, tradicionalmente associado ao entretenimento; e várias plataformas asiáticas, como o <code>WeChat</code>, funcionam como “superaplicações” que integram mensagens, pagamentos, comércio eletrónico e serviços públicos num único ambiente. A tendência dominante não é a especialização, mas a convergência de finalidades numa mesma plataforma.</p>
+</section>
+<section id="sec-02-numeros" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-02-numeros"><span class="header-section-number">2.4</span> A Adoção das Redes Sociais em Números</h2>
+<p>Segundo o relatório <em>Digital 2024</em> da We Are Social/Meltwater, com análise da Kepios, já referido no capítulo anterior, existiam <strong>5,04 mil milhões de identidades de utilizador ativas em redes sociais</strong> no início de 2024, o equivalente a 62,3% da população mundial <span class="citation" data-cites="WeAreSocial2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024a</a>)</span>. Comparando este valor com os 5,35 mil milhões de utilizadores de Internet estimados para o mesmo período (<a href="cap01.html#sec-01-numeros" class="quarto-xref"><span>Secção 1.6</span></a>), conclui-se que cerca de 94% de quem usa a Internet usa também, pelo menos, uma rede social: a adoção de redes sociais está hoje praticamente equiparada à adoção da própria Internet. O utilizador típico despende, em média, <strong>2 horas e 23 minutos por dia</strong> em redes sociais <span class="citation" data-cites="WeAreSocial2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024a</a>)</span>.</p>
+<p>Em Portugal, o mesmo período regista 7,43 milhões de utilizadores de redes sociais, o equivalente a 72,6% da população total, para 8,84 milhões de utilizadores de Internet (86,4% da população) <span class="citation" data-cites="DataReportalPortugal2024">(<a href="cap01.html#ref-DataReportalPortugal2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024b</a>)</span>. A adoção em Portugal é, portanto, superior à média mundial em ambas as dimensões (<a href="#fig-02-adocao" class="quarto-xref">Figura&nbsp;<span>2.4</span></a>).</p>
+<div id="fig-02-adocao" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-adocao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap02/adocao-mundial-portugal-2024.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-adocao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2.4: Adoção da Internet e das redes sociais, mundial e em Portugal (2024). Fontes: We Are Social/Meltwater <span class="citation" data-cites="WeAreSocial2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024a</a>)</span>; DataReportal <span class="citation" data-cites="DataReportalPortugal2024">(<a href="cap01.html#ref-DataReportalPortugal2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024b</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>As plataformas mais alcançadas por publicidade em Portugal, no início de 2024, eram o <code>YouTube</code> (72,6% da população), o <code>Facebook</code> (58,1%), o <code>Instagram</code> (56,7%), o <code>LinkedIn</code> (47,9%) e o <code>Facebook Messenger</code> (46,4%), seguidos do <code>TikTok</code>, já com 42,6% de alcance entre adultos <span class="citation" data-cites="DataReportalPortugal2024">(<a href="cap01.html#ref-DataReportalPortugal2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024b</a>)</span> (<a href="#fig-02-plataformas-pt" class="quarto-xref">Figura&nbsp;<span>2.5</span></a>).</p>
+<div id="fig-02-plataformas-pt" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-plataformas-pt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap02/pt-plataformas-2024.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-plataformas-pt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;2.5: Alcance das principais plataformas em Portugal, por publicidade potencial (janeiro de 2024). Fonte: DataReportal, <em>Digital 2024: Portugal</em> <span class="citation" data-cites="DataReportalPortugal2024">(<a href="cap01.html#ref-DataReportalPortugal2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024b</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>Vale a pena notar que esta métrica, alcance publicitário potencial, não é diretamente comparável ao número de utilizadores ativos mensais divulgado por cada plataforma a nível mundial: por essa métrica, o <code>Facebook</code> continua a ser a maior rede social do mundo, com 3,05 mil milhões de utilizadores ativos mensais <span class="citation" data-cites="WeAreSocial2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024a</a>)</span>. Alcance publicitário e utilizadores ativos mensais são métricas diferentes, calculadas de forma diferente, pelo que não devem ser comparadas diretamente entre si.</p>
+</section>
+<section id="sec-02-sintese" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="sec-02-sintese"><span class="header-section-number">2.5</span> Síntese</h2>
+<p>Este capítulo aprofundou o estudo das redes sociais, enquanto instância tecnológica de um fenómeno social pré-existente, introduzido no capítulo anterior:</p>
+<ol type="1">
+<li>A experiência de Milgram (1967) demonstrou a propriedade de “mundo pequeno” das redes sociais, popularizada, de forma imprecisa, como “seis graus de separação” <span class="citation" data-cites="Milgram1967">(<a href="cap01.html#ref-Milgram1967" role="doc-biblioref">Milgram 1967</a>)</span></li>
+<li>As redes sociais na web evoluíram em três gerações sucessivas, marcadas pela comunicação pessoal, pela replicação de redes de afinidade reais e pela resolução colaborativa de problemas <span class="citation" data-cites="MeiraEtAl2011a">(<a href="cap01.html#ref-MeiraEtAl2011a" role="doc-biblioref">Meira et al. 2011</a>)</span></li>
+<li>Uma quarta transformação, ainda sem consenso quanto ao nome, está em curso desde 2018: a passagem de um grafo social explícito para um grafo de interesses definido algoritmicamente <span class="citation" data-cites="Gerbaudo2026">(<a href="cap01.html#ref-Gerbaudo2026" role="doc-biblioref">Gerbaudo 2026</a>)</span></li>
+<li>As quatro finalidades clássicas das redes sociais, partilha, profissional, plataforma e entretenimento, tendem hoje à convergência numa mesma plataforma, em vez de à especialização</li>
+<li>A adoção de redes sociais está hoje próxima da adoção da própria Internet, tanto a nível mundial como em Portugal <span class="citation" data-cites="WeAreSocial2024 DataReportalPortugal2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024a</a>, <a href="cap01.html#ref-DataReportalPortugal2024" role="doc-biblioref">2024b</a>)</span></li>
+</ol>
+</section>
+<section id="sec-02-reflexao" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="sec-02-reflexao"><span class="header-section-number">2.6</span> Para Refletir</h2>
+<p>O algoritmo de recomendação de conteúdo, ao decidir o que cada pessoa vê com base no seu comportamento e não nas suas ligações explícitas, tem um poder de influência muito maior do que uma lista de amigos jamais teve. Que responsabilidade cabe a uma plataforma quando é o seu algoritmo, e não as escolhas explícitas do utilizador, a decidir a que conteúdo esse utilizador é exposto?</p>
+<p>Pensa também na tua própria utilização de redes sociais: consegues identificar, nas plataformas que usas, exemplos de grafo social e de grafo de interesses a funcionar em simultâneo? E as quatro finalidades descritas neste capítulo, partilha, profissional, plataforma e entretenimento, aplicam-se ainda com nitidez às plataformas que usas diariamente, ou já convergiram todas numa só?</p>
+</section>
+<section id="sec-02-referencias" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-02-referencias">Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-WeAreSocial2024" class="csl-entry" role="listitem">
+DataReportal, Meltwater and We Are Social. 2024a. <span>«Digital 2024: Global Overview Report»</span>. <a href="https://datareportal.com/reports/digital-2024-global-overview-report">https://datareportal.com/reports/digital-2024-global-overview-report</a>.
+</div>
+<div id="ref-DataReportalPortugal2024" class="csl-entry" role="listitem">
+———. 2024b. <span>«Digital 2024: Portugal»</span>. <a href="https://datareportal.com/reports/digital-2024-portugal">https://datareportal.com/reports/digital-2024-portugal</a>.
+</div>
+<div id="ref-Gerbaudo2026" class="csl-entry" role="listitem">
+Gerbaudo, Paolo. 2026. <span>«TikTok and the Algorithmic Transformation of Social Media Publics: From Social Networks to Social Interest Clusters»</span>. <em>New Media &amp; Society</em> 28 (3): 1019–36. <a href="https://doi.org/10.1177/14614448241304106">https://doi.org/10.1177/14614448241304106</a>.
+</div>
+<div id="ref-MeiraEtAl2011a" class="csl-entry" role="listitem">
+Meira, Silvio Romero de Lemos, Ricardo Araújo Costa, Paulyne Matthews Jucá, e Edeilson Milhomem da Silva. 2011. <span>«Redes Sociais»</span>. Em <em>Sistemas Colaborativos</em>, editado por Mariano Pimentel e Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Milgram1967" class="csl-entry" role="listitem">
+Milgram, Stanley. 1967. <span>«The Small World Problem»</span>. <em>Psychology Today</em> 1: 61–67.
+</div>
+</div>
 
-
-<!-- -->
 
 </section>
 
@@ -509,57 +635,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -901,18 +976,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Redes Sociais: Métricas e Folksonomia</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Redes Sociais: Fundamentos e Dados Estatísticos"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "João Pavão"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-08-18</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt-PT</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introdução {#sec-02-intro .unnumbered}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>*Conteúdo por desenvolver.*</span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

@@ -1,14 +1,27 @@
 project:
   type: book
   output-dir: docs
+  resources:
+    - assets/images/heroes/
 
 lang: pt-PT
+bibliography: referencias.bib
+
+# O ficheiro de idioma "pt" embutido no Quarto usa termos do português do
+# Brasil (ex: "Seção"). Estas entradas corrigem para português europeu.
+language:
+  crossref-sec-prefix: "Secção"
+  crossref-ch-prefix: "Capítulo"
+  section-title-reuse: "Reutilização"
+  section-title-copyright: "Direitos de autor"
 
 book:
   title: "Plataformas Sociais e Cooperativas"
   subtitle: "Sebenta da Unidade Curricular"
   author:
     - name: "João Pavão"
+      affiliation: "Universidade de Trás-os-Montes e Alto Douro"
+    - name: "Diana Carvalho"
       affiliation: "Universidade de Trás-os-Montes e Alto Douro"
   date: "2026-08-18"
 
@@ -45,7 +58,7 @@ format:
     number-depth: 3
     highlight-style: github
     code-fold: false
-    code-tools: true
+    code-tools: false
     fig-align: center
 
   pdf:
@@ -85,24 +98,42 @@ format:
         \definecolor{chaptxt}{HTML}{2a0a26}
         \KOMAoption{chapterprefix}{false}
         \makeatletter
+        \newcommand{\chapheroname}{%
+          \ifcase\c@chapter\relax
+            cap01%
+          \or cap01\or cap02\or cap03\or cap04\or cap05\or cap06\or cap07\or cap08\or cap09\or cap10\or cap11%
+          \fi
+        }
         \renewcommand{\chapterlinesformat}[3]{%
-          {\setlength{\fboxsep}{12pt}%
-          \noindent\colorbox{chapbg}{%
-            \parbox[c][5cm]{\dimexpr\linewidth-2\fboxsep\relax}{%
-              \def\@chnum{#2}%
-              \ifx\@chnum\@empty%
-                {\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\color{chaptxt}\huge\bfseries #3}%
-              \else%
-                \begin{minipage}[c]{3cm}%
-                  \centering\color{chapnum}\fontsize{104}{104}\selectfont\bfseries #2%
-                \end{minipage}%
-                \hspace{10pt}%
-                \begin{minipage}[c]{\dimexpr\linewidth-2\fboxsep-3cm-10pt\relax}%
-                  \raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\color{chaptxt}\fontsize{20}{24}\selectfont\bfseries #3%
-                \end{minipage}%
-              \fi%
-            }%
-          }}%
+          \def\@chnum{#2}%
+          \ifx\@chnum\@empty%
+            \noindent%
+            \begin{tikzpicture}[remember picture]
+              \useasboundingbox (0,0) rectangle (\linewidth,5cm);
+              \clip (0,0) rectangle (\linewidth,5cm);
+              \node[anchor=center,inner sep=0pt] at (0.5\linewidth,2.5cm)
+                {\includegraphics[width=\linewidth]{assets/images/heroes/index.jpg}};
+              \fill[coverDark,opacity=0.55] (0,0) rectangle (0.4\linewidth,5cm);
+              \fill[coverDark,opacity=0.3] (0.4\linewidth,0) rectangle (0.65\linewidth,5cm);
+              \fill[coverDark,opacity=0.05] (0.65\linewidth,0) rectangle (\linewidth,5cm);
+              \node[anchor=west,text width=\dimexpr0.62\linewidth\relax,align=left,text=white,inner sep=0pt]
+                at (12pt,2.5cm) {\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\huge\bfseries #3};
+            \end{tikzpicture}%
+          \else%
+            \noindent%
+            \begin{tikzpicture}[remember picture]
+              \useasboundingbox (0,0) rectangle (\linewidth,5cm);
+              \clip (0,0) rectangle (\linewidth,5cm);
+              \edef\heroimg{assets/images/heroes/\chapheroname.jpg}%
+              \node[anchor=center,inner sep=0pt] at (0.5\linewidth,2.5cm)
+                {\includegraphics[width=\linewidth]{\heroimg}};
+              \fill[coverDark,opacity=0.4] (0,0) rectangle (\linewidth,5cm);
+              \node[anchor=west,text=coverLight,font=\fontsize{80}{80}\selectfont\bfseries,inner sep=0pt]
+                at (12pt,2.5cm) {#2};
+              \node[anchor=west,text width=\dimexpr\linewidth-3.6cm\relax,align=left,text=white,inner sep=0pt]
+                at (3.6cm,2.5cm) {\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\fontsize{20}{24}\selectfont\bfseries #3};
+            \end{tikzpicture}%
+          \fi%
         }
         \makeatother
     pdf-engine: lualatex

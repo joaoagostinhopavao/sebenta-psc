@@ -21,41 +21,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
 }
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
 }
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
 }
-</style>
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Electrónica</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Eletrónica</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -205,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Colectivo</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Coletivo</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -217,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../capitulos/cap11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interacção</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mobilidade, Ubiquidade e Interação</span></span></a>
   </div>
 </li>
     </ul>
@@ -231,6 +217,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#sec-08-intro" id="toc-sec-08-intro" class="nav-link active" data-scroll-target="#sec-08-intro">Introdução</a></li>
+  <li><a href="#sec-08-atividade-colaborativa" id="toc-sec-08-atividade-colaborativa" class="nav-link" data-scroll-target="#sec-08-atividade-colaborativa"><span class="header-section-number">8.1</span> Desenvolvimento de Software como Atividade Colaborativa</a></li>
+  <li><a href="#sec-08-pares" id="toc-sec-08-pares" class="nav-link" data-scroll-target="#sec-08-pares"><span class="header-section-number">8.2</span> Programação em Pares</a></li>
+  <li><a href="#sec-08-versao" id="toc-sec-08-versao" class="nav-link" data-scroll-target="#sec-08-versao"><span class="header-section-number">8.3</span> Sistemas de Controlo de Versão</a></li>
+  <li><a href="#sec-08-defeitos" id="toc-sec-08-defeitos" class="nav-link" data-scroll-target="#sec-08-defeitos"><span class="header-section-number">8.4</span> Sistemas de Gestão de Defeitos</a></li>
+  <li><a href="#sec-08-distribuido" id="toc-sec-08-distribuido" class="nav-link" data-scroll-target="#sec-08-distribuido"><span class="header-section-number">8.5</span> Desenvolvimento Distribuído e Global</a></li>
+  <li><a href="#sec-08-sintese" id="toc-sec-08-sintese" class="nav-link" data-scroll-target="#sec-08-sintese"><span class="header-section-number">8.6</span> Síntese</a></li>
+  <li><a href="#sec-08-reflexao" id="toc-sec-08-reflexao" class="nav-link" data-scroll-target="#sec-08-reflexao"><span class="header-section-number">8.7</span> Para Refletir</a></li>
+  <li><a href="#sec-08-referencias" id="toc-sec-08-referencias" class="nav-link" data-scroll-target="#sec-08-referencias">Referências</a></li>
   </ul>
 </nav>
     </div>
@@ -239,7 +233,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Desenvolvimento Colaborativo de Software</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Código</button></div></div>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Desenvolvimento Colaborativo de Software</span></h1>
 </div>
 
 
@@ -256,7 +250,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Data de Publicação</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 de agosto de 2026</p>
+      <p class="date">20 de agosto de 2026</p>
     </div>
   </div>
   
@@ -268,12 +262,84 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap08.jpg');">
+  <div class="hero-badge">Capítulo 8</div>
+  <h1>Desenvolvimento Colaborativo de Software</h1>
+</div>
 <section id="sec-08-intro" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="sec-08-intro">Introdução</h2>
-<p><em>Conteúdo por desenvolver.</em></p>
+<p>Os capítulos anteriores discutiram a colaboração em espaços virtuais e na relação entre cidadãos e governo. Este capítulo volta-se para um domínio mais próximo de quem estuda Computação: o desenvolvimento de software é, ele próprio, uma atividade profundamente colaborativa, raramente realizada por uma só pessoa, e cada vez mais realizada por equipas geograficamente distribuídas.</p>
+</section>
+<section id="sec-08-atividade-colaborativa" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="sec-08-atividade-colaborativa"><span class="header-section-number">8.1</span> Desenvolvimento de Software como Atividade Colaborativa</h2>
+<p>O sucesso de uma organização depende cada vez mais do software que usa como diferencial competitivo, e o desenvolvimento desse software é raramente uma atividade individual: diversos especialistas precisam de trabalhar em conjunto, coordenar as suas atividades, tomar decisões e comunicar continuamente para desenvolver software de qualidade dentro do prazo e do custo estimados <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>A colaboração organiza-se em torno de <strong>modelos</strong>, abstrações do software que está a ser construído: especificações de requisitos, diagramas de classes, casos de uso, e o próprio código-fonte. Os modelos não são independentes uns dos outros: uma alteração no diagrama de classes de um software, por exemplo, exige normalmente alterações correspondentes no código-fonte, para que os dois modelos permaneçam consistentes entre si. Esta dependência torna a coordenação entre programadores particularmente importante, pois alterações desalinhadas entre modelos tendem a gerar erros <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+</section>
+<section id="sec-08-pares" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="sec-08-pares"><span class="header-section-number">8.2</span> Programação em Pares</h2>
+<p>A <strong>programação em pares</strong> (<em>pair programming</em>) é uma prática proposta pelo método ágil <em>Extreme Programming</em>, em que dois programadores trabalham juntos num único computador: um escreve o código enquanto o outro o revê em tempo real, questiona decisões de implementação e procura casos de teste que possam falhar <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>Não se trata de uma pessoa a programar enquanto outra apenas assiste, mas de um diálogo constante entre duas pessoas que procuram, em conjunto, uma solução melhor do que a que cada uma alcançaria sozinha. O código é revisto por duas pessoas em tempo real, o que reduz a possibilidade de defeitos e acelera a partilha de conhecimento entre um programador mais experiente e outro menos experiente. Como qualquer prática colaborativa, exige uma mudança cultural: a evidência sugere que a produtividade aumenta com a prática, à medida que a dupla aprende a comunicar e a dividir melhor o trabalho entre si <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+</section>
+<section id="sec-08-versao" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="sec-08-versao"><span class="header-section-number">8.3</span> Sistemas de Controlo de Versão</h2>
+<p>O <strong>controlo de versão</strong> é a disciplina responsável por controlar a evolução e a integridade de um produto de software ao longo do tempo, identificando, registando e coordenando as alterações feitas por diferentes membros da equipa <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>. Sistemas como o <code>Git</code>, hoje o mais usado, mantêm um repositório central com o histórico completo do código, do qual cada programador copia uma área de trabalho própria (<a href="#fig-08-versao" class="quarto-xref">Figura&nbsp;<span>8.1</span></a>).</p>
+<div id="fig-08-versao" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-08-versao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap08/controlo-versao.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-08-versao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;8.1: Partilha de ficheiros num sistema de controlo de versão: cada programador trabalha numa cópia local, e sincroniza as suas alterações com o repositório central.
+</figcaption>
+</figure>
+</div>
+<p>Um sistema de controlo de versão apoia a colaboração de várias formas: gera um registo de alterações que serve de memória partilhada sobre a evolução do produto; fornece informação de perceção sobre o que os colegas estão a fazer, notificando alterações; e possibilita a coordenação de dependências entre atividades, seja por meio de um desenvolvimento sequencial, seja em paralelo, com integração posterior do trabalho de cada pessoa. Plataformas como o <code>GitHub</code> e o <code>GitLab</code> integram hoje o controlo de versão com a gestão de defeitos e a revisão de código no mesmo sistema.</p>
+</section>
+<section id="sec-08-defeitos" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="sec-08-defeitos"><span class="header-section-number">8.4</span> Sistemas de Gestão de Defeitos</h2>
+<p>Um software raramente está livre de defeitos, encontrados pela equipa de qualidade ou pelos próprios utilizadores. Os <strong>sistemas de gestão de defeitos</strong>, como o <code>Bugzilla</code>, o <code>JIRA</code> ou os <em>issues</em> do <code>GitHub</code>, apoiam o registo, a atribuição e o acompanhamento da resolução de defeitos, envolvendo tipicamente vários atores em papéis distintos: quem testa, quem desenvolve, e quem gere a equipa (<a href="#fig-08-defeitos" class="quarto-xref">Figura&nbsp;<span>8.2</span></a>) <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<div id="fig-08-defeitos" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-08-defeitos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap08/ciclo-defeito.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-08-defeitos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;8.2: Ciclo de vida colaborativo de um defeito de software, entre o registo inicial e a verificação final da correção.
+</figcaption>
+</figure>
+</div>
+<p>Um defeito é registado por quem o encontra, encaminhado para um programador que trabalha na correção, e devolvido para verificação por quem o reportou originalmente. Se a correção não for satisfatória, o defeito é reaberto, reiniciando o ciclo. Além do registo e da solução, estes sistemas possibilitam priorizar defeitos, gerar relatórios sobre o estado de cada um, e identificar defeitos semelhantes ou já reportados, o que é particularmente útil para equipas geograficamente distribuídas, cujos membros nem sempre têm oportunidade de se encontrar pessoalmente para discutir uma solução <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+</section>
+<section id="sec-08-distribuido" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="sec-08-distribuido"><span class="header-section-number">8.5</span> Desenvolvimento Distribuído e Global</h2>
+<p>A globalização dos negócios refletiu-se também no desenvolvimento de software: é cada vez mais comum que os membros de uma mesma equipa estejam separados por distância física e temporal, e que um projeto envolva participantes de diferentes países, culturas e fusos horários <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>A distância entre colaboradores tem um efeito bem documentado sobre a colaboração. Um estudo clássico de Thomas Allen, em 1977, mostrou que a frequência de colaboração entre engenheiros era inversamente proporcional à distância física entre as suas secretárias: a partir de cerca de 30 metros, a colaboração entre colegas diminuía de forma acentuada <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>. O efeito é explicado pela perda de oportunidades de <strong>comunicação informal</strong>, as conversas espontâneas de corredor ou de máquina de café, sem qualquer agendamento prévio, através das quais os colegas tomam conhecimento do andamento do trabalho uns dos outros e encontram soluções conjuntas para problemas comuns.</p>
+<p>Apesar de os sistemas colaborativos já discutidos ajudarem a reduzir a distância entre pessoas, através de mensagens instantâneas e de videoconferência, a distância física entre profissionais que precisam de colaborar continua a ser um desafio real, a par de outros fatores como as diferenças de fuso horário, de língua, de costumes e de normas culturais entre equipas distribuídas <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+</section>
+<section id="sec-08-sintese" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="sec-08-sintese"><span class="header-section-number">8.6</span> Síntese</h2>
+<p>Este capítulo tratou do desenvolvimento de software como atividade colaborativa:</p>
+<ol type="1">
+<li>O desenvolvimento de software organiza-se em torno de <strong>modelos</strong> interdependentes, cujas alterações exigem coordenação entre a equipa <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span></li>
+<li>A <strong>programação em pares</strong> é uma prática colaborativa em que dois programadores trabalham em diálogo constante, reduzindo defeitos e partilhando conhecimento</li>
+<li>Os <strong>sistemas de controlo de versão</strong>, hoje sobretudo baseados em <code>Git</code>, coordenam as alterações de uma equipa e mantêm um registo do histórico do produto</li>
+<li>Os <strong>sistemas de gestão de defeitos</strong> apoiam o ciclo de vida colaborativo de um defeito, do registo à verificação da correção</li>
+<li>O <strong>desenvolvimento distribuído e global</strong> é cada vez mais comum, mas a distância física entre colaboradores continua a prejudicar a comunicação informal, essencial para a colaboração</li>
+</ol>
+</section>
+<section id="sec-08-reflexao" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="sec-08-reflexao"><span class="header-section-number">8.7</span> Para Refletir</h2>
+<p>Se já trabalhaste num projeto de programação em grupo, pensa em como foi feita a coordenação do código: usaram algum sistema de controlo de versão? Como resolveram conflitos quando duas pessoas alteravam o mesmo ficheiro?</p>
+<p>E quanto à distância física: já sentiste, num trabalho de grupo, a diferença entre resolver um problema presencialmente e tentar resolvê-lo apenas por mensagem?</p>
+</section>
+<section id="sec-08-referencias" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-08-referencias">Referências</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-SouzaEtAl2011" class="csl-entry" role="listitem">
+Souza, Cleidson R. B. de, Sabrina Marczak, e Rafael Prikladnicki. 2011. <span>«Desenvolvimento Colaborativo de Software»</span>. Em <em>Sistemas Colaborativos</em>, editado por Mariano Pimentel e Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+</div>
 
-
-<!-- -->
 
 </section>
 
@@ -509,57 +575,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -892,27 +907,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../capitulos/cap07.html" class="pagination-link" aria-label="Democracia Electrónica">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Electrónica</span></span>
+      <a href="../capitulos/cap07.html" class="pagination-link" aria-label="Democracia Eletrónica">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Democracia Eletrónica</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../capitulos/cap09.html" class="pagination-link" aria-label="Aprendizagem Colaborativa e Conhecimento Colectivo">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Colectivo</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../capitulos/cap09.html" class="pagination-link" aria-label="Aprendizagem Colaborativa e Conhecimento Coletivo">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Aprendizagem Colaborativa e Conhecimento Coletivo</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Código fonte</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Desenvolvimento Colaborativo de Software"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "João Pavão"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2026-08-18</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">lang:</span><span class="co"> pt-PT</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introdução {#sec-08-intro .unnumbered}</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>*Conteúdo por desenvolver.*</span></code><button title="Copiar para a área de transferência" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">

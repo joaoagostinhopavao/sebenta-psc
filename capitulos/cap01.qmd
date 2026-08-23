@@ -5,6 +5,366 @@ date: 2026-08-18
 lang: pt-PT
 ---
 
+```{=html}
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap01.jpg');">
+  <div class="hero-badge">Capítulo 1</div>
+  <h1>Sociedade em Rede e Ciberespaço</h1>
+</div>
+```
+
 ## Introdução {#sec-01-intro .unnumbered}
 
-*Conteúdo por desenvolver.*
+Este capítulo introduz os fundamentos teóricos do primeiro bloco da unidade
+curricular, **Plataformas Sociais**, situando as plataformas sociais e
+cooperativas no contexto mais amplo da transição para uma sociedade
+organizada em rede. Antes de se estudarem as redes sociais, métricas ou modelos
+de colaboração em concreto, importa compreender **porque razão** essas
+plataformas emergiram e **que tipo de sociedade** as tornou possíveis e
+necessárias.
+
+## As Revoluções da Sociedade {#sec-01-revolucoes}
+
+A história das sociedades pode ler-se como uma sucessão de
+revoluções organizadas cada uma à volta de uma técnica dominante: a
+sociedade de **caça e recolha**, baseada no domínio da técnica de caça;
+a sociedade **agrícola**, organizada à volta da técnica do cultivo; a
+sociedade **industrial**, alimentada pela energia a vapor e,
+posteriormente, pela eletricidade; e a sociedade **em rede**, estruturada
+em torno da rede de computadores.
+
+Cada uma destas transições não foi apenas tecnológica: mudou também os
+modos de produção, o espaço e hábitos de convivência, a organização social e os
+próprios estilos de agir, viver e ser de quem nela viveu. É esta última
+transição, da sociedade industrial para a sociedade em rede, que enquadra
+o estudo das plataformas sociais e cooperativas.
+
+### Uma revolução de facto? {#sec-01-revolucao-facto}
+
+Que as redes de computadores estão a mudar profundamente a sociedade
+parece hoje evidente, mas vale a pena situar essa mudança num espaço de tempo
+mais alargado de tecnologias de comunicação, para perceber que não se
+trata de um fenómeno isolado, mas de uma aceleração contínua:
+
+- **Década de 1900** - rádio (difusão de mensagens sonoras em massa,  de *um*-para-*muitos*)
+- **Década de 1920** - televisão (difusão de som e imagem em massa,  de *um*-para-*muitos*)
+- **Década de 1950** - aparecimento dos primeiros computadores, isolados
+- **Década de 1960** - rede de computadores e, mais tarde, a rede de redes: a Internet
+- **Décadas de 1970–1980** - popularização dos microcomputadores
+- **Década de 1990** - a Web e o início da computação em nuvem
+- **Década de 2000** - Web 2.0 e meios de comunicação sociais *online*
+- **A partir de 2010** - computação ubíqua, Internet das Coisas e Inteligência Artificial
+
+Cada uma destas etapas ampliou o alcance e a velocidade da comunicação
+humana, mas foi a passagem de redes de **difusão** (rádio, televisão) para
+redes de **interação** (Internet) que criou as condições
+para o tipo de plataformas que esta unidade curricular estuda.
+
+## A Sociedade em Rede {#sec-01-sociedade-rede}
+
+### Redes sociais: um fenómeno anterior à tecnologia {#sec-01-redes-nao-tecnologicas}
+
+Antes de avançar, importa desfazer um equívoco comum: a **rede social**,
+enquanto conceito, não é uma invenção tecnológica. Organizar-se em redes
+de relações, sejam elas de família, parentesco, amizade, vizinhança ou
+comércio, é uma característica estrutural do ser humano enquanto animal
+social, muito
+anterior a qualquer computador. O estudo científico sistemático destas
+redes remonta a 1934, quando o psiquiatra Jacob Moreno lançou as bases da
+**sociometria** ao mapear, através de diagramas a que chamou
+*sociogramas*, os laços de atração e rejeição entre indivíduos de um
+grupo, o mesmo tipo de representação gráfica que retomaremos no capítulo
+seguinte para analisar redes sociais digitais [@Moreno1934].
+
+O que a tecnologia digital trouxe não foi o conceito de rede social, mas
+sim uma mudança de **escala, alcance e meio**: redes que antes se
+limitavam a algumas dezenas de contactos presenciais podem hoje
+estender-se a milhares de ligações, mediadas por plataformas, e deixam um
+rasto de dados que pode ser analisado de formas antes impossíveis. A
+distinção é importante para todo o resto desta unidade curricular:
+estudamos *plataformas* sociais, o suporte tecnológico, sem esquecer
+que aquilo que elas medeiam é um comportamento humano bem mais antigo do
+que elas.
+
+### O que muda, então, com a tecnologia? {#sec-01-sociedade-rede-castells}
+
+É a este nível, o da estrutura da sociedade global, não o da
+existência de redes individuais que se situa o conceito de **sociedade
+em rede**, desenvolvido de forma sistemática pelo sociólogo Manuel
+Castells. Castells não afirma que as redes sociais nasceram com a
+tecnologia; afirma que a **lógica de rede**, descentralizada, sem um
+centro único, organizada em nós e ligações, se tornou o **princípio
+organizativo dominante** de toda a sociedade contemporânea. Porquê? Porque as tecnologias de informação e comunicação baseadas na
+microeletrónica permitem que essa lógica opere à escala global e em
+tempo real [@Castells2004].
+
+Esta ideia tem uma consequência direta para o estudo das plataformas
+sociais e cooperativas: uma rede social digital **não substitui nem
+inventa o fenómeno social subjacente**: é uma instância tecnológica que
+medeia o comportamento humano universal, operando numa escala e a uma
+velocidade que a microeletrónica possibilita. A lógica de
+funcionamento em rede, com os seus nós, ligações, fluxos de informação, ausência de
+centro único, aplica-se tanto à sociedade como um todo, como a cada
+plataforma específica que se vai estudar ao longo do semestre.
+
+### Como nomear esta nova sociedade? {#sec-01-nomear}
+
+Não existe consenso total sobre a designação mais adequada para a
+sociedade que emerge desta transição. Encontram-se na literatura
+designações como *sociedade da informação*, *sociedade do conhecimento*,
+*sociedade da comunicação*, *sociedade em rede* ou *sociedade conectada*.
+Cada uma destas designações aponta para uma perspetiva diferente da mesma
+transformação: a informação como matéria-prima, o conhecimento como valor
+acrescentado, a comunicação como processo, ou a ligação em rede como
+estrutura. Ao longo deste documento usaremos preferencialmente *sociedade em
+rede*, por ser a que melhor captura a estrutura organizativa subjacente às
+plataformas que estudaremos.
+
+## O Ciberespaço {#sec-01-ciberespaco}
+
+O termo **ciberespaço** foi cunhado pelo escritor de ficção científica
+William Gibson, primeiro no conto "Burning Chrome" (1982) e popularizado
+no romance *Neuromancer* (1984) [@Gibson1984]. O significado atribuído ao
+termo alterou-se substancialmente desde então: do espaço puramente
+imaginário da ficção científica para o espaço de interação social real
+que hoje ocupamos através dos nossos ecrãs.
+
+Neste espaço, constituído tecnicamente por circuitos digitais e impulsos elétricos (que compõem os *bits*),
+desenvolvem-se práticas sociais reais: novas formas de trabalhar,
+conviver, aprender e colaborar. É precisamente neste espaço que se situam
+as plataformas sociais e cooperativas que são objeto de estudo desta
+unidade curricular.
+
+### O ciberespaço como a nova metrópole {#sec-01-metropole}
+
+A Revolução Industrial deu origem aos grandes centros urbano-industriais,
+para onde afluíram populações de zonas rurais em busca de trabalho: as cidades, com um significado diferente de até então. Estas deixaram de ser apenas centros administrativos ou culturais para passar a ser locais de concentração de trabalhadores e suas famílias. A
+cidade tornou-se, historicamente, o espaço de moradia, trabalho e
+socialização por excelência. O ciberespaço desempenha hoje um papel
+estrutural semelhante: um espaço que concentra atividade económica,
+política e cultural, e que se tornou, ele próprio, um dos temas centrais
+de reflexão sobre o mundo contemporâneo, tal como a cidade industrial o
+foi para os pensadores do século XIX e início do século XX.
+
+### Um espaço integrado ao físico {#sec-01-integracao-fisica}
+
+O ciberespaço já não se limita à experiência mediada por um ecrã. A
+integração entre o digital e o físico é hoje uma das tendências mais
+marcantes da computação contemporânea, antecipada com notável precisão
+por Mark Weiser, cientista da Xerox PARC, no seu artigo seminal "The
+Computer for the 21st Century" [@Weiser1991]. Weiser propôs o conceito de
+**computação ubíqua** (*ubiquitous computing*): tecnologias tão bem
+integradas no dia-a-dia que se tornam invisíveis, na medida em que deixam
+de ser vistas como "computadores" e passam a fazer parte do
+ambiente.
+
+Esta visão concretiza-se hoje em três fenómenos interligados:
+
+- **Internet das Coisas (IoT)** - objetos do dia-a-dia, antes estáticos,
+  tornam-se dinâmicos e interligados: telemóveis, câmaras de segurança,
+  automóveis e eletrodomésticos comunicam entre si e com serviços na
+  nuvem.
+- **Integração no ambiente** - a tecnologia deixa de estar concentrada num
+  único dispositivo e passa a estar distribuída, discreta, presente em
+  múltiplos pontos do ambiente
+- **Web sensível ao contexto** - os resultados que recebemos de um motor
+  de busca ou de uma aplicação dependem cada vez mais da nossa
+  localização, idioma e circunstância específica
+
+Estes três fenómenos têm implicações diretas para as plataformas
+cooperativas que estudaremos nos blocos seguintes: a colaboração deixa de
+estar confinada a um ecrã e a um momento específico, e passa a poder
+ocorrer em qualquer lugar, a qualquer momento, tema que se retomará em
+detalhe no capítulo sobre mobilidade e ubiquidade.
+
+## Gerações Digitais e o "Ser Humano Digital" {#sec-01-geracoes}
+
+A relação de cada pessoa com a tecnologia depende, em larga medida, do
+momento histórico em que esta foi introduzida na sua vida. O investigador
+e autor Marc Prensky introduziu, em 2001, a distinção entre **nativos
+digitais**, os que nasceram já rodeados de tecnologia digital, e
+**imigrantes digitais**, os que tiveram de se adaptar a ela ao longo da
+vida adulta [@Prensky2001]. Embora esta dicotomia tenha sido posteriormente
+criticada por simplificar excessivamente um fenómeno mais gradual e
+heterogéneo, continua a ser uma referência incontornável para pensar como
+diferentes gerações se relacionam com as plataformas sociais e
+cooperativas.
+
+De forma mais fina, é comum distinguirem-se hoje várias gerações digitais:
+
+- **Baby Boomers** (nascidos entre 1946 e 1964) - viveram a introdução
+  gradual do computador pessoal já em idade adulta
+- **Geração X** (1965–1980) - testemunhou o surgimento dos computadores
+  pessoais e da Internet ainda em fase de formação
+- **Millennials / Geração Y** (1981–1996) - nativos digitais na aceção
+  original de Prensky, cresceram com a Internet já disponível
+- **Geração Z** (1997–2012) - nasceu já com redes sociais, *smartphones*
+  e conectividade permanente como parte integrante do quotidiano
+- **Geração Alpha** (2010–2024) - primeira geração a crescer sem memória
+  de um mundo sem redes sociais, assistentes de voz e conteúdo gerado por
+  algoritmos de recomendação; sobrepõe-se parcialmente à Geração Z, uma
+  vez que as fronteiras entre gerações não são datas exatas, mas zonas de
+  transição
+
+À data deste capítulo, está já em curso uma nova geração, a **Geração
+Beta** (a partir de 2025), a que pertencerão as crianças nascidas neste
+período. Por ser demasiado recente, ainda não existe investigação
+consistente sobre a sua relação com a tecnologia [@McCrindle2026].
+
+Esta distinção geracional será relevante quando estudarmos, no capítulo
+seguinte, a adoção e utilização das redes sociais: diferentes gerações
+não só usam plataformas diferentes, como as usam de formas
+qualitativamente distintas.
+
+## O Lado Sombrio da Sociedade em Rede {#sec-01-riscos}
+
+A transição para a sociedade em rede, tal como as transições sociais anteriores,  não trouxe apenas novas
+oportunidades de interação e colaboração: trouxe também novos riscos,
+que qualquer estudo de plataformas sociais e cooperativas deve reconhecer
+em vez de ignorar. Três destes riscos merecem destaque particular:
+
+### Privacidade: o paradoxo da partilha {#sec-01-privacidade}
+
+A investigadora Susan Barnes descreveu, já em 2006, aquilo que designou
+por **paradoxo da privacidade**: existe uma discrepância sistemática entre
+a preocupação que as pessoas dizem ter com a sua privacidade e o
+comportamento que efetivamente adotam nas redes sociais, partilhando
+livremente informação pessoal que mais tarde as surpreende ao ser vista
+por audiências não pretendidas [@Barnes2006]. Este paradoxo mantém-se
+plenamente atual: a arquitetura das plataformas sociais é desenhada
+para incentivar a partilha, e a compreensão real das suas implicações,
+quem vê o quê e durante quanto tempo, continua a ser
+**muito limitada** para a generalidade dos utilizadores. Esta limitação coloca graves problemas  utilizadores das redes sociais, não só de privacidade, mas também de cibersegurança, que os podem vir a afetar seriamente na sua vida real.
+
+### Vício tecnológico {#sec-01-vicio}
+
+O uso excessivo de redes sociais e de outras plataformas digitais tem
+vindo a ser estudado como um fenómeno com características de dependência
+comportamental. Uma análise bibliométrica recente identifica um
+crescimento sustentado da investigação científica sobre vício em redes
+sociais desde meados da década de 2010, associando o uso problemático a
+défices de controlo dos impulsos, perturbação do sono e impacto negativo
+no bem-estar psicológico [@PellegrinoEtAl2022]. Tal como a computação
+ubíqua tornou a tecnologia omnipresente (@sec-01-integracao-fisica), essa
+mesma omnipresença é também o que torna mais difícil desligar "da rede".
+
+### Cyberbullying {#sec-01-cyberbullying}
+
+A dimensão sombria da comunicação em rede tem também uma face social
+direta: o **cyberbullying**, ou assédio praticado através de meios
+digitais. Uma revisão abrangente da literatura mostra que as taxas de
+vitimização por *cyberbullying* entre crianças e adolescentes têm vindo a
+aumentar de forma consistente na última década, com impacto documentado
+na saúde mental, incluindo sintomas depressivos e, nos casos mais
+graves, levando a comportamentos suicidas [@ZhuEtAl2021]. Ao contrário do assédio
+presencial, o *cyberbullying* beneficia do anonimato e da ausência de
+fronteiras espaciais e temporais do ciberespaço (@sec-01-ciberespaco): a
+exposição não termina quando a vítima sai de um determinado local físico, nem se limita a determinados horários.
+
+Compreender o impacto nas vítimas é só metade do problema: importa também
+perguntar porque agridem os próprios agressores. Segundo Ijose, os
+*cyberbullies* apresentam tipicamente um sentido de autoestima reduzido e
+raramente têm noção real do dano que provocam, precisamente porque o meio
+digital lhes retira o acesso às pistas sociais: expressão facial, tom de
+voz, postura corporal, que, numa interação presencial, tornariam esse
+dano visível de imediato [@Ijose2011].
+
+Para além da literatura académica, existe também um conjunto relevante de
+obras de divulgação dirigidas diretamente aos mais jovens, o público mais
+exposto a este fenómeno. É o caso de *Bullying*, de Anne Rooney, que
+organiza o tema em torno de perguntas frequentes ("O que é o
+cyberbullying?", "Porque me estão a fazer bullying?", "Como posso pará-lo?"),
+numa linguagem acessível a adolescentes e sem pressupor conhecimento
+técnico prévio [@Rooney2015]. Este tipo de recurso cumpre um papel
+complementar ao da investigação científica: traduz os resultados em
+orientação prática e imediatamente utilizável por quem vive a situação.
+
+Privacidade, vício e *cyberbullying*, os três riscos identificados nas
+secções anteriores, não são efeitos colaterais acidentais das
+plataformas sociais e cooperativas, mas consequências diretas das mesmas
+características que as tornam
+poderosas: a facilidade de partilha, a disponibilidade permanente e o
+alcance social alargado. Qualquer análise ou conceção de plataformas
+cooperativas, tema central desta unidade curricular, deve ter estes
+riscos em conta desde a fase de desenho, e não apenas como correção
+posterior.
+
+## A Sociedade em Números {#sec-01-numeros}
+
+Para além do enquadramento teórico, é importante situar esta transição em
+dados concretos e atuais. Segundo o relatório *Measuring Digital
+Development: Facts and Figures 2024*, da União Internacional de
+Telecomunicações (ITU), **5,5 mil milhões de pessoas** estavam online em
+2024, ou seja, 68% da população mundial, contra 65% um ano antes. A taxa de
+crescimento está, ela própria, a acelerar (de 2,7% para 3,4% ao ano). Mas
+o inverso desse número é igualmente relevante: **2,6 mil milhões de
+pessoas, um terço da humanidade, continuam offline** [@ITU2024].
+
+A conectividade está longe de ser uniforme. Nos países de rendimento
+elevado, o acesso à Internet aproxima-se da universalidade; nos países de
+rendimento baixo, apenas 27% da população está online. O mesmo padrão
+repete-se noutros eixos: 83% da população urbana usa a Internet, contra
+48% da população rural; e, a nível de género, 70% dos homens usam a
+Internet a nível mundial, contra 65% das mulheres [@ITU2024]. Persiste,
+portanto, um **fosso digital** multidimensional: geográfico, económico,
+territorial e de género, que qualquer análise de plataformas sociais e
+cooperativas deve ter em conta.
+
+Vale a pena cruzar esta fonte institucional com os dados do setor que
+usaremos no próximo capítulo: o relatório *Digital 2024* da We Are
+Social/Meltwater, com análise da Kepios, estimava, para janeiro de 2024,
+5,35 mil milhões de utilizadores de Internet (66,2% da população mundial)
+[@WeAreSocial2024], um valor próximo, mas não idêntico, ao da ITU para
+esse mesmo ano (68%). As diferenças entre fontes referentes ao mesmo
+período resultam de metodologias de recolha distintas (inquéritos versus
+estimativas administrativas), mas a **convergência da ordem de grandeza**
+entre duas fontes independentes é, em si, um dado relevante: reforça a
+confiança na leitura de que a maioria da humanidade está hoje ligada.
+
+Esta desigualdade de acesso é um dado estrutural que qualquer análise de
+plataformas sociais e cooperativas deve ter em conta: a "sociedade em
+rede" não é uma condição universalmente partilhada, mas uma transição que
+avança a ritmos muito diferentes consoante o contexto geográfico,
+económico e social. Estes dados serão aprofundados no próximo capítulo,
+dedicado especificamente às estatísticas de utilização das redes sociais.
+
+## Síntese {#sec-01-sintese}
+
+Este capítulo situou o estudo das plataformas sociais e cooperativas numa
+transição histórica mais ampla, da sociedade industrial para a sociedade
+em rede, e introduziu cinco ideias que atravessarão toda esta unidade
+curricular:
+
+1. As redes sociais digitais são instâncias concretas de um princípio
+   organizativo mais geral, a **sociedade em rede** [@Castells2004]
+2. O **ciberespaço** deixou de ser um espaço puramente mediado por ecrã,
+   estando cada vez mais integrado ao mundo físico através da computação
+   ubíqua [@Weiser1991]
+3. A relação com estas tecnologias varia significativamente consoante a
+   **geração** a que cada pessoa pertence [@Prensky2001]
+4. Esta mesma transição tem um **lado sombrio**: privacidade, vício
+   tecnológico e cyberbullying, que deve ser considerado desde a
+   conceção das plataformas, não apenas corrigido depois de instalado
+   [@Barnes2006; @PellegrinoEtAl2022; @ZhuEtAl2021]
+5. A adoção desta sociedade em rede é **desigual**, e essa desigualdade
+   tem expressão estatística concreta [@ITU2023]
+
+## Para Refletir {#sec-01-reflexao}
+
+Perante uma mudança tão rápida quanto a descrita neste capítulo, é comum
+encontrarem-se duas posturas opostas: uma visão nostálgica e apreensiva
+face à perda de modos de vida anteriores, e uma visão excessivamente
+otimista que vê na tecnologia a solução automática para os problemas da
+sociedade. Que postura reconheces em ti, ou nas pessoas à tua volta?
+
+Pensa também nos riscos discutidos na secção anterior: já sentiste, ou
+observaste em alguém próximo, o paradoxo da privacidade descrito por
+Barnes: dizer que a privacidade importa, mas partilhar sem pensar duas
+vezes? Já tiveste dificuldade em desligar-te de uma plataforma social? E
+que responsabilidade cabe a quem desenha estas plataformas na prevenção
+do cyberbullying: é só uma questão de moderação de conteúdo, ou também
+de arquitetura do próprio sistema?
+
+## Referências {#sec-01-referencias .unnumbered}
+
+::: {#refs}
+:::

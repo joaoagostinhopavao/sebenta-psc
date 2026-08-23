@@ -1,12 +1,31 @@
 /* custom.css — Sebenta PSC (paleta: magenta/violeta) */
 
 /* ============================================================
+   FIGURAS — gráficos gerados com fundo branco (legíveis em dark mode)
+   ============================================================ */
+.quarto-figure {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.25rem 1.25rem 0.5rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+  margin: 1.75rem 0;
+}
+
+.quarto-figure figcaption {
+  color: #4a4a4a;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.25rem 0.75rem;
+}
+
+/* ============================================================
    HERO — capa da página principal (Prefácio)
    ============================================================ */
 .hero {
   background: linear-gradient(135deg, #1f0a2e 0%, #9c1f8f 60%, #e857b0 100%);
   color: #fff;
   border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  box-sizing: border-box;
   padding: 3.5rem 3rem 3rem;
   margin: 0 0 2.5rem;
   box-shadow: 0 4px 24px rgba(0,0,0,0.18);
@@ -14,7 +33,7 @@
   overflow: hidden;
 }
 
-.hero::before {
+.hero:not(.hero-chapter):not(.hero-cover)::before {
   content: "";
   position: absolute;
   top: -60px; right: -60px;
@@ -23,13 +42,35 @@
   border-radius: 50%;
 }
 
-.hero::after {
+.hero:not(.hero-chapter):not(.hero-cover)::after {
   content: "";
   position: absolute;
   bottom: -80px; left: -40px;
   width: 320px; height: 320px;
   background: rgba(255,255,255,0.03);
   border-radius: 50%;
+}
+
+/* Hero de capítulo — imagem de fundo com overlay, título ancorado ao fundo */
+.hero-chapter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hero da capa (Prefácio) — imagem de fundo com overlay, conteúdo no fluxo normal */
+.hero-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-chapter h1 {
+  font-size: 2.1rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45);
 }
 
 .hero h1 {
@@ -67,6 +108,33 @@
   text-transform: uppercase;
   margin-bottom: 1.2rem;
   color: rgba(255,255,255,0.9);
+}
+
+.hero .hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.2rem;
+  margin-top: 1.6rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.hero .hero-meta span {
+  position: relative;
+}
+
+.hero .hero-meta span + span::before {
+  content: "·";
+  margin-right: 1.2rem;
+  color: rgba(255,255,255,0.45);
+  position: absolute;
+  left: -0.9rem;
+}
+
+.hero .hero-meta .hero-meta-date {
+  color: rgba(255,255,255,0.6);
 }
 
 /* ============================================================
@@ -109,8 +177,37 @@ pre.sourceCode {
   font-weight: 300;
 }
 
-/* Ocultar autor/data nos capítulos */
-#title-block-header.quarto-title-block .quarto-title-meta {
+#title-block-header.quarto-title-block p.subtitle {
+  color: rgba(255,255,255,0.82) !important;
+}
+
+/* Autor/data nos capítulos — mantidos visíveis, mas com contraste
+   garantido sobre o fundo escuro do banner (antes herdavam a cor de
+   texto escura do tema, quase invisível sobre o roxo). */
+#title-block-header.quarto-title-block .quarto-title-meta-heading {
+  color: rgba(255,255,255,0.55) !important;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#title-block-header.quarto-title-block .quarto-title-meta-contents,
+#title-block-header.quarto-title-block .quarto-title-meta-contents p,
+#title-block-header.quarto-title-block p.author,
+#title-block-header.quarto-title-block p.date,
+#title-block-header.quarto-title-block p.affiliation {
+  color: rgba(255,255,255,0.92) !important;
+}
+
+/* Remover o botão "Código" (ver fonte .qmd) do cabeçalho */
+#title-block-header.quarto-title-block .code-tools-button {
+  display: none;
+}
+
+/* Na capa (index.qmd), o .hero substitui por completo o cabeçalho nativo
+   do Quarto — evita duplicar título/subtítulo, já que o .hero trata do
+   autor/afiliação/data com as suas próprias cores. */
+body:has(.hero) #title-block-header.quarto-title-block {
   display: none;
 }
 
