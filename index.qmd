@@ -37,7 +37,7 @@ oficial da UC:
 3. **Plataformas Mobile** — computação móvel e ubíqua aplicada à
    colaboração
 
-## Fonte e atualização {.unnumbered}
+## Fonte e atualização {.unnumbered} 
 
 Para além da diversa bibliografia devidamente indicada e compilada, os capítulos deste documento baseiam-se no livro  *Sistemas Colaborativos* 
 (Pimentel & Fuks, Editora Campus/Elsevier, 2011), disponibilizado
