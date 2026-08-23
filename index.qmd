@@ -39,7 +39,7 @@ oficial da UC:
 
 ## Fonte e atualização {.unnumbered}
 
-Para além da diversa bibliografia devidamente indicada e compilada, os capítulos deste documento baseiam-se no livro " *Sistemas Colaborativos* "
+Para além da diversa bibliografia devidamente indicada e compilada, os capítulos deste documento baseiam-se no livro  *Sistemas Colaborativos* 
 (Pimentel & Fuks, Editora Campus/Elsevier, 2011), disponibilizado
 publicamente pelos seus autores e adotado como bibliografia de referência da
 UC.
