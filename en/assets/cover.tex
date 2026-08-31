@@ -1,0 +1,9 @@
+%% Capa — Sebenta PSC (imagem: Capa1, recortada para A4)
+\newgeometry{top=0mm,bottom=0mm,left=0mm,right=0mm}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+  \node[anchor=south west, inner sep=0pt] at (current page.south west)
+    {\includegraphics[width=\paperwidth,height=\paperheight]{assets/images/capa/capa-a4.jpg}};
+\end{tikzpicture}
+\vfill\clearpage
+\restoregeometry
