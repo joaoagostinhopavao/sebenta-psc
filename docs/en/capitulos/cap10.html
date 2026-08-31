@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Pavão">
-<meta name="dcterms.date" content="2026-08-18">
+<meta name="dcterms.date" content="2026-08-20">
 
 <title>10&nbsp; Recommendation Systems and Collaborative AI – Social and Cooperative Platforms</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,8 +213,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-10-intro-en" id="toc-sec-10-intro-en" class="nav-link active" data-scroll-target="#sec-10-intro-en">Introduction</a></li>
+  <li><a href="#sec-10-recommendation-en" id="toc-sec-10-recommendation-en" class="nav-link" data-scroll-target="#sec-10-recommendation-en"><span class="header-section-number">10.1</span> Recommendation Systems</a>
+  <ul class="collapse">
+  <li><a href="#sec-10-recommendation-methods-en" id="toc-sec-10-recommendation-methods-en" class="nav-link" data-scroll-target="#sec-10-recommendation-methods-en"><span class="header-section-number">10.1.1</span> Recommendation Methods</a></li>
+  </ul></li>
+  <li><a href="#sec-10-ai-collaborative-en" id="toc-sec-10-ai-collaborative-en" class="nav-link" data-scroll-target="#sec-10-ai-collaborative-en"><span class="header-section-number">10.2</span> Artificial Intelligence for Collaborative Systems</a></li>
+  <li><a href="#sec-10-update-en" id="toc-sec-10-update-en" class="nav-link" data-scroll-target="#sec-10-update-en"><span class="header-section-number">10.3</span> The Update: Generative AI and Collaborative <em>Copilots</em></a></li>
+  <li><a href="#sec-10-summary-en" id="toc-sec-10-summary-en" class="nav-link" data-scroll-target="#sec-10-summary-en"><span class="header-section-number">10.4</span> Summary</a></li>
+  <li><a href="#sec-10-reflection-en" id="toc-sec-10-reflection-en" class="nav-link" data-scroll-target="#sec-10-reflection-en"><span class="header-section-number">10.5</span> Food for Thought</a></li>
+  <li><a href="#sec-10-references-en" id="toc-sec-10-references-en" class="nav-link" data-scroll-target="#sec-10-references-en">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -218,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 August 2026</p>
+      <p class="date">20 August 2026</p>
     </div>
   </div>
   
@@ -234,11 +269,89 @@ ul.task-list li input[type="checkbox"] {
   <div class="hero-badge">Chapter 10</div>
   <h1>Recommendation Systems and Collaborative AI</h1>
 </div>
-<blockquote class="blockquote">
-<p>Content to be translated.</p>
-</blockquote>
+<section id="sec-10-intro-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-10-intro-en">Introduction</h2>
+<p>The previous chapter showed how collective knowledge emerges from the combination of human contributions. This chapter deals with a next step: systems that use <strong>Artificial Intelligence</strong> (AI) to automate part of that collective work, whether by suggesting what might interest someone based on the behaviour of others, or by directly supporting a group’s communication, coordination and cooperation.</p>
+</section>
+<section id="sec-10-recommendation-en" class="level2" data-number="10.1">
+<h2 data-number="10.1" class="anchored" data-anchor-id="sec-10-recommendation-en"><span class="header-section-number">10.1</span> Recommendation Systems</h2>
+<p>A <strong>Recommendation System</strong> is an information filter that, from large volumes of data, presents the items likely to interest a specific user, whether products, films, music or content <span class="citation" data-cites="MottaEtAl2011">(<a href="cap01.html#ref-MottaEtAl2011" role="doc-biblioref">Motta et al. 2011</a>)</span>. The underlying principle is simple: “what is relevant to me may also be relevant to someone with similar interests”. Practically everyone has already used one of these systems without paying attention to it, from <code>Amazon</code>’s product suggestions to <code>Spotify</code>’s “Discover Weekly” lists or <code>Netflix</code>’s show recommendations.</p>
+<section id="sec-10-recommendation-methods-en" class="level3" data-number="10.1.1">
+<h3 data-number="10.1.1" class="anchored" data-anchor-id="sec-10-recommendation-methods-en"><span class="header-section-number">10.1.1</span> Recommendation Methods</h3>
+<p>There are three main families of methods for generating recommendations (<a href="#fig-10-methods-en" class="quarto-xref">Figure&nbsp;<span>10.1</span></a>) <span class="citation" data-cites="MottaEtAl2011">(<a href="cap01.html#ref-MottaEtAl2011" role="doc-biblioref">Motta et al. 2011</a>)</span>:</p>
+<div id="fig-10-methods-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-10-methods-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap10/metodos-recomendacao.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-10-methods-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.1: Three methods for generating recommendations, from the simplest to implement to the one that best exploits collective behaviour.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Direct information retrieval</strong>: the system returns items that literally match the user’s search criteria. It is the simplest method, but the quality of the recommendation depends entirely on the search performed.</li>
+<li><strong>Collaborative filtering</strong>: predicts a user’s interest in an item from the correlation between their ratings and those of other users with similar tastes. This is the method that makes a Recommendation System truly <strong>collaborative</strong>: each individual rating’s contribution improves the recommendation for the whole community, even though this collaboration is asynchronous and the benefits are not perceived at the moment of the contribution.</li>
+<li><strong>Content-based filtering</strong>: predicts a user’s interest from the characteristics of the content itself, comparing them with the preference profile already shown by that user, independently of other people’s behaviour.</li>
+</ul>
+<p>Collaborative filtering is effective, but has a high computational cost and suffers from the <strong>cold start</strong> problem: a new item, with no ratings yet, cannot be recommended by this method, however good it may be. Content-based filtering solves this specific problem, but depends on a rich, structured description of the content to work well. For this reason, most current recommendation systems combine several methods, including these two.</p>
+</section>
+</section>
+<section id="sec-10-ai-collaborative-en" class="level2" data-number="10.2">
+<h2 data-number="10.2" class="anchored" data-anchor-id="sec-10-ai-collaborative-en"><span class="header-section-number">10.2</span> Artificial Intelligence for Collaborative Systems</h2>
+<p>Besides recommending, AI techniques can directly support the three dimensions of the 3C Model (<a href="cap04.html#sec-04-3c-en" class="quarto-xref"><span>Section 4.4</span></a>): communication, coordination and cooperation <span class="citation" data-cites="GarciaEtAl2011">(<a href="cap01.html#ref-GarciaEtAl2011" role="doc-biblioref">Garcia et al. 2011</a>)</span> (<a href="#fig-10-mapping-en" class="quarto-xref">Figure&nbsp;<span>10.2</span></a>).</p>
+<div id="fig-10-mapping-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-10-mapping-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap10/mapeamento-ia-3c.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-10-mapping-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10.2: Mapping of Artificial Intelligence techniques to each dimension of the 3C Collaboration Model.
+</figcaption>
+</figure>
+</div>
+<p>Some fundamental techniques, already mature before the generative AI discussed next, include:</p>
+<ul>
+<li><strong>Ontologies</strong>: already discussed in Chapter 4 (<a href="cap04.html#sec-04-ontology-en" class="quarto-xref"><span>Section 4.5</span></a>), help ensure that sender and receiver share the same language structures, supporting communication.</li>
+<li><strong>Data mining</strong>: extracts patterns from large volumes of interactions that would be impossible to analyse manually, for example, to recommend skills or identify recurring behaviours in a group.</li>
+<li><strong>Expert and multi-agent systems</strong>: support coordination, detecting conflicts between concurrent tasks, suggesting resource allocation or managing the reputation of a group’s participants.</li>
+<li><strong>Autonomic systems</strong>: monitor and protect the shared workspace, supporting cooperation in a robust and secure way.</li>
+</ul>
+</section>
+<section id="sec-10-update-en" class="level2" data-number="10.3">
+<h2 data-number="10.3" class="anchored" data-anchor-id="sec-10-update-en"><span class="header-section-number">10.3</span> The Update: Generative AI and Collaborative <em>Copilots</em></h2>
+<p>The field of AI applied to collaboration transformed profoundly in the decade following the publication of these techniques, with the arrival of large language models (LLMs) and <strong>generative AI</strong>: systems such as <code>ChatGPT</code>, <code>Gemini</code> or <code>Claude</code>, capable of generating text, code and images from a natural-language request.</p>
+<p>The most direct impact on collaboration is the emergence of <strong><em>copilots</em></strong>, AI assistants integrated directly into the collaborative tools already discussed in this book. In software development (<a href="cap08.html#sec-08-version-control-en" class="quarto-xref"><span>Section 8.3</span></a>), <code>GitHub Copilot</code> suggests code directly in the editor, becoming a silent third participant alongside pair programming. In collaborative writing tools, such as <code>Google Docs</code> or <code>Notion</code>, AI assistants suggest, summarise and rewrite jointly produced content. And in communication systems (<a href="cap05.html#sec-05-cmc-en" class="quarto-xref"><span>Section 5.1</span></a>), meeting assistants automatically transcribe, summarise and distribute minutes among participants, an automated form of <strong>memory</strong>, the same aspect already discussed regarding Electronic Democracy (<a href="cap07.html#sec-07-aspects-en" class="quarto-xref"><span>Section 7.3</span></a>).</p>
+<p>These <em>copilots</em> do not replace the older AI techniques discussed in this chapter, but rather complement them: a collaborative writing assistant still benefits from a well-defined domain ontology, and a recommendation system still depends on collaborative filtering to know what to suggest. The difference lies in the naturalness of the interaction, now possible through natural language instead of structured commands or forms.</p>
+</section>
+<section id="sec-10-summary-en" class="level2" data-number="10.4">
+<h2 data-number="10.4" class="anchored" data-anchor-id="sec-10-summary-en"><span class="header-section-number">10.4</span> Summary</h2>
+<p>This chapter dealt with the application of Artificial Intelligence to collaborative systems:</p>
+<ol type="1">
+<li>A <strong>Recommendation System</strong> filters large volumes of information to suggest what is likely to interest a user, through direct retrieval, collaborative filtering or content-based filtering <span class="citation" data-cites="MottaEtAl2011">(<a href="cap01.html#ref-MottaEtAl2011" role="doc-biblioref">Motta et al. 2011</a>)</span></li>
+<li><strong>Collaborative filtering</strong> is the most directly collaborative method, but suffers from the cold-start problem for new items</li>
+<li>AI techniques such as <strong>ontologies</strong>, <strong>data mining</strong>, <strong>expert and multi-agent systems</strong> and <strong>autonomic systems</strong> each support one or more dimensions of the 3C Model <span class="citation" data-cites="GarciaEtAl2011">(<a href="cap01.html#ref-GarciaEtAl2011" role="doc-biblioref">Garcia et al. 2011</a>)</span></li>
+<li><strong>Generative AI</strong> gave rise to collaborative <strong><em>copilots</em></strong>, assistants integrated directly into the development, writing and communication tools already discussed in this book</li>
+</ol>
+</section>
+<section id="sec-10-reflection-en" class="level2" data-number="10.5">
+<h2 data-number="10.5" class="anchored" data-anchor-id="sec-10-reflection-en"><span class="header-section-number">10.5</span> Food for Thought</h2>
+<p>Think of a recent recommendation you received, of a film, product or piece of music, that pleasantly surprised you: can you tell whether it resulted from collaborative filtering (based on people similar to you) or content-based filtering (based on what you have already consumed)?</p>
+<p>And what about <em>copilots</em>: have you used an AI assistant integrated into a collaborative tool? What task did it save you, and which decisions did you still keep for yourself and your colleagues?</p>
+</section>
+<section id="sec-10-references-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-10-references-en">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-GarciaEtAl2011" class="csl-entry" role="listitem">
+Garcia, Ana Cristina Bicharra, Adriana Santarosa Vivacqua, Kate Cerqueira Revoredo, and Flavia Cristina Bernardini. 2011. <span>‘Inteligência Artificial Para Sistemas Colaborativos’</span>. In <em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-MottaEtAl2011" class="csl-entry" role="listitem">
+Motta, Claudia Lage Rebello da, Ana Cristina Bicharra Garcia, Adriana Santarosa Vivacqua, Flávia Maria Santoro, and Jonice de Oliveira Sampaio. 2011. <span>‘Sistemas de Recomendação’</span>. In <em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

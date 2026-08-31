@@ -18,4 +18,31 @@ lang: en-GB
 </div>
 ```
 
-> Content to be translated.
+This document is a self-study resource for the theoretical component of the course **Social and Cooperative Platforms** (PSC), 3rd year / 1st semester of the Bachelor's in Communication and Multimedia, covering the theoretical foundations, statistical data and metrics of social and cooperative platforms.
+
+In the practical component of the course — students use real collaborative platforms to develop a communication/branding strategy project, whose lessons go beyond the foundations developed in this theoretical textbook. They integrate naturally into the logic of the course and the degree, equipping students with important professional skills and facilitating their entry into the job market.
+
+## Organisation {.unnumbered}
+
+This textbook is organised into three thematic blocks, following the course's official syllabus:
+
+1. **Social Platforms** — theoretical foundations, statistical data and social network analysis metrics
+2. **Cooperative Platforms** — theories and models of collaboration, and the different types of cooperative platforms (communication, virtual environments, electronic democracy, collaborative development, learning, recommendation)
+3. **Mobile Platforms** — mobile and ubiquitous computing applied to collaboration
+
+## Source and Updates {.unnumbered}
+
+Beyond the diverse bibliography duly indicated and compiled, the chapters of this document are based on the book *Sistemas Colaborativos* (Pimentel & Fuks, Editora Campus/Elsevier, 2011), made publicly available by its authors and adopted as the course's reference bibliography.
+This document addresses topics related to social and collaborative platforms, adapting them to the real conditions of this course, and introduces more recent perspectives relevant to a modern consolidation of concepts (e.g. generative artificial intelligence, *hashtags* on current social networks), supported by current scientific references.
+Reading *Sistemas Colaborativos* (Pimentel & Fuks, Editora Campus/Elsevier, 2011) continues to be a recommended activity for all students.
+
+## How to Use This Document {.unnumbered}
+
+The examples throughout the text reflect current platforms and data.
+Each chapter corresponds to one theoretical class of the course. The lecturers recommend that students read a chapter before the corresponding class, and use this document as support for independent study, to review concepts and clarify doubts. This textbook does not replace attendance in class, nor participation in classroom discussions.
+
+## Authors {.unnumbered}
+
+**João Pavão** — UTAD, theoretical component
+
+**Diana Carvalho** — UTAD, practical component

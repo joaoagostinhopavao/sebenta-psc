@@ -4,7 +4,47 @@
     "href": "index.html",
     "title": "Social and Cooperative Platforms",
     "section": "",
-    "text": "Preface\n\n  UTAD · 2026/2027\n  Social and Cooperative Platforms\n  Course Study Guide\n  University of Trás-os-Montes e Alto Douro\n  \n    João Pavão\n    Diana Carvalho\n    18 August 2026\n  \n\n\nContent to be translated.",
+    "text": "Preface\nThis document is a self-study resource for the theoretical component of the course Social and Cooperative Platforms (PSC), 3rd year / 1st semester of the Bachelor’s in Communication and Multimedia, covering the theoretical foundations, statistical data and metrics of social and cooperative platforms.\nIn the practical component of the course — students use real collaborative platforms to develop a communication/branding strategy project, whose lessons go beyond the foundations developed in this theoretical textbook. They integrate naturally into the logic of the course and the degree, equipping students with important professional skills and facilitating their entry into the job market.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#organisation",
+    "href": "index.html#organisation",
+    "title": "Social and Cooperative Platforms",
+    "section": "Organisation",
+    "text": "Organisation\nThis textbook is organised into three thematic blocks, following the course’s official syllabus:\n\nSocial Platforms — theoretical foundations, statistical data and social network analysis metrics\nCooperative Platforms — theories and models of collaboration, and the different types of cooperative platforms (communication, virtual environments, electronic democracy, collaborative development, learning, recommendation)\nMobile Platforms — mobile and ubiquitous computing applied to collaboration",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#source-and-updates",
+    "href": "index.html#source-and-updates",
+    "title": "Social and Cooperative Platforms",
+    "section": "Source and Updates",
+    "text": "Source and Updates\nBeyond the diverse bibliography duly indicated and compiled, the chapters of this document are based on the book Sistemas Colaborativos (Pimentel & Fuks, Editora Campus/Elsevier, 2011), made publicly available by its authors and adopted as the course’s reference bibliography. This document addresses topics related to social and collaborative platforms, adapting them to the real conditions of this course, and introduces more recent perspectives relevant to a modern consolidation of concepts (e.g. generative artificial intelligence, hashtags on current social networks), supported by current scientific references. Reading Sistemas Colaborativos (Pimentel & Fuks, Editora Campus/Elsevier, 2011) continues to be a recommended activity for all students.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use-this-document",
+    "href": "index.html#how-to-use-this-document",
+    "title": "Social and Cooperative Platforms",
+    "section": "How to Use This Document",
+    "text": "How to Use This Document\nThe examples throughout the text reflect current platforms and data. Each chapter corresponds to one theoretical class of the course. The lecturers recommend that students read a chapter before the corresponding class, and use this document as support for independent study, to review concepts and clarify doubts. This textbook does not replace attendance in class, nor participation in classroom discussions.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#authors",
+    "href": "index.html#authors",
+    "title": "Social and Cooperative Platforms",
+    "section": "Authors",
+    "text": "Authors\nJoão Pavão — UTAD, theoretical component\nDiana Carvalho — UTAD, practical component",
     "crumbs": [
       "Preface"
     ]
@@ -14,7 +54,97 @@
     "href": "capitulos/cap01.html",
     "title": "1  Networked Society and Cyberspace",
     "section": "",
-    "text": "Chapter 1\n  Networked Society and Cyberspace\n\n\nContent to be translated.",
+    "text": "Introduction\nThis chapter introduces the theoretical foundations of the course’s first block, Social Platforms, situating social and cooperative platforms within the broader context of the transition to a society organised in a network. Before studying social networks, metrics or collaboration models in concrete terms, it is important to understand why these platforms emerged and what kind of society made them possible and necessary.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Networked Society and Cyberspace</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap01.html#sec-01-revolutions-en",
+    "href": "capitulos/cap01.html#sec-01-revolutions-en",
+    "title": "1  Networked Society and Cyberspace",
+    "section": "1.1 The Revolutions of Society",
+    "text": "1.1 The Revolutions of Society\nThe history of societies can be read as a succession of revolutions, each organised around a dominant technique: hunter-gatherer society, based on mastery of the hunting technique; agricultural society, organised around the technique of cultivation; industrial society, powered by steam and, later, electricity; and networked society, structured around the computer network.\nEach of these transitions was not merely technological: it also changed modes of production, the space and habits of coexistence, social organisation, and the very ways of acting, living and being of those who lived through it. It is this last transition, from industrial society to networked society, that frames the study of social and cooperative platforms.\n\n1.1.1 A revolution, in fact?\nThat computer networks are profoundly changing society seems evident today, but it is worth placing this change within a broader timeline of communication technologies, to see that it is not an isolated phenomenon, but a continuous acceleration:\n\n1900s - radio (mass broadcast of sound messages, one-to-many)\n1920s - television (mass broadcast of sound and image, one-to-many)\n1950s - the appearance of the first computers, isolated\n1960s - computer networks and, later, the network of networks: the Internet\n1970s–1980s - the popularisation of microcomputers\n1990s - the Web and the beginning of cloud computing\n2000s - Web 2.0 and online social media\nFrom 2010 onward - ubiquitous computing, the Internet of Things and Artificial Intelligence\n\nEach of these stages expanded the reach and speed of human communication, but it was the shift from broadcast networks (radio, television) to interaction networks (the Internet) that created the conditions for the kind of platforms this course studies.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Networked Society and Cyberspace</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap01.html#sec-01-networked-society-en",
+    "href": "capitulos/cap01.html#sec-01-networked-society-en",
+    "title": "1  Networked Society and Cyberspace",
+    "section": "1.2 The Networked Society",
+    "text": "1.2 The Networked Society\n\n1.2.1 Social networks: a phenomenon that predates the technology\nBefore going further, it is worth dispelling a common misconception: the social network, as a concept, is not a technological invention. Organising oneself into networks of relationships, whether of family, kinship, friendship, neighbourhood or trade, is a structural characteristic of human beings as social animals, long predating any computer. The systematic scientific study of these networks dates back to 1934, when the psychiatrist Jacob Moreno laid the foundations of sociometry by mapping, through diagrams he called sociograms, the ties of attraction and rejection between individuals in a group, the same kind of graphical representation we will revisit in the next chapter to analyse digital social networks (Moreno 1934).\nWhat digital technology brought was not the concept of the social network, but rather a change in scale, reach and medium: networks that used to be limited to a few dozen face-to-face contacts can today extend to thousands of connections, mediated by platforms, and leave a trail of data that can be analysed in ways previously impossible. This distinction matters for the rest of this course: we study social platforms, the technological support, without forgetting that what they mediate is a human behaviour far older than they are.\n\n\n1.2.2 So what does change, with technology?\nIt is at this level, that of the structure of global society, not that of the existence of individual networks, that the concept of networked society applies, developed systematically by the sociologist Manuel Castells. Castells does not claim that social networks were born with technology; he claims that network logic, decentralised, without a single centre, organised into nodes and links, became the dominant organising principle of contemporary society as a whole. Why? Because information and communication technologies based on microelectronics allow that logic to operate at a global scale and in real time (Castells 2004).\nThis idea has a direct consequence for the study of social and cooperative platforms: a digital social network does not replace or invent the underlying social phenomenon: it is a technological instance that mediates universal human behaviour, operating at a scale and speed that microelectronics makes possible. The logic of network operation, with its nodes, links, information flows, and absence of a single centre, applies both to society as a whole and to each specific platform to be studied throughout the semester.\n\n\n1.2.3 What to call this new society?\nThere is no full consensus on the most appropriate name for the society emerging from this transition. The literature offers designations such as information society, knowledge society, communication society, networked society or connected society. Each of these designations points to a different perspective on the same transformation: information as raw material, knowledge as added value, communication as process, or network connection as structure. Throughout this document we will preferably use networked society, as it best captures the organisational structure underlying the platforms we will study.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Networked Society and Cyberspace</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap01.html#sec-01-cyberspace-en",
+    "href": "capitulos/cap01.html#sec-01-cyberspace-en",
+    "title": "1  Networked Society and Cyberspace",
+    "section": "1.3 Cyberspace",
+    "text": "1.3 Cyberspace\nThe term cyberspace was coined by science fiction writer William Gibson, first in the short story “Burning Chrome” (1982) and popularised in the novel Neuromancer (1984) (Gibson 1984). The meaning attributed to the term has changed substantially since then: from the purely imaginary space of science fiction to the space of real social interaction we now occupy through our screens.\nIn this space, technically made up of digital circuits and electrical pulses (which make up bits), real social practices develop: new ways of working, socialising, learning and collaborating. It is precisely in this space that the social and cooperative platforms studied in this course are situated.\n\n1.3.1 Cyberspace as the new metropolis\nThe Industrial Revolution gave rise to large urban-industrial centres, to which populations flocked from rural areas in search of work: cities, with a different meaning from before. They stopped being merely administrative or cultural centres and became places where workers and their families concentrated. The city historically became the space for dwelling, work and socialisation par excellence. Cyberspace today plays a similar structural role: a space that concentrates economic, political and cultural activity, and that has itself become one of the central themes of reflection on the contemporary world, just as the industrial city was for thinkers of the 19th and early 20th centuries.\n\n\n1.3.2 A space integrated with the physical\nCyberspace is no longer limited to the experience mediated by a screen. The integration between the digital and the physical is today one of the most striking trends in contemporary computing, anticipated with remarkable precision by Mark Weiser, a Xerox PARC scientist, in his seminal article “The Computer for the 21st Century” (Weiser 1991). Weiser proposed the concept of ubiquitous computing: technologies so well integrated into daily life that they become invisible, in the sense that they stop being seen as “computers” and become part of the environment.\nThis vision materialises today in three interconnected phenomena:\n\nInternet of Things (IoT) - everyday objects, previously static, become dynamic and interconnected: mobile phones, security cameras, cars and home appliances communicate with each other and with cloud services.\nIntegration into the environment - technology stops being concentrated in a single device and becomes distributed, discreet, present at multiple points in the environment\nContext-aware Web - the results we receive from a search engine or an application increasingly depend on our location, language and specific circumstances\n\nThese three phenomena have direct implications for the cooperative platforms we will study in the following blocks: collaboration is no longer confined to a screen and a specific moment, and can now happen anywhere, at any time, a topic that will be revisited in detail in the chapter on mobility and ubiquity.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Networked Society and Cyberspace</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap01.html#sec-01-generations-en",
+    "href": "capitulos/cap01.html#sec-01-generations-en",
+    "title": "1  Networked Society and Cyberspace",
+    "section": "1.4 Digital Generations and the “Digital Human Being”",
+    "text": "1.4 Digital Generations and the “Digital Human Being”\nEach person’s relationship with technology depends, to a large extent, on the historical moment at which it was introduced into their life. Researcher and author Marc Prensky introduced, in 2001, the distinction between digital natives, those born already surrounded by digital technology, and digital immigrants, those who had to adapt to it during adult life (Prensky 2001). Although this dichotomy has since been criticised for oversimplifying a more gradual and heterogeneous phenomenon, it remains an unavoidable reference for thinking about how different generations relate to social and cooperative platforms.\nMore precisely, it is common today to distinguish several digital generations:\n\nBaby Boomers (born between 1946 and 1964) - experienced the gradual introduction of the personal computer already in adulthood\nGeneration X (1965–1980) - witnessed the emergence of personal computers and the Internet while still growing up\nMillennials / Generation Y (1981–1996) - digital natives in Prensky’s original sense, grew up with the Internet already available\nGeneration Z (1997–2012) - born with social networks, smartphones and permanent connectivity already an integral part of everyday life\nGeneration Alpha (2010–2024) - the first generation to grow up with no memory of a world without social networks, voice assistants and content generated by recommendation algorithms; overlaps partially with Generation Z, since the boundaries between generations are not exact dates, but transition zones\n\nAs of this chapter, a new generation is already underway, Generation Beta (from 2025 onward), to which children born in this period will belong. Being too recent, there is not yet consistent research on its relationship with technology (McCrindle Research 2026).\nThis generational distinction will be relevant when we study, in the next chapter, the adoption and use of social networks: different generations not only use different platforms, they use them in qualitatively different ways.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Networked Society and Cyberspace</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap01.html#sec-01-risks-en",
+    "href": "capitulos/cap01.html#sec-01-risks-en",
+    "title": "1  Networked Society and Cyberspace",
+    "section": "1.5 The Dark Side of Networked Society",
+    "text": "1.5 The Dark Side of Networked Society\nThe transition to networked society, like previous social transitions, did not bring only new opportunities for interaction and collaboration: it also brought new risks, which any study of social and cooperative platforms must acknowledge rather than ignore. Three of these risks deserve particular attention:\n\n1.5.1 Privacy: the sharing paradox\nResearcher Susan Barnes described, as early as 2006, what she called the privacy paradox: there is a systematic discrepancy between the concern people say they have about their privacy and the behaviour they actually adopt on social networks, freely sharing personal information that later surprises them when seen by unintended audiences (Barnes 2006). This paradox remains fully current: the architecture of social platforms is designed to encourage sharing, and real understanding of its implications, who sees what and for how long, remains very limited for most users. This limitation poses serious problems for social network users, not only of privacy, but also of cybersecurity, which can seriously affect them in their real life.\n\n\n1.5.2 Technological addiction\nExcessive use of social networks and other digital platforms has been studied as a phenomenon with characteristics of behavioural dependence. A recent bibliometric analysis identifies sustained growth in scientific research on social network addiction since the mid-2010s, associating problematic use with impulse control deficits, sleep disturbance and negative impact on psychological well-being (Pellegrino, Stasi, and Bhatiasevi 2022). Just as ubiquitous computing made technology omnipresent (Section 1.3.2), that same omnipresence is also what makes it harder to “disconnect”.\n\n\n1.5.3 Cyberbullying\nThe dark dimension of networked communication also has a direct social face: cyberbullying, or harassment carried out through digital means. A comprehensive literature review shows that cyberbullying victimisation rates among children and adolescents have been consistently increasing over the last decade, with documented impact on mental health, including depressive symptoms and, in the most severe cases, leading to suicidal behaviour (Zhu et al. 2021). Unlike in-person harassment, cyberbullying benefits from the anonymity and the absence of spatial and temporal boundaries of cyberspace (Section 1.3): exposure does not end when the victim leaves a given physical location, nor is it confined to certain hours.\nUnderstanding the impact on victims is only half the problem: it is also important to ask why the aggressors themselves attack. According to Ijose, cyberbullies typically show reduced self-esteem and rarely have a real sense of the harm they cause, precisely because the digital medium removes their access to social cues, facial expression, tone of voice, body posture, that, in a face-to-face interaction, would make that harm immediately visible (Ijose 2011).\nBeyond the academic literature, there is also a relevant body of popular non-fiction aimed directly at younger people, the audience most exposed to this phenomenon. This is the case of Bullying, by Anne Rooney, which organises the topic around frequently asked questions (“What is cyberbullying?”, “Why am I being bullied?”, “How can I stop it?”), in language accessible to teenagers and without assuming prior technical knowledge (Rooney 2015). This kind of resource plays a role complementary to scientific research: it translates results into practical, immediately usable guidance for those living through the situation.\nPrivacy, addiction and cyberbullying, the three risks identified in the previous sections, are not accidental side effects of social and cooperative platforms, but direct consequences of the very characteristics that make them powerful: ease of sharing, permanent availability and broad social reach. Any analysis or design of cooperative platforms, a central theme of this course, must take these risks into account from the design stage, not merely as a later correction.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Networked Society and Cyberspace</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap01.html#sec-01-numbers-en",
+    "href": "capitulos/cap01.html#sec-01-numbers-en",
+    "title": "1  Networked Society and Cyberspace",
+    "section": "1.6 Society in Numbers",
+    "text": "1.6 Society in Numbers\nBeyond the theoretical framing, it is important to situate this transition in concrete, current data. According to the report Measuring Digital Development: Facts and Figures 2024, from the International Telecommunication Union (ITU), 5.5 billion people were online in 2024, that is, 68% of the world’s population, up from 65% a year earlier. The growth rate is itself accelerating (from 2.7% to 3.4% per year). But the inverse of that number is equally relevant: 2.6 billion people, a third of humanity, remain offline (International Telecommunication Union 2024).\nConnectivity is far from uniform. In high-income countries, Internet access approaches universality; in low-income countries, only 27% of the population is online. The same pattern repeats along other axes: 83% of the urban population uses the Internet, against 48% of the rural population; and, in terms of gender, 70% of men use the Internet worldwide, against 65% of women (International Telecommunication Union 2024). A multidimensional digital divide therefore persists: geographic, economic, territorial and gender-based, which any analysis of social and cooperative platforms must take into account.\nIt is worth cross-referencing this institutional source with the industry data we will use in the next chapter: the Digital 2024 report by We Are Social/Meltwater, with analysis by Kepios, estimated, for January 2024, 5.35 billion Internet users (66.2% of the world’s population) (DataReportal, Meltwater and We Are Social 2024), a value close to, but not identical to, the ITU’s figure for that same year (68%). The differences between sources for the same period result from different collection methodologies (surveys versus administrative estimates), but the convergence in order of magnitude between two independent sources is, in itself, a relevant finding: it reinforces confidence in the reading that most of humanity is now connected.\nThis inequality of access is a structural fact that any analysis of social and cooperative platforms must take into account: the “networked society” is not a universally shared condition, but a transition that advances at very different rates depending on geographic, economic and social context. This data will be explored further in the next chapter, dedicated specifically to social network usage statistics.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Networked Society and Cyberspace</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap01.html#sec-01-summary-en",
+    "href": "capitulos/cap01.html#sec-01-summary-en",
+    "title": "1  Networked Society and Cyberspace",
+    "section": "1.7 Summary",
+    "text": "1.7 Summary\nThis chapter situated the study of social and cooperative platforms within a broader historical transition, from industrial society to networked society, and introduced five ideas that will run through this entire course:\n\nDigital social networks are concrete instances of a more general organising principle, the networked society (Castells 2004)\nCyberspace is no longer a purely screen-mediated space, becoming increasingly integrated with the physical world through ubiquitous computing (Weiser 1991)\nThe relationship with these technologies varies significantly depending on the generation each person belongs to (Prensky 2001)\nThis same transition has a dark side: privacy, technological addiction and cyberbullying, which must be considered from the design of platforms, not merely corrected after deployment (Barnes 2006; Pellegrino, Stasi, and Bhatiasevi 2022; Zhu et al. 2021)\nThe adoption of this networked society is unequal, and that inequality has concrete statistical expression (International Telecommunication Union 2023)",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Networked Society and Cyberspace</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap01.html#sec-01-reflection-en",
+    "href": "capitulos/cap01.html#sec-01-reflection-en",
+    "title": "1  Networked Society and Cyberspace",
+    "section": "1.8 Food for Thought",
+    "text": "1.8 Food for Thought\nFaced with change as rapid as that described in this chapter, it is common to find two opposing stances: a nostalgic, apprehensive view of the loss of previous ways of life, and an overly optimistic view that sees technology as the automatic solution to society’s problems. Which stance do you recognise in yourself, or in the people around you?\nThink also about the risks discussed in the previous section: have you ever felt, or observed in someone close to you, the privacy paradox described by Barnes: saying that privacy matters, but sharing without thinking twice? Have you ever found it hard to disconnect from a social platform? And what responsibility falls on those who design these platforms in preventing cyberbullying: is it just a matter of content moderation, or also of the system’s own architecture?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Networked Society and Cyberspace</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap01.html#sec-01-references-en",
+    "href": "capitulos/cap01.html#sec-01-references-en",
+    "title": "1  Networked Society and Cyberspace",
+    "section": "References",
+    "text": "References\n\n\nAraujo, Renata Mendes de, Claudia Cappelli, Bruna Diirr, Priscila\nEngiel, and Rafael Lage Tavares. 2011. “Democracia\nEletrônica.” In Sistemas Colaborativos, edited by\nMariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nArnstein, Sherry R. 1969. “A Ladder of Citizen\nParticipation.” Journal of the American Institute of\nPlanners 35 (4): 216–24.\n\n\nAustin, John L. 1962. How to Do Things with Words. Oxford:\nClarendon Press.\n\n\nAxelrod, Robert. 1984. The Evolution of Cooperation. New York:\nBasic Books.\n\n\nBarnes, Susan B. 2006. “A Privacy Paradox: Social Networking in\nthe United States.” First Monday 11 (9).\n\n\nBorges, Marcos R. S. 2011. “Conhecimento Coletivo.” In\nSistemas Colaborativos, edited by Mariano Pimentel and Hugo\nFuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nCastells, Manuel. 2004. “Informationalism, Networks, and the\nNetwork Society: A Theoretical Blueprint.” In The Network\nSociety: A Cross-Cultural Perspective, edited by Manuel Castells,\n3–45. Cheltenham: Edward Elgar.\n\n\nCastro, Alberto, and Crediné Menezes. 2011. “Aprendizagem\nColaborativa Com Suporte Computacional.” In Sistemas\nColaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de\nJaneiro: Editora Campus/Elsevier.\n\n\nDataReportal, Meltwater and We Are Social. 2024a. “Digital 2024:\nGlobal Overview Report.” https://datareportal.com/reports/digital-2024-global-overview-report.\n\n\n———. 2024b. “Digital 2024: Portugal.” https://datareportal.com/reports/digital-2024-portugal.\n\n\nDourish, Paul, and Victoria Bellotti. 1992. “Awareness and\nCoordination in Shared Workspaces.” In Proceedings of the ACM\nConference on Computer Supported Cooperative Work (CSCW’92),\n107–14. Toronto.\n\n\nEllis, Clarence A., Simon J. Gibbs, and Gail L. Rein. 1991.\n“Groupware: Some Issues and Experiences.”\nCommunications of the ACM 34 (1): 39–58.\n\n\nEngeström, Yrjö. 1987. Learning by Expanding: An\nActivity-Theoretical Approach to Developmental Research. Helsinki:\nOrienta-Konsultit Oy.\n\n\nFilippo, Denise, José Viterbo Filho, Markus Endler, and Hugo Fuks. 2011.\n“Mobilidade e Ubiquidade Para Colaboração.” In Sistemas\nColaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de\nJaneiro: Editora Campus/Elsevier.\n\n\nFreeman, Linton C. 1978. “Centrality in Social Networks Conceptual\nClarification.” Social Networks 1 (3): 215–39. https://doi.org/10.1016/0378-8733(78)90021-7.\n\n\nFuks, Hugo, Alberto Barbosa Raposo, Marco Aurélio Gerosa, Mariano\nPimentel, Denise Filippo, and Carlos José Pereira de Lucena. 2011.\n“Teorias e Modelos de Colaboração.” In Sistemas\nColaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de\nJaneiro: Editora Campus/Elsevier.\n\n\nGarcia, Ana Cristina Bicharra, Adriana Santarosa Vivacqua, Kate\nCerqueira Revoredo, and Flavia Cristina Bernardini. 2011.\n“Inteligência Artificial Para Sistemas Colaborativos.” In\nSistemas Colaborativos, edited by Mariano Pimentel and Hugo\nFuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nGerbaudo, Paolo. 2026. “TikTok and the Algorithmic Transformation\nof Social Media Publics: From Social Networks to Social Interest\nClusters.” New Media & Society 28 (3): 1019–36. https://doi.org/10.1177/14614448241304106.\n\n\nGibson, William. 1984. Neuromancer. New York: Ace Books.\n\n\nGomes, Wilson. 2004. Transformações Da Política Na Era Da\nComunicação de Massa. São Paulo: Paulus.\n\n\nHardin, Garrett. 1968. “The Tragedy of the Commons.”\nScience 162 (3859): 1243–48.\n\n\nIbba, Simona, Matteo Orrù, Filippo Eros Pani, and Simone Porru. 2015.\n“Hashtag of Instagram: From Folksonomy to Complex Network.”\nIn Proceedings of the 7th International Joint Conference on\nKnowledge Discovery, Knowledge Engineering and Knowledge Management\n(IC3K 2015), Volume 2: KEOD, 279–84. SCITEPRESS.\n\n\nIjose, Adetutu. 2011. Cyber Bullying: Why and How Cyber Bullies\nOperate. Smashwords.\n\n\nInternational Organization for Standardization. 2018. “ISO\n9241-11:2018 — Ergonomics of Human-System Interaction, Part 11:\nUsability: Definitions and Concepts.” Geneva: ISO.\n\n\nInternational Telecommunication Union. 2023. “Measuring Digital\nDevelopment: Facts and Figures 2023.” Geneva: ITU.\n\n\n———. 2024. “Measuring Digital Development: Facts and Figures\n2024.” Geneva: ITU.\n\n\nLombard, Matthew, and Theresa Ditton. 1997. “At the Heart of It\nAll: The Concept of Presence.” Journal of Computer-Mediated\nCommunication 3 (2).\n\n\nMcCrindle Research. 2026. “The Generations Defined.” https://mccrindle.com.au/article/topic/demographics/the-generations-defined/.\nhttps://mccrindle.com.au/article/topic/demographics/the-generations-defined/.\n\n\nMeira, Silvio Romero de Lemos, Ricardo Araújo Costa, Paulyne Matthews\nJucá, and Edeilson Milhomem da Silva. 2011. “Redes\nSociais.” In Sistemas Colaborativos, edited by Mariano\nPimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nMilgram, Stanley. 1967. “The Small World Problem.”\nPsychology Today 1: 61–67.\n\n\nMoreno, Jacob L. 1934. Who Shall Survive? A New Approach to the\nProblem of Human Interrelations. Washington, DC: Nervous; Mental\nDisease Publishing Co.\n\n\nMotta, Claudia Lage Rebello da, Ana Cristina Bicharra Garcia, Adriana\nSantarosa Vivacqua, Flávia Maria Santoro, and Jonice de Oliveira\nSampaio. 2011. “Sistemas de Recomendação.” In Sistemas\nColaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de\nJaneiro: Editora Campus/Elsevier.\n\n\nNielsen, Jakob. 1993. Usability Engineering. Boston: Academic\nPress.\n\n\nPellegrino, Andrea, Alessia Stasi, and Veera Bhatiasevi. 2022.\n“Research Trends in Social Media Addiction and Problematic Social\nMedia Use: A Bibliometric Analysis.” Frontiers in\nPsychiatry 13: 1017506.\n\n\nPimentel, Mariano, Marco Aurélio Gerosa, and Hugo Fuks. 2011.\n“Sistemas de Comunicação Para Colaboração.” In Sistemas\nColaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de\nJaneiro: Editora Campus/Elsevier.\n\n\nPrates, Raquel Oliveira. 2011. “Interação Em Sistemas\nColaborativos.” In Sistemas Colaborativos, edited by\nMariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nPreece, Jenny. 2000. Online Communities: Designing Usability,\nSupporting Sociability. Chichester: Wiley.\n\n\nPrensky, Marc. 2001. “Digital Natives, Digital Immigrants.”\nOn the Horizon 9 (5): 1–6.\n\n\nRaposo, Alberto Barbosa. 2011. “Ambientes Virtuais\nColaborativos.” In Sistemas Colaborativos, edited by\nMariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nRooney, Anne. 2015. Bullying. Chicago: Encyclopaedia\nBritannica, Inc.\n\n\nSantoro, Flávia Maria, Hadeliane Iendrike, and Renata Mendes de Araujo.\n2011. “Colaboração Em Processos de Negócio.” In\nSistemas Colaborativos, edited by Mariano Pimentel and Hugo\nFuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nSantos, Vaninha Vieira dos, Patrícia Tedesco, and Ana Carolina Salgado.\n2011. “Percepção e Contexto.” In Sistemas\nColaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de\nJaneiro: Editora Campus/Elsevier.\n\n\nSouza, Clarisse Sieckenius de. 2005. The Semiotic Engineering of\nHuman-Computer Interaction. Cambridge, MA: MIT Press.\n\n\nSouza, Cleidson R. B. de, Sabrina Marczak, and Rafael Prikladnicki.\n2011. “Desenvolvimento Colaborativo de Software.” In\nSistemas Colaborativos, edited by Mariano Pimentel and Hugo\nFuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nVander Wal, Thomas. 2007. “Folksonomy Coinage and\nDefinition.” http://www.vanderwal.net/folksonomy.html.\n\n\nVivacqua, Adriana Santarosa, and Ana Cristina Bicharra Garcia. 2011.\n“Ontologia de Colaboração.” In Sistemas\nColaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de\nJaneiro: Editora Campus/Elsevier.\n\n\nW3C Web Accessibility Initiative. 2023. “Web Content Accessibility\nGuidelines (WCAG) 2.2.” 2023. https://www.w3.org/TR/WCAG22/.\n\n\nWeiser, Mark. 1991. “The Computer for the 21st Century.”\nScientific American 265 (3): 94–104.\n\n\nWinograd, Terry. 1987. “A Language/Action Perspective on the\nDesign of Cooperative Work.” Human-Computer Interaction\n3 (1): 3–30.\n\n\nZhu, Chengyan, Shiqing Huang, Richard Evans, and Wei Zhang. 2021.\n“Cyberbullying Among Adolescents and Children: A Comprehensive\nReview of the Global Situation, Risk Factors, and Preventive\nMeasures.” Frontiers in Public Health 9: 634909.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Networked Society and Cyberspace</span>"
     ]
@@ -24,7 +154,77 @@
     "href": "capitulos/cap02.html",
     "title": "2  Social Networks: Fundamentals and Statistical Data",
     "section": "",
-    "text": "Chapter 2\n  Social Networks: Fundamentals and Statistical Data\n\n\nContent to be translated.",
+    "text": "Introduction\nThe previous chapter established a fundamental distinction: the social network, as a concept, predates the technology (Section 1.2.1), and what networked computing brought was mainly a change in scale, reach and medium (Section 1.2.2). This chapter goes deeper into that second part: how did social networks, as an age-old human phenomenon, become the web-based social network platforms we know today, what forms they took over time, what they are for, and what their real adoption is, today, in Portugal and worldwide.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Social Networks: Fundamentals and Statistical Data</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap02.html#sec-02-six-degrees-en",
+    "href": "capitulos/cap02.html#sec-02-six-degrees-en",
+    "title": "2  Social Networks: Fundamentals and Statistical Data",
+    "section": "2.1 Six Degrees of Separation",
+    "text": "2.1 Six Degrees of Separation\nIn 1967, social psychologist Stanley Milgram conducted a set of experiments that would become an unavoidable reference in the study of social networks. He asked hundreds of people in different US states to get a letter to a final recipient they did not know personally, through the network of direct acquaintances of each participant. The goal was to measure how many intermediaries, on average, were needed to link two randomly chosen people (Milgram 1967).\nThe results are often oversimplified. Of the hundreds of letters sent, only a minority completed the journey: most chains broke off before reaching the destination. Among the letters that did arrive, the average number of intermediaries was around five to six. The idea that “we are all connected by six degrees of separation” is not, therefore, an exact, universal conclusion of Milgram’s experiment, but rather a popularisation: the phrase dates back to a short story by the Hungarian writer Frigyes Karinthy, published in 1929, and only became popular decades later through the play Six Degrees of Separation, by John Guare (1990). Milgram himself never used that phrase in his own writings.\nWhat Milgram’s experiment demonstrated more solidly was something else, more interesting for the study of social networks: that a network of personal relationships, apparently local and limited, has a structure that allows any other node in that network to be reached through a surprisingly small number of connections. It was precisely this structural property, that of the “small world”, that the first web-based social network systems were designed to exploit and make visible.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Social Networks: Fundamentals and Statistical Data</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap02.html#sec-02-generations-en",
+    "href": "capitulos/cap02.html#sec-02-generations-en",
+    "title": "2  Social Networks: Fundamentals and Statistical Data",
+    "section": "2.2 The Generations of Web-Based Social Networks",
+    "text": "2.2 The Generations of Web-Based Social Networks\nWeb-based social networks are virtual environments where each participant builds their own network of relationships, based on some kind of connection with other participants. Three successive generations of systems can be identified in their evolution (Meira et al. 2011):\n\nFirst generation: systems based on direct personal communication, organised around contact lists for exchanging instant messages. ICQ and MSN Messenger are characteristic examples of this generation.\nSecond generation: systems that sought to replicate, in a virtual environment, the networks of affinity and acquaintance already existing in the real world. Orkut, Friendster, MySpace, Facebook and LinkedIn formalised this type of relationship, with such success that social networks became more popular than email.\nThird generation: systems in which social networks began to directly support the resolution of concrete problems: storing and exchanging experiences between people in similar situations, managing organisational knowledge, maintaining institutional memory, and generating new connections between people and organisations that did not previously know each other.\n\nFigure 2.1 illustrates the first and second generations with the actual logos of the platforms mentioned: note how the second generation already includes platforms that would later come to fully dominate the social network landscape.\n\n\n\n\n\n\nFigure 2.1: The first two generations of web-based social networks, illustrated with the logos of the platforms that defined them.\n\n\n\n\n2.2.1 And after the third generation?\nThis three-generation classification was proposed in 2011, when Facebook, Orkut and LinkedIn defined the social network landscape. Since then, more than a decade of technological evolution suggests a transformation deep enough to justify a new stage.\nThe first three generations share a common trait: the visibility of a piece of content depends mainly on the user’s network of explicit connections, the so-called social graph, that is, who follows whom. TikTok, popularised from 2018 onward, changed this principle structurally: its recommendation algorithm, “For You”, decides what to show each user mainly based on observed behaviour (viewing time, interactions, content similarity), rather than on who that user follows. This marks a shift from a social graph to an interest graph: the proximity that matters is no longer “who you know” but “what you consume”. This model was progressively adopted by other platforms, including Instagram and YouTube, through their short-video formats (Reels, Shorts).\nRepresenting each network as a graph, a set of nodes connected by edges, makes the difference between the two models visible (Figure 2.2). In the social graph, the nodes are people and the edges represent explicit connections between them: who follows whom, who is friends with whom. In the interest graph, proximity is no longer between people, but between a person and the topics they interact with: two people may never have followed each other, or even know each other, and still be “neighbours” in the network, by consuming the same kind of content. How to calculate and visualise these graphs, through metrics such as distance, centrality or density, will be developed in the next chapter.\n\n\n\n\n\n\nFigure 2.2: Social graph (explicit connections between people) and interest graph (grouping by behavioural similarity).\n\n\n\nSociologist Paolo Gerbaudo describes this shift as the move from “networked publics”, organised by explicit interpersonal connections, to “clustered publics”, organised algorithmically by behavioural similarity (Gerbaudo 2026). According to the author, this transformation has implications that go beyond individual experience: it makes the workings of the systems that decide what each person sees more opaque, and deepens the fragmentation of the digital public space into interest groups increasingly closed in on themselves. This point connects directly to the “dark side” of networked society already discussed in the previous chapter (Section 1.5), and will be revisited when we study recommendation systems.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Social Networks: Fundamentals and Statistical Data</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap02.html#sec-02-purposes-en",
+    "href": "capitulos/cap02.html#sec-02-purposes-en",
+    "title": "2  Social Networks: Fundamentals and Statistical Data",
+    "section": "2.3 Purposes of Social Networks",
+    "text": "2.3 Purposes of Social Networks\nRegardless of generation or underlying logic, social networks can also be classified by the main purpose for which they were designed (Meira et al. 2011):\n\nSharing: publishing and distributing content, such as photographs or videos (historical examples: Flickr, YouTube)\nProfessional: maintaining work contacts and relationships (example: LinkedIn)\nPlatform: digital identity infrastructure used by other services for authentication and interconnection (historical example: Ning)\nEntertainment: social interaction with predominantly recreational aims (historical examples: MySpace, hi5)\n\nFigure 2.3 brings together the logos of the platforms that best illustrate each of these four purposes.\n\n\n\n\n\n\nFigure 2.3: The four purposes of social networks, illustrated with the logos of the reference platforms for each.\n\n\n\nThis classification was proposed in 2011, and the boundary between these four purposes is today even more blurred than it was then: Instagram combines sharing, entertainment and, increasingly, commerce; LinkedIn began distributing content in short-video format, traditionally associated with entertainment; and several Asian platforms, such as WeChat, function as “super-apps” that integrate messaging, payments, e-commerce and public services into a single environment. The dominant trend is not specialisation, but the convergence of purposes within the same platform.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Social Networks: Fundamentals and Statistical Data</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap02.html#sec-02-numbers-en",
+    "href": "capitulos/cap02.html#sec-02-numbers-en",
+    "title": "2  Social Networks: Fundamentals and Statistical Data",
+    "section": "2.4 Social Network Adoption in Numbers",
+    "text": "2.4 Social Network Adoption in Numbers\nAccording to the Digital 2024 report by We Are Social/Meltwater, with analysis by Kepios, already mentioned in the previous chapter, there were 5.04 billion active social media user identities in early 2024, equivalent to 62.3% of the world’s population (DataReportal, Meltwater and We Are Social 2024a). Comparing this figure with the 5.35 billion Internet users estimated for the same period (Section 1.6), it follows that about 94% of Internet users also use at least one social network: social network adoption is today practically on a par with Internet adoption itself. The typical user spends, on average, 2 hours and 23 minutes a day on social networks (DataReportal, Meltwater and We Are Social 2024a).\nIn Portugal, the same period records 7.43 million social network users, equivalent to 72.6% of the total population, against 8.84 million Internet users (86.4% of the population) (DataReportal, Meltwater and We Are Social 2024b). Adoption in Portugal is therefore higher than the world average on both dimensions (Figure 2.4).\n\n\n\n\n\n\nFigure 2.4: Internet and social network adoption, worldwide and in Portugal (2024). Sources: We Are Social/Meltwater (DataReportal, Meltwater and We Are Social 2024a); DataReportal (DataReportal, Meltwater and We Are Social 2024b).\n\n\n\nThe platforms with the greatest advertising reach in Portugal, in early 2024, were YouTube (72.6% of the population), Facebook (58.1%), Instagram (56.7%), LinkedIn (47.9%) and Facebook Messenger (46.4%), followed by TikTok, already at 42.6% reach among adults (DataReportal, Meltwater and We Are Social 2024b) (Figure 2.5).\n\n\n\n\n\n\nFigure 2.5: Reach of the main platforms in Portugal, by potential advertising audience (January 2024). Source: DataReportal, Digital 2024: Portugal (DataReportal, Meltwater and We Are Social 2024b).\n\n\n\nIt is worth noting that this metric, potential advertising reach, is not directly comparable to the monthly active user figures published by each platform worldwide: by that metric, Facebook remains the largest social network in the world, with 3.05 billion monthly active users (DataReportal, Meltwater and We Are Social 2024a). Advertising reach and monthly active users are different metrics, calculated differently, and should not be compared directly with one another.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Social Networks: Fundamentals and Statistical Data</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap02.html#sec-02-summary-en",
+    "href": "capitulos/cap02.html#sec-02-summary-en",
+    "title": "2  Social Networks: Fundamentals and Statistical Data",
+    "section": "2.5 Summary",
+    "text": "2.5 Summary\nThis chapter went deeper into the study of social networks, as a technological instance of a pre-existing social phenomenon, introduced in the previous chapter:\n\nMilgram’s experiment (1967) demonstrated the “small world” property of social networks, popularised, imprecisely, as “six degrees of separation” (Milgram 1967)\nWeb-based social networks evolved through three successive generations, marked by personal communication, the replication of real affinity networks, and collaborative problem-solving (Meira et al. 2011)\nA fourth transformation, still without a consensus name, has been underway since 2018: the shift from an explicit social graph to an algorithmically defined interest graph (Gerbaudo 2026)\nThe four classic purposes of social networks, sharing, professional, platform and entertainment, tend today towards convergence within a single platform, rather than specialisation\nSocial network adoption is today close to Internet adoption itself, both worldwide and in Portugal (DataReportal, Meltwater and We Are Social 2024a, 2024b)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Social Networks: Fundamentals and Statistical Data</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap02.html#sec-02-reflection-en",
+    "href": "capitulos/cap02.html#sec-02-reflection-en",
+    "title": "2  Social Networks: Fundamentals and Statistical Data",
+    "section": "2.6 Food for Thought",
+    "text": "2.6 Food for Thought\nThe content recommendation algorithm, by deciding what each person sees based on their behaviour rather than their explicit connections, has a power of influence far greater than a friends list ever had. What responsibility does a platform bear when it is its algorithm, not the user’s explicit choices, that decides what content that user is exposed to?\nThink also about your own social network use: can you identify, in the platforms you use, examples of the social graph and the interest graph operating at the same time? And do the four purposes described in this chapter, sharing, professional, platform and entertainment, still apply clearly to the platforms you use daily, or have they all already converged into one?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Social Networks: Fundamentals and Statistical Data</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap02.html#sec-02-references-en",
+    "href": "capitulos/cap02.html#sec-02-references-en",
+    "title": "2  Social Networks: Fundamentals and Statistical Data",
+    "section": "References",
+    "text": "References\n\n\nDataReportal, Meltwater and We Are Social. 2024a. ‘Digital 2024: Global Overview Report’. https://datareportal.com/reports/digital-2024-global-overview-report.\n\n\n———. 2024b. ‘Digital 2024: Portugal’. https://datareportal.com/reports/digital-2024-portugal.\n\n\nGerbaudo, Paolo. 2026. ‘TikTok and the Algorithmic Transformation of Social Media Publics: From Social Networks to Social Interest Clusters’. New Media & Society 28 (3): 1019–36. https://doi.org/10.1177/14614448241304106.\n\n\nMeira, Silvio Romero de Lemos, Ricardo Araújo Costa, Paulyne Matthews Jucá, and Edeilson Milhomem da Silva. 2011. ‘Redes Sociais’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nMilgram, Stanley. 1967. ‘The Small World Problem’. Psychology Today 1: 61–67.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Social Networks: Fundamentals and Statistical Data</span>"
     ]
@@ -34,7 +234,77 @@
     "href": "capitulos/cap03.html",
     "title": "3  Social Networks: Metrics and Folksonomy",
     "section": "",
-    "text": "Chapter 3\n  Social Networks: Metrics and Folksonomy\n\n\nContent to be translated.",
+    "text": "Introduction\nThe previous chapter introduced, alongside the social graph, a second model for organising information in social networks: the interest graph, in which the relevant proximity is no longer between people, but between a person and the topics they interact with (Section 2.2.1). This chapter develops that idea in two complementary directions. First, it shows how to formally analyse a social graph, through concrete metrics that make it possible to answer questions such as “who is most influential in this network?” or “how well connected is this community?”. Then, it explores the other side of the coin, the organisation of content by topic, through folksonomy, the collective classification that today structures practically every social network through hashtags.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Social Networks: Metrics and Folksonomy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap03.html#sec-03-graph-en",
+    "href": "capitulos/cap03.html#sec-03-graph-en",
+    "title": "3  Social Networks: Metrics and Folksonomy",
+    "section": "3.1 Representing a Social Network as a Graph",
+    "text": "3.1 Representing a Social Network as a Graph\nAnalysing a social network systematically requires, first of all, representing it as a graph: a set of nodes, representing people or organisations, connected by edges, representing their relationships. This is the same representational logic used by Moreno’s sociogram (Section 1.2.1) and by the social and interest graphs discussed in the previous chapter.\nAn edge, that is, a connection between two nodes, can be undirected, when it represents a mutual, symmetric relationship (for example, a friendship on Facebook, where both parties have to accept the connection), or directed, when it represents a relationship that only holds in one direction (for example, following someone on Instagram or X, which does not imply being followed back). Two people may also have no relationship at all. This distinction matters: most traditional friendship networks (Facebook, LinkedIn) use undirected connections, while most content-centred networks (Instagram, X, YouTube) use directed connections, which has direct implications for the metrics that follow (Figure 3.1).\n\n\n\n\n\n\nFigure 3.1: The four types of relationship between two nodes of a social graph.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Social Networks: Metrics and Folksonomy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap03.html#sec-03-metrics-en",
+    "href": "capitulos/cap03.html#sec-03-metrics-en",
+    "title": "3  Social Networks: Metrics and Folksonomy",
+    "section": "3.2 Metrics for Social Network Analysis",
+    "text": "3.2 Metrics for Social Network Analysis\nOnce represented as a graph, a social network can be analysed with quantitative metrics, a set of tools that make up Social Network Analysis (SNA). The most widely used metrics are as follows:\n\n3.2.1 Path and distance\nA path between two nodes is any sequence of edges connecting them, directly or indirectly. In a social network, there are typically many possible paths between any two nodes. Distance between two nodes is the length of the shortest path between them, measured by the number of edges traversed. It was precisely this notion of distance that Milgram’s experiment sought to measure empirically (Section 2.1): how many connections, on average, separate two randomly chosen people.\n\n\n3.2.2 Centrality as Social Power\nCentrality measures how well positioned a node is within the network, which is why it is also called social power. There is no single way to measure centrality: sociologist Linton Freeman proposed, in a work now considered foundational to the field, a conceptual clarification that distinguishes at least three distinct notions of centrality (Freeman 1978):\n\nDegree centrality: how many direct connections a node has. A node with many connections is, on the face of it, more central.\nBetweenness centrality: how often a node lies on the shortest path between two other nodes. A node with high betweenness centrality functions as a bridge or broker of information between parts of the network that would otherwise be more distant.\nCloseness centrality: how close, on average, a node is to all other nodes in the network. A node with high closeness centrality can reach the rest of the network quickly.\n\nThese three notions capture different aspects of “importance” in a network, and a node can be central by one measure and peripheral by another: a good example is an intermediary who links two distinct communities, but who, within each of them, has few direct connections, low degree centrality, but very high betweenness centrality (Figure 3.2).\n\n\n\n\n\n\nFigure 3.2: Each type of centrality highlights a different kind of node: in a star, the node with the most direct connections; in a bridge between two groups, the node connecting the two halves, even with few connections; in a chain, the node positioned closest to all the others.\n\n\n\n\n\n3.2.3 Popularity: in-degree and out-degree\nIn directed graphs, it is useful to distinguish between connections arriving at a node and connections leaving it. In-degree is the number of connections arriving at a node, and is often used as a direct measure of popularity: on Instagram or X, it corresponds, essentially, to the number of followers. Out-degree is the number of connections leaving a node, corresponding, in that same example, to the number of accounts that user follows.\n\n\n3.2.4 Density\nThe density of a node, or of a network, measures the proportion between the number of relationships that actually exist and the number of relationships that would be possible. If a node has only a third of the connections it could have, given the size of the network, its density is approximately 0.33 (Figure 3.3). High-density networks tend to spread information faster, but also to be more susceptible to echo-chamber effects, precisely because almost everyone is connected to almost everyone else.\n\n\n\n\n\n\nFigure 3.3: The same generic five-node network, with different active connections (solid) and possible but non-existent ones (dashed). Density can be calculated for any node; node D is used here as an example: 1, 2 and 4 out of its 4 possible connections, respectively.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Social Networks: Metrics and Folksonomy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap03.html#sec-03-folksonomy-en",
+    "href": "capitulos/cap03.html#sec-03-folksonomy-en",
+    "title": "3  Social Networks: Metrics and Folksonomy",
+    "section": "3.3 Folksonomy: Collective Content Classification",
+    "text": "3.3 Folksonomy: Collective Content Classification\nSo far, this chapter has dealt with how to analyse relationships between people. But much of the structure of a modern social network also results from how content is classified and organised, and this is where folksonomy comes in.\nThe term folksonomy was coined by Thomas Vander Wal in 2007, from the combination of folk (people) and taxonomy (Vander Wal 2007). It denotes the classification of content through a free, collective tagging process, rather than a hierarchy of categories defined a priori by domain experts.\nThe difference from a traditional taxonomy is structural: in a taxonomy, a group of managers defines a hierarchy of categories in advance, and all content has to fit into it. In a folksonomy, there is no such prior hierarchy: categories, or tags, emerge as users themselves classify content, with no centralised control.\nThe tagging process can be represented simply: a group of people, or a single person, associates a set of tags with a set of objects (documents, images, posts) (Figure 3.4). Because different people classify the same object in different ways, according to their own perspective, the resulting folksonomy is rich and heterogeneous, but can also contain inconsistencies.\n\n\n\n\n\n\nFigure 3.4: The tagging process: people associate free tags with objects, with no hierarchy defined in advance.\n\n\n\nTwo types of folksonomy can be distinguished (Vander Wal 2007): broad folksonomy, in which a large number of users tag the same objects, which is useful for identifying the most popular items in a collection, and narrow folksonomy, in which only one or a few people tag each object, typically the content’s own author, which preserves a more personal vocabulary, but makes discovery by others harder.\nA common way to visualise the aggregate result of a folksonomy is the tag cloud, a representation in which the most-used tags stand out, typically in larger or darker type, making it possible to quickly identify the dominant themes of a collection (Figure 3.5).\n\n\n\n\n\n\nFigure 3.5: Tag cloud: the larger and darker the tag, the more often it was used in the collection.\n\n\n\n\n3.3.1 Advantages and problems\nFolksonomy has clear advantages: it does not depend on domain experts to define categories, it lets each user classify freely without having to learn a controlled vocabulary, and it captures the real vocabulary of those who actually use the system, not that of those who designed it.\nBut that same freedom generates well-documented problems: spelling mistakes, morphological variation (for example, “social network” and “social networks” recorded as distinct tags), synonymy (different terms for the same concept), polysemy (the same term with different meanings depending on context), and clutter from low-relevance tags. Current platforms partially mitigate these problems with automatic spell-checking, suggestions of tags already used by others, and semi-automatic grouping of semantically close tags.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Social Networks: Metrics and Folksonomy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap03.html#sec-03-hashtags-en",
+    "href": "capitulos/cap03.html#sec-03-hashtags-en",
+    "title": "3  Social Networks: Metrics and Folksonomy",
+    "section": "3.4 Folksonomy in Practice: from Tags to Hashtags",
+    "text": "3.4 Folksonomy in Practice: from Tags to Hashtags\nWhen the concept of folksonomy became popular, around 2007, the reference examples were systems such as Amazon, YouTube, Flickr and Del.icio.us. It is worth understanding, concretely, how the same idea, free content tagging, produced very different results depending on who was allowed to tag.\nOn Amazon, until the feature was discontinued in 2013, any customer could attach free tags to a product: the same book could be tagged by different customers as “science fiction”, “dystopia” or “beach read”. Because tagging was open to the entire customer base, a broad folksonomy formed: many voices classifying the same object, which made the most repeated tags a reasonable indicator of collective consensus about what that product actually is.\nOn YouTube, the mechanism is the opposite, and remains so today: only whoever publishes a video can attach tags to it, through YouTube Studio. Whoever merely watches the video takes no part in its classification. It is, therefore, a narrow folksonomy: it reflects the personal perspective of whoever published the content, not a collective consensus among those who consume it.\nDel.icio.us too, a social bookmarking service that let people organise and share web sites through tags, no longer exists: after changing owners several times, it stopped accepting new bookmarks in 2017, when it was acquired by competitor Pinboard, which turned it into a read-only archive.\nThe mechanism, however, survived the change of platforms, just under another name: the hashtag. By attaching a tag preceded by “#” to a post on Instagram, TikTok or X, each user is taking part in exactly the same collective tagging process described by Vander Wal almost two decades before these platforms came to dominate the market. A study on Instagram hashtags shows precisely that: the folksonomy generated by users through hashtags can be modelled as a complex network, linking posts and profiles that share the same themes, with no central coordination whatsoever among those who use them (Ibba et al. 2015).\nThe hashtag also inherits the same tensions as classic folksonomy: on Instagram, a popular hashtag like #food has a broad folksonomy, with millions of contributors, but little value for finding something specific; a niche hashtag, created by a small community for a specific event or narrow interest, works more like a narrow folksonomy, more precise, but also less discoverable by those who do not already know about it.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Social Networks: Metrics and Folksonomy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap03.html#sec-03-summary-en",
+    "href": "capitulos/cap03.html#sec-03-summary-en",
+    "title": "3  Social Networks: Metrics and Folksonomy",
+    "section": "3.5 Summary",
+    "text": "3.5 Summary\nThis chapter developed two complementary tools for understanding the structure of social networks:\n\nA social network can be represented as a graph, with directed or undirected edges depending on the type of relationship\nThe main analysis metrics are path, distance, centrality (degree, betweenness and closeness) (Freeman 1978), in-degree and out-degree, and density\nFolksonomy is the collective classification of content through free tagging, distinct from a hierarchical taxonomy defined a priori (Vander Wal 2007)\nBroad and narrow folksonomy represent a trade-off between reach and precision of classification\nThe hashtag is the contemporary form of folksonomy, present in practically every current social network (Ibba et al. 2015)",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Social Networks: Metrics and Folksonomy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap03.html#sec-03-reflection-en",
+    "href": "capitulos/cap03.html#sec-03-reflection-en",
+    "title": "3  Social Networks: Metrics and Folksonomy",
+    "section": "3.6 Food for Thought",
+    "text": "3.6 Food for Thought\nThink of a social network you use often: among the people you follow, can you identify someone with high betweenness centrality, that is, someone who links groups of people who would not otherwise be in contact?\nAnd what about the hashtags you use or follow: are they broad folksonomy, a generic tag used by millions of people, or narrow folksonomy, specific to a small community? What problems of synonymy or morphological variation have you already noticed in hashtags (for example, two different spellings of the same topic splitting the same conversation into two)?",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Social Networks: Metrics and Folksonomy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap03.html#sec-03-references-en",
+    "href": "capitulos/cap03.html#sec-03-references-en",
+    "title": "3  Social Networks: Metrics and Folksonomy",
+    "section": "References",
+    "text": "References\n\n\nFreeman, Linton C. 1978. ‘Centrality in Social Networks Conceptual Clarification’. Social Networks 1 (3): 215–39. https://doi.org/10.1016/0378-8733(78)90021-7.\n\n\nIbba, Simona, Matteo Orrù, Filippo Eros Pani, and Simone Porru. 2015. ‘Hashtag of Instagram: From Folksonomy to Complex Network’. In Proceedings of the 7th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management (IC3K 2015), Volume 2: KEOD, 279–84. SCITEPRESS.\n\n\nVander Wal, Thomas. 2007. ‘Folksonomy Coinage and Definition’. http://www.vanderwal.net/folksonomy.html.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Social Networks: Metrics and Folksonomy</span>"
     ]
@@ -44,7 +314,87 @@
     "href": "capitulos/cap04.html",
     "title": "4  Theories and Models of Collaboration",
     "section": "",
-    "text": "Chapter 4\n  Theories and Models of Collaboration\n\n\nContent to be translated.",
+    "text": "Introduction\nThe previous three chapters dealt with social platforms: how society organises itself into a network, how those networks became digital platforms, and how to analyse them through metrics and folksonomy. This chapter opens a new block, dedicated to collaborative platforms, whose object of study is no longer the social network itself, but the group work it can support.\nBefore designing or evaluating any collaborative system, it is necessary to understand that collaboration is not a vague or purely intuitive phenomenon: it can be modelled, that is, described through formal theories and models that help explain why people collaborate, what collaboration requires, and where it tends to fail. This chapter presents four such models: Game Theory, Activity Theory, the 3C Collaboration Model, and a collaboration ontology that integrates the previous concepts (Fuks et al. 2011; Vivacqua and Garcia 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Theories and Models of Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap04.html#sec-04-modelling-en",
+    "href": "capitulos/cap04.html#sec-04-modelling-en",
+    "title": "4  Theories and Models of Collaboration",
+    "section": "4.1 Why Model Collaboration?",
+    "text": "4.1 Why Model Collaboration?\nA scientific model is an abstract, logical or mathematical representation of a phenomenon, built to explain, analyse and predict that phenomenon systematically (Fuks et al. 2011). One of the best-known ways to define a model is through a mathematical formula, but models can also be graphical, diagrams or schemes, like the ones that follow. Modelling collaboration means that, instead of deciding by intuition how to support a group’s work, it becomes possible to analyse what kind of work is being done, compare different situations using the same concepts, and choose or design collaborative systems based on that analysis.\nThe models presented in this chapter answer different, but complementary, questions:\n\nGame Theory explains why it is rational to collaborate, or not to collaborate, when each participant’s outcome also depends on the decisions of others.\nActivity Theory explains how a human being, individually or in a group, carries out an activity mediated by tools, within a community governed by rules.\nThe 3C Model breaks down any collaborative work into three dimensions, communication, coordination and cooperation, which any system supporting collaboration must address.\nThe Collaboration Ontology integrates these concepts into a network of common terms, useful for those designing collaborative systems.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Theories and Models of Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap04.html#sec-04-game-theory-en",
+    "href": "capitulos/cap04.html#sec-04-game-theory-en",
+    "title": "4  Theories and Models of Collaboration",
+    "section": "4.2 Game Theory",
+    "text": "4.2 Game Theory\nGame Theory studies scenarios of strategic decision-making, in which each participant’s final outcome depends not only on their own decision, but also on the decisions of the other participants. Each player chooses their strategy after assessing the opponents’ situation and anticipating the strategies they might adopt (Fuks et al. 2011). The theory originates in mathematics and economics, and its first studies date back to the 18th century, but it was mainly from the publication of The Theory of Games and Economic Behavior, by John von Neumann and Oscar Morgenstern in 1944, and the notion of equilibrium proposed by John Nash in the 1950s, that it consolidated as an autonomous field.\nA central concept for classifying these scenarios is the sum of all players’ gains. In a zero-sum game, one player’s gain corresponds exactly to the others’ loss, the total sum always remains equal to zero: this is the case of a game of chess, or a hand of poker. In a non-zero-sum game, the overall outcome can vary depending on the decisions made: it is possible for all players to gain, or lose, together. As shown below, the Prisoner’s Dilemma is a classic example of a non-zero-sum game.\n\n4.2.1 The Prisoner’s Dilemma\nThe best-known example of Game Theory applied to collaboration is the Prisoner’s Dilemma, formalised by mathematician Albert W. Tucker. Two suspects are arrested by the police and interrogated in separate rooms, unable to communicate with each other. There is not enough evidence to convict them of a major crime, only a minor charge, unless one of them confesses. Each is offered the same deal:\n\nIf both stay silent, each serves 6 months in prison.\nIf one confesses and the other stays silent, the one who confesses goes free and the one who stays silent serves 10 years.\nIf both confess, each serves 6 years.\n\n\n\n\n\n\n\nFigure 4.1: The two suspects, in separate cells and unable to communicate with each other, each weigh up whether to confess or stay silent.\n\n\n\nThese four situations form the game’s payoff matrix (Figure 4.2). Analysed individually, the best strategy for either suspect is to confess: if the accomplice stays silent, confessing sets them free immediately; if the accomplice also confesses, confessing still gives a lighter sentence than staying silent alone. The paradox is that, if both reason this way, each individually rational, both confess and serve 6 years, an outcome worse for both than if they had collaborated and both stayed silent, serving only 6 months (Fuks et al. 2011).\n\n\n\n\n\n\nFigure 4.2: The Prisoner’s Dilemma payoff matrix: each suspect’s outcome depends on their own decision and on their accomplice’s decision.\n\n\n\nThe Prisoner’s Dilemma shows how Game Theory supports understanding of real collaboration situations: it clarifies concepts such as self-interest, payoff matrix and non-zero-sum games. It applies to scenarios as diverse as negotiation between competing companies, management of a resource shared by several users, or the decision whether or not to contribute to a collective project.\n\n\n4.2.2 Tit-for-Tat: the Evolution of Collaboration\nIf, in isolation, the Prisoner’s Dilemma suggests that confessing, betraying the accomplice, is always the rational strategy, the situation changes when the same game is repeated several times between the same participants. In the 1970s, political scientist Robert Axelrod organised competitions in which researchers submitted strategies for repeated versions of the Prisoner’s Dilemma, competing against each other over many rounds. The winning strategy, named tit-for-tat, was proposed by mathematician Anatol Rapoport and follows just three rules (Axelrod 1984):\n\nContribute first: never be the first to betray.\nIf you are betrayed, retaliate on the next round.\nAfter retaliating, be willing to forgive and collaborate again.\n\nIn a repeated version of the game, collaborating stops being irrational: the expectation of meeting the same opponent again gives betrayal a future cost, the other player’s retaliation. Tit-for-tat has proven, in repeated simulations, more effective in the long run than purely selfish strategies, and is used to this day to explain how collaboration can emerge and sustain itself in a competitive scenario, without any central authority imposing cooperation (Axelrod 1984). The same logic helps explain phenomena as distinct as informal trade agreements between companies or the reciprocity observed in the behaviour of various social animals.\n\n\n4.2.3 The Tragedy of the Commons\nNot every collaboration-related game involves just two players. The Tragedy of the Commons, described by ecologist Garrett Hardin in 1968 (Hardin 1968), illustrates what happens when several participants share a common, limited resource.\nImagine a pasture shared by several herders, each with their own flock. For each herder, individually, adding one more sheep to their flock is always advantageous: the profit from that extra sheep is entirely their own, while the cost of wear on the pasture is shared among all the herders who use it. Since this reasoning holds for any herder, all tend to add as many animals as they can. At a certain point, however, the total number of animals exceeds the pasture’s capacity to regenerate: the grass stops growing, stops feeding any animal, and every herder loses out, including those who had been more restrained.\nThe Tragedy of the Commons shows that, when the gain from an individual decision is private but the cost is shared by the whole group, the sum of each participant’s rational decisions can destroy the very resource everyone depends on. For this reason, sustainable collaboration around a shared resource rarely survives on goodwill alone: it requires explicit rules, accepted by the whole group, and mechanisms that penalise those who break them, from social disapproval to formal sanctions, such as fines or exclusion from the group. It is precisely this role of rules as an element of collaboration that Activity Theory, discussed next, formalises.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Theories and Models of Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap04.html#sec-04-activity-theory-en",
+    "href": "capitulos/cap04.html#sec-04-activity-theory-en",
+    "title": "4  Theories and Models of Collaboration",
+    "section": "4.3 Activity Theory",
+    "text": "4.3 Activity Theory\nWhile Game Theory focuses on strategic decision-making, Activity Theory explains how human beings carry out activities in everyday situations, individually and in society, and is particularly useful for understanding technology-mediated collaboration (Fuks et al. 2011).\nIn this theory, activity is the minimal unit of meaning for understanding the actions of a subject, a person or a group, who acts upon an object, something concrete like a document, or abstract like a decision to be made, in order to achieve a goal. A central concept of the theory is that this action is never direct: it is always mediated by artefacts, physical tools, such as a computer, or cognitive ones, such as a language or a mathematical notation. The artefact acts upon the object, but also has a reverse effect on the subject itself, shaping how they think and solve problems (Fuks et al. 2011).\nFrom a collective perspective, the subject does not act in isolation: they are embedded in a community. This collective dimension adds two new mediating elements: division of labour, which organises how the object is transformed into an outcome among the community’s various subjects, and rules, implicit or explicit norms, conventions and social relations established within the community. The complete model, adapted from Yrjö Engeström (Engeström 1987), is shown in Figure 4.3.\n\n\n\n\n\n\nFigure 4.3: Activity Model: a subject acts upon an object to achieve an outcome, always mediated by artefacts; in the collective dimension, this action is also mediated by the community’s division of labour and rules.\n\n\n\nAn example applied to the classroom illustrates the model: the subject is a student or a group of students; the object is the problem or work to be done; the artefact is the computer system, the computer, or even the language used to communicate; the community is the class; the division of labour is how the group work’s tasks are split up; and the rules are, for example, the assessment criteria set by the lecturer. Introducing a new artefact, such as a collaborative platform, changes how the activity is carried out, which can create new problems but also new possibilities, and it is precisely here that the design of collaborative systems comes in.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Theories and Models of Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap04.html#sec-04-3c-en",
+    "href": "capitulos/cap04.html#sec-04-3c-en",
+    "title": "4  Theories and Models of Collaboration",
+    "section": "4.4 The 3C Collaboration Model",
+    "text": "4.4 The 3C Collaboration Model\nThe 3C Collaboration Model analyses any group work along three dimensions: communication, coordination and cooperation. It originates in a classification proposed by Ellis, Gibbs and Rein in 1991 for group work support systems (Ellis, Gibbs, and Rein 1991), later formalised as a model in its own right:\n\nCommunication: the exchange of messages between people, through which agreements are negotiated and commitments are made.\nCoordination: the management of people, activities and resources, so that the work of several participants fits together without conflict or wasted effort.\nCooperation: joint action within the shared workspace, for the actual production of objects or information.\n\nThese three dimensions are not independent: they interrelate so that collaboration can happen (Figure 4.4). By communicating, participants make decisions that require coordination; by coordinating, they reorganise tasks that may require new communication; and effective cooperation in the shared space generates information that feeds back into both coordination and communication.\n\n\n\n\n\n\nFigure 4.4: The 3C Collaboration Model: communication, coordination and cooperation interrelate so that group work can happen.\n\n\n\nCollaboration is not the only way to organise group work. An alternative model, typical of military organisations and the classic industrial assembly line, is Command and Control (C2): a central authority decides what must be done and defines all tasks in advance, replacing distributed coordination with direct supervision, and virtually eliminating the need for communication and negotiation among those carrying out the work. For group work to be genuinely characterised as collaboration, rather than merely the coordinated execution of orders, communication, coordination and cooperation must all, in fact, take place, as represented in the 3C Model.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Theories and Models of Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap04.html#sec-04-ontology-en",
+    "href": "capitulos/cap04.html#sec-04-ontology-en",
+    "title": "4  Theories and Models of Collaboration",
+    "section": "4.5 Collaboration Ontology",
+    "text": "4.5 Collaboration Ontology\nThe three previous models explain different aspects of collaboration, but sometimes use different terms and levels of detail. An ontology is the description of a domain, negotiated by a community, for a given purpose: it creates a common terminological base, which makes communication easier for those working in the field and allows computer systems to produce intelligible information about that domain (Vivacqua and Garcia 2011).\nBuilding on the same model by Ellis and colleagues used in the 3C Model (Ellis, Gibbs, and Rein 1991), the collaboration ontology is organised into four parts, each with a central concept (Vivacqua and Garcia 2011): group formation, communication, coordination and cooperation.\n\n4.5.1 Group Formation\nThe central element of this part is the participant. A participant takes on tasks, is part of a group and takes part in the negotiations that define shared goals; to do so, they require two essential things: trust, the shared belief that one can rely on the other participants, and motivation, without which one is unlikely to commit to a proposal. The group, in turn, carries out an activity that generates a product, and that product is itself a kind of goal (Figure 4.5).\n\n\n\n\n\n\nFigure 4.5: Ontology of group formation: the participant as the central element, with their attributes (beliefs, trust, competence, motivation) and their relationships with the group, goals and tasks.\n\n\n\n\n\n4.5.2 Communication\nThe central element is the message. A sender encodes and sends a message, which follows a communication protocol shared with the receiver, and which the receiver receives and interprets; both also share a common sense that makes interpretation possible. The message also has three attributes that shape it: form (linguistic, symbolic, bodily, among others), transmission medium (from face-to-face to a computer system) and synchronism (synchronous or asynchronous). It is through the message that negotiation takes place, and it is from it that participants’ commitments result (Figure 4.6).\n\n\n\n\n\n\nFigure 4.6: Ontology of communication: the message as the central element, encoded by the sender and interpreted by the receiver, shaped by form, transmission medium and synchronism.\n\n\n\n\n\n4.5.3 Coordination\nThe central element is the work plan, supported by the collaborative system and established through negotiation. The work plan defines each participant’s roles and the coupling between activities, and also defines policies, deadlines and resource allocation, organising the activity into concrete tasks. Monitoring tracks deadline compliance and each task’s completion status, which in turn requires the resources needed to carry it out (Figure 4.7).\n\n\n\n\n\n\nFigure 4.7: Ontology of coordination: the work plan as the central element, defining roles, policies, deadlines and tasks, and supported by monitoring of its progress.\n\n\n\n\n\n4.5.4 Cooperation\nThe central element is the activity, carried out by a group with a given geographical distribution (co-located or remote) and a given degree of coupling between participants. The activity is carried out in a shared workspace, and generates a product, made up of concrete artefacts. This production breaks down into tasks, which require resources and which can be individual or shared by several participants at once (Figure 4.8).\n\n\n\n\n\n\nFigure 4.8: Ontology of cooperation: the activity as the central element, carried out in a shared space and producing artefacts through tasks that require resources.\n\n\n\n\n\n4.5.5 Ontology Summary\nFigure 4.9 summarises these four parts: collaboration happens when motivated participants group around a shared goal, communicate through messages to negotiate tasks and make commitments, coordinate work through a plan that organises those tasks, and cooperate, producing artefacts in a shared space. Without any one of these four elements, collaboration is unlikely to happen (Vivacqua and Garcia 2011).\n\n\n\n\n\n\nFigure 4.9: Summary of the collaboration ontology: the four blocks, group formation, communication, coordination and cooperation, and each one’s respective central concept.\n\n\n\nA collaboration ontology is especially useful for those designing collaborative systems: it helps check that important aspects of group work, such as trust between participants or the existence of an explicit work plan, are not being overlooked in the design of a new system.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Theories and Models of Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap04.html#sec-04-summary-en",
+    "href": "capitulos/cap04.html#sec-04-summary-en",
+    "title": "4  Theories and Models of Collaboration",
+    "section": "4.6 Summary",
+    "text": "4.6 Summary\nThis chapter presented four models that underpin the study of collaboration:\n\nGame Theory distinguishes zero-sum games, in which one player’s gain implies an equivalent loss for another, from non-zero-sum games, in which the overall outcome can vary; the Prisoner’s Dilemma is an example of the latter, and shows that an individually rational decision can be collectively worse than collaborating (Fuks et al. 2011)\nIn repeated versions of the game, the tit-for-tat strategy shows how collaboration can emerge and sustain itself without central authority (Axelrod 1984)\nThe Tragedy of the Commons shows that the sum of individually rational decisions can destroy a shared resource, justifying the need for rules and penalties in collaboration (Hardin 1968)\nActivity Theory describes how a subject acts upon an object, always mediated by artefacts and, in the collective dimension, also by the community’s division of labour and rules (Engeström 1987)\nThe 3C Model breaks collaboration down into communication, coordination and cooperation, distinguishing it from the Command and Control model (Ellis, Gibbs, and Rein 1991)\nThe Collaboration Ontology integrates these concepts, assigning a central element to each of the four parts: participant, message, work plan and activity (Vivacqua and Garcia 2011)",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Theories and Models of Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap04.html#sec-04-reflection-en",
+    "href": "capitulos/cap04.html#sec-04-reflection-en",
+    "title": "4  Theories and Models of Collaboration",
+    "section": "4.7 Food for Thought",
+    "text": "4.7 Food for Thought\nThink of a piece of group work you took part in recently: can you identify, in that work, the three Cs, communication, coordination and cooperation? Was any one of them clearly weaker than the others, and what concrete problems did that cause?\nAnd what about tit-for-tat: can you think of a relationship, at work, in friendship or between organisations, in which collaboration is sustained precisely because the parties expect to interact again in the future? Can you also think of an example of the Tragedy of the Commons that you have observed, and what rules or penalties, formal or informal, exist, or should exist, to prevent it?",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Theories and Models of Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap04.html#sec-04-references-en",
+    "href": "capitulos/cap04.html#sec-04-references-en",
+    "title": "4  Theories and Models of Collaboration",
+    "section": "References",
+    "text": "References\n\n\nAxelrod, Robert. 1984. The Evolution of Cooperation. New York: Basic Books.\n\n\nEllis, Clarence A., Simon J. Gibbs, and Gail L. Rein. 1991. ‘Groupware: Some Issues and Experiences’. Communications of the ACM 34 (1): 39–58.\n\n\nEngeström, Yrjö. 1987. Learning by Expanding: An Activity-Theoretical Approach to Developmental Research. Helsinki: Orienta-Konsultit Oy.\n\n\nFuks, Hugo, Alberto Barbosa Raposo, Marco Aurélio Gerosa, Mariano Pimentel, Denise Filippo, and Carlos José Pereira de Lucena. 2011. ‘Teorias e Modelos de Colaboração’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nHardin, Garrett. 1968. ‘The Tragedy of the Commons’. Science 162 (3859): 1243–48.\n\n\nVivacqua, Adriana Santarosa, and Ana Cristina Bicharra Garcia. 2011. ‘Ontologia de Colaboração’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Theories and Models of Collaboration</span>"
     ]
@@ -54,7 +404,97 @@
     "href": "capitulos/cap05.html",
     "title": "5  Communication Systems for Collaboration",
     "section": "",
-    "text": "Chapter 5\n  Communication Systems for Collaboration\n\n\nContent to be translated.",
+    "text": "Introduction\nThe previous chapter identified communication as one of the three dimensions of the 3C Model, the exchange of messages through which participants negotiate and make commitments about the work to be done (Section 4.4). This chapter explores that dimension further: what characteristics distinguish computer-mediated communication from face-to-face communication, how to classify the different communication systems, and how the language we use to communicate can itself be a form of acting. It closes with a brief look at the systems that support the other two dimensions of the 3C Model, coordination and cooperation, to complete the picture.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Communication Systems for Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap05.html#sec-05-cmc-en",
+    "href": "capitulos/cap05.html#sec-05-cmc-en",
+    "title": "5  Communication Systems for Collaboration",
+    "section": "5.1 Computer-Mediated Communication",
+    "text": "5.1 Computer-Mediated Communication\nThe computer became, especially after networking, a medium of human communication. The 20th century was marked by mass media, such as the press, radio and television, characterised by the broadcast of information from a large central editorial source, with no possibility of interaction with the audience. The 21st century is marked by social media, characterised by content production by users themselves and by conversation among crowds, as already discussed in the previous chapters regarding social networks (Pimentel, Gerosa, and Fuks 2011).\nComputer-Mediated Communication (CMC) brought new possibilities for social interaction: asynchronicity, absence of face-to-face interaction, anonymity, privacy, continuous contact with interlocutors, virtual communities, and conversation among crowds who never meet in person. The difference between online and offline interaction, and the culture specific to these new media, is also an object of CMC research (Pimentel, Gerosa, and Fuks 2011).\n\n5.1.1 Internet dialect\nOne of the most studied phenomena in CMC is the attempt to put the informality of face-to-face conversation into text, a process called the reorality of written language (Pimentel, Gerosa, and Fuks 2011). The absence of eye contact, tone of voice and body language is partly compensated for by a set of linguistic resources specific to computer-mediated written communication: emoticons and emojis, abbreviations (u, pls), onomatopoeia (lol, haha), vowel stretching (soooo), exaggerated punctuation (!!!), capital letters to SHOUT, and phonetic spelling of words (cuz instead of “because”, ur instead of “your”, and many others). GIFs and reaction stickers today serve a similar function, replacing with an image what facial expression would do in a face-to-face conversation.\nThis dialect is not a deviation to be corrected, but a functional adaptation to the medium: it represents an attempt to recover, through text, cues that face-to-face conversation offers for free. Knowing it is necessary to communicate appropriately through the different computer communication systems (Pimentel, Gerosa, and Fuks 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Communication Systems for Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap05.html#sec-05-synchronism-en",
+    "href": "capitulos/cap05.html#sec-05-synchronism-en",
+    "title": "5  Communication Systems for Collaboration",
+    "section": "5.2 Synchronous and Asynchronous",
+    "text": "5.2 Synchronous and Asynchronous\nOne of the most traditional ways of classifying a communication system crosses two independent dimensions: time, which distinguishes synchronous communication (the interlocutors are present at the same time in the communication medium and the message is received immediately) from asynchronous communication (the message is stored and can be retrieved later); and place, which distinguishes interlocutors located in the same physical space from interlocutors in remote locations (Ellis, Gibbs, and Rein 1991) (Figure 5.1).\n\n\n\n\n\n\nFigure 5.1: Space-time classification of communication systems, crossing synchronism (same time or different time) with location (same place or remote).\n\n\n\nFace-to-face conversation is synchronous, with people simultaneously sharing the same place where the communication takes place; a post-it note left on someone’s desk is asynchronous but co-located, people act physically in the place of the message, but not at the same time. Most communication systems for collaboration, however, fall into the remote column: instant messaging, chat and video conferencing are synchronous and remote, while email, discussion systems, the blog and microblog are asynchronous and remote.\nThis distinction has a technical implication often invisible to those who use these systems: synchronous remote communication depends, moment to moment, on the quality of the network connection between the interlocutors. If the network is slow or loses information, even for an instant, the video call freezes, the audio cuts out, or the message arrives out of time, because there is no room to resend or wait without breaking the real-time experience. Asynchronous communication tolerates an unstable network much better, precisely because the message can be stored and delivered later without compromising communication: an email that takes a few extra seconds to arrive changes nothing about the experience of whoever reads it. This trade-off between immediacy and reliability still shapes, to this day, the choice between synchronous and asynchronous systems for a given collaborative task.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Communication Systems for Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap05.html#sec-05-speech-acts-en",
+    "href": "capitulos/cap05.html#sec-05-speech-acts-en",
+    "title": "5  Communication Systems for Collaboration",
+    "section": "5.3 Speech Acts and Conversation for Action",
+    "text": "5.3 Speech Acts and Conversation for Action\nSpeech Act theory shows that language, besides serving to describe the world, also serves to perform actions. An utterance can be constative, a statement, description or report, or performative, a sentence that performs an action with consequences at the moment it is uttered: by saying “I declare the session open”, the goal is not to inform, but precisely to open the session. This theory was grounded in John L. Austin’s lectures at Harvard, in 1955, published posthumously in 1962 in the book How to Do Things with Words (Austin 1962).\nIn the field of collaborative systems, one of the best-known studies on communication is conversation for action: interlocutors exchange messages to negotiate and make commitments about work to be done. Terry Winograd modelled this process as a sequence of states, where each state transition occurs through a speech act (Winograd 1987) (Figure 5.2).\n\n\n\n\n\n\nFigure 5.2: Simplified version of the conversation for action diagram: a work process is negotiated through successive speech acts, between the initial request and completion.\n\n\n\nThe process begins when one interlocutor requests a task from another. The second interlocutor can promise to carry it out, starting a period of execution that ends when the first interlocutor states they are satisfied with the result and declares the process complete. At any stage, however, the second interlocutor can reject the request, ending the process along a different path. This model shows that, even in an apparently simple exchange of messages, there is an underlying negotiation structure, made up of successive speech acts that progressively commit the interlocutors to the work to be done.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Communication Systems for Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap05.html#sec-05-flaming-en",
+    "href": "capitulos/cap05.html#sec-05-flaming-en",
+    "title": "5  Communication Systems for Collaboration",
+    "section": "5.4 Flaming, Trolling and the Absence of Social Cues",
+    "text": "5.4 Flaming, Trolling and the Absence of Social Cues\nCMC research also studies negative phenomena associated with new media, such as flaming (aggressive messages and heated discussions) and trolling, the deliberate provocation of other interlocutors with the aim of generating emotional reactions or disrupting a conversation. Both phenomena are mainly attributed to anonymity and to text-only communication, with the absence of eye contact and non-verbal language that, in a face-to-face conversation, naturally moderate the tone of interaction (Pimentel, Gerosa, and Fuks 2011).\nThese phenomena are distinct from cyberbullying, already discussed in Chapter 1 (Section 1.5.3): cyberbullying is a sustained pattern of harassment directed at a specific victim, with the aim of repeatedly hurting them, while flaming and trolling can occur as one-off incidents, in a single exchange of messages, without necessarily having a fixed target or the intention to cause continued harm. The same conditions of the medium, anonymity and the absence of non-verbal cues, explain the origin of both phenomena, but their severity and persistence are very different.\nBecause users of current communication platforms are not required to prove their identity, the expression of opinions and ideas is made easier, which can also lead to aggressive or provocative behaviour, such as flaming and trolling. The platforms in use, mostly North American and Chinese, lack effective identity-verification mechanisms, which in many cases makes it impossible to hold aggressors accountable.\nIn Europe, current legislation requires platforms to identify their users, which reduces these phenomena. For example, as an alternative to a system such as X, the social platform W social (https://wsocial.news) is in its final launch phase, allowing anonymous communication, but with user identification mandatorily verified against formal identity documents (national ID card or passport), which can intervene in case of abuse.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Communication Systems for Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap05.html#sec-05-evolution-en",
+    "href": "capitulos/cap05.html#sec-05-evolution-en",
+    "title": "5  Communication Systems for Collaboration",
+    "section": "5.5 A Brief Evolution of Communication Systems",
+    "text": "5.5 A Brief Evolution of Communication Systems\nCommunication systems for collaboration are organised into families, according to the kind of conversation they establish between interlocutors: email, discussion systems (mailing list, forum), instant messaging, chat, audio and video conferencing, message logs (blog, microblog) (Pimentel, Gerosa, and Fuks 2011). Each family shares characteristics and evolves influenced by earlier families, much as a species is influenced by the species it descends from (Figure 5.3).\n\n\n\n\n\n\nFigure 5.3: Classification of communication systems by synchronism, with current examples of each type.\n\n\n\nEmail, among the first communication systems of the internet, remains central today (Gmail, Outlook), although it has incorporated features from other systems, such as chat. Discussion systems evolved from mailing lists into the groups and communities of today’s social networks, such as Facebook groups or Reddit. Instant messaging, which already existed before the internet as we know it today, has in applications such as WhatsApp, Messenger and Telegram its most popular representatives. Group chat, historically associated with IRC, survives today on platforms such as Discord and Slack. And the blog, the personal “logbook” of the 1990s, gave rise to the microblog, today dominated by platforms such as X and Instagram.\nRegardless of the specific system, the comparative analysis still holds: the synchronism of the communication, the number of interlocutors involved, the language used, the size of messages, and the structuring of discourse continue to determine the characteristics of any new communication system that may emerge.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Communication Systems for Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap05.html#sec-05-coord-coop-en",
+    "href": "capitulos/cap05.html#sec-05-coord-coop-en",
+    "title": "5  Communication Systems for Collaboration",
+    "section": "5.6 Coordination and Cooperation Systems",
+    "text": "5.6 Coordination and Cooperation Systems\nThe 3C Model, presented in the previous chapter, breaks collaboration down into three dimensions: communication, coordination and cooperation (Section 4.4). This chapter has focused on the first; a brief reference is now made to the systems that support the other two.\n\n5.6.1 Coordination Systems\nCoordination is the planning of group work (Santoro, Iendrike, and Araujo 2011). One of the most common ways to support coordination is through business processes: a defined set of steps for carrying out a piece of work, with goals, activities, people responsible, and rules that establish the order of execution. Business process management systems, or BPMS (Business Process Management System), are collaborative systems that support the definition, execution and monitoring of these processes, coordinating the different participants involved and keeping a record of the state of each activity (Santoro, Iendrike, and Araujo 2011).\n\n\n5.6.2 Cooperation Systems\nCooperation requires participants to have awareness of what others are doing in the shared workspace, a mental state of understanding others’ actions and presence (Santos, Tedesco, and Salgado 2011; Dourish and Bellotti 1992). In a face-to-face interaction, this awareness arises naturally, through sight and hearing; in a collaborative system, it has to be explicitly communicated, typically through notifications structured around six questions: who, what, where, when, how and why.\nAwareness reduces isolation and prevents duplicated work and conflicts, but it has to be designed carefully: in excess, it generates information overload and becomes intrusive. A well-known example of this tension is Microsoft Office’s Clippy assistant, rejected by users for constantly interrupting their work with unsolicited suggestions, later replaced by discreet suggestions, activated only when the user themselves looks for them (Santos, Tedesco, and Salgado 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Communication Systems for Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap05.html#sec-05-summary-en",
+    "href": "capitulos/cap05.html#sec-05-summary-en",
+    "title": "5  Communication Systems for Collaboration",
+    "section": "5.7 Summary",
+    "text": "5.7 Summary\nThis chapter characterised the communication systems that support collaboration:\n\nComputer-Mediated Communication brought asynchronicity, anonymity and virtual communities, and gave rise to a dialect of its own, the reorality of written language (Pimentel, Gerosa, and Fuks 2011)\nThe space-time classification crosses synchronism (synchronous or asynchronous) with location (co-located or remote); synchronous communication depends more critically on network quality (Ellis, Gibbs, and Rein 1991)\nSpeech Act theory shows that language also performs actions (Austin 1962); Winograd’s conversation for action model describes the negotiation of a piece of work as a sequence of speech acts (Winograd 1987)\nFlaming and trolling result from anonymity and the absence of non-verbal cues in text-based communication, distinct from cyberbullying (Section 1.5.3) by the absence of a sustained pattern directed at a victim\nCommunication systems are organised into families (email, discussion, messaging, chat, conferencing, message logs), each evolving influenced by earlier ones (Pimentel, Gerosa, and Fuks 2011)\nThe other two dimensions of the 3C Model also have their own systems: coordination relies on business processes and BPMS systems (Santoro, Iendrike, and Araujo 2011); cooperation requires awareness of what other participants are doing in the shared space, designed carefully so as not to become intrusive (Santos, Tedesco, and Salgado 2011)",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Communication Systems for Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap05.html#sec-05-reflection-en",
+    "href": "capitulos/cap05.html#sec-05-reflection-en",
+    "title": "5  Communication Systems for Collaboration",
+    "section": "5.8 Food for Thought",
+    "text": "5.8 Food for Thought\nThink of a recent instant messaging conversation: can you identify examples of “internet dialect” that you used, emoticons, abbreviations, capital letters for emphasis? What would you be communicating differently if that same conversation had happened by email, or in person?\nAnd what about conversation for action: next time you ask someone for something by message, notice the speech acts they use, without realising it, to negotiate the commitment, the request, the promise, the confirmation.\nTake WhatsApp as an example: identify the components of the 3C Model in how conversation groups work, and how the platform supports each of them. Think also about the awareness mechanisms the platform offers, and how they help coordinate group work.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Communication Systems for Collaboration</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap05.html#sec-05-references-en",
+    "href": "capitulos/cap05.html#sec-05-references-en",
+    "title": "5  Communication Systems for Collaboration",
+    "section": "References",
+    "text": "References\n\n\nAustin, John L. 1962. How to Do Things with Words. Oxford: Clarendon Press.\n\n\nDourish, Paul, and Victoria Bellotti. 1992. ‘Awareness and Coordination in Shared Workspaces’. In Proceedings of the ACM Conference on Computer Supported Cooperative Work (CSCW’92), 107–14. Toronto.\n\n\nEllis, Clarence A., Simon J. Gibbs, and Gail L. Rein. 1991. ‘Groupware: Some Issues and Experiences’. Communications of the ACM 34 (1): 39–58.\n\n\nPimentel, Mariano, Marco Aurélio Gerosa, and Hugo Fuks. 2011. ‘Sistemas de Comunicação Para Colaboração’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nSantoro, Flávia Maria, Hadeliane Iendrike, and Renata Mendes de Araujo. 2011. ‘Colaboração Em Processos de Negócio’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nSantos, Vaninha Vieira dos, Patrícia Tedesco, and Ana Carolina Salgado. 2011. ‘Percepção e Contexto’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nWinograd, Terry. 1987. ‘A Language/Action Perspective on the Design of Cooperative Work’. Human-Computer Interaction 3 (1): 3–30.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Communication Systems for Collaboration</span>"
     ]
@@ -64,7 +504,97 @@
     "href": "capitulos/cap06.html",
     "title": "6  Collaborative Virtual Environments",
     "section": "",
-    "text": "Chapter 6\n  Collaborative Virtual Environments\n\n\nContent to be translated.",
+    "text": "Introduction\nThe previous two chapters dealt with collaboration mediated by text and by voice, communication systems (Section 5.1) and systems that support coordination and cooperation (Section 5.6). This chapter explores a different way of mediating collaboration: instead of a channel through which messages pass, the computer instead simulates a shared world, within which participants meet, navigate and interact. It is this change of metaphor, from communication channel to shared space, that distinguishes Collaborative Virtual Environments.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Collaborative Virtual Environments</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap06.html#sec-06-cve-en",
+    "href": "capitulos/cap06.html#sec-06-cve-en",
+    "title": "6  Collaborative Virtual Environments",
+    "section": "6.1 What is a Collaborative Virtual Environment?",
+    "text": "6.1 What is a Collaborative Virtual Environment?\nA Collaborative Virtual Environment, or CVE, is a distributed virtual reality system that graphically simulates, in real time, a real or imaginary world, where users, represented by their avatars, are simultaneously present, navigate and interact with objects and with other users (Raposo 2011).\nThe concept of the CVE began to gain popularity alongside the term cyberspace, coined by William Gibson in the novel Neuromancer (Gibson 1984) and already discussed in Chapter 1 (Section 1.2.2). Although its origin is science fiction, and the physical immersion shown in films such as The Matrix and Avatar remains far from real technology, the concept popularised by Gibson significantly influenced both researchers and virtual reality systems developers.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Collaborative Virtual Environments</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap06.html#sec-06-elements-en",
+    "href": "capitulos/cap06.html#sec-06-elements-en",
+    "title": "6  Collaborative Virtual Environments",
+    "section": "6.2 Elements of a CVE",
+    "text": "6.2 Elements of a CVE\nThree elements are common to any CVE, regardless of what name the literature gives it, Networked Virtual Environment, Metaverse, among others (Figure 6.1):\n\nVirtual world: the fundamental element of a CVE, an imaginary space made up of a description of objects and the rules that govern them. The relationship between the description of the world and its computational execution is comparable to the relationship between a play’s script and its staging, with the difference that, in a CVE, the users are also actors.\nAvatars: the virtual objects used to represent each participant. Each virtual world is different, and to act within it requires embodying an avatar specific to that world.\nInteractivity: the ability of the virtual world to respond to users’ actions, whether when they navigate and change their position, or when they select and manipulate objects. It is interactivity that distinguishes being in a CVE from watching an animated film.\n\n\n\n\n\n\n\nFigure 6.1: The three elements of a CVE: the virtual world is the shared space, inhabited by avatars, through continuous interaction.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Collaborative Virtual Environments</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap06.html#sec-06-immersion-en",
+    "href": "capitulos/cap06.html#sec-06-immersion-en",
+    "title": "6  Collaborative Virtual Environments",
+    "section": "6.3 Immersion",
+    "text": "6.3 Immersion\nThe combination of an adequate graphical representation of the virtual world with good interactivity contributes to the feeling of immersion, the sensation of “being there” inside the virtual world. Two types of immersion are distinguished (Raposo 2011):\n\nMental immersion: the goal of content creators long before CVEs existed, the engagement and involvement of the consumer with that content. Mental immersion can occur, for example, when reading a good book, with no physical representation at all.\nPhysical immersion: synthetically stimulates the senses, through technology, to create the illusion that the body itself is in the virtual world. Today, it is mainly stimulated through three-dimensional visual representation (stereoscopy), spatial audio and interaction devices that capture the user’s movements. Current virtual reality headsets, such as the Meta Quest or the Apple Vision Pro, are today the most accessible way to achieve physical immersion.\n\nCVEs go beyond mental immersion by also investing in physical immersion. In science fiction, as in the films already mentioned, physical immersion is complete, to the point where the user’s real body becomes indistinguishable from the avatar. In practice, most current CVEs still lack stereoscopy features, even when they are three-dimensional virtual worlds: a 3D CVE, a space with three dimensions of navigation, should not be confused with a “3D movie” or with a stereoscopic virtual reality device, even though nothing prevents a CVE from also being stereoscopic.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Collaborative Virtual Environments</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap06.html#sec-06-history-en",
+    "href": "capitulos/cap06.html#sec-06-history-en",
+    "title": "6  Collaborative Virtual Environments",
+    "section": "6.4 A Brief History of CVEs",
+    "text": "6.4 A Brief History of CVEs\nThe first CVE on record, Maze War, was created in 1974 at a NASA research centre: a game in which users walked through a maze shooting at each other, and which already contained ideas that would become standard in CVEs, first-person navigation and instant-message communication. The most large-scale efforts came from the United States Department of Defense: SIMNET, developed from 1983 onward, trained military units in simulated virtual battles, and gave rise to technical standards still influential in distributed simulation today (Figure 6.2).\n\n\n\n\n\n\nFigure 6.2: Timeline of Collaborative Virtual Environments, from the first CVE on record to today’s massive social environments.\n\n\n\nAmong the most influential CVEs of their time are Second Life (2003, Linden Lab) and World of Warcraft (2004, Blizzard). Both share the definition of a CVE, but have very different purposes: World of Warcraft is a game, with a fantasy world defined by its creators, while Second Life is a “general purpose” CVE, built by the users themselves, with its own virtual economy convertible into real currency. More recently, platforms such as VRChat, Meta Horizon Worlds and Roblox revisit this same idea of a massive social world, now with native support for virtual reality devices.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Collaborative Virtual Environments</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap06.html#sec-06-identity-en",
+    "href": "capitulos/cap06.html#sec-06-identity-en",
+    "title": "6  Collaborative Virtual Environments",
+    "section": "6.5 Identity, Interaction and Presence",
+    "text": "6.5 Identity, Interaction and Presence\nOne of the central ideas behind CVEs is not to invent new metaphors, but rather to reproduce, in the virtual world, notions that already exist in the real world: identity, location, presence and awareness of other participants’ activities (Figure 6.3) (Raposo 2011).\n\n\n\n\n\n\nFigure 6.3: Identity, interaction and presence: three real-world notions that CVEs reproduce in the virtual world.\n\n\n\nIdentity is related to the user’s avatar: it is expected to be immediately recognisable as an avatar, and distinguishable from other avatars, just as we immediately recognise another person and distinguish them from other people in the real world.\nInteraction between users of a CVE depends directly on the avatar’s representation, which provides the main perceptual information about other participants, location, orientation and availability, in a sense very close to what was already discussed regarding perception in cooperation systems (Section 5.6.2). The movement of an avatar anticipates the intentions of the user it represents: turning one’s back during a conversation shows disinterest, just as approaching another avatar can indicate a wish to interact with it.\nPresence, originally called “telepresence”, is “the illusory perception of non-mediation” (Lombard and Ditton 1997): the user does not perceive a medium during their interaction, behaving as if that medium did not exist. A distinction is drawn between physical presence, the sensation of being in a real or virtual place, and social presence, the sensation of being, physically or psychologically, with another person. In a CVE, presence involves both dimensions: the sensation of being in the virtual world (immersion) and, at the same time, the sensation of being there accompanied.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Collaborative Virtual Environments</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap06.html#sec-06-communities-en",
+    "href": "capitulos/cap06.html#sec-06-communities-en",
+    "title": "6  Collaborative Virtual Environments",
+    "section": "6.6 Virtual Communities",
+    "text": "6.6 Virtual Communities\nWhatever its purpose, gaming, socialising, education or economy, a CVE almost always gives rise to a virtual community, with its own social rules and a particular culture. The spatial metaphor of CVEs promotes both casual encounters between strangers and collaboration between acquaintances, generally in a more motivating way than the desktop collaborative systems discussed in previous chapters.\nAs in any society, inappropriate behaviour also happens in CVEs: vandalism, disturbance of other users, or even harassment, echoes, in a three-dimensional space, of the flaming, trolling and cyberbullying already discussed in relation to text-based communication (Section 5.4, Section 1.5.3). The companies responsible for these environments need to deal with these behaviours just like any other social platform.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Collaborative Virtual Environments</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap06.html#sec-06-summary-en",
+    "href": "capitulos/cap06.html#sec-06-summary-en",
+    "title": "6  Collaborative Virtual Environments",
+    "section": "6.7 Summary",
+    "text": "6.7 Summary\nThis chapter introduced Collaborative Virtual Environments:\n\nA CVE simulates a shared world, rather than serving merely as a communication channel, made up of a virtual world, avatars and interactivity (Raposo 2011)\nImmersion can be mental (engagement with content) or physical (the synthetic stimulation of the senses, today mainly through virtual reality headsets or glasses)\nThe first CVE on record was Maze War (1974); SIMNET (1983) brought the first large-scale development efforts; Second Life and World of Warcraft remain, decades later, among the most successful CVEs\nCVEs reproduce real-world notions: identity (avatar recognition), interaction (mediated by the perception the avatar provides) and presence (the illusory sensation of non-mediation) (Lombard and Ditton 1997)\nEvery CVE gives rise to a virtual community, with its own social rules, where inappropriate behaviour can also occur",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Collaborative Virtual Environments</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap06.html#sec-06-reflection-en",
+    "href": "capitulos/cap06.html#sec-06-reflection-en",
+    "title": "6  Collaborative Virtual Environments",
+    "section": "6.8 Food for Thought",
+    "text": "6.8 Food for Thought\nIf you have ever used a collaborative virtual environment, a multiplayer game, a virtual reality meeting, or a platform such as Roblox or VRChat, think about your avatar: to what extent does it represent your real identity? What did you choose to change, and why?\nAnd what about social presence: can you identify a moment when you genuinely felt “accompanied” in a virtual space, even knowing that the other people were physically far away?",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Collaborative Virtual Environments</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap06.html#sec-06-references-en",
+    "href": "capitulos/cap06.html#sec-06-references-en",
+    "title": "6  Collaborative Virtual Environments",
+    "section": "References",
+    "text": "References\n\n\nGibson, William. 1984. Neuromancer. New York: Ace Books.\n\n\nLombard, Matthew, and Theresa Ditton. 1997. ‘At the Heart of It All: The Concept of Presence’. Journal of Computer-Mediated Communication 3 (2).\n\n\nRaposo, Alberto Barbosa. 2011. ‘Ambientes Virtuais Colaborativos’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Collaborative Virtual Environments</span>"
     ]
@@ -74,7 +604,67 @@
     "href": "capitulos/cap07.html",
     "title": "7  Electronic Democracy",
     "section": "",
-    "text": "Chapter 7\n  Electronic Democracy\n\n\nContent to be translated.",
+    "text": "Introduction\nThe previous chapter showed how Collaborative Virtual Environments recreate, in digital space, forms of identity, interaction and presence proper to the real world (Section 6.5). This chapter applies a similar logic to a different domain: political participation. The same social interaction technologies that connect virtual communities can also mediate the relationship between citizens and government, but doing so is not automatic: technology, by itself, does not generate more democracy. What determines the outcome is the level of participation designed into the system.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Electronic Democracy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap07.html#sec-07-egov-en",
+    "href": "capitulos/cap07.html#sec-07-egov-en",
+    "title": "7  Electronic Democracy",
+    "section": "7.1 Electronic Government and Electronic Democracy",
+    "text": "7.1 Electronic Government and Electronic Democracy\nSocial interaction technologies have enabled new forms of political expression and citizen mobilisation. A historical case illustrates this potential well: in 2009, during the protests that followed the disputed re-election of Iran’s president, protesters bypassed state censorship and used Twitter to report, in real time, what was happening in the country, at a time when the government had blocked access to social networks (Araujo et al. 2011). This episode became a reference point on the political potential of social networks, although, as will be seen further ahead, technology alone is no guarantee of effective democratic participation.\nIt is important to distinguish two related but different concepts:\n\nElectronic Government (e-Gov) refers to the electronic provision of services and information, from government to citizens, businesses and other levels of government, 24 hours a day, seven days a week (Araujo et al. 2011). It is, essentially, a matter of administrative efficiency.\nElectronic Democracy (e-Democracy) goes further: it refers to the set of discourses, theorisations and experiments that employ information and communication technologies to mediate political relationships, aiming at democratic participation in contemporary political systems (Araujo et al. 2011). It is not just about improving the quality of public services, but about creating new processes and new relationships between those who govern and those who are governed.\n\nThe distinction matters because an efficient public services portal, by itself, is not Electronic Democracy: it may make citizens’ lives easier without giving them any participation in political decisions.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Electronic Democracy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap07.html#sec-07-levels-en",
+    "href": "capitulos/cap07.html#sec-07-levels-en",
+    "title": "7  Electronic Democracy",
+    "section": "7.2 Levels of Democratic Participation",
+    "text": "7.2 Levels of Democratic Participation\nTo develop solutions supporting Electronic Democracy, it is first necessary to define the level of participation and interaction one wishes to achieve between government and citizens. The Model of Levels of Democratic Participation (Gomes 2004), adapted from an earlier proposal for classifying citizen participation into increasing levels of power (Arnstein 1969), is organised into five levels (Figure 7.1):\n\n\n\n\n\n\nFigure 7.1: The five levels of democratic participation, from the most basic (service provision) to the most demanding (direct democracy).\n\n\n\n\nService Provision: making public information and services available. Interaction is predominantly one-way: the government provides, the citizen consumes.\nPublic Opinion Collection: the government uses ICT as a consultation channel, but interaction remains predominantly one-way, since there is no commitment to act according to the opinion collected.\nAccountability: transparency about government action, with the information made available subject to explanation and justification. Political decision-making remains with the State, but citizen participation is more effective.\nDeliberative Democracy: political decisions are made after discussions of mutual persuasion between the State and civil society, which is no longer merely consulted and starts to co-produce the decision.\nDirect Democracy: decision-making no longer passes through a representative political sphere; the citizen takes the State’s place in the decision.\n\nThe levels are not mutually exclusive, and most real Electronic Democracy initiatives still concentrate on the most basic levels, of service and information provision. In Portugal, the ePortugal.gov.pt portal and the Chave Móvel Digital are examples of the first level; the public consultation processes available on participa.pt approach the second and third levels; and the Orçamento Participativo Portugal (Portugal Participatory Budget), in which any citizen can propose and vote on public investment projects to be financed by the State Budget, is a national example close to the fourth level, since the proposal and prioritisation come directly from citizens, even though the final decision on execution rests with the State.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Electronic Democracy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap07.html#sec-07-aspects-en",
+    "href": "capitulos/cap07.html#sec-07-aspects-en",
+    "title": "7  Electronic Democracy",
+    "section": "7.3 Aspects Supporting Democratic Participation",
+    "text": "7.3 Aspects Supporting Democratic Participation\nOnce the desired level of participation has been defined, it is necessary to identify the requirements of the systems that will support it. Three aspects are central sources of these requirements (Araujo et al. 2011) (Figure 7.2):\n\n\n\n\n\n\nFigure 7.2: The three aspects that support Electronic Democracy: collaboration, transparency and memory.\n\n\n\n\nCollaboration between participants: the design of the interaction follows the same logic as the 3C Model already discussed (Section 4.4), communication, coordination and cooperation between citizens and government, with particular emphasis on the perception that cuts across all three dimensions.\nTransparency of actions and information: policies, standards and procedures that make information accessible, with quality of content, understandability and auditability.\nMemory of discussion and deliberation: organisation, storage, retrieval and traceability of the knowledge accumulated throughout the democratic process, through discussion histories, artefacts and decisions taken.\n\nThese three aspects cut across all levels of participation: even simple service provision benefits from more collaboration between users, more transparency about processes, and memory of previous requests, even before the institution moves on to more demanding levels of democratic participation.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Electronic Democracy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap07.html#sec-07-summary-en",
+    "href": "capitulos/cap07.html#sec-07-summary-en",
+    "title": "7  Electronic Democracy",
+    "section": "7.4 Summary",
+    "text": "7.4 Summary\nThis chapter addressed the relationship between technology and political participation:\n\nElectronic Government (electronic service provision) and Electronic Democracy (technological mediation of political relationships) are related but distinct concepts: the first does not imply the second (Araujo et al. 2011)\nThe Levels of Democratic Participation range from service provision to direct democracy, and most real initiatives still concentrate on the most basic levels (Gomes 2004; Arnstein 1969)\nThree aspects support Electronic Democracy at any level: collaboration (the 3C Model applied to the citizen-government relationship), transparency and memory (Araujo et al. 2011)",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Electronic Democracy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap07.html#sec-07-reflection-en",
+    "href": "capitulos/cap07.html#sec-07-reflection-en",
+    "title": "7  Electronic Democracy",
+    "section": "7.5 Food for Thought",
+    "text": "7.5 Food for Thought\nThink of a public service you have used online, a city council, social security, tax authorities. What level of democratic participation would you classify it at? What changes would move it to the next level?\nAnd what about the Orçamento Participativo Portugal, or a similar initiative you know of: to what extent do you think citizens’ proposals and votes really influence the final decision, and to what extent does the decision remain, in practice, in the State’s hands?",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Electronic Democracy</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap07.html#sec-07-references-en",
+    "href": "capitulos/cap07.html#sec-07-references-en",
+    "title": "7  Electronic Democracy",
+    "section": "References",
+    "text": "References\n\n\nAraujo, Renata Mendes de, Claudia Cappelli, Bruna Diirr, Priscila Engiel, and Rafael Lage Tavares. 2011. ‘Democracia Eletrônica’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nArnstein, Sherry R. 1969. ‘A Ladder of Citizen Participation’. Journal of the American Institute of Planners 35 (4): 216–24.\n\n\nGomes, Wilson. 2004. Transformações Da Política Na Era Da Comunicação de Massa. São Paulo: Paulus.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Electronic Democracy</span>"
     ]
@@ -84,7 +674,87 @@
     "href": "capitulos/cap08.html",
     "title": "8  Collaborative Software Development",
     "section": "",
-    "text": "Chapter 8\n  Collaborative Software Development\n\n\nContent to be translated.",
+    "text": "Introduction\nThe previous chapters discussed collaboration in virtual environments and in the relationship between citizens and government. This chapter turns to a domain closer to those studying Computing: software development is itself a deeply collaborative activity, rarely carried out by a single person, and increasingly carried out by geographically distributed teams.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Collaborative Software Development</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap08.html#sec-08-collaborative-activity-en",
+    "href": "capitulos/cap08.html#sec-08-collaborative-activity-en",
+    "title": "8  Collaborative Software Development",
+    "section": "8.1 Software Development as a Collaborative Activity",
+    "text": "8.1 Software Development as a Collaborative Activity\nThe success of an organisation increasingly depends on the software it uses as a competitive differentiator, and developing that software is rarely an individual activity: several specialists need to work together, coordinate their activities, make decisions and communicate continuously to develop quality software within the estimated time and cost (Souza, Marczak, and Prikladnicki 2011).\nCollaboration is organised around models, abstractions of the software being built: requirements specifications, class diagrams, use cases, and the source code itself. Models are not independent of one another: a change in a piece of software’s class diagram, for example, usually requires corresponding changes in the source code, so that the two models remain consistent with each other. This dependency makes coordination between programmers particularly important, since misaligned changes between models tend to generate errors (Souza, Marczak, and Prikladnicki 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Collaborative Software Development</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap08.html#sec-08-pair-programming-en",
+    "href": "capitulos/cap08.html#sec-08-pair-programming-en",
+    "title": "8  Collaborative Software Development",
+    "section": "8.2 Pair Programming",
+    "text": "8.2 Pair Programming\nPair programming is a practice proposed by the agile method Extreme Programming, in which two programmers work together on a single computer: one writes the code while the other reviews it in real time, questions implementation decisions and looks for test cases that might fail (Souza, Marczak, and Prikladnicki 2011).\nThis is not a matter of one person programming while the other merely watches, but a constant dialogue between two people jointly seeking a better solution than either would reach alone. The code is reviewed by two people in real time, which reduces the likelihood of defects and speeds up the sharing of knowledge between a more experienced programmer and a less experienced one. Like any collaborative practice, it requires a cultural shift: evidence suggests that productivity increases with practice, as the pair learns to communicate and better divide the work between them (Souza, Marczak, and Prikladnicki 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Collaborative Software Development</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap08.html#sec-08-version-control-en",
+    "href": "capitulos/cap08.html#sec-08-version-control-en",
+    "title": "8  Collaborative Software Development",
+    "section": "8.3 Version Control Systems",
+    "text": "8.3 Version Control Systems\nVersion control is the discipline responsible for controlling the evolution and integrity of a software product over time, identifying, recording and coordinating the changes made by different team members (Souza, Marczak, and Prikladnicki 2011). Systems such as Git, today the most used, maintain a central repository with the complete history of the code, from which each programmer copies their own working area (Figure 8.1).\n\n\n\n\n\n\nFigure 8.1: Sharing files in a version control system: each programmer works on a local copy, and synchronises their changes with the central repository.\n\n\n\nA version control system supports collaboration in several ways: it generates a change log that serves as shared memory of the product’s evolution; it provides awareness information about what colleagues are doing, by notifying changes; and it enables the coordination of dependencies between activities, whether through sequential development or in parallel, with the work of each person integrated afterwards. Platforms such as GitHub and GitLab now integrate version control with defect management and code review in the same system.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Collaborative Software Development</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap08.html#sec-08-defect-management-en",
+    "href": "capitulos/cap08.html#sec-08-defect-management-en",
+    "title": "8  Collaborative Software Development",
+    "section": "8.4 Defect Management Systems",
+    "text": "8.4 Defect Management Systems\nSoftware is rarely free of defects, found either by the quality team or by users themselves. Defect management systems, such as Bugzilla, JIRA or GitHub issues, support the recording, assignment and tracking of defect resolution, typically involving several actors in distinct roles: those who test, those who develop, and those who manage the team (Figure 8.2) (Souza, Marczak, and Prikladnicki 2011).\n\n\n\n\n\n\nFigure 8.2: The collaborative lifecycle of a software defect, from initial reporting to final verification of the fix.\n\n\n\nA defect is reported by whoever finds it, forwarded to a programmer who works on the fix, and returned for verification by whoever originally reported it. If the fix is not satisfactory, the defect is reopened, restarting the cycle. Beyond reporting and resolution, these systems make it possible to prioritise defects, generate reports on the status of each one, and identify similar or already-reported defects, which is particularly useful for geographically distributed teams, whose members do not always have the opportunity to meet in person to discuss a solution (Souza, Marczak, and Prikladnicki 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Collaborative Software Development</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap08.html#sec-08-distributed-en",
+    "href": "capitulos/cap08.html#sec-08-distributed-en",
+    "title": "8  Collaborative Software Development",
+    "section": "8.5 Distributed and Global Development",
+    "text": "8.5 Distributed and Global Development\nThe globalisation of business has also been reflected in software development: it is increasingly common for members of the same team to be separated by physical and temporal distance, and for a project to involve participants from different countries, cultures and time zones (Souza, Marczak, and Prikladnicki 2011).\nDistance between collaborators has a well-documented effect on collaboration. A classic study by Thomas Allen, in 1977, showed that the frequency of collaboration between engineers was inversely proportional to the physical distance between their desks: from about 30 metres onward, collaboration between colleagues decreased sharply (Souza, Marczak, and Prikladnicki 2011). The effect is explained by the loss of opportunities for informal communication, the spontaneous corridor or coffee-machine conversations, with no prior scheduling, through which colleagues learn about each other’s progress and find joint solutions to common problems.\nAlthough the collaborative systems already discussed help reduce the distance between people, through instant messaging and video conferencing, physical distance between professionals who need to collaborate remains a real challenge, alongside other factors such as differences in time zone, language, customs and cultural norms between distributed teams (Souza, Marczak, and Prikladnicki 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Collaborative Software Development</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap08.html#sec-08-summary-en",
+    "href": "capitulos/cap08.html#sec-08-summary-en",
+    "title": "8  Collaborative Software Development",
+    "section": "8.6 Summary",
+    "text": "8.6 Summary\nThis chapter dealt with software development as a collaborative activity:\n\nSoftware development is organised around interdependent models, whose changes require coordination within the team (Souza, Marczak, and Prikladnicki 2011)\nPair programming is a collaborative practice in which two programmers work in constant dialogue, reducing defects and sharing knowledge\nVersion control systems, today mostly based on Git, coordinate a team’s changes and maintain a record of the product’s history\nDefect management systems support the collaborative lifecycle of a defect, from reporting to verification of the fix\nDistributed and global development is increasingly common, but physical distance between collaborators continues to hinder the informal communication that is essential for collaboration",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Collaborative Software Development</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap08.html#sec-08-reflection-en",
+    "href": "capitulos/cap08.html#sec-08-reflection-en",
+    "title": "8  Collaborative Software Development",
+    "section": "8.7 Food for Thought",
+    "text": "8.7 Food for Thought\nIf you have already worked on a group programming project, think about how the code coordination was done: did you use a version control system? How did you resolve conflicts when two people changed the same file?\nAnd what about physical distance: have you ever felt, in a group project, the difference between solving a problem in person and trying to solve it only by message?",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Collaborative Software Development</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap08.html#sec-08-references-en",
+    "href": "capitulos/cap08.html#sec-08-references-en",
+    "title": "8  Collaborative Software Development",
+    "section": "References",
+    "text": "References\n\n\nSouza, Cleidson R. B. de, Sabrina Marczak, and Rafael Prikladnicki. 2011. ‘Desenvolvimento Colaborativo de Software’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.",
     "crumbs": [
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Collaborative Software Development</span>"
     ]
@@ -94,7 +764,77 @@
     "href": "capitulos/cap09.html",
     "title": "9  Collaborative Learning and Collective Knowledge",
     "section": "",
-    "text": "Chapter 9\n  Collaborative Learning and Collective Knowledge\n\n\nContent to be translated.",
+    "text": "Introduction\nThe first attempts to use the computer in education, decades before the internet as we know it today, saw the computer as a kind of automated teacher: a system that presented content, checked answers and reinforced correct behaviours, according to behaviourist principles of programmed instruction. This chapter deals with a different paradigm, consolidated from the 1970s onward and reinforced by the arrival of collaborative systems: learning as a social process, in which knowledge is not transmitted from a teacher-computer to a passive student, but built jointly by those who learn (Castro and Menezes 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Collaborative Learning and Collective Knowledge</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap09.html#sec-09-collaborative-learning-en",
+    "href": "capitulos/cap09.html#sec-09-collaborative-learning-en",
+    "title": "9  Collaborative Learning and Collective Knowledge",
+    "section": "9.1 Collaborative Learning",
+    "text": "9.1 Collaborative Learning\nLearning is an activity arising from the continuous pursuit of adaptation to the physical and social environment: much is learned from others, solving problems together, obtaining explanations of already-solved problems, debating the advantages and disadvantages of a choice, and building collective syntheses (Castro and Menezes 2011). Collaborative learning rests on two principles: students work together in the pursuit of learning, and are responsible not only for their own learning, but also for their peers’ learning. These principles imply collective goals which, the better they are met, the greater the learning possibilities for each participant (Castro and Menezes 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Collaborative Learning and Collective Knowledge</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap09.html#sec-09-methods-en",
+    "href": "capitulos/cap09.html#sec-09-methods-en",
+    "title": "9  Collaborative Learning and Collective Knowledge",
+    "section": "9.2 Methods of Collaborative Learning",
+    "text": "9.2 Methods of Collaborative Learning\nThree methods, with decades of proven use in school settings, illustrate concrete ways of structuring collaborative learning (Figure 9.1) (Castro and Menezes 2011):\n\n\n\n\n\n\nFigure 9.1: Three widely used methods of collaborative learning in school settings, each structuring interdependence between students differently.\n\n\n\n\nJigsaw: the class is organised into groups, and each group member studies, in an “expert group”, a different part of the topic. Each student then returns to their original group to teach their peers the part they studied. Since each student holds a piece of the “puzzle” that the others do not have, interdependence between them is total: without everyone’s contribution, the group cannot reconstruct the complete topic.\nAcademic Controversy: students are organised into pairs who defend opposing positions on a topic, present the best possible arguments for their position, discuss openly, then switch the positions they were defending, and finish by jointly building a synthesis that integrates the best ideas from both sides.\nGroup Investigation: small groups autonomously investigate a topic of common interest, from defining the research question to presenting a final report, combining investigation, social interaction, individual interpretation and intrinsic motivation.\n\nAlthough different from one another, the three methods share essential components: group goals that encourage students to support one another; individual accountability, which requires each member to master the concepts they explain to their peers; and equal opportunity for success, recognising each student for their effort, regardless of their starting abilities (Castro and Menezes 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Collaborative Learning and Collective Knowledge</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap09.html#sec-09-collective-knowledge-en",
+    "href": "capitulos/cap09.html#sec-09-collective-knowledge-en",
+    "title": "9  Collaborative Learning and Collective Knowledge",
+    "section": "9.3 Collective Knowledge",
+    "text": "9.3 Collective Knowledge\nMany of the problems solved in organisations today are too complex and multidisciplinary for a single person. Collective knowledge is the combination of the individual knowledge of a group with a common goal, and is richer than the simple sum of that individual knowledge, because combining different perspectives reveals relationships that are not visible when each piece of knowledge is presented in isolation (Borges 2011).\nA recurring problem is recovering knowledge about past events that were not properly documented when they occurred. In this process, three versions of the same episode can be distinguished (Figure 9.2) (Borges 2011): the known version, held in the mind of whoever witnessed the episode, tacit and abstract knowledge until it is transmitted; the reported version, the account that results from transmitting that knowledge, orally or in writing; and the real version, what actually happened, also an abstract concept, which can rarely be fully reconstructed.\n\n\n\n\n\n\nFigure 9.2: The three versions of an episode: the known version, held in memory, is transmitted with losses into the reported version, which approaches, without ever fully coinciding with, the real version of what happened.\n\n\n\nIn any transmission of knowledge, whether by socialisation (oral explanation) or by externalisation (written record), there are losses: no one reproduces everything they know when giving an account, and socialisation also suffers from the “game of telephone” effect, in which knowledge changes with each new transmission (Borges 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Collaborative Learning and Collective Knowledge</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap09.html#sec-09-storytelling-en",
+    "href": "capitulos/cap09.html#sec-09-storytelling-en",
+    "title": "9  Collaborative Learning and Collective Knowledge",
+    "section": "9.4 Group Storytelling",
+    "text": "9.4 Group Storytelling\nGroup storytelling is a technique for the collective recovery of knowledge in which several people contribute, synchronously or asynchronously, to reconstruct an episode, bringing the reported version closer to the version known by each participant (Borges 2011). The technique typically assigns four roles to participants: the storyteller, who recounts their version of the facts; the facilitator, who looks for inconsistencies, contradictions and gaps between the various accounts; the reviewer, who identifies ambiguous or incomplete passages; and the administrator, who organises the dynamics and invites participants.\nSince different people recount the same episode in different ways, according to their own perspective, individual accounts can relate to one another in several ways: confirmation, when one account confirms another; inconsistency, when two accounts contradict each other; precedence, when one event precedes another in time; and gap, when information is missing between two accounts for the story to make sense. Making these relationships explicit is what turns a set of individual accounts into a true collective story, richer than any of the isolated accounts.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Collaborative Learning and Collective Knowledge</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap09.html#sec-09-summary-en",
+    "href": "capitulos/cap09.html#sec-09-summary-en",
+    "title": "9  Collaborative Learning and Collective Knowledge",
+    "section": "9.5 Summary",
+    "text": "9.5 Summary\nThis chapter dealt with learning as a social process and with the collective construction of knowledge:\n\nCollaborative learning replaces the computer-teacher with a joint construction of knowledge among students who take responsibility for one another (Castro and Menezes 2011)\nThe Jigsaw, Academic Controversy and Group Investigation methods structure interdependence between students in different ways (Castro and Menezes 2011)\nCollective knowledge is richer than the sum of a group’s individual knowledge, and is distinguished into known, reported and real versions (Borges 2011)\nGroup storytelling collectively recovers knowledge about an episode, through defined roles and by making relationships between individual accounts explicit (Borges 2011)",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Collaborative Learning and Collective Knowledge</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap09.html#sec-09-reflection-en",
+    "href": "capitulos/cap09.html#sec-09-reflection-en",
+    "title": "9  Collaborative Learning and Collective Knowledge",
+    "section": "9.6 Food for Thought",
+    "text": "9.6 Food for Thought\nThink of a group project in which you used one of the three methods discussed, even without knowing its name: which one, and how did interdependence between group members go?\nAnd what about group storytelling: have you ever reconstructed, with colleagues or friends, the story of a shared event, each from your own version? What inconsistencies or gaps did you find between your accounts?",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Collaborative Learning and Collective Knowledge</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap09.html#sec-09-references-en",
+    "href": "capitulos/cap09.html#sec-09-references-en",
+    "title": "9  Collaborative Learning and Collective Knowledge",
+    "section": "References",
+    "text": "References\n\n\nBorges, Marcos R. S. 2011. ‘Conhecimento Coletivo’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nCastro, Alberto, and Crediné Menezes. 2011. ‘Aprendizagem Colaborativa Com Suporte Computacional’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.",
     "crumbs": [
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Collaborative Learning and Collective Knowledge</span>"
     ]
@@ -104,7 +844,67 @@
     "href": "capitulos/cap10.html",
     "title": "10  Recommendation Systems and Collaborative AI",
     "section": "",
-    "text": "Chapter 10\n  Recommendation Systems and Collaborative AI\n\n\nContent to be translated.",
+    "text": "Introduction\nThe previous chapter showed how collective knowledge emerges from the combination of human contributions. This chapter deals with a next step: systems that use Artificial Intelligence (AI) to automate part of that collective work, whether by suggesting what might interest someone based on the behaviour of others, or by directly supporting a group’s communication, coordination and cooperation.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Recommendation Systems and Collaborative AI</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap10.html#sec-10-recommendation-en",
+    "href": "capitulos/cap10.html#sec-10-recommendation-en",
+    "title": "10  Recommendation Systems and Collaborative AI",
+    "section": "10.1 Recommendation Systems",
+    "text": "10.1 Recommendation Systems\nA Recommendation System is an information filter that, from large volumes of data, presents the items likely to interest a specific user, whether products, films, music or content (Motta et al. 2011). The underlying principle is simple: “what is relevant to me may also be relevant to someone with similar interests”. Practically everyone has already used one of these systems without paying attention to it, from Amazon’s product suggestions to Spotify’s “Discover Weekly” lists or Netflix’s show recommendations.\n\n10.1.1 Recommendation Methods\nThere are three main families of methods for generating recommendations (Figure 10.1) (Motta et al. 2011):\n\n\n\n\n\n\nFigure 10.1: Three methods for generating recommendations, from the simplest to implement to the one that best exploits collective behaviour.\n\n\n\n\nDirect information retrieval: the system returns items that literally match the user’s search criteria. It is the simplest method, but the quality of the recommendation depends entirely on the search performed.\nCollaborative filtering: predicts a user’s interest in an item from the correlation between their ratings and those of other users with similar tastes. This is the method that makes a Recommendation System truly collaborative: each individual rating’s contribution improves the recommendation for the whole community, even though this collaboration is asynchronous and the benefits are not perceived at the moment of the contribution.\nContent-based filtering: predicts a user’s interest from the characteristics of the content itself, comparing them with the preference profile already shown by that user, independently of other people’s behaviour.\n\nCollaborative filtering is effective, but has a high computational cost and suffers from the cold start problem: a new item, with no ratings yet, cannot be recommended by this method, however good it may be. Content-based filtering solves this specific problem, but depends on a rich, structured description of the content to work well. For this reason, most current recommendation systems combine several methods, including these two.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Recommendation Systems and Collaborative AI</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap10.html#sec-10-ai-collaborative-en",
+    "href": "capitulos/cap10.html#sec-10-ai-collaborative-en",
+    "title": "10  Recommendation Systems and Collaborative AI",
+    "section": "10.2 Artificial Intelligence for Collaborative Systems",
+    "text": "10.2 Artificial Intelligence for Collaborative Systems\nBesides recommending, AI techniques can directly support the three dimensions of the 3C Model (Section 4.4): communication, coordination and cooperation (Garcia et al. 2011) (Figure 10.2).\n\n\n\n\n\n\nFigure 10.2: Mapping of Artificial Intelligence techniques to each dimension of the 3C Collaboration Model.\n\n\n\nSome fundamental techniques, already mature before the generative AI discussed next, include:\n\nOntologies: already discussed in Chapter 4 (Section 4.5), help ensure that sender and receiver share the same language structures, supporting communication.\nData mining: extracts patterns from large volumes of interactions that would be impossible to analyse manually, for example, to recommend skills or identify recurring behaviours in a group.\nExpert and multi-agent systems: support coordination, detecting conflicts between concurrent tasks, suggesting resource allocation or managing the reputation of a group’s participants.\nAutonomic systems: monitor and protect the shared workspace, supporting cooperation in a robust and secure way.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Recommendation Systems and Collaborative AI</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap10.html#sec-10-update-en",
+    "href": "capitulos/cap10.html#sec-10-update-en",
+    "title": "10  Recommendation Systems and Collaborative AI",
+    "section": "10.3 The Update: Generative AI and Collaborative Copilots",
+    "text": "10.3 The Update: Generative AI and Collaborative Copilots\nThe field of AI applied to collaboration transformed profoundly in the decade following the publication of these techniques, with the arrival of large language models (LLMs) and generative AI: systems such as ChatGPT, Gemini or Claude, capable of generating text, code and images from a natural-language request.\nThe most direct impact on collaboration is the emergence of copilots, AI assistants integrated directly into the collaborative tools already discussed in this book. In software development (Section 8.3), GitHub Copilot suggests code directly in the editor, becoming a silent third participant alongside pair programming. In collaborative writing tools, such as Google Docs or Notion, AI assistants suggest, summarise and rewrite jointly produced content. And in communication systems (Section 5.1), meeting assistants automatically transcribe, summarise and distribute minutes among participants, an automated form of memory, the same aspect already discussed regarding Electronic Democracy (Section 7.3).\nThese copilots do not replace the older AI techniques discussed in this chapter, but rather complement them: a collaborative writing assistant still benefits from a well-defined domain ontology, and a recommendation system still depends on collaborative filtering to know what to suggest. The difference lies in the naturalness of the interaction, now possible through natural language instead of structured commands or forms.",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Recommendation Systems and Collaborative AI</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap10.html#sec-10-summary-en",
+    "href": "capitulos/cap10.html#sec-10-summary-en",
+    "title": "10  Recommendation Systems and Collaborative AI",
+    "section": "10.4 Summary",
+    "text": "10.4 Summary\nThis chapter dealt with the application of Artificial Intelligence to collaborative systems:\n\nA Recommendation System filters large volumes of information to suggest what is likely to interest a user, through direct retrieval, collaborative filtering or content-based filtering (Motta et al. 2011)\nCollaborative filtering is the most directly collaborative method, but suffers from the cold-start problem for new items\nAI techniques such as ontologies, data mining, expert and multi-agent systems and autonomic systems each support one or more dimensions of the 3C Model (Garcia et al. 2011)\nGenerative AI gave rise to collaborative copilots, assistants integrated directly into the development, writing and communication tools already discussed in this book",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Recommendation Systems and Collaborative AI</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap10.html#sec-10-reflection-en",
+    "href": "capitulos/cap10.html#sec-10-reflection-en",
+    "title": "10  Recommendation Systems and Collaborative AI",
+    "section": "10.5 Food for Thought",
+    "text": "10.5 Food for Thought\nThink of a recent recommendation you received, of a film, product or piece of music, that pleasantly surprised you: can you tell whether it resulted from collaborative filtering (based on people similar to you) or content-based filtering (based on what you have already consumed)?\nAnd what about copilots: have you used an AI assistant integrated into a collaborative tool? What task did it save you, and which decisions did you still keep for yourself and your colleagues?",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Recommendation Systems and Collaborative AI</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap10.html#sec-10-references-en",
+    "href": "capitulos/cap10.html#sec-10-references-en",
+    "title": "10  Recommendation Systems and Collaborative AI",
+    "section": "References",
+    "text": "References\n\n\nGarcia, Ana Cristina Bicharra, Adriana Santarosa Vivacqua, Kate Cerqueira Revoredo, and Flavia Cristina Bernardini. 2011. ‘Inteligência Artificial Para Sistemas Colaborativos’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nMotta, Claudia Lage Rebello da, Ana Cristina Bicharra Garcia, Adriana Santarosa Vivacqua, Flávia Maria Santoro, and Jonice de Oliveira Sampaio. 2011. ‘Sistemas de Recomendação’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.",
     "crumbs": [
       "<span class='chapter-number'>10</span>  <span class='chapter-title'>Recommendation Systems and Collaborative AI</span>"
     ]
@@ -114,7 +914,87 @@
     "href": "capitulos/cap11.html",
     "title": "11  Mobility, Ubiquity and Interaction",
     "section": "",
-    "text": "Chapter 11\n  Mobility, Ubiquity and Interaction\n\n\nContent to be translated.",
+    "text": "Introduction\nThis final chapter closes the block dedicated to cooperative platforms with two complementary questions: how collaboration follows people away from the desk, through mobile and ubiquitous computing; and how to systematically assess whether a collaborative system offers a good experience to those who use it.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mobility, Ubiquity and Interaction</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap11.html#sec-11-mobile-ubiquitous-en",
+    "href": "capitulos/cap11.html#sec-11-mobile-ubiquitous-en",
+    "title": "11  Mobility, Ubiquity and Interaction",
+    "section": "11.1 Mobile and Ubiquitous Computing",
+    "text": "11.1 Mobile and Ubiquitous Computing\nMobile Computing focuses on mobility: portable equipment, cellular telephony and wireless networks expand the boundaries of where and when collaboration is possible (Filippo et al. 2011). Ubiquitous Computing, a term coined by Mark Weiser in 1988, while working at Xerox PARC, has a slightly different focus: the continuous availability of services through countless everyday objects with embedded software, increasingly imperceptible as computers (Filippo et al. 2011) (Figure 11.1).\n\n\n\n\n\n\nFigure 11.1: Mobile Computing and Ubiquitous Computing have different focuses, even though many collaborative services combine both dimensions.\n\n\n\nFor Weiser, Ubiquitous Computing is the third era of computing: after the era of mainframe computers, shared by several users, and the era of personal computers, one user per computer, comes the era in which each user uses, without realising it, several devices at the same time. Mobility and ubiquity are not synonyms: a laptop is mobile, but not ubiquitous; a sensor embedded in a door is ubiquitous, but not mobile. Many collaborative services today combine both dimensions.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mobility, Ubiquity and Interaction</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap11.html#sec-11-location-en",
+    "href": "capitulos/cap11.html#sec-11-location-en",
+    "title": "11  Mobility, Ubiquity and Interaction",
+    "section": "11.2 Location",
+    "text": "11.2 Location\nA large part of mobile collaborative services exploits the user’s location: mobile devices, equipped with GPS, accelerometer, compass and gyroscope, report where the user is and where they are heading (Filippo et al. 2011). Services based on the geographic coordinates of people and elements of the real and virtual world are called Location Based Services (LBS).\nEveryday applications such as Google Maps, Uber or food-delivery apps use location to coordinate meetings between people, vehicles and destinations that would otherwise require prior, detailed arrangement. Games such as Pokémon GO take the same logic into the territory of playful collaboration: as in geocaching, a treasure-hunting game that predates smartphones, in which georeferenced coordinates guide players to hidden objects, location turns the physical space of the city into a shared game board.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mobility, Ubiquity and Interaction</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap11.html#sec-11-smart-objects-en",
+    "href": "capitulos/cap11.html#sec-11-smart-objects-en",
+    "title": "11  Mobility, Ubiquity and Interaction",
+    "section": "11.3 Smart Objects",
+    "text": "11.3 Smart Objects\nUbiquitous Computing gave rise to the idea of smart objects: low-cost devices, equipped with sensors and network communication capability, which stop being inert and start having behaviour of their own, reacting to other objects, to people and to the environment around them (Filippo et al. 2011). This set of networked objects is today called the Internet of Things (IoT).\nA smart home, equipped with assistants such as Google Home or Alexa, smart locks and networked appliances, is the example closest to many people’s everyday lives. A smartwatch, such as the Apple Watch, is another example: it communicates with its user’s phone, but also with other devices and services, supporting everything from communication to health monitoring. Together, these interconnected objects form a collaborative ecosystem, in which each device contributes data and functionality to the others. A central principle of these objects is calm technology: the more devices there are, the more important it becomes for them to become invisible in their operation, without requiring constant attention from those who use them (Filippo et al. 2011).",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mobility, Ubiquity and Interaction</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap11.html#sec-11-infrastructure-en",
+    "href": "capitulos/cap11.html#sec-11-infrastructure-en",
+    "title": "11  Mobility, Ubiquity and Interaction",
+    "section": "11.4 Infrastructure: Wireless Networks and Sensors",
+    "text": "11.4 Infrastructure: Wireless Networks and Sensors\nMobile and ubiquitous computing depends on a technological infrastructure that brings its own challenges to collaborative systems (Filippo et al. 2011): wireless networks, which extend the Internet’s reach beyond wired networks but run into physical and bandwidth limits; sensors, which capture location, movement or environmental data; and context support, a system’s ability to adapt to changes in network, battery and the situation of whoever uses it, without harming the collaboration under way.\nWithout going into depth, it is also worth mentioning cross-platform development methods: there are today frameworks that make it possible to build an application for Android and iOS from the same code, instead of programming each version separately. React Native, developed by Meta, uses JavaScript to produce native applications; Flutter, from Google, uses the Dart language and is known for its performance; Xamarin, from Microsoft, uses C# and integrates with the .NET ecosystem; Ionic, based on Web technologies such as HTML, CSS and JavaScript, generates hybrid applications.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mobility, Ubiquity and Interaction</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap11.html#sec-11-qualities-of-use-en",
+    "href": "capitulos/cap11.html#sec-11-qualities-of-use-en",
+    "title": "11  Mobility, Ubiquity and Interaction",
+    "section": "11.5 Qualities of Use",
+    "text": "11.5 Qualities of Use\nOnce developed, how can one tell whether a collaborative system offers a good experience to those who use it? The field of Human-Computer Interaction (HCI) proposes criteria, or quality-of-use requirements, to answer this question (Prates 2011) (Figure 11.2):\n\n\n\n\n\n\nFigure 11.2: The four qualities of use of a collaborative system, according to the field of Human-Computer Interaction.\n\n\n\n\nUsability: according to ISO standard 9241-11:2018, the extent to which a system can be used by specific users to achieve well-defined goals with effectiveness, efficiency and satisfaction, in a given context of use (International Organization for Standardization 2018). Effectiveness concerns the accuracy and completeness with which users achieve their goals; efficiency, the resources, such as time and effort, spent in relation to that accuracy and completeness; satisfaction, the absence of discomfort and a positive attitude towards using the system. Nielsen further adds ease of learning (learnability), ease of recall (memorability) and error rate as complementary attributes of usability (Nielsen 1993).\nSociability: according to Preece, the sociability of an online community rests on three pillars that determine whether it thrives: purpose, the reason that leads people to participate and that gives the group cohesion; people, their characteristics, roles and diversity; and policies, the rules, norms and codes of conduct that regulate the group’s behaviour (Preece 2000).\nCommunicability: the system’s ability to convey to users its designer’s decisions about who the users are, what they can do, and how they can do it. The concept originates within Semiotic Engineering, a field that studies human-computer interaction as a communication process between designers and users, mediated by the interface itself (Souza 2005).\nAccessibility: according to the W3C, access to the Web by everyone, regardless of disability, is an essential aspect, which requires perceiving, understanding, navigating and interacting without barriers. It covers visual, hearing, motor, cognitive and neurological limitations. The most widely used normative reference is WCAG 2.2, organised around four principles: perceivable, operable, understandable and robust (W3C Web Accessibility Initiative 2023).\n\nOf these four, sociability is the only one specific to collaborative systems: usability, communicability and accessibility apply to any interactive system, even a single-user one, but sociability only makes sense when there is, in fact, a group interacting through the system (Prates 2011). Accessibility, in turn, is not exclusive to collaborative systems, but functions in them as a condition of social inclusiveness: an inaccessible system excludes group members, undermining sociability itself.\nThe four qualities relate to one another, and none exists in isolation: a system with low communicability hinders learning, also resulting in low usability; a system with low accessibility excludes users, which reduces the group’s sociability. A quality collaborative system balances all four dimensions at once, and its evaluation should be carried out with real users, in a real context.",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mobility, Ubiquity and Interaction</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap11.html#sec-11-summary-en",
+    "href": "capitulos/cap11.html#sec-11-summary-en",
+    "title": "11  Mobility, Ubiquity and Interaction",
+    "section": "11.6 Summary",
+    "text": "11.6 Summary\nThis chapter, the last in the block dedicated to cooperative platforms, addressed mobility, ubiquity and the quality of interaction:\n\nMobile Computing focuses on the mobility of equipment; Ubiquitous Computing focuses on the continuous availability of services through countless everyday objects (Filippo et al. 2011)\nLocation Based Services coordinate meetings between people, vehicles and destinations from the user’s geographic coordinates\nSmart objects, networked as part of the Internet of Things, follow the principle of calm technology: the more numerous they are, the more invisible they should be in their operation\nWireless network and sensor infrastructure, and cross-platform frameworks, support the development of mobile and ubiquitous collaborative systems\nThe four qualities of use, usability (effectiveness, efficiency and satisfaction), sociability (purpose, people and policies), communicability (conveying design decisions to the user) and accessibility (barrier-free use), assess whether a collaborative system offers a good experience to those who use it, and relate to one another (Prates 2011)",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mobility, Ubiquity and Interaction</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap11.html#sec-11-reflection-en",
+    "href": "capitulos/cap11.html#sec-11-reflection-en",
+    "title": "11  Mobility, Ubiquity and Interaction",
+    "section": "11.7 Food for Thought",
+    "text": "11.7 Food for Thought\nThink of a mobile application you use frequently that depends on your location: what collaboration does it make possible that would not otherwise exist?\nAnd regarding the four qualities of use: pick a collaborative system you use regularly and quickly assess it on each of them. What is its weakest point?",
+    "crumbs": [
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mobility, Ubiquity and Interaction</span>"
+    ]
+  },
+  {
+    "objectID": "capitulos/cap11.html#sec-11-references-en",
+    "href": "capitulos/cap11.html#sec-11-references-en",
+    "title": "11  Mobility, Ubiquity and Interaction",
+    "section": "References",
+    "text": "References\n\n\nFilippo, Denise, José Viterbo Filho, Markus Endler, and Hugo Fuks. 2011. ‘Mobilidade e Ubiquidade Para Colaboração’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nInternational Organization for Standardization. 2018. ‘ISO 9241-11:2018 — Ergonomics of Human-System Interaction, Part 11: Usability: Definitions and Concepts’. Geneva: ISO.\n\n\nNielsen, Jakob. 1993. Usability Engineering. Boston: Academic Press.\n\n\nPrates, Raquel Oliveira. 2011. ‘Interação Em Sistemas Colaborativos’. In Sistemas Colaborativos, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.\n\n\nPreece, Jenny. 2000. Online Communities: Designing Usability, Supporting Sociability. Chichester: Wiley.\n\n\nSouza, Clarisse Sieckenius de. 2005. The Semiotic Engineering of Human-Computer Interaction. Cambridge, MA: MIT Press.\n\n\nW3C Web Accessibility Initiative. 2023. ‘Web Content Accessibility Guidelines (WCAG) 2.2’. 2023. https://www.w3.org/TR/WCAG22/.",
     "crumbs": [
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Mobility, Ubiquity and Interaction</span>"
     ]

@@ -12,4 +12,136 @@ lang: en-GB
 </div>
 ```
 
-> Content to be translated.
+## Introduction {#sec-01-intro-en .unnumbered}
+
+This chapter introduces the theoretical foundations of the course's first block, **Social Platforms**, situating social and cooperative platforms within the broader context of the transition to a society organised in a network. Before studying social networks, metrics or collaboration models in concrete terms, it is important to understand **why** these platforms emerged and **what kind of society** made them possible and necessary.
+
+## The Revolutions of Society {#sec-01-revolutions-en}
+
+The history of societies can be read as a succession of revolutions, each organised around a dominant technique: **hunter-gatherer** society, based on mastery of the hunting technique; **agricultural** society, organised around the technique of cultivation; **industrial** society, powered by steam and, later, electricity; and **networked** society, structured around the computer network.
+
+Each of these transitions was not merely technological: it also changed modes of production, the space and habits of coexistence, social organisation, and the very ways of acting, living and being of those who lived through it. It is this last transition, from industrial society to networked society, that frames the study of social and cooperative platforms.
+
+### A revolution, in fact? {#sec-01-real-revolution-en}
+
+That computer networks are profoundly changing society seems evident today, but it is worth placing this change within a broader timeline of communication technologies, to see that it is not an isolated phenomenon, but a continuous acceleration:
+
+- **1900s** - radio (mass broadcast of sound messages, *one*-to-*many*)
+- **1920s** - television (mass broadcast of sound and image, *one*-to-*many*)
+- **1950s** - the appearance of the first computers, isolated
+- **1960s** - computer networks and, later, the network of networks: the Internet
+- **1970s–1980s** - the popularisation of microcomputers
+- **1990s** - the Web and the beginning of cloud computing
+- **2000s** - Web 2.0 and online social media
+- **From 2010 onward** - ubiquitous computing, the Internet of Things and Artificial Intelligence
+
+Each of these stages expanded the reach and speed of human communication, but it was the shift from **broadcast** networks (radio, television) to **interaction** networks (the Internet) that created the conditions for the kind of platforms this course studies.
+
+## The Networked Society {#sec-01-networked-society-en}
+
+### Social networks: a phenomenon that predates the technology {#sec-01-non-tech-networks-en}
+
+Before going further, it is worth dispelling a common misconception: the **social network**, as a concept, is not a technological invention. Organising oneself into networks of relationships, whether of family, kinship, friendship, neighbourhood or trade, is a structural characteristic of human beings as social animals, long predating any computer. The systematic scientific study of these networks dates back to 1934, when the psychiatrist Jacob Moreno laid the foundations of **sociometry** by mapping, through diagrams he called *sociograms*, the ties of attraction and rejection between individuals in a group, the same kind of graphical representation we will revisit in the next chapter to analyse digital social networks [@Moreno1934].
+
+What digital technology brought was not the concept of the social network, but rather a change in **scale, reach and medium**: networks that used to be limited to a few dozen face-to-face contacts can today extend to thousands of connections, mediated by platforms, and leave a trail of data that can be analysed in ways previously impossible. This distinction matters for the rest of this course: we study social *platforms*, the technological support, without forgetting that what they mediate is a human behaviour far older than they are.
+
+### So what does change, with technology? {#sec-01-castells-networked-society-en}
+
+It is at this level, that of the structure of global society, not that of the existence of individual networks, that the concept of **networked society** applies, developed systematically by the sociologist Manuel Castells. Castells does not claim that social networks were born with technology; he claims that **network logic**, decentralised, without a single centre, organised into nodes and links, became the **dominant organising principle** of contemporary society as a whole. Why? Because information and communication technologies based on microelectronics allow that logic to operate at a global scale and in real time [@Castells2004].
+
+This idea has a direct consequence for the study of social and cooperative platforms: a digital social network **does not replace or invent the underlying social phenomenon**: it is a technological instance that mediates universal human behaviour, operating at a scale and speed that microelectronics makes possible. The logic of network operation, with its nodes, links, information flows, and absence of a single centre, applies both to society as a whole and to each specific platform to be studied throughout the semester.
+
+### What to call this new society? {#sec-01-naming-en}
+
+There is no full consensus on the most appropriate name for the society emerging from this transition. The literature offers designations such as *information society*, *knowledge society*, *communication society*, *networked society* or *connected society*. Each of these designations points to a different perspective on the same transformation: information as raw material, knowledge as added value, communication as process, or network connection as structure. Throughout this document we will preferably use *networked society*, as it best captures the organisational structure underlying the platforms we will study.
+
+## Cyberspace {#sec-01-cyberspace-en}
+
+The term **cyberspace** was coined by science fiction writer William Gibson, first in the short story "Burning Chrome" (1982) and popularised in the novel *Neuromancer* (1984) [@Gibson1984]. The meaning attributed to the term has changed substantially since then: from the purely imaginary space of science fiction to the space of real social interaction we now occupy through our screens.
+
+In this space, technically made up of digital circuits and electrical pulses (which make up *bits*), real social practices develop: new ways of working, socialising, learning and collaborating. It is precisely in this space that the social and cooperative platforms studied in this course are situated.
+
+### Cyberspace as the new metropolis {#sec-01-metropolis-en}
+
+The Industrial Revolution gave rise to large urban-industrial centres, to which populations flocked from rural areas in search of work: cities, with a different meaning from before. They stopped being merely administrative or cultural centres and became places where workers and their families concentrated. The city historically became the space for dwelling, work and socialisation par excellence. Cyberspace today plays a similar structural role: a space that concentrates economic, political and cultural activity, and that has itself become one of the central themes of reflection on the contemporary world, just as the industrial city was for thinkers of the 19th and early 20th centuries.
+
+### A space integrated with the physical {#sec-01-physical-integration-en}
+
+Cyberspace is no longer limited to the experience mediated by a screen. The integration between the digital and the physical is today one of the most striking trends in contemporary computing, anticipated with remarkable precision by Mark Weiser, a Xerox PARC scientist, in his seminal article "The Computer for the 21st Century" [@Weiser1991]. Weiser proposed the concept of **ubiquitous computing**: technologies so well integrated into daily life that they become invisible, in the sense that they stop being seen as "computers" and become part of the environment.
+
+This vision materialises today in three interconnected phenomena:
+
+- **Internet of Things (IoT)** - everyday objects, previously static, become dynamic and interconnected: mobile phones, security cameras, cars and home appliances communicate with each other and with cloud services.
+- **Integration into the environment** - technology stops being concentrated in a single device and becomes distributed, discreet, present at multiple points in the environment
+- **Context-aware Web** - the results we receive from a search engine or an application increasingly depend on our location, language and specific circumstances
+
+These three phenomena have direct implications for the cooperative platforms we will study in the following blocks: collaboration is no longer confined to a screen and a specific moment, and can now happen anywhere, at any time, a topic that will be revisited in detail in the chapter on mobility and ubiquity.
+
+## Digital Generations and the "Digital Human Being" {#sec-01-generations-en}
+
+Each person's relationship with technology depends, to a large extent, on the historical moment at which it was introduced into their life. Researcher and author Marc Prensky introduced, in 2001, the distinction between **digital natives**, those born already surrounded by digital technology, and **digital immigrants**, those who had to adapt to it during adult life [@Prensky2001]. Although this dichotomy has since been criticised for oversimplifying a more gradual and heterogeneous phenomenon, it remains an unavoidable reference for thinking about how different generations relate to social and cooperative platforms.
+
+More precisely, it is common today to distinguish several digital generations:
+
+- **Baby Boomers** (born between 1946 and 1964) - experienced the gradual introduction of the personal computer already in adulthood
+- **Generation X** (1965–1980) - witnessed the emergence of personal computers and the Internet while still growing up
+- **Millennials / Generation Y** (1981–1996) - digital natives in Prensky's original sense, grew up with the Internet already available
+- **Generation Z** (1997–2012) - born with social networks, *smartphones* and permanent connectivity already an integral part of everyday life
+- **Generation Alpha** (2010–2024) - the first generation to grow up with no memory of a world without social networks, voice assistants and content generated by recommendation algorithms; overlaps partially with Generation Z, since the boundaries between generations are not exact dates, but transition zones
+
+As of this chapter, a new generation is already underway, **Generation Beta** (from 2025 onward), to which children born in this period will belong. Being too recent, there is not yet consistent research on its relationship with technology [@McCrindle2026].
+
+This generational distinction will be relevant when we study, in the next chapter, the adoption and use of social networks: different generations not only use different platforms, they use them in qualitatively different ways.
+
+## The Dark Side of Networked Society {#sec-01-risks-en}
+
+The transition to networked society, like previous social transitions, did not bring only new opportunities for interaction and collaboration: it also brought new risks, which any study of social and cooperative platforms must acknowledge rather than ignore. Three of these risks deserve particular attention:
+
+### Privacy: the sharing paradox {#sec-01-privacy-en}
+
+Researcher Susan Barnes described, as early as 2006, what she called the **privacy paradox**: there is a systematic discrepancy between the concern people say they have about their privacy and the behaviour they actually adopt on social networks, freely sharing personal information that later surprises them when seen by unintended audiences [@Barnes2006]. This paradox remains fully current: the architecture of social platforms is designed to encourage sharing, and real understanding of its implications, who sees what and for how long, remains **very limited** for most users. This limitation poses serious problems for social network users, not only of privacy, but also of cybersecurity, which can seriously affect them in their real life.
+
+### Technological addiction {#sec-01-addiction-en}
+
+Excessive use of social networks and other digital platforms has been studied as a phenomenon with characteristics of behavioural dependence. A recent bibliometric analysis identifies sustained growth in scientific research on social network addiction since the mid-2010s, associating problematic use with impulse control deficits, sleep disturbance and negative impact on psychological well-being [@PellegrinoEtAl2022]. Just as ubiquitous computing made technology omnipresent (@sec-01-physical-integration-en), that same omnipresence is also what makes it harder to "disconnect".
+
+### Cyberbullying {#sec-01-cyberbullying-en}
+
+The dark dimension of networked communication also has a direct social face: **cyberbullying**, or harassment carried out through digital means. A comprehensive literature review shows that cyberbullying victimisation rates among children and adolescents have been consistently increasing over the last decade, with documented impact on mental health, including depressive symptoms and, in the most severe cases, leading to suicidal behaviour [@ZhuEtAl2021]. Unlike in-person harassment, cyberbullying benefits from the anonymity and the absence of spatial and temporal boundaries of cyberspace (@sec-01-cyberspace-en): exposure does not end when the victim leaves a given physical location, nor is it confined to certain hours.
+
+Understanding the impact on victims is only half the problem: it is also important to ask why the aggressors themselves attack. According to Ijose, cyberbullies typically show reduced self-esteem and rarely have a real sense of the harm they cause, precisely because the digital medium removes their access to social cues, facial expression, tone of voice, body posture, that, in a face-to-face interaction, would make that harm immediately visible [@Ijose2011].
+
+Beyond the academic literature, there is also a relevant body of popular non-fiction aimed directly at younger people, the audience most exposed to this phenomenon. This is the case of *Bullying*, by Anne Rooney, which organises the topic around frequently asked questions ("What is cyberbullying?", "Why am I being bullied?", "How can I stop it?"), in language accessible to teenagers and without assuming prior technical knowledge [@Rooney2015]. This kind of resource plays a role complementary to scientific research: it translates results into practical, immediately usable guidance for those living through the situation.
+
+Privacy, addiction and cyberbullying, the three risks identified in the previous sections, are not accidental side effects of social and cooperative platforms, but direct consequences of the very characteristics that make them powerful: ease of sharing, permanent availability and broad social reach. Any analysis or design of cooperative platforms, a central theme of this course, must take these risks into account from the design stage, not merely as a later correction.
+
+## Society in Numbers {#sec-01-numbers-en}
+
+Beyond the theoretical framing, it is important to situate this transition in concrete, current data. According to the report *Measuring Digital Development: Facts and Figures 2024*, from the International Telecommunication Union (ITU), **5.5 billion people** were online in 2024, that is, 68% of the world's population, up from 65% a year earlier. The growth rate is itself accelerating (from 2.7% to 3.4% per year). But the inverse of that number is equally relevant: **2.6 billion people, a third of humanity, remain offline** [@ITU2024].
+
+Connectivity is far from uniform. In high-income countries, Internet access approaches universality; in low-income countries, only 27% of the population is online. The same pattern repeats along other axes: 83% of the urban population uses the Internet, against 48% of the rural population; and, in terms of gender, 70% of men use the Internet worldwide, against 65% of women [@ITU2024]. A multidimensional **digital divide** therefore persists: geographic, economic, territorial and gender-based, which any analysis of social and cooperative platforms must take into account.
+
+It is worth cross-referencing this institutional source with the industry data we will use in the next chapter: the *Digital 2024* report by We Are Social/Meltwater, with analysis by Kepios, estimated, for January 2024, 5.35 billion Internet users (66.2% of the world's population) [@WeAreSocial2024], a value close to, but not identical to, the ITU's figure for that same year (68%). The differences between sources for the same period result from different collection methodologies (surveys versus administrative estimates), but the **convergence in order of magnitude** between two independent sources is, in itself, a relevant finding: it reinforces confidence in the reading that most of humanity is now connected.
+
+This inequality of access is a structural fact that any analysis of social and cooperative platforms must take into account: the "networked society" is not a universally shared condition, but a transition that advances at very different rates depending on geographic, economic and social context. This data will be explored further in the next chapter, dedicated specifically to social network usage statistics.
+
+## Summary {#sec-01-summary-en}
+
+This chapter situated the study of social and cooperative platforms within a broader historical transition, from industrial society to networked society, and introduced five ideas that will run through this entire course:
+
+1. Digital social networks are concrete instances of a more general organising principle, the **networked society** [@Castells2004]
+2. **Cyberspace** is no longer a purely screen-mediated space, becoming increasingly integrated with the physical world through ubiquitous computing [@Weiser1991]
+3. The relationship with these technologies varies significantly depending on the **generation** each person belongs to [@Prensky2001]
+4. This same transition has a **dark side**: privacy, technological addiction and cyberbullying, which must be considered from the design of platforms, not merely corrected after deployment [@Barnes2006; @PellegrinoEtAl2022; @ZhuEtAl2021]
+5. The adoption of this networked society is **unequal**, and that inequality has concrete statistical expression [@ITU2023]
+
+## Food for Thought {#sec-01-reflection-en}
+
+Faced with change as rapid as that described in this chapter, it is common to find two opposing stances: a nostalgic, apprehensive view of the loss of previous ways of life, and an overly optimistic view that sees technology as the automatic solution to society's problems. Which stance do you recognise in yourself, or in the people around you?
+
+Think also about the risks discussed in the previous section: have you ever felt, or observed in someone close to you, the privacy paradox described by Barnes: saying that privacy matters, but sharing without thinking twice? Have you ever found it hard to disconnect from a social platform? And what responsibility falls on those who design these platforms in preventing cyberbullying: is it just a matter of content moderation, or also of the system's own architecture?
+
+## References {#sec-01-references-en .unnumbered}
+
+::: {#refs}
+:::

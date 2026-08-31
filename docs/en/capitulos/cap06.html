@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Pavão">
-<meta name="dcterms.date" content="2026-08-18">
+<meta name="dcterms.date" content="2026-08-20">
 
 <title>6&nbsp; Collaborative Virtual Environments – Social and Cooperative Platforms</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,8 +213,23 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-06-intro-en" id="toc-sec-06-intro-en" class="nav-link active" data-scroll-target="#sec-06-intro-en">Introduction</a></li>
+  <li><a href="#sec-06-cve-en" id="toc-sec-06-cve-en" class="nav-link" data-scroll-target="#sec-06-cve-en"><span class="header-section-number">6.1</span> What is a Collaborative Virtual Environment?</a></li>
+  <li><a href="#sec-06-elements-en" id="toc-sec-06-elements-en" class="nav-link" data-scroll-target="#sec-06-elements-en"><span class="header-section-number">6.2</span> Elements of a CVE</a></li>
+  <li><a href="#sec-06-immersion-en" id="toc-sec-06-immersion-en" class="nav-link" data-scroll-target="#sec-06-immersion-en"><span class="header-section-number">6.3</span> Immersion</a></li>
+  <li><a href="#sec-06-history-en" id="toc-sec-06-history-en" class="nav-link" data-scroll-target="#sec-06-history-en"><span class="header-section-number">6.4</span> A Brief History of CVEs</a></li>
+  <li><a href="#sec-06-identity-en" id="toc-sec-06-identity-en" class="nav-link" data-scroll-target="#sec-06-identity-en"><span class="header-section-number">6.5</span> Identity, Interaction and Presence</a></li>
+  <li><a href="#sec-06-communities-en" id="toc-sec-06-communities-en" class="nav-link" data-scroll-target="#sec-06-communities-en"><span class="header-section-number">6.6</span> Virtual Communities</a></li>
+  <li><a href="#sec-06-summary-en" id="toc-sec-06-summary-en" class="nav-link" data-scroll-target="#sec-06-summary-en"><span class="header-section-number">6.7</span> Summary</a></li>
+  <li><a href="#sec-06-reflection-en" id="toc-sec-06-reflection-en" class="nav-link" data-scroll-target="#sec-06-reflection-en"><span class="header-section-number">6.8</span> Food for Thought</a></li>
+  <li><a href="#sec-06-references-en" id="toc-sec-06-references-en" class="nav-link" data-scroll-target="#sec-06-references-en">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -218,7 +253,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 August 2026</p>
+      <p class="date">20 August 2026</p>
     </div>
   </div>
   
@@ -234,11 +269,112 @@ ul.task-list li input[type="checkbox"] {
   <div class="hero-badge">Chapter 6</div>
   <h1>Collaborative Virtual Environments</h1>
 </div>
-<blockquote class="blockquote">
-<p>Content to be translated.</p>
-</blockquote>
+<section id="sec-06-intro-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-06-intro-en">Introduction</h2>
+<p>The previous two chapters dealt with collaboration mediated by text and by voice, communication systems (<a href="cap05.html#sec-05-cmc-en" class="quarto-xref"><span>Section 5.1</span></a>) and systems that support coordination and cooperation (<a href="cap05.html#sec-05-coord-coop-en" class="quarto-xref"><span>Section 5.6</span></a>). This chapter explores a different way of mediating collaboration: instead of a channel through which messages pass, the computer instead simulates a <strong>shared world</strong>, within which participants meet, navigate and interact. It is this change of metaphor, from communication channel to shared space, that distinguishes Collaborative Virtual Environments.</p>
+</section>
+<section id="sec-06-cve-en" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="sec-06-cve-en"><span class="header-section-number">6.1</span> What is a Collaborative Virtual Environment?</h2>
+<p>A <strong>Collaborative Virtual Environment</strong>, or <strong>CVE</strong>, is a distributed virtual reality system that graphically simulates, in real time, a real or imaginary world, where users, represented by their <strong>avatars</strong>, are simultaneously present, navigate and interact with objects and with other users <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span>.</p>
+<p>The concept of the CVE began to gain popularity alongside the term <strong>cyberspace</strong>, coined by William Gibson in the novel <em>Neuromancer</em> <span class="citation" data-cites="Gibson1984">(<a href="cap01.html#ref-Gibson1984" role="doc-biblioref">Gibson 1984</a>)</span> and already discussed in Chapter 1 (<a href="cap01.html#sec-01-castells-networked-society-en" class="quarto-xref"><span>Section 1.2.2</span></a>). Although its origin is science fiction, and the physical immersion shown in films such as <em>The Matrix</em> and <em>Avatar</em> remains far from real technology, the concept popularised by Gibson significantly influenced both researchers and virtual reality systems developers.</p>
+</section>
+<section id="sec-06-elements-en" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="sec-06-elements-en"><span class="header-section-number">6.2</span> Elements of a CVE</h2>
+<p>Three elements are common to any CVE, regardless of what name the literature gives it, <em>Networked Virtual Environment</em>, <em>Metaverse</em>, among others (<a href="#fig-06-elements-en" class="quarto-xref">Figure&nbsp;<span>6.1</span></a>):</p>
+<ul>
+<li><strong>Virtual world</strong>: the fundamental element of a CVE, an imaginary space made up of a description of objects and the rules that govern them. The relationship between the description of the world and its computational execution is comparable to the relationship between a play’s script and its staging, with the difference that, in a CVE, the users are also actors.</li>
+<li><strong>Avatars</strong>: the virtual objects used to represent each participant. Each virtual world is different, and to act within it requires embodying an avatar specific to that world.</li>
+<li><strong>Interactivity</strong>: the ability of the virtual world to respond to users’ actions, whether when they navigate and change their position, or when they select and manipulate objects. It is interactivity that distinguishes being in a CVE from watching an animated film.</li>
+</ul>
+<div id="fig-06-elements-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-06-elements-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap06/elementos-cve.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-06-elements-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: The three elements of a CVE: the virtual world is the shared space, inhabited by avatars, through continuous interaction.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-06-immersion-en" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="sec-06-immersion-en"><span class="header-section-number">6.3</span> Immersion</h2>
+<p>The combination of an adequate graphical representation of the virtual world with good interactivity contributes to the feeling of <strong>immersion</strong>, the sensation of “being there” inside the virtual world. Two types of immersion are distinguished <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span>:</p>
+<ul>
+<li><strong>Mental immersion</strong>: the goal of content creators long before CVEs existed, the engagement and involvement of the consumer with that content. Mental immersion can occur, for example, when reading a good book, with no physical representation at all.</li>
+<li><strong>Physical immersion</strong>: synthetically stimulates the senses, through technology, to create the illusion that the body itself is in the virtual world. Today, it is mainly stimulated through three-dimensional visual representation (stereoscopy), spatial audio and interaction devices that capture the user’s movements. Current virtual reality headsets, such as the <code>Meta Quest</code> or the <code>Apple Vision Pro</code>, are today the most accessible way to achieve physical immersion.</li>
+</ul>
+<p>CVEs go beyond mental immersion by also investing in physical immersion. In science fiction, as in the films already mentioned, physical immersion is complete, to the point where the user’s real body becomes indistinguishable from the avatar. In practice, most current CVEs still lack stereoscopy features, even when they are three-dimensional virtual worlds: a 3D CVE, a space with three dimensions of navigation, should not be confused with a “3D movie” or with a stereoscopic virtual reality device, even though nothing prevents a CVE from also being stereoscopic.</p>
+</section>
+<section id="sec-06-history-en" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="sec-06-history-en"><span class="header-section-number">6.4</span> A Brief History of CVEs</h2>
+<p>The first CVE on record, <em>Maze War</em>, was created in 1974 at a NASA research centre: a game in which users walked through a maze shooting at each other, and which already contained ideas that would become standard in CVEs, first-person navigation and instant-message communication. The most large-scale efforts came from the United States Department of Defense: <code>SIMNET</code>, developed from 1983 onward, trained military units in simulated virtual battles, and gave rise to technical standards still influential in distributed simulation today (<a href="#fig-06-history-en" class="quarto-xref">Figure&nbsp;<span>6.2</span></a>).</p>
+<div id="fig-06-history-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-06-history-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap06/historia-cves.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-06-history-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.2: Timeline of Collaborative Virtual Environments, from the first CVE on record to today’s massive social environments.
+</figcaption>
+</figure>
+</div>
+<p>Among the most influential CVEs of their time are Second Life (2003, Linden Lab) and World of Warcraft (2004, Blizzard). Both share the definition of a CVE, but have very different purposes: <code>World of Warcraft</code> is a game, with a fantasy world defined by its creators, while <code>Second Life</code> is a “general purpose” CVE, built by the users themselves, with its own virtual economy convertible into real currency. More recently, platforms such as <code>VRChat</code>, <code>Meta Horizon Worlds</code> and <code>Roblox</code> revisit this same idea of a massive social world, now with native support for virtual reality devices.</p>
+</section>
+<section id="sec-06-identity-en" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="sec-06-identity-en"><span class="header-section-number">6.5</span> Identity, Interaction and Presence</h2>
+<p>One of the central ideas behind CVEs is not to invent new metaphors, but rather to reproduce, in the virtual world, notions that already exist in the real world: identity, location, presence and awareness of other participants’ activities (<a href="#fig-06-iip-en" class="quarto-xref">Figure&nbsp;<span>6.3</span></a>) <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span>.</p>
+<div id="fig-06-iip-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-06-iip-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap06/identidade-interacao-presenca.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-06-iip-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.3: Identity, interaction and presence: three real-world notions that CVEs reproduce in the virtual world.
+</figcaption>
+</figure>
+</div>
+<p><strong>Identity</strong> is related to the user’s avatar: it is expected to be immediately recognisable as an avatar, and distinguishable from other avatars, just as we immediately recognise another person and distinguish them from other people in the real world.</p>
+<p><strong>Interaction</strong> between users of a CVE depends directly on the avatar’s representation, which provides the main perceptual information about other participants, location, orientation and availability, in a sense very close to what was already discussed regarding perception in cooperation systems (<a href="cap05.html#sec-05-cooperation-en" class="quarto-xref"><span>Section 5.6.2</span></a>). The movement of an avatar anticipates the intentions of the user it represents: turning one’s back during a conversation shows disinterest, just as approaching another avatar can indicate a wish to interact with it.</p>
+<p><strong>Presence</strong>, originally called “telepresence”, is “the illusory perception of non-mediation” <span class="citation" data-cites="LombardDitton1997">(<a href="cap01.html#ref-LombardDitton1997" role="doc-biblioref">Lombard and Ditton 1997</a>)</span>: the user does not perceive a medium during their interaction, behaving as if that medium did not exist. A distinction is drawn between physical presence, the sensation of being in a real or virtual place, and social presence, the sensation of being, physically or psychologically, with another person. In a CVE, presence involves both dimensions: the sensation of being in the virtual world (immersion) and, at the same time, the sensation of being there accompanied.</p>
+</section>
+<section id="sec-06-communities-en" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="sec-06-communities-en"><span class="header-section-number">6.6</span> Virtual Communities</h2>
+<p>Whatever its purpose, gaming, socialising, education or economy, a CVE almost always gives rise to a <strong>virtual community</strong>, with its own social rules and a particular culture. The spatial metaphor of CVEs promotes both casual encounters between strangers and collaboration between acquaintances, generally in a more motivating way than the desktop collaborative systems discussed in previous chapters.</p>
+<p>As in any society, inappropriate behaviour also happens in CVEs: vandalism, disturbance of other users, or even harassment, echoes, in a three-dimensional space, of the flaming, trolling and cyberbullying already discussed in relation to text-based communication (<a href="cap05.html#sec-05-flaming-en" class="quarto-xref"><span>Section 5.4</span></a>, <a href="cap01.html#sec-01-cyberbullying-en" class="quarto-xref"><span>Section 1.5.3</span></a>). The companies responsible for these environments need to deal with these behaviours just like any other social platform.</p>
+</section>
+<section id="sec-06-summary-en" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="sec-06-summary-en"><span class="header-section-number">6.7</span> Summary</h2>
+<p>This chapter introduced Collaborative Virtual Environments:</p>
+<ol type="1">
+<li>A <strong>CVE</strong> simulates a shared world, rather than serving merely as a communication channel, made up of a virtual world, avatars and interactivity <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span></li>
+<li><strong>Immersion</strong> can be mental (engagement with content) or physical (the synthetic stimulation of the senses, today mainly through virtual reality headsets or glasses)</li>
+<li>The first CVE on record was <code>Maze War</code> (1974); <code>SIMNET</code> (1983) brought the first large-scale development efforts; <code>Second Life</code> and <code>World of Warcraft</code> remain, decades later, among the most successful CVEs</li>
+<li>CVEs reproduce real-world notions: <strong>identity</strong> (avatar recognition), <strong>interaction</strong> (mediated by the perception the avatar provides) and <strong>presence</strong> (the illusory sensation of non-mediation) <span class="citation" data-cites="LombardDitton1997">(<a href="cap01.html#ref-LombardDitton1997" role="doc-biblioref">Lombard and Ditton 1997</a>)</span></li>
+<li>Every CVE gives rise to a <strong>virtual community</strong>, with its own social rules, where inappropriate behaviour can also occur</li>
+</ol>
+</section>
+<section id="sec-06-reflection-en" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="sec-06-reflection-en"><span class="header-section-number">6.8</span> Food for Thought</h2>
+<p>If you have ever used a collaborative virtual environment, a multiplayer game, a virtual reality meeting, or a platform such as <code>Roblox</code> or <code>VRChat</code>, think about your avatar: to what extent does it represent your real identity? What did you choose to change, and why?</p>
+<p>And what about social presence: can you identify a moment when you genuinely felt “accompanied” in a virtual space, even knowing that the other people were physically far away?</p>
+</section>
+<section id="sec-06-references-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-06-references-en">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Gibson1984" class="csl-entry" role="listitem">
+Gibson, William. 1984. <em>Neuromancer</em>. New York: Ace Books.
+</div>
+<div id="ref-LombardDitton1997" class="csl-entry" role="listitem">
+Lombard, Matthew, and Theresa Ditton. 1997. <span>‘At the Heart of It All: The Concept of Presence’</span>. <em>Journal of Computer-Mediated Communication</em> 3 (2).
+</div>
+<div id="ref-Raposo2011" class="csl-entry" role="listitem">
+Raposo, Alberto Barbosa. 2011. <span>‘Ambientes Virtuais Colaborativos’</span>. In <em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

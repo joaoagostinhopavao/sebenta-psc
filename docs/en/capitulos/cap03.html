@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Pavão">
-<meta name="dcterms.date" content="2026-08-18">
+<meta name="dcterms.date" content="2026-08-20">
 
 <title>3&nbsp; Social Networks: Metrics and Folksonomy – Social and Cooperative Platforms</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,8 +213,30 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-03-intro-en" id="toc-sec-03-intro-en" class="nav-link active" data-scroll-target="#sec-03-intro-en">Introduction</a></li>
+  <li><a href="#sec-03-graph-en" id="toc-sec-03-graph-en" class="nav-link" data-scroll-target="#sec-03-graph-en"><span class="header-section-number">3.1</span> Representing a Social Network as a Graph</a></li>
+  <li><a href="#sec-03-metrics-en" id="toc-sec-03-metrics-en" class="nav-link" data-scroll-target="#sec-03-metrics-en"><span class="header-section-number">3.2</span> Metrics for Social Network Analysis</a>
+  <ul class="collapse">
+  <li><a href="#sec-03-path-en" id="toc-sec-03-path-en" class="nav-link" data-scroll-target="#sec-03-path-en"><span class="header-section-number">3.2.1</span> Path and distance</a></li>
+  <li><a href="#sec-03-centrality-en" id="toc-sec-03-centrality-en" class="nav-link" data-scroll-target="#sec-03-centrality-en"><span class="header-section-number">3.2.2</span> Centrality as Social Power</a></li>
+  <li><a href="#sec-03-popularity-en" id="toc-sec-03-popularity-en" class="nav-link" data-scroll-target="#sec-03-popularity-en"><span class="header-section-number">3.2.3</span> Popularity: in-degree and out-degree</a></li>
+  <li><a href="#sec-03-density-en" id="toc-sec-03-density-en" class="nav-link" data-scroll-target="#sec-03-density-en"><span class="header-section-number">3.2.4</span> Density</a></li>
+  </ul></li>
+  <li><a href="#sec-03-folksonomy-en" id="toc-sec-03-folksonomy-en" class="nav-link" data-scroll-target="#sec-03-folksonomy-en"><span class="header-section-number">3.3</span> Folksonomy: Collective Content Classification</a>
+  <ul class="collapse">
+  <li><a href="#sec-03-folksonomy-problems-en" id="toc-sec-03-folksonomy-problems-en" class="nav-link" data-scroll-target="#sec-03-folksonomy-problems-en"><span class="header-section-number">3.3.1</span> Advantages and problems</a></li>
+  </ul></li>
+  <li><a href="#sec-03-hashtags-en" id="toc-sec-03-hashtags-en" class="nav-link" data-scroll-target="#sec-03-hashtags-en"><span class="header-section-number">3.4</span> Folksonomy in Practice: from Tags to Hashtags</a></li>
+  <li><a href="#sec-03-summary-en" id="toc-sec-03-summary-en" class="nav-link" data-scroll-target="#sec-03-summary-en"><span class="header-section-number">3.5</span> Summary</a></li>
+  <li><a href="#sec-03-reflection-en" id="toc-sec-03-reflection-en" class="nav-link" data-scroll-target="#sec-03-reflection-en"><span class="header-section-number">3.6</span> Food for Thought</a></li>
+  <li><a href="#sec-03-references-en" id="toc-sec-03-references-en" class="nav-link" data-scroll-target="#sec-03-references-en">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -218,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 August 2026</p>
+      <p class="date">20 August 2026</p>
     </div>
   </div>
   
@@ -234,11 +276,146 @@ ul.task-list li input[type="checkbox"] {
   <div class="hero-badge">Chapter 3</div>
   <h1>Social Networks: Metrics and Folksonomy</h1>
 </div>
-<blockquote class="blockquote">
-<p>Content to be translated.</p>
-</blockquote>
+<section id="sec-03-intro-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-03-intro-en">Introduction</h2>
+<p>The previous chapter introduced, alongside the social graph, a second model for organising information in social networks: the interest graph, in which the relevant proximity is no longer between people, but between a person and the topics they interact with (<a href="cap02.html#sec-02-fourth-generation-en" class="quarto-xref"><span>Section 2.2.1</span></a>). This chapter develops that idea in two complementary directions. First, it shows how to formally analyse a social graph, through concrete metrics that make it possible to answer questions such as “who is most influential in this network?” or “how well connected is this community?”. Then, it explores the other side of the coin, the organisation of content by topic, through <em>folksonomy</em>, the collective classification that today structures practically every social network through <strong>hashtag</strong>s.</p>
+</section>
+<section id="sec-03-graph-en" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-03-graph-en"><span class="header-section-number">3.1</span> Representing a Social Network as a Graph</h2>
+<p>Analysing a social network systematically requires, first of all, representing it as a <strong>graph</strong>: a set of nodes, representing people or organisations, connected by edges, representing their relationships. This is the same representational logic used by Moreno’s <strong>sociogram</strong> (<a href="cap01.html#sec-01-non-tech-networks-en" class="quarto-xref"><span>Section 1.2.1</span></a>) and by the social and interest graphs discussed in the previous chapter.</p>
+<p>An edge, that is, a connection between two nodes, can be <strong>undirected</strong>, when it represents a mutual, symmetric relationship (for example, a friendship on <code>Facebook</code>, where both parties have to accept the connection), or <strong>directed</strong>, when it represents a relationship that only holds in one direction (for example, following someone on <code>Instagram</code> or <code>X</code>, which does not imply being followed back). Two people may also have no relationship at all. This distinction matters: most traditional friendship networks (<code>Facebook</code>, <code>LinkedIn</code>) use undirected connections, while most content-centred networks (<code>Instagram</code>, <code>X</code>, <code>YouTube</code>) use directed connections, which has direct implications for the metrics that follow (<a href="#fig-03-relations-en" class="quarto-xref">Figure&nbsp;<span>3.1</span></a>).</p>
+<div id="fig-03-relations-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-03-relations-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap03/tipos-relacao.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-relations-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: The four types of relationship between two nodes of a social graph.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-03-metrics-en" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-03-metrics-en"><span class="header-section-number">3.2</span> Metrics for Social Network Analysis</h2>
+<p>Once represented as a graph, a social network can be analysed with quantitative metrics, a set of tools that make up <strong>Social Network Analysis</strong> (SNA). The most widely used metrics are as follows:</p>
+<section id="sec-03-path-en" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="sec-03-path-en"><span class="header-section-number">3.2.1</span> Path and distance</h3>
+<p>A <strong>path</strong> between two nodes is any sequence of edges connecting them, directly or indirectly. In a social network, there are typically many possible paths between any two nodes. <strong>Distance</strong> between two nodes is the length of the shortest path between them, measured by the number of edges traversed. It was precisely this notion of distance that Milgram’s experiment sought to measure empirically (<a href="cap02.html#sec-02-six-degrees-en" class="quarto-xref"><span>Section 2.1</span></a>): how many connections, on average, separate two randomly chosen people.</p>
+</section>
+<section id="sec-03-centrality-en" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="sec-03-centrality-en"><span class="header-section-number">3.2.2</span> Centrality as Social Power</h3>
+<p><strong>Centrality</strong> measures how well positioned a node is within the network, which is why it is also called social power. There is no single way to measure centrality: sociologist Linton Freeman proposed, in a work now considered foundational to the field, a conceptual clarification that distinguishes at least three distinct notions of centrality <span class="citation" data-cites="Freeman1978">(<a href="cap01.html#ref-Freeman1978" role="doc-biblioref">Freeman 1978</a>)</span>:</p>
+<ul>
+<li><strong>Degree centrality</strong>: how many direct connections a node has. A node with many connections is, on the face of it, more central.</li>
+<li><strong>Betweenness centrality</strong>: how often a node lies on the shortest path between two other nodes. A node with high betweenness centrality functions as a bridge or broker of information between parts of the network that would otherwise be more distant.</li>
+<li><strong>Closeness centrality</strong>: how close, on average, a node is to all other nodes in the network. A node with high closeness centrality can reach the rest of the network quickly.</li>
+</ul>
+<p>These three notions capture different aspects of “importance” in a network, and a node can be central by one measure and peripheral by another: a good example is an intermediary who links two distinct communities, but who, within each of them, has few direct connections, low degree centrality, but very high betweenness centrality (<a href="#fig-03-centrality-en" class="quarto-xref">Figure&nbsp;<span>3.2</span></a>).</p>
+<div id="fig-03-centrality-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-03-centrality-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap03/centralidade.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-centrality-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: Each type of centrality highlights a different kind of node: in a star, the node with the most direct connections; in a bridge between two groups, the node connecting the two halves, even with few connections; in a chain, the node positioned closest to all the others.
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="sec-03-popularity-en" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="sec-03-popularity-en"><span class="header-section-number">3.2.3</span> Popularity: in-degree and out-degree</h3>
+<p>In directed graphs, it is useful to distinguish between connections arriving at a node and connections leaving it. <strong>In-degree</strong> is the number of connections arriving at a node, and is often used as a direct measure of popularity: on <code>Instagram</code> or <code>X</code>, it corresponds, essentially, to the number of followers. <strong>Out-degree</strong> is the number of connections leaving a node, corresponding, in that same example, to the number of accounts that user follows.</p>
+</section>
+<section id="sec-03-density-en" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="sec-03-density-en"><span class="header-section-number">3.2.4</span> Density</h3>
+<p>The <strong>density</strong> of a node, or of a network, measures the proportion between the number of relationships that actually exist and the number of relationships that would be possible. If a node has only a third of the connections it could have, given the size of the network, its density is approximately 0.33 (<a href="#fig-03-density-en" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>). High-density networks tend to spread information faster, but also to be more susceptible to echo-chamber effects, precisely because almost everyone is connected to almost everyone else.</p>
+<div id="fig-03-density-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-03-density-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap03/densidade.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-density-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: The same generic five-node network, with different active connections (solid) and possible but non-existent ones (dashed). Density can be calculated for any node; node D is used here as an example: 1, 2 and 4 out of its 4 possible connections, respectively.
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-03-folksonomy-en" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-03-folksonomy-en"><span class="header-section-number">3.3</span> Folksonomy: Collective Content Classification</h2>
+<p>So far, this chapter has dealt with how to analyse relationships <strong>between people</strong>. But much of the structure of a modern social network also results from how <strong>content</strong> is classified and organised, and this is where <em>folksonomy</em> comes in.</p>
+<p>The term <strong>folksonomy</strong> was coined by Thomas Vander Wal in 2007, from the combination of <em>folk</em> (people) and <em>taxonomy</em> <span class="citation" data-cites="VanderWal2007">(<a href="cap01.html#ref-VanderWal2007" role="doc-biblioref">Vander Wal 2007</a>)</span>. It denotes the classification of content through a free, collective <em>tagging</em> process, rather than a hierarchy of categories defined <em>a priori</em> by domain experts.</p>
+<p>The difference from a traditional <strong>taxonomy</strong> is structural: in a taxonomy, a group of managers defines a hierarchy of categories in advance, and all content has to fit into it. In a <em>folksonomy</em>, there is no such prior hierarchy: categories, or <em>tags</em>, emerge as users themselves classify content, with no centralised control.</p>
+<p>The tagging process can be represented simply: a group of people, or a single person, associates a set of tags with a set of objects (documents, images, posts) (<a href="#fig-03-tagging-en" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>). Because different people classify the same object in different ways, according to their own perspective, the resulting <em>folksonomy</em> is rich and heterogeneous, but can also contain inconsistencies.</p>
+<div id="fig-03-tagging-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-03-tagging-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap03/processo-tagging.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-tagging-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: The tagging process: people associate free tags with objects, with no hierarchy defined in advance.
+</figcaption>
+</figure>
+</div>
+<p>Two types of <em>folksonomy</em> can be distinguished <span class="citation" data-cites="VanderWal2007">(<a href="cap01.html#ref-VanderWal2007" role="doc-biblioref">Vander Wal 2007</a>)</span>: <strong>broad folksonomy</strong>, in which a large number of users tag the same objects, which is useful for identifying the most popular items in a collection, and <strong>narrow folksonomy</strong>, in which only one or a few people tag each object, typically the content’s own author, which preserves a more personal vocabulary, but makes discovery by others harder.</p>
+<p>A common way to visualise the aggregate result of a <em>folksonomy</em> is the <strong>tag cloud</strong>, a representation in which the most-used tags stand out, typically in larger or darker type, making it possible to quickly identify the dominant themes of a collection (<a href="#fig-03-cloud-en" class="quarto-xref">Figure&nbsp;<span>3.5</span></a>).</p>
+<div id="fig-03-cloud-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-03-cloud-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap03/nuvem-etiquetas.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-cloud-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.5: Tag cloud: the larger and darker the tag, the more often it was used in the collection.
+</figcaption>
+</figure>
+</div>
+<section id="sec-03-folksonomy-problems-en" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="sec-03-folksonomy-problems-en"><span class="header-section-number">3.3.1</span> Advantages and problems</h3>
+<p><em>Folksonomy</em> has clear advantages: it does not depend on domain experts to define categories, it lets each user classify freely without having to learn a controlled vocabulary, and it captures the real vocabulary of those who actually use the system, not that of those who designed it.</p>
+<p>But that same freedom generates well-documented problems: spelling mistakes, morphological variation (for example, “social network” and “social networks” recorded as distinct tags), synonymy (different terms for the same concept), polysemy (the same term with different meanings depending on context), and clutter from low-relevance tags. Current platforms partially mitigate these problems with automatic spell-checking, suggestions of tags already used by others, and semi-automatic grouping of semantically close tags.</p>
+</section>
+</section>
+<section id="sec-03-hashtags-en" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-03-hashtags-en"><span class="header-section-number">3.4</span> Folksonomy in Practice: from Tags to Hashtags</h2>
+<p>When the concept of <em>folksonomy</em> became popular, around 2007, the reference examples were systems such as <code>Amazon</code>, <code>YouTube</code>, <code>Flickr</code> and <code>Del.icio.us</code>. It is worth understanding, concretely, how the same idea, free content tagging, produced very different results depending on who was allowed to tag.</p>
+<p>On <code>Amazon</code>, until the feature was discontinued in 2013, any customer could attach free tags to a product: the same book could be tagged by different customers as “science fiction”, “dystopia” or “beach read”. Because tagging was open to the entire customer base, a <strong>broad folksonomy</strong> formed: many voices classifying the same object, which made the most repeated tags a reasonable indicator of collective consensus about what that product actually is.</p>
+<p>On <code>YouTube</code>, the mechanism is the opposite, and remains so today: only whoever publishes a video can attach tags to it, through <code>YouTube Studio</code>. Whoever merely watches the video takes no part in its classification. It is, therefore, a <strong>narrow folksonomy</strong>: it reflects the personal perspective of whoever published the content, not a collective consensus among those who consume it.</p>
+<p><code>Del.icio.us</code> too, a social bookmarking service that let people organise and share web sites through tags, no longer exists: after changing owners several times, it stopped accepting new bookmarks in 2017, when it was acquired by competitor <code>Pinboard</code>, which turned it into a read-only archive.</p>
+<p>The mechanism, however, survived the change of platforms, just under another name: the <strong>hashtag</strong>. By attaching a tag preceded by “#” to a post on <code>Instagram</code>, <code>TikTok</code> or <code>X</code>, each user is taking part in exactly the same collective tagging process described by Vander Wal almost two decades before these platforms came to dominate the market. A study on <code>Instagram</code> hashtags shows precisely that: the <em>folksonomy</em> generated by users through <em>hashtag</em>s can be modelled as a complex network, linking posts and profiles that share the same themes, with no central coordination whatsoever among those who use them <span class="citation" data-cites="IbbaEtAl2015">(<a href="cap01.html#ref-IbbaEtAl2015" role="doc-biblioref">Ibba et al. 2015</a>)</span>.</p>
+<p>The hashtag also inherits the same tensions as classic <em>folksonomy</em>: on <code>Instagram</code>, a popular hashtag like <code>#food</code> has a broad folksonomy, with millions of contributors, but little value for finding something specific; a niche hashtag, created by a small community for a specific event or narrow interest, works more like a narrow folksonomy, more precise, but also less discoverable by those who do not already know about it.</p>
+</section>
+<section id="sec-03-summary-en" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sec-03-summary-en"><span class="header-section-number">3.5</span> Summary</h2>
+<p>This chapter developed two complementary tools for understanding the structure of social networks:</p>
+<ol type="1">
+<li>A social network can be represented as a graph, with directed or undirected edges depending on the type of relationship</li>
+<li>The main analysis metrics are path, distance, centrality (degree, betweenness and closeness) <span class="citation" data-cites="Freeman1978">(<a href="cap01.html#ref-Freeman1978" role="doc-biblioref">Freeman 1978</a>)</span>, in-degree and out-degree, and density</li>
+<li><em>Folksonomy</em> is the collective classification of content through free tagging, distinct from a hierarchical taxonomy defined a priori <span class="citation" data-cites="VanderWal2007">(<a href="cap01.html#ref-VanderWal2007" role="doc-biblioref">Vander Wal 2007</a>)</span></li>
+<li>Broad and narrow folksonomy represent a trade-off between reach and precision of classification</li>
+<li>The hashtag is the contemporary form of <em>folksonomy</em>, present in practically every current social network <span class="citation" data-cites="IbbaEtAl2015">(<a href="cap01.html#ref-IbbaEtAl2015" role="doc-biblioref">Ibba et al. 2015</a>)</span></li>
+</ol>
+</section>
+<section id="sec-03-reflection-en" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="sec-03-reflection-en"><span class="header-section-number">3.6</span> Food for Thought</h2>
+<p>Think of a social network you use often: among the people you follow, can you identify someone with high betweenness centrality, that is, someone who links groups of people who would not otherwise be in contact?</p>
+<p>And what about the hashtags you use or follow: are they broad folksonomy, a generic tag used by millions of people, or narrow folksonomy, specific to a small community? What problems of synonymy or morphological variation have you already noticed in hashtags (for example, two different spellings of the same topic splitting the same conversation into two)?</p>
+</section>
+<section id="sec-03-references-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-03-references-en">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Freeman1978" class="csl-entry" role="listitem">
+Freeman, Linton C. 1978. <span>‘Centrality in Social Networks Conceptual Clarification’</span>. <em>Social Networks</em> 1 (3): 215–39. <a href="https://doi.org/10.1016/0378-8733(78)90021-7">https://doi.org/10.1016/0378-8733(78)90021-7</a>.
+</div>
+<div id="ref-IbbaEtAl2015" class="csl-entry" role="listitem">
+Ibba, Simona, Matteo Orrù, Filippo Eros Pani, and Simone Porru. 2015. <span>‘Hashtag of Instagram: From Folksonomy to Complex Network’</span>. In <em>Proceedings of the 7th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management (IC3K 2015), Volume 2: KEOD</em>, 279–84. SCITEPRESS.
+</div>
+<div id="ref-VanderWal2007" class="csl-entry" role="listitem">
+Vander Wal, Thomas. 2007. <span>‘Folksonomy Coinage and Definition’</span>. <a href="http://www.vanderwal.net/folksonomy.html">http://www.vanderwal.net/folksonomy.html</a>.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,7 +1,7 @@
 ---
 title: "Recommendation Systems and Collaborative AI"
 author: "João Pavão"
-date: 2026-08-18
+date: 2026-08-20
 lang: en-GB
 ---
 
@@ -12,4 +12,63 @@ lang: en-GB
 </div>
 ```
 
-> Content to be translated.
+## Introduction {#sec-10-intro-en .unnumbered}
+
+The previous chapter showed how collective knowledge emerges from the combination of human contributions. This chapter deals with a next step: systems that use **Artificial Intelligence** (AI) to automate part of that collective work, whether by suggesting what might interest someone based on the behaviour of others, or by directly supporting a group's communication, coordination and cooperation.
+
+## Recommendation Systems {#sec-10-recommendation-en}
+
+A **Recommendation System** is an information filter that, from large volumes of data, presents the items likely to interest a specific user, whether products, films, music or content [@MottaEtAl2011]. The underlying principle is simple: "what is relevant to me may also be relevant to someone with similar interests". Practically everyone has already used one of these systems without paying attention to it, from `Amazon`'s product suggestions to `Spotify`'s "Discover Weekly" lists or `Netflix`'s show recommendations.
+
+### Recommendation Methods {#sec-10-recommendation-methods-en}
+
+There are three main families of methods for generating recommendations (@fig-10-methods-en) [@MottaEtAl2011]:
+
+![Three methods for generating recommendations, from the simplest to implement to the one that best exploits collective behaviour.](../assets/images/cap10/metodos-recomendacao.png){#fig-10-methods-en}
+
+- **Direct information retrieval**: the system returns items that literally match the user's search criteria. It is the simplest method, but the quality of the recommendation depends entirely on the search performed.
+- **Collaborative filtering**: predicts a user's interest in an item from the correlation between their ratings and those of other users with similar tastes. This is the method that makes a Recommendation System truly **collaborative**: each individual rating's contribution improves the recommendation for the whole community, even though this collaboration is asynchronous and the benefits are not perceived at the moment of the contribution.
+- **Content-based filtering**: predicts a user's interest from the characteristics of the content itself, comparing them with the preference profile already shown by that user, independently of other people's behaviour.
+
+Collaborative filtering is effective, but has a high computational cost and suffers from the **cold start** problem: a new item, with no ratings yet, cannot be recommended by this method, however good it may be. Content-based filtering solves this specific problem, but depends on a rich, structured description of the content to work well. For this reason, most current recommendation systems combine several methods, including these two.
+
+## Artificial Intelligence for Collaborative Systems {#sec-10-ai-collaborative-en}
+
+Besides recommending, AI techniques can directly support the three dimensions of the 3C Model (@sec-04-3c-en): communication, coordination and cooperation [@GarciaEtAl2011] (@fig-10-mapping-en).
+
+![Mapping of Artificial Intelligence techniques to each dimension of the 3C Collaboration Model.](../assets/images/cap10/mapeamento-ia-3c.png){#fig-10-mapping-en}
+
+Some fundamental techniques, already mature before the generative AI discussed next, include:
+
+- **Ontologies**: already discussed in Chapter 4 (@sec-04-ontology-en), help ensure that sender and receiver share the same language structures, supporting communication.
+- **Data mining**: extracts patterns from large volumes of interactions that would be impossible to analyse manually, for example, to recommend skills or identify recurring behaviours in a group.
+- **Expert and multi-agent systems**: support coordination, detecting conflicts between concurrent tasks, suggesting resource allocation or managing the reputation of a group's participants.
+- **Autonomic systems**: monitor and protect the shared workspace, supporting cooperation in a robust and secure way.
+
+## The Update: Generative AI and Collaborative *Copilots* {#sec-10-update-en}
+
+The field of AI applied to collaboration transformed profoundly in the decade following the publication of these techniques, with the arrival of large language models (LLMs) and **generative AI**: systems such as `ChatGPT`, `Gemini` or `Claude`, capable of generating text, code and images from a natural-language request.
+
+The most direct impact on collaboration is the emergence of ***copilots***, AI assistants integrated directly into the collaborative tools already discussed in this book. In software development (@sec-08-version-control-en), `GitHub Copilot` suggests code directly in the editor, becoming a silent third participant alongside pair programming. In collaborative writing tools, such as `Google Docs` or `Notion`, AI assistants suggest, summarise and rewrite jointly produced content. And in communication systems (@sec-05-cmc-en), meeting assistants automatically transcribe, summarise and distribute minutes among participants, an automated form of **memory**, the same aspect already discussed regarding Electronic Democracy (@sec-07-aspects-en).
+
+These *copilots* do not replace the older AI techniques discussed in this chapter, but rather complement them: a collaborative writing assistant still benefits from a well-defined domain ontology, and a recommendation system still depends on collaborative filtering to know what to suggest. The difference lies in the naturalness of the interaction, now possible through natural language instead of structured commands or forms.
+
+## Summary {#sec-10-summary-en}
+
+This chapter dealt with the application of Artificial Intelligence to collaborative systems:
+
+1. A **Recommendation System** filters large volumes of information to suggest what is likely to interest a user, through direct retrieval, collaborative filtering or content-based filtering [@MottaEtAl2011]
+2. **Collaborative filtering** is the most directly collaborative method, but suffers from the cold-start problem for new items
+3. AI techniques such as **ontologies**, **data mining**, **expert and multi-agent systems** and **autonomic systems** each support one or more dimensions of the 3C Model [@GarciaEtAl2011]
+4. **Generative AI** gave rise to collaborative ***copilots***, assistants integrated directly into the development, writing and communication tools already discussed in this book
+
+## Food for Thought {#sec-10-reflection-en}
+
+Think of a recent recommendation you received, of a film, product or piece of music, that pleasantly surprised you: can you tell whether it resulted from collaborative filtering (based on people similar to you) or content-based filtering (based on what you have already consumed)?
+
+And what about *copilots*: have you used an AI assistant integrated into a collaborative tool? What task did it save you, and which decisions did you still keep for yourself and your colleagues?
+
+## References {#sec-10-references-en .unnumbered}
+
+::: {#refs}
+:::

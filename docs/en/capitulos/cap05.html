@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Pavão">
-<meta name="dcterms.date" content="2026-08-18">
+<meta name="dcterms.date" content="2026-08-20">
 
 <title>5&nbsp; Communication Systems for Collaboration – Social and Cooperative Platforms</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,8 +213,30 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-05-intro-en" id="toc-sec-05-intro-en" class="nav-link active" data-scroll-target="#sec-05-intro-en">Introduction</a></li>
+  <li><a href="#sec-05-cmc-en" id="toc-sec-05-cmc-en" class="nav-link" data-scroll-target="#sec-05-cmc-en"><span class="header-section-number">5.1</span> Computer-Mediated Communication</a>
+  <ul class="collapse">
+  <li><a href="#sec-05-reorality-en" id="toc-sec-05-reorality-en" class="nav-link" data-scroll-target="#sec-05-reorality-en"><span class="header-section-number">5.1.1</span> Internet dialect</a></li>
+  </ul></li>
+  <li><a href="#sec-05-synchronism-en" id="toc-sec-05-synchronism-en" class="nav-link" data-scroll-target="#sec-05-synchronism-en"><span class="header-section-number">5.2</span> Synchronous and Asynchronous</a></li>
+  <li><a href="#sec-05-speech-acts-en" id="toc-sec-05-speech-acts-en" class="nav-link" data-scroll-target="#sec-05-speech-acts-en"><span class="header-section-number">5.3</span> Speech Acts and Conversation for Action</a></li>
+  <li><a href="#sec-05-flaming-en" id="toc-sec-05-flaming-en" class="nav-link" data-scroll-target="#sec-05-flaming-en"><span class="header-section-number">5.4</span> Flaming, Trolling and the Absence of Social Cues</a></li>
+  <li><a href="#sec-05-evolution-en" id="toc-sec-05-evolution-en" class="nav-link" data-scroll-target="#sec-05-evolution-en"><span class="header-section-number">5.5</span> A Brief Evolution of Communication Systems</a></li>
+  <li><a href="#sec-05-coord-coop-en" id="toc-sec-05-coord-coop-en" class="nav-link" data-scroll-target="#sec-05-coord-coop-en"><span class="header-section-number">5.6</span> Coordination and Cooperation Systems</a>
+  <ul class="collapse">
+  <li><a href="#sec-05-coordination-en" id="toc-sec-05-coordination-en" class="nav-link" data-scroll-target="#sec-05-coordination-en"><span class="header-section-number">5.6.1</span> Coordination Systems</a></li>
+  <li><a href="#sec-05-cooperation-en" id="toc-sec-05-cooperation-en" class="nav-link" data-scroll-target="#sec-05-cooperation-en"><span class="header-section-number">5.6.2</span> Cooperation Systems</a></li>
+  </ul></li>
+  <li><a href="#sec-05-summary-en" id="toc-sec-05-summary-en" class="nav-link" data-scroll-target="#sec-05-summary-en"><span class="header-section-number">5.7</span> Summary</a></li>
+  <li><a href="#sec-05-reflection-en" id="toc-sec-05-reflection-en" class="nav-link" data-scroll-target="#sec-05-reflection-en"><span class="header-section-number">5.8</span> Food for Thought</a></li>
+  <li><a href="#sec-05-references-en" id="toc-sec-05-references-en" class="nav-link" data-scroll-target="#sec-05-references-en">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -218,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 August 2026</p>
+      <p class="date">20 August 2026</p>
     </div>
   </div>
   
@@ -234,11 +276,134 @@ ul.task-list li input[type="checkbox"] {
   <div class="hero-badge">Chapter 5</div>
   <h1>Communication Systems for Collaboration</h1>
 </div>
-<blockquote class="blockquote">
-<p>Content to be translated.</p>
-</blockquote>
+<section id="sec-05-intro-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-05-intro-en">Introduction</h2>
+<p>The previous chapter identified <strong>communication</strong> as one of the three dimensions of the 3C Model, the exchange of messages through which participants negotiate and make commitments about the work to be done (<a href="cap04.html#sec-04-3c-en" class="quarto-xref"><span>Section 4.4</span></a>). This chapter explores that dimension further: what characteristics distinguish computer-mediated communication from face-to-face communication, how to classify the different communication systems, and how the language we use to communicate can itself be a form of acting. It closes with a brief look at the systems that support the other two dimensions of the 3C Model, coordination and cooperation, to complete the picture.</p>
+</section>
+<section id="sec-05-cmc-en" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="sec-05-cmc-en"><span class="header-section-number">5.1</span> Computer-Mediated Communication</h2>
+<p>The computer became, especially after networking, a medium of human communication. The <strong>20th century</strong> was marked by mass media, such as the press, radio and television, characterised by the broadcast of information from a large central editorial source, with no possibility of interaction with the audience. The <strong>21st century</strong> is marked by social media, characterised by content production by users themselves and by conversation among crowds, as already discussed in the previous chapters regarding social networks <span class="citation" data-cites="PimentelEtAl2011">(<a href="cap01.html#ref-PimentelEtAl2011" role="doc-biblioref">Pimentel, Gerosa, and Fuks 2011</a>)</span>.</p>
+<p><strong>Computer-Mediated Communication</strong> (CMC) brought new possibilities for social interaction: asynchronicity, absence of face-to-face interaction, anonymity, privacy, continuous contact with interlocutors, virtual communities, and conversation among crowds who never meet in person. The difference between <em>online</em> and <em>offline</em> interaction, and the culture specific to these new media, is also an object of CMC research <span class="citation" data-cites="PimentelEtAl2011">(<a href="cap01.html#ref-PimentelEtAl2011" role="doc-biblioref">Pimentel, Gerosa, and Fuks 2011</a>)</span>.</p>
+<section id="sec-05-reorality-en" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="sec-05-reorality-en"><span class="header-section-number">5.1.1</span> Internet dialect</h3>
+<p>One of the most studied phenomena in CMC is the attempt to put the informality of face-to-face conversation into text, a process called the <strong>reorality</strong> of written language <span class="citation" data-cites="PimentelEtAl2011">(<a href="cap01.html#ref-PimentelEtAl2011" role="doc-biblioref">Pimentel, Gerosa, and Fuks 2011</a>)</span>. The absence of eye contact, tone of voice and body language is partly compensated for by a set of linguistic resources specific to computer-mediated written communication: <em>emoticons</em> and <em>emojis</em>, abbreviations (<code>u</code>, <code>pls</code>), onomatopoeia (<code>lol</code>, <code>haha</code>), vowel stretching (<code>soooo</code>), exaggerated punctuation (<code>!!!</code>), capital letters to SHOUT, and phonetic spelling of words (<code>cuz</code> instead of “because”, <code>ur</code> instead of “your”, and many others). GIFs and reaction stickers today serve a similar function, replacing with an image what facial expression would do in a face-to-face conversation.</p>
+<p>This dialect is not a deviation to be corrected, but a functional adaptation to the medium: it represents an attempt to recover, through text, cues that face-to-face conversation offers for free. Knowing it is necessary to communicate appropriately through the different computer communication systems <span class="citation" data-cites="PimentelEtAl2011">(<a href="cap01.html#ref-PimentelEtAl2011" role="doc-biblioref">Pimentel, Gerosa, and Fuks 2011</a>)</span>.</p>
+</section>
+</section>
+<section id="sec-05-synchronism-en" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="sec-05-synchronism-en"><span class="header-section-number">5.2</span> Synchronous and Asynchronous</h2>
+<p>One of the most traditional ways of classifying a communication system crosses two independent dimensions: <strong>time</strong>, which distinguishes <strong>synchronous</strong> communication (the interlocutors are present at the same time in the communication medium and the message is received immediately) from <strong>asynchronous</strong> communication (the message is stored and can be retrieved later); and <strong>place</strong>, which distinguishes interlocutors located in the same physical space from interlocutors in remote locations <span class="citation" data-cites="EllisEtAl1991">(<a href="cap01.html#ref-EllisEtAl1991" role="doc-biblioref">Ellis, Gibbs, and Rein 1991</a>)</span> (<a href="#fig-05-space-time-en" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>).</p>
+<div id="fig-05-space-time-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-05-space-time-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap05/espaco-tempo.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-05-space-time-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: Space-time classification of communication systems, crossing synchronism (same time or different time) with location (same place or remote).
+</figcaption>
+</figure>
+</div>
+<p>Face-to-face conversation is <strong>synchronous</strong>, with people simultaneously sharing the same place where the communication takes place; a <em>post-it</em> note left on someone’s desk is <strong>asynchronous</strong> but co-located, people act physically in the place of the message, but not at the same time. Most communication systems for collaboration, however, fall into the remote column: instant messaging, <em>chat</em> and video conferencing are synchronous and remote, while email, discussion systems, the <em>blog</em> and <em>microblog</em> are asynchronous and remote.</p>
+<p>This distinction has a technical implication often invisible to those who use these systems: synchronous remote communication depends, moment to moment, on the quality of the network connection between the interlocutors. If the network is slow or loses information, even for an instant, the video call freezes, the audio cuts out, or the message arrives out of time, because there is no room to resend or wait without breaking the real-time experience. Asynchronous communication tolerates an unstable network much better, precisely because the message can be stored and delivered later without compromising communication: an email that takes a few extra seconds to arrive changes nothing about the experience of whoever reads it. This trade-off between immediacy and reliability still shapes, to this day, the choice between synchronous and asynchronous systems for a given collaborative task.</p>
+</section>
+<section id="sec-05-speech-acts-en" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="sec-05-speech-acts-en"><span class="header-section-number">5.3</span> Speech Acts and Conversation for Action</h2>
+<p><strong>Speech Act</strong> theory shows that language, besides serving to describe the world, also serves to <strong>perform actions</strong>. An utterance can be <strong>constative</strong>, a statement, description or report, or <strong>performative</strong>, a sentence that performs an <strong>action</strong> with consequences at the moment it is uttered: by saying “I declare the session open”, the goal is not to inform, but precisely to open the session. This theory was grounded in John L. Austin’s lectures at Harvard, in 1955, published posthumously in 1962 in the book <em>How to Do Things with Words</em> <span class="citation" data-cites="Austin1962">(<a href="cap01.html#ref-Austin1962" role="doc-biblioref">Austin 1962</a>)</span>.</p>
+<p>In the field of collaborative systems, one of the best-known studies on communication is <strong>conversation for action</strong>: interlocutors exchange messages to negotiate and make commitments about work to be done. Terry Winograd modelled this process as a sequence of states, where each state transition occurs through a speech act <span class="citation" data-cites="Winograd1987">(<a href="cap01.html#ref-Winograd1987" role="doc-biblioref">Winograd 1987</a>)</span> (<a href="#fig-05-conversation-en" class="quarto-xref">Figure&nbsp;<span>5.2</span></a>).</p>
+<div id="fig-05-conversation-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-05-conversation-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap05/conversacao-acao.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-05-conversation-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.2: Simplified version of the conversation for action diagram: a work process is negotiated through successive speech acts, between the initial request and completion.
+</figcaption>
+</figure>
+</div>
+<p>The process begins when one interlocutor <strong>requests</strong> a task from another. The second interlocutor can <strong>promise</strong> to carry it out, starting a period of execution that ends when the first interlocutor <strong>states</strong> they are satisfied with the result and <strong>declares</strong> the process complete. At any stage, however, the second interlocutor can <strong>reject</strong> the request, ending the process along a different path. This model shows that, even in an apparently simple exchange of messages, there is an underlying negotiation structure, made up of successive speech acts that progressively commit the interlocutors to the work to be done.</p>
+</section>
+<section id="sec-05-flaming-en" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="sec-05-flaming-en"><span class="header-section-number">5.4</span> Flaming, Trolling and the Absence of Social Cues</h2>
+<p>CMC research also studies negative phenomena associated with new media, such as <strong>flaming</strong> (aggressive messages and heated discussions) and <strong>trolling</strong>, the deliberate provocation of other interlocutors with the aim of generating emotional reactions or disrupting a conversation. Both phenomena are mainly attributed to anonymity and to text-only communication, with the absence of eye contact and non-verbal language that, in a face-to-face conversation, naturally moderate the tone of interaction <span class="citation" data-cites="PimentelEtAl2011">(<a href="cap01.html#ref-PimentelEtAl2011" role="doc-biblioref">Pimentel, Gerosa, and Fuks 2011</a>)</span>.</p>
+<p>These phenomena are distinct from <strong>cyberbullying</strong>, already discussed in Chapter 1 (<a href="cap01.html#sec-01-cyberbullying-en" class="quarto-xref"><span>Section 1.5.3</span></a>): cyberbullying is a sustained pattern of harassment directed at a specific victim, with the aim of repeatedly hurting them, while flaming and trolling can occur as one-off incidents, in a single exchange of messages, without necessarily having a fixed target or the intention to cause continued harm. The same conditions of the medium, anonymity and the absence of non-verbal cues, explain the origin of both phenomena, but their severity and persistence are very different.</p>
+<p>Because users of current communication platforms are not required to prove their identity, the expression of opinions and ideas is made easier, which can also lead to aggressive or provocative behaviour, such as flaming and trolling. The platforms in use, mostly North American and Chinese, lack effective identity-verification mechanisms, which in many cases makes it impossible to hold aggressors accountable.</p>
+<p>In Europe, current legislation requires platforms to identify their users, which reduces these phenomena. For example, as an alternative to a system such as <code>X</code>, the social platform <code>W social</code> (<a href="https://wsocial.news">https://wsocial.news</a>) is in its final launch phase, allowing anonymous communication, but with user identification mandatorily verified against formal identity documents (national ID card or passport), which can intervene in case of abuse.</p>
+</section>
+<section id="sec-05-evolution-en" class="level2" data-number="5.5">
+<h2 data-number="5.5" class="anchored" data-anchor-id="sec-05-evolution-en"><span class="header-section-number">5.5</span> A Brief Evolution of Communication Systems</h2>
+<p>Communication systems for collaboration are organised into families, according to the kind of conversation they establish between interlocutors: email, discussion systems (mailing list, forum), instant messaging, <em>chat</em>, audio and video conferencing, message logs (<em>blog</em>, <em>microblog</em>) <span class="citation" data-cites="PimentelEtAl2011">(<a href="cap01.html#ref-PimentelEtAl2011" role="doc-biblioref">Pimentel, Gerosa, and Fuks 2011</a>)</span>. Each family shares characteristics and evolves influenced by earlier families, much as a species is influenced by the species it descends from (<a href="#fig-05-types-en" class="quarto-xref">Figure&nbsp;<span>5.3</span></a>).</p>
+<div id="fig-05-types-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-05-types-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap05/tipos-sistemas.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-05-types-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.3: Classification of communication systems by synchronism, with current examples of each type.
+</figcaption>
+</figure>
+</div>
+<p>Email, among the first communication systems of the internet, remains central today (<code>Gmail</code>, <code>Outlook</code>), although it has incorporated features from other systems, such as <em>chat</em>. Discussion systems evolved from mailing lists into the groups and communities of today’s social networks, such as <code>Facebook</code> groups or <code>Reddit</code>. Instant messaging, which already existed before the internet as we know it today, has in applications such as <code>WhatsApp</code>, <code>Messenger</code> and <code>Telegram</code> its most popular representatives. Group <em>chat</em>, historically associated with IRC, survives today on platforms such as <code>Discord</code> and <code>Slack</code>. And the <em>blog</em>, the personal “logbook” of the 1990s, gave rise to the <em>microblog</em>, today dominated by platforms such as <code>X</code> and <code>Instagram</code>.</p>
+<p>Regardless of the specific system, the comparative analysis still holds: the synchronism of the communication, the number of interlocutors involved, the language used, the size of messages, and the structuring of discourse continue to determine the characteristics of any new communication system that may emerge.</p>
+</section>
+<section id="sec-05-coord-coop-en" class="level2" data-number="5.6">
+<h2 data-number="5.6" class="anchored" data-anchor-id="sec-05-coord-coop-en"><span class="header-section-number">5.6</span> Coordination and Cooperation Systems</h2>
+<p>The 3C Model, presented in the previous chapter, breaks collaboration down into three dimensions: communication, coordination and cooperation (<a href="cap04.html#sec-04-3c-en" class="quarto-xref"><span>Section 4.4</span></a>). This chapter has focused on the first; a brief reference is now made to the systems that support the other two.</p>
+<section id="sec-05-coordination-en" class="level3" data-number="5.6.1">
+<h3 data-number="5.6.1" class="anchored" data-anchor-id="sec-05-coordination-en"><span class="header-section-number">5.6.1</span> Coordination Systems</h3>
+<p><strong>Coordination</strong> is the planning of group work <span class="citation" data-cites="SantoroEtAl2011">(<a href="cap01.html#ref-SantoroEtAl2011" role="doc-biblioref">Santoro, Iendrike, and Araujo 2011</a>)</span>. One of the most common ways to support coordination is through <strong>business processes</strong>: a defined set of steps for carrying out a piece of work, with goals, activities, people responsible, and rules that establish the order of execution. Business process management systems, or <strong>BPMS</strong> (<em>Business Process Management System</em>), are collaborative systems that support the definition, execution and monitoring of these processes, coordinating the different participants involved and keeping a record of the state of each activity <span class="citation" data-cites="SantoroEtAl2011">(<a href="cap01.html#ref-SantoroEtAl2011" role="doc-biblioref">Santoro, Iendrike, and Araujo 2011</a>)</span>.</p>
+</section>
+<section id="sec-05-cooperation-en" class="level3" data-number="5.6.2">
+<h3 data-number="5.6.2" class="anchored" data-anchor-id="sec-05-cooperation-en"><span class="header-section-number">5.6.2</span> Cooperation Systems</h3>
+<p><strong>Cooperation</strong> requires participants to have <strong>awareness</strong> of what others are doing in the shared workspace, a mental state of understanding others’ actions and presence <span class="citation" data-cites="VieiraEtAl2011 DourishBellotti1992">(<a href="cap01.html#ref-VieiraEtAl2011" role="doc-biblioref">Santos, Tedesco, and Salgado 2011</a>; <a href="cap01.html#ref-DourishBellotti1992" role="doc-biblioref">Dourish and Bellotti 1992</a>)</span>. In a face-to-face interaction, this awareness arises naturally, through sight and hearing; in a collaborative system, it has to be explicitly communicated, typically through notifications structured around six questions: who, what, where, when, how and why.</p>
+<p>Awareness reduces isolation and prevents duplicated work and conflicts, but it has to be designed carefully: in excess, it generates information overload and becomes intrusive. A well-known example of this tension is <code>Microsoft Office</code>’s <code>Clippy</code> assistant, rejected by users for constantly interrupting their work with unsolicited suggestions, later replaced by discreet suggestions, activated only when the user themselves looks for them <span class="citation" data-cites="VieiraEtAl2011">(<a href="cap01.html#ref-VieiraEtAl2011" role="doc-biblioref">Santos, Tedesco, and Salgado 2011</a>)</span>.</p>
+</section>
+</section>
+<section id="sec-05-summary-en" class="level2" data-number="5.7">
+<h2 data-number="5.7" class="anchored" data-anchor-id="sec-05-summary-en"><span class="header-section-number">5.7</span> Summary</h2>
+<p>This chapter characterised the communication systems that support collaboration:</p>
+<ol type="1">
+<li><strong>Computer-Mediated Communication</strong> brought asynchronicity, anonymity and virtual communities, and gave rise to a dialect of its own, the <strong>reorality</strong> of written language <span class="citation" data-cites="PimentelEtAl2011">(<a href="cap01.html#ref-PimentelEtAl2011" role="doc-biblioref">Pimentel, Gerosa, and Fuks 2011</a>)</span></li>
+<li>The <strong>space-time</strong> classification crosses synchronism (synchronous or asynchronous) with location (co-located or remote); synchronous communication depends more critically on network quality <span class="citation" data-cites="EllisEtAl1991">(<a href="cap01.html#ref-EllisEtAl1991" role="doc-biblioref">Ellis, Gibbs, and Rein 1991</a>)</span></li>
+<li><strong>Speech Act</strong> theory shows that language also performs actions <span class="citation" data-cites="Austin1962">(<a href="cap01.html#ref-Austin1962" role="doc-biblioref">Austin 1962</a>)</span>; Winograd’s <strong>conversation for action</strong> model describes the negotiation of a piece of work as a sequence of speech acts <span class="citation" data-cites="Winograd1987">(<a href="cap01.html#ref-Winograd1987" role="doc-biblioref">Winograd 1987</a>)</span></li>
+<li><strong>Flaming</strong> and <strong>trolling</strong> result from anonymity and the absence of non-verbal cues in text-based communication, distinct from cyberbullying (<a href="cap01.html#sec-01-cyberbullying-en" class="quarto-xref"><span>Section 1.5.3</span></a>) by the absence of a sustained pattern directed at a victim</li>
+<li>Communication systems are organised into families (email, discussion, messaging, chat, conferencing, message logs), each evolving influenced by earlier ones <span class="citation" data-cites="PimentelEtAl2011">(<a href="cap01.html#ref-PimentelEtAl2011" role="doc-biblioref">Pimentel, Gerosa, and Fuks 2011</a>)</span></li>
+<li>The other two dimensions of the 3C Model also have their own systems: <strong>coordination</strong> relies on business processes and BPMS systems <span class="citation" data-cites="SantoroEtAl2011">(<a href="cap01.html#ref-SantoroEtAl2011" role="doc-biblioref">Santoro, Iendrike, and Araujo 2011</a>)</span>; <strong>cooperation</strong> requires <strong>awareness</strong> of what other participants are doing in the shared space, designed carefully so as not to become intrusive <span class="citation" data-cites="VieiraEtAl2011">(<a href="cap01.html#ref-VieiraEtAl2011" role="doc-biblioref">Santos, Tedesco, and Salgado 2011</a>)</span></li>
+</ol>
+</section>
+<section id="sec-05-reflection-en" class="level2" data-number="5.8">
+<h2 data-number="5.8" class="anchored" data-anchor-id="sec-05-reflection-en"><span class="header-section-number">5.8</span> Food for Thought</h2>
+<p>Think of a recent instant messaging conversation: can you identify examples of “internet dialect” that you used, emoticons, abbreviations, capital letters for emphasis? What would you be communicating differently if that same conversation had happened by email, or in person?</p>
+<p>And what about conversation for action: next time you ask someone for something by message, notice the speech acts they use, without realising it, to negotiate the commitment, the request, the promise, the confirmation.</p>
+<p>Take <code>WhatsApp</code> as an example: identify the components of the 3C Model in how conversation groups work, and how the platform supports each of them. Think also about the awareness mechanisms the platform offers, and how they help coordinate group work.</p>
+</section>
+<section id="sec-05-references-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-05-references-en">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Austin1962" class="csl-entry" role="listitem">
+Austin, John L. 1962. <em>How to Do Things with Words</em>. Oxford: Clarendon Press.
+</div>
+<div id="ref-DourishBellotti1992" class="csl-entry" role="listitem">
+Dourish, Paul, and Victoria Bellotti. 1992. <span>‘Awareness and Coordination in Shared Workspaces’</span>. In <em>Proceedings of the ACM Conference on Computer Supported Cooperative Work (CSCW’92)</em>, 107–14. Toronto.
+</div>
+<div id="ref-EllisEtAl1991" class="csl-entry" role="listitem">
+Ellis, Clarence A., Simon J. Gibbs, and Gail L. Rein. 1991. <span>‘Groupware: Some Issues and Experiences’</span>. <em>Communications of the ACM</em> 34 (1): 39–58.
+</div>
+<div id="ref-PimentelEtAl2011" class="csl-entry" role="listitem">
+Pimentel, Mariano, Marco Aurélio Gerosa, and Hugo Fuks. 2011. <span>‘Sistemas de Comunicação Para Colaboração’</span>. In <em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-SantoroEtAl2011" class="csl-entry" role="listitem">
+Santoro, Flávia Maria, Hadeliane Iendrike, and Renata Mendes de Araujo. 2011. <span>‘Colaboração Em Processos de Negócio’</span>. In <em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-VieiraEtAl2011" class="csl-entry" role="listitem">
+Santos, Vaninha Vieira dos, Patrícia Tedesco, and Ana Carolina Salgado. 2011. <span>‘Percepção e Contexto’</span>. In <em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Winograd1987" class="csl-entry" role="listitem">
+Winograd, Terry. 1987. <span>‘A Language/Action Perspective on the Design of Cooperative Work’</span>. <em>Human-Computer Interaction</em> 3 (1): 3–30.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

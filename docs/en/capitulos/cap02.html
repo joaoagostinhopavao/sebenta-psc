@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Pavão">
-<meta name="dcterms.date" content="2026-08-18">
+<meta name="dcterms.date" content="2026-08-19">
 
 <title>2&nbsp; Social Networks: Fundamentals and Statistical Data – Social and Cooperative Platforms</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,8 +213,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-02-intro-en" id="toc-sec-02-intro-en" class="nav-link active" data-scroll-target="#sec-02-intro-en">Introduction</a></li>
+  <li><a href="#sec-02-six-degrees-en" id="toc-sec-02-six-degrees-en" class="nav-link" data-scroll-target="#sec-02-six-degrees-en"><span class="header-section-number">2.1</span> Six Degrees of Separation</a></li>
+  <li><a href="#sec-02-generations-en" id="toc-sec-02-generations-en" class="nav-link" data-scroll-target="#sec-02-generations-en"><span class="header-section-number">2.2</span> The Generations of Web-Based Social Networks</a>
+  <ul class="collapse">
+  <li><a href="#sec-02-fourth-generation-en" id="toc-sec-02-fourth-generation-en" class="nav-link" data-scroll-target="#sec-02-fourth-generation-en"><span class="header-section-number">2.2.1</span> And after the third generation?</a></li>
+  </ul></li>
+  <li><a href="#sec-02-purposes-en" id="toc-sec-02-purposes-en" class="nav-link" data-scroll-target="#sec-02-purposes-en"><span class="header-section-number">2.3</span> Purposes of Social Networks</a></li>
+  <li><a href="#sec-02-numbers-en" id="toc-sec-02-numbers-en" class="nav-link" data-scroll-target="#sec-02-numbers-en"><span class="header-section-number">2.4</span> Social Network Adoption in Numbers</a></li>
+  <li><a href="#sec-02-summary-en" id="toc-sec-02-summary-en" class="nav-link" data-scroll-target="#sec-02-summary-en"><span class="header-section-number">2.5</span> Summary</a></li>
+  <li><a href="#sec-02-reflection-en" id="toc-sec-02-reflection-en" class="nav-link" data-scroll-target="#sec-02-reflection-en"><span class="header-section-number">2.6</span> Food for Thought</a></li>
+  <li><a href="#sec-02-references-en" id="toc-sec-02-references-en" class="nav-link" data-scroll-target="#sec-02-references-en">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -218,7 +254,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 August 2026</p>
+      <p class="date">19 August 2026</p>
     </div>
   </div>
   
@@ -234,11 +270,140 @@ ul.task-list li input[type="checkbox"] {
   <div class="hero-badge">Chapter 2</div>
   <h1>Social Networks: Fundamentals and Statistical Data</h1>
 </div>
-<blockquote class="blockquote">
-<p>Content to be translated.</p>
-</blockquote>
+<section id="sec-02-intro-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-02-intro-en">Introduction</h2>
+<p>The previous chapter established a fundamental distinction: the social network, as a concept, predates the technology (<a href="cap01.html#sec-01-non-tech-networks-en" class="quarto-xref"><span>Section 1.2.1</span></a>), and what networked computing brought was mainly a change in scale, reach and medium (<a href="cap01.html#sec-01-castells-networked-society-en" class="quarto-xref"><span>Section 1.2.2</span></a>). This chapter goes deeper into that second part: how did social networks, as an age-old human phenomenon, become the web-based social network platforms we know today, what forms they took over time, what they are for, and what their real adoption is, today, in Portugal and worldwide.</p>
+</section>
+<section id="sec-02-six-degrees-en" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-02-six-degrees-en"><span class="header-section-number">2.1</span> Six Degrees of Separation</h2>
+<p>In 1967, social psychologist Stanley Milgram conducted a set of experiments that would become an unavoidable reference in the study of social networks. He asked hundreds of people in different US states to get a letter to a final recipient they did not know personally, through the network of direct acquaintances of each participant. The goal was to measure how many intermediaries, on average, were needed to link two randomly chosen people <span class="citation" data-cites="Milgram1967">(<a href="cap01.html#ref-Milgram1967" role="doc-biblioref">Milgram 1967</a>)</span>.</p>
+<p>The results are often oversimplified. Of the hundreds of letters sent, only a minority completed the journey: most chains broke off before reaching the destination. Among the letters that did arrive, the average number of intermediaries was around five to six. The idea that “we are all connected by six degrees of separation” is not, therefore, an exact, universal conclusion of Milgram’s experiment, but rather a popularisation: the phrase dates back to a short story by the Hungarian writer Frigyes Karinthy, published in 1929, and only became popular decades later through the play <em>Six Degrees of Separation</em>, by John Guare (1990). Milgram himself never used that phrase in his own writings.</p>
+<p>What Milgram’s experiment demonstrated more solidly was something else, more interesting for the study of social networks: that a network of personal relationships, apparently local and limited, has a structure that allows any other node in that network to be reached through a surprisingly small number of connections. It was precisely this structural property, that of the “small world”, that the first web-based social network systems were designed to exploit and make visible.</p>
+</section>
+<section id="sec-02-generations-en" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-02-generations-en"><span class="header-section-number">2.2</span> The Generations of Web-Based Social Networks</h2>
+<p>Web-based social networks are virtual environments where each participant builds their own network of relationships, based on some kind of connection with other participants. Three successive generations of systems can be identified in their evolution <span class="citation" data-cites="MeiraEtAl2011a">(<a href="cap01.html#ref-MeiraEtAl2011a" role="doc-biblioref">Meira et al. 2011</a>)</span>:</p>
+<ul>
+<li><strong>First generation</strong>: systems based on direct personal communication, organised around contact lists for exchanging instant messages. <code>ICQ</code> and <code>MSN Messenger</code> are characteristic examples of this generation.</li>
+<li><strong>Second generation</strong>: systems that sought to replicate, in a virtual environment, the networks of affinity and acquaintance already existing in the real world. <code>Orkut</code>, <code>Friendster</code>, <code>MySpace</code>, <code>Facebook</code> and <code>LinkedIn</code> formalised this type of relationship, with such success that social networks became more popular than email.</li>
+<li><strong>Third generation</strong>: systems in which social networks began to directly support the resolution of concrete problems: storing and exchanging experiences between people in similar situations, managing organisational knowledge, maintaining institutional memory, and generating new connections between people and organisations that did not previously know each other.</li>
+</ul>
+<p><a href="#fig-02-generations-en" class="quarto-xref">Figure&nbsp;<span>2.1</span></a> illustrates the first and second generations with the actual logos of the platforms mentioned: note how the second generation already includes platforms that would later come to fully dominate the social network landscape.</p>
+<div id="fig-02-generations-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-generations-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap02/geracoes-icones.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-generations-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: The first two generations of web-based social networks, illustrated with the logos of the platforms that defined them.
+</figcaption>
+</figure>
+</div>
+<section id="sec-02-fourth-generation-en" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="sec-02-fourth-generation-en"><span class="header-section-number">2.2.1</span> And after the third generation?</h3>
+<p>This three-generation classification was proposed in 2011, when <code>Facebook</code>, <code>Orkut</code> and <code>LinkedIn</code> defined the social network landscape. Since then, more than a decade of technological evolution suggests a transformation deep enough to justify a new stage.</p>
+<p>The first three generations share a common trait: the visibility of a piece of content depends mainly on the user’s network of explicit connections, the so-called <strong>social graph</strong>, that is, who follows whom. <code>TikTok</code>, popularised from 2018 onward, changed this principle structurally: its recommendation algorithm, “For You”, decides what to show each user mainly based on observed behaviour (viewing time, interactions, content similarity), rather than on who that user follows. This marks a shift from a <strong>social graph</strong> to an <strong>interest graph</strong>: the proximity that matters is no longer “who you know” but “what you consume”. This model was progressively adopted by other platforms, including <code>Instagram</code> and <code>YouTube</code>, through their short-video formats (<em>Reels</em>, <em>Shorts</em>).</p>
+<p>Representing each network as a graph, a set of nodes connected by edges, makes the difference between the two models visible (<a href="#fig-02-graphs-en" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>). In the social graph, the nodes are people and the edges represent explicit connections between them: who follows whom, who is friends with whom. In the interest graph, proximity is no longer between people, but between a person and the topics they interact with: two people may never have followed each other, or even know each other, and still be “neighbours” in the network, by consuming the same kind of content. How to calculate and visualise these graphs, through metrics such as distance, centrality or density, will be developed in the next chapter.</p>
+<div id="fig-02-graphs-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-graphs-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap02/grafo-social-vs-interesses.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-graphs-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Social graph (explicit connections between people) and interest graph (grouping by behavioural similarity).
+</figcaption>
+</figure>
+</div>
+<p>Sociologist Paolo Gerbaudo describes this shift as the move from “networked publics”, organised by explicit interpersonal connections, to “clustered publics”, organised algorithmically by behavioural similarity <span class="citation" data-cites="Gerbaudo2026">(<a href="cap01.html#ref-Gerbaudo2026" role="doc-biblioref">Gerbaudo 2026</a>)</span>. According to the author, this transformation has implications that go beyond individual experience: it makes the workings of the systems that decide what each person sees more opaque, and deepens the fragmentation of the digital public space into interest groups increasingly closed in on themselves. This point connects directly to the “dark side” of networked society already discussed in the previous chapter (<a href="cap01.html#sec-01-risks-en" class="quarto-xref"><span>Section 1.5</span></a>), and will be revisited when we study recommendation systems.</p>
+</section>
+</section>
+<section id="sec-02-purposes-en" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="sec-02-purposes-en"><span class="header-section-number">2.3</span> Purposes of Social Networks</h2>
+<p>Regardless of generation or underlying logic, social networks can also be classified by the main purpose for which they were designed <span class="citation" data-cites="MeiraEtAl2011a">(<a href="cap01.html#ref-MeiraEtAl2011a" role="doc-biblioref">Meira et al. 2011</a>)</span>:</p>
+<ul>
+<li><strong>Sharing</strong>: publishing and distributing content, such as photographs or videos (historical examples: <code>Flickr</code>, <code>YouTube</code>)</li>
+<li><strong>Professional</strong>: maintaining work contacts and relationships (example: <code>LinkedIn</code>)</li>
+<li><strong>Platform</strong>: digital identity infrastructure used by other services for authentication and interconnection (historical example: <code>Ning</code>)</li>
+<li><strong>Entertainment</strong>: social interaction with predominantly recreational aims (historical examples: <code>MySpace</code>, <code>hi5</code>)</li>
+</ul>
+<p><a href="#fig-02-purposes-en" class="quarto-xref">Figure&nbsp;<span>2.3</span></a> brings together the logos of the platforms that best illustrate each of these four purposes.</p>
+<div id="fig-02-purposes-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-purposes-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap02/finalidades-icones.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-purposes-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: The four purposes of social networks, illustrated with the logos of the reference platforms for each.
+</figcaption>
+</figure>
+</div>
+<p>This classification was proposed in 2011, and the boundary between these four purposes is today even more blurred than it was then: <code>Instagram</code> combines sharing, entertainment and, increasingly, commerce; <code>LinkedIn</code> began distributing content in short-video format, traditionally associated with entertainment; and several Asian platforms, such as <code>WeChat</code>, function as “super-apps” that integrate messaging, payments, e-commerce and public services into a single environment. The dominant trend is not specialisation, but the convergence of purposes within the same platform.</p>
+</section>
+<section id="sec-02-numbers-en" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-02-numbers-en"><span class="header-section-number">2.4</span> Social Network Adoption in Numbers</h2>
+<p>According to the <em>Digital 2024</em> report by We Are Social/Meltwater, with analysis by Kepios, already mentioned in the previous chapter, there were <strong>5.04 billion active social media user identities</strong> in early 2024, equivalent to 62.3% of the world’s population <span class="citation" data-cites="WeAreSocial2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024a</a>)</span>. Comparing this figure with the 5.35 billion Internet users estimated for the same period (<a href="cap01.html#sec-01-numbers-en" class="quarto-xref"><span>Section 1.6</span></a>), it follows that about 94% of Internet users also use at least one social network: social network adoption is today practically on a par with Internet adoption itself. The typical user spends, on average, <strong>2 hours and 23 minutes a day</strong> on social networks <span class="citation" data-cites="WeAreSocial2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024a</a>)</span>.</p>
+<p>In Portugal, the same period records 7.43 million social network users, equivalent to 72.6% of the total population, against 8.84 million Internet users (86.4% of the population) <span class="citation" data-cites="DataReportalPortugal2024">(<a href="cap01.html#ref-DataReportalPortugal2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024b</a>)</span>. Adoption in Portugal is therefore higher than the world average on both dimensions (<a href="#fig-02-adoption-en" class="quarto-xref">Figure&nbsp;<span>2.4</span></a>).</p>
+<div id="fig-02-adoption-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-adoption-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap02/adocao-mundial-portugal-2024.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-adoption-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.4: Internet and social network adoption, worldwide and in Portugal (2024). Sources: We Are Social/Meltwater <span class="citation" data-cites="WeAreSocial2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024a</a>)</span>; DataReportal <span class="citation" data-cites="DataReportalPortugal2024">(<a href="cap01.html#ref-DataReportalPortugal2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024b</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>The platforms with the greatest advertising reach in Portugal, in early 2024, were <code>YouTube</code> (72.6% of the population), <code>Facebook</code> (58.1%), <code>Instagram</code> (56.7%), <code>LinkedIn</code> (47.9%) and <code>Facebook Messenger</code> (46.4%), followed by <code>TikTok</code>, already at 42.6% reach among adults <span class="citation" data-cites="DataReportalPortugal2024">(<a href="cap01.html#ref-DataReportalPortugal2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024b</a>)</span> (<a href="#fig-02-platforms-pt-en" class="quarto-xref">Figure&nbsp;<span>2.5</span></a>).</p>
+<div id="fig-02-platforms-pt-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-02-platforms-pt-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap02/pt-plataformas-2024.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-02-platforms-pt-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.5: Reach of the main platforms in Portugal, by potential advertising audience (January 2024). Source: DataReportal, <em>Digital 2024: Portugal</em> <span class="citation" data-cites="DataReportalPortugal2024">(<a href="cap01.html#ref-DataReportalPortugal2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024b</a>)</span>.
+</figcaption>
+</figure>
+</div>
+<p>It is worth noting that this metric, potential advertising reach, is not directly comparable to the monthly active user figures published by each platform worldwide: by that metric, <code>Facebook</code> remains the largest social network in the world, with 3.05 billion monthly active users <span class="citation" data-cites="WeAreSocial2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024a</a>)</span>. Advertising reach and monthly active users are different metrics, calculated differently, and should not be compared directly with one another.</p>
+</section>
+<section id="sec-02-summary-en" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="sec-02-summary-en"><span class="header-section-number">2.5</span> Summary</h2>
+<p>This chapter went deeper into the study of social networks, as a technological instance of a pre-existing social phenomenon, introduced in the previous chapter:</p>
+<ol type="1">
+<li>Milgram’s experiment (1967) demonstrated the “small world” property of social networks, popularised, imprecisely, as “six degrees of separation” <span class="citation" data-cites="Milgram1967">(<a href="cap01.html#ref-Milgram1967" role="doc-biblioref">Milgram 1967</a>)</span></li>
+<li>Web-based social networks evolved through three successive generations, marked by personal communication, the replication of real affinity networks, and collaborative problem-solving <span class="citation" data-cites="MeiraEtAl2011a">(<a href="cap01.html#ref-MeiraEtAl2011a" role="doc-biblioref">Meira et al. 2011</a>)</span></li>
+<li>A fourth transformation, still without a consensus name, has been underway since 2018: the shift from an explicit social graph to an algorithmically defined interest graph <span class="citation" data-cites="Gerbaudo2026">(<a href="cap01.html#ref-Gerbaudo2026" role="doc-biblioref">Gerbaudo 2026</a>)</span></li>
+<li>The four classic purposes of social networks, sharing, professional, platform and entertainment, tend today towards convergence within a single platform, rather than specialisation</li>
+<li>Social network adoption is today close to Internet adoption itself, both worldwide and in Portugal <span class="citation" data-cites="WeAreSocial2024 DataReportalPortugal2024">(<a href="cap01.html#ref-WeAreSocial2024" role="doc-biblioref">DataReportal, Meltwater and We Are Social 2024a</a>, <a href="cap01.html#ref-DataReportalPortugal2024" role="doc-biblioref">2024b</a>)</span></li>
+</ol>
+</section>
+<section id="sec-02-reflection-en" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="sec-02-reflection-en"><span class="header-section-number">2.6</span> Food for Thought</h2>
+<p>The content recommendation algorithm, by deciding what each person sees based on their behaviour rather than their explicit connections, has a power of influence far greater than a friends list ever had. What responsibility does a platform bear when it is its algorithm, not the user’s explicit choices, that decides what content that user is exposed to?</p>
+<p>Think also about your own social network use: can you identify, in the platforms you use, examples of the social graph and the interest graph operating at the same time? And do the four purposes described in this chapter, sharing, professional, platform and entertainment, still apply clearly to the platforms you use daily, or have they all already converged into one?</p>
+</section>
+<section id="sec-02-references-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-02-references-en">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-WeAreSocial2024" class="csl-entry" role="listitem">
+DataReportal, Meltwater and We Are Social. 2024a. <span>‘Digital 2024: Global Overview Report’</span>. <a href="https://datareportal.com/reports/digital-2024-global-overview-report">https://datareportal.com/reports/digital-2024-global-overview-report</a>.
+</div>
+<div id="ref-DataReportalPortugal2024" class="csl-entry" role="listitem">
+———. 2024b. <span>‘Digital 2024: Portugal’</span>. <a href="https://datareportal.com/reports/digital-2024-portugal">https://datareportal.com/reports/digital-2024-portugal</a>.
+</div>
+<div id="ref-Gerbaudo2026" class="csl-entry" role="listitem">
+Gerbaudo, Paolo. 2026. <span>‘TikTok and the Algorithmic Transformation of Social Media Publics: From Social Networks to Social Interest Clusters’</span>. <em>New Media &amp; Society</em> 28 (3): 1019–36. <a href="https://doi.org/10.1177/14614448241304106">https://doi.org/10.1177/14614448241304106</a>.
+</div>
+<div id="ref-MeiraEtAl2011a" class="csl-entry" role="listitem">
+Meira, Silvio Romero de Lemos, Ricardo Araújo Costa, Paulyne Matthews Jucá, and Edeilson Milhomem da Silva. 2011. <span>‘Redes Sociais’</span>. In <em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Milgram1967" class="csl-entry" role="listitem">
+Milgram, Stanley. 1967. <span>‘The Small World Problem’</span>. <em>Psychology Today</em> 1: 61–67.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

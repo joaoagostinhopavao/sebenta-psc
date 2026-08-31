@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Pavão">
-<meta name="dcterms.date" content="2026-08-18">
+<meta name="dcterms.date" content="2026-08-20">
 
 <title>8&nbsp; Collaborative Software Development – Social and Cooperative Platforms</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -193,8 +213,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-08-intro-en" id="toc-sec-08-intro-en" class="nav-link active" data-scroll-target="#sec-08-intro-en">Introduction</a></li>
+  <li><a href="#sec-08-collaborative-activity-en" id="toc-sec-08-collaborative-activity-en" class="nav-link" data-scroll-target="#sec-08-collaborative-activity-en"><span class="header-section-number">8.1</span> Software Development as a Collaborative Activity</a></li>
+  <li><a href="#sec-08-pair-programming-en" id="toc-sec-08-pair-programming-en" class="nav-link" data-scroll-target="#sec-08-pair-programming-en"><span class="header-section-number">8.2</span> Pair Programming</a></li>
+  <li><a href="#sec-08-version-control-en" id="toc-sec-08-version-control-en" class="nav-link" data-scroll-target="#sec-08-version-control-en"><span class="header-section-number">8.3</span> Version Control Systems</a></li>
+  <li><a href="#sec-08-defect-management-en" id="toc-sec-08-defect-management-en" class="nav-link" data-scroll-target="#sec-08-defect-management-en"><span class="header-section-number">8.4</span> Defect Management Systems</a></li>
+  <li><a href="#sec-08-distributed-en" id="toc-sec-08-distributed-en" class="nav-link" data-scroll-target="#sec-08-distributed-en"><span class="header-section-number">8.5</span> Distributed and Global Development</a></li>
+  <li><a href="#sec-08-summary-en" id="toc-sec-08-summary-en" class="nav-link" data-scroll-target="#sec-08-summary-en"><span class="header-section-number">8.6</span> Summary</a></li>
+  <li><a href="#sec-08-reflection-en" id="toc-sec-08-reflection-en" class="nav-link" data-scroll-target="#sec-08-reflection-en"><span class="header-section-number">8.7</span> Food for Thought</a></li>
+  <li><a href="#sec-08-references-en" id="toc-sec-08-references-en" class="nav-link" data-scroll-target="#sec-08-references-en">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -218,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 August 2026</p>
+      <p class="date">20 August 2026</p>
     </div>
   </div>
   
@@ -234,11 +268,82 @@ ul.task-list li input[type="checkbox"] {
   <div class="hero-badge">Chapter 8</div>
   <h1>Collaborative Software Development</h1>
 </div>
-<blockquote class="blockquote">
-<p>Content to be translated.</p>
-</blockquote>
+<section id="sec-08-intro-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-08-intro-en">Introduction</h2>
+<p>The previous chapters discussed collaboration in virtual environments and in the relationship between citizens and government. This chapter turns to a domain closer to those studying Computing: software development is itself a deeply collaborative activity, rarely carried out by a single person, and increasingly carried out by geographically distributed teams.</p>
+</section>
+<section id="sec-08-collaborative-activity-en" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="sec-08-collaborative-activity-en"><span class="header-section-number">8.1</span> Software Development as a Collaborative Activity</h2>
+<p>The success of an organisation increasingly depends on the software it uses as a competitive differentiator, and developing that software is rarely an individual activity: several specialists need to work together, coordinate their activities, make decisions and communicate continuously to develop quality software within the estimated time and cost <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span>.</p>
+<p>Collaboration is organised around <strong>models</strong>, abstractions of the software being built: requirements specifications, class diagrams, use cases, and the source code itself. Models are not independent of one another: a change in a piece of software’s class diagram, for example, usually requires corresponding changes in the source code, so that the two models remain consistent with each other. This dependency makes coordination between programmers particularly important, since misaligned changes between models tend to generate errors <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span>.</p>
+</section>
+<section id="sec-08-pair-programming-en" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="sec-08-pair-programming-en"><span class="header-section-number">8.2</span> Pair Programming</h2>
+<p><strong>Pair programming</strong> is a practice proposed by the agile method <em>Extreme Programming</em>, in which two programmers work together on a single computer: one writes the code while the other reviews it in real time, questions implementation decisions and looks for test cases that might fail <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span>.</p>
+<p>This is not a matter of one person programming while the other merely watches, but a constant dialogue between two people jointly seeking a better solution than either would reach alone. The code is reviewed by two people in real time, which reduces the likelihood of defects and speeds up the sharing of knowledge between a more experienced programmer and a less experienced one. Like any collaborative practice, it requires a cultural shift: evidence suggests that productivity increases with practice, as the pair learns to communicate and better divide the work between them <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span>.</p>
+</section>
+<section id="sec-08-version-control-en" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="sec-08-version-control-en"><span class="header-section-number">8.3</span> Version Control Systems</h2>
+<p><strong>Version control</strong> is the discipline responsible for controlling the evolution and integrity of a software product over time, identifying, recording and coordinating the changes made by different team members <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span>. Systems such as <code>Git</code>, today the most used, maintain a central repository with the complete history of the code, from which each programmer copies their own working area (<a href="#fig-08-version-control-en" class="quarto-xref">Figure&nbsp;<span>8.1</span></a>).</p>
+<div id="fig-08-version-control-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-08-version-control-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap08/controlo-versao.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-08-version-control-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: Sharing files in a version control system: each programmer works on a local copy, and synchronises their changes with the central repository.
+</figcaption>
+</figure>
+</div>
+<p>A version control system supports collaboration in several ways: it generates a change log that serves as shared memory of the product’s evolution; it provides awareness information about what colleagues are doing, by notifying changes; and it enables the coordination of dependencies between activities, whether through sequential development or in parallel, with the work of each person integrated afterwards. Platforms such as <code>GitHub</code> and <code>GitLab</code> now integrate version control with defect management and code review in the same system.</p>
+</section>
+<section id="sec-08-defect-management-en" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="sec-08-defect-management-en"><span class="header-section-number">8.4</span> Defect Management Systems</h2>
+<p>Software is rarely free of defects, found either by the quality team or by users themselves. <strong>Defect management systems</strong>, such as <code>Bugzilla</code>, <code>JIRA</code> or <code>GitHub</code> <em>issues</em>, support the recording, assignment and tracking of defect resolution, typically involving several actors in distinct roles: those who test, those who develop, and those who manage the team (<a href="#fig-08-defect-cycle-en" class="quarto-xref">Figure&nbsp;<span>8.2</span></a>) <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span>.</p>
+<div id="fig-08-defect-cycle-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-08-defect-cycle-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap08/ciclo-defeito.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-08-defect-cycle-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: The collaborative lifecycle of a software defect, from initial reporting to final verification of the fix.
+</figcaption>
+</figure>
+</div>
+<p>A defect is reported by whoever finds it, forwarded to a programmer who works on the fix, and returned for verification by whoever originally reported it. If the fix is not satisfactory, the defect is reopened, restarting the cycle. Beyond reporting and resolution, these systems make it possible to prioritise defects, generate reports on the status of each one, and identify similar or already-reported defects, which is particularly useful for geographically distributed teams, whose members do not always have the opportunity to meet in person to discuss a solution <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span>.</p>
+</section>
+<section id="sec-08-distributed-en" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="sec-08-distributed-en"><span class="header-section-number">8.5</span> Distributed and Global Development</h2>
+<p>The globalisation of business has also been reflected in software development: it is increasingly common for members of the same team to be separated by physical and temporal distance, and for a project to involve participants from different countries, cultures and time zones <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span>.</p>
+<p>Distance between collaborators has a well-documented effect on collaboration. A classic study by Thomas Allen, in 1977, showed that the frequency of collaboration between engineers was inversely proportional to the physical distance between their desks: from about 30 metres onward, collaboration between colleagues decreased sharply <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span>. The effect is explained by the loss of opportunities for <strong>informal communication</strong>, the spontaneous corridor or coffee-machine conversations, with no prior scheduling, through which colleagues learn about each other’s progress and find joint solutions to common problems.</p>
+<p>Although the collaborative systems already discussed help reduce the distance between people, through instant messaging and video conferencing, physical distance between professionals who need to collaborate remains a real challenge, alongside other factors such as differences in time zone, language, customs and cultural norms between distributed teams <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span>.</p>
+</section>
+<section id="sec-08-summary-en" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="sec-08-summary-en"><span class="header-section-number">8.6</span> Summary</h2>
+<p>This chapter dealt with software development as a collaborative activity:</p>
+<ol type="1">
+<li>Software development is organised around interdependent <strong>models</strong>, whose changes require coordination within the team <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, and Prikladnicki 2011</a>)</span></li>
+<li><strong>Pair programming</strong> is a collaborative practice in which two programmers work in constant dialogue, reducing defects and sharing knowledge</li>
+<li><strong>Version control systems</strong>, today mostly based on <code>Git</code>, coordinate a team’s changes and maintain a record of the product’s history</li>
+<li><strong>Defect management systems</strong> support the collaborative lifecycle of a defect, from reporting to verification of the fix</li>
+<li><strong>Distributed and global development</strong> is increasingly common, but physical distance between collaborators continues to hinder the informal communication that is essential for collaboration</li>
+</ol>
+</section>
+<section id="sec-08-reflection-en" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="sec-08-reflection-en"><span class="header-section-number">8.7</span> Food for Thought</h2>
+<p>If you have already worked on a group programming project, think about how the code coordination was done: did you use a version control system? How did you resolve conflicts when two people changed the same file?</p>
+<p>And what about physical distance: have you ever felt, in a group project, the difference between solving a problem in person and trying to solve it only by message?</p>
+</section>
+<section id="sec-08-references-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-08-references-en">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-SouzaEtAl2011" class="csl-entry" role="listitem">
+Souza, Cleidson R. B. de, Sabrina Marczak, and Rafael Prikladnicki. 2011. <span>‘Desenvolvimento Colaborativo de Software’</span>. In <em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

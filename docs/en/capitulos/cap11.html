@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="João Pavão">
-<meta name="dcterms.date" content="2026-08-18">
+<meta name="dcterms.date" content="2026-08-23">
 
 <title>11&nbsp; Mobility, Ubiquity and Interaction – Social and Cooperative Platforms</title>
 <style>
@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -192,8 +212,22 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-11-intro-en" id="toc-sec-11-intro-en" class="nav-link active" data-scroll-target="#sec-11-intro-en">Introduction</a></li>
+  <li><a href="#sec-11-mobile-ubiquitous-en" id="toc-sec-11-mobile-ubiquitous-en" class="nav-link" data-scroll-target="#sec-11-mobile-ubiquitous-en"><span class="header-section-number">11.1</span> Mobile and Ubiquitous Computing</a></li>
+  <li><a href="#sec-11-location-en" id="toc-sec-11-location-en" class="nav-link" data-scroll-target="#sec-11-location-en"><span class="header-section-number">11.2</span> Location</a></li>
+  <li><a href="#sec-11-smart-objects-en" id="toc-sec-11-smart-objects-en" class="nav-link" data-scroll-target="#sec-11-smart-objects-en"><span class="header-section-number">11.3</span> Smart Objects</a></li>
+  <li><a href="#sec-11-infrastructure-en" id="toc-sec-11-infrastructure-en" class="nav-link" data-scroll-target="#sec-11-infrastructure-en"><span class="header-section-number">11.4</span> Infrastructure: Wireless Networks and Sensors</a></li>
+  <li><a href="#sec-11-qualities-of-use-en" id="toc-sec-11-qualities-of-use-en" class="nav-link" data-scroll-target="#sec-11-qualities-of-use-en"><span class="header-section-number">11.5</span> Qualities of Use</a></li>
+  <li><a href="#sec-11-summary-en" id="toc-sec-11-summary-en" class="nav-link" data-scroll-target="#sec-11-summary-en"><span class="header-section-number">11.6</span> Summary</a></li>
+  <li><a href="#sec-11-reflection-en" id="toc-sec-11-reflection-en" class="nav-link" data-scroll-target="#sec-11-reflection-en"><span class="header-section-number">11.7</span> Food for Thought</a></li>
+  <li><a href="#sec-11-references-en" id="toc-sec-11-references-en" class="nav-link" data-scroll-target="#sec-11-references-en">References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -217,7 +251,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">18 August 2026</p>
+      <p class="date">23 August 2026</p>
     </div>
   </div>
   
@@ -233,11 +267,106 @@ ul.task-list li input[type="checkbox"] {
   <div class="hero-badge">Chapter 11</div>
   <h1>Mobility, Ubiquity and Interaction</h1>
 </div>
-<blockquote class="blockquote">
-<p>Content to be translated.</p>
-</blockquote>
+<section id="sec-11-intro-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-11-intro-en">Introduction</h2>
+<p>This final chapter closes the block dedicated to cooperative platforms with two complementary questions: how collaboration follows people away from the desk, through mobile and ubiquitous computing; and how to systematically assess whether a collaborative system offers a good experience to those who use it.</p>
+</section>
+<section id="sec-11-mobile-ubiquitous-en" class="level2" data-number="11.1">
+<h2 data-number="11.1" class="anchored" data-anchor-id="sec-11-mobile-ubiquitous-en"><span class="header-section-number">11.1</span> Mobile and Ubiquitous Computing</h2>
+<p><strong>Mobile Computing</strong> focuses on mobility: portable equipment, cellular telephony and wireless networks expand the boundaries of where and when collaboration is possible <span class="citation" data-cites="FilippoEtAl2011">(<a href="cap01.html#ref-FilippoEtAl2011" role="doc-biblioref">Filippo et al. 2011</a>)</span>. <strong>Ubiquitous Computing</strong>, a term coined by Mark Weiser in 1988, while working at Xerox PARC, has a slightly different focus: the continuous availability of services through countless everyday objects with embedded <em>software</em>, increasingly imperceptible as computers <span class="citation" data-cites="FilippoEtAl2011">(<a href="cap01.html#ref-FilippoEtAl2011" role="doc-biblioref">Filippo et al. 2011</a>)</span> (<a href="#fig-11-mobile-ubiquitous-en" class="quarto-xref">Figure&nbsp;<span>11.1</span></a>).</p>
+<div id="fig-11-mobile-ubiquitous-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-11-mobile-ubiquitous-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap11/movel-vs-ubiqua.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-11-mobile-ubiquitous-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.1: Mobile Computing and Ubiquitous Computing have different focuses, even though many collaborative services combine both dimensions.
+</figcaption>
+</figure>
+</div>
+<p>For Weiser, Ubiquitous Computing is the third era of computing: after the era of mainframe computers, shared by several users, and the era of personal computers, one user per computer, comes the era in which each user uses, without realising it, several devices at the same time. Mobility and ubiquity are not synonyms: a laptop is mobile, but not ubiquitous; a sensor embedded in a door is ubiquitous, but not mobile. Many collaborative services today combine both dimensions.</p>
+</section>
+<section id="sec-11-location-en" class="level2" data-number="11.2">
+<h2 data-number="11.2" class="anchored" data-anchor-id="sec-11-location-en"><span class="header-section-number">11.2</span> Location</h2>
+<p>A large part of mobile collaborative services exploits the user’s <strong>location</strong>: mobile devices, equipped with GPS, accelerometer, compass and gyroscope, report where the user is and where they are heading <span class="citation" data-cites="FilippoEtAl2011">(<a href="cap01.html#ref-FilippoEtAl2011" role="doc-biblioref">Filippo et al. 2011</a>)</span>. Services based on the geographic coordinates of people and elements of the real and virtual world are called <strong>Location Based Services</strong> (LBS).</p>
+<p>Everyday applications such as <code>Google Maps</code>, <code>Uber</code> or food-delivery apps use location to coordinate meetings between people, vehicles and destinations that would otherwise require prior, detailed arrangement. Games such as <code>Pokémon GO</code> take the same logic into the territory of playful collaboration: as in <em>geocaching</em>, a treasure-hunting game that predates smartphones, in which georeferenced coordinates guide players to hidden objects, location turns the physical space of the city into a shared game board.</p>
+</section>
+<section id="sec-11-smart-objects-en" class="level2" data-number="11.3">
+<h2 data-number="11.3" class="anchored" data-anchor-id="sec-11-smart-objects-en"><span class="header-section-number">11.3</span> Smart Objects</h2>
+<p>Ubiquitous Computing gave rise to the idea of <strong>smart objects</strong>: low-cost devices, equipped with sensors and network communication capability, which stop being inert and start having behaviour of their own, reacting to other objects, to people and to the environment around them <span class="citation" data-cites="FilippoEtAl2011">(<a href="cap01.html#ref-FilippoEtAl2011" role="doc-biblioref">Filippo et al. 2011</a>)</span>. This set of networked objects is today called the <strong>Internet of Things</strong> (IoT).</p>
+<p>A smart home, equipped with assistants such as <code>Google Home</code> or <code>Alexa</code>, smart locks and networked appliances, is the example closest to many people’s everyday lives. A <em>smartwatch</em>, such as the <code>Apple Watch</code>, is another example: it communicates with its user’s phone, but also with other devices and services, supporting everything from communication to health monitoring. Together, these interconnected objects form a collaborative ecosystem, in which each device contributes data and functionality to the others. A central principle of these objects is <strong>calm technology</strong>: the more devices there are, the more important it becomes for them to become invisible in their operation, without requiring constant attention from those who use them <span class="citation" data-cites="FilippoEtAl2011">(<a href="cap01.html#ref-FilippoEtAl2011" role="doc-biblioref">Filippo et al. 2011</a>)</span>.</p>
+</section>
+<section id="sec-11-infrastructure-en" class="level2" data-number="11.4">
+<h2 data-number="11.4" class="anchored" data-anchor-id="sec-11-infrastructure-en"><span class="header-section-number">11.4</span> Infrastructure: Wireless Networks and Sensors</h2>
+<p>Mobile and ubiquitous computing depends on a technological infrastructure that brings its own challenges to collaborative systems <span class="citation" data-cites="FilippoEtAl2011">(<a href="cap01.html#ref-FilippoEtAl2011" role="doc-biblioref">Filippo et al. 2011</a>)</span>: wireless networks, which extend the Internet’s reach beyond wired networks but run into physical and bandwidth limits; sensors, which capture location, movement or environmental data; and context support, a system’s ability to adapt to changes in network, battery and the situation of whoever uses it, without harming the collaboration under way.</p>
+<p>Without going into depth, it is also worth mentioning <strong>cross-platform development methods</strong>: there are today <em>frameworks</em> that make it possible to build an application for <code>Android</code> and <code>iOS</code> from the same code, instead of programming each version separately. <code>React Native</code>, developed by Meta, uses <code>JavaScript</code> to produce native applications; <code>Flutter</code>, from Google, uses the <code>Dart</code> language and is known for its <em>performance</em>; <code>Xamarin</code>, from Microsoft, uses <code>C#</code> and integrates with the <code>.NET</code> ecosystem; <code>Ionic</code>, based on Web technologies such as <code>HTML</code>, <code>CSS</code> and <code>JavaScript</code>, generates hybrid applications.</p>
+</section>
+<section id="sec-11-qualities-of-use-en" class="level2" data-number="11.5">
+<h2 data-number="11.5" class="anchored" data-anchor-id="sec-11-qualities-of-use-en"><span class="header-section-number">11.5</span> Qualities of Use</h2>
+<p>Once developed, how can one tell whether a collaborative system offers a good experience to those who use it? The field of <strong>Human-Computer Interaction</strong> (HCI) proposes criteria, or <strong>quality-of-use requirements</strong>, to answer this question <span class="citation" data-cites="Prates2011">(<a href="cap01.html#ref-Prates2011" role="doc-biblioref">Prates 2011</a>)</span> (<a href="#fig-11-qualities-en" class="quarto-xref">Figure&nbsp;<span>11.2</span></a>):</p>
+<div id="fig-11-qualities-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-11-qualities-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap11/qualidades-uso.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-11-qualities-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11.2: The four qualities of use of a collaborative system, according to the field of Human-Computer Interaction.
+</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Usability</strong>: according to ISO standard 9241-11:2018, the extent to which a system can be used by specific users to achieve well-defined goals with <strong>effectiveness</strong>, <strong>efficiency</strong> and <strong>satisfaction</strong>, in a given context of use <span class="citation" data-cites="ISO2018Usability">(<a href="cap01.html#ref-ISO2018Usability" role="doc-biblioref">International Organization for Standardization 2018</a>)</span>. Effectiveness concerns the accuracy and completeness with which users achieve their goals; efficiency, the resources, such as time and effort, spent in relation to that accuracy and completeness; satisfaction, the absence of discomfort and a positive attitude towards using the system. Nielsen further adds ease of learning (<em>learnability</em>), ease of recall (<em>memorability</em>) and error rate as complementary attributes of usability <span class="citation" data-cites="Nielsen1993">(<a href="cap01.html#ref-Nielsen1993" role="doc-biblioref">Nielsen 1993</a>)</span>.</li>
+<li><strong>Sociability</strong>: according to Preece, the sociability of an <em>online</em> community rests on three pillars that determine whether it thrives: <strong>purpose</strong>, the reason that leads people to participate and that gives the group cohesion; <strong>people</strong>, their characteristics, roles and diversity; and <strong>policies</strong>, the rules, norms and codes of conduct that regulate the group’s behaviour <span class="citation" data-cites="Preece2000">(<a href="cap01.html#ref-Preece2000" role="doc-biblioref">Preece 2000</a>)</span>.</li>
+<li><strong>Communicability</strong>: the system’s ability to convey to users its designer’s decisions about who the users are, what they can do, and how they can do it. The concept originates within <strong>Semiotic Engineering</strong>, a field that studies human-computer interaction as a communication process between designers and users, mediated by the interface itself <span class="citation" data-cites="SouzaCS2005">(<a href="cap01.html#ref-SouzaCS2005" role="doc-biblioref">Souza 2005</a>)</span>.</li>
+<li><strong>Accessibility</strong>: according to the W3C, access to the Web by everyone, regardless of disability, is an essential aspect, which requires perceiving, understanding, navigating and interacting without barriers. It covers visual, hearing, motor, cognitive and neurological limitations. The most widely used normative reference is <code>WCAG 2.2</code>, organised around four principles: perceivable, operable, understandable and robust <span class="citation" data-cites="W3CWAI2023">(<a href="cap01.html#ref-W3CWAI2023" role="doc-biblioref">W3C Web Accessibility Initiative 2023</a>)</span>.</li>
+</ul>
+<p>Of these four, sociability is the only one specific to collaborative systems: usability, communicability and accessibility apply to any interactive system, even a single-user one, but sociability only makes sense when there is, in fact, a group interacting through the system <span class="citation" data-cites="Prates2011">(<a href="cap01.html#ref-Prates2011" role="doc-biblioref">Prates 2011</a>)</span>. Accessibility, in turn, is not exclusive to collaborative systems, but functions in them as a condition of social inclusiveness: an inaccessible system excludes group members, undermining sociability itself.</p>
+<p>The four qualities relate to one another, and none exists in isolation: a system with low communicability hinders learning, also resulting in low usability; a system with low accessibility excludes users, which reduces the group’s sociability. A quality collaborative system balances all four dimensions at once, and its evaluation should be carried out with real users, in a real context.</p>
+</section>
+<section id="sec-11-summary-en" class="level2" data-number="11.6">
+<h2 data-number="11.6" class="anchored" data-anchor-id="sec-11-summary-en"><span class="header-section-number">11.6</span> Summary</h2>
+<p>This chapter, the last in the block dedicated to cooperative platforms, addressed mobility, ubiquity and the quality of interaction:</p>
+<ol type="1">
+<li><strong>Mobile Computing</strong> focuses on the mobility of equipment; <strong>Ubiquitous Computing</strong> focuses on the continuous availability of services through countless everyday objects <span class="citation" data-cites="FilippoEtAl2011">(<a href="cap01.html#ref-FilippoEtAl2011" role="doc-biblioref">Filippo et al. 2011</a>)</span></li>
+<li><strong>Location Based Services</strong> coordinate meetings between people, vehicles and destinations from the user’s geographic coordinates</li>
+<li><strong>Smart objects</strong>, networked as part of the Internet of Things, follow the principle of calm technology: the more numerous they are, the more invisible they should be in their operation</li>
+<li>Wireless network and sensor infrastructure, and cross-platform <em>frameworks</em>, support the development of mobile and ubiquitous collaborative systems</li>
+<li>The four <strong>qualities of use</strong>, usability (effectiveness, efficiency and satisfaction), sociability (purpose, people and policies), communicability (conveying design decisions to the user) and accessibility (barrier-free use), assess whether a collaborative system offers a good experience to those who use it, and relate to one another <span class="citation" data-cites="Prates2011">(<a href="cap01.html#ref-Prates2011" role="doc-biblioref">Prates 2011</a>)</span></li>
+</ol>
+</section>
+<section id="sec-11-reflection-en" class="level2" data-number="11.7">
+<h2 data-number="11.7" class="anchored" data-anchor-id="sec-11-reflection-en"><span class="header-section-number">11.7</span> Food for Thought</h2>
+<p>Think of a mobile application you use frequently that depends on your location: what collaboration does it make possible that would not otherwise exist?</p>
+<p>And regarding the four qualities of use: pick a collaborative system you use regularly and quickly assess it on each of them. What is its weakest point?</p>
+</section>
+<section id="sec-11-references-en" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="sec-11-references-en">References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-FilippoEtAl2011" class="csl-entry" role="listitem">
+Filippo, Denise, José Viterbo Filho, Markus Endler, and Hugo Fuks. 2011. <span>‘Mobilidade e Ubiquidade Para Colaboração’</span>. In <em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-ISO2018Usability" class="csl-entry" role="listitem">
+International Organization for Standardization. 2018. <span>‘ISO 9241-11:2018 — Ergonomics of Human-System Interaction, Part 11: Usability: Definitions and Concepts’</span>. Geneva: ISO.
+</div>
+<div id="ref-Nielsen1993" class="csl-entry" role="listitem">
+Nielsen, Jakob. 1993. <em>Usability Engineering</em>. Boston: Academic Press.
+</div>
+<div id="ref-Prates2011" class="csl-entry" role="listitem">
+Prates, Raquel Oliveira. 2011. <span>‘Interação Em Sistemas Colaborativos’</span>. In <em>Sistemas Colaborativos</em>, edited by Mariano Pimentel and Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
+</div>
+<div id="ref-Preece2000" class="csl-entry" role="listitem">
+Preece, Jenny. 2000. <em>Online Communities: Designing Usability, Supporting Sociability</em>. Chichester: Wiley.
+</div>
+<div id="ref-SouzaCS2005" class="csl-entry" role="listitem">
+Souza, Clarisse Sieckenius de. 2005. <em>The Semiotic Engineering of Human-Computer Interaction</em>. Cambridge, MA: MIT Press.
+</div>
+<div id="ref-W3CWAI2023" class="csl-entry" role="listitem">
+W3C Web Accessibility Initiative. 2023. <span>‘Web Content Accessibility Guidelines (WCAG) 2.2’</span>. 2023. <a href="https://www.w3.org/TR/WCAG22/">https://www.w3.org/TR/WCAG22/</a>.
+</div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
