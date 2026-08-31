@@ -1,0 +1,15 @@
+---
+title: "Recommendation Systems and Collaborative AI"
+author: "João Pavão"
+date: 2026-08-18
+lang: en-GB
+---
+
+```{=html}
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap10.jpg');">
+  <div class="hero-badge">Chapter 10</div>
+  <h1>Recommendation Systems and Collaborative AI</h1>
+</div>
+```
+
+> Content to be translated.

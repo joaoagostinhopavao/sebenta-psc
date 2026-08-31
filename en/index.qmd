@@ -1,0 +1,21 @@
+---
+lang: en-GB
+---
+
+# Preface {.unnumbered}
+
+```{=html}
+<div class="hero hero-cover" style="background-image: linear-gradient(90deg, rgba(31,10,46,0.95) 0%, rgba(31,10,46,0.92) 45%, rgba(31,10,46,0.5) 62%, rgba(31,10,46,0.05) 78%, rgba(31,10,46,0) 100%), url('assets/images/heroes/index-web.jpg');">
+  <div class="hero-badge">UTAD · 2026/2027</div>
+  <h1>Social and Cooperative Platforms</h1>
+  <h2>Course Study Guide</h2>
+  <p>University of Trás-os-Montes e Alto Douro</p>
+  <div class="hero-meta">
+    <span>João Pavão</span>
+    <span>Diana Carvalho</span>
+    <span class="hero-meta-date">18 August 2026</span>
+  </div>
+</div>
+```
+
+> Content to be translated.

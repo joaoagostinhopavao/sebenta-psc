@@ -41,6 +41,10 @@ book:
 
   sidebar:
     search: true
+    tools:
+      - icon: translate
+        href: /en/
+        text: "English version"
 
   page-footer:
     left: "Plataformas Sociais e Cooperativas — UTAD"

@@ -1,0 +1,140 @@
+project:
+  type: book
+  output-dir: ../docs/en
+  resources:
+    - assets/images/heroes/
+
+lang: en-GB
+bibliography: ../referencias.bib
+
+book:
+  title: "Social and Cooperative Platforms"
+  subtitle: "Course Textbook"
+  author:
+    - name: "João Pavão"
+      affiliation: "University of Trás-os-Montes e Alto Douro"
+    - name: "Diana Carvalho"
+      affiliation: "University of Trás-os-Montes e Alto Douro"
+  date: last-modified
+
+  chapters:
+    - index.qmd
+    - capitulos/cap01.qmd
+    - capitulos/cap02.qmd
+    - capitulos/cap03.qmd
+    - capitulos/cap04.qmd
+    - capitulos/cap05.qmd
+    - capitulos/cap06.qmd
+    - capitulos/cap07.qmd
+    - capitulos/cap08.qmd
+    - capitulos/cap09.qmd
+    - capitulos/cap10.qmd
+    - capitulos/cap11.qmd
+
+  sidebar:
+    search: true
+    tools:
+      - icon: translate
+        href: /../index.html
+        text: "Versão portuguesa"
+
+  page-footer:
+    left: "Social and Cooperative Platforms — UTAD"
+
+format:
+  html:
+    theme:
+        light: litera
+        dark: darkly
+    css: assets/css/custom.css
+    toc: true
+    toc-depth: 3
+    smooth-scroll: true
+    number-sections: true
+    number-depth: 3
+    highlight-style: github
+    code-fold: false
+    code-tools: false
+    fig-align: center
+
+  pdf:
+    documentclass: scrbook
+    classoption: [oneside]
+    papersize: a4
+    fontsize: 11pt
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    colorlinks: true
+    linkcolor: "NavyBlue"
+    urlcolor: "NavyBlue"
+    geometry:
+      - top=2.5cm
+      - bottom=2.5cm
+      - left=3cm
+      - right=2.5cm
+    include-in-header:
+      text: |
+        \AtBeginDocument{\input{assets/cover.tex}}
+        \usepackage{booktabs}
+        \usepackage{longtable}
+        \usepackage{array}
+        \usepackage{multirow}
+        \usepackage{amssymb}
+        \usepackage{amsmath}
+        \usepackage{caption}
+        \captionsetup{font=small, labelfont=bf}
+        \usepackage{xcolor}
+        \usepackage{tikz}
+        \definecolor{coverDark}{HTML}{1f0a2e}
+        \definecolor{coverAccent}{HTML}{9c1f8f}
+        \definecolor{coverLight}{HTML}{e857b0}
+        \definecolor{chapbg}{HTML}{fbe4f2}
+        \definecolor{chapnum}{HTML}{5c0f52}
+        \definecolor{chaptxt}{HTML}{2a0a26}
+        \KOMAoption{chapterprefix}{false}
+        \makeatletter
+        \newcommand{\chapheroname}{%
+          \ifcase\c@chapter\relax
+            cap01%
+          \or cap01\or cap02\or cap03\or cap04\or cap05\or cap06\or cap07\or cap08\or cap09\or cap10\or cap11%
+          \fi
+        }
+        \renewcommand{\chapterlinesformat}[3]{%
+          \def\@chnum{#2}%
+          \ifx\@chnum\@empty%
+            \noindent%
+            \begin{tikzpicture}[remember picture]
+              \useasboundingbox (0,0) rectangle (\linewidth,5cm);
+              \clip (0,0) rectangle (\linewidth,5cm);
+              \node[anchor=center,inner sep=0pt] at (0.5\linewidth,2.5cm)
+                {\includegraphics[width=\linewidth]{assets/images/heroes/index.jpg}};
+              \fill[coverDark,opacity=0.55] (0,0) rectangle (0.4\linewidth,5cm);
+              \fill[coverDark,opacity=0.3] (0.4\linewidth,0) rectangle (0.65\linewidth,5cm);
+              \fill[coverDark,opacity=0.05] (0.65\linewidth,0) rectangle (\linewidth,5cm);
+              \node[anchor=west,text width=\dimexpr0.62\linewidth\relax,align=left,text=white,inner sep=0pt]
+                at (12pt,2.5cm) {\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\huge\bfseries #3};
+            \end{tikzpicture}%
+          \else%
+            \noindent%
+            \begin{tikzpicture}[remember picture]
+              \useasboundingbox (0,0) rectangle (\linewidth,5cm);
+              \clip (0,0) rectangle (\linewidth,5cm);
+              \edef\heroimg{assets/images/heroes/\chapheroname.jpg}%
+              \node[anchor=center,inner sep=0pt] at (0.5\linewidth,2.5cm)
+                {\includegraphics[width=\linewidth]{\heroimg}};
+              \fill[coverDark,opacity=0.4] (0,0) rectangle (\linewidth,5cm);
+              \node[anchor=west,text=coverLight,font=\fontsize{80}{80}\selectfont\bfseries,inner sep=0pt]
+                at (12pt,2.5cm) {#2};
+              \node[anchor=west,text width=\dimexpr\linewidth-3.6cm\relax,align=left,text=white,inner sep=0pt]
+                at (3.6cm,2.5cm) {\raggedright\hyphenpenalty=10000\exhyphenpenalty=10000\fontsize{20}{24}\selectfont\bfseries #3};
+            \end{tikzpicture}%
+          \fi%
+        }
+        \makeatother
+    pdf-engine: lualatex
+
+execute:
+  echo: true
+  warning: false
+  message: false

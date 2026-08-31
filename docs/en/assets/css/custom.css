@@ -1,0 +1,282 @@
+/* custom.css — Sebenta PSC (paleta: magenta/violeta) */
+
+/* ============================================================
+   FIGURAS — gráficos gerados com fundo branco (legíveis em dark mode)
+   ============================================================ */
+.quarto-figure {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.25rem 1.25rem 0.5rem;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+  margin: 1.75rem 0;
+}
+
+.quarto-figure figcaption {
+  color: #4a4a4a;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.25rem 0.75rem;
+}
+
+/* ============================================================
+   HERO — capa da página principal (Prefácio)
+   ============================================================ */
+.hero {
+  background: linear-gradient(135deg, #1f0a2e 0%, #9c1f8f 60%, #e857b0 100%);
+  color: #fff;
+  border-radius: 8px;
+  aspect-ratio: 16 / 9;
+  box-sizing: border-box;
+  padding: 3.5rem 3rem 3rem;
+  margin: 0 0 2.5rem;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero:not(.hero-chapter):not(.hero-cover)::before {
+  content: "";
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 260px; height: 260px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 50%;
+}
+
+.hero:not(.hero-chapter):not(.hero-cover)::after {
+  content: "";
+  position: absolute;
+  bottom: -80px; left: -40px;
+  width: 320px; height: 320px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 50%;
+}
+
+/* Hero de capítulo — imagem de fundo com overlay, título ancorado ao fundo */
+.hero-chapter {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hero da capa (Prefácio) — imagem de fundo com overlay, conteúdo no fluxo normal */
+.hero-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-chapter h1 {
+  font-size: 2.1rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff !important;
+  border: none !important;
+  margin: 0 0 0.4rem;
+  line-height: 1.2;
+}
+
+.hero h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgba(255,255,255,0.82) !important;
+  border: none !important;
+  margin: 0 0 1.4rem;
+}
+
+.hero p {
+  color: rgba(255,255,255,0.72);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.hero .hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 20px;
+  padding: 0.25rem 0.85rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+  color: rgba(255,255,255,0.9);
+}
+
+.hero .hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.2rem;
+  margin-top: 1.6rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.85);
+}
+
+.hero .hero-meta span {
+  position: relative;
+}
+
+.hero .hero-meta span + span::before {
+  content: "·";
+  margin-right: 1.2rem;
+  color: rgba(255,255,255,0.45);
+  position: absolute;
+  left: -0.9rem;
+}
+
+.hero .hero-meta .hero-meta-date {
+  color: rgba(255,255,255,0.6);
+}
+
+/* ============================================================
+   Tipografia
+   ============================================================ */
+body {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* Blocos de código */
+pre.sourceCode {
+  border-left: 3px solid #9c1f8f;
+  background-color: #fbf1f8;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+/* ============================================================
+   Cabeçalho de capítulo — banner colorido
+   ============================================================ */
+#title-block-header.quarto-title-block {
+  background: linear-gradient(120deg, #1f0a2e 0%, #9c1f8f 100%);
+  padding: 2rem 2.5rem 1.75rem;
+  margin: -1rem -1rem 2.5rem;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.18);
+}
+
+#title-block-header.quarto-title-block h1.title {
+  color: #fff !important;
+  border: none !important;
+  font-size: 1.85rem;
+  margin: 0;
+  line-height: 1.25;
+}
+
+#title-block-header.quarto-title-block h1.title .chapter-number {
+  opacity: 0.65;
+  font-weight: 300;
+}
+
+#title-block-header.quarto-title-block p.subtitle {
+  color: rgba(255,255,255,0.82) !important;
+}
+
+/* Autor/data nos capítulos — mantidos visíveis, mas com contraste
+   garantido sobre o fundo escuro do banner (antes herdavam a cor de
+   texto escura do tema, quase invisível sobre o roxo). */
+#title-block-header.quarto-title-block .quarto-title-meta-heading {
+  color: rgba(255,255,255,0.55) !important;
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#title-block-header.quarto-title-block .quarto-title-meta-contents,
+#title-block-header.quarto-title-block .quarto-title-meta-contents p,
+#title-block-header.quarto-title-block p.author,
+#title-block-header.quarto-title-block p.date,
+#title-block-header.quarto-title-block p.affiliation {
+  color: rgba(255,255,255,0.92) !important;
+}
+
+/* Remover o botão "Código" (ver fonte .qmd) do cabeçalho */
+#title-block-header.quarto-title-block .code-tools-button {
+  display: none;
+}
+
+/* Na capa (index.qmd), o .hero substitui por completo o cabeçalho nativo
+   do Quarto — evita duplicar título/subtítulo, já que o .hero trata do
+   autor/afiliação/data com as suas próprias cores. */
+body:has(.hero) #title-block-header.quarto-title-block {
+  display: none;
+}
+
+/* ============================================================
+   Callouts */
+.callout-caution {
+  border-left-color: #9c1f8f;
+}
+
+.callout-caution .callout-title {
+  background-color: #f7e6f2;
+}
+
+.callout-note {
+  border-left-color: #9c1f8f !important;
+}
+
+.callout-tip {
+  border-left-color: #e857b0 !important;
+}
+
+/* Tabelas */
+table {
+  font-size: 0.9rem;
+}
+
+thead {
+  background-color: #f5d9ec;
+}
+
+/* Mockup de browser */
+.browser-mockup {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.browser-bar {
+  background: #e8e8e8;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.browser-bar::before {
+  content: "● ● ●";
+  color: #aaa;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+}
+
+.browser-content {
+  padding: 1rem;
+  background: #fff;
+  min-height: 80px;
+}
+
+/* ============================================================
+   Referências — Quarto marca a lista de bibliografia com
+   style="display: none" no HTML gerado (a regra que normalmente a
+   revela faz parte do CSS base do Quarto, omitido por termos
+   document-css:false via tema/CSS próprios). Repor a visibilidade.
+   ============================================================ */
+#refs {
+  display: block !important;
+}
