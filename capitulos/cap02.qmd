@@ -153,8 +153,7 @@ vão além da experiência individual: torna mais opaco o funcionamento dos
 sistemas que decidem o que cada pessoa vê, e acentua a fragmentação do
 espaço público digital em grupos de interesse cada vez mais fechados
 sobre si próprios. Este ponto liga-se diretamente ao "lado sombrio" da
-sociedade em rede já discutido no capítulo anterior (@sec-01-riscos), e
-será retomado quando se estudarem os sistemas de recomendação.
+sociedade em rede já discutido no capítulo anterior (@sec-01-riscos).
 
 ## Finalidades das Redes Sociais {#sec-02-finalidades}
 

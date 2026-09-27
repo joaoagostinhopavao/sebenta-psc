@@ -126,7 +126,7 @@ William Gibson, primeiro no conto "Burning Chrome" (1982) e popularizado
 no romance *Neuromancer* (1984) [@Gibson1984]. O significado atribuído ao
 termo alterou-se substancialmente desde então: do espaço puramente
 imaginário da ficção científica para o espaço de interação social real
-que hoje ocupamos através dos nossos ecrãs.
+a que hoje se acede através dos ecrãs.
 
 Neste espaço, constituído tecnicamente por circuitos digitais e impulsos elétricos (que compõem os *bits*),
 desenvolvem-se práticas sociais reais: novas formas de trabalhar,
@@ -209,8 +209,8 @@ Beta** (a partir de 2025), a que pertencerão as crianças nascidas neste
 período. Por ser demasiado recente, ainda não existe investigação
 consistente sobre a sua relação com a tecnologia [@McCrindle2026].
 
-Esta distinção geracional será relevante quando estudarmos, no capítulo
-seguinte, a adoção e utilização das redes sociais: diferentes gerações
+Esta distinção geracional é relevante para compreender a adoção e a
+utilização das redes sociais: diferentes gerações
 não só usam plataformas diferentes, como as usam de formas
 qualitativamente distintas.
 

@@ -14,7 +14,40 @@ lang: en-GB
 
 ## Introduction {#sec-03-intro-en .unnumbered}
 
-The previous chapter introduced, alongside the social graph, a second model for organising information in social networks: the interest graph, in which the relevant proximity is no longer between people, but between a person and the topics they interact with (@sec-02-fourth-generation-en). This chapter develops that idea in two complementary directions. First, it shows how to formally analyse a social graph, through concrete metrics that make it possible to answer questions such as "who is most influential in this network?" or "how well connected is this community?". Then, it explores the other side of the coin, the organisation of content by topic, through *folksonomy*, the collective classification that today structures practically every social network through **hashtag**s.
+The previous chapter introduced, alongside the social graph, a second model for organising information in social networks: the interest graph, in which the relevant proximity is no longer between people, but between a person and the topics they interact with (@sec-02-fourth-generation-en). This chapter develops that idea in two complementary directions. First, it presents **Social Network Analysis**: its purpose, the method that turns a set of relationships between people into a sociogram, and the concrete metrics that answer questions such as "who is most influential in this network?", "who links groups that would otherwise not communicate?" or "how cohesive is this community?". A complete example, followed from start to finish, shows how each metric is calculated and, above all, how it is interpreted. Then, it explores the other side of the coin, the organisation of content by topic, through *folksonomy*, the collective classification that today structures practically every social network through **hashtag**s.
+
+## Social Network Analysis: Purpose and Method {#sec-03-method-en}
+
+**Social Network Analysis** (SNA) studies the relationships between people, rather than people in isolation. Most social studies describe each individual by their own characteristics: age, education, income, opinions. Network analysis adds a further question: who each person is connected to, and what place they occupy within that set of relationships [@WassermanFaust1994].
+
+This question matters because a person's position in the network has practical consequences. Two students of the same age, on the same degree and with the same marks can have very different experiences: one knows classmates from several groups and is among the first to hear about an internship or a grant; the other only relates to a small group and rarely receives new information. None of the individual characteristics explains this difference; what explains it is the **structure of relationships**.
+
+Network analysis began with Moreno's sociograms [@Moreno1934], drawn by hand to study small groups, such as school classes. Digital platforms changed the scale: every connection, follower or message is recorded automatically, which makes it possible today to analyse networks of millions of people.
+
+### What it is for {#sec-03-purpose-en}
+
+The questions network analysis answers arise in very different contexts:
+
+- **Education:** identifying students nobody chooses to work with, understanding whether a class is fragmented into closed groups, forming more balanced work teams.
+- **Organisations:** discovering who, in practice, moves information between departments, regardless of the formal organisation chart, and what knowledge is lost if that person leaves.
+- **Public health:** predicting where a contagious disease will spread fastest and who should be vaccinated or informed first.
+- **Digital platforms:** suggesting "people you may know", identifying influential accounts, detecting coordinated networks of fake accounts that artificially amplify a message.
+
+In all these cases, the answer does not lie in people's attributes, but in the way they are connected.
+
+### The method in five steps {#sec-03-steps-en}
+
+A social network analysis generally follows five steps:
+
+1. **Define the question and the boundary of the network.** Which relationship is of interest (friendship, collaboration, message exchange, co-authorship) and who belongs to the network (a class, a department, the followers of an account). The same class produces very different networks if the question is "who do you have lunch with?" or "who do you ask for help when studying?".
+2. **Collect the data.** This can be done through a **sociometric questionnaire**, Moreno's original method, in which each person states who they relate to; through **observation**; or from **digital records** (who follows whom, who replies to whom, who wrote with whom).
+3. **Represent the network.** The data is organised into an **adjacency matrix** and drawn as a **sociogram**, the graph that makes the structure visible.
+4. **Calculate the metrics.** In small networks, the calculations are done by hand; in larger networks, tools such as `Gephi` or the `NetworkX` library for the `Python` language are used.
+5. **Interpret.** Metrics describe positions, not motives: a value only becomes meaningful when read in the light of the initial question and the context of the group.
+
+To make each step concrete, the rest of this section follows a single example. In a class of nine students, identified from A to I, each student answered the question "Which two classmates would you like to do the next group assignment with?". There are, therefore, 18 choices in total, two per student.
+
+Sociometric data describes personal relationships and is, by nature, sensitive: knowing that a student was chosen by nobody is information that can hurt or stigmatise. The results should therefore be anonymised, as in this example, and used only for the purpose for which they were collected.
 
 ## Representing a Social Network as a Graph {#sec-03-graph-en}
 
@@ -24,13 +57,50 @@ An edge, that is, a connection between two nodes, can be **undirected**, when it
 
 ![The four types of relationship between two nodes of a social graph.](../assets/images/cap03/tipos-relacao.png){#fig-03-relations-en}
 
+Edges can also have a **weight**, which expresses the intensity of the relationship: the number of messages exchanged between two people, the number of times they interacted, or the number of works they wrote together. In a co-authorship network, for example, two authors who signed three chapters together have a connection of weight 3, stronger than that of two authors who collaborated only once. When the weight is not of interest, every edge counts as 1.
+
+### From adjacency matrix to sociogram {#sec-03-matrix-en}
+
+The simplest way to record the relationships in a network is the **adjacency matrix**: a table with one row and one column per person, in which the cell in row *i* and column *j* is 1 if *i* chose *j*, and is left empty otherwise. In the example class, the rows show who chooses and the columns who is chosen (@tbl-03-matrix-en).
+
+| Chooses ↓ / Chosen → | A | B | C | D | E | F | G | H | I |
+|:--------------------:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **A** |   | 1 | 1 |   |   |   |   |   |   |
+| **B** | 1 |   | 1 |   |   |   |   |   |   |
+| **C** | 1 | 1 |   |   |   |   |   |   |   |
+| **D** | 1 |   | 1 |   |   |   |   |   |   |
+| **E** |   |   | 1 |   |   | 1 |   |   |   |
+| **F** |   |   |   |   | 1 |   | 1 |   |   |
+| **G** |   |   |   |   |   | 1 |   | 1 |   |
+| **H** |   |   |   |   |   | 1 | 1 |   |   |
+| **I** | 1 |   |   | 1 |   |   |   |   |   |
+| **Total choices received** | **4** | **2** | **4** | **1** | **1** | **3** | **2** | **1** | **0** |
+
+: Adjacency matrix of the class. Each row adds up to 2, because each student could choose two classmates; the sum of each column is the number of times that student was chosen. {#tbl-03-matrix-en}
+
+The matrix already contains all the information about the network, but it is hard to read. The **sociogram** draws exactly the same data as a graph, and the structure becomes obvious: there are two distinct groups, connected only through student E, and there is one student, I, who chose classmates but was chosen by nobody (@fig-03-sociogram-en).
+
+![Sociogram of the example class. The size of each node is proportional to the number of times the student was chosen; the colour indicates the subnetwork they belong to; double arrows represent reciprocal choices and single arrows unreciprocated ones; the magenta connections are the bridges between the two subnetworks.](../assets/images/cap03/sociograma-turma.png){#fig-03-sociogram-en}
+
+In networks of a few dozen people, visual reading of the sociogram still works. In networks with thousands or millions of nodes, such as those of digital platforms, the drawing becomes an unreadable blur, and only metrics can describe the structure.
+
 ## Metrics for Social Network Analysis {#sec-03-metrics-en}
 
-Once represented as a graph, a social network can be analysed with quantitative metrics, a set of tools that make up **Social Network Analysis** (SNA). The most widely used metrics are as follows:
+Network analysis metrics fall into two groups: those that describe the **position of each node** (who is popular, who is central, who acts as a bridge) and those that describe the **network as a whole** (how connected, how cohesive, how fragmented). In the definitions that follow, *n* represents the number of nodes in the network; in the example class, *n* = 9. Unless otherwise stated, position metrics are calculated on each student's contacts, regardless of the direction of the choice: A and D are connected whether it was A who chose D or the other way round.
 
-### Path and distance {#sec-03-path-en}
+### Popularity: in-degree and out-degree {#sec-03-popularity-en}
 
-A **path** between two nodes is any sequence of edges connecting them, directly or indirectly. In a social network, there are typically many possible paths between any two nodes. **Distance** between two nodes is the length of the shortest path between them, measured by the number of edges traversed. It was precisely this notion of distance that Milgram's experiment sought to measure empirically (@sec-02-six-degrees-en): how many connections, on average, separate two randomly chosen people.
+The **degree** of a node is the number of connections it has. In directed graphs, it is useful to distinguish between connections arriving at a node and connections leaving it. **In-degree** is the number of connections arriving at a node, and is often used as a direct measure of popularity: on `Instagram` or `X`, it corresponds, essentially, to the number of followers. **Out-degree** is the number of connections leaving a node, corresponding, in that same example, to the number of accounts that user follows, and measures each person's **expansiveness**, their tendency to reach out to others.
+
+In the class, in-degree is the last row of the matrix: A and C are the most chosen (4 choices each), followed by F (3); I was chosen by nobody. Out-degree, on the other hand, says nothing in this example: it is 2 for everyone, because the question itself limited each student to two choices. This is a first lesson in method: the way data is collected determines what the metrics are able to reveal.
+
+### Node density {#sec-03-density-en}
+
+The **density of a node** measures the proportion between the number of relationships that node actually has and the number it could have, that is, its degree divided by *n* − 1 (all the other nodes in the network). If a node has only a third of the connections it could have, given the size of the network, its density is approximately 0.33 (@fig-03-density-en).
+
+![The same generic five-node network, with different active connections (solid) and possible but non-existent ones (dashed). Density can be calculated for any node; node D is used here as an example: 1, 2 and 4 out of its 4 possible connections, respectively.](../assets/images/cap03/densidade.png){#fig-03-density-en}
+
+In the class, A has contact with four classmates (B, C, D and I) out of a possible eight, a density of 4/8 = 0.50; I has contact with two (A and D), a density of 2/8 = 0.25. The density of a node should not be confused with the density of the network, a global metric presented further on (@sec-03-network-density-en).
 
 ### Centrality as Social Power {#sec-03-centrality-en}
 
@@ -40,19 +110,92 @@ A **path** between two nodes is any sequence of edges connecting them, directly 
 - **Betweenness centrality**: how often a node lies on the shortest path between two other nodes. A node with high betweenness centrality functions as a bridge or broker of information between parts of the network that would otherwise be more distant.
 - **Closeness centrality**: how close, on average, a node is to all other nodes in the network. A node with high closeness centrality can reach the rest of the network quickly.
 
-These three notions capture different aspects of "importance" in a network, and a node can be central by one measure and peripheral by another: a good example is an intermediary who links two distinct communities, but who, within each of them, has few direct connections, low degree centrality, but very high betweenness centrality (@fig-03-centrality-en).
+A fourth notion responds to a different intuition: what matters is not only how many contacts one has, but **who** those contacts are.
+
+- **Eigenvector centrality**: a node is more central the more central the nodes it is connected to [@Bonacich1987]. Being connected to two very well-connected people can be worth more than being connected to five isolated people. **PageRank**, the algorithm `Google` originally used to rank *web* pages, rests on the same principle: a page is important if it is linked to by other important pages [@BrinPage1998].
+
+These four notions capture different aspects of "importance" in a network, and a node can be central by one measure and peripheral by another: a good example is an intermediary who links two distinct communities, but who, within each of them, has few direct connections, low degree centrality, but very high betweenness centrality (@fig-03-centrality-en).
 
 ![Each type of centrality highlights a different kind of node: in a star, the node with the most direct connections; in a bridge between two groups, the node connecting the two halves, even with few connections; in a chain, the node positioned closest to all the others.](../assets/images/cap03/centralidade.png){#fig-03-centrality-en}
 
-### Popularity: in-degree and out-degree {#sec-03-popularity-en}
+Centrality values are usually presented on a scale from 0 to 1, which makes it possible to compare nodes with each other. In the class, each measure points to a different student:
 
-In directed graphs, it is useful to distinguish between connections arriving at a node and connections leaving it. **In-degree** is the number of connections arriving at a node, and is often used as a direct measure of popularity: on `Instagram` or `X`, it corresponds, essentially, to the number of followers. **Out-degree** is the number of connections leaving a node, corresponding, in that same example, to the number of accounts that user follows.
+- in **degree**, A and C are tied, with four contacts each;
+- in **betweenness**, C leads (0.59), but is closely followed by E (0.54), who has only two contacts: E lies on the only path between the two groups, so any information travelling from one group to the other has to pass through them;
+- in **closeness**, C leads again (0.57), being only a few steps away from everyone;
+- in **eigenvector**, A comes first (0.53), because all of A's contacts (B, C, D, I) are in the denser group, whereas C "spends" one of their connections on E, who has few contacts.
 
-### Density {#sec-03-density-en}
+### Clustering coefficient {#sec-03-clustering-en}
 
-The **density** of a node, or of a network, measures the proportion between the number of relationships that actually exist and the number of relationships that would be possible. If a node has only a third of the connections it could have, given the size of the network, its density is approximately 0.33 (@fig-03-density-en). High-density networks tend to spread information faster, but also to be more susceptible to echo-chamber effects, precisely because almost everyone is connected to almost everyone else.
+The **clustering coefficient** of a node measures the proportion of pairs of its contacts that are also connected to each other [@WattsStrogatz1998]. It translates the question "are my friends' friends also my friends?". A value of 1 indicates that the node belongs to a closed group, in which everyone knows everyone else; a value of 0 indicates that its contacts do not know each other, which is typical of someone who bridges different worlds.
 
-![The same generic five-node network, with different active connections (solid) and possible but non-existent ones (dashed). Density can be calculated for any node; node D is used here as an example: 1, 2 and 4 out of its 4 possible connections, respectively.](../assets/images/cap03/densidade.png){#fig-03-density-en}
+In the class, B has a coefficient of 1: their two contacts, A and C, are connected to each other. E has a coefficient of 0: their contacts, C and F, have no relationship with each other. This is the mechanism platforms exploit when they suggest "people you may know": if two people have many friends in common, they probably know each other too.
+
+### Path and distance {#sec-03-path-en}
+
+A **path** between two nodes is any sequence of edges connecting them, directly or indirectly. In a social network, there are typically many possible paths between any two nodes. **Distance** between two nodes is the length of the shortest path between them, measured by the number of edges traversed. It was precisely this notion of distance that Milgram's experiment sought to measure empirically (@sec-02-six-degrees-en): how many connections, on average, separate two randomly chosen people.
+
+Two global metrics derive from this notion. The **diameter** is the greatest distance between any two nodes in the network: it indicates how long, in the worst case, a piece of information takes to cross it. The **average distance** is the mean of the distances between all pairs of nodes. In the class, the diameter is 5 (from I to H, for example, the shortest path is I, A, C, E, F, H) and the average distance is about 2.4 steps.
+
+### Network density {#sec-03-network-density-en}
+
+**Network density** measures the proportion between the number of connections that exist in the whole network and the number that would be possible if everyone were connected to everyone. In a directed network with *n* nodes, each node can choose *n* − 1 others, so the maximum is *n* × (*n* − 1) connections. High-density networks tend to spread information faster, but also to be more susceptible to echo-chamber effects, precisely because almost everyone is connected to almost everyone else.
+
+In the class, there are 18 choices out of a possible 9 × 8 = 72, a density of 18/72 = 0.25. This value, however, requires careful interpretation: since each student could only choose two classmates, 0.25 is the maximum this question allowed. Density is useful for comparing networks collected in the same way (for example, the same class at the start and at the end of the semester), not for comparing networks collected under different rules.
+
+### Reciprocity {#sec-03-reciprocity-en}
+
+In directed networks, **reciprocity** is the proportion of connections that are returned: if A chooses B, does B also choose A? High reciprocity indicates balanced and stable relationships; low reciprocity is typical of popularity networks, such as follower networks, in which many follow a few without being followed back.
+
+In the class, 12 of the 18 choices are reciprocal (A and B, A and C, B and C, E and F, F and G, G and H), a reciprocity of 0.67. The six unreciprocated choices are equally informative: D chose A and C without being chosen by either, and I chose A and D without being chosen by anyone.
+
+### Components, cliques and subnetworks {#sec-03-subnetworks-en}
+
+A network may be split into several parts with no connection at all between them, called **components**. Within a component, more cohesive structures can be identified:
+
+- a **clique** is a set of nodes in which everyone is connected to everyone; the smallest is the triangle, with three nodes;
+- a **subnetwork** or **community** is a group of nodes with many connections among themselves and few to the outside; identifying them amounts to finding the "groups" in a network.
+
+The class forms a single component: all the students are connected, even if indirectly. It contains four three-member cliques (A-B-C, A-C-D, A-D-I and F-G-H) and splits into two subnetworks: {A, B, C, D, I} and {E, F, G, H}.
+
+### Strong ties, weak ties and structural holes {#sec-03-ties-en}
+
+The previous metrics take on a deeper meaning in the light of two classic theories in the sociology of networks.
+
+Sociologist Mark Granovetter showed that, counter-intuitively, new opportunities (a job, an idea, information not yet circulating in the group) come more often through **weak ties**, acquaintances and occasional contacts, than through **strong ties**, close friends and family [@Granovetter1973]. The reason is structural: close friends almost all know each other and know more or less the same things; it is weak ties that act as a **bridge** to other circles, with different information. A bridge is a connection whose removal splits the network into disconnected parts.
+
+Ronald Burt called **structural holes** the empty spaces between groups that do not communicate with each other, and showed that whoever occupies the position spanning them, the **broker**, has an advantage: they access information from both sides first and control what passes from one to the other [@Burt1992]. This is the position that betweenness centrality measures.
+
+In the class, the C-E and E-F connections are the only two bridges in the network, and E is the broker between the two subnetworks. The position has a practical consequence: if E is absent, or changes class, the two groups no longer have any connection at all.
+
+Finally, subnetworks rarely form by chance. **Homophily** is people's tendency to connect with others similar to themselves, in age, interests, opinions or background [@McPhersonEtAl2001]. It helps explain why closed groups form and, on digital platforms, why recommendation algorithms, by suggesting content and contacts similar to those one already has, tend to reinforce echo chambers.
+
+## Reading a Sociogram in Full {#sec-03-reading-en}
+
+Bringing together the position metrics of every student in a single table completes the picture of the class (@tbl-03-metrics-en).
+
+| Student | Choices received | Contacts | Node density | Betweenness | Closeness | Eigenvector | Clustering |
+|:-------:|:----------------:|:--------:|:------------:|:-----------:|:---------:|:-----------:|:----------:|
+| A | **4** | **4** | **0.50** | 0.14 | 0.47 | **0.53** | 0.50 |
+| B | 2 | 2 | 0.25 | 0.00 | 0.42 | 0.34 | 1.00 |
+| C | **4** | **4** | **0.50** | **0.59** | **0.57** | 0.50 | 0.33 |
+| D | 1 | 3 | 0.38 | 0.09 | 0.44 | 0.45 | 0.67 |
+| E | 1 | 2 | 0.25 | 0.54 | 0.53 | 0.20 | 0.00 |
+| F | 3 | 3 | 0.38 | 0.43 | 0.44 | 0.10 | 0.33 |
+| G | 2 | 2 | 0.25 | 0.00 | 0.33 | 0.05 | 1.00 |
+| H | 1 | 2 | 0.25 | 0.00 | 0.33 | 0.05 | 1.00 |
+| I | 0 | 2 | 0.25 | 0.00 | 0.35 | 0.32 | 1.00 |
+
+: Position metrics of the nine students, calculated on the class sociogram. In bold, the highest popularity and centrality values. {#tbl-03-metrics-en}
+
+Read together, the metrics tell a story that none of them tells on its own:
+
+- **A** is the most popular student in the larger group and the best connected to classmates who are themselves well connected (highest eigenvector centrality), but hardly acts as a bridge for anyone.
+- **C** is equally popular and, in addition, holds the most strategic position in the class: closest to everyone and appearing most often on the paths between classmates.
+- **E** is the most interesting case: chosen only once and with just two contacts, but the broker between the two subnetworks. An analysis based on popularity alone would never have singled them out.
+- **I** has an in-degree of zero: they chose two classmates and were chosen by neither. They are not isolated, since they have outgoing connections, but their position deserves attention.
+
+Interpretation nonetheless requires caution. Metrics describe positions in a network, not intentions or personal qualities. The question put to the class only collected positive choices: the fact that nobody chose I does not mean I is rejected, only that they are not among anyone's first preferences. Moreno, precisely for this reason, also asked "who would you **not** like to work with?" [@Moreno1934]. A good analysis always returns to the start of the method: what question was asked, to whom, and what the data does, or does not, allow one to conclude.
 
 ## Folksonomy: Collective Content Classification {#sec-03-folksonomy-en}
 
@@ -96,15 +239,19 @@ The hashtag also inherits the same tensions as classic *folksonomy*: on `Instagr
 
 This chapter developed two complementary tools for understanding the structure of social networks:
 
-1. A social network can be represented as a graph, with directed or undirected edges depending on the type of relationship
-2. The main analysis metrics are path, distance, centrality (degree, betweenness and closeness) [@Freeman1978], in-degree and out-degree, and density
-3. *Folksonomy* is the collective classification of content through free tagging, distinct from a hierarchical taxonomy defined a priori [@VanderWal2007]
-4. Broad and narrow folksonomy represent a trade-off between reach and precision of classification
-5. The hashtag is the contemporary form of *folksonomy*, present in practically every current social network [@IbbaEtAl2015]
+1. Social Network Analysis studies the structure of relationships between people and follows five steps: define the question and the boundary of the network, collect the data, represent it as an adjacency matrix and a sociogram, calculate metrics and interpret them [@WassermanFaust1994]
+2. A social network can be represented as a graph, with directed or undirected edges, weighted or unweighted, depending on the type of relationship
+3. The position metrics of a node are in-degree (popularity) and out-degree, node density, degree, betweenness, closeness [@Freeman1978] and eigenvector centrality [@Bonacich1987], and the clustering coefficient
+4. The global metrics of the network are average distance and diameter, network density, reciprocity, and the division into components, cliques and subnetworks
+5. Weak ties and the brokers who span structural holes link groups that would otherwise not communicate [@Granovetter1973; @Burt1992]
+6. Metrics describe positions, not intentions: their interpretation always depends on the question that produced the data
+7. *Folksonomy* is the collective classification of content through free tagging, distinct from a hierarchical taxonomy defined a priori [@VanderWal2007]
+8. Broad and narrow folksonomy represent a trade-off between reach and precision of classification
+9. The hashtag is the contemporary form of *folksonomy*, present in practically every current social network [@IbbaEtAl2015]
 
 ## Food for Thought {#sec-03-reflection-en}
 
-Think of a social network you use often: among the people you follow, can you identify someone with high betweenness centrality, that is, someone who links groups of people who would not otherwise be in contact?
+Think of a social network you use often: among the people you follow, can you identify someone with high betweenness centrality, that is, someone who links groups of people who would not otherwise be in contact? If you drew the sociogram of your class from the question "who do you ask for help when studying?", which students would you expect to find with high in-degree, and which with high betweenness? Would they be the same?
 
 And what about the hashtags you use or follow: are they broad folksonomy, a generic tag used by millions of people, or narrow folksonomy, specific to a small community? What problems of synonymy or morphological variation have you already noticed in hashtags (for example, two different spellings of the same topic splitting the same conversation into two)?
 

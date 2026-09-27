@@ -41,9 +41,9 @@ Each of these stages expanded the reach and speed of human communication, but it
 
 ### Social networks: a phenomenon that predates the technology {#sec-01-non-tech-networks-en}
 
-Before going further, it is worth dispelling a common misconception: the **social network**, as a concept, is not a technological invention. Organising oneself into networks of relationships, whether of family, kinship, friendship, neighbourhood or trade, is a structural characteristic of human beings as social animals, long predating any computer. The systematic scientific study of these networks dates back to 1934, when the psychiatrist Jacob Moreno laid the foundations of **sociometry** by mapping, through diagrams he called *sociograms*, the ties of attraction and rejection between individuals in a group, the same kind of graphical representation we will revisit in the next chapter to analyse digital social networks [@Moreno1934].
+Before going further, it is worth dispelling a common misconception: the **social network**, as a concept, is not a technological invention. Organising oneself into networks of relationships, whether of family, kinship, friendship, neighbourhood or trade, is a structural characteristic of human beings as social animals, long predating any computer. The systematic scientific study of these networks dates back to 1934, when the psychiatrist Jacob Moreno laid the foundations of **sociometry** by mapping, through diagrams he called *sociograms*, the ties of attraction and rejection between individuals in a group, the same kind of graphical representation used today to analyse digital social networks [@Moreno1934].
 
-What digital technology brought was not the concept of the social network, but rather a change in **scale, reach and medium**: networks that used to be limited to a few dozen face-to-face contacts can today extend to thousands of connections, mediated by platforms, and leave a trail of data that can be analysed in ways previously impossible. This distinction matters for the rest of this course: we study social *platforms*, the technological support, without forgetting that what they mediate is a human behaviour far older than they are.
+What digital technology brought was not the concept of the social network, but rather a change in **scale, reach and medium**: networks that used to be limited to a few dozen face-to-face contacts can today extend to thousands of connections, mediated by platforms, and leave a trail of data that can be analysed in ways previously impossible. This distinction matters: the object of study is social *platforms*, the technological support, without forgetting that what they mediate is a human behaviour far older than they are.
 
 ### So what does change, with technology? {#sec-01-castells-networked-society-en}
 
@@ -53,11 +53,11 @@ This idea has a direct consequence for the study of social and cooperative platf
 
 ### What to call this new society? {#sec-01-naming-en}
 
-There is no full consensus on the most appropriate name for the society emerging from this transition. The literature offers designations such as *information society*, *knowledge society*, *communication society*, *networked society* or *connected society*. Each of these designations points to a different perspective on the same transformation: information as raw material, knowledge as added value, communication as process, or network connection as structure. Throughout this document we will preferably use *networked society*, as it best captures the organisational structure underlying the platforms we will study.
+There is no full consensus on the most appropriate name for the society emerging from this transition. The literature offers designations such as *information society*, *knowledge society*, *communication society*, *networked society* or *connected society*. Each of these designations points to a different perspective on the same transformation: information as raw material, knowledge as added value, communication as process, or network connection as structure. Throughout this document, *networked society* is preferred, as it best captures the organisational structure underlying the platforms under study.
 
 ## Cyberspace {#sec-01-cyberspace-en}
 
-The term **cyberspace** was coined by science fiction writer William Gibson, first in the short story "Burning Chrome" (1982) and popularised in the novel *Neuromancer* (1984) [@Gibson1984]. The meaning attributed to the term has changed substantially since then: from the purely imaginary space of science fiction to the space of real social interaction we now occupy through our screens.
+The term **cyberspace** was coined by science fiction writer William Gibson, first in the short story "Burning Chrome" (1982) and popularised in the novel *Neuromancer* (1984) [@Gibson1984]. The meaning attributed to the term has changed substantially since then: from the purely imaginary space of science fiction to the space of real social interaction now accessed through screens.
 
 In this space, technically made up of digital circuits and electrical pulses (which make up *bits*), real social practices develop: new ways of working, socialising, learning and collaborating. It is precisely in this space that the social and cooperative platforms studied in this course are situated.
 
@@ -73,9 +73,9 @@ This vision materialises today in three interconnected phenomena:
 
 - **Internet of Things (IoT)** - everyday objects, previously static, become dynamic and interconnected: mobile phones, security cameras, cars and home appliances communicate with each other and with cloud services.
 - **Integration into the environment** - technology stops being concentrated in a single device and becomes distributed, discreet, present at multiple points in the environment
-- **Context-aware Web** - the results we receive from a search engine or an application increasingly depend on our location, language and specific circumstances
+- **Context-aware Web** - the results returned by a search engine or an application increasingly depend on the location, language and specific circumstances of whoever requests them
 
-These three phenomena have direct implications for the cooperative platforms we will study in the following blocks: collaboration is no longer confined to a screen and a specific moment, and can now happen anywhere, at any time, a topic that will be revisited in detail in the chapter on mobility and ubiquity.
+These three phenomena have direct implications for cooperative platforms: collaboration is no longer confined to a screen and a specific moment, and can now happen anywhere, at any time.
 
 ## Digital Generations and the "Digital Human Being" {#sec-01-generations-en}
 
@@ -91,7 +91,7 @@ More precisely, it is common today to distinguish several digital generations:
 
 As of this chapter, a new generation is already underway, **Generation Beta** (from 2025 onward), to which children born in this period will belong. Being too recent, there is not yet consistent research on its relationship with technology [@McCrindle2026].
 
-This generational distinction will be relevant when we study, in the next chapter, the adoption and use of social networks: different generations not only use different platforms, they use them in qualitatively different ways.
+This generational distinction is relevant to understanding the adoption and use of social networks: different generations not only use different platforms, they use them in qualitatively different ways.
 
 ## The Dark Side of Networked Society {#sec-01-risks-en}
 
@@ -121,9 +121,9 @@ Beyond the theoretical framing, it is important to situate this transition in co
 
 Connectivity is far from uniform. In high-income countries, Internet access approaches universality; in low-income countries, only 27% of the population is online. The same pattern repeats along other axes: 83% of the urban population uses the Internet, against 48% of the rural population; and, in terms of gender, 70% of men use the Internet worldwide, against 65% of women [@ITU2024]. A multidimensional **digital divide** therefore persists: geographic, economic, territorial and gender-based, which any analysis of social and cooperative platforms must take into account.
 
-It is worth cross-referencing this institutional source with the industry data we will use in the next chapter: the *Digital 2024* report by We Are Social/Meltwater, with analysis by Kepios, estimated, for January 2024, 5.35 billion Internet users (66.2% of the world's population) [@WeAreSocial2024], a value close to, but not identical to, the ITU's figure for that same year (68%). The differences between sources for the same period result from different collection methodologies (surveys versus administrative estimates), but the **convergence in order of magnitude** between two independent sources is, in itself, a relevant finding: it reinforces confidence in the reading that most of humanity is now connected.
+It is worth cross-referencing this institutional source with industry data: the *Digital 2024* report by We Are Social/Meltwater, with analysis by Kepios, estimated, for January 2024, 5.35 billion Internet users (66.2% of the world's population) [@WeAreSocial2024], a value close to, but not identical to, the ITU's figure for that same year (68%). The differences between sources for the same period result from different collection methodologies (surveys versus administrative estimates), but the **convergence in order of magnitude** between two independent sources is, in itself, a relevant finding: it reinforces confidence in the reading that most of humanity is now connected.
 
-This inequality of access is a structural fact that any analysis of social and cooperative platforms must take into account: the "networked society" is not a universally shared condition, but a transition that advances at very different rates depending on geographic, economic and social context. This data will be explored further in the next chapter, dedicated specifically to social network usage statistics.
+This inequality of access is a structural fact that any analysis of social and cooperative platforms must take into account: the "networked society" is not a universally shared condition, but a transition that advances at very different rates depending on geographic, economic and social context.
 
 ## Summary {#sec-01-summary-en}
 
