@@ -72,16 +72,16 @@ anterior a qualquer computador. O estudo científico sistemático destas
 redes remonta a 1934, quando o psiquiatra Jacob Moreno lançou as bases da
 **sociometria** ao mapear, através de diagramas a que chamou
 *sociogramas*, os laços de atração e rejeição entre indivíduos de um
-grupo, o mesmo tipo de representação gráfica que retomaremos no capítulo
-seguinte para analisar redes sociais digitais [@Moreno1934].
+grupo, o mesmo tipo de representação gráfica que hoje se usa para
+analisar redes sociais digitais [@Moreno1934].
 
 O que a tecnologia digital trouxe não foi o conceito de rede social, mas
 sim uma mudança de **escala, alcance e meio**: redes que antes se
 limitavam a algumas dezenas de contactos presenciais podem hoje
 estender-se a milhares de ligações, mediadas por plataformas, e deixam um
 rasto de dados que pode ser analisado de formas antes impossíveis. A
-distinção é importante para todo o resto desta unidade curricular:
-estudamos *plataformas* sociais, o suporte tecnológico, sem esquecer
+distinção é importante: o objeto de estudo são as *plataformas*
+sociais, o suporte tecnológico, sem esquecer
 que aquilo que elas medeiam é um comportamento humano bem mais antigo do
 que elas.
 
@@ -115,9 +115,9 @@ designações como *sociedade da informação*, *sociedade do conhecimento*,
 Cada uma destas designações aponta para uma perspetiva diferente da mesma
 transformação: a informação como matéria-prima, o conhecimento como valor
 acrescentado, a comunicação como processo, ou a ligação em rede como
-estrutura. Ao longo deste documento usaremos preferencialmente *sociedade em
+estrutura. Ao longo deste documento, usa-se preferencialmente *sociedade em
 rede*, por ser a que melhor captura a estrutura organizativa subjacente às
-plataformas que estudaremos.
+plataformas em estudo.
 
 ## O Ciberespaço {#sec-01-ciberespaco}
 
@@ -166,15 +166,14 @@ Esta visão concretiza-se hoje em três fenómenos interligados:
 - **Integração no ambiente** - a tecnologia deixa de estar concentrada num
   único dispositivo e passa a estar distribuída, discreta, presente em
   múltiplos pontos do ambiente
-- **Web sensível ao contexto** - os resultados que recebemos de um motor
-  de busca ou de uma aplicação dependem cada vez mais da nossa
-  localização, idioma e circunstância específica
+- **Web sensível ao contexto** - os resultados devolvidos por um motor
+  de busca ou por uma aplicação dependem cada vez mais da localização,
+  do idioma e da circunstância específica de quem os pede
 
 Estes três fenómenos têm implicações diretas para as plataformas
-cooperativas que estudaremos nos blocos seguintes: a colaboração deixa de
-estar confinada a um ecrã e a um momento específico, e passa a poder
-ocorrer em qualquer lugar, a qualquer momento, tema que se retomará em
-detalhe no capítulo sobre mobilidade e ubiquidade.
+cooperativas: a colaboração deixa de estar confinada a um ecrã e a um
+momento específico, e passa a poder ocorrer em qualquer lugar, a
+qualquer momento.
 
 ## Gerações Digitais e o "Ser Humano Digital" {#sec-01-geracoes}
 
@@ -309,8 +308,8 @@ portanto, um **fosso digital** multidimensional: geográfico, económico,
 territorial e de género, que qualquer análise de plataformas sociais e
 cooperativas deve ter em conta.
 
-Vale a pena cruzar esta fonte institucional com os dados do setor que
-usaremos no próximo capítulo: o relatório *Digital 2024* da We Are
+Vale a pena cruzar esta fonte institucional com dados do setor: o
+relatório *Digital 2024* da We Are
 Social/Meltwater, com análise da Kepios, estimava, para janeiro de 2024,
 5,35 mil milhões de utilizadores de Internet (66,2% da população mundial)
 [@WeAreSocial2024], um valor próximo, mas não idêntico, ao da ITU para
@@ -324,8 +323,7 @@ Esta desigualdade de acesso é um dado estrutural que qualquer análise de
 plataformas sociais e cooperativas deve ter em conta: a "sociedade em
 rede" não é uma condição universalmente partilhada, mas uma transição que
 avança a ritmos muito diferentes consoante o contexto geográfico,
-económico e social. Estes dados serão aprofundados no próximo capítulo,
-dedicado especificamente às estatísticas de utilização das redes sociais.
+económico e social.
 
 ## Síntese {#sec-01-sintese}
 
