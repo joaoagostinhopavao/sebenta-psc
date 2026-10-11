@@ -41,7 +41,7 @@ panels = [
     ("Clique", clique, ring),
 ]
 
-fig = plt.figure(figsize=(REFERENCE_WIDTH, 15.6), dpi=200)
+fig = plt.figure(figsize=(REFERENCE_WIDTH, 11.4), dpi=200)
 row_h = 1.0 / 3
 R = 0.31
 
@@ -50,11 +50,11 @@ for r, (title, edges, pos) in enumerate(panels):
     adj = {(u, v) for u, v in edges} | {(v, u) for u, v in edges}
 
     # título da linha
-    fig.text(0.04, bottom + row_h - 0.012, title, ha="left", va="top",
+    fig.text(0.04, bottom + row_h - 0.008, title, ha="left", va="top",
              fontsize=TITLE_SIZE, fontweight="bold", color=DARK)
 
     # matriz
-    axm = fig.add_axes([0.04, bottom + 0.02, 0.44, row_h - 0.07])
+    axm = fig.add_axes([0.04, bottom + 0.01, 0.44, row_h - 0.075])
     axm.set_xlim(-0.9, 5.05)
     axm.set_ylim(5.05, -0.9)
     axm.set_aspect("equal")
@@ -74,7 +74,7 @@ for r, (title, edges, pos) in enumerate(panels):
                          fontsize=NODE_LABEL_SIZE, color=MAGENTA, fontweight="bold")
 
     # grafo
-    axg = fig.add_axes([0.53, bottom + 0.02, 0.44, row_h - 0.07])
+    axg = fig.add_axes([0.53, bottom + 0.01, 0.44, row_h - 0.075])
     axg.set_xlim(-0.2, 3.4)
     axg.set_ylim(-0.25, 2.95)
     axg.set_aspect("equal")
