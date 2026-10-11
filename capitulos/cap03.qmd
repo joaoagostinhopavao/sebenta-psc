@@ -259,7 +259,7 @@ fraca da rede e, ao mesmo tempo, a única que liga os dois grupos, uma
 situação que a teoria dos laços fracos ajuda a interpretar
 (@sec-03-lacos).
 
-![Rede de mensagens. A espessura de cada ligação e o número sobre ela indicam o total de mensagens trocadas nos dois sentidos; a ligação tracejada, a magenta, é a mais fraca da rede e a única entre os dois grupos.](../assets/images/cap03/rede-mensagens.png){#fig-03-mensagens}
+![Rede de mensagens. A espessura de cada ligação e o número sobre ela indicam o total de mensagens trocadas nos dois sentidos; a ligação tracejada, a magenta, é a mais fraca da rede e a única entre os dois grupos.](../assets/images/cap03/rede-mensagens.png){#fig-03-mensagens fig-pos="H"}
 
 **Padrões na matriz.** Com alguma prática, a forma de uma rede
 reconhece-se diretamente na matriz, sem ser preciso desenhá-la
