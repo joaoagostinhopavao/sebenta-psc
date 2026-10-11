@@ -894,6 +894,7 @@ Figure&nbsp;3.7: Each type of centrality highlights a different kind of node: in
 <p><strong>Degree and node density: how many are reached directly.</strong> Degree corresponds to the number of subscribers of a <code>YouTube</code> channel or the number of friends of a <code>Facebook</code> profile, and it measures direct reach: the number of people who can see a post without anyone sharing it. The distribution is very unequal: a small number of accounts concentrate millions of connections, while the vast majority have few. Node density, on the other hand, loses its usefulness at platform scale: with billions of accounts, the fraction contacts ÷ (<em>n</em> − 1) is practically zero for everyone, even for a profile with 5,000 friends, the maximum <code>Facebook</code> allows a personal profile. For this reason, node density is calculated within a bounded group, such as a class, a <code>Facebook</code> group or the subscribers of a channel, where it once again shows what share of the group each person knows.</p>
 <p><strong>Betweenness: where information flows.</strong> On a platform, accounts cluster into communities: the supporters of a club, the players of a game, the followers of a topic. High betweenness belongs to those who connect communities that would otherwise not communicate, such as a content creator who collaborates with channels from other niches, or a user who belongs to two unrelated circles. It is through these accounts that a piece of news, a trend or a piece of misinformation passes from one community to another. If these bridges disappear, each community ends up hearing mostly from its own members, which favours the formation of echo chambers.</p>
 <p><strong>Closeness: how quickly everyone is reached.</strong> An account with high closeness is only a few steps away from all the others: what it posts can reach the whole network through a few successive shares, and it is also among the first to receive what circulates. These accounts are good starting points for a public health campaign or a product launch. In a large-scale network, however, distances are short for almost everyone, as Milgram’s experiment showed (<a href="cap02.html#sec-02-six-degrees-en" class="quarto-xref"><span>Section 2.1</span></a>), so the differences in closeness between accounts are small and only become informative when accounts within the same community are compared.</p>
+<p><strong>The social graph is still in use.</strong> The sociogram was born in the 1930s, but the structure it draws is still at the heart of many features of today’s platforms. <code>Facebook</code>’s “People You May Know” suggestions take into account, among other factors, mutual friends: this is the logic of the clustering coefficient, according to which two people with contacts in common tend to end up knowing each other. <code>LinkedIn</code> shows the degree of connection next to each profile, 1st, 2nd or 3rd, which is simply the distance in the social graph: a 2nd-degree connection is someone linked to one of your direct connections <span class="citation" data-cites="LinkedInGraus">(<a href="cap01.html#ref-LinkedInGraus" role="doc-biblioref">LinkedIn 2026</a>)</span>. In 2018, <code>Facebook</code> changed its feed to prioritise posts from friends and family over those from public pages <span class="citation" data-cites="Mosseri2018">(<a href="cap01.html#ref-Mosseri2018" role="doc-biblioref">Mosseri 2018</a>)</span>. When <code>Twitter</code>, now <code>X</code>, published the code of its recommendation algorithm in 2023, about half of the suggested posts came, on average, from accounts the user follows, ranked by a model that estimates the likelihood of interaction between two people <span class="citation" data-cites="Twitter2023">(<a href="cap01.html#ref-Twitter2023" role="doc-biblioref">Twitter Engineering 2023</a>)</span>. Measures against misinformation also act on the social graph: <code>WhatsApp</code> began allowing a message to be forwarded to only five chats at a time in 2019, and to a single chat for messages that have already been forwarded many times in 2020, slowing down how fast they spread through the network <span class="citation" data-cites="WhatsApp2019 WhatsApp2020">(<a href="cap01.html#ref-WhatsApp2019" role="doc-biblioref">WhatsApp 2019</a>, <a href="cap01.html#ref-WhatsApp2020" role="doc-biblioref">2020</a>)</span>. What has changed is that the social graph no longer stands alone: <code>TikTok</code> relies mainly on the interest graph, and the other platforms combine the two.</p>
 <p>There is also a practical issue. Calculating betweenness or closeness requires going through the paths between every pair of accounts, which, with billions of accounts, is impractical. In these networks, the values are estimated from samples of pairs or calculated within smaller communities. In short, degree tells how many people are reached directly, betweenness tells where information flows, and closeness tells how quickly everyone is reached.</p>
 </section>
 <section id="sec-03-clustering-en" class="level3" data-number="3.3.5">
@@ -1158,11 +1159,20 @@ Granovetter, Mark S. 1973. <span>‘The Strength of Weak Ties’</span>. <em>Ame
 <div id="ref-IbbaEtAl2015" class="csl-entry" role="listitem">
 Ibba, Simona, Matteo Orrù, Filippo Eros Pani, and Simone Porru. 2015. <span>‘Hashtag of Instagram: From Folksonomy to Complex Network’</span>. In <em>Proceedings of the 7th International Joint Conference on Knowledge Discovery, Knowledge Engineering and Knowledge Management (IC3K 2015), Volume 2: KEOD</em>, 279–84. SCITEPRESS.
 </div>
+<div id="ref-LinkedInGraus" class="csl-entry" role="listitem">
+LinkedIn. 2026. <span>‘Your Network and Degrees of Connection’</span>. 2026. <a href="https://www.linkedin.com/help/linkedin/answer/110">https://www.linkedin.com/help/linkedin/answer/110</a>.
+</div>
 <div id="ref-McPhersonEtAl2001" class="csl-entry" role="listitem">
 McPherson, Miller, Lynn Smith-Lovin, and James M. Cook. 2001. <span>‘Birds of a Feather: Homophily in Social Networks’</span>. <em>Annual Review of Sociology</em> 27: 415–44. <a href="https://doi.org/10.1146/annurev.soc.27.1.415">https://doi.org/10.1146/annurev.soc.27.1.415</a>.
 </div>
 <div id="ref-Moreno1934" class="csl-entry" role="listitem">
 Moreno, Jacob L. 1934. <em>Who Shall Survive? A New Approach to the Problem of Human Interrelations</em>. Washington, DC: Nervous; Mental Disease Publishing Co.
+</div>
+<div id="ref-Mosseri2018" class="csl-entry" role="listitem">
+Mosseri, Adam. 2018. <span>‘News Feed FYI: Bringing People Closer Together’</span>. 2018. <a href="https://about.fb.com/news/2018/01/news-feed-fyi-bringing-people-closer-together/">https://about.fb.com/news/2018/01/news-feed-fyi-bringing-people-closer-together/</a>.
+</div>
+<div id="ref-Twitter2023" class="csl-entry" role="listitem">
+Twitter Engineering. 2023. <span>‘Twitter’s Recommendation Algorithm’</span>. 2023. <a href="https://blog.x.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm">https://blog.x.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm</a>.
 </div>
 <div id="ref-VanderWal2007" class="csl-entry" role="listitem">
 Vander Wal, Thomas. 2007. <span>‘Folksonomy Coinage and Definition’</span>. <a href="http://www.vanderwal.net/folksonomy.html">http://www.vanderwal.net/folksonomy.html</a>.
@@ -1172,6 +1182,12 @@ Wasserman, Stanley, and Katherine Faust. 1994. <em>Social Network Analysis: Meth
 </div>
 <div id="ref-WattsStrogatz1998" class="csl-entry" role="listitem">
 Watts, Duncan J., and Steven H. Strogatz. 1998. <span>‘Collective Dynamics of ’Small-World’ Networks’</span>. <em>Nature</em> 393: 440–42. <a href="https://doi.org/10.1038/30918">https://doi.org/10.1038/30918</a>.
+</div>
+<div id="ref-WhatsApp2019" class="csl-entry" role="listitem">
+WhatsApp. 2019. <span>‘More Changes to Forwarding’</span>. 2019. <a href="https://blog.whatsapp.com/more-changes-to-forwarding">https://blog.whatsapp.com/more-changes-to-forwarding</a>.
+</div>
+<div id="ref-WhatsApp2020" class="csl-entry" role="listitem">
+———. 2020. <span>‘Keeping WhatsApp Personal and Private’</span>. 2020. <a href="https://blog.whatsapp.com/Keeping-WhatsApp-Personal-and-Private">https://blog.whatsapp.com/Keeping-WhatsApp-Personal-and-Private</a>.
 </div>
 </div>
 

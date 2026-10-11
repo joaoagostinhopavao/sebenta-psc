@@ -228,6 +228,29 @@ as Milgram's experiment showed (@sec-02-six-degrees-en), so the
 differences in closeness between accounts are small and only become
 informative when accounts within the same community are compared.
 
+**The social graph is still in use.** The sociogram was born in the
+1930s, but the structure it draws is still at the heart of many features
+of today's platforms. `Facebook`'s "People You May Know" suggestions take
+into account, among other factors, mutual friends: this is the logic of
+the clustering coefficient, according to which two people with contacts
+in common tend to end up knowing each other. `LinkedIn` shows the degree
+of connection next to each profile, 1st, 2nd or 3rd, which is simply the
+distance in the social graph: a 2nd-degree connection is someone linked
+to one of your direct connections [@LinkedInGraus]. In 2018, `Facebook`
+changed its feed to prioritise posts from friends and family over
+those from public pages [@Mosseri2018]. When `Twitter`, now `X`,
+published the code of its recommendation algorithm in 2023, about half
+of the suggested posts came, on average, from accounts the user follows,
+ranked by a model that estimates the likelihood of interaction between
+two people [@Twitter2023]. Measures against misinformation also act on
+the social graph: `WhatsApp` began allowing a message to be forwarded to
+only five chats at a time in 2019, and to a single chat for messages
+that have already been forwarded many times in 2020, slowing down how
+fast they spread through the network [@WhatsApp2019; @WhatsApp2020].
+What has changed is that the social graph no longer stands alone:
+`TikTok` relies mainly on the interest graph, and the other platforms
+combine the two.
+
 There is also a practical issue. Calculating betweenness or closeness
 requires going through the paths between every pair of accounts, which,
 with billions of accounts, is impractical. In these networks, the values

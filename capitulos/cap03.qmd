@@ -454,6 +454,29 @@ Milgram (@sec-02-seis-graus), pelo que as diferenças de proximidade
 entre contas são pequenas e só se tornam informativas quando se
 comparam contas dentro da mesma comunidade.
 
+**O grafo social continua em uso.** O sociograma nasceu nos anos 1930,
+mas a estrutura que desenha continua no centro de muitas funções das
+plataformas atuais. As sugestões de "Pessoas que talvez conheças" do
+`Facebook` têm em conta, entre outros fatores, os amigos em comum: é a
+lógica do coeficiente de agrupamento, segundo a qual duas pessoas com
+contactos em comum tendem a vir a conhecer-se. O `LinkedIn` mostra junto
+de cada perfil o grau de ligação, 1.º, 2.º ou 3.º, que não é mais do que
+a distância no grafo social: um contacto de 2.º grau é alguém ligado a
+um dos contactos diretos [@LinkedInGraus]. Em 2018, o `Facebook`
+alterou o *feed* para dar prioridade às publicações de amigos e
+familiares em relação às de páginas públicas [@Mosseri2018]. Quando o
+`Twitter`, hoje `X`, publicou em 2023 o código do seu algoritmo de
+recomendação, cerca de metade das publicações sugeridas vinha, em média,
+de contas seguidas pelo utilizador, ordenadas por um modelo que estima a
+probabilidade de interação entre duas pessoas [@Twitter2023]. Também as
+medidas contra a desinformação atuam sobre o grafo social: o `WhatsApp`
+passou a permitir reencaminhar uma mensagem para cinco conversas de cada
+vez, em 2019, e para uma só conversa no caso das mensagens que já
+circularam muito, em 2020, travando a velocidade a que se espalham pela
+rede [@WhatsApp2019; @WhatsApp2020]. O que mudou foi que o grafo social
+deixou de estar sozinho: o `TikTok` assenta sobretudo no grafo de
+interesses, e as restantes plataformas combinam os dois.
+
 Há ainda uma questão prática. Calcular a intermediação ou a proximidade
 exige percorrer os caminhos entre todos os pares de contas, o que, com
 milhares de milhões de contas, é impraticável. Nestas redes, os valores
