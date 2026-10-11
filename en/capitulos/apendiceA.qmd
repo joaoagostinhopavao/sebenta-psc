@@ -198,50 +198,85 @@ need up to five steps to reach a classmate.
 
 Leaving out the student, the other eight classmates form
 8 × 7 ÷ 2 = 28 pairs; each pair counts once, because the pair A-B is the
-same as the pair B-A. For each pair, check whether the shortest path
-between the two goes through the student: if it does, the pair counts
-1; if there are two shortest paths and only one goes through the
-student, it counts ½. Betweenness is the total divided by 28. Going
-through all 28 pairs for each of the nine students would be slow, but
-three observations make the calculation quick.
+same as the pair B-A. To avoid missing any, the pairs are laid out in a
+**pair grid**:
 
-**Who has zero betweenness.** If all of a student's contacts are
-connected to each other, nobody needs to go through that student,
-because there is always an equally short or shorter path that avoids
-them. This applies to four students:
+1. The rows and the columns list the eight classmates, without the
+   student being analysed.
+2. Only the upper half of the grid, above the diagonal, is filled in:
+   7 + 6 + 5 + 4 + 3 + 2 + 1 = 28 cells, one per pair.
+3. Each cell gets 1 if the shortest path between the two goes through
+   the student, ½ if there are two shortest paths and only one goes
+   through the student, and 0 if it does not.
+4. Betweenness is the sum of the cells divided by 28.
 
-- B, whose contacts, A and C, are connected to each other;
-- G, whose contacts, F and H, are connected to each other;
-- H, whose contacts, F and G, are connected to each other;
-- I, whose contacts, A and D, are connected to each other.
+To decide each cell, it helps to cover the student in the sociogram and
+see who becomes separated from whom.
 
-The betweenness of B, G, H and I is therefore 0.
+For student E, covering E splits the network into {A, B, C, D, I} and
+{F, G, H}. Any pair with one classmate on each side has to go through E
+and is worth 1: these are rows A, B, C and D in columns F, G and H
+(12 cells) and column I in rows F, G and H (3 cells). The remaining
+pairs reach each other without E and are worth 0
+(@tbl-apA-grid-E-en).
 
-**The bridges.** When a student is the only passage between two parts of
-the network, every pair with one member on each side goes through that
-student, and it is enough to multiply the number of students on each
-side:
+|   | A | B | C | D | F | G | H | I |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **A** | — | 0 | 0 | 0 | **1** | **1** | **1** | 0 |
+| **B** |   | — | 0 | 0 | **1** | **1** | **1** | 0 |
+| **C** |   |   | — | 0 | **1** | **1** | **1** | 0 |
+| **D** |   |   |   | — | **1** | **1** | **1** | 0 |
+| **F** |   |   |   |   | — | 0 | 0 | **1** |
+| **G** |   |   |   |   |   | — | 0 | **1** |
+| **H** |   |   |   |   |   |   | — | **1** |
+| **I** |   |   |   |   |   |   |   | — |
 
-- E separates {A, B, C, D, I} from {F, G, H}: 5 × 3 = 15 pairs, so the
-  betweenness is 15 ÷ 28 ≈ 0.54;
-- F separates {A, B, C, D, E, I} from {G, H}: 6 × 2 = 12 pairs, so the
-  betweenness is 12 ÷ 28 ≈ 0.43;
-- C separates {A, B, D, I} from {E, F, G, H}: 4 × 4 = 16 pairs. There is
-  also the pair B-D, which has two shortest paths, B-A-D and B-C-D, of
-  which only one goes through C, so it counts ½. The total is
-  16 + ½ = 16.5, and the betweenness is 16.5 ÷ 28 ≈ 0.59.
+: Pair grid for student E. The sum of the cells is 12 + 3 = 15, and the betweenness is 15 ÷ 28 ≈ 0.54. {#tbl-apA-grid-E-en}
 
-**The cases with halves.** To go from I to C, E, F, G or H there are always
-two equally short paths, one through A and the other through D (for
-example, I-A-C and I-D-C). Each of these five pairs counts ½ for A and
-½ for D.
+For student C, covering C splits the network into {A, B, D, I} and
+{E, F, G, H}, and the 4 × 4 = 16 pairs with one classmate on each side
+are worth 1. There is also the cell B-D, worth ½: between B and D there
+are two shortest paths, B-A-D and B-C-D, and only one goes through C
+(@tbl-apA-grid-C-en).
 
-- For A, the pair B-I counts 1, because the only shortest path is
-  B-A-I; the pair B-D counts ½ (B-A-D or B-C-D); the pairs C-I, E-I,
-  F-I, G-I and H-I count ½ each, that is, 5 × ½ = 2.5. The total is
+|   | A | B | D | E | F | G | H | I |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **A** | — | 0 | 0 | **1** | **1** | **1** | **1** | 0 |
+| **B** |   | — | **½** | **1** | **1** | **1** | **1** | 0 |
+| **D** |   |   | — | **1** | **1** | **1** | **1** | 0 |
+| **E** |   |   |   | — | 0 | 0 | 0 | **1** |
+| **F** |   |   |   |   | — | 0 | 0 | **1** |
+| **G** |   |   |   |   |   | — | 0 | **1** |
+| **H** |   |   |   |   |   |   | — | **1** |
+| **I** |   |   |   |   |   |   |   | — |
+
+: Pair grid for student C. The sum of the cells is 16 + ½ = 16.5, and the betweenness is 16.5 ÷ 28 ≈ 0.59. {#tbl-apA-grid-C-en}
+
+For the other students, the same grid is quick to fill in thanks to
+three observations.
+
+**Grids with only zeros.** If all of a student's contacts are connected
+to each other, nobody needs to go through that student, because there
+is always an equally short or shorter path that avoids them. This
+applies to B, whose contacts are A and C; to G, with F and H; to H, with
+F and G; and to I, with A and D. The betweenness of these four students
+is 0.
+
+**The bridge F.** Covering F separates {A, B, C, D, E, I} from {G, H},
+so 6 × 2 = 12 cells are worth 1 and the betweenness is
+12 ÷ 28 ≈ 0.43.
+
+**The halves of A and D.** To go from I to C, E, F, G or H there are
+always two equally short paths, one through A and the other through D
+(for example, I-A-C and I-D-C). These five cells are worth ½ in both
+grids.
+
+- In A's grid, the cell B-I is worth 1, because the only shortest path
+  is B-A-I; the cell B-D is worth ½ (B-A-D or B-C-D); and the five
+  cells with I are worth ½ each, that is, 2.5. The sum is
   1 + ½ + 2.5 = 4, and the betweenness is 4 ÷ 28 ≈ 0.14.
-- For D, only the pairs C-I, E-I, F-I, G-I and H-I count, with ½ each.
-  The total is 5 × ½ = 2.5, and the betweenness is 2.5 ÷ 28 ≈ 0.09.
+- In D's grid, only the five cells with I have a value, ½ each. The
+  sum is 2.5, and the betweenness is 2.5 ÷ 28 ≈ 0.09.
 
 ### What the results show {#sec-apA-conclusions-en}
 

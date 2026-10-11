@@ -198,48 +198,81 @@ cinco passos para alcançar um colega.
 
 Sem contar com o próprio aluno, os outros oito colegas formam
 8 × 7 ÷ 2 = 28 pares; cada par conta uma vez, porque o par A-B é o
-mesmo que o par B-A. Para cada par, verifica-se se o caminho mais curto
-entre os dois passa pelo aluno: se passa, o par conta 1; se houver dois
-caminhos mais curtos e só um passar pelo aluno, conta ½. A
-intermediação é o total contado dividido por 28. Percorrer os 28 pares
-de cada um dos nove alunos seria moroso, mas três observações tornam o
-cálculo rápido.
+mesmo que o par B-A. Para não perder nenhum, organizam-se os pares numa
+**grelha de pares**:
 
-**Quem tem intermediação nula.** Se os contactos de um aluno estão todos
+1. Nas linhas e nas colunas escrevem-se os oito colegas, sem o aluno
+   que se está a tratar.
+2. Preenche-se só a metade de cima da grelha, acima da diagonal:
+   7 + 6 + 5 + 4 + 3 + 2 + 1 = 28 casas, uma por par.
+3. Em cada casa escreve-se 1 se o caminho mais curto entre os dois
+   passa pelo aluno, ½ se há dois caminhos mais curtos e só um passa
+   por ele, e 0 se não passa.
+4. A intermediação é a soma das casas dividida por 28.
+
+Para decidir cada casa, ajuda tapar o aluno no sociograma e ver quem
+fica separado de quem.
+
+No caso do aluno E, tapar E parte a rede em {A, B, C, D, I} e
+{F, G, H}. Qualquer par com um colega de cada lado tem de passar por E
+e vale 1: são as linhas A, B, C e D nas colunas F, G e H (12 casas) e a
+coluna I nas linhas F, G e H (3 casas). Os restantes pares chegam um ao
+outro sem E e valem 0 (@tbl-apA-grelha-E).
+
+|   | A | B | C | D | F | G | H | I |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **A** | — | 0 | 0 | 0 | **1** | **1** | **1** | 0 |
+| **B** |   | — | 0 | 0 | **1** | **1** | **1** | 0 |
+| **C** |   |   | — | 0 | **1** | **1** | **1** | 0 |
+| **D** |   |   |   | — | **1** | **1** | **1** | 0 |
+| **F** |   |   |   |   | — | 0 | 0 | **1** |
+| **G** |   |   |   |   |   | — | 0 | **1** |
+| **H** |   |   |   |   |   |   | — | **1** |
+| **I** |   |   |   |   |   |   |   | — |
+
+: Grelha de pares do aluno E. A soma das casas é 12 + 3 = 15, e a intermediação é 15 ÷ 28 ≈ 0,54. {#tbl-apA-grelha-E}
+
+No caso do aluno C, tapar C parte a rede em {A, B, D, I} e
+{E, F, G, H}, e os 4 × 4 = 16 pares com um colega de cada lado valem 1.
+Há ainda a casa B-D, que vale ½: entre B e D há dois caminhos mais
+curtos, B-A-D e B-C-D, e só um passa por C (@tbl-apA-grelha-C).
+
+|   | A | B | D | E | F | G | H | I |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **A** | — | 0 | 0 | **1** | **1** | **1** | **1** | 0 |
+| **B** |   | — | **½** | **1** | **1** | **1** | **1** | 0 |
+| **D** |   |   | — | **1** | **1** | **1** | **1** | 0 |
+| **E** |   |   |   | — | 0 | 0 | 0 | **1** |
+| **F** |   |   |   |   | — | 0 | 0 | **1** |
+| **G** |   |   |   |   |   | — | 0 | **1** |
+| **H** |   |   |   |   |   |   | — | **1** |
+| **I** |   |   |   |   |   |   |   | — |
+
+: Grelha de pares do aluno C. A soma das casas é 16 + ½ = 16,5, e a intermediação é 16,5 ÷ 28 ≈ 0,59. {#tbl-apA-grelha-C}
+
+Para os outros alunos, a mesma grelha preenche-se depressa com três
+observações.
+
+**Grelhas só com zeros.** Se os contactos de um aluno estão todos
 ligados entre si, ninguém precisa de passar por ele, porque há sempre
-um caminho igual ou mais curto que o evita. É o caso de quatro alunos:
+um caminho igual ou mais curto que o evita. É o caso de B, cujos
+contactos são A e C; de G, com F e H; de H, com F e G; e de I, com A e
+D. A intermediação destes quatro alunos é 0.
 
-- B, cujos contactos, A e C, estão ligados entre si;
-- G, cujos contactos, F e H, estão ligados entre si;
-- H, cujos contactos, F e G, estão ligados entre si;
-- I, cujos contactos, A e D, estão ligados entre si.
+**A ponte F.** Tapar F separa {A, B, C, D, E, I} de {G, H}, pelo que
+6 × 2 = 12 casas valem 1 e a intermediação é 12 ÷ 28 ≈ 0,43.
 
-A intermediação de B, G, H e I é, por isso, 0.
+**As metades de A e D.** Para ir de I até C, E, F, G ou H há sempre
+dois caminhos igualmente curtos, um através de A e outro através de D
+(por exemplo, I-A-C e I-D-C). Essas cinco casas valem ½ nas duas
+grelhas.
 
-**As pontes.** Quando um aluno é a única passagem entre duas partes da
-rede, todos os pares com um elemento de cada lado passam por ele, e
-basta multiplicar o número de alunos de cada lado:
-
-- E separa {A, B, C, D, I} de {F, G, H}: 5 × 3 = 15 pares, e a
-  intermediação é 15 ÷ 28 ≈ 0,54;
-- F separa {A, B, C, D, E, I} de {G, H}: 6 × 2 = 12 pares, e a
-  intermediação é 12 ÷ 28 ≈ 0,43;
-- C separa {A, B, D, I} de {E, F, G, H}: 4 × 4 = 16 pares. Falta ainda
-  o par B-D, que tem dois caminhos mais curtos, B-A-D e B-C-D, dos
-  quais só um passa por C, pelo que conta ½. O total é 16 + ½ = 16,5, e
-  a intermediação é 16,5 ÷ 28 ≈ 0,59.
-
-**Os casos com metades.** Para ir de I até C, E, F, G ou H há sempre dois
-caminhos igualmente curtos, um através de A e outro através de D (por
-exemplo, I-A-C e I-D-C). Cada um desses cinco pares conta ½ para A e ½
-para D.
-
-- Para A, o par B-I conta 1, porque o único caminho mais curto é
-  B-A-I; o par B-D conta ½ (B-A-D ou B-C-D); os pares C-I, E-I, F-I,
-  G-I e H-I contam ½ cada, ou seja, 5 × ½ = 2,5. O total é
-  1 + ½ + 2,5 = 4, e a intermediação é 4 ÷ 28 ≈ 0,14.
-- Para D, contam apenas os pares C-I, E-I, F-I, G-I e H-I, com ½ cada.
-  O total é 5 × ½ = 2,5, e a intermediação é 2,5 ÷ 28 ≈ 0,09.
+- Na grelha de A, a casa B-I vale 1, porque o único caminho mais curto
+  é B-A-I; a casa B-D vale ½ (B-A-D ou B-C-D); e as cinco casas com I
+  valem ½ cada, ou seja, 2,5. A soma é 1 + ½ + 2,5 = 4, e a
+  intermediação é 4 ÷ 28 ≈ 0,14.
+- Na grelha de D, só as cinco casas com I têm valor, ½ cada. A soma é
+  2,5, e a intermediação é 2,5 ÷ 28 ≈ 0,09.
 
 ### O que os resultados mostram {#sec-apA-conclusoes}
 
