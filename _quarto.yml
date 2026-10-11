@@ -101,6 +101,12 @@ format:
         \definecolor{chapnum}{HTML}{5c0f52}
         \definecolor{chaptxt}{HTML}{2a0a26}
         \KOMAoption{chapterprefix}{false}
+        \usepackage{scrlayer-scrpage}
+        \automark[chapter]{chapter}
+        \clearpairofpagestyles
+        \chead{\leftmark}
+        \cfoot*{\pagemark}
+        \pagestyle{scrheadings}
         \makeatletter
         \newcommand{\chapheroname}{%
           \ifcase\c@chapter\relax
