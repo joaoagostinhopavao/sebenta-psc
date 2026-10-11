@@ -1,0 +1,257 @@
+---
+title: "Exercício Resolvido: Métricas da Rede de uma Turma"
+author: "João Pavão"
+date: 2026-10-11
+lang: pt-PT
+---
+
+```{=html}
+<div class="hero hero-chapter" style="background-image: linear-gradient(to top, rgba(31,10,46,0.88) 0%, rgba(31,10,46,0.6) 20%, rgba(31,10,46,0.15) 45%, rgba(31,10,46,0) 65%), url('../assets/images/heroes/cap03.jpg');">
+  <div class="hero-badge">Apêndice A</div>
+  <h1>Exercício Resolvido: Métricas da Rede de uma Turma</h1>
+</div>
+```
+
+Este apêndice propõe um exercício de cálculo das métricas de posição
+apresentadas na @sec-03-metricas, aplicado à turma de nove alunos usada
+como exemplo nesse capítulo. Está organizado em três partes: o
+enunciado, com os dados e uma tabela por preencher; as soluções, para
+conferir os resultados; e a resolução completa, passo a passo, que
+mostra como se chega a cada valor. Recomenda-se tentar resolver o
+exercício antes de consultar as duas últimas partes.
+
+## Enunciado {#sec-apA-enunciado}
+
+Foi feita a seguinte pergunta aos nove alunos de uma turma, identificados
+pelas letras A a I: "Com que dois colegas gostarias de fazer o próximo
+trabalho de grupo?". Cada aluno fez duas escolhas, num total de 18. A
+matriz de adjacência regista essas escolhas: a linha indica quem
+escolhe e a coluna quem é escolhido (@tbl-apA-matriz).
+
+| Escolhe ↓ / Escolhido → | A | B | C | D | E | F | G | H | I |
+|:-----------------------:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **A** |   | 1 | 1 |   |   |   |   |   |   |
+| **B** | 1 |   | 1 |   |   |   |   |   |   |
+| **C** | 1 | 1 |   |   |   |   |   |   |   |
+| **D** | 1 |   | 1 |   |   |   |   |   |   |
+| **E** |   |   | 1 |   |   | 1 |   |   |   |
+| **F** |   |   |   |   | 1 |   | 1 |   |   |
+| **G** |   |   |   |   |   | 1 |   | 1 |   |
+| **H** |   |   |   |   |   | 1 | 1 |   |   |
+| **I** | 1 |   |   | 1 |   |   |   |   |   |
+
+: Matriz de adjacência da turma. Cada linha soma 2, porque cada aluno escolheu dois colegas. {#tbl-apA-matriz}
+
+O sociograma desenha os mesmos dados como grafo (@fig-apA-sociograma).
+
+![Sociograma da turma. O tamanho de cada nó é proporcional ao número de vezes que o aluno foi escolhido; a cor indica a sub-rede a que pertence; as setas duplas representam escolhas recíprocas e as simples escolhas não retribuídas; as ligações a magenta são as pontes entre as duas sub-redes.](../assets/images/cap03/sociograma-turma.png){#fig-apA-sociograma}
+
+Os cálculos usam as seguintes definições, em que *n* = 9 é o número de
+alunos e cada aluno tem, por isso, *n* − 1 = 8 colegas:
+
+- **Escolhas recebidas:** número de colegas que escolheram o aluno.
+- **Contactos:** colegas ligados ao aluno, em qualquer sentido. Uma
+  escolha recíproca (seta dupla) conta como um único contacto.
+- **Distância:** número de passos do caminho mais curto entre dois
+  alunos, ignorando o sentido das setas.
+- **Densidade do nó** = contactos ÷ (*n* − 1) = contactos ÷ 8.
+- **Intermediação** = número de pares de colegas cujo caminho mais
+  curto passa pelo aluno ÷ 28. Os 28 pares resultam de 8 × 7 ÷ 2: são
+  todos os pares que se formam com os outros oito colegas. Se um par
+  tiver dois caminhos mais curtos e só um passar pelo aluno, esse par
+  conta ½.
+- **Proximidade** = (*n* − 1) ÷ soma das distâncias = 8 ÷ soma das
+  distâncias do aluno a cada um dos outros oito.
+
+Pretende-se preencher a tabela seguinte (@tbl-apA-exercicio).
+
+| Aluno | Escolhas recebidas | Contactos | Densidade do nó | Intermediação | Proximidade |
+|:-----:|:------------------:|:---------:|:---------------:|:-------------:|:-----------:|
+| A | | | | | |
+| B | | | | | |
+| C | | | | | |
+| D | | | | | |
+| E | | | | | |
+| F | | | | | |
+| G | | | | | |
+| H | | | | | |
+| I | | | | | |
+
+: Tabela a preencher com as métricas de cada aluno. {#tbl-apA-exercicio}
+
+## Soluções {#sec-apA-solucoes}
+
+A tabela completa apresenta, para cada métrica, a fração e o valor
+arredondado a duas casas decimais (@tbl-apA-solucoes).
+
+| Aluno | Escolhas recebidas | Contactos | Densidade do nó | Intermediação | Proximidade |
+|:-----:|:-----------:|:--------:|:--------------:|:------------------:|:-------------:|
+| A | 4 | 4 | 4/8 = 0,50 | 4/28 ≈ 0,14 | 8/17 ≈ 0,47 |
+| B | 2 | 2 | 2/8 = 0,25 | 0/28 = 0,00 | 8/19 ≈ 0,42 |
+| C | 4 | 4 | 4/8 = 0,50 | 16,5/28 ≈ 0,59 | 8/14 ≈ 0,57 |
+| D | 1 | 3 | 3/8 ≈ 0,38 | 2,5/28 ≈ 0,09 | 8/18 ≈ 0,44 |
+| E | 1 | 2 | 2/8 = 0,25 | 15/28 ≈ 0,54 | 8/15 ≈ 0,53 |
+| F | 3 | 3 | 3/8 ≈ 0,38 | 12/28 ≈ 0,43 | 8/18 ≈ 0,44 |
+| G | 2 | 2 | 2/8 = 0,25 | 0/28 = 0,00 | 8/24 ≈ 0,33 |
+| H | 1 | 2 | 2/8 = 0,25 | 0/28 = 0,00 | 8/24 ≈ 0,33 |
+| I | 0 | 2 | 2/8 = 0,25 | 0/28 = 0,00 | 8/23 ≈ 0,35 |
+
+: Soluções do exercício: métricas de posição dos nove alunos. {#tbl-apA-solucoes}
+
+## Resolução Passo a Passo {#sec-apA-resolucao}
+
+### Passo 1: escolhas recebidas {#sec-apA-passo1}
+
+Na matriz, somam-se os 1 da **coluna** de cada aluno. No sociograma, o
+mesmo valor obtém-se contando as pontas de seta que chegam ao aluno
+(@tbl-apA-recebidas).
+
+| Aluno | Escolhido por | Escolhas recebidas |
+|:-----:|:-------------:|:------------------:|
+| A | B, C, D, I | 4 |
+| B | A, C | 2 |
+| C | A, B, D, E | 4 |
+| D | I | 1 |
+| E | F | 1 |
+| F | E, G, H | 3 |
+| G | F, H | 2 |
+| H | G | 1 |
+| I | ninguém | 0 |
+
+: Escolhas recebidas por cada aluno. {#tbl-apA-recebidas}
+
+Como verificação, a soma das escolhas recebidas tem de ser igual ao
+total de escolhas feitas: 4 + 2 + 4 + 1 + 1 + 3 + 2 + 1 + 0 = 18.
+
+### Passo 2: contactos e densidade do nó {#sec-apA-passo2}
+
+Para obter os contactos de um aluno, juntam-se os colegas que ele
+escolhe (a sua **linha** na matriz) e os colegas que o escolhem (a sua
+**coluna**). Quem aparece nas duas listas conta uma só vez, porque uma
+escolha recíproca é um único contacto. A densidade do nó é o número de
+contactos dividido por 8 (@tbl-apA-contactos).
+
+| Aluno | Escolhe | Escolhido por | Contactos (sem repetir) | N.º de contactos | Densidade do nó |
+|:-----:|:-------:|:-------------:|:-----------------------:|:----------------:|:---------------:|
+| A | B, C | B, C, D, I | B, C, D, I | 4 | 4 ÷ 8 = 0,50 |
+| B | A, C | A, C | A, C | 2 | 2 ÷ 8 = 0,25 |
+| C | A, B | A, B, D, E | A, B, D, E | 4 | 4 ÷ 8 = 0,50 |
+| D | A, C | I | A, C, I | 3 | 3 ÷ 8 ≈ 0,38 |
+| E | C, F | F | C, F | 2 | 2 ÷ 8 = 0,25 |
+| F | E, G | E, G, H | E, G, H | 3 | 3 ÷ 8 ≈ 0,38 |
+| G | F, H | F, H | F, H | 2 | 2 ÷ 8 = 0,25 |
+| H | F, G | G | F, G | 2 | 2 ÷ 8 = 0,25 |
+| I | A, D | ninguém | A, D | 2 | 2 ÷ 8 = 0,25 |
+
+: Contactos e densidade do nó de cada aluno. {#tbl-apA-contactos}
+
+Dois casos ajudam a perceber a diferença entre setas, escolhas e
+contactos. O aluno A escolhe B e C e é escolhido por B, C, D e I; no
+sociograma tocam-lhe seis setas, mas as que o ligam a B e a C são
+duplas, pelo que, juntando sem repetir, ficam quatro contactos: B, C, D
+e I. O aluno D foi escolhido uma única vez, por I, mas tem três
+contactos, porque também escolheu A e C: os contactos contam as
+ligações nos dois sentidos, enquanto as escolhas recebidas só contam as
+que chegam.
+
+### Passo 3: distâncias e proximidade {#sec-apA-passo3}
+
+Para encontrar as distâncias de um aluno a todos os colegas, avança-se
+por camadas: os seus contactos estão a 1 passo; os contactos desses que
+ainda não foram contados estão a 2 passos; e assim sucessivamente, até
+chegar aos oito colegas. O sentido das setas é ignorado.
+
+Para o aluno C, o processo é o seguinte:
+
+1. A 1 passo estão os contactos de C: A, B, D e E.
+2. A 2 passos estão os contactos destes que ainda não foram contados:
+   I, através de A ou de D, e F, através de E.
+3. A 3 passos estão os contactos de F que ainda não foram contados: G
+   e H.
+
+A soma das distâncias é 1 + 1 + 1 + 1 + 2 + 2 + 3 + 3 = 14, e a
+proximidade de C é 8 ÷ 14 ≈ 0,57.
+
+Repetindo o processo para cada aluno, obtém-se a tabela de distâncias
+(@tbl-apA-distancias). Cada linha dá as distâncias de um aluno aos
+colegas; a tabela é simétrica, porque o sentido das setas não conta.
+
+| | A | B | C | D | E | F | G | H | I | Soma | Proximidade |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:----:|:-----------:|
+| **A** | − | 1 | 1 | 1 | 2 | 3 | 4 | 4 | 1 | 17 | 8 ÷ 17 ≈ 0,47 |
+| **B** | 1 | − | 1 | 2 | 2 | 3 | 4 | 4 | 2 | 19 | 8 ÷ 19 ≈ 0,42 |
+| **C** | 1 | 1 | − | 1 | 1 | 2 | 3 | 3 | 2 | 14 | 8 ÷ 14 ≈ 0,57 |
+| **D** | 1 | 2 | 1 | − | 2 | 3 | 4 | 4 | 1 | 18 | 8 ÷ 18 ≈ 0,44 |
+| **E** | 2 | 2 | 1 | 2 | − | 1 | 2 | 2 | 3 | 15 | 8 ÷ 15 ≈ 0,53 |
+| **F** | 3 | 3 | 2 | 3 | 1 | − | 1 | 1 | 4 | 18 | 8 ÷ 18 ≈ 0,44 |
+| **G** | 4 | 4 | 3 | 4 | 2 | 1 | − | 1 | 5 | 24 | 8 ÷ 24 ≈ 0,33 |
+| **H** | 4 | 4 | 3 | 4 | 2 | 1 | 1 | − | 5 | 24 | 8 ÷ 24 ≈ 0,33 |
+| **I** | 1 | 2 | 2 | 1 | 3 | 4 | 5 | 5 | − | 23 | 8 ÷ 23 ≈ 0,35 |
+
+: Distâncias entre os alunos, em passos, com a soma e a proximidade de cada um. {#tbl-apA-distancias}
+
+Quanto menor a soma, mais perto o aluno está de todos e maior a sua
+proximidade. G, H e I estão nos extremos da rede: chegam a precisar de
+cinco passos para alcançar um colega.
+
+### Passo 4: intermediação {#sec-apA-passo4}
+
+Sem contar com o próprio aluno, os outros oito colegas formam
+8 × 7 ÷ 2 = 28 pares; cada par conta uma vez, porque o par A-B é o
+mesmo que o par B-A. Para cada par, verifica-se se o caminho mais curto
+entre os dois passa pelo aluno: se passa, o par conta 1; se houver dois
+caminhos mais curtos e só um passar pelo aluno, conta ½. A
+intermediação é o total contado dividido por 28. Percorrer os 28 pares
+de cada um dos nove alunos seria moroso, mas três observações tornam o
+cálculo rápido.
+
+**Quem tem intermediação nula.** Se os contactos de um aluno estão todos
+ligados entre si, ninguém precisa de passar por ele, porque há sempre
+um caminho igual ou mais curto que o evita. É o caso de quatro alunos:
+
+- B, cujos contactos, A e C, estão ligados entre si;
+- G, cujos contactos, F e H, estão ligados entre si;
+- H, cujos contactos, F e G, estão ligados entre si;
+- I, cujos contactos, A e D, estão ligados entre si.
+
+A intermediação de B, G, H e I é, por isso, 0.
+
+**As pontes.** Quando um aluno é a única passagem entre duas partes da
+rede, todos os pares com um elemento de cada lado passam por ele, e
+basta multiplicar o número de alunos de cada lado:
+
+- E separa {A, B, C, D, I} de {F, G, H}: 5 × 3 = 15 pares, e a
+  intermediação é 15 ÷ 28 ≈ 0,54;
+- F separa {A, B, C, D, E, I} de {G, H}: 6 × 2 = 12 pares, e a
+  intermediação é 12 ÷ 28 ≈ 0,43;
+- C separa {A, B, D, I} de {E, F, G, H}: 4 × 4 = 16 pares. Falta ainda
+  o par B-D, que tem dois caminhos mais curtos, B-A-D e B-C-D, dos
+  quais só um passa por C, pelo que conta ½. O total é 16 + ½ = 16,5, e
+  a intermediação é 16,5 ÷ 28 ≈ 0,59.
+
+**Os casos com metades.** Para ir de I até C, E, F, G ou H há sempre dois
+caminhos igualmente curtos, um através de A e outro através de D (por
+exemplo, I-A-C e I-D-C). Cada um desses cinco pares conta ½ para A e ½
+para D.
+
+- Para A, o par B-I conta 1, porque o único caminho mais curto é
+  B-A-I; o par B-D conta ½ (B-A-D ou B-C-D); os pares C-I, E-I, F-I,
+  G-I e H-I contam ½ cada, ou seja, 5 × ½ = 2,5. O total é
+  1 + ½ + 2,5 = 4, e a intermediação é 4 ÷ 28 ≈ 0,14.
+- Para D, contam apenas os pares C-I, E-I, F-I, G-I e H-I, com ½ cada.
+  O total é 5 × ½ = 2,5, e a intermediação é 2,5 ÷ 28 ≈ 0,09.
+
+### O que os resultados mostram {#sec-apA-conclusoes}
+
+Lidos em conjunto, os valores da @tbl-apA-solucoes permitem algumas
+conclusões:
+
+- A e C são os alunos mais escolhidos, com quatro escolhas cada, e os
+  que têm mais contactos.
+- C é o mais central em intermediação e em proximidade: está no meio da
+  rede, a poucos passos de todos, e liga o grupo maior a E.
+- E tem apenas dois contactos, mas é o segundo em intermediação e em
+  proximidade: sem E, os dois grupos ficariam separados. Ser popular e
+  servir de ponte são posições diferentes numa rede.
+- I não foi escolhido por ninguém, mas não está isolado: tem dois
+  contactos, porque escolheu A e D.

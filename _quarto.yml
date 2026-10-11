@@ -14,6 +14,8 @@ language:
   crossref-ch-prefix: "Capítulo"
   section-title-reuse: "Reutilização"
   section-title-copyright: "Direitos de autor"
+  section-title-appendices: "Apêndices"
+  crossref-apx-prefix: "Apêndice"
 
 book:
   title: "Plataformas Sociais e Cooperativas"
@@ -38,6 +40,8 @@ book:
     - capitulos/cap09.qmd
     - capitulos/cap10.qmd
     - capitulos/cap11.qmd
+  appendices:
+    - capitulos/apendiceA.qmd
 
   sidebar:
     search: true
@@ -101,6 +105,8 @@ format:
         \definecolor{chapnum}{HTML}{5c0f52}
         \definecolor{chaptxt}{HTML}{2a0a26}
         \KOMAoption{chapterprefix}{false}
+        \usepackage{newunicodechar}
+        \newunicodechar{≈}{\ensuremath{\approx}}
         \usepackage{scrlayer-scrpage}
         \automark[chapter]{chapter}
         \clearpairofpagestyles
@@ -108,11 +114,15 @@ format:
         \cfoot*{\pagemark}
         \pagestyle{scrheadings}
         \makeatletter
+        \newif\ifPSCappendix
+        \let\PSColdappendix\appendix
+        \renewcommand{\appendix}{\PSColdappendix\PSCappendixtrue}
         \newcommand{\chapheroname}{%
-          \ifcase\c@chapter\relax
+          \ifPSCappendix cap03%
+          \else\ifcase\c@chapter\relax
             cap01%
           \or cap01\or cap02\or cap03\or cap04\or cap05\or cap06\or cap07\or cap08\or cap09\or cap10\or cap11%
-          \fi
+          \fi\fi
         }
         \renewcommand{\chapterlinesformat}[3]{%
           \def\@chnum{#2}%
