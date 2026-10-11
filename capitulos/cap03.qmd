@@ -177,6 +177,104 @@ ainda funciona. Em redes com milhares ou milhões de nós, como as das
 plataformas digitais, o desenho torna-se uma mancha ilegível, e só as
 métricas permitem descrever a estrutura.
 
+### A matriz noutros tipos de rede {#sec-03-outras-matrizes}
+
+A turma é apenas um caso particular: uma rede direcional, sem pesos, em
+que cada pessoa fez exatamente duas escolhas. Outras redes produzem
+matrizes com propriedades diferentes, e reconhecer essas diferenças
+ajuda a ler qualquer matriz.
+
+**Uma rede de seguidores.** Numa plataforma como o `Instagram` ou o `X`,
+cada conta segue as contas que quiser, sem limite. Considere-se uma rede
+de seis contas, identificadas de P a U, em que as linhas indicam quem
+segue e as colunas quem é seguido (@tbl-03-seguidores).
+
+| Segue ↓ / Seguido → | P | Q | R | S | T | U | **Segue** |
+|:-------------------:|:-:|:-:|:-:|:-:|:-:|:-:|:---------:|
+| **P** |   | 1 |   |   |   |   | **1** |
+| **Q** | 1 |   | 1 |   |   |   | **2** |
+| **R** | 1 |   |   | 1 |   |   | **2** |
+| **S** | 1 |   | 1 |   |   |   | **2** |
+| **T** | 1 |   |   |   |   |   | **1** |
+| **U** | 1 |   |   |   | 1 |   | **2** |
+| **Seguidores** | **5** | **1** | **2** | **1** | **1** | **0** | |
+
+: Matriz de adjacência de uma rede de seguidores. A última coluna é o número de contas que cada conta segue (a soma da linha); a última linha é o número de seguidores de cada conta (a soma da coluna). {#tbl-03-seguidores}
+
+Ao contrário do que acontece na turma, as linhas não somam todas o mesmo
+valor, porque nada limitava o número de contas que cada utilizador podia
+seguir. A matriz também não é simétrica: a conta P segue apenas Q, mas é
+seguida pelas outras cinco. O sociograma torna esta assimetria evidente
+(@fig-03-seguidores).
+
+![Sociograma da rede de seguidores. O tamanho de cada nó é proporcional ao número de seguidores; as setas duplas, a magenta, representam seguimentos recíprocos e as setas simples, a cinzento, seguimentos não retribuídos.](../assets/images/cap03/sociograma-seguidores.png){#fig-03-seguidores}
+
+**Uma rede de amizades.** Quando a relação é não-direcional, como uma
+amizade no `Facebook`, a matriz é **simétrica**: se a célula na linha
+*i* e coluna *j* vale 1, a célula na linha *j* e coluna *i* também vale.
+Cada amizade aparece, por isso, duas vezes na matriz, embora seja uma
+única ligação, e a linha e a coluna de cada pessoa somam o mesmo valor:
+o seu grau (@tbl-03-amizades).
+
+| | Ana | Bruno | Carla | Duarte | Eva | Filipe | **Grau** |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Ana**    |   | 1 | 1 |   |   |   | **2** |
+| **Bruno**  | 1 |   | 1 |   |   |   | **2** |
+| **Carla**  | 1 | 1 |   | 1 |   |   | **3** |
+| **Duarte** |   |   | 1 |   | 1 | 1 | **3** |
+| **Eva**    |   |   |   | 1 |   | 1 | **2** |
+| **Filipe** |   |   |   | 1 | 1 |   | **2** |
+
+: Matriz de adjacência de uma rede de amizades entre seis pessoas. A matriz é simétrica em relação à diagonal; a última coluna é o número de amigos de cada pessoa. {#tbl-03-amizades}
+
+A rede tem sete amizades e forma dois pequenos grupos, {Ana, Bruno,
+Carla} e {Duarte, Eva, Filipe}, ligados apenas pela amizade entre Carla
+e Duarte.
+
+**Uma rede com peso.** Se, nesse mesmo grupo de seis pessoas, se
+registar o número de mensagens que cada uma enviou a cada uma das outras
+durante uma semana, as células deixam de valer apenas 1 e passam a
+conter a intensidade da relação (@tbl-03-mensagens). As células vazias
+são exatamente as mesmas da matriz de amizades: as relações não mudam,
+mas passa a saber-se quão fortes são.
+
+| Envia ↓ / Recebe → | Ana | Bruno | Carla | Duarte | Eva | Filipe |
+|:------------------:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Ana**    |    | 15 |  9 |    |    |    |
+| **Bruno**  | 14 |    | 11 |    |    |    |
+| **Carla**  |  8 | 12 |    |  1 |    |    |
+| **Duarte** |    |    |  2 |    | 10 |  7 |
+| **Eva**    |    |    |    | 12 |    | 13 |
+| **Filipe** |    |    |    |  6 | 11 |    |
+
+: Matriz de adjacência com peso: número de mensagens enviadas por cada pessoa (linha) a cada uma das outras (coluna) durante uma semana. {#tbl-03-mensagens}
+
+Esta matriz é direcional (Ana enviou 15 mensagens ao Bruno e recebeu
+14), mas somando os dois sentidos obtém-se o total de cada par
+(@fig-03-mensagens). Dentro de cada grupo trocam-se dezenas de
+mensagens; entre os dois grupos, apenas três, uma de Carla para Duarte e
+duas de Duarte para Carla. Se o peso fosse ignorado, esta ligação
+valeria o mesmo que qualquer outra; com o peso, percebe-se que é a mais
+fraca da rede e, ao mesmo tempo, a única que liga os dois grupos, uma
+situação que a teoria dos laços fracos ajuda a interpretar
+(@sec-03-lacos).
+
+![Rede de mensagens. A espessura de cada ligação e o número sobre ela indicam o total de mensagens trocadas nos dois sentidos; a ligação tracejada, a magenta, é a mais fraca da rede e a única entre os dois grupos.](../assets/images/cap03/rede-mensagens.png){#fig-03-mensagens}
+
+**Padrões na matriz.** Com alguma prática, a forma de uma rede
+reconhece-se diretamente na matriz, sem ser preciso desenhá-la
+(@fig-03-padroes). Numa **estrela**, em que um nó está ligado a todos e
+os restantes só a ele, a primeira linha e a primeira coluna estão
+preenchidas e o resto da matriz está vazio. Numa **cadeia**, em que cada
+nó se liga apenas ao anterior e ao seguinte, as ligações formam duas
+faixas paralelas, imediatamente acima e abaixo da diagonal. Numa
+**clique**, em que todos estão ligados a todos, a matriz está cheia, com
+exceção da diagonal, que fica sempre vazia porque ninguém se escolhe a
+si próprio. A estrela e a cadeia voltam a surgir a propósito da
+centralidade (@sec-03-centralidade).
+
+![Três formas típicas de rede com cinco nós e as respetivas matrizes de adjacência: na estrela, uma linha e uma coluna preenchidas; na cadeia, duas faixas junto à diagonal; na clique, tudo preenchido exceto a diagonal.](../assets/images/cap03/padroes-matriz.png){#fig-03-padroes}
+
 ## Métricas para Análise de Redes Sociais {#sec-03-metricas}
 
 As métricas de análise de redes dividem-se em dois grupos: as que
@@ -208,6 +306,14 @@ neste exemplo: vale 2 para todos, porque a própria pergunta limitava
 cada aluno a duas escolhas. Esta é uma primeira lição de método: a forma
 como os dados são recolhidos condiciona o que as métricas conseguem
 revelar.
+
+Na rede de seguidores (@fig-03-seguidores), em que cada conta segue as
+que quiser, os dois graus já contam histórias diferentes. P tem cinco
+seguidores e segue apenas uma conta, o perfil típico de uma conta
+popular ou de um criador de conteúdo. U segue duas contas e não tem
+nenhum seguidor. Nas plataformas reais, a diferença entre os dois graus
+pode ser de várias ordens de grandeza: uma conta pode ter milhões de
+seguidores e seguir apenas algumas centenas.
 
 ### Densidade de um nó {#sec-03-densidade}
 
@@ -336,6 +442,14 @@ pergunta permitia obter. A densidade é útil para comparar redes
 recolhidas da mesma forma (por exemplo, a mesma turma no início e no fim
 do semestre), não para comparar redes recolhidas com regras diferentes.
 
+Na rede de seguidores, existem 10 ligações entre 6 × 5 = 30 possíveis,
+uma densidade de 10/30 = 0,33. Numa rede não-direcional, cada ligação
+serve os dois nós ao mesmo tempo, pelo que o máximo passa a ser metade:
+*n* × (*n* − 1)/2 ligações. Na rede de amizades, existem 7 amizades
+entre 6 × 5/2 = 15 possíveis, uma densidade de 7/15 = 0,47. Pelas
+razões acabadas de referir, nenhum destes valores deve ser comparado com
+o da turma.
+
 ### Reciprocidade {#sec-03-reciprocidade}
 
 Em redes direcionais, a **reciprocidade** é a proporção de ligações que
@@ -349,6 +463,11 @@ F e G, G e H), uma reciprocidade de 0,67. As seis escolhas não
 retribuídas são igualmente informativas: D escolheu A e C sem ser
 escolhido por nenhum deles, e I escolheu A e D sem ser escolhido por
 ninguém.
+
+Na rede de seguidores (@fig-03-seguidores), apenas 4 das 10 ligações são
+recíprocas (P e Q, R e S), uma reciprocidade de 0,40. P, a conta mais
+seguida, só retribui um dos cinco seguimentos que recebe, o padrão
+típico das redes de popularidade.
 
 ### Componentes, cliques e sub-redes {#sec-03-subredes}
 
@@ -393,6 +512,12 @@ Na turma (ver @fig-03-sociograma), as ligações C-E e E-F são as duas únicas 
 o corretor entre as duas sub-redes. A posição tem uma consequência
 prática: se E faltar, ou mudar de turma, os dois grupos deixam de ter
 qualquer ligação.
+
+A rede de mensagens (@fig-03-mensagens) mostra a mesma ideia com pesos.
+Com apenas três mensagens numa semana, a ligação entre Carla e Duarte é,
+de longe, o laço mais fraco da rede, mas é também a única ponte entre os
+dois grupos: se desaparecesse, nenhuma informação passaria de um grupo
+para o outro.
 
 Por fim, as sub-redes raramente se formam ao acaso. A **homofilia** é a
 tendência das pessoas para se ligarem a outras semelhantes a si, em
