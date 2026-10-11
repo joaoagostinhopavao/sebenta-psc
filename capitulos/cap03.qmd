@@ -399,7 +399,13 @@ aponta para um aluno diferente:
   B-D, que tem dois caminhos mais curtos, um por A e outro por C:
   16,5/28 ≈ 0,59;
 - em **proximidade**, C volta a liderar (0,57), por estar a poucos
-  passos de todos;
+  passos de todos. A proximidade é o inverso da distância média: soma-se
+  a distância, em passos, do nó a cada um dos outros *n* − 1 nós e
+  calcula-se (*n* − 1) ÷ soma. As distâncias de C aos colegas são 1 (A,
+  B, D, E), 2 (I, F) e 3 (G, H), que somam 14, pelo que 8/14 ≈ 0,57.
+  Para A a soma é 17 (8/17 ≈ 0,47) e para E é 15 (8/15 ≈ 0,53): com
+  apenas dois contactos, E fica mais perto da turma do que A, porque
+  está a meio caminho entre os dois grupos;
 - em **vetor próprio**, A fica à frente (0,53), porque os seus contactos
   (B, C, D, I) estão todos no grupo mais denso, enquanto C "gasta" uma
   das suas ligações com E, que tem poucos contactos.
