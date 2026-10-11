@@ -84,6 +84,64 @@ The matrix already contains all the information about the network, but it is har
 
 In networks of a few dozen people, visual reading of the sociogram still works. In networks with thousands or millions of nodes, such as those of digital platforms, the drawing becomes an unreadable blur, and only metrics can describe the structure.
 
+### The matrix in other types of network {#sec-03-other-matrices-en}
+
+The class is only one particular case: a directed, unweighted network in which each person made exactly two choices. Other networks produce matrices with different properties, and recognising those differences helps in reading any matrix.
+
+**A follower network.** On a platform such as `Instagram` or `X`, each account follows whichever accounts it wants, with no limit. Consider a network of six accounts, identified as P to U, in which the rows show who follows and the columns who is followed (@tbl-03-followers-en).
+
+| Follows ↓ / Followed → | P | Q | R | S | T | U | **Follows** |
+|:----------------------:|:-:|:-:|:-:|:-:|:-:|:-:|:-----------:|
+| **P** |   | 1 |   |   |   |   | **1** |
+| **Q** | 1 |   | 1 |   |   |   | **2** |
+| **R** | 1 |   |   | 1 |   |   | **2** |
+| **S** | 1 |   | 1 |   |   |   | **2** |
+| **T** | 1 |   |   |   |   |   | **1** |
+| **U** | 1 |   |   |   | 1 |   | **2** |
+| **Followers** | **5** | **1** | **2** | **1** | **1** | **0** | |
+
+: Adjacency matrix of a follower network. The last column is the number of accounts each account follows (the row sum); the last row is the number of followers of each account (the column sum). {#tbl-03-followers-en}
+
+Unlike in the class, the rows do not all add up to the same value, because nothing limited the number of accounts each user could follow. Nor is the matrix symmetric: account P follows only Q, but is followed by the other five. The sociogram makes this asymmetry obvious (@fig-03-followers-en).
+
+![Sociogram of the follower network. The size of each node is proportional to its number of followers; the double arrows, in magenta, represent reciprocal follows and the single arrows, in grey, unreciprocated ones.](../assets/images/cap03/sociograma-seguidores.png){#fig-03-followers-en}
+
+**A friendship network.** When the relationship is undirected, like a friendship on `Facebook`, the matrix is **symmetric**: if the cell in row *i* and column *j* is 1, the cell in row *j* and column *i* is 1 as well. Each friendship therefore appears twice in the matrix, even though it is a single connection, and each person's row and column add up to the same value: their degree (@tbl-03-friendships-en).
+
+| | Ana | Bruno | Carla | Duarte | Eva | Filipe | **Degree** |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Ana**    |   | 1 | 1 |   |   |   | **2** |
+| **Bruno**  | 1 |   | 1 |   |   |   | **2** |
+| **Carla**  | 1 | 1 |   | 1 |   |   | **3** |
+| **Duarte** |   |   | 1 |   | 1 | 1 | **3** |
+| **Eva**    |   |   |   | 1 |   | 1 | **2** |
+| **Filipe** |   |   |   | 1 | 1 |   | **2** |
+
+: Adjacency matrix of a friendship network among six people. The matrix is symmetric about the diagonal; the last column is each person's number of friends. {#tbl-03-friendships-en}
+
+The network has seven friendships and forms two small groups, {Ana, Bruno, Carla} and {Duarte, Eva, Filipe}, connected only by the friendship between Carla and Duarte.
+
+**A weighted network.** If, within that same group of six people, one records the number of messages each person sent to each of the others over a week, the cells are no longer just 1 and instead contain the intensity of the relationship (@tbl-03-messages-en). The empty cells are exactly the same as in the friendship matrix: the relationships do not change, but it now becomes clear how strong they are.
+
+| Sends ↓ / Receives → | Ana | Bruno | Carla | Duarte | Eva | Filipe |
+|:--------------------:|:-:|:-:|:-:|:-:|:-:|:-:|
+| **Ana**    |    | 15 |  9 |    |    |    |
+| **Bruno**  | 14 |    | 11 |    |    |    |
+| **Carla**  |  8 | 12 |    |  1 |    |    |
+| **Duarte** |    |    |  2 |    | 10 |  7 |
+| **Eva**    |    |    |    | 12 |    | 13 |
+| **Filipe** |    |    |    |  6 | 11 |    |
+
+: Weighted adjacency matrix: number of messages sent by each person (row) to each of the others (column) over one week. {#tbl-03-messages-en}
+
+This matrix is directed (Ana sent 15 messages to Bruno and received 14), but adding up both directions gives the total for each pair (@fig-03-messages-en). Within each group, dozens of messages are exchanged; between the two groups, only three, one from Carla to Duarte and two from Duarte to Carla. If the weight were ignored, this connection would count the same as any other; with the weight, it becomes clear that it is the weakest in the network and, at the same time, the only one linking the two groups, a situation that the theory of weak ties helps to interpret (@sec-03-ties-en).
+
+![Message network. The thickness of each connection and the number on it show the total number of messages exchanged in both directions; the dashed connection, in magenta, is the weakest in the network and the only one between the two groups.](../assets/images/cap03/rede-mensagens.png){#fig-03-messages-en}
+
+**Patterns in the matrix.** With some practice, the shape of a network can be recognised directly in the matrix, without having to draw it (@fig-03-patterns-en). In a **star**, where one node is connected to all the others and the rest only to it, the first row and the first column are filled and the rest of the matrix is empty. In a **chain**, where each node connects only to the previous and the next one, the connections form two parallel bands, immediately above and below the diagonal. In a **clique**, where everyone is connected to everyone, the matrix is full, except for the diagonal, which is always empty because nobody chooses themselves. The star and the chain reappear in the discussion of centrality (@sec-03-centrality-en).
+
+![Three typical network shapes with five nodes and their adjacency matrices: in the star (Estrela), one row and one column filled; in the chain (Cadeia), two bands next to the diagonal; in the clique (Clique), everything filled except the diagonal.](../assets/images/cap03/padroes-matriz.png){#fig-03-patterns-en}
+
 ## Metrics for Social Network Analysis {#sec-03-metrics-en}
 
 Network analysis metrics fall into two groups: those that describe the **position of each node** (who is popular, who is central, who acts as a bridge) and those that describe the **network as a whole** (how connected, how cohesive, how fragmented). In the definitions that follow, *n* represents the number of nodes in the network; in the example class, *n* = 9. Unless otherwise stated, position metrics are calculated on each student's contacts, regardless of the direction of the choice: A and D are connected whether it was A who chose D or the other way round.
@@ -93,6 +151,8 @@ Network analysis metrics fall into two groups: those that describe the **positio
 The **degree** of a node is the number of connections it has. In directed graphs, it is useful to distinguish between connections arriving at a node and connections leaving it. **In-degree** is the number of connections arriving at a node, and is often used as a direct measure of popularity: on `Instagram` or `X`, it corresponds, essentially, to the number of followers. **Out-degree** is the number of connections leaving a node, corresponding, in that same example, to the number of accounts that user follows, and measures each person's **expansiveness**, their tendency to reach out to others.
 
 In the class, in-degree is the last row of the matrix: A and C are the most chosen (4 choices each), followed by F (3); I was chosen by nobody. Out-degree, on the other hand, says nothing in this example: it is 2 for everyone, because the question itself limited each student to two choices. This is a first lesson in method: the way data is collected determines what the metrics are able to reveal.
+
+In the follower network (@fig-03-followers-en), where each account follows whichever accounts it wants, the two degrees already tell different stories. P has five followers and follows only one account, the typical profile of a popular account or a content creator. U follows two accounts and has no followers at all. On real platforms, the difference between the two degrees can span several orders of magnitude: an account may have millions of followers and follow only a few hundred.
 
 ### Node density {#sec-03-density-en}
 
@@ -143,11 +203,15 @@ Two global metrics derive from this notion. The **diameter** is the greatest dis
 
 In the class, there are 18 choices out of a possible 9 × 8 = 72, a density of 18/72 = 0.25. This value, however, requires careful interpretation: since each student could only choose two classmates, 0.25 is the maximum this question allowed. Density is useful for comparing networks collected in the same way (for example, the same class at the start and at the end of the semester), not for comparing networks collected under different rules.
 
+In the follower network, there are 10 connections out of a possible 6 × 5 = 30, a density of 10/30 = 0.33. In an undirected network, each connection serves both nodes at once, so the maximum becomes half: *n* × (*n* − 1)/2 connections. In the friendship network, there are 7 friendships out of a possible 6 × 5/2 = 15, a density of 7/15 = 0.47. For the reasons just given, neither of these values should be compared with that of the class.
+
 ### Reciprocity {#sec-03-reciprocity-en}
 
 In directed networks, **reciprocity** is the proportion of connections that are returned: if A chooses B, does B also choose A? High reciprocity indicates balanced and stable relationships; low reciprocity is typical of popularity networks, such as follower networks, in which many follow a few without being followed back.
 
 In the class, 12 of the 18 choices are reciprocal (A and B, A and C, B and C, E and F, F and G, G and H), a reciprocity of 0.67. The six unreciprocated choices are equally informative: D chose A and C without being chosen by either, and I chose A and D without being chosen by anyone.
+
+In the follower network (@fig-03-followers-en), only 4 of the 10 connections are reciprocal (P and Q, R and S), a reciprocity of 0.40. P, the most followed account, returns only one of the five follows it receives, the typical pattern of popularity networks.
 
 ### Components, cliques and subnetworks {#sec-03-subnetworks-en}
 
@@ -167,6 +231,8 @@ Sociologist Mark Granovetter showed that, counter-intuitively, new opportunities
 Ronald Burt called **structural holes** the empty spaces between groups that do not communicate with each other, and showed that whoever occupies the position spanning them, the **broker**, has an advantage: they access information from both sides first and control what passes from one to the other [@Burt1992]. This is the position that betweenness centrality measures.
 
 In the class, the C-E and E-F connections are the only two bridges in the network, and E is the broker between the two subnetworks. The position has a practical consequence: if E is absent, or changes class, the two groups no longer have any connection at all.
+
+The message network (@fig-03-messages-en) shows the same idea with weights. With only three messages in a week, the connection between Carla and Duarte is by far the weakest tie in the network, but it is also the only bridge between the two groups: if it disappeared, no information would pass from one group to the other.
 
 Finally, subnetworks rarely form by chance. **Homophily** is people's tendency to connect with others similar to themselves, in age, interests, opinions or background [@McPhersonEtAl2001]. It helps explain why closed groups form and, on digital platforms, why recommendation algorithms, by suggesting content and contacts similar to those one already has, tend to reinforce echo chambers.
 

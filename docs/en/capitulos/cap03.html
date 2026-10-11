@@ -227,6 +227,7 @@ div.csl-indent {
   <li><a href="#sec-03-graph-en" id="toc-sec-03-graph-en" class="nav-link" data-scroll-target="#sec-03-graph-en"><span class="header-section-number">3.2</span> Representing a Social Network as a Graph</a>
   <ul class="collapse">
   <li><a href="#sec-03-matrix-en" id="toc-sec-03-matrix-en" class="nav-link" data-scroll-target="#sec-03-matrix-en"><span class="header-section-number">3.2.1</span> From adjacency matrix to sociogram</a></li>
+  <li><a href="#sec-03-other-matrices-en" id="toc-sec-03-other-matrices-en" class="nav-link" data-scroll-target="#sec-03-other-matrices-en"><span class="header-section-number">3.2.2</span> The matrix in other types of network</a></li>
   </ul></li>
   <li><a href="#sec-03-metrics-en" id="toc-sec-03-metrics-en" class="nav-link" data-scroll-target="#sec-03-metrics-en"><span class="header-section-number">3.3</span> Metrics for Social Network Analysis</a>
   <ul class="collapse">
@@ -514,6 +515,305 @@ Figure&nbsp;3.2: Sociogram of the example class. The size of each node is propor
 </div>
 <p>In networks of a few dozen people, visual reading of the sociogram still works. In networks with thousands or millions of nodes, such as those of digital platforms, the drawing becomes an unreadable blur, and only metrics can describe the structure.</p>
 </section>
+<section id="sec-03-other-matrices-en" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="sec-03-other-matrices-en"><span class="header-section-number">3.2.2</span> The matrix in other types of network</h3>
+<p>The class is only one particular case: a directed, unweighted network in which each person made exactly two choices. Other networks produce matrices with different properties, and recognising those differences helps in reading any matrix.</p>
+<p><strong>A follower network.</strong> On a platform such as <code>Instagram</code> or <code>X</code>, each account follows whichever accounts it wants, with no limit. Consider a network of six accounts, identified as P to U, in which the rows show who follows and the columns who is followed (<a href="#tbl-03-followers-en" class="quarto-xref">Table&nbsp;<span>3.2</span></a>).</p>
+<div id="tbl-03-followers-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-03-followers-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.2: Adjacency matrix of a follower network. The last column is the number of accounts each account follows (the row sum); the last row is the number of followers of each account (the column sum).
+</figcaption>
+<div aria-describedby="tbl-03-followers-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Follows ↓ / Followed →</th>
+<th style="text-align: center;">P</th>
+<th style="text-align: center;">Q</th>
+<th style="text-align: center;">R</th>
+<th style="text-align: center;">S</th>
+<th style="text-align: center;">T</th>
+<th style="text-align: center;">U</th>
+<th style="text-align: center;"><strong>Follows</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>P</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Q</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>R</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>S</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>T</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>1</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>U</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Followers</strong></td>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: center;"><strong>0</strong></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Unlike in the class, the rows do not all add up to the same value, because nothing limited the number of accounts each user could follow. Nor is the matrix symmetric: account P follows only Q, but is followed by the other five. The sociogram makes this asymmetry obvious (<a href="#fig-03-followers-en" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>).</p>
+<div id="fig-03-followers-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-03-followers-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap03/sociograma-seguidores.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-followers-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Sociogram of the follower network. The size of each node is proportional to its number of followers; the double arrows, in magenta, represent reciprocal follows and the single arrows, in grey, unreciprocated ones.
+</figcaption>
+</figure>
+</div>
+<p><strong>A friendship network.</strong> When the relationship is undirected, like a friendship on <code>Facebook</code>, the matrix is <strong>symmetric</strong>: if the cell in row <em>i</em> and column <em>j</em> is 1, the cell in row <em>j</em> and column <em>i</em> is 1 as well. Each friendship therefore appears twice in the matrix, even though it is a single connection, and each person’s row and column add up to the same value: their degree (<a href="#tbl-03-friendships-en" class="quarto-xref">Table&nbsp;<span>3.3</span></a>).</p>
+<div id="tbl-03-friendships-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-03-friendships-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.3: Adjacency matrix of a friendship network among six people. The matrix is symmetric about the diagonal; the last column is each person’s number of friends.
+</figcaption>
+<div aria-describedby="tbl-03-friendships-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"></th>
+<th style="text-align: center;">Ana</th>
+<th style="text-align: center;">Bruno</th>
+<th style="text-align: center;">Carla</th>
+<th style="text-align: center;">Duarte</th>
+<th style="text-align: center;">Eva</th>
+<th style="text-align: center;">Filipe</th>
+<th style="text-align: center;"><strong>Degree</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Ana</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Bruno</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Carla</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Duarte</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>3</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Eva</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Filipe</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"><strong>2</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The network has seven friendships and forms two small groups, {Ana, Bruno, Carla} and {Duarte, Eva, Filipe}, connected only by the friendship between Carla and Duarte.</p>
+<p><strong>A weighted network.</strong> If, within that same group of six people, one records the number of messages each person sent to each of the others over a week, the cells are no longer just 1 and instead contain the intensity of the relationship (<a href="#tbl-03-messages-en" class="quarto-xref">Table&nbsp;<span>3.4</span></a>). The empty cells are exactly the same as in the friendship matrix: the relationships do not change, but it now becomes clear how strong they are.</p>
+<div id="tbl-03-messages-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-03-messages-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.4: Weighted adjacency matrix: number of messages sent by each person (row) to each of the others (column) over one week.
+</figcaption>
+<div aria-describedby="tbl-03-messages-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Sends ↓ / Receives →</th>
+<th style="text-align: center;">Ana</th>
+<th style="text-align: center;">Bruno</th>
+<th style="text-align: center;">Carla</th>
+<th style="text-align: center;">Duarte</th>
+<th style="text-align: center;">Eva</th>
+<th style="text-align: center;">Filipe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Ana</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Bruno</strong></td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Carla</strong></td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Duarte</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">7</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Eva</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">13</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Filipe</strong></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>This matrix is directed (Ana sent 15 messages to Bruno and received 14), but adding up both directions gives the total for each pair (<a href="#fig-03-messages-en" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>). Within each group, dozens of messages are exchanged; between the two groups, only three, one from Carla to Duarte and two from Duarte to Carla. If the weight were ignored, this connection would count the same as any other; with the weight, it becomes clear that it is the weakest in the network and, at the same time, the only one linking the two groups, a situation that the theory of weak ties helps to interpret (<a href="#sec-03-ties-en" class="quarto-xref"><span>Section 3.3.9</span></a>).</p>
+<div id="fig-03-messages-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-03-messages-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap03/rede-mensagens.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-messages-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Message network. The thickness of each connection and the number on it show the total number of messages exchanged in both directions; the dashed connection, in magenta, is the weakest in the network and the only one between the two groups.
+</figcaption>
+</figure>
+</div>
+<p><strong>Patterns in the matrix.</strong> With some practice, the shape of a network can be recognised directly in the matrix, without having to draw it (<a href="#fig-03-patterns-en" class="quarto-xref">Figure&nbsp;<span>3.5</span></a>). In a <strong>star</strong>, where one node is connected to all the others and the rest only to it, the first row and the first column are filled and the rest of the matrix is empty. In a <strong>chain</strong>, where each node connects only to the previous and the next one, the connections form two parallel bands, immediately above and below the diagonal. In a <strong>clique</strong>, where everyone is connected to everyone, the matrix is full, except for the diagonal, which is always empty because nobody chooses themselves. The star and the chain reappear in the discussion of centrality (<a href="#sec-03-centrality-en" class="quarto-xref"><span>Section 3.3.3</span></a>).</p>
+<div id="fig-03-patterns-en" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-03-patterns-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../assets/images/cap03/padroes-matriz.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-patterns-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.5: Three typical network shapes with five nodes and their adjacency matrices: in the star (Estrela), one row and one column filled; in the chain (Cadeia), two bands next to the diagonal; in the clique (Clique), everything filled except the diagonal.
+</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="sec-03-metrics-en" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="sec-03-metrics-en"><span class="header-section-number">3.3</span> Metrics for Social Network Analysis</h2>
@@ -522,17 +822,18 @@ Figure&nbsp;3.2: Sociogram of the example class. The size of each node is propor
 <h3 data-number="3.3.1" class="anchored" data-anchor-id="sec-03-popularity-en"><span class="header-section-number">3.3.1</span> Popularity: in-degree and out-degree</h3>
 <p>The <strong>degree</strong> of a node is the number of connections it has. In directed graphs, it is useful to distinguish between connections arriving at a node and connections leaving it. <strong>In-degree</strong> is the number of connections arriving at a node, and is often used as a direct measure of popularity: on <code>Instagram</code> or <code>X</code>, it corresponds, essentially, to the number of followers. <strong>Out-degree</strong> is the number of connections leaving a node, corresponding, in that same example, to the number of accounts that user follows, and measures each person’s <strong>expansiveness</strong>, their tendency to reach out to others.</p>
 <p>In the class, in-degree is the last row of the matrix: A and C are the most chosen (4 choices each), followed by F (3); I was chosen by nobody. Out-degree, on the other hand, says nothing in this example: it is 2 for everyone, because the question itself limited each student to two choices. This is a first lesson in method: the way data is collected determines what the metrics are able to reveal.</p>
+<p>In the follower network (<a href="#fig-03-followers-en" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>), where each account follows whichever accounts it wants, the two degrees already tell different stories. P has five followers and follows only one account, the typical profile of a popular account or a content creator. U follows two accounts and has no followers at all. On real platforms, the difference between the two degrees can span several orders of magnitude: an account may have millions of followers and follow only a few hundred.</p>
 </section>
 <section id="sec-03-density-en" class="level3" data-number="3.3.2">
 <h3 data-number="3.3.2" class="anchored" data-anchor-id="sec-03-density-en"><span class="header-section-number">3.3.2</span> Node density</h3>
-<p>The <strong>density of a node</strong> measures the proportion between the number of relationships that node actually has and the number it could have, that is, its degree divided by <em>n</em> − 1 (all the other nodes in the network). If a node has only a third of the connections it could have, given the size of the network, its density is approximately 0.33 (<a href="#fig-03-density-en" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>).</p>
+<p>The <strong>density of a node</strong> measures the proportion between the number of relationships that node actually has and the number it could have, that is, its degree divided by <em>n</em> − 1 (all the other nodes in the network). If a node has only a third of the connections it could have, given the size of the network, its density is approximately 0.33 (<a href="#fig-03-density-en" class="quarto-xref">Figure&nbsp;<span>3.6</span></a>).</p>
 <div id="fig-03-density-en" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-03-density-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../assets/images/cap03/densidade.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-density-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.3: The same generic five-node network, with different active connections (solid) and possible but non-existent ones (dashed). Density can be calculated for any node; node D is used here as an example: 1, 2 and 4 out of its 4 possible connections, respectively.
+Figure&nbsp;3.6: The same generic five-node network, with different active connections (solid) and possible but non-existent ones (dashed). Density can be calculated for any node; node D is used here as an example: 1, 2 and 4 out of its 4 possible connections, respectively.
 </figcaption>
 </figure>
 </div>
@@ -550,14 +851,14 @@ Figure&nbsp;3.3: The same generic five-node network, with different active conne
 <ul>
 <li><strong>Eigenvector centrality</strong>: a node is more central the more central the nodes it is connected to <span class="citation" data-cites="Bonacich1987">(<a href="cap01.html#ref-Bonacich1987" role="doc-biblioref">Bonacich 1987</a>)</span>. Being connected to two very well-connected people can be worth more than being connected to five isolated people. <strong>PageRank</strong>, the algorithm <code>Google</code> originally used to rank <em>web</em> pages, rests on the same principle: a page is important if it is linked to by other important pages <span class="citation" data-cites="BrinPage1998">(<a href="cap01.html#ref-BrinPage1998" role="doc-biblioref">Brin and Page 1998</a>)</span>.</li>
 </ul>
-<p>These four notions capture different aspects of “importance” in a network, and a node can be central by one measure and peripheral by another: a good example is an intermediary who links two distinct communities, but who, within each of them, has few direct connections, low degree centrality, but very high betweenness centrality (<a href="#fig-03-centrality-en" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>).</p>
+<p>These four notions capture different aspects of “importance” in a network, and a node can be central by one measure and peripheral by another: a good example is an intermediary who links two distinct communities, but who, within each of them, has few direct connections, low degree centrality, but very high betweenness centrality (<a href="#fig-03-centrality-en" class="quarto-xref">Figure&nbsp;<span>3.7</span></a>).</p>
 <div id="fig-03-centrality-en" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-03-centrality-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../assets/images/cap03/centralidade.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-centrality-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.4: Each type of centrality highlights a different kind of node: in a star, the node with the most direct connections; in a bridge between two groups, the node connecting the two halves, even with few connections; in a chain, the node positioned closest to all the others.
+Figure&nbsp;3.7: Each type of centrality highlights a different kind of node: in a star, the node with the most direct connections; in a bridge between two groups, the node connecting the two halves, even with few connections; in a chain, the node positioned closest to all the others.
 </figcaption>
 </figure>
 </div>
@@ -583,11 +884,13 @@ Figure&nbsp;3.4: Each type of centrality highlights a different kind of node: in
 <h3 data-number="3.3.6" class="anchored" data-anchor-id="sec-03-network-density-en"><span class="header-section-number">3.3.6</span> Network density</h3>
 <p><strong>Network density</strong> measures the proportion between the number of connections that exist in the whole network and the number that would be possible if everyone were connected to everyone. In a directed network with <em>n</em> nodes, each node can choose <em>n</em> − 1 others, so the maximum is <em>n</em> × (<em>n</em> − 1) connections. High-density networks tend to spread information faster, but also to be more susceptible to echo-chamber effects, precisely because almost everyone is connected to almost everyone else.</p>
 <p>In the class, there are 18 choices out of a possible 9 × 8 = 72, a density of 18/72 = 0.25. This value, however, requires careful interpretation: since each student could only choose two classmates, 0.25 is the maximum this question allowed. Density is useful for comparing networks collected in the same way (for example, the same class at the start and at the end of the semester), not for comparing networks collected under different rules.</p>
+<p>In the follower network, there are 10 connections out of a possible 6 × 5 = 30, a density of 10/30 = 0.33. In an undirected network, each connection serves both nodes at once, so the maximum becomes half: <em>n</em> × (<em>n</em> − 1)/2 connections. In the friendship network, there are 7 friendships out of a possible 6 × 5/2 = 15, a density of 7/15 = 0.47. For the reasons just given, neither of these values should be compared with that of the class.</p>
 </section>
 <section id="sec-03-reciprocity-en" class="level3" data-number="3.3.7">
 <h3 data-number="3.3.7" class="anchored" data-anchor-id="sec-03-reciprocity-en"><span class="header-section-number">3.3.7</span> Reciprocity</h3>
 <p>In directed networks, <strong>reciprocity</strong> is the proportion of connections that are returned: if A chooses B, does B also choose A? High reciprocity indicates balanced and stable relationships; low reciprocity is typical of popularity networks, such as follower networks, in which many follow a few without being followed back.</p>
 <p>In the class, 12 of the 18 choices are reciprocal (A and B, A and C, B and C, E and F, F and G, G and H), a reciprocity of 0.67. The six unreciprocated choices are equally informative: D chose A and C without being chosen by either, and I chose A and D without being chosen by anyone.</p>
+<p>In the follower network (<a href="#fig-03-followers-en" class="quarto-xref">Figure&nbsp;<span>3.3</span></a>), only 4 of the 10 connections are reciprocal (P and Q, R and S), a reciprocity of 0.40. P, the most followed account, returns only one of the five follows it receives, the typical pattern of popularity networks.</p>
 </section>
 <section id="sec-03-subnetworks-en" class="level3" data-number="3.3.8">
 <h3 data-number="3.3.8" class="anchored" data-anchor-id="sec-03-subnetworks-en"><span class="header-section-number">3.3.8</span> Components, cliques and subnetworks</h3>
@@ -604,16 +907,17 @@ Figure&nbsp;3.4: Each type of centrality highlights a different kind of node: in
 <p>Sociologist Mark Granovetter showed that, counter-intuitively, new opportunities (a job, an idea, information not yet circulating in the group) come more often through <strong>weak ties</strong>, acquaintances and occasional contacts, than through <strong>strong ties</strong>, close friends and family <span class="citation" data-cites="Granovetter1973">(<a href="cap01.html#ref-Granovetter1973" role="doc-biblioref">Granovetter 1973</a>)</span>. The reason is structural: close friends almost all know each other and know more or less the same things; it is weak ties that act as a <strong>bridge</strong> to other circles, with different information. A bridge is a connection whose removal splits the network into disconnected parts.</p>
 <p>Ronald Burt called <strong>structural holes</strong> the empty spaces between groups that do not communicate with each other, and showed that whoever occupies the position spanning them, the <strong>broker</strong>, has an advantage: they access information from both sides first and control what passes from one to the other <span class="citation" data-cites="Burt1992">(<a href="cap01.html#ref-Burt1992" role="doc-biblioref">Burt 1992</a>)</span>. This is the position that betweenness centrality measures.</p>
 <p>In the class, the C-E and E-F connections are the only two bridges in the network, and E is the broker between the two subnetworks. The position has a practical consequence: if E is absent, or changes class, the two groups no longer have any connection at all.</p>
+<p>The message network (<a href="#fig-03-messages-en" class="quarto-xref">Figure&nbsp;<span>3.4</span></a>) shows the same idea with weights. With only three messages in a week, the connection between Carla and Duarte is by far the weakest tie in the network, but it is also the only bridge between the two groups: if it disappeared, no information would pass from one group to the other.</p>
 <p>Finally, subnetworks rarely form by chance. <strong>Homophily</strong> is people’s tendency to connect with others similar to themselves, in age, interests, opinions or background <span class="citation" data-cites="McPhersonEtAl2001">(<a href="cap01.html#ref-McPhersonEtAl2001" role="doc-biblioref">McPherson, Smith-Lovin, and Cook 2001</a>)</span>. It helps explain why closed groups form and, on digital platforms, why recommendation algorithms, by suggesting content and contacts similar to those one already has, tend to reinforce echo chambers.</p>
 </section>
 </section>
 <section id="sec-03-reading-en" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="sec-03-reading-en"><span class="header-section-number">3.4</span> Reading a Sociogram in Full</h2>
-<p>Bringing together the position metrics of every student in a single table completes the picture of the class (<a href="#tbl-03-metrics-en" class="quarto-xref">Table&nbsp;<span>3.2</span></a>).</p>
+<p>Bringing together the position metrics of every student in a single table completes the picture of the class (<a href="#tbl-03-metrics-en" class="quarto-xref">Table&nbsp;<span>3.5</span></a>).</p>
 <div id="tbl-03-metrics-en" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-03-metrics-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.2: Position metrics of the nine students, calculated on the class sociogram. In bold, the highest popularity and centrality values.
+Table&nbsp;3.5: Position metrics of the nine students, calculated on the class sociogram. In bold, the highest popularity and centrality values.
 </figcaption>
 <div aria-describedby="tbl-03-metrics-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="caption-top table">
@@ -749,26 +1053,26 @@ Table&nbsp;3.2: Position metrics of the nine students, calculated on the class s
 <p>So far, this chapter has dealt with how to analyse relationships <strong>between people</strong>. But much of the structure of a modern social network also results from how <strong>content</strong> is classified and organised, and this is where <em>folksonomy</em> comes in.</p>
 <p>The term <strong>folksonomy</strong> was coined by Thomas Vander Wal in 2007, from the combination of <em>folk</em> (people) and <em>taxonomy</em> <span class="citation" data-cites="VanderWal2007">(<a href="cap01.html#ref-VanderWal2007" role="doc-biblioref">Vander Wal 2007</a>)</span>. It denotes the classification of content through a free, collective <em>tagging</em> process, rather than a hierarchy of categories defined <em>a priori</em> by domain experts.</p>
 <p>The difference from a traditional <strong>taxonomy</strong> is structural: in a taxonomy, a group of managers defines a hierarchy of categories in advance, and all content has to fit into it. In a <em>folksonomy</em>, there is no such prior hierarchy: categories, or <em>tags</em>, emerge as users themselves classify content, with no centralised control.</p>
-<p>The tagging process can be represented simply: a group of people, or a single person, associates a set of tags with a set of objects (documents, images, posts) (<a href="#fig-03-tagging-en" class="quarto-xref">Figure&nbsp;<span>3.5</span></a>). Because different people classify the same object in different ways, according to their own perspective, the resulting <em>folksonomy</em> is rich and heterogeneous, but can also contain inconsistencies.</p>
+<p>The tagging process can be represented simply: a group of people, or a single person, associates a set of tags with a set of objects (documents, images, posts) (<a href="#fig-03-tagging-en" class="quarto-xref">Figure&nbsp;<span>3.8</span></a>). Because different people classify the same object in different ways, according to their own perspective, the resulting <em>folksonomy</em> is rich and heterogeneous, but can also contain inconsistencies.</p>
 <div id="fig-03-tagging-en" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-03-tagging-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../assets/images/cap03/processo-tagging.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-tagging-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.5: The tagging process: people associate free tags with objects, with no hierarchy defined in advance.
+Figure&nbsp;3.8: The tagging process: people associate free tags with objects, with no hierarchy defined in advance.
 </figcaption>
 </figure>
 </div>
 <p>Two types of <em>folksonomy</em> can be distinguished <span class="citation" data-cites="VanderWal2007">(<a href="cap01.html#ref-VanderWal2007" role="doc-biblioref">Vander Wal 2007</a>)</span>: <strong>broad folksonomy</strong>, in which a large number of users tag the same objects, which is useful for identifying the most popular items in a collection, and <strong>narrow folksonomy</strong>, in which only one or a few people tag each object, typically the content’s own author, which preserves a more personal vocabulary, but makes discovery by others harder.</p>
-<p>A common way to visualise the aggregate result of a <em>folksonomy</em> is the <strong>tag cloud</strong>, a representation in which the most-used tags stand out, typically in larger or darker type, making it possible to quickly identify the dominant themes of a collection (<a href="#fig-03-cloud-en" class="quarto-xref">Figure&nbsp;<span>3.6</span></a>).</p>
+<p>A common way to visualise the aggregate result of a <em>folksonomy</em> is the <strong>tag cloud</strong>, a representation in which the most-used tags stand out, typically in larger or darker type, making it possible to quickly identify the dominant themes of a collection (<a href="#fig-03-cloud-en" class="quarto-xref">Figure&nbsp;<span>3.9</span></a>).</p>
 <div id="fig-03-cloud-en" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-03-cloud-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../assets/images/cap03/nuvem-etiquetas.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-03-cloud-en-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;3.6: Tag cloud: the larger and darker the tag, the more often it was used in the collection.
+Figure&nbsp;3.9: Tag cloud: the larger and darker the tag, the more often it was used in the collection.
 </figcaption>
 </figure>
 </div>
