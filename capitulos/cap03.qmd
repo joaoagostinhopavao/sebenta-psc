@@ -326,8 +326,12 @@ da rede, a sua densidade é de aproximadamente 0,33 (@fig-03-densidade).
 ![A mesma rede genérica de cinco nós, com diferentes ligações ativas (a cheio) e possíveis mas inexistentes (a tracejado). A densidade pode calcular-se para qualquer nó; toma-se aqui o nó D como exemplo: 1, 2 e 4 das suas 4 ligações possíveis, respetivamente.](../assets/images/cap03/densidade.png){#fig-03-densidade}
 
 Na turma (ver @fig-03-sociograma), A tem contactos com quatro colegas (B, C, D e I) dos oito
-possíveis, uma densidade de 4/8 = 0,50; I tem contacto com dois (A e
-D), uma densidade de 2/8 = 0,25. A densidade de um nó não deve ser
+possíveis, uma densidade de 4/8 = 0,50. No sociograma, a A tocam seis
+setas: duas que saem (A escolheu B e C) e quatro que chegam (B, C, D e I
+escolheram A). As escolhas com B e com C, porém, são recíprocas, e cada
+um desses pares conta como um único contacto; por isso, A tem 4
+contactos, e não 6. I tem contacto com dois colegas (A e D), uma
+densidade de 2/8 = 0,25. A densidade de um nó não deve ser
 confundida com a densidade da rede, uma métrica global apresentada mais
 adiante (@sec-03-densidade-rede).
 

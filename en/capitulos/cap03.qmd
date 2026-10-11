@@ -160,7 +160,7 @@ The **density of a node** measures the proportion between the number of relation
 
 ![The same generic five-node network, with different active connections (solid) and possible but non-existent ones (dashed). Density can be calculated for any node; node D is used here as an example: 1, 2 and 4 out of its 4 possible connections, respectively.](../assets/images/cap03/densidade.png){#fig-03-density-en}
 
-In the class, A has contact with four classmates (B, C, D and I) out of a possible eight, a density of 4/8 = 0.50; I has contact with two (A and D), a density of 2/8 = 0.25. The density of a node should not be confused with the density of the network, a global metric presented further on (@sec-03-network-density-en).
+In the class, A has contact with four classmates (B, C, D and I) out of a possible eight, a density of 4/8 = 0.50. In the sociogram, six arrows touch A: two going out (A chose B and C) and four coming in (B, C, D and I chose A). The choices with B and with C, however, are reciprocal, and each of those pairs counts as a single contact; A therefore has 4 contacts, not 6. I has contact with two classmates (A and D), a density of 2/8 = 0.25. The density of a node should not be confused with the density of the network, a global metric presented further on (@sec-03-network-density-en).
 
 ### Centrality as Social Power {#sec-03-centrality-en}
 
