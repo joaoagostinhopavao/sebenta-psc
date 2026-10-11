@@ -383,7 +383,10 @@ Os valores de centralidade são normalmente apresentados numa escala de
 0 a 1, o que permite comparar nós entre si. Na turma, cada medida
 aponta para um aluno diferente:
 
-- em **grau**, A e C empatam, com quatro contactos cada;
+- em **grau**, A e C empatam, com quatro contactos cada; dividindo
+  pelo máximo possível, *n* − 1 = 8, obtém-se 0,50, o mesmo valor da
+  densidade do nó (@sec-03-densidade): normalizada, a centralidade de
+  grau é exatamente a mesma conta que a densidade de um nó;
 - em **intermediação**, C lidera (0,59), mas logo seguido de E (0,54),
   que tem apenas dois contactos: E está no único caminho entre os dois
   grupos, pelo que qualquer informação que circule de um grupo para o

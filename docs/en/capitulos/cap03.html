@@ -864,7 +864,7 @@ Figure&nbsp;3.7: Each type of centrality highlights a different kind of node: in
 </div>
 <p>Centrality values are usually presented on a scale from 0 to 1, which makes it possible to compare nodes with each other. In the class, each measure points to a different student:</p>
 <ul>
-<li>in <strong>degree</strong>, A and C are tied, with four contacts each;</li>
+<li>in <strong>degree</strong>, A and C are tied, with four contacts each; dividing by the maximum possible, <em>n</em> − 1 = 8, gives 0.50, the same value as the node density (<a href="#sec-03-density-en" class="quarto-xref"><span>Section 3.3.2</span></a>): once normalised, degree centrality is exactly the same calculation as the density of a node;</li>
 <li>in <strong>betweenness</strong>, C leads (0.59), but is closely followed by E (0.54), who has only two contacts: E lies on the only path between the two groups, so any information travelling from one group to the other has to pass through them;</li>
 <li>in <strong>closeness</strong>, C leads again (0.57), being only a few steps away from everyone;</li>
 <li>in <strong>eigenvector</strong>, A comes first (0.53), because all of A’s contacts (B, C, D, I) are in the denser group, whereas C “spends” one of their connections on E, who has few contacts.</li>
