@@ -185,6 +185,57 @@ Centrality values are usually presented on a scale from 0 to 1, which makes it p
 - in **closeness**, C leads again (0.57), being only a few steps away from everyone. Closeness is the inverse of the average distance: add up the distance, in steps, from the node to each of the other *n* − 1 nodes and compute (*n* − 1) ÷ sum. C's distances to the other students are 1 (A, B, D, E), 2 (I, F) and 3 (G, H), adding up to 14, so 8/14 ≈ 0.57. For A the sum is 17 (8/17 ≈ 0.47) and for E it is 15 (8/15 ≈ 0.53): with only two contacts, E is closer to the class than A, because E sits halfway between the two groups;
 - in **eigenvector**, A comes first (0.53), because all of A's contacts (B, C, D, I) are in the denser group, whereas C "spends" one of their connections on E, who has few contacts.
 
+### What the metrics mean in a large-scale network {#sec-03-large-scale-en}
+
+In the class, the metrics are calculated by hand and each value
+describes a specific student. On a platform such as `YouTube` or
+`Facebook`, with billions of accounts, the same metrics still answer
+questions about each account's position, but the scale changes how they
+are read.
+
+**Degree and node density: how many are reached directly.** Degree
+corresponds to the number of subscribers of a `YouTube` channel or the
+number of friends of a `Facebook` profile, and it measures direct reach:
+the number of people who can see a post without anyone sharing it. The
+distribution is very unequal: a small number of accounts concentrate
+millions of connections, while the vast majority have few. Node density,
+on the other hand, loses its usefulness at platform scale: with billions
+of accounts, the fraction contacts ÷ (*n* − 1) is practically zero for
+everyone, even for a profile with 5,000 friends, the maximum `Facebook`
+allows a personal profile. For this reason, node density is calculated
+within a bounded group, such as a class, a `Facebook` group or the
+subscribers of a channel, where it once again shows what share of the
+group each person knows.
+
+**Betweenness: where information flows.** On a platform, accounts
+cluster into communities: the supporters of a club, the players of a
+game, the followers of a topic. High betweenness belongs to those who
+connect communities that would otherwise not communicate, such as a
+content creator who collaborates with channels from other niches, or a
+user who belongs to two unrelated circles. It is through these accounts
+that a piece of news, a trend or a piece of misinformation passes from
+one community to another. If these bridges disappear, each community
+ends up hearing mostly from its own members, which favours the formation
+of echo chambers.
+
+**Closeness: how quickly everyone is reached.** An account with high
+closeness is only a few steps away from all the others: what it posts
+can reach the whole network through a few successive shares, and it is
+also among the first to receive what circulates. These accounts are good
+starting points for a public health campaign or a product launch. In a
+large-scale network, however, distances are short for almost everyone,
+as Milgram's experiment showed (@sec-02-six-degrees-en), so the
+differences in closeness between accounts are small and only become
+informative when accounts within the same community are compared.
+
+There is also a practical issue. Calculating betweenness or closeness
+requires going through the paths between every pair of accounts, which,
+with billions of accounts, is impractical. In these networks, the values
+are estimated from samples of pairs or calculated within smaller
+communities. In short, degree tells how many people are reached
+directly, betweenness tells where information flows, and closeness tells
+how quickly everyone is reached.
+
 ### Clustering coefficient {#sec-03-clustering-en}
 
 The **clustering coefficient** of a node measures the proportion of pairs of its contacts that are also connected to each other [@WattsStrogatz1998]. It translates the question "are my friends' friends also my friends?". A value of 1 indicates that the node belongs to a closed group, in which everyone knows everyone else; a value of 0 indicates that its contacts do not know each other, which is typical of someone who bridges different worlds.

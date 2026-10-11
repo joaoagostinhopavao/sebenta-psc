@@ -410,6 +410,58 @@ aponta para um aluno diferente:
   (B, C, D, I) estão todos no grupo mais denso, enquanto C "gasta" uma
   das suas ligações com E, que tem poucos contactos.
 
+### O significado das métricas numa rede de grande escala {#sec-03-grande-escala}
+
+Na turma, as métricas calculam-se à mão e cada valor descreve um aluno
+concreto. Numa plataforma como o `YouTube` ou o `Facebook`, com milhares
+de milhões de contas, as mesmas métricas continuam a responder a
+perguntas sobre a posição de cada conta, mas a escala muda a forma de as
+ler.
+
+**Grau e densidade do nó: quantos se alcançam diretamente.** O grau
+corresponde ao número de subscritores de um canal no `YouTube` ou ao
+número de amigos de um perfil no `Facebook`, e mede o alcance direto: o
+número de pessoas que podem ver uma publicação sem que ninguém a
+partilhe. A distribuição é muito desigual: um pequeno número de contas
+concentra milhões de ligações, enquanto a grande maioria tem poucas. A
+densidade do nó, pelo contrário, perde utilidade à escala da plataforma:
+com milhares de milhões de contas, a fração contactos ÷ (*n* − 1) é
+praticamente zero para toda a gente, mesmo para um perfil com 5000
+amigos, o máximo que o `Facebook` permite a um perfil pessoal. Por isso,
+a densidade do nó calcula-se dentro de um grupo delimitado, como uma
+turma, um grupo do `Facebook` ou os subscritores de um canal, onde volta
+a indicar que parte do grupo cada pessoa conhece.
+
+**Intermediação: por onde passa a informação.** Numa plataforma, as
+contas agrupam-se em comunidades: os adeptos de um clube, os jogadores
+de um jogo, os seguidores de um tema. Tem intermediação elevada quem
+liga comunidades que de outra forma não comunicariam, como um criador de
+conteúdo que colabora com canais de outros nichos ou um utilizador que
+pertence a dois círculos sem relação entre si. É através dessas contas
+que uma notícia, uma moda ou uma informação falsa passa de uma
+comunidade para outra. Se essas pontes desaparecerem, cada comunidade
+passa a ouvir sobretudo os seus próprios membros, o que favorece a
+formação de câmaras de eco.
+
+**Proximidade: quão depressa se chega a todos.** Uma conta com
+proximidade elevada está a poucos passos de todas as outras: o que
+publica pode chegar a toda a rede com poucas partilhas sucessivas, e é
+também das primeiras a receber o que circula. Estas contas são bons
+pontos de partida para uma campanha de saúde pública ou para o
+lançamento de um produto. Numa rede de grande escala, porém, as
+distâncias são curtas para quase todos, como mostrou a experiência de
+Milgram (@sec-02-seis-graus), pelo que as diferenças de proximidade
+entre contas são pequenas e só se tornam informativas quando se
+comparam contas dentro da mesma comunidade.
+
+Há ainda uma questão prática. Calcular a intermediação ou a proximidade
+exige percorrer os caminhos entre todos os pares de contas, o que, com
+milhares de milhões de contas, é impraticável. Nestas redes, os valores
+estimam-se a partir de amostras de pares ou calculam-se dentro de
+comunidades mais pequenas. Em síntese, o grau diz quantas pessoas se
+alcançam diretamente, a intermediação diz por onde passa a informação e
+a proximidade diz quão depressa se chega a todos.
+
 ### Coeficiente de agrupamento {#sec-03-agrupamento}
 
 O **coeficiente de agrupamento** (*clustering coefficient*) de um nó
