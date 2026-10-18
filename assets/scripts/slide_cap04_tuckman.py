@@ -24,7 +24,7 @@ else:
 
 plt.rcParams["font.family"] = "Arial"
 
-W, H = 13.333, 5.25
+W, H = 13.333, 5.95
 fig = plt.figure(figsize=(W, H), dpi=200)
 ax = fig.add_axes([0, 0, 1, 1])
 ax.set_xlim(0, W)
@@ -52,13 +52,17 @@ STAGES = [
      "Fim do processo", "Fim do grupo", "diverge"),
 ]
 
+# o "C" que mais pesa em cada etapa (leitura aplicada do Modelo 3C)
+CS = ["Comunicação", "Comunicação", "Coordenação", "Cooperação", ""]
+CS_EN = ["Communication", "Communication", "Coordination", "Cooperation", ""]
 if MODE == "en":
     STAGES = STAGES_EN
+    CS = CS_EN
 
 BW, BH = 1.95, 0.95
 GAP = 0.38
 X0 = 0.85
-YB = 4.4
+YB = 5.1
 xs = [X0 + BW / 2 + i * (BW + GAP) for i in range(5)]
 
 
@@ -67,6 +71,9 @@ def arrow(p, q, color=GREEN_DARK, lw=2.6, ms=18):
                                  color=color, lw=lw, zorder=2,
                                  shrinkA=0, shrinkB=0))
 
+
+ax.text(0.45, 2.0, "3C", ha="center", va="center", fontsize=17,
+        fontweight="bold", color=GREEN)
 
 # início e fim (notação de processo: círculo fino e círculo grosso)
 ax.add_patch(Circle((0.45, YB), 0.22, facecolor="white", edgecolor=INK, lw=2))
@@ -97,11 +104,19 @@ for i, (name, en, l1, l2, icon) in enumerate(STAGES):
 
     ax.text(x, yt - 0.2, l1, ha="center", va="top", fontsize=15, color=INK,
             linespacing=1.2)
-    ax.text(x, 2.45, l2, ha="center", va="top", fontsize=15, color=GREEN_DARK,
+    ax.text(x, 3.2, l2, ha="center", va="top", fontsize=15, color=GREEN_DARK,
             fontweight="bold", linespacing=1.2)
 
+    # o "C" em destaque nesta etapa
+    if CS[i]:
+        ax.add_patch(FancyBboxPatch((x - BW / 2 + 0.12, 2.0 - 0.22), BW - 0.24, 0.44,
+                                    boxstyle="round,pad=0,rounding_size=0.2",
+                                    facecolor="white", edgecolor=GREEN, lw=2.2, zorder=3))
+        ax.text(x, 2.0, CS[i], ha="center", va="center", fontsize=15,
+                fontweight="bold", color=GREEN, zorder=4)
+
     # ícone: como se movem os membros do grupo
-    cy = 1.0
+    cy = 0.85
     L = 0.42
     kw = dict(color=INK, lw=2.2, ms=14)
     if icon == "converge":

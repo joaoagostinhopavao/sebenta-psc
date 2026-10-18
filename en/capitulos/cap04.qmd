@@ -16,7 +16,7 @@ lang: en-GB
 
 The previous three chapters dealt with **social platforms**: how society organises itself into a network, how those networks became digital platforms, and how to analyse them through metrics and folksonomy. This chapter opens a new block, dedicated to **collaborative platforms**, whose object of study is no longer the social network itself, but the **group work** it can support.
 
-Before designing or evaluating any collaborative system, it is necessary to understand that collaboration is not a vague or purely intuitive phenomenon: it can be **modelled**, that is, described through formal theories and models that help explain why people collaborate, what collaboration requires, and where it tends to fail. This chapter presents five such models: Game Theory, Activity Theory, the 3C Collaboration Model, a collaboration ontology that integrates the previous concepts, and Tuckman's Model, which describes the stages of a group's development [@FuksEtAl2011; @VivacquaGarcia2011].
+Before designing or evaluating any collaborative system, it is necessary to understand that collaboration is not a vague or purely intuitive phenomenon: it can be **modelled**, that is, described through formal theories and models that help explain why people collaborate, what collaboration requires, and where it tends to fail. This chapter presents five such models: Game Theory, Activity Theory, the 3C Collaboration Model, Tuckman's Model, which describes the stages of a group's development, and a collaboration ontology that integrates the previous concepts [@FuksEtAl2011; @VivacquaGarcia2011].
 
 ## Why Model Collaboration? {#sec-04-modelling-en}
 
@@ -115,25 +115,13 @@ These three dimensions are not independent: they interrelate so that collaborati
 
 Collaboration is not the only way to organise group work. An alternative model, typical of military organisations and the classic industrial assembly line, is **Command and Control** (C2): a central authority decides what must be done and defines all tasks in advance, replacing distributed coordination with direct supervision, and virtually eliminating the need for communication and negotiation among those carrying out the work. For group work to be genuinely characterised as collaboration, rather than merely the coordinated execution of orders, communication, coordination **and** cooperation must all, in fact, take place, as represented in the 3C Model.
 
-## Collaboration Ontology {#sec-04-ontology-en}
+## Tuckman's Model: How a Group Develops {#sec-04-tuckman-en}
 
-The three previous models explain different aspects of collaboration, but sometimes use different terms and levels of detail. An **ontology** is the description of a domain, negotiated by a community, for a given purpose: it creates a common terminological base, which makes communication easier for those working in the field and allows computer systems to produce intelligible information about that domain [@VivacquaGarcia2011].
-
-Building on the same model by Ellis and colleagues used in the 3C Model [@EllisEtAl1991], the collaboration ontology is organised into four parts, each with a central concept [@VivacquaGarcia2011]: **group formation**, **communication**, **coordination** and **cooperation**.
-
-### Group Formation {#sec-04-ontology-groups-en}
-
-The central element of this part is the **participant**. A participant takes on tasks, is part of a group and takes part in the negotiations that define shared goals; to do so, they require two essential things: **trust**, the shared belief that one can rely on the other participants, and **motivation**, without which one is unlikely to commit to a proposal. The group, in turn, carries out an activity that generates a product, and that product is itself a kind of goal (@fig-04-ontology-groups-en).
-
-![Ontology of group formation: the participant as the central element, with their attributes (beliefs, trust, competence, motivation) and their relationships with the group, goals and tasks.](../assets/images/cap04/ontologia-grupos.png){#fig-04-ontology-groups-en}
-
-#### How a Group Develops: Tuckman's Model {#sec-04-tuckman-en}
-
-The ontology describes what a participant needs in order to join a group; what remains is to understand how that group evolves over time. A work group is not just a collection of individuals: its members interact and influence one another, establish social relationships and develop their own way of carrying out tasks to achieve shared goals. A group like this is not born ready. **Tuckman's Model** describes the successive stages that a small, task-oriented group goes through, from its formation to its dissolution [@FuksEtAl2011].
+The previous models describe collaboration at a given moment, but a group is not static: it changes over time. A work group is not just a collection of individuals: its members interact and influence one another, establish social relationships and develop their own way of carrying out tasks to achieve shared goals. A group like this is not born ready. **Tuckman's Model** describes the successive stages that a small, task-oriented group goes through, from its formation to its dissolution [@FuksEtAl2011].
 
 The model was proposed by Bruce Tuckman in 1965, based on an analysis of 50 articles on small groups, and initially described four stages [@Tuckman1965]. In 1977, in a review carried out with Mary Ann Jensen, a fifth stage was added: adjourning [@TuckmanJensen1977]. @fig-04-tuckman-en shows the five stages.
 
-![Tuckman's Model: the five stages of a small group's development, what is defined in each, the role of leadership and the movement of the members, adapted from @FuksEtAl2011.](../assets/images/cap04/tuckman.png){#fig-04-tuckman-en}
+![Tuckman's Model: the five stages of a small group's development, what is defined in each, the role of leadership and the movement of the members and the 3C Model dimension that matters most in each; stages adapted from @FuksEtAl2011.](../assets/images/cap04/tuckman.png){#fig-04-tuckman-en}
 
 - **Forming**: the group comes together. For an individual to become part of it, they must share its goals, tasks and way of working, identify with the others and feel part of the group. At this stage, members avoid conflict so that the group can consolidate.
 - **Storming**: with the goals defined, each member's role must be decided. This happens through confrontation, and this is the stage with the most conflict. It ends with roles and responsibilities assigned and a leadership established.
@@ -143,7 +131,21 @@ The model was proposed by Bruce Tuckman in 1965, based on an analysis of 50 arti
 
 The icons at the bottom of the figure summarise the members' movement at each stage: they converge when forming, clash when storming, line up when norming, move forward together when performing and separate when adjourning. The role of leadership also changes across the stages: it emerges during storming, is strong during norming and intervenes less and less during performing, as the group gains autonomy.
 
+As a group changes over time, so does the relative importance of each dimension of the 3C Model (@sec-04-3c-en), as the 3C row of @fig-04-tuckman-en shows. During forming and storming, **communication** matters most: members need to get to know each other, share goals and negotiate roles. During norming, **coordination** matters most, because the group sets its process, deadlines and distribution of tasks. During performing, **cooperation** matters most: joint production in the shared space, with little need for supervision. All three dimensions are present at every stage; what changes is which one demands the most attention and, with it, the tools the group needs most at each moment. This correspondence comes from combining the two models and is not part of Tuckman's original formulation.
+
 The final-year trip committee described in @sec-04-activity-example-en goes through these stages. When forming, four classmates volunteer and agree on what they want to achieve. When storming, they argue over who takes each task and who coordinates. When norming, they agree on how to decide, by poll, and how to record payments. When performing, each one handles their own part without needing reminders. After the trip, the committee adjourns.
+
+## Collaboration Ontology {#sec-04-ontology-en}
+
+The previous models explain different aspects of collaboration, but sometimes use different terms and levels of detail. An **ontology** is the description of a domain, negotiated by a community, for a given purpose: it creates a common terminological base, which makes communication easier for those working in the field and allows computer systems to produce intelligible information about that domain [@VivacquaGarcia2011].
+
+Building on the same model by Ellis and colleagues used in the 3C Model [@EllisEtAl1991], the collaboration ontology is organised into four parts, each with a central concept [@VivacquaGarcia2011]: **group formation**, **communication**, **coordination** and **cooperation**.
+
+### Group Formation {#sec-04-ontology-groups-en}
+
+The central element of this part is the **participant**. A participant takes on tasks, is part of a group and takes part in the negotiations that define shared goals; to do so, they require two essential things: **trust**, the shared belief that one can rely on the other participants, and **motivation**, without which one is unlikely to commit to a proposal. The group, in turn, carries out an activity that generates a product, and that product is itself a kind of goal (@fig-04-ontology-groups-en).
+
+![Ontology of group formation: the participant as the central element, with their attributes (beliefs, trust, competence, motivation) and their relationships with the group, goals and tasks.](../assets/images/cap04/ontologia-grupos.png){#fig-04-ontology-groups-en}
 
 ### Communication {#sec-04-ontology-communication-en}
 
@@ -180,8 +182,8 @@ This chapter presented five models that underpin the study of collaboration:
 3. The **Tragedy of the Commons** shows that the sum of individually rational decisions can destroy a shared resource, justifying the need for rules and penalties in collaboration [@Hardin1968]
 4. **Activity Theory** describes how a subject acts upon an object, always mediated by artefacts and, in the collective dimension, also by the community's division of labour and rules [@Engestrom1987]
 5. The **3C Model** breaks collaboration down into communication, coordination and cooperation, distinguishing it from the Command and Control model [@EllisEtAl1991]
-6. The **Collaboration Ontology** integrates these concepts, assigning a central element to each of the four parts: participant, message, work plan and activity [@VivacquaGarcia2011]
-7. **Tuckman's Model** describes the five stages a small group goes through: forming, storming, norming, performing and adjourning [@Tuckman1965; @TuckmanJensen1977]
+6. **Tuckman's Model** shows that a group changes over time, going through five stages: forming, storming, norming, performing and adjourning; in each stage one of the 3C Model dimensions matters most [@Tuckman1965; @TuckmanJensen1977]
+7. The **Collaboration Ontology** integrates these concepts, assigning a central element to each of the four parts: participant, message, work plan and activity [@VivacquaGarcia2011]
 
 ## Food for Thought {#sec-04-reflection-en}
 

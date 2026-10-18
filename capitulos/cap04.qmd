@@ -27,9 +27,9 @@ intuitivo: pode ser **modelada**, isto é, descrita através de teorias e
 modelos formais que ajudam a compreender porque as pessoas colaboram, o
 que a colaboração exige, e onde tende a falhar. Este capítulo apresenta
 cinco desses modelos: a Teoria dos Jogos, a Teoria da Atividade, o
-Modelo 3C de Colaboração, uma ontologia de colaboração que integra os
-conceitos anteriores e o Modelo de Tuckman, que descreve as etapas de
-desenvolvimento de um grupo [@FuksEtAl2011; @VivacquaGarcia2011].
+Modelo 3C de Colaboração, o Modelo de Tuckman, que descreve as etapas de
+desenvolvimento de um grupo, e uma ontologia de colaboração que integra
+os conceitos anteriores [@FuksEtAl2011; @VivacquaGarcia2011].
 
 ## Porque Modelar a Colaboração? {#sec-04-modelar}
 
@@ -293,40 +293,10 @@ execução coordenada de ordens, é preciso que ocorram, de facto,
 comunicação, coordenação **e** cooperação, tal como representado no
 Modelo 3C.
 
-## Ontologia de Colaboração {#sec-04-ontologia}
+## Modelo de Tuckman: o Desenvolvimento de um Grupo {#sec-04-tuckman}
 
-Os três modelos anteriores explicam aspetos distintos da colaboração,
-mas usam, por vezes, termos e níveis de detalhe diferentes. Uma
-**ontologia** é a descrição de um domínio, negociada por uma comunidade,
-para um determinado fim: cria uma base terminológica comum, o que
-facilita a comunicação entre quem trabalha na área e permite que
-sistemas computacionais produzam informação de forma inteligível sobre
-esse domínio [@VivacquaGarcia2011].
-
-Partindo do mesmo modelo de Ellis e colaboradores usado no Modelo 3C
-[@EllisEtAl1991], a ontologia de colaboração organiza-se em quatro
-partes, cada uma com um conceito central [@VivacquaGarcia2011]: a
-**formação de grupos**, a **comunicação**, a **coordenação** e a
-**cooperação**.
-
-### Formação de Grupos {#sec-04-ontologia-grupos}
-
-O elemento central desta parte é o **participante**. Um participante
-assume tarefas, é parte de um grupo e participa nas negociações que
-definem os objetivos comuns; para tal, requer duas coisas essenciais:
-**confiança**, a crença partilhada de que se pode contar com os outros
-participantes, e **motivação**, sem a qual dificilmente se compromete
-com uma proposta. O grupo, por sua vez, realiza uma atividade que gera
-um produto, e esse produto é ele próprio um tipo de objetivo
-(@fig-04-ontologia-grupos).
-
-![Ontologia sobre formação de grupos: o participante como elemento central, com os seus atributos (crenças, confiança, competência, motivação) e as suas relações com o grupo, os objetivos e as tarefas.](../assets/images/cap04/ontologia-grupos.png){#fig-04-ontologia-grupos}
-
-#### O Desenvolvimento de um Grupo: o Modelo de Tuckman {#sec-04-tuckman}
-
-A ontologia descreve o que um participante precisa para integrar um
-grupo; falta perceber como esse grupo evolui ao longo do tempo. Um grupo
-de trabalho não é uma simples coleção de indivíduos: os seus
+Os modelos anteriores descrevem a colaboração num dado momento, mas um
+grupo não é estático: muda ao longo do tempo. Um grupo de trabalho não é uma simples coleção de indivíduos: os seus
 membros interagem e influenciam-se, estabelecem relações sociais e
 desenvolvem uma forma própria de realizar as tarefas para alcançar metas
 partilhadas. Um grupo assim não nasce pronto. O **Modelo de Tuckman**
@@ -341,7 +311,7 @@ acrescentada uma quinta etapa, a dissolução [@TuckmanJensen1977]. A
 @fig-04-tuckman representa as cinco etapas, cada uma com o nome original
 em inglês.
 
-![O Modelo de Tuckman: as cinco etapas do desenvolvimento de um grupo pequeno, o que se define em cada uma, o papel da liderança e o movimento dos membros, adaptado de @FuksEtAl2011.](../assets/images/cap04/tuckman.png){#fig-04-tuckman}
+![O Modelo de Tuckman: as cinco etapas do desenvolvimento de um grupo pequeno, o que se define em cada uma, o papel da liderança e o movimento dos membros e a dimensão do Modelo 3C que mais pesa em cada uma; etapas adaptadas de @FuksEtAl2011.](../assets/images/cap04/tuckman.png){#fig-04-tuckman}
 
 - **Formação** (*forming*): o grupo constitui-se. Para que um indivíduo
   se integre, tem de partilhar as metas, as tarefas e a forma de
@@ -373,6 +343,19 @@ longo das etapas muda também o papel da liderança, que surge na
 confrontação, é forte na normatização e intervém cada vez menos na
 atuação, à medida que o grupo ganha autonomia.
 
+Como um grupo muda ao longo do tempo, muda também a importância
+relativa de cada uma das dimensões do Modelo 3C (@sec-04-3c), como
+mostra a linha 3C da @fig-04-tuckman. Na formação e na confrontação pesa
+sobretudo a **comunicação**: os membros precisam de se conhecer, de
+partilhar metas e de negociar papéis. Na normatização pesa a
+**coordenação**, porque o grupo fixa o processo, os prazos e a
+distribuição das tarefas. Na atuação pesa a **cooperação**, a produção
+conjunta no espaço partilhado, com pouca necessidade de supervisão. As
+três dimensões estão presentes em todas as etapas; o que muda é a que
+exige mais atenção e, com ela, as ferramentas de que o grupo mais
+precisa em cada momento. Esta correspondência resulta de combinar os
+dois modelos e não faz parte da formulação original de Tuckman.
+
 A comissão da viagem de finalistas descrita na @sec-04-atividade-exemplo
 percorre estas etapas. Na formação, quatro colegas oferecem-se e
 combinam o que querem conseguir. Na confrontação, discutem quem fica com
@@ -380,6 +363,35 @@ cada tarefa e quem coordena. Na normatização, acordam a forma de decidir,
 por sondagem, e a forma de registar os pagamentos. Na atuação, cada um
 trata da sua parte sem precisar de ser lembrado. Depois da viagem, a
 comissão dissolve-se.
+
+## Ontologia de Colaboração {#sec-04-ontologia}
+
+Os modelos anteriores explicam aspetos distintos da colaboração,
+mas usam, por vezes, termos e níveis de detalhe diferentes. Uma
+**ontologia** é a descrição de um domínio, negociada por uma comunidade,
+para um determinado fim: cria uma base terminológica comum, o que
+facilita a comunicação entre quem trabalha na área e permite que
+sistemas computacionais produzam informação de forma inteligível sobre
+esse domínio [@VivacquaGarcia2011].
+
+Partindo do mesmo modelo de Ellis e colaboradores usado no Modelo 3C
+[@EllisEtAl1991], a ontologia de colaboração organiza-se em quatro
+partes, cada uma com um conceito central [@VivacquaGarcia2011]: a
+**formação de grupos**, a **comunicação**, a **coordenação** e a
+**cooperação**.
+
+### Formação de Grupos {#sec-04-ontologia-grupos}
+
+O elemento central desta parte é o **participante**. Um participante
+assume tarefas, é parte de um grupo e participa nas negociações que
+definem os objetivos comuns; para tal, requer duas coisas essenciais:
+**confiança**, a crença partilhada de que se pode contar com os outros
+participantes, e **motivação**, sem a qual dificilmente se compromete
+com uma proposta. O grupo, por sua vez, realiza uma atividade que gera
+um produto, e esse produto é ele próprio um tipo de objetivo
+(@fig-04-ontologia-grupos).
+
+![Ontologia sobre formação de grupos: o participante como elemento central, com os seus atributos (crenças, confiança, competência, motivação) e as suas relações com o grupo, os objetivos e as tarefas.](../assets/images/cap04/ontologia-grupos.png){#fig-04-ontologia-grupos}
 
 ### Comunicação {#sec-04-ontologia-comunicacao}
 
@@ -463,12 +475,13 @@ colaboração:
 5. O **Modelo 3C** decompõe a colaboração em comunicação, coordenação e
    cooperação, distinguindo-a do modelo de Comando e Controlo
    [@EllisEtAl1991]
-6. A **Ontologia de Colaboração** integra estes conceitos, atribuindo um
+6. O **Modelo de Tuckman** mostra que um grupo muda ao longo do tempo,
+   passando por cinco etapas: formação, confrontação, normatização,
+   atuação e dissolução; em cada etapa pesa mais uma das dimensões do
+   Modelo 3C [@Tuckman1965; @TuckmanJensen1977]
+7. A **Ontologia de Colaboração** integra estes conceitos, atribuindo um
    elemento central a cada uma das quatro partes: participante, mensagem,
    plano de trabalho e atividade [@VivacquaGarcia2011]
-7. O **Modelo de Tuckman** descreve as cinco etapas por que passa um
-   grupo pequeno: formação, confrontação, normatização, atuação e
-   dissolução [@Tuckman1965; @TuckmanJensen1977]
 
 ## Para Refletir {#sec-04-reflexao}
 
