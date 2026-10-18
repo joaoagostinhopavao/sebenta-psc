@@ -211,6 +211,50 @@ plataforma colaborativa, muda-se a forma como a atividade é realizada, o
 que pode criar novos problemas mas também novas possibilidades, e é
 exatamente aqui que o desenho de sistemas colaborativos intervém.
 
+### Exemplo: a Viagem de Finalistas {#sec-04-atividade-exemplo}
+
+Para aplicar o modelo a uma situação concreta, parte-se de uma descrição
+e procura-se, em cada frase, o elemento do modelo a que corresponde.
+Considere-se a seguinte situação:
+
+> Os 40 finalistas de uma turma querem fazer uma viagem de finalistas em
+> maio. Quatro colegas, a Ana, o Bruno, a Carla e o Duarte, formam a
+> comissão que vai organizar a viagem. A comissão cria um grupo de
+> `WhatsApp` com toda a turma e uma folha de cálculo partilhada para
+> registar quem já pagou. A turma combina três regras: cada decisão é
+> votada numa sondagem do `WhatsApp`, a viagem não pode custar mais de
+> 350 € por pessoa e a quota paga-se até 15 de março. A comissão reparte
+> o trabalho: a Ana trata do alojamento, o Bruno do transporte, a Carla
+> dos pagamentos e o Duarte das atividades. Em abril, a viagem está
+> reservada e paga.
+
+A @fig-04-atividade-exemplo mostra o modelo preenchido com esta
+situação. Cada elemento justifica-se assim:
+
+- **Sujeito**: a comissão de quatro finalistas, porque é quem age. A
+  turma no seu conjunto não é o sujeito: limita-se a votar e a pagar.
+- **Objeto**: a organização da viagem, aquilo sobre que a comissão
+  trabalha durante meses.
+- **Resultado**: a viagem reservada e paga, aquilo em que o objeto se
+  transforma no fim da atividade. O objeto é o que está a ser
+  trabalhado; o resultado é o que se obtém.
+- **Artefactos**: o grupo de `WhatsApp`, com as sondagens, e a folha de
+  cálculo partilhada. A comissão não age diretamente sobre a viagem, age
+  através destas ferramentas.
+- **Comunidade**: os 40 finalistas da turma, o grupo em que a comissão
+  está inserida e para quem trabalha.
+- **Regras**: as decisões por votação, o limite de 350 € por pessoa e o
+  prazo de pagamento, todas combinadas pela comunidade.
+- **Divisão de trabalho**: o alojamento para a Ana, o transporte para o
+  Bruno, os pagamentos para a Carla e as atividades para o Duarte.
+
+![O Modelo de Atividade aplicado à organização de uma viagem de finalistas: cada elemento do modelo corresponde a uma parte concreta da situação.](../assets/images/cap04/teoria-atividade-exemplo.png){#fig-04-atividade-exemplo}
+
+O exemplo mostra também a ação reversa do artefacto sobre o sujeito. Com
+as sondagens do `WhatsApp`, a comissão deixa de decidir em discussões
+longas e passa a decidir por votação: a ferramenta escolhida para
+organizar a viagem muda a própria forma como o grupo toma decisões.
+
 ## Modelo 3C de Colaboração {#sec-04-3c}
 
 O **Modelo 3C de Colaboração** analisa qualquer trabalho em grupo em

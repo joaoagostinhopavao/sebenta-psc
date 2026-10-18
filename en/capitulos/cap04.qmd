@@ -81,6 +81,26 @@ From a collective perspective, the subject does not act in isolation: they are e
 
 An example applied to the classroom illustrates the model: the subject is a student or a group of students; the object is the problem or work to be done; the artefact is the computer system, the computer, or even the language used to communicate; the community is the class; the division of labour is how the group work's tasks are split up; and the rules are, for example, the assessment criteria set by the lecturer. Introducing a new artefact, such as a collaborative platform, changes how the activity is carried out, which can create new problems but also new possibilities, and it is precisely here that the design of collaborative systems comes in.
 
+### Example: the Final-Year Trip {#sec-04-activity-example-en}
+
+To apply the model to a concrete situation, one starts from a description and looks, in each sentence, for the element of the model it corresponds to. Consider the following situation:
+
+> The 40 final-year students of a class want to go on a final-year trip in May. Four classmates, Ana, Bruno, Carla and Duarte, form the committee that will organise the trip. The committee creates a `WhatsApp` group with the whole class and a shared spreadsheet to record who has already paid. The class agrees on three rules: every decision is voted on in a `WhatsApp` poll, the trip may not cost more than €350 per person and the fee must be paid by 15 March. The committee splits the work: Ana handles accommodation, Bruno transport, Carla payments and Duarte activities. By April, the trip is booked and paid for.
+
+@fig-04-activity-example-en shows the model filled in with this situation. Each element is justified as follows:
+
+- **Subject**: the committee of four final-year students, because they are the ones who act. The class as a whole is not the subject: it only votes and pays.
+- **Object**: organising the trip, what the committee works on for months.
+- **Outcome**: the trip booked and paid for, what the object turns into at the end of the activity. The object is what is being worked on; the outcome is what is obtained.
+- **Artefacts**: the `WhatsApp` group, with its polls, and the shared spreadsheet. The committee does not act directly on the trip, it acts through these tools.
+- **Community**: the 40 final-year students of the class, the group the committee belongs to and works for.
+- **Rules**: decisions by vote, the €350 per person limit and the payment deadline, all agreed by the community.
+- **Division of labour**: accommodation for Ana, transport for Bruno, payments for Carla and activities for Duarte.
+
+![The Activity Model applied to organising a final-year trip: each element of the model corresponds to a concrete part of the situation.](../assets/images/cap04/teoria-atividade-exemplo.png){#fig-04-activity-example-en}
+
+The example also shows the reverse effect of the artefact on the subject. With `WhatsApp` polls, the committee stops deciding through long discussions and starts deciding by vote: the tool chosen to organise the trip changes the very way the group makes decisions.
+
 ## The 3C Collaboration Model {#sec-04-3c-en}
 
 The **3C Collaboration Model** analyses any group work along three dimensions: **communication**, **coordination** and **cooperation**. It originates in a classification proposed by Ellis, Gibbs and Rein in 1991 for group work support systems [@EllisEtAl1991], later formalised as a model in its own right:
