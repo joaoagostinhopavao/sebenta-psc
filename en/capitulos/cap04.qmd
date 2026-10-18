@@ -16,7 +16,7 @@ lang: en-GB
 
 The previous three chapters dealt with **social platforms**: how society organises itself into a network, how those networks became digital platforms, and how to analyse them through metrics and folksonomy. This chapter opens a new block, dedicated to **collaborative platforms**, whose object of study is no longer the social network itself, but the **group work** it can support.
 
-Before designing or evaluating any collaborative system, it is necessary to understand that collaboration is not a vague or purely intuitive phenomenon: it can be **modelled**, that is, described through formal theories and models that help explain why people collaborate, what collaboration requires, and where it tends to fail. This chapter presents four such models: Game Theory, Activity Theory, the 3C Collaboration Model, and a collaboration ontology that integrates the previous concepts [@FuksEtAl2011; @VivacquaGarcia2011].
+Before designing or evaluating any collaborative system, it is necessary to understand that collaboration is not a vague or purely intuitive phenomenon: it can be **modelled**, that is, described through formal theories and models that help explain why people collaborate, what collaboration requires, and where it tends to fail. This chapter presents five such models: Game Theory, Activity Theory, the 3C Collaboration Model, a collaboration ontology that integrates the previous concepts, and Tuckman's Model, which describes the stages of a group's development [@FuksEtAl2011; @VivacquaGarcia2011].
 
 ## Why Model Collaboration? {#sec-04-modelling-en}
 
@@ -153,9 +153,27 @@ The central element is the **activity**, carried out by a group with a given geo
 
 A collaboration ontology is especially useful for those designing collaborative systems: it helps check that important aspects of group work, such as trust between participants or the existence of an explicit work plan, are not being overlooked in the design of a new system.
 
+## Tuckman's Model: How a Group Develops {#sec-04-tuckman-en}
+
+A work group is not just a collection of individuals: its members interact and influence one another, establish social relationships and develop their own way of carrying out tasks to achieve shared goals. A group like this is not born ready. **Tuckman's Model** describes the successive stages that a small, task-oriented group goes through, from its formation to its dissolution [@FuksEtAl2011].
+
+The model was proposed by Bruce Tuckman in 1965, based on an analysis of 50 articles on small groups, and initially described four stages [@Tuckman1965]. In 1977, in a review carried out with Mary Ann Jensen, a fifth stage was added: adjourning [@TuckmanJensen1977]. @fig-04-tuckman-en shows the five stages.
+
+![Tuckman's Model: the five stages of a small group's development, what is defined in each, the role of leadership and the movement of the members, adapted from @FuksEtAl2011.](../assets/images/cap04/tuckman.png){#fig-04-tuckman-en}
+
+- **Forming**: the group comes together. For an individual to become part of it, they must share its goals, tasks and way of working, identify with the others and feel part of the group. At this stage, members avoid conflict so that the group can consolidate.
+- **Storming**: with the goals defined, each member's role must be decided. This happens through confrontation, and this is the stage with the most conflict. It ends with roles and responsibilities assigned and a leadership established.
+- **Norming**: the group defines its work process, suited to the roles assigned and to the goals. There is less conflict, because members already know each other's abilities, and the leader plays a strong part in defining how tasks are carried out.
+- **Performing**: this is the stage of highest productivity and least conflict. Members are committed to the goals, roles and process, and the group works on its own, adjusting the process when the work requires it. The need for supervision is minimal and there is a sense of loyalty among members.
+- **Adjourning**: the group breaks up because the work process has ended, either because the task is complete or because the group gave up. What was achieved is acknowledged, the commitment to the tasks ends and the members go their separate ways.
+
+The icons at the bottom of the figure summarise the members' movement at each stage: they converge when forming, clash when storming, line up when norming, move forward together when performing and separate when adjourning. The role of leadership also changes across the stages: it emerges during storming, is strong during norming and intervenes less and less during performing, as the group gains autonomy.
+
+The final-year trip committee described in @sec-04-activity-example-en goes through these stages. When forming, four classmates volunteer and agree on what they want to achieve. When storming, they argue over who takes each task and who coordinates. When norming, they agree on how to decide, by poll, and how to record payments. When performing, each one handles their own part without needing reminders. After the trip, the committee adjourns.
+
 ## Summary {#sec-04-summary-en}
 
-This chapter presented four models that underpin the study of collaboration:
+This chapter presented five models that underpin the study of collaboration:
 
 1. **Game Theory** distinguishes zero-sum games, in which one player's gain implies an equivalent loss for another, from non-zero-sum games, in which the overall outcome can vary; the **Prisoner's Dilemma** is an example of the latter, and shows that an individually rational decision can be collectively worse than collaborating [@FuksEtAl2011]
 2. In repeated versions of the game, the *tit-for-tat* strategy shows how collaboration can emerge and sustain itself without central authority [@Axelrod1984]
@@ -163,6 +181,7 @@ This chapter presented four models that underpin the study of collaboration:
 4. **Activity Theory** describes how a subject acts upon an object, always mediated by artefacts and, in the collective dimension, also by the community's division of labour and rules [@Engestrom1987]
 5. The **3C Model** breaks collaboration down into communication, coordination and cooperation, distinguishing it from the Command and Control model [@EllisEtAl1991]
 6. The **Collaboration Ontology** integrates these concepts, assigning a central element to each of the four parts: participant, message, work plan and activity [@VivacquaGarcia2011]
+7. **Tuckman's Model** describes the five stages a small group goes through: forming, storming, norming, performing and adjourning [@Tuckman1965; @TuckmanJensen1977]
 
 ## Food for Thought {#sec-04-reflection-en}
 

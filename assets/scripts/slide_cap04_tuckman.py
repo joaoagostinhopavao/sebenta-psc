@@ -4,12 +4,23 @@ from matplotlib.patches import FancyBboxPatch, Circle, FancyArrowPatch
 
 # Modelo de Tuckman (etapas de desenvolvimento de um grupo), redesenhado a
 # partir do slide 17 do deck original "Sistemas Colaborativos" (Fuks et al.,
-# 2011), na paleta verde do deck da Aula 5.
-GREEN = "#3d8a52"
-GREEN_DARK = "#1d5a32"
-GREEN_LIGHT = "#dfece9"
-INK = "#111111"
-GREY = "#6b6b6b"
+# 2011). Uso: slide_cap04_tuckman.py [slide|pt|en]
+#   slide: paleta verde do deck da Aula 5
+#   pt/en: paleta magenta da sebenta, figura do Cap04
+import sys
+MODE = sys.argv[1] if len(sys.argv) > 1 else "slide"
+if MODE == "slide":
+    GREEN = "#3d8a52"
+    GREEN_DARK = "#1d5a32"
+    INK = "#111111"
+    GREY = "#6b6b6b"
+    OUT = "assets/images/cap04/slides/tuckman-slide.png"
+else:
+    sys.path.insert(0, "/Users/jpavao/QProjects/Sebenta-PSC/assets/scripts")
+    from sebenta_style import DARK, MAGENTA, NOTE_COLOR
+    GREEN, GREEN_DARK, INK, GREY = MAGENTA, DARK, DARK, NOTE_COLOR
+    OUT = ("assets/images/cap04/tuckman.png" if MODE == "pt"
+           else "en/assets/images/cap04/tuckman.png")
 
 plt.rcParams["font.family"] = "Arial"
 
@@ -19,6 +30,14 @@ ax = fig.add_axes([0, 0, 1, 1])
 ax.set_xlim(0, W)
 ax.set_ylim(0, H)
 ax.axis("off")
+
+STAGES_EN = [
+    ("Forming", "", "Identifying\nshared goals", "Sense of\nbelonging", "converge"),
+    ("Storming", "", "Defining the\nresponsibilities\nof each role", "Defining roles\nand leadership", "cross"),
+    ("Norming", "", "Defining the\nwork process", "Strong\nleadership", "align"),
+    ("Performing", "", "Productivity:\ncarrying out and\nimproving the process", "Less\nleadership", "parallel"),
+    ("Adjourning", "", "End of the process", "End of the group", "diverge"),
+]
 
 STAGES = [
     ("Formação", "forming",
@@ -32,6 +51,9 @@ STAGES = [
     ("Dissolução", "adjourning",
      "Fim do processo", "Fim do grupo", "diverge"),
 ]
+
+if MODE == "en":
+    STAGES = STAGES_EN
 
 BW, BH = 1.95, 0.95
 GAP = 0.38
@@ -59,7 +81,7 @@ for i, (name, en, l1, l2, icon) in enumerate(STAGES):
                                 boxstyle="round,pad=0,rounding_size=0.12",
                                 facecolor=GREEN if i < 4 else GREEN_DARK,
                                 edgecolor="none", zorder=3))
-    ax.text(x, YB + 0.13, name, ha="center", va="center", fontsize=19,
+    ax.text(x, YB + (0.13 if en else 0), name, ha="center", va="center", fontsize=19,
             fontweight="bold", color="white", zorder=4)
     ax.text(x, YB - 0.24, en, ha="center", va="center", fontsize=13,
             style="italic", color="white", zorder=4)
@@ -110,6 +132,6 @@ for i, (name, en, l1, l2, icon) in enumerate(STAGES):
             by = cy - 0.45 * math.sin(r) + off * py
             arrow((bx, by), (bx + 0.9 * math.cos(r), by + 0.9 * math.sin(r)), **kw)
 
-fig.savefig("/Users/jpavao/QProjects/Sebenta-PSC/assets/images/cap04/slides/tuckman-slide.png",
+fig.savefig("/Users/jpavao/QProjects/Sebenta-PSC/" + OUT,
             facecolor="white")
 print("done")
