@@ -322,6 +322,65 @@ um produto, e esse produto é ele próprio um tipo de objetivo
 
 ![Ontologia sobre formação de grupos: o participante como elemento central, com os seus atributos (crenças, confiança, competência, motivação) e as suas relações com o grupo, os objetivos e as tarefas.](../assets/images/cap04/ontologia-grupos.png){#fig-04-ontologia-grupos}
 
+#### O Desenvolvimento de um Grupo: o Modelo de Tuckman {#sec-04-tuckman}
+
+A ontologia descreve o que um participante precisa para integrar um
+grupo; falta perceber como esse grupo evolui ao longo do tempo. Um grupo
+de trabalho não é uma simples coleção de indivíduos: os seus
+membros interagem e influenciam-se, estabelecem relações sociais e
+desenvolvem uma forma própria de realizar as tarefas para alcançar metas
+partilhadas. Um grupo assim não nasce pronto. O **Modelo de Tuckman**
+descreve as etapas sucessivas por que passa um grupo pequeno, orientado
+para uma tarefa, desde a sua formação até à sua dissolução
+[@FuksEtAl2011].
+
+O modelo foi proposto por Bruce Tuckman em 1965, a partir da análise de
+50 artigos sobre grupos pequenos, e descrevia inicialmente quatro etapas
+[@Tuckman1965]. Em 1977, numa revisão feita com Mary Ann Jensen, foi
+acrescentada uma quinta etapa, a dissolução [@TuckmanJensen1977]. A
+@fig-04-tuckman representa as cinco etapas, cada uma com o nome original
+em inglês.
+
+![O Modelo de Tuckman: as cinco etapas do desenvolvimento de um grupo pequeno, o que se define em cada uma, o papel da liderança e o movimento dos membros, adaptado de @FuksEtAl2011.](../assets/images/cap04/tuckman.png){#fig-04-tuckman}
+
+- **Formação** (*forming*): o grupo constitui-se. Para que um indivíduo
+  se integre, tem de partilhar as metas, as tarefas e a forma de
+  trabalhar, identificar-se com os outros e sentir-se parte do grupo.
+  Nesta etapa, os membros evitam conflitos para que o grupo se
+  consolide.
+- **Confrontação** (*storming*): com as metas definidas, é preciso
+  decidir o papel de cada um. Essa definição faz-se por confronto, e
+  esta é a etapa com mais conflitos. Termina com os papéis e as
+  responsabilidades atribuídos e com uma liderança estabelecida.
+- **Normatização** (*norming*): o grupo define o processo de trabalho,
+  adequado aos papéis atribuídos e às metas. Há menos conflito, porque os
+  membros já conhecem as capacidades uns dos outros, e o líder tem um
+  papel forte na definição da forma de realizar as tarefas.
+- **Atuação** (*performing*): é a etapa de maior produtividade e de
+  menor conflito. Os membros estão comprometidos com as metas, os papéis
+  e o processo, e o grupo trabalha por conta própria, ajustando o
+  processo quando o trabalho o exige. A necessidade de supervisão é
+  mínima e há um sentimento de lealdade entre os membros.
+- **Dissolução** (*adjourning*): o grupo desfaz-se porque o processo de
+  trabalho terminou, seja pela conclusão da tarefa, seja por
+  desistência. Reconhece-se o que foi feito, termina o compromisso com
+  as tarefas e os membros separam-se.
+
+Os ícones na base da figura resumem o movimento dos membros em cada
+etapa: convergem na formação, chocam na confrontação, alinham-se na
+normatização, avançam juntos na atuação e separam-se na dissolução. Ao
+longo das etapas muda também o papel da liderança, que surge na
+confrontação, é forte na normatização e intervém cada vez menos na
+atuação, à medida que o grupo ganha autonomia.
+
+A comissão da viagem de finalistas descrita na @sec-04-atividade-exemplo
+percorre estas etapas. Na formação, quatro colegas oferecem-se e
+combinam o que querem conseguir. Na confrontação, discutem quem fica com
+cada tarefa e quem coordena. Na normatização, acordam a forma de decidir,
+por sondagem, e a forma de registar os pagamentos. Na atuação, cada um
+trata da sua parte sem precisar de ser lembrado. Depois da viagem, a
+comissão dissolve-se.
+
 ### Comunicação {#sec-04-ontologia-comunicacao}
 
 O elemento central é a **mensagem**. Um emissor codifica e envia uma
@@ -378,63 +437,6 @@ colaborativos: ajuda a verificar que aspetos importantes do trabalho em
 grupo, como a confiança entre participantes ou a existência de um plano
 de trabalho explícito, não estão a ser esquecidos no desenho de um novo
 sistema.
-
-## Modelo de Tuckman: o Desenvolvimento de um Grupo {#sec-04-tuckman}
-
-Um grupo de trabalho não é uma simples coleção de indivíduos: os seus
-membros interagem e influenciam-se, estabelecem relações sociais e
-desenvolvem uma forma própria de realizar as tarefas para alcançar metas
-partilhadas. Um grupo assim não nasce pronto. O **Modelo de Tuckman**
-descreve as etapas sucessivas por que passa um grupo pequeno, orientado
-para uma tarefa, desde a sua formação até à sua dissolução
-[@FuksEtAl2011].
-
-O modelo foi proposto por Bruce Tuckman em 1965, a partir da análise de
-50 artigos sobre grupos pequenos, e descrevia inicialmente quatro etapas
-[@Tuckman1965]. Em 1977, numa revisão feita com Mary Ann Jensen, foi
-acrescentada uma quinta etapa, a dissolução [@TuckmanJensen1977]. A
-@fig-04-tuckman representa as cinco etapas, cada uma com o nome original
-em inglês.
-
-![O Modelo de Tuckman: as cinco etapas do desenvolvimento de um grupo pequeno, o que se define em cada uma, o papel da liderança e o movimento dos membros, adaptado de @FuksEtAl2011.](../assets/images/cap04/tuckman.png){#fig-04-tuckman}
-
-- **Formação** (*forming*): o grupo constitui-se. Para que um indivíduo
-  se integre, tem de partilhar as metas, as tarefas e a forma de
-  trabalhar, identificar-se com os outros e sentir-se parte do grupo.
-  Nesta etapa, os membros evitam conflitos para que o grupo se
-  consolide.
-- **Confrontação** (*storming*): com as metas definidas, é preciso
-  decidir o papel de cada um. Essa definição faz-se por confronto, e
-  esta é a etapa com mais conflitos. Termina com os papéis e as
-  responsabilidades atribuídos e com uma liderança estabelecida.
-- **Normatização** (*norming*): o grupo define o processo de trabalho,
-  adequado aos papéis atribuídos e às metas. Há menos conflito, porque os
-  membros já conhecem as capacidades uns dos outros, e o líder tem um
-  papel forte na definição da forma de realizar as tarefas.
-- **Atuação** (*performing*): é a etapa de maior produtividade e de
-  menor conflito. Os membros estão comprometidos com as metas, os papéis
-  e o processo, e o grupo trabalha por conta própria, ajustando o
-  processo quando o trabalho o exige. A necessidade de supervisão é
-  mínima e há um sentimento de lealdade entre os membros.
-- **Dissolução** (*adjourning*): o grupo desfaz-se porque o processo de
-  trabalho terminou, seja pela conclusão da tarefa, seja por
-  desistência. Reconhece-se o que foi feito, termina o compromisso com
-  as tarefas e os membros separam-se.
-
-Os ícones na base da figura resumem o movimento dos membros em cada
-etapa: convergem na formação, chocam na confrontação, alinham-se na
-normatização, avançam juntos na atuação e separam-se na dissolução. Ao
-longo das etapas muda também o papel da liderança, que surge na
-confrontação, é forte na normatização e intervém cada vez menos na
-atuação, à medida que o grupo ganha autonomia.
-
-A comissão da viagem de finalistas descrita na @sec-04-atividade-exemplo
-percorre estas etapas. Na formação, quatro colegas oferecem-se e
-combinam o que querem conseguir. Na confrontação, discutem quem fica com
-cada tarefa e quem coordena. Na normatização, acordam a forma de decidir,
-por sondagem, e a forma de registar os pagamentos. Na atuação, cada um
-trata da sua parte sem precisar de ser lembrado. Depois da viagem, a
-comissão dissolve-se.
 
 ## Síntese {#sec-04-sintese}
 

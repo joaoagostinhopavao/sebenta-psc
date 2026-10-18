@@ -127,6 +127,24 @@ The central element of this part is the **participant**. A participant takes on 
 
 ![Ontology of group formation: the participant as the central element, with their attributes (beliefs, trust, competence, motivation) and their relationships with the group, goals and tasks.](../assets/images/cap04/ontologia-grupos.png){#fig-04-ontology-groups-en}
 
+#### How a Group Develops: Tuckman's Model {#sec-04-tuckman-en}
+
+The ontology describes what a participant needs in order to join a group; what remains is to understand how that group evolves over time. A work group is not just a collection of individuals: its members interact and influence one another, establish social relationships and develop their own way of carrying out tasks to achieve shared goals. A group like this is not born ready. **Tuckman's Model** describes the successive stages that a small, task-oriented group goes through, from its formation to its dissolution [@FuksEtAl2011].
+
+The model was proposed by Bruce Tuckman in 1965, based on an analysis of 50 articles on small groups, and initially described four stages [@Tuckman1965]. In 1977, in a review carried out with Mary Ann Jensen, a fifth stage was added: adjourning [@TuckmanJensen1977]. @fig-04-tuckman-en shows the five stages.
+
+![Tuckman's Model: the five stages of a small group's development, what is defined in each, the role of leadership and the movement of the members, adapted from @FuksEtAl2011.](../assets/images/cap04/tuckman.png){#fig-04-tuckman-en}
+
+- **Forming**: the group comes together. For an individual to become part of it, they must share its goals, tasks and way of working, identify with the others and feel part of the group. At this stage, members avoid conflict so that the group can consolidate.
+- **Storming**: with the goals defined, each member's role must be decided. This happens through confrontation, and this is the stage with the most conflict. It ends with roles and responsibilities assigned and a leadership established.
+- **Norming**: the group defines its work process, suited to the roles assigned and to the goals. There is less conflict, because members already know each other's abilities, and the leader plays a strong part in defining how tasks are carried out.
+- **Performing**: this is the stage of highest productivity and least conflict. Members are committed to the goals, roles and process, and the group works on its own, adjusting the process when the work requires it. The need for supervision is minimal and there is a sense of loyalty among members.
+- **Adjourning**: the group breaks up because the work process has ended, either because the task is complete or because the group gave up. What was achieved is acknowledged, the commitment to the tasks ends and the members go their separate ways.
+
+The icons at the bottom of the figure summarise the members' movement at each stage: they converge when forming, clash when storming, line up when norming, move forward together when performing and separate when adjourning. The role of leadership also changes across the stages: it emerges during storming, is strong during norming and intervenes less and less during performing, as the group gains autonomy.
+
+The final-year trip committee described in @sec-04-activity-example-en goes through these stages. When forming, four classmates volunteer and agree on what they want to achieve. When storming, they argue over who takes each task and who coordinates. When norming, they agree on how to decide, by poll, and how to record payments. When performing, each one handles their own part without needing reminders. After the trip, the committee adjourns.
+
 ### Communication {#sec-04-ontology-communication-en}
 
 The central element is the **message**. A sender encodes and sends a message, which follows a communication protocol shared with the receiver, and which the receiver receives and interprets; both also share a common sense that makes interpretation possible. The message also has three attributes that shape it: **form** (linguistic, symbolic, bodily, among others), **transmission medium** (from face-to-face to a computer system) and **synchronism** (synchronous or asynchronous). It is through the message that negotiation takes place, and it is from it that participants' commitments result (@fig-04-ontology-communication-en).
@@ -152,24 +170,6 @@ The central element is the **activity**, carried out by a group with a given geo
 ![Summary of the collaboration ontology: the four blocks, group formation, communication, coordination and cooperation, and each one's respective central concept.](../assets/images/cap04/ontologia-colaboracao.png){#fig-04-ontology-en}
 
 A collaboration ontology is especially useful for those designing collaborative systems: it helps check that important aspects of group work, such as trust between participants or the existence of an explicit work plan, are not being overlooked in the design of a new system.
-
-## Tuckman's Model: How a Group Develops {#sec-04-tuckman-en}
-
-A work group is not just a collection of individuals: its members interact and influence one another, establish social relationships and develop their own way of carrying out tasks to achieve shared goals. A group like this is not born ready. **Tuckman's Model** describes the successive stages that a small, task-oriented group goes through, from its formation to its dissolution [@FuksEtAl2011].
-
-The model was proposed by Bruce Tuckman in 1965, based on an analysis of 50 articles on small groups, and initially described four stages [@Tuckman1965]. In 1977, in a review carried out with Mary Ann Jensen, a fifth stage was added: adjourning [@TuckmanJensen1977]. @fig-04-tuckman-en shows the five stages.
-
-![Tuckman's Model: the five stages of a small group's development, what is defined in each, the role of leadership and the movement of the members, adapted from @FuksEtAl2011.](../assets/images/cap04/tuckman.png){#fig-04-tuckman-en}
-
-- **Forming**: the group comes together. For an individual to become part of it, they must share its goals, tasks and way of working, identify with the others and feel part of the group. At this stage, members avoid conflict so that the group can consolidate.
-- **Storming**: with the goals defined, each member's role must be decided. This happens through confrontation, and this is the stage with the most conflict. It ends with roles and responsibilities assigned and a leadership established.
-- **Norming**: the group defines its work process, suited to the roles assigned and to the goals. There is less conflict, because members already know each other's abilities, and the leader plays a strong part in defining how tasks are carried out.
-- **Performing**: this is the stage of highest productivity and least conflict. Members are committed to the goals, roles and process, and the group works on its own, adjusting the process when the work requires it. The need for supervision is minimal and there is a sense of loyalty among members.
-- **Adjourning**: the group breaks up because the work process has ended, either because the task is complete or because the group gave up. What was achieved is acknowledged, the commitment to the tasks ends and the members go their separate ways.
-
-The icons at the bottom of the figure summarise the members' movement at each stage: they converge when forming, clash when storming, line up when norming, move forward together when performing and separate when adjourning. The role of leadership also changes across the stages: it emerges during storming, is strong during norming and intervenes less and less during performing, as the group gains autonomy.
-
-The final-year trip committee described in @sec-04-activity-example-en goes through these stages. When forming, four classmates volunteer and agree on what they want to achieve. When storming, they argue over who takes each task and who coordinates. When norming, they agree on how to decide, by poll, and how to record payments. When performing, each one handles their own part without needing reminders. After the trip, the committee adjourns.
 
 ## Summary {#sec-04-summary-en}
 
