@@ -17,7 +17,7 @@ nodes = {
     "MeioEx":        ("Face a face\nTelefone\nPapel\nQuadro negro\nSistema computacional",
                        9.4, 7.4, False, False, True),
 
-    "Sincronismo":   ("Síncronismo", 9.6, 5.9, False, False),
+    "Sincronismo":   ("Sincronismo", 9.6, 5.9, False, False),
     "SincronismoEx": ("Síncrona\nAssíncrona", 9.6, 4.5, False, False, True),
 
     "Mensagem":      ("Mensagem", 5.8, 3.6, False, True),
@@ -27,7 +27,7 @@ nodes = {
 
     "Emissor":       ("Emissor", 3.6, 0.4, False, False),
     "ProtocoloCom":  ("Protocolo de\nComunicação", 5.8, 0.4, False, False),
-    "Receptor":      ("Receptor", 8.0, 0.4, False, False),
+    "Receptor":      ("Recetor", 8.0, 0.4, False, False),
 
     "SensoComum":    ("Senso\nComum", 5.8, -1.1, False, False),
     "Participante":  ("Participante", 3.6, -1.1, True, False),
@@ -56,8 +56,8 @@ edges = [
     ("Receptor", "Interpretacao", "Gera", False),
     ("Emissor", "ProtocoloCom", "Usa", False),
     ("Receptor", "ProtocoloCom", "Usa", False),
-    ("Emissor", "SensoComum", "Compartilha", False),
-    ("Receptor", "SensoComum", "Compartilha", False),
+    ("Emissor", "SensoComum", "Partilha", False),
+    ("Receptor", "SensoComum", "Partilha", False),
     ("Emissor", "Participante", "É um", True),
     ("Receptor", "Participante", "É um", True),
     ("Participante", "Compromisso", "Assume", True),

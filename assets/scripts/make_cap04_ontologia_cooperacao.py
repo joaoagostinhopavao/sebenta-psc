@@ -4,14 +4,14 @@ from graphviz_utils import build_dot, render
 from sebenta_style import DARK
 
 nodes = {
-    "DistribGeoEx":      ("Co-localizado\nRemoto", 0.4, 6.6, False, False, True),
+    "DistribGeoEx":      ("Colocalizado\nRemoto", 0.4, 6.6, False, False, True),
     "DistribGeo":        ("Distribuição\nGeográfica", 2.4, 6.0, False, False),
     "Grupo":             ("Grupo", 5.4, 6.0, True, False),
     "SistemaColab":      ("Sistema\nColaborativo", 9.2, 6.0, False, False),
 
     "Acoplamento":       ("Acoplamento", 0.9, 4.2, True, False),
     "Atividade":         ("Atividade", 2.9, 4.2, False, True),
-    "EspacoCompart":     ("Espaço\nCompartilhado", 9.2, 4.2, False, False),
+    "EspacoCompart":     ("Espaço\nPartilhado", 9.2, 4.2, False, False),
 
     "Participante":      ("Participante", 0.9, 2.6, True, False),
     "Objetivo":          ("Objetivo", 5.0, 2.6, True, False),
@@ -19,11 +19,11 @@ nodes = {
 
     "Prazo":             ("Prazo", 0.9, 1.0, True, False),
     "Tarefa":            ("Tarefa", 2.9, 1.0, False, False),
-    "Artefato":          ("Artefato", 6.8, 1.0, False, False),
+    "Artefato":          ("Artefacto", 6.8, 1.0, False, False),
 
-    "Status":            ("Status\n(completude)", 0.9, -0.6, True, False),
-    "CompartilhamentoEx": ("Individual\nCompartilhado", 2.9, -2.1, False, False, True),
-    "Compartilhamento":  ("Compartilhamento", 2.9, -0.6, False, False),
+    "Status":            ("Estado\n(completude)", 0.9, -0.6, True, False),
+    "CompartilhamentoEx": ("Individual\nPartilhado", 2.9, -2.1, False, False, True),
+    "Compartilhamento":  ("Partilha", 2.9, -0.6, False, False),
     "Recurso":           ("Recurso", 6.8, -0.6, False, False),
     "RecursoEx":         ("Quadro Negro\nNotas\nTelefone\nPapel\nLápis", 6.8, -2.2, False, False, True),
 }

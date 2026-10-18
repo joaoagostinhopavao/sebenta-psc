@@ -5,7 +5,7 @@ from sebenta_style import DARK
 
 nodes = {
     "Participante":     ("Participante", 5.2, 6.8, True, False),
-    "AcoplamentoEx":     ("Individual\nRepasse de tarefas\nOrquestrado", 8.8, 6.3, False, False, True),
+    "AcoplamentoEx":     ("Individual\nPassagem de tarefas\nOrquestrado", 8.8, 6.3, False, False, True),
 
     "SistemaColab":      ("Sistema\nColaborativo", 1.3, 5.2, False, False),
     "Negociacao":        ("Negociação", 3.5, 5.2, True, False),
@@ -22,12 +22,12 @@ nodes = {
     "Recurso":           ("Recurso", 7.7, 1.6, True, False),
 
     "Acompanhamento":    ("Acompanhamento", 1.3, 0.0, False, False),
-    "Status":            ("Status\n(completude)", 4.0, 0.0, False, False),
+    "Status":            ("Estado\n(completude)", 4.0, 0.0, False, False),
     "Tarefa":            ("Tarefa", 7.7, 0.0, True, False),
 }
 
 edges = [
-    ("SistemaColab", "PlanoTrabalho", "Apóia", False),
+    ("SistemaColab", "PlanoTrabalho", "Apoia", False),
     ("Negociacao", "PlanoTrabalho", "Estabelece", False),
     ("PlanoTrabalho", "Papel", "Define", True),
     ("PlanoTrabalho", "Acoplamento", "Define", True),
