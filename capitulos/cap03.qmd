@@ -512,12 +512,16 @@ distância que a experiência de Milgram procurou medir empiricamente
 (@sec-02-seis-graus): quantas ligações, em média, separam duas pessoas
 escolhidas ao acaso.
 
-Duas métricas globais derivam desta noção. O **diâmetro** é a maior
-distância entre quaisquer dois nós da rede: indica quanto tempo, no pior
-caso, uma informação demora a atravessá-la. A **distância média** é a
-média das distâncias entre todos os pares de nós. Na turma, o diâmetro é
-5 (de I a H, por exemplo, o caminho mais curto é I, A, C, E, F, H) e a
-distância média é de cerca de 2,4 passos.
+Duas métricas globais derivam desta noção. O **diâmetro** é a maior das
+distâncias da rede, sendo cada distância o caminho **mais curto** entre
+dois nós: indica quanto tempo, no pior caso, uma informação demora a
+atravessá-la. Não é o caminho mais comprido que se consegue traçar,
+porque, dando voltas, quase sempre se encontra um caminho mais longo. A
+**distância média** é a média das distâncias entre todos os pares de
+nós. Na turma, o diâmetro é 5 (de I a H, por exemplo, o caminho mais
+curto é I, A, C, E, F, H) e a distância média é de cerca de 2,4 passos.
+De I a G a distância também é 5, e não 6: o percurso I, A, C, E, F, H, G
+existe, mas não é o mais curto, porque F e G estão ligados diretamente.
 
 ### Densidade da rede {#sec-03-densidade-rede}
 
