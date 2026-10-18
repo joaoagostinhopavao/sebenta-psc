@@ -600,17 +600,30 @@ mais ou menos o mesmo; são os laços fracos que fazem de **ponte** para
 outros círculos, com informação diferente. Uma ponte é uma ligação cuja
 remoção separa a rede em partes desligadas.
 
-Ronald Burt chamou **buracos estruturais** (*structural holes*) aos
-espaços vazios entre grupos que não comunicam entre si, e mostrou que
-quem ocupa a posição que os atravessa, o **corretor** (*broker*), tem
-uma vantagem: acede primeiro a informação dos dois lados e controla o que
-passa de um para o outro [@Burt1992]. É esta posição que a centralidade
+Ronald Burt chamou **buraco estrutural** (*structural hole*) a uma
+ligação que falta entre dois contactos de uma pessoa: ambos a conhecem,
+mas não se conhecem entre si. Quem fica no meio é o **corretor**
+(*broker*), e tem uma vantagem: acede primeiro a informação dos dois
+lados e controla o que passa de um para o outro [@Burt1992]. Não basta
+uma ligação faltar para haver um buraco estrutural: numa rede, a maior
+parte das ligações possíveis não existe, e só conta a que falta entre
+duas pessoas com um contacto em comum. Os buracos são, assim, o
+complemento do coeficiente de agrupamento (@sec-03-agrupamento): este
+conta os pares de contactos que estão ligados, os buracos são os pares
+que não estão. A posição de quem atravessa buracos é a que a centralidade
 de intermediação mede.
 
-Na turma (ver @fig-03-sociograma), as ligações C-E e E-F são as duas únicas pontes da rede, e E é
-o corretor entre as duas sub-redes. A posição tem uma consequência
-prática: se E faltar, ou mudar de turma, os dois grupos deixam de ter
-qualquer ligação.
+Na turma (ver @fig-03-sociograma), E tem coeficiente de agrupamento 0:
+os seus dois contactos, C e F, não estão ligados, e E atravessa esse
+buraco. Também C atravessa buracos, porque é o único do seu grupo ligado
+a E, e tem até a intermediação mais alta da turma. Os dois estão no
+único caminho entre os grupos: as ligações C-E e E-F são as duas únicas
+pontes da rede, e se C ou E faltarem, ou mudarem de turma, os dois
+grupos deixam de ter qualquer ligação. A diferença está no resto da
+posição: C está bem integrado no seu grupo, enquanto E não tem mais nada
+além do buraco, com apenas dois contactos que não se conhecem. E é o
+corretor entre as duas sub-redes no sentido mais puro: a sua importância
+vem toda da posição entre os grupos.
 
 A rede de mensagens (@fig-03-mensagens) mostra a mesma ideia com pesos.
 Com apenas três mensagens numa semana, a ligação entre Carla e Duarte é,
