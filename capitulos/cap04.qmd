@@ -391,12 +391,18 @@ cumprirão os compromissos assumidos [@MayerEtAl1995; @RousseauEtAl1998],
 e **motivação**, sem a qual dificilmente se compromete com uma proposta.
 
 A confiança distingue-se das **crenças**, outro atributo do participante
-na ontologia. As crenças são o que o participante pensa, sobre o
-trabalho e sobre os colegas, como a convicção de que um colega é
-competente; a confiança é a disposição para depender desses colegas, e
-assenta nessas crenças. É possível acreditar que um colega é competente
-e, mesmo assim, não lhe entregar uma parte do trabalho: há crença, mas
-não há confiança.
+na ontologia.
+
+::: {.callout-note icon=false}
+## Crença ≠ Confiança
+
+- **Crença**: o que o participante pensa, sobre o trabalho e sobre os
+  colegas, por exemplo, que um colega é competente.
+- **Confiança**: a disposição para depender desse colega; assenta na
+  crença.
+- **Exemplo**: acreditar que um colega é competente e, mesmo assim, não
+  lhe entregar uma parte do trabalho. Há crença, mas não há confiança.
+:::
 
 O grupo, por sua vez, realiza uma atividade que gera
 um produto, e esse produto é ele próprio um tipo de objetivo

@@ -97,6 +97,7 @@ format:
         \KOMAoption{chapterprefix}{false}
         \usepackage{newunicodechar}
         \newunicodechar{≈}{\ensuremath{\approx}}
+        \newunicodechar{≠}{\ensuremath{\neq}}
         \usepackage{scrlayer-scrpage}
         \automark[chapter]{chapter}
         \clearpairofpagestyles
