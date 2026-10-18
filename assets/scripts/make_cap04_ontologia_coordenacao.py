@@ -43,6 +43,7 @@ edges = [
     ("PlanoTrabalho", "Tarefa", "Define", True),
     ("Acompanhamento", "Prazo", "Controla", False),
     ("Acompanhamento", "Status", "Controla", False),
+    ("Prazo", "Tarefa", "É atributo de", False),
     ("Status", "Tarefa", "É atributo de", False),
     ("Tarefa", "Recurso", "Requer", False),
     ("Acompanhamento", "PlanoTrabalho", "Segue", True),

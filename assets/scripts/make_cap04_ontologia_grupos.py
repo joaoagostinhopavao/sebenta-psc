@@ -7,7 +7,7 @@ nodes = {
     "Produto":      ("Produto", 1.3, 5.8, True, False),
     "Objetivos":    ("Objetivos", 4.0, 5.8, False, False),
     "Negociacao":   ("Negociação", 6.7, 5.8, True, False),
-    "Compromisso":  ("Compromisso", 9.5, 5.8, False, False),
+    "Compromisso":  ("Compromisso", 9.5, 5.8, True, False),
     "Atividade":    ("Atividade", 1.3, 3.9, True, False),
     "Grupo":        ("Grupo", 4.0, 3.9, False, False),
     "Crencas":      ("Crenças", 10.1, 3.9, False, False),
