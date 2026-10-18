@@ -39,6 +39,7 @@ def node_attrs(dashed=False, highlight=False, note=False):
 
 
 gu.node_attrs = node_attrs
+gu.SLIDE = True
 gu.MAGENTA, gu.GREY, gu.NOTE_COLOR = GREEN, GREEN_SOFT, NOTE
 _build = gu.build_dot
 _render = gu.render
@@ -58,6 +59,7 @@ def run(name):
 
     def render(dot_src, out_path, dpi=200, target_width_px=None, **kw):
         dot_src = re.sub(r'\n  labelloc="t";[^\n]*', "", dot_src)
+        dot_src = dot_src.replace("fontsize=11.5 /*resp*/", "fontsize=13.5")
         for a, b in PTPT:
             dot_src = dot_src.replace(a, b)
         out = f"/Users/jpavao/QProjects/Sebenta-PSC/assets/images/cap04/slides/ontologia-{name}-slide.png"

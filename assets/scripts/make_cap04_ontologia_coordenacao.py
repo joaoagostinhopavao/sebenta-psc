@@ -50,6 +50,20 @@ edges = [
 ]
 
 dot_src = build_dot(nodes, edges)
+# o rótulo de Papel -> Tarefa passa para a direita do Papel, onde a linha começa
+# (a meio da aresta confundia-se com as ligações do Plano de Trabalho)
+import re
+m = re.search(r'label="É responsável por", color="([^"]+)", fontcolor="([^"]+)"', dot_src)
+dot_src = dot_src.replace(m.group(0), f'label="", color="{m.group(1)}"')
+x1, y1 = map(float, re.search(r'"Papel" \[label="Papel", pos="([-\d.]+),([-\d.]+)!"', dot_src).groups())
+x2, y2 = map(float, re.search(r'"Tarefa" \[label="Tarefa", pos="([-\d.]+),([-\d.]+)!"', dot_src).groups())
+import graphviz_utils as _gu
+dx, dy = (94, -4) if getattr(_gu, "SLIDE", False) else (70, -26)  # slide: à direita; livro: abaixo
+lx, ly = x1 + dx, y1 + dy
+k = dot_src.rindex("}")
+dot_src = (dot_src[:k] + '  "RotuloResp" [shape=plaintext, style="", label="É responsável por", '
+           f'fontsize=11.5 /*resp*/, fontname="Helvetica", fontcolor="{m.group(2)}", '
+           f'pos="{lx},{ly}!"];\n' + dot_src[k:])
 dot_src = dot_src.replace(
     "digraph G {",
     'digraph G {\n  labelloc="t"; fontsize=26; fontname="Helvetica-Bold"; '
