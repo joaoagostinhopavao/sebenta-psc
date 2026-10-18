@@ -385,9 +385,20 @@ partes, cada uma com um conceito central [@VivacquaGarcia2011]: a
 O elemento central desta parte é o **participante**. Um participante
 assume tarefas, é parte de um grupo e participa nas negociações que
 definem os objetivos comuns; para tal, requer duas coisas essenciais:
-**confiança**, a crença partilhada de que se pode contar com os outros
-participantes, e **motivação**, sem a qual dificilmente se compromete
-com uma proposta. O grupo, por sua vez, realiza uma atividade que gera
+**confiança**, a disposição para depender dos outros participantes,
+aceitando ficar exposto ao que fizerem, com base na expectativa de que
+cumprirão os compromissos assumidos [@MayerEtAl1995; @RousseauEtAl1998],
+e **motivação**, sem a qual dificilmente se compromete com uma proposta.
+
+A confiança distingue-se das **crenças**, outro atributo do participante
+na ontologia. As crenças são o que o participante pensa, sobre o
+trabalho e sobre os colegas, como a convicção de que um colega é
+competente; a confiança é a disposição para depender desses colegas, e
+assenta nessas crenças. É possível acreditar que um colega é competente
+e, mesmo assim, não lhe entregar uma parte do trabalho: há crença, mas
+não há confiança.
+
+O grupo, por sua vez, realiza uma atividade que gera
 um produto, e esse produto é ele próprio um tipo de objetivo
 (@fig-04-ontologia-grupos).
 

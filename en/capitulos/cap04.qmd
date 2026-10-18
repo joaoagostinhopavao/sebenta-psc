@@ -143,7 +143,11 @@ Building on the same model by Ellis and colleagues used in the 3C Model [@EllisE
 
 ### Group Formation {#sec-04-ontology-groups-en}
 
-The central element of this part is the **participant**. A participant takes on tasks, is part of a group and takes part in the negotiations that define shared goals; to do so, they require two essential things: **trust**, the shared belief that one can rely on the other participants, and **motivation**, without which one is unlikely to commit to a proposal. The group, in turn, carries out an activity that generates a product, and that product is itself a kind of goal (@fig-04-ontology-groups-en).
+The central element of this part is the **participant**. A participant takes on tasks, is part of a group and takes part in the negotiations that define shared goals; to do so, they require two essential things: **trust**, the willingness to depend on the other participants, accepting exposure to what they do, based on the expectation that they will keep the commitments they have made [@MayerEtAl1995; @RousseauEtAl1998], and **motivation**, without which one is unlikely to commit to a proposal.
+
+Trust is distinct from **beliefs**, another attribute of the participant in the ontology. Beliefs are what the participant thinks, about the work and about their colleagues, such as the conviction that a colleague is competent; trust is the willingness to depend on those colleagues, and it rests on those beliefs. It is possible to believe that a colleague is competent and still not hand over part of the work to them: there is belief, but no trust.
+
+The group, in turn, carries out an activity that generates a product, and that product is itself a kind of goal (@fig-04-ontology-groups-en).
 
 ![Ontology of group formation: the participant as the central element, with their attributes (beliefs, trust, competence, motivation) and their relationships with the group, goals and tasks.](../assets/images/cap04/ontologia-grupos.png){#fig-04-ontology-groups-en}
 
