@@ -84,7 +84,8 @@ Prisioneiros é um exemplo clássico de jogo de soma não nula.
 
 O exemplo mais conhecido da Teoria dos Jogos aplicado à colaboração é o
 **Dilema dos Prisioneiros**, formalizado pelo matemático Albert W. Tucker.
-Dois suspeitos são detidos pela polícia e interrogados em salas
+Dois suspeitos de um crime cometido em conjunto são detidos pela polícia
+e interrogados em salas
 separadas, sem poderem comunicar entre si. Não há provas suficientes
 para os condenar por um crime maior, apenas por uma acusação menor, a
 menos que um deles confesse. A cada um é proposto o mesmo acordo:

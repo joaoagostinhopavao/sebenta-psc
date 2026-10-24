@@ -37,7 +37,7 @@ A central concept for classifying these scenarios is the sum of all players' gai
 
 ### The Prisoner's Dilemma {#sec-04-dilemma-en}
 
-The best-known example of Game Theory applied to collaboration is the **Prisoner's Dilemma**, formalised by mathematician Albert W. Tucker. Two suspects are arrested by the police and interrogated in separate rooms, unable to communicate with each other. There is not enough evidence to convict them of a major crime, only a minor charge, unless one of them confesses. Each is offered the same deal:
+The best-known example of Game Theory applied to collaboration is the **Prisoner's Dilemma**, formalised by mathematician Albert W. Tucker. Two suspects of a crime committed together are arrested by the police and interrogated in separate rooms, unable to communicate with each other. There is not enough evidence to convict them of a major crime, only a minor charge, unless one of them confesses. Each is offered the same deal:
 
 - If **both stay silent**, each serves 6 months in prison.
 - If **one confesses and the other stays silent**, the one who confesses goes free and the one who stays silent serves 10 years.
