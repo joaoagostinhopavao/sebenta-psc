@@ -198,7 +198,12 @@ de mediação: a **divisão de trabalho**, que organiza como o objeto é
 transformado em resultado entre os vários sujeitos da comunidade, e as
 **regras**, normas implícitas ou explícitas, convenções e relações
 sociais estabelecidas na comunidade. O modelo completo, adaptado de
-Yrjö Engeström [@Engestrom1987], é representado na @fig-04-atividade.
+Yrjö Engeström [@Engestrom1987], é representado na @fig-04-atividade. Todas as
+ligações do modelo têm setas nos dois sentidos, porque cada elemento
+influencia e é influenciado pelos outros: o sujeito usa o artefacto, e o
+artefacto, pela ação reversa, transforma o sujeito. Só a ligação do
+objeto ao resultado tem um único sentido, porque é o objeto que se
+transforma no resultado.
 
 ![Modelo de Atividade: um sujeito age sobre um objeto para alcançar um resultado, sempre mediado por artefactos; na dimensão coletiva, essa ação é também mediada pela divisão de trabalho e pelas regras da comunidade.](../assets/images/cap04/teoria-atividade.png){#fig-04-atividade}
 
