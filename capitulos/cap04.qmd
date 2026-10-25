@@ -207,6 +207,18 @@ transforma no resultado.
 
 ![Modelo de Atividade: um sujeito age sobre um objeto para alcançar um resultado, sempre mediado por artefactos; na dimensão coletiva, essa ação é também mediada pela divisão de trabalho e pelas regras da comunidade.](../assets/images/cap04/teoria-atividade.png){#fig-04-atividade}
 
+A @fig-04-atividade-fuks mostra o mesmo modelo com exemplos de cada
+elemento. Os quatro triângulos interiores correspondem às quatro partes
+de uma atividade em sociedade: a **produção**, o resultado das ações dos
+sujeitos sobre os objetos por meio de artefactos; a **troca**, a
+comunicação e a interação entre os sujeitos; a **distribuição**, a
+repartição dos objetos de acordo com as necessidades da comunidade; e o
+**consumo**, o uso do que se produziu. A produção corresponde à
+cooperação, a distribuição à coordenação e a troca à comunicação, as
+três dimensões do Modelo 3C apresentado na @sec-04-3c [@FuksEtAl2011].
+
+![Modelo de Atividade com exemplos de cada elemento e as quatro partes de uma atividade em sociedade (adaptado de @FuksEtAl2011, a partir de @Engestrom1987).](../assets/images/cap04/teoria-atividade-fuks.png){#fig-04-atividade-fuks}
+
 Um exemplo aplicado à sala de aula ilustra o modelo: o sujeito é um
 estudante ou um grupo de estudantes; o objeto é o problema ou o trabalho
 a realizar; o artefacto é o sistema computacional, o computador, ou

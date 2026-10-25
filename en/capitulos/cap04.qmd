@@ -79,6 +79,10 @@ From a collective perspective, the subject does not act in isolation: they are e
 
 ![Activity Model: a subject acts upon an object to achieve an outcome, always mediated by artefacts; in the collective dimension, this action is also mediated by the community's division of labour and rules.](../assets/images/cap04/teoria-atividade.png){#fig-04-activity-en}
 
+@fig-04-activity-fuks-en shows the same model with examples of each element. The four inner triangles correspond to the four parts of an activity in society: **production**, the result of the subjects' actions on objects by means of artefacts; **exchange**, communication and interaction between subjects; **distribution**, the sharing out of objects according to the community's needs; and **consumption**, the use of what has been produced. Production corresponds to cooperation, distribution to coordination and exchange to communication, the three dimensions of the 3C Model presented in @sec-04-3c-en [@FuksEtAl2011].
+
+![Activity Model with examples of each element and the four parts of an activity in society (adapted from @FuksEtAl2011, after @Engestrom1987).](../assets/images/cap04/teoria-atividade-fuks.png){#fig-04-activity-fuks-en}
+
 An example applied to the classroom illustrates the model: the subject is a student or a group of students; the object is the problem or work to be done; the artefact is the computer system, the computer, or even the language used to communicate; the community is the class; the division of labour is how the group work's tasks are split up; and the rules are, for example, the assessment criteria set by the lecturer. Introducing a new artefact, such as a collaborative platform, changes how the activity is carried out, which can create new problems but also new possibilities, and it is precisely here that the design of collaborative systems comes in.
 
 ### Example: the Final-Year Trip {#sec-04-activity-example-en}
