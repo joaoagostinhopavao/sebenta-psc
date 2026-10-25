@@ -290,14 +290,16 @@ formalizada como modelo próprio:
 - **Cooperação**: a atuação conjunta no espaço de trabalho partilhado,
   para a produção efetiva de objetos ou informação.
 
-Estas três dimensões não são independentes: inter-relacionam-se para
-que a colaboração aconteça (@fig-04-3c). Ao comunicar, os participantes
-tomam decisões que exigem coordenação; ao coordenar, reorganizam tarefas
-que podem exigir nova comunicação; e a cooperação efetiva no espaço
-partilhado gera informação que realimenta tanto a coordenação como a
-comunicação.
+Estas três dimensões não são independentes: formam um ciclo
+(@fig-04-3c). Ao comunicar, os participantes negoceiam e assumem
+compromissos, que são geridos pela coordenação; a coordenação organiza
+as tarefas para a cooperação; e os imprevistos que surgem durante a
+cooperação exigem nova comunicação, que por sua vez exige coordenação
+para reorganizar as tarefas. Ao centro do modelo está a **perceção**: é
+através dela que cada participante tem retorno das suas próprias ações e
+conhece as ações dos colegas [@FuksEtAl2011].
 
-![O Modelo 3C de Colaboração: comunicação, coordenação e cooperação inter-relacionam-se para que o trabalho em grupo aconteça.](../assets/images/cap04/modelo-3c.png){#fig-04-3c}
+![O Modelo 3C de Colaboração: a comunicação gera compromissos geridos pela coordenação, que organiza as tarefas para a cooperação, a qual exige nova comunicação; ao centro, a perceção liga os participantes às três dimensões (adaptado de @FuksEtAl2011).](../assets/images/cap04/modelo-3c.png){#fig-04-3c}
 
 A colaboração não é a única forma de organizar o trabalho em grupo. Um
 modelo alternativo, típico de organizações militares e da linha de
