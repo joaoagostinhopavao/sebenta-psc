@@ -295,7 +295,8 @@ Estas três dimensões não são independentes: formam um ciclo
 compromissos, que são geridos pela coordenação; a coordenação organiza
 as tarefas para a cooperação; e os imprevistos que surgem durante a
 cooperação exigem nova comunicação, que por sua vez exige coordenação
-para reorganizar as tarefas. Ao centro do modelo está a **perceção**: é
+para reorganizar as tarefas. Ao centro do modelo está a **perceção** (do inglês *awareness*): estar
+consciente do que os outros fazem. É
 através dela que cada participante tem retorno das suas próprias ações e
 conhece as ações dos colegas [@FuksEtAl2011].
 

@@ -26,6 +26,7 @@ TXT = {
         coord_n=("co-ordem-ação", "ordenar em conjunto:\npessoas, tarefas e recursos"),
         coop_n=("co-operar-ação", "operar em conjunto:\nespaço partilhado"),
         a1="gera compromissos\ngeridos pela", a2="organiza as tarefas para", a3="exige",
+        leg=("Perceção", " = estar consciente do que\nos outros fazem (", "awareness", ")"),
     ),
     "en": dict(
         com="COMMUNICATION", coord="COORDINATION", coop="COOPERATION", perc="AWARENESS",
@@ -43,6 +44,8 @@ SAIDA = {
 }["slide" if ESTILO == "slide" else LANG]
 
 plt.rcParams["font.family"] = "Arial"
+plt.rcParams.update({"mathtext.fontset": "custom", "mathtext.bf": "Arial:bold",
+                     "mathtext.it": "Arial:italic", "mathtext.rm": "Arial"})
 W, H = 13.333, 6.4
 fig = plt.figure(figsize=(W, H), dpi=200)
 ax = fig.add_axes([0, 0, 1, 1])
@@ -132,6 +135,12 @@ for alvo, origem in [((COM[0], COM[1] - BH / 2), (G[0], G[1] + 0.32)),
                      ((COOP[0] + BW / 2 - 0.25, COOP[1] + BH / 2), (P[0][0] - 0.2, P[0][1] - 0.3))]:
     ax.add_patch(FancyArrowPatch(origem, alvo, arrowstyle="<|-|>", mutation_scale=16,
                                  lw=1.6, color=COR["linha"], shrinkA=2, shrinkB=2))
+
+# legenda da perceção (só em PT: em inglês o termo já é "awareness")
+if "leg" in TXT:
+    termo, meio, ing, fim = TXT["leg"]
+    ax.text(G[0], 0.82, f"$\\bf{{{termo}}}${meio}$\\it{{{ing}}}${fim}", ha="center",
+            va="center", fontsize=14, color=COR["nota"], linespacing=1.3)
 
 fig.savefig(SAIDA, dpi=200, facecolor="white")
 print("done", SAIDA)
