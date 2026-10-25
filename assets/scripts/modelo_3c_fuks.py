@@ -26,7 +26,7 @@ TXT = {
         coord_n=("co-ordem-ação", "ordenar em conjunto:\npessoas, tarefas e recursos"),
         coop_n=("co-operar-ação", "operar em conjunto:\nespaço partilhado"),
         a1="gera compromissos\ngeridos pela", a2="organiza as tarefas para", a3="exige",
-        leg=("Perceção", " = estar consciente do que\nos outros fazem (", "awareness", ")"),
+        leg=("Perceção", " = ter noção do que\nos outros estão a fazer (", "awareness", ")"),
     ),
     "en": dict(
         com="COMMUNICATION", coord="COORDINATION", coop="COOPERATION", perc="AWARENESS",

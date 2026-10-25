@@ -18,7 +18,13 @@ NOTAS_EXTRA = (
     "• Ao centro, a perceção: é através dela que cada um tem retorno das suas próprias ações "
     "e conhece as ações dos colegas, nas três dimensões\n\n"
     "• A etimologia ajuda a memorizar: comum-ação (tornar comum), co-ordem-ação (ordenar em conjunto), "
-    "co-operar-ação (operar em conjunto)"
+    "co-operar-ação (operar em conjunto)\n\n"
+    "• Perceção (awareness) = ter noção do que os outros estão a fazer: cada um sabe o suficiente "
+    "do que os outros fazem para saber o que ele próprio deve fazer. Não é saber tudo: na viagem, "
+    "a Carla não precisa dos pormenores do autocarro que o Bruno está a negociar, mas precisa de saber "
+    "que o transporte está a ser tratado, quanto vai custar e quem já pagou\n\n"
+    "• As setas nos dois sentidos: o que acontece em cada C alimenta a perceção (uma mensagem, uma tarefa "
+    "atribuída, uma alteração na folha de cálculo) e a perceção orienta cada C"
 )
 
 p = Presentation(DECK)
@@ -44,7 +50,8 @@ cred = slide.shapes[-1]
 cred.text_frame.paragraphs[0].runs[0].text = "Adaptado de Fuks et al. (2011)."
 
 tf = slide.notes_slide.notes_text_frame
-if "Ler o esquema como um ciclo" not in tf.text:
-    tf.text = tf.text.rstrip() + NOTAS_EXTRA
+if "Ler o esquema como um ciclo" in tf.text:
+    tf.text = tf.text[:tf.text.index("\n\n• Ler o esquema como um ciclo")]
+tf.text = tf.text.rstrip() + NOTAS_EXTRA
 p.save(DECK)
 print("ok", p.slides.index(slide) + 1)
