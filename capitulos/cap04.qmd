@@ -301,6 +301,21 @@ conhece as ações dos colegas [@FuksEtAl2011].
 
 ![O Modelo 3C de Colaboração: a comunicação gera compromissos geridos pela coordenação, que organiza as tarefas para a cooperação, a qual exige nova comunicação; ao centro, a perceção liga os participantes às três dimensões (adaptado de @FuksEtAl2011).](../assets/images/cap04/modelo-3c.png){#fig-04-3c}
 
+O Modelo 3C liga-se diretamente à Teoria da Atividade: três das quatro
+partes da atividade em sociedade são as três dimensões do modelo, a
+troca corresponde à comunicação, a distribuição à coordenação e a
+produção à cooperação (@fig-04-atividade-fuks). A viagem de finalistas
+da @sec-04-atividade-exemplo mostra-o. A **comunicação** são as
+discussões e as sondagens no grupo de WhatsApp, onde a turma negoceia e
+assume compromissos, como o máximo de 350 € por pessoa. A
+**coordenação** é a divisão de trabalho na comissão (a Ana trata do
+alojamento, o Bruno do transporte) e os prazos, como a quota paga até
+15 de março. A **cooperação** é o trabalho feito em conjunto no espaço
+partilhado: a folha de cálculo dos pagamentos e as reservas. E o ciclo
+também aparece: se o hotel cancelar a reserva, a comissão volta ao
+WhatsApp para decidir o que fazer, e a Ana tem de reorganizar o
+alojamento.
+
 A colaboração não é a única forma de organizar o trabalho em grupo. Um
 modelo alternativo, típico de organizações militares e da linha de
 montagem industrial clássica, é o de **Comando e Controlo** (C2): uma
