@@ -71,13 +71,13 @@ sensação de "estar lá" dentro do mundo virtual. Distinguem-se dois tipos
 de imersão [@Raposo2011]:
 
 - **Imersão mental**: o objetivo dos criadores de conteúdo desde muito
-  antes dos CVEs existirem, o engajamento e o envolvimento do
+  antes dos CVEs existirem, o empenho e o envolvimento do
   consumidor com esse conteúdo. A imersão mental pode ocorrer, por
   exemplo, ao ler-se um bom livro, sem qualquer representação física.
 - **Imersão física**: estimula sinteticamente os sentidos, por meio da
   tecnologia, para fazer crer que o próprio corpo está no mundo virtual.
-  Atualmente, é estimulada principalmente pela representação visual
-  tridimensional (estereoscopia), pelo áudio espacial e por dispositivos
+  Atualmente, é estimulada principalmente pela visão estereoscópica
+  (uma imagem diferente para cada olho, que dá a noção de profundidade), pelo áudio espacial e por dispositivos
   de interação que captam os movimentos do utilizador. Os capacetes de
   realidade virtual atuais, como o `Meta Quest` ou o `Apple Vision Pro`,
   são a forma mais acessível, hoje, de obter imersão física.
@@ -87,10 +87,22 @@ física. Na ficção científica, como nos filmes já referidos, a imersão
 física é completa, ao ponto de o corpo real do utilizador deixar de ser
 distinguível do avatar. Na prática, a maioria dos CVEs atuais ainda não
 possui recursos de estereoscopia, mesmo sendo mundos virtuais em três
-dimensões: não se deve confundir um CVE 3D, um espaço com três
-dimensões de navegação, com um "filme em 3D" ou com um dispositivo de
-realidade virtual estereoscópico, ainda que nada impeça que um CVE seja
-também estereoscópico.
+dimensões, porque são duas propriedades independentes. Um **espaço 3D
+navegável** é um mundo com três dimensões em que o avatar se move; num
+monitor, o ecrã mostra uma só imagem plana, e a profundidade vem de
+pistas como a perspetiva, as sobreposições e as sombras. A
+**estereoscopia** mostra uma imagem ligeiramente diferente a cada olho,
+que o cérebro combina numa sensação de profundidade real, e exige óculos
+ou um capacete. As combinações possíveis estão na @tbl-06-estereoscopia:
+um filme em 3D é estereoscópico mas não é navegável, e o `Second Life`
+num monitor é navegável mas não é estereoscópico.
+
+| | Sem estereoscopia | Com estereoscopia |
+|:--|:--|:--|
+| **Espaço 3D navegável** | `Second Life` num monitor | `VRChat` num `Meta Quest` |
+| **Sem navegação** | Filme normal | Filme em 3D no cinema |
+
+: Espaço 3D navegável e estereoscopia: as quatro combinações possíveis. {#tbl-06-estereoscopia}
 
 ## Breve História dos CVEs {#sec-06-historia}
 
@@ -166,6 +178,21 @@ por texto (@sec-05-flaming, @sec-01-cyberbullying). As empresas
 responsáveis por estes ambientes precisam de lidar com estes
 comportamentos tal como qualquer outra plataforma social.
 
+## Exercício: uma Reunião num Mundo Virtual {#sec-06-exercicio}
+
+Uma equipa de cinco pessoas, em cidades diferentes, passa a fazer a
+reunião semanal num mundo virtual. Cada pessoa entra com o seu avatar.
+Em comparação com uma videochamada, o que ganha e o que perde a equipa
+em identidade, interação e presença? Uma resposta possível, que não
+pretende ser a única, encontra-se na @tbl-06-exercicio.
+
+| | Identidade | Interação | Presença |
+|:--|:--|:--|:--|
+| **Ganha** | Cada pessoa escolhe como se apresenta, e o avatar é reconhecível como avatar. | A posição e a orientação dos avatares mostram quem fala com quem, e é possível formar pequenos grupos. | A sensação de estar no mesmo lugar (presença física) e de estar acompanhado (presença social). |
+| **Perde** | O rosto e as expressões reais; se os avatares forem parecidos, é difícil saber quem é quem. | As expressões subtis do rosto e da voz, que a maioria dos avatares não reproduz. | A ilusão desfaz-se quando a rede falha ou o equipamento cansa; sem estereoscopia, a presença física é fraca. |
+
+: Resposta possível ao exercício da reunião num mundo virtual. {#tbl-06-exercicio}
+
 ## Síntese {#sec-06-sintese}
 
 Este capítulo introduziu os Ambientes Virtuais Colaborativos:
@@ -173,7 +200,7 @@ Este capítulo introduziu os Ambientes Virtuais Colaborativos:
 1. Um **CVE** simula um mundo partilhado, em vez de servir apenas como
    canal de comunicação, composto por um mundo virtual, avatares e
    interatividade [@Raposo2011]
-2. A **imersão** pode ser mental (o engajamento com o conteúdo) ou
+2. A **imersão** pode ser mental (o envolvimento com o conteúdo) ou
    física (a estimulação sintética dos sentidos, hoje sobretudo através
    de capacetes ou óculos de realidade virtual)
 3. O primeiro CVE de que há registo foi o `Maze War` (1974); o `SIMNET`
