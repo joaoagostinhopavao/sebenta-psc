@@ -55,6 +55,6 @@ Cada capítulo corresponde a uma aula teórica da UC. A recomendação dos profe
 
 ## Autores {.unnumbered}
 
-**João Pavão** — UTAD, componente teórica
+**João Pavão**, regente da unidade curricular (UTAD)
 
 **Diana Carvalho** — UTAD, componente prática

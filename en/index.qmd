@@ -43,6 +43,6 @@ Each chapter corresponds to one theoretical class of the course. The lecturers r
 
 ## Authors {.unnumbered}
 
-**João Pavão** — UTAD, theoretical component
+**João Pavão**, course coordinator (UTAD)
 
 **Diana Carvalho** — UTAD, practical component
