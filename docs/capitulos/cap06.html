@@ -241,8 +241,9 @@ div.csl-indent {
   <li><a href="#sec-06-historia" id="toc-sec-06-historia" class="nav-link" data-scroll-target="#sec-06-historia"><span class="header-section-number">6.4</span> Breve História dos CVEs</a></li>
   <li><a href="#sec-06-identidade" id="toc-sec-06-identidade" class="nav-link" data-scroll-target="#sec-06-identidade"><span class="header-section-number">6.5</span> Identidade, Interação e Presença</a></li>
   <li><a href="#sec-06-comunidades" id="toc-sec-06-comunidades" class="nav-link" data-scroll-target="#sec-06-comunidades"><span class="header-section-number">6.6</span> Comunidades Virtuais</a></li>
-  <li><a href="#sec-06-sintese" id="toc-sec-06-sintese" class="nav-link" data-scroll-target="#sec-06-sintese"><span class="header-section-number">6.7</span> Síntese</a></li>
-  <li><a href="#sec-06-reflexao" id="toc-sec-06-reflexao" class="nav-link" data-scroll-target="#sec-06-reflexao"><span class="header-section-number">6.8</span> Para Refletir</a></li>
+  <li><a href="#sec-06-exercicio" id="toc-sec-06-exercicio" class="nav-link" data-scroll-target="#sec-06-exercicio"><span class="header-section-number">6.7</span> Exercício: uma Reunião num Mundo Virtual</a></li>
+  <li><a href="#sec-06-sintese" id="toc-sec-06-sintese" class="nav-link" data-scroll-target="#sec-06-sintese"><span class="header-section-number">6.8</span> Síntese</a></li>
+  <li><a href="#sec-06-reflexao" id="toc-sec-06-reflexao" class="nav-link" data-scroll-target="#sec-06-reflexao"><span class="header-section-number">6.9</span> Para Refletir</a></li>
   <li><a href="#sec-06-referencias" id="toc-sec-06-referencias" class="nav-link" data-scroll-target="#sec-06-referencias">Referências</a></li>
   </ul>
 </nav>
@@ -317,10 +318,45 @@ Figura&nbsp;6.1: Os três elementos de um CVE: o mundo virtual é o espaço part
 <h2 data-number="6.3" class="anchored" data-anchor-id="sec-06-imersao"><span class="header-section-number">6.3</span> Imersão</h2>
 <p>A soma de uma representação gráfica adequada do mundo virtual com uma boa interatividade contribui para o sentimento de <strong>imersão</strong>, a sensação de “estar lá” dentro do mundo virtual. Distinguem-se dois tipos de imersão <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span>:</p>
 <ul>
-<li><strong>Imersão mental</strong>: o objetivo dos criadores de conteúdo desde muito antes dos CVEs existirem, o engajamento e o envolvimento do consumidor com esse conteúdo. A imersão mental pode ocorrer, por exemplo, ao ler-se um bom livro, sem qualquer representação física.</li>
-<li><strong>Imersão física</strong>: estimula sinteticamente os sentidos, por meio da tecnologia, para fazer crer que o próprio corpo está no mundo virtual. Atualmente, é estimulada principalmente pela representação visual tridimensional (estereoscopia), pelo áudio espacial e por dispositivos de interação que captam os movimentos do utilizador. Os capacetes de realidade virtual atuais, como o <code>Meta Quest</code> ou o <code>Apple Vision Pro</code>, são a forma mais acessível, hoje, de obter imersão física.</li>
+<li><strong>Imersão mental</strong>: o objetivo dos criadores de conteúdo desde muito antes dos CVEs existirem, o empenho e o envolvimento do consumidor com esse conteúdo. A imersão mental pode ocorrer, por exemplo, ao ler-se um bom livro, sem qualquer representação física.</li>
+<li><strong>Imersão física</strong>: estimula sinteticamente os sentidos, por meio da tecnologia, para fazer crer que o próprio corpo está no mundo virtual. Atualmente, é estimulada principalmente pela visão estereoscópica (uma imagem diferente para cada olho, que dá a noção de profundidade), pelo áudio espacial e por dispositivos de interação que captam os movimentos do utilizador. Os capacetes de realidade virtual atuais, como o <code>Meta Quest</code> ou o <code>Apple Vision Pro</code>, são a forma mais acessível, hoje, de obter imersão física.</li>
 </ul>
-<p>Os CVEs vão além da imersão mental por investirem também na imersão física. Na ficção científica, como nos filmes já referidos, a imersão física é completa, ao ponto de o corpo real do utilizador deixar de ser distinguível do avatar. Na prática, a maioria dos CVEs atuais ainda não possui recursos de estereoscopia, mesmo sendo mundos virtuais em três dimensões: não se deve confundir um CVE 3D, um espaço com três dimensões de navegação, com um “filme em 3D” ou com um dispositivo de realidade virtual estereoscópico, ainda que nada impeça que um CVE seja também estereoscópico.</p>
+<p>Os CVEs vão além da imersão mental por investirem também na imersão física. Na ficção científica, como nos filmes já referidos, a imersão física é completa, ao ponto de o corpo real do utilizador deixar de ser distinguível do avatar. Na prática, a maioria dos CVEs atuais ainda não possui recursos de estereoscopia, mesmo sendo mundos virtuais em três dimensões, porque são duas propriedades independentes. Um <strong>espaço 3D navegável</strong> é um mundo com três dimensões em que o avatar se move; num monitor, o ecrã mostra uma só imagem plana, e a profundidade vem de pistas como a perspetiva, as sobreposições e as sombras. A <strong>estereoscopia</strong> mostra uma imagem ligeiramente diferente a cada olho, que o cérebro combina numa sensação de profundidade real, e exige óculos ou um capacete. As combinações possíveis estão na <a href="#tbl-06-estereoscopia" class="quarto-xref">Tabela&nbsp;<span>6.1</span></a>: um filme em 3D é estereoscópico mas não é navegável, e o <code>Second Life</code> num monitor é navegável mas não é estereoscópico.</p>
+<div id="tbl-06-estereoscopia" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-06-estereoscopia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;6.1: Espaço 3D navegável e estereoscopia: as quatro combinações possíveis.
+</figcaption>
+<div aria-describedby="tbl-06-estereoscopia-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Sem estereoscopia</th>
+<th style="text-align: left;">Com estereoscopia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Espaço 3D navegável</strong></td>
+<td style="text-align: left;"><code>Second Life</code> num monitor</td>
+<td style="text-align: left;"><code>VRChat</code> num <code>Meta Quest</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sem navegação</strong></td>
+<td style="text-align: left;">Filme normal</td>
+<td style="text-align: left;">Filme em 3D no cinema</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 </section>
 <section id="sec-06-historia" class="level2" data-number="6.4">
 <h2 data-number="6.4" class="anchored" data-anchor-id="sec-06-historia"><span class="header-section-number">6.4</span> Breve História dos CVEs</h2>
@@ -359,12 +395,55 @@ Figura&nbsp;6.3: Identidade, interação e presença: três noções do mundo re
 <p>Seja qual for o seu propósito, jogo, socialização, educação ou economia, um CVE dá quase sempre origem a uma <strong>comunidade virtual</strong>, com regras sociais próprias e uma cultura particular. A metáfora espacial dos CVEs promove tanto encontros casuais entre desconhecidos como a colaboração entre conhecidos, de uma forma geralmente mais motivadora do que os sistemas colaborativos desktop discutidos nos capítulos anteriores.</p>
 <p>Como em qualquer sociedade, comportamentos inadequados também acontecem nos CVEs: vandalismo, perturbação de outros utilizadores, ou mesmo assédio, ecos, num espaço tridimensional, do <em>flaming</em>, da trollagem e do cyberbullying já discutidos a propósito da comunicação por texto (<a href="cap05.html#sec-05-flaming" class="quarto-xref"><span>Secção 5.4</span></a>, <a href="cap01.html#sec-01-cyberbullying" class="quarto-xref"><span>Secção 1.5.3</span></a>). As empresas responsáveis por estes ambientes precisam de lidar com estes comportamentos tal como qualquer outra plataforma social.</p>
 </section>
-<section id="sec-06-sintese" class="level2" data-number="6.7">
-<h2 data-number="6.7" class="anchored" data-anchor-id="sec-06-sintese"><span class="header-section-number">6.7</span> Síntese</h2>
+<section id="sec-06-exercicio" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="sec-06-exercicio"><span class="header-section-number">6.7</span> Exercício: uma Reunião num Mundo Virtual</h2>
+<p>Uma equipa de cinco pessoas, em cidades diferentes, passa a fazer a reunião semanal num mundo virtual. Cada pessoa entra com o seu avatar. Em comparação com uma videochamada, o que ganha e o que perde a equipa em identidade, interação e presença? Uma resposta possível, que não pretende ser a única, encontra-se na <a href="#tbl-06-exercicio" class="quarto-xref">Tabela&nbsp;<span>6.2</span></a>.</p>
+<div id="tbl-06-exercicio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-06-exercicio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Tabela&nbsp;6.2: Resposta possível ao exercício da reunião num mundo virtual.
+</figcaption>
+<div aria-describedby="tbl-06-exercicio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">Identidade</th>
+<th style="text-align: left;">Interação</th>
+<th style="text-align: left;">Presença</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Ganha</strong></td>
+<td style="text-align: left;">Cada pessoa escolhe como se apresenta, e o avatar é reconhecível como avatar.</td>
+<td style="text-align: left;">A posição e a orientação dos avatares mostram quem fala com quem, e é possível formar pequenos grupos.</td>
+<td style="text-align: left;">A sensação de estar no mesmo lugar (presença física) e de estar acompanhado (presença social).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Perde</strong></td>
+<td style="text-align: left;">O rosto e as expressões reais; se os avatares forem parecidos, é difícil saber quem é quem.</td>
+<td style="text-align: left;">As expressões subtis do rosto e da voz, que a maioria dos avatares não reproduz.</td>
+<td style="text-align: left;">A ilusão desfaz-se quando a rede falha ou o equipamento cansa; sem estereoscopia, a presença física é fraca.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="sec-06-sintese" class="level2" data-number="6.8">
+<h2 data-number="6.8" class="anchored" data-anchor-id="sec-06-sintese"><span class="header-section-number">6.8</span> Síntese</h2>
 <p>Este capítulo introduziu os Ambientes Virtuais Colaborativos:</p>
 <ol type="1">
 <li>Um <strong>CVE</strong> simula um mundo partilhado, em vez de servir apenas como canal de comunicação, composto por um mundo virtual, avatares e interatividade <span class="citation" data-cites="Raposo2011">(<a href="cap01.html#ref-Raposo2011" role="doc-biblioref">Raposo 2011</a>)</span></li>
-<li>A <strong>imersão</strong> pode ser mental (o engajamento com o conteúdo) ou física (a estimulação sintética dos sentidos, hoje sobretudo através de capacetes ou óculos de realidade virtual)</li>
+<li>A <strong>imersão</strong> pode ser mental (o envolvimento com o conteúdo) ou física (a estimulação sintética dos sentidos, hoje sobretudo através de capacetes ou óculos de realidade virtual)</li>
 <li>O primeiro CVE de que há registo foi o <code>Maze War</code> (1974); o <code>SIMNET</code>
 <ol start="1983" type="1">
 <li>trouxe os primeiros esforços massivos de desenvolvimento; o <code>Second Life</code> e o <code>World of Warcraft</code> continuam, décadas depois, entre os CVEs mais bem-sucedidos</li>
@@ -373,8 +452,8 @@ Figura&nbsp;6.3: Identidade, interação e presença: três noções do mundo re
 <li>Todo o CVE dá origem a uma <strong>comunidade virtual</strong>, com regras sociais próprias, onde também podem ocorrer comportamentos inadequados</li>
 </ol>
 </section>
-<section id="sec-06-reflexao" class="level2" data-number="6.8">
-<h2 data-number="6.8" class="anchored" data-anchor-id="sec-06-reflexao"><span class="header-section-number">6.8</span> Para Refletir</h2>
+<section id="sec-06-reflexao" class="level2" data-number="6.9">
+<h2 data-number="6.9" class="anchored" data-anchor-id="sec-06-reflexao"><span class="header-section-number">6.9</span> Para Refletir</h2>
 <p>Se já usaste algum ambiente virtual colaborativo, um jogo multijogador, uma reunião em realidade virtual, ou uma plataforma como o <code>Roblox</code> ou o <code>VRChat</code>, pensa no teu avatar: até que ponto ele representa a tua identidade real? O que escolheste mudar, e porquê?</p>
 <p>E quanto à presença social: consegues identificar um momento em que te sentiste genuinamente “acompanhado” num espaço virtual, mesmo sabendo que as outras pessoas estavam fisicamente longe?</p>
 </section>
