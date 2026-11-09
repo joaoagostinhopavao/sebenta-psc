@@ -109,8 +109,8 @@ num monitor é navegável mas não é estereoscópico.
 O primeiro CVE de que há registo, o *Maze War*, foi criado em 1974 num
 centro de investigação da NASA: um jogo em que os utilizadores andavam
 por um labirinto atirando uns nos outros, e que já continha ideias que
-se tornariam padrão nos CVEs, a navegação em primeira pessoa e a
-comunicação por mensagens instantâneas. Os esforços mais massivos
+se tornariam padrão nos CVEs, a navegação em primeira pessoa e
+jogadores ligados em rede. Os esforços mais massivos
 partiram do Departamento de Defesa dos Estados Unidos: o `SIMNET`,
 desenvolvido a partir de 1983, treinava unidades militares em batalhas
 virtuais simuladas, e deu origem a normas técnicas ainda hoje
