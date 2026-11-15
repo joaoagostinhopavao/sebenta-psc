@@ -29,7 +29,7 @@ The distinction matters because an efficient public services portal, by itself, 
 
 ## Levels of Democratic Participation {#sec-07-levels-en}
 
-To develop solutions supporting Electronic Democracy, it is first necessary to define the level of participation and interaction one wishes to achieve between government and citizens. The **Model of Levels of Democratic Participation** [@Gomes2004], adapted from an earlier proposal for classifying citizen participation into increasing levels of power [@Arnstein1969], is organised into five levels (@fig-07-levels-en):
+To develop solutions supporting Electronic Democracy, it is first necessary to define the level of participation and interaction one wishes to achieve between government and citizens. The **Model of Levels of Democratic Participation** [@Gomes2005; @AraujoEtAl2011], which Gomes presents as five degrees of digital democracy, is organised into five levels (@fig-07-levels-en):
 
 ![The five levels of democratic participation, from the most basic (service provision) to the most demanding (direct democracy).](../assets/images/cap07/niveis-participacao.png){#fig-07-levels-en}
 
@@ -39,7 +39,13 @@ To develop solutions supporting Electronic Democracy, it is first necessary to d
 4. **Deliberative Democracy**: political decisions are made after discussions of mutual persuasion between the State and civil society, which is no longer merely consulted and starts to co-produce the decision.
 5. **Direct Democracy**: decision-making no longer passes through a representative political sphere; the citizen takes the State's place in the decision.
 
-The levels are not mutually exclusive, and most real Electronic Democracy initiatives still concentrate on the most basic levels, of service and information provision. In Portugal, the `ePortugal.gov.pt` portal and the `Chave Móvel Digital` are examples of the first level; the public consultation processes available on `participa.pt` approach the second and third levels; and the **Orçamento Participativo Portugal** (Portugal Participatory Budget), in which any citizen can propose and vote on public investment projects to be financed by the State Budget, is a national example close to the fourth level, since the proposal and prioritisation come directly from citizens, even though the final decision on execution rests with the State.
+The levels are not mutually exclusive, and there are Portuguese examples up to level 4, although with limited scope for action:
+
+- **Level 1:** the `ePortugal` portal (`gov.pt`), which brings together public information and services [@GovPT2026], and the `Chave Móvel Digital`, which allows access to such portals with authentication [@ChaveMovel2026].
+- **Level 2:** `Participa.pt`, run by the Portuguese Environment Agency (Agência Portuguesa do Ambiente), where citizens submit contributions to public consultation processes, mostly on environmental matters [@ParticipaPT2026].
+- **Level 3:** the `Mais Transparência` portal (`transparencia.gov.pt`), which publishes budget execution and European funds data and presents the General State Account as the Government's accountability to citizens [@MaisTransparencia2026]. It illustrates transparency about government action, although it mainly publishes information.
+- **Level 4:** the **Orçamento Participativo Portugal** (Portugal Participatory Budget), in which citizens propose and vote on public investment projects; the technical analysis of proposals and their execution remain with the State [@OPP2026]. Citizens' action is therefore limited, even though proposals and prioritisation come directly from them.
+- **Level 5:** there are only approximations. Citizens' legislative initiatives, which require a minimum of 20,000 signatories and can be submitted on the Assembleia da República platform, bring a topic to Parliament, but it is the Assembleia that decides [@AR2026]. The same applies to electronic referendums: the decision belongs to the citizens, but it is the State that calls the vote and words the question.
 
 ## Aspects Supporting Democratic Participation {#sec-07-aspects-en}
 
@@ -58,7 +64,7 @@ These three aspects cut across all levels of participation: even simple service 
 This chapter addressed the relationship between technology and political participation:
 
 1. **Electronic Government** (electronic service provision) and **Electronic Democracy** (technological mediation of political relationships) are related but distinct concepts: the first does not imply the second [@AraujoEtAl2011]
-2. The **Levels of Democratic Participation** range from service provision to direct democracy, and most real initiatives still concentrate on the most basic levels [@Gomes2004; @Arnstein1969]
+2. The **Levels of Democratic Participation** range from service provision to direct democracy, and there are Portuguese examples up to level 4, although with limited scope for action [@Gomes2005; @AraujoEtAl2011]
 3. Three aspects support Electronic Democracy at any level: **collaboration** (the 3C Model applied to the citizen-government relationship), **transparency** and **memory** [@AraujoEtAl2011]
 
 ## Food for Thought {#sec-07-reflection-en}

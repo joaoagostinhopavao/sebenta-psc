@@ -5,7 +5,7 @@ from sebenta_style import DARK, MAGENTA, PINK, GREY, NOTE_COLOR
 
 levels = [
     ("n1", "1", "Prestação de\nServiços", PINK),
-    ("n2", "2", "Coleta de\nOpinião Pública", "#c25aa8"),
+    ("n2", "2", "Recolha de\nOpinião Pública", "#c25aa8"),
     ("n3", "3", "Prestação de\nContas", "#a3399a"),
     ("n4", "4", "Democracia\nDeliberativa", MAGENTA),
     ("n5", "5", "Democracia\nDireta", DARK),

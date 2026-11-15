@@ -50,7 +50,7 @@ seja garantia de participação democrática efetiva.
   políticas, tendo em vista a participação democrática nos sistemas
   políticos contemporâneos [@AraujoEtAl2011]. Não trata apenas de
   melhorar a qualidade dos serviços públicos, mas de criar novos
-  processos e novos relacionamentos entre governantes e governados.
+  processos e novas relações entre governantes e governados.
 
 A distinção importa porque um portal de serviços públicos eficiente,
 por si só, não é Democracia Eletrónica: pode facilitar a vida do
@@ -61,16 +61,15 @@ cidadão sem lhe dar qualquer participação nas decisões políticas.
 Para desenvolver soluções de apoio à Democracia Eletrónica, é preciso
 antes definir o nível de participação e interação que se deseja
 alcançar entre governo e cidadãos. O **Modelo de Níveis de Participação
-Democrática** [@Gomes2004], adaptado de uma proposta anterior de
-classificação da participação cidadã em níveis crescentes de poder
-[@Arnstein1969], organiza-se em cinco níveis (@fig-07-niveis):
+Democrática** [@Gomes2005; @AraujoEtAl2011], que Gomes apresenta como
+cinco graus de democracia digital, organiza-se em cinco níveis (@fig-07-niveis):
 
 ![Os cinco níveis de participação democrática, do mais básico (prestação de serviços) ao mais exigente (democracia direta).](../assets/images/cap07/niveis-participacao.png){#fig-07-niveis}
 
 1. **Prestação de Serviços**: disponibilização de informações e
    serviços públicos. A interação é predominantemente de mão única: o
    governo disponibiliza, o cidadão consome.
-2. **Coleta de Opinião Pública**: o governo usa as TIC como canal de
+2. **Recolha de Opinião Pública**: o governo usa as TIC como canal de
    consulta, mas continua a ser uma interação predominantemente de mão
    única, já que não se compromete a agir de acordo com a opinião
    recolhida.
@@ -84,17 +83,31 @@ classificação da participação cidadã em níveis crescentes de poder
 5. **Democracia Direta**: a tomada de decisão não passa por uma esfera
    política representativa; o cidadão ocupa o lugar do Estado na decisão.
 
-Os níveis não são exclusivos entre si, e a maioria das iniciativas reais
-de Democracia Eletrónica concentra-se ainda nos níveis mais básicos, de
-prestação de serviços e de informação. Em Portugal, o portal
-`ePortugal.gov.pt` e a `Chave Móvel Digital` são exemplos do primeiro
-nível; os processos de consulta pública disponíveis em `participa.pt`
-aproximam-se do segundo e do terceiro nível; e o **Orçamento
-Participativo Portugal**, em que qualquer cidadão pode propor e votar
-projetos de investimento público a financiar pelo Orçamento do Estado,
-é um exemplo nacional próximo do quarto nível, já que a proposta e a
-priorização partem diretamente dos cidadãos, ainda que a decisão final
-de execução caiba ao Estado.
+Os níveis não são exclusivos entre si, e há exemplos portugueses até ao
+nível 4, ainda que de ação limitada:
+
+- **Nível 1:** o portal `ePortugal` (`gov.pt`), que reúne informação e
+  serviços públicos [@GovPT2026], e a `Chave Móvel Digital`, que permite
+  aceder a esses portais com autenticação [@ChaveMovel2026].
+- **Nível 2:** o `Participa.pt`, gerido pela Agência Portuguesa do
+  Ambiente, onde os cidadãos enviam contributos a processos de consulta
+  pública, sobretudo ambientais [@ParticipaPT2026].
+- **Nível 3:** o portal `Mais Transparência` (`transparencia.gov.pt`), que
+  publica a execução orçamental e os fundos europeus e apresenta a Conta
+  Geral do Estado como a prestação de contas do Governo perante os
+  cidadãos [@MaisTransparencia2026]. Ilustra a transparência sobre a ação
+  governamental, embora se limite sobretudo a publicar informação.
+- **Nível 4:** o **Orçamento Participativo Portugal**, em que os cidadãos
+  propõem e votam projetos de investimento público; a análise técnica das
+  propostas e a execução ficam com o Estado [@OPP2026]. A ação dos
+  cidadãos é, por isso, limitada, ainda que a proposta e a priorização
+  partam diretamente deles.
+- **Nível 5:** só existem aproximações. As iniciativas legislativas de
+  cidadãos, que exigem um mínimo de 20 000 subscritores e podem ser
+  submetidas na plataforma da Assembleia da República, levam um tema ao
+  Parlamento, mas é a Assembleia que decide [@AR2026]. O mesmo acontece com os
+  referendos eletrónicos: a decisão é dos cidadãos, mas é o Estado que
+  convoca a votação e formula a pergunta.
 
 ## Aspetos para Apoiar a Participação Democrática {#sec-07-aspetos}
 
@@ -104,7 +117,7 @@ centrais desses requisitos [@AraujoEtAl2011] (@fig-07-aspetos):
 
 ![Os três aspetos que apoiam a Democracia Eletrónica: colaboração, transparência e memória.](../assets/images/cap07/aspetos-democracia.png){#fig-07-aspetos}
 
-- **Colaboração** entre participantes: o delineamento da interação
+- **Colaboração** entre participantes: o desenho da interação
   segue a mesma lógica do Modelo 3C já discutido (@sec-04-3c),
   comunicação, coordenação e cooperação entre cidadãos e governo, com
   particular ênfase na perceção transversal às três dimensões.
@@ -132,8 +145,8 @@ política:
    políticas) são conceitos próximos, mas distintos: o primeiro não
    implica o segundo [@AraujoEtAl2011]
 2. Os **Níveis de Participação Democrática** vão da prestação de
-   serviços à democracia direta, e a maioria das iniciativas reais
-   concentra-se ainda nos níveis mais básicos [@Gomes2004; @Arnstein1969]
+   serviços à democracia direta, e há exemplos portugueses até ao nível
+   4, ainda que de ação limitada [@Gomes2005; @AraujoEtAl2011]
 3. Três aspetos apoiam a Democracia Eletrónica em qualquer nível:
    **colaboração** (o Modelo 3C aplicado à relação entre cidadão e
    governo), **transparência** e **memória** [@AraujoEtAl2011]
