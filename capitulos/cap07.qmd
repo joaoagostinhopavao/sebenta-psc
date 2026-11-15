@@ -68,20 +68,26 @@ cinco graus de democracia digital, organiza-se em cinco níveis (@fig-07-niveis)
 
 1. **Prestação de Serviços**: disponibilização de informações e
    serviços públicos. A interação é predominantemente de mão única: o
-   governo disponibiliza, o cidadão consome.
+   governo disponibiliza, o cidadão consome. Estes serviços melhoram a
+   eficiência, mas não conferem participação política ao cidadão.
 2. **Recolha de Opinião Pública**: o governo usa as TIC como canal de
    consulta, mas continua a ser uma interação predominantemente de mão
    única, já que não se compromete a agir de acordo com a opinião
-   recolhida.
+   recolhida. A consulta sem compromisso de resposta pode gerar
+   desconfiança e afastamento cívico.
 3. **Prestação de Contas**: transparência sobre a ação governamental,
    com a informação disponibilizada sujeita a explicação e justificação.
    A decisão política continua a ser do Estado, mas a participação do
-   cidadão é mais efetiva.
+   cidadão é mais efetiva: pode questionar, escrutinar e exigir
+   justificações, e não apenas receber informação. A transparência é
+   condição necessária, mas não suficiente, para a democracia
+   participativa.
 4. **Democracia Deliberativa**: a decisão política é tomada após
    discussões de convencimento mútuo entre Estado e sociedade civil, que
    deixa de ser apenas consultada e passa a coproduzir a decisão.
 5. **Democracia Direta**: a tomada de decisão não passa por uma esfera
    política representativa; o cidadão ocupa o lugar do Estado na decisão.
+   É o nível mais exigente e o menos implementado em larga escala.
 
 Os níveis não são exclusivos entre si, e há exemplos portugueses até ao
 nível 4, ainda que de ação limitada:
@@ -98,8 +104,11 @@ nível 4, ainda que de ação limitada:
   cidadãos [@MaisTransparencia2026]. Ilustra a transparência sobre a ação
   governamental, embora se limite sobretudo a publicar informação.
 - **Nível 4:** o **Orçamento Participativo Portugal**, em que os cidadãos
-  propõem e votam projetos de investimento público; a análise técnica das
-  propostas e a execução ficam com o Estado [@OPP2026]. A ação dos
+  propõem e votam projetos de investimento público. O processo tem quatro
+  fases: os cidadãos apresentam propostas, em encontros participativos e
+  no portal; o Estado faz a análise técnica, verificando se cada proposta
+  cabe nas suas atribuições; os cidadãos votam, no portal ou por SMS; e o
+  Estado executa os projetos mais votados [@OPP2026]. A ação dos
   cidadãos é, por isso, limitada, ainda que a proposta e a priorização
   partam diretamente deles.
 - **Nível 5:** só existem aproximações. As iniciativas legislativas de
@@ -117,23 +126,68 @@ centrais desses requisitos [@AraujoEtAl2011] (@fig-07-aspetos):
 
 ![Os três aspetos que apoiam a Democracia Eletrónica: colaboração, transparência e memória.](../assets/images/cap07/aspetos-democracia.png){#fig-07-aspetos}
 
-- **Colaboração** entre participantes: o desenho da interação
-  segue a mesma lógica do Modelo 3C já discutido (@sec-04-3c),
-  comunicação, coordenação e cooperação entre cidadãos e governo, com
-  particular ênfase na perceção transversal às três dimensões.
-- **Transparência** de ações e informações: políticas, padrões e
-  procedimentos que tornem a informação acessível, com qualidade de
-  conteúdo, entendimento e auditabilidade.
-- **Memória** da discussão e da deliberação: organização,
-  armazenamento, recuperação e rastreabilidade do conhecimento
-  acumulado ao longo do processo democrático, através de históricos de
-  discussão, artefactos e decisões tomadas.
+### Colaboração {#sec-07-colaboracao}
+
+O desenho da interação segue a mesma lógica do Modelo 3C já discutido
+(@sec-04-3c), aplicada à relação entre cidadãos e governo:
+
+- **Comunicação**: troca de mensagens e informações entre cidadãos e
+  governo.
+- **Coordenação**: gestão de tarefas, prazos e responsabilidades
+  partilhadas.
+- **Cooperação**: produção conjunta de artefactos e decisões.
+
+A perceção é transversal às três dimensões: cada participante precisa
+de saber o que os outros estão a fazer.
+
+### Transparência {#sec-07-transparencia}
+
+A transparência reúne as políticas, os padrões e os procedimentos que
+tornam a informação acessível. Tem três dimensões:
+
+- **Acesso**: a informação está disponível e é encontrável.
+- **Qualidade de conteúdo**: a informação é correta, completa e
+  compreensível.
+- **Auditabilidade**: é possível verificar e rastrear a origem e o
+  histórico da informação.
+
+Sem transparência, não há prestação de contas, e sem prestação de
+contas, não há democracia efetiva.
+
+### Memória {#sec-07-memoria}
+
+A memória é a organização, o armazenamento, a recuperação e a
+rastreabilidade do conhecimento acumulado ao longo do processo
+democrático. Tem três componentes:
+
+- **Históricos de discussão**: registo das deliberações e dos argumentos.
+- **Artefactos**: documentos, propostas e versões produzidas.
+- **Decisões tomadas**: com contexto, justificação e rastreabilidade.
+
+A memória institucional é condição para a continuidade democrática: sem
+ela, cada processo recomeça do zero.
+
+### Os Três Aspetos em Cada Nível {#sec-07-aspetos-niveis}
 
 Estes três aspetos são transversais a todos os níveis de participação:
 mesmo uma simples prestação de serviços beneficia de mais colaboração
 entre os utilizadores, de mais transparência sobre os processos, e de
 memória sobre pedidos anteriores, ainda antes de a instituição avançar
-para níveis mais exigentes de participação democrática.
+para níveis mais exigentes de participação democrática. Araújo et al.
+(2011) mostram-no com o exemplo do processo de inscrição em disciplinas
+numa universidade pública, em que os recursos de colaboração,
+transparência e memória mudam com o nível de participação pretendido
+[@AraujoEtAl2011]. A @tbl-07-aspetos-niveis resume essa variação.
+
+| Nível | Colaboração | Transparência | Memória |
+|:--|:--|:--|:--|
+| **1. Prestação de Serviços** | Os utilizadores partilham experiências | Informação acessível e clara | Histórico de pedidos |
+| **2. Recolha de Opinião Pública** | Os cidadãos debatem propostas | Resultados da consulta publicados | Registo das opiniões recolhidas |
+| **3. Prestação de Contas** | Escrutínio coletivo | Justificação das decisões | Arquivo de relatórios |
+| **4. Democracia Deliberativa** | Coprodução de decisões | Processo deliberativo aberto | Atas e artefactos da deliberação |
+| **5. Democracia Direta** | Votação e propostas coletivas | Regras e resultados públicos | Histórico de votações |
+
+: Como os três aspetos se manifestam em cada nível de participação. {#tbl-07-aspetos-niveis}
 
 ## Síntese {#sec-07-sintese}
 
