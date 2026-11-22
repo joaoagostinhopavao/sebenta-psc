@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -235,9 +269,16 @@ div.csl-indent {
    
   <ul>
   <li><a href="#sec-08-intro" id="toc-sec-08-intro" class="nav-link active" data-scroll-target="#sec-08-intro">Introdução</a></li>
-  <li><a href="#sec-08-atividade-colaborativa" id="toc-sec-08-atividade-colaborativa" class="nav-link" data-scroll-target="#sec-08-atividade-colaborativa"><span class="header-section-number">8.1</span> Desenvolvimento de Software como Atividade Colaborativa</a></li>
+  <li><a href="#sec-08-atividade-colaborativa" id="toc-sec-08-atividade-colaborativa" class="nav-link" data-scroll-target="#sec-08-atividade-colaborativa"><span class="header-section-number">8.1</span> Desenvolvimento de Software como Atividade Colaborativa</a>
+  <ul class="collapse">
+  <li><a href="#sec-08-exemplo-modelo" id="toc-sec-08-exemplo-modelo" class="nav-link" data-scroll-target="#sec-08-exemplo-modelo"><span class="header-section-number">8.1.1</span> Exemplo: acrescentar um campo</a></li>
+  <li><a href="#sec-08-processo" id="toc-sec-08-processo" class="nav-link" data-scroll-target="#sec-08-processo"><span class="header-section-number">8.1.2</span> Processo de <em>software</em> e papéis</a></li>
+  </ul></li>
   <li><a href="#sec-08-pares" id="toc-sec-08-pares" class="nav-link" data-scroll-target="#sec-08-pares"><span class="header-section-number">8.2</span> Programação em Pares</a></li>
-  <li><a href="#sec-08-versao" id="toc-sec-08-versao" class="nav-link" data-scroll-target="#sec-08-versao"><span class="header-section-number">8.3</span> Sistemas de Controlo de Versão</a></li>
+  <li><a href="#sec-08-versao" id="toc-sec-08-versao" class="nav-link" data-scroll-target="#sec-08-versao"><span class="header-section-number">8.3</span> Sistemas de Controlo de Versão</a>
+  <ul class="collapse">
+  <li><a href="#sec-08-conflitos" id="toc-sec-08-conflitos" class="nav-link" data-scroll-target="#sec-08-conflitos"><span class="header-section-number">8.3.1</span> Conflitos de integração</a></li>
+  </ul></li>
   <li><a href="#sec-08-defeitos" id="toc-sec-08-defeitos" class="nav-link" data-scroll-target="#sec-08-defeitos"><span class="header-section-number">8.4</span> Sistemas de Gestão de Defeitos</a></li>
   <li><a href="#sec-08-distribuido" id="toc-sec-08-distribuido" class="nav-link" data-scroll-target="#sec-08-distribuido"><span class="header-section-number">8.5</span> Desenvolvimento Distribuído e Global</a></li>
   <li><a href="#sec-08-sintese" id="toc-sec-08-sintese" class="nav-link" data-scroll-target="#sec-08-sintese"><span class="header-section-number">8.6</span> Síntese</a></li>
@@ -291,27 +332,58 @@ div.csl-indent {
 <section id="sec-08-atividade-colaborativa" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="sec-08-atividade-colaborativa"><span class="header-section-number">8.1</span> Desenvolvimento de Software como Atividade Colaborativa</h2>
 <p>O sucesso de uma organização depende cada vez mais do software que usa como diferencial competitivo, e o desenvolvimento desse software é raramente uma atividade individual: diversos especialistas precisam de trabalhar em conjunto, coordenar as suas atividades, tomar decisões e comunicar continuamente para desenvolver software de qualidade dentro do prazo e do custo estimados <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
-<p>A colaboração organiza-se em torno de <strong>modelos</strong>, abstrações do software que está a ser construído: especificações de requisitos, diagramas de classes, casos de uso, e o próprio código-fonte. Os modelos não são independentes uns dos outros: uma alteração no diagrama de classes de um software, por exemplo, exige normalmente alterações correspondentes no código-fonte, para que os dois modelos permaneçam consistentes entre si. Esta dependência torna a coordenação entre programadores particularmente importante, pois alterações desalinhadas entre modelos tendem a gerar erros <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>A colaboração organiza-se em torno de <strong>modelos</strong>, abstrações do software que está a ser construído: especificações de requisitos, diagramas de classes, casos de uso, e o próprio código-fonte. Os modelos não são independentes uns dos outros: uma alteração no modelo de dados (as tabelas da base de dados), por exemplo, exige normalmente alterações correspondentes no código-fonte (o HTML e o JavaScript que a usam), para que os dois permaneçam consistentes entre si. Esta dependência torna a coordenação entre programadores particularmente importante, pois alterações desalinhadas entre modelos tendem a gerar erros <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<section id="sec-08-exemplo-modelo" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="sec-08-exemplo-modelo"><span class="header-section-number">8.1.1</span> Exemplo: acrescentar um campo</h3>
+<p>Suponha-se que a equipa decide que cada aluno passa a ter um endereço de e-mail. O requisito passa a dizer que o sistema deve guardar o e-mail de cada aluno; o modelo de dados passa a ter uma coluna <code>email</code> na tabela <code>aluno</code>; e o formulário HTML ganha o campo correspondente:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html code-with-copy"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">form</span><span class="dt">&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> name</span><span class="op">=</span><span class="st">"nome"</span><span class="dt">&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> name</span><span class="op">=</span><span class="st">"numero"</span><span class="dt">&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">input</span><span class="ot"> name</span><span class="op">=</span><span class="st">"email"</span><span class="dt">&gt;</span>   <span class="co">&lt;!-- novo --&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;/</span><span class="kw">form</span><span class="dt">&gt;</span></span></code><button title="Copiar para a área de transferência" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Se a tabela for atualizada e o formulário não, o e-mail nunca é pedido; se o formulário for atualizado e a tabela não, o e-mail chega, mas não há onde o guardar e surge um erro. Quem altera um modelo tem de se coordenar com quem mantém os outros.</p>
+</section>
+<section id="sec-08-processo" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="sec-08-processo"><span class="header-section-number">8.1.2</span> Processo de <em>software</em> e papéis</h3>
+<p>Uma forma de organizar a colaboração é o próprio <strong>processo de <em>software</em></strong>: o conjunto de métodos, práticas e transformações que um grupo de pessoas utiliza para desenvolver e manter <em>software</em> e os respetivos produtos. O processo define a sequência em que os métodos são aplicados, os produtos a entregar (planos de projeto, documentos de projeto, código, casos de teste), os controlos que ajudam a assegurar a qualidade e os marcos que permitem avaliar o progresso <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>O processo define também <strong>papéis</strong>, como programadores, analistas de requisitos, arquitetos de <em>software</em> ou gestores. Um papel descreve como uma pessoa se relaciona com os modelos e com os colegas, e a cada papel é atribuído um conjunto de operações: a equipa de qualidade identifica defeitos no código, e os programadores corrigem-nos <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>Esta organização liga-se ao que se viu sobre a coordenação: a divisão de trabalho do Modelo de Atividade (<a href="cap04.html#sec-04-atividade" class="quarto-xref"><span>Secção 4.3</span></a>) corresponde à coordenação do Modelo 3C (<a href="cap04.html#sec-04-3c" class="quarto-xref"><span>Secção 4.4</span></a>) e, na ontologia de colaboração, é o plano de trabalho que define os papéis, as tarefas e os prazos (<a href="cap04.html#sec-04-ontologia-coordenacao" class="quarto-xref"><span>Secção 4.6.3</span></a>). Numa equipa de desenvolvimento, o processo de <em>software</em> cumpre esse papel, e a atribuição de papéis permite a cada pessoa perceber como o seu trabalho afeta o dos colegas <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+</section>
 </section>
 <section id="sec-08-pares" class="level2" data-number="8.2">
 <h2 data-number="8.2" class="anchored" data-anchor-id="sec-08-pares"><span class="header-section-number">8.2</span> Programação em Pares</h2>
-<p>A <strong>programação em pares</strong> (<em>pair programming</em>) é uma prática proposta pelo método ágil <em>Extreme Programming</em>, em que dois programadores trabalham juntos num único computador: um escreve o código enquanto o outro o revê em tempo real, questiona decisões de implementação e procura casos de teste que possam falhar <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
-<p>Não se trata de uma pessoa a programar enquanto outra apenas assiste, mas de um diálogo constante entre duas pessoas que procuram, em conjunto, uma solução melhor do que a que cada uma alcançaria sozinha. O código é revisto por duas pessoas em tempo real, o que reduz a possibilidade de defeitos e acelera a partilha de conhecimento entre um programador mais experiente e outro menos experiente. Como qualquer prática colaborativa, exige uma mudança cultural: a evidência sugere que a produtividade aumenta com a prática, à medida que a dupla aprende a comunicar e a dividir melhor o trabalho entre si <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>A <strong>programação em pares</strong> (<em>pair programming</em>) é uma prática proposta pelo método ágil <em>Extreme Programming</em>, em que dois programadores trabalham juntos num único computador: um escreve o código (o <em>driver</em>) enquanto o outro (o <em>navigator</em>) o revê em tempo real, questiona decisões de implementação e procura casos de teste que possam falhar <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>. Em geral, a dupla junta uma pessoa menos experiente a outra mais experiente.</p>
+<p>Não se trata de uma pessoa a programar enquanto outra apenas assiste, mas de um diálogo constante entre duas pessoas que procuram, em conjunto, uma solução melhor do que a que cada uma alcançaria sozinha. O código é revisto por duas pessoas em tempo real, o que reduz a possibilidade de defeitos e acelera a partilha de conhecimento entre um programador mais experiente e outro menos experiente. Como qualquer prática colaborativa, exige uma mudança cultural: abrir o código a outra pessoa, mesmo o que ainda está a meio, e decidir em conjunto. Espera-se que a produtividade aumente com a prática, à medida que a dupla aprende a comunicar e a dividir melhor o trabalho entre si, e convém planear os pares para evitar conflitos desnecessários <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
 </section>
 <section id="sec-08-versao" class="level2" data-number="8.3">
 <h2 data-number="8.3" class="anchored" data-anchor-id="sec-08-versao"><span class="header-section-number">8.3</span> Sistemas de Controlo de Versão</h2>
-<p>O <strong>controlo de versão</strong> é a disciplina responsável por controlar a evolução e a integridade de um produto de software ao longo do tempo, identificando, registando e coordenando as alterações feitas por diferentes membros da equipa <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>. Sistemas como o <code>Git</code>, hoje o mais usado, mantêm um repositório central com o histórico completo do código, do qual cada programador copia uma área de trabalho própria (<a href="#fig-08-versao" class="quarto-xref">Figura&nbsp;<span>8.1</span></a>).</p>
+<p>O <strong>controlo de versão</strong> é a disciplina responsável por controlar a evolução e a integridade de um produto de software ao longo do tempo, identificando, registando e coordenando as alterações feitas por diferentes membros da equipa <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>. Hoje, o gestor de versões de referência é o <code>Git</code>, com os repositórios alojados no <code>GitHub</code>: cada programador tem no seu computador uma cópia completa do projeto, com todo o histórico <span class="citation" data-cites="ChaconStraub2014">(<a href="cap01.html#ref-ChaconStraub2014" role="doc-biblioref">Chacon e Straub 2014</a>)</span>. O trabalho faz-se em ciclo: o programador regista as alterações na sua cópia (<em>commit</em>), envia-as para o <code>GitHub</code> (<em>push</em>) e recebe as dos colegas (<em>pull</em>) (<a href="#fig-08-versao" class="quarto-xref">Figura&nbsp;<span>8.1</span></a>).</p>
 <div id="fig-08-versao" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-08-versao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="../assets/images/cap08/controlo-versao.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-08-versao-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;8.1: Partilha de ficheiros num sistema de controlo de versão: cada programador trabalha numa cópia local, e sincroniza as suas alterações com o repositório central.
+Figura&nbsp;8.1: Controlo de versão com Git e GitHub: cada programador trabalha numa cópia local completa e sincroniza as suas alterações com o repositório remoto.
 </figcaption>
 </figure>
 </div>
-<p>Um sistema de controlo de versão apoia a colaboração de várias formas: gera um registo de alterações que serve de memória partilhada sobre a evolução do produto; fornece informação de perceção sobre o que os colegas estão a fazer, notificando alterações; e possibilita a coordenação de dependências entre atividades, seja por meio de um desenvolvimento sequencial, seja em paralelo, com integração posterior do trabalho de cada pessoa. Plataformas como o <code>GitHub</code> e o <code>GitLab</code> integram hoje o controlo de versão com a gestão de defeitos e a revisão de código no mesmo sistema.</p>
+<p>Um sistema de controlo de versão apoia a colaboração de várias formas: gera um registo de alterações que serve de memória partilhada sobre a evolução do produto; fornece informação de perceção (<a href="cap04.html#sec-04-3c" class="quarto-xref"><span>Secção 4.4</span></a>) sobre o que os colegas estão a fazer, notificando alterações; e possibilita a coordenação de dependências entre atividades, seja por meio de um desenvolvimento sequencial, seja em paralelo, com integração posterior do trabalho de cada pessoa. O <code>GitHub</code> integra o controlo de versão com a gestão de defeitos (<em>issues</em>) e a revisão de código (<em>pull requests</em>) no mesmo sistema <span class="citation" data-cites="GitHubDocs">(<a href="cap01.html#ref-GitHubDocs" role="doc-biblioref">GitHub 2026</a>)</span>.</p>
+<section id="sec-08-conflitos" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="sec-08-conflitos"><span class="header-section-number">8.3.1</span> Conflitos de integração</h3>
+<p>No desenvolvimento em paralelo, cada pessoa trabalha na sua cópia, muitas vezes num ramo (<em>branch</em>), e o trabalho é depois juntado (<em>merge</em>). Se duas pessoas alteram a mesma linha do mesmo ficheiro, o <code>Git</code> não sabe qual das versões escolher: há um <strong>conflito</strong>. Considere-se um exemplo: a linha <code>titulo = "Trabalho de Grupo"</code> é alterada pela Ana para <code>"Trabalho Final"</code> e, ao mesmo tempo, pelo Rui para <code>"Projeto de Grupo"</code>.</p>
+<ol type="1">
+<li>A Ana envia a sua alteração (<em>push</em>).</li>
+<li>O Rui tenta enviar a dele e é recusado, porque o repositório já tem alterações que ele ainda não tem.</li>
+<li>O Rui recebe-as (<em>pull</em>) e o <code>Git</code> marca o conflito no ficheiro do Rui:</li>
+</ol>
+<pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+titulo = "Projeto de Grupo"
+=======
+titulo = "Trabalho Final"
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 3f2a1b9</code></pre>
+<p>Acima de <code>=======</code> está a versão do Rui; abaixo, a da Ana. Os dois decidem então a versão final: o Rui edita o ficheiro, apaga os marcadores, regista (<em>commit</em>) e envia (<em>push</em>). Resolver um conflito é uma decisão da equipa, e não do sistema. Os conflitos são normais, e dividir o trabalho de modo a que pessoas diferentes mexam em zonas diferentes do código reduz o problema.</p>
+</section>
 </section>
 <section id="sec-08-defeitos" class="level2" data-number="8.4">
 <h2 data-number="8.4" class="anchored" data-anchor-id="sec-08-defeitos"><span class="header-section-number">8.4</span> Sistemas de Gestão de Defeitos</h2>
@@ -322,27 +394,31 @@ Figura&nbsp;8.1: Partilha de ficheiros num sistema de controlo de versão: cada 
 <img src="../assets/images/cap08/ciclo-defeito.png" class="img-fluid figure-img">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-08-defeitos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;8.2: Ciclo de vida colaborativo de um defeito de software, entre o registo inicial e a verificação final da correção.
+Figura&nbsp;8.2: Ciclo de vida colaborativo de um defeito de <em>software</em>, do registo à negociação do fecho, segundo Souza et al.&nbsp;(2011).
 </figcaption>
 </figure>
 </div>
-<p>Um defeito é registado por quem o encontra, encaminhado para um programador que trabalha na correção, e devolvido para verificação por quem o reportou originalmente. Se a correção não for satisfatória, o defeito é reaberto, reiniciando o ciclo. Além do registo e da solução, estes sistemas possibilitam priorizar defeitos, gerar relatórios sobre o estado de cada um, e identificar defeitos semelhantes ou já reportados, o que é particularmente útil para equipas geograficamente distribuídas, cujos membros nem sempre têm oportunidade de se encontrar pessoalmente para discutir uma solução <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>Um defeito é registado por quem o encontra, o testador ou um utilizador, e analisado por um engenheiro de <em>software</em>, que o encaminha para um programador. O programador corrige o defeito e descreve a solução no sistema, para que a equipa de teste verifique se o defeito foi de facto removido e se a alteração não causou outros defeitos; a equipa de teste pode rejeitar a correção. O gestor de testes e o líder técnico negociam o fecho: se o defeito estiver resolvido, é fechado; se não, é reaberto e o ciclo recomeça. Além do registo e da solução, estes sistemas possibilitam priorizar defeitos, gerar relatórios sobre o estado de cada um, e identificar defeitos semelhantes ou já reportados, o que é particularmente útil para equipas geograficamente distribuídas, cujos membros nem sempre têm oportunidade de se encontrar pessoalmente para discutir uma solução <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
 </section>
 <section id="sec-08-distribuido" class="level2" data-number="8.5">
 <h2 data-number="8.5" class="anchored" data-anchor-id="sec-08-distribuido"><span class="header-section-number">8.5</span> Desenvolvimento Distribuído e Global</h2>
-<p>A globalização dos negócios refletiu-se também no desenvolvimento de software: é cada vez mais comum que os membros de uma mesma equipa estejam separados por distância física e temporal, e que um projeto envolva participantes de diferentes países, culturas e fusos horários <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
-<p>A distância entre colaboradores tem um efeito bem documentado sobre a colaboração. Um estudo clássico de Thomas Allen, em 1977, mostrou que a frequência de colaboração entre engenheiros era inversamente proporcional à distância física entre as suas secretárias: a partir de cerca de 30 metros, a colaboração entre colegas diminuía de forma acentuada <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>. O efeito é explicado pela perda de oportunidades de <strong>comunicação informal</strong>, as conversas espontâneas de corredor ou de máquina de café, sem qualquer agendamento prévio, através das quais os colegas tomam conhecimento do andamento do trabalho uns dos outros e encontram soluções conjuntas para problemas comuns.</p>
-<p>Apesar de os sistemas colaborativos já discutidos ajudarem a reduzir a distância entre pessoas, através de mensagens instantâneas e de videoconferência, a distância física entre profissionais que precisam de colaborar continua a ser um desafio real, a par de outros fatores como as diferenças de fuso horário, de língua, de costumes e de normas culturais entre equipas distribuídas <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>A globalização dos negócios refletiu-se também no desenvolvimento de software: é cada vez mais comum que os membros de uma mesma equipa estejam separados por distância física e temporal, e que um projeto envolva participantes de diferentes países, culturas e fusos horários. Quando os participantes estão em mais de um país, fala-se de desenvolvimento <strong>global</strong> <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>A distância entre colaboradores afeta a colaboração. Um estudo clássico de Thomas Allen, em 1977, mostrou que a frequência de colaboração entre programadores e engenheiros era inversamente proporcional à distância física entre as suas salas: a partir de cerca de 30 metros, a colaboração entre colegas ficava prejudicada <span class="citation" data-cites="Allen1977 SouzaEtAl2011">(<a href="cap01.html#ref-Allen1977" role="doc-biblioref">Allen 1977</a>; <a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>. O efeito é explicado pela perda de oportunidades de <strong>comunicação informal</strong>, as conversas espontâneas de corredor ou de máquina de café, sem qualquer agendamento prévio, através das quais os colegas tomam conhecimento do andamento do trabalho uns dos outros e encontram soluções conjuntas para problemas comuns. A comunicação formal, pelo contrário, é a que está combinada à partida, como uma reunião agendada.</p>
+<p>Os sistemas de comunicação estudados no <a href="cap05.html#sec-05-cmc" class="quarto-xref"><span>Secção 5.1</span></a>, como as mensagens instantâneas e a videoconferência, ajudam a reduzir a distância entre pessoas, mas a distância física entre profissionais que precisam de colaborar continua a ser um desafio, a par de outros fatores: os fusos horários, as diferenças de língua (que podem gerar ambiguidades e mal-entendidos) e as normas culturais (que afetam a forma como as equipas comunicam e tomam decisões) <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>Os estudos sobre o efeito da distância no desenvolvimento de <em>software</em> disponíveis em 2011 eram inconclusivos. Alguns sugeriam que as distâncias física, temporal e cultural afetam significativamente a coordenação e chegam a atrasar o desenvolvimento; outros, que o efeito é cada vez menor, porque as empresas estão a aprender a enfrentar as barreiras da distância. O efeito dependia de vários fatores, como o contexto dos projetos, o historial das organizações envolvidas e a experiência e maturidade dos profissionais <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span>.</p>
+<p>Estudos mais recentes, centrados em programadores, dão um retrato mais nítido. Uma revisão sistemática de 46 estudos, publicados entre 2001 e 2013, conclui que a dispersão geográfica tende a prejudicar o desempenho das equipas e a qualidade do <em>software</em>; a dispersão temporal, isto é, os fusos horários, tende a prejudicar a qualidade, mas o seu efeito no desempenho é inconsistente <span class="citation" data-cites="NguyenDucEtAl2015">(<a href="cap01.html#ref-NguyenDucEtAl2015" role="doc-biblioref">Nguyen-Duc, Cruzes, e Conradi 2015</a>)</span>.</p>
+<p>Numa experiência aleatória de seis meses, realizada numa empresa chinesa de tecnologia, a Trip.com, com 1 612 trabalhadores de engenharia, marketing e finanças (653 deles programadores), trabalhar de casa dois dias por semana não alterou as avaliações de desempenho nem as promoções ao longo de dois anos, nem o número de linhas de código escritas pelos programadores, e reduziu em um terço as demissões <span class="citation" data-cites="BloomEtAl2024">(<a href="cap01.html#ref-BloomEtAl2024" role="doc-biblioref">Bloom, Han, e Liang 2024</a>)</span>.</p>
+<p>A proximidade física, porém, continua a ter efeitos. Num estudo com 1 055 programadores de uma grande empresa norte-americana de comércio eletrónico, entre 2019 e 2024, que aproveitou o fecho dos escritórios e o regresso obrigatório, sentar-se junto da equipa aumentou em 18,3% o <em>feedback</em> recebido sobre o código e melhorou a sua qualidade, sobretudo para os programadores mais novos e menos experientes. Houve também um custo: os programadores mais experientes escreveram menos código quando estavam perto da equipa. Uma caminhada de dez minutos entre dois edifícios do mesmo campus reduziu o <em>feedback</em> tanto como estar a vários estados de distância <span class="citation" data-cites="EmanuelEtAl2023">(<a href="cap01.html#ref-EmanuelEtAl2023" role="doc-biblioref">Emanuel, Harrington, e Pallais 2023</a>)</span>, o que vai no sentido do efeito de Allen. Cada um destes estudos incide numa só empresa, e o último é um documento de trabalho, ainda sem revisão por pares.</p>
 </section>
 <section id="sec-08-sintese" class="level2" data-number="8.6">
 <h2 data-number="8.6" class="anchored" data-anchor-id="sec-08-sintese"><span class="header-section-number">8.6</span> Síntese</h2>
 <p>Este capítulo tratou do desenvolvimento de software como atividade colaborativa:</p>
 <ol type="1">
-<li>O desenvolvimento de software organiza-se em torno de <strong>modelos</strong> interdependentes, cujas alterações exigem coordenação entre a equipa <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span></li>
-<li>A <strong>programação em pares</strong> é uma prática colaborativa em que dois programadores trabalham em diálogo constante, reduzindo defeitos e partilhando conhecimento</li>
-<li>Os <strong>sistemas de controlo de versão</strong>, hoje sobretudo baseados em <code>Git</code>, coordenam as alterações de uma equipa e mantêm um registo do histórico do produto</li>
+<li>O desenvolvimento de software organiza-se em torno de <strong>modelos</strong> interdependentes, cujas alterações exigem coordenação entre a equipa; o processo e os papéis que define ajudam a coordenar <span class="citation" data-cites="SouzaEtAl2011">(<a href="cap01.html#ref-SouzaEtAl2011" role="doc-biblioref">Souza, Marczak, e Prikladnicki 2011</a>)</span></li>
+<li>A <strong>programação em pares</strong> é uma prática colaborativa em que dois programadores trabalham em diálogo constante, diminuindo a probabilidade de defeitos e partilhando conhecimento</li>
+<li>Os <strong>sistemas de controlo de versão</strong>, hoje o <code>Git</code> com os repositórios no <code>GitHub</code>, coordenam as alterações de uma equipa, mantêm um registo do histórico do produto e assinalam os conflitos de integração</li>
 <li>Os <strong>sistemas de gestão de defeitos</strong> apoiam o ciclo de vida colaborativo de um defeito, do registo à verificação da correção</li>
-<li>O <strong>desenvolvimento distribuído e global</strong> é cada vez mais comum, mas a distância física entre colaboradores continua a prejudicar a comunicação informal, essencial para a colaboração</li>
+<li>O <strong>desenvolvimento distribuído e global</strong> é cada vez mais comum, mas a distância física entre colaboradores prejudica a comunicação informal, essencial para a colaboração; os estudos mais recentes mostram que o trabalho híbrido não prejudicou o desempenho, mas que a proximidade ajuda sobretudo os programadores mais novos</li>
 </ol>
 </section>
 <section id="sec-08-reflexao" class="level2" data-number="8.7">
@@ -353,6 +429,24 @@ Figura&nbsp;8.2: Ciclo de vida colaborativo de um defeito de software, entre o r
 <section id="sec-08-referencias" class="level2 unnumbered">
 <h2 class="unnumbered anchored" data-anchor-id="sec-08-referencias">Referências</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Allen1977" class="csl-entry" role="listitem">
+Allen, Thomas J. 1977. <em>Managing the Flow of Technology</em>. Cambridge, MA: MIT Press.
+</div>
+<div id="ref-BloomEtAl2024" class="csl-entry" role="listitem">
+Bloom, Nicholas, Ruobing Han, e James Liang. 2024. <span>«Hybrid working from home improves retention without damaging performance»</span>. <em>Nature</em> 630 (8018): 920–25. <a href="https://doi.org/10.1038/s41586-024-07500-2">https://doi.org/10.1038/s41586-024-07500-2</a>.
+</div>
+<div id="ref-ChaconStraub2014" class="csl-entry" role="listitem">
+Chacon, Scott, e Ben Straub. 2014. <em>Pro Git</em>. 2.ª ed. Apress. <a href="https://git-scm.com/book">https://git-scm.com/book</a>.
+</div>
+<div id="ref-EmanuelEtAl2023" class="csl-entry" role="listitem">
+Emanuel, Natalia, Emma Harrington, e Amanda Pallais. 2023. <span>«The Power of Proximity to Coworkers»</span>. NBER Working Paper 31880. National Bureau of Economic Research. <a href="https://www.nber.org/papers/w31880">https://www.nber.org/papers/w31880</a>.
+</div>
+<div id="ref-GitHubDocs" class="csl-entry" role="listitem">
+GitHub. 2026. <span>«GitHub Docs: About issues; About pull requests»</span>. 2026. <a href="https://docs.github.com">https://docs.github.com</a>.
+</div>
+<div id="ref-NguyenDucEtAl2015" class="csl-entry" role="listitem">
+Nguyen-Duc, Anh, Daniela S. Cruzes, e Reidar Conradi. 2015. <span>«The impact of global dispersion on coordination, team performance and software quality: A systematic literature review»</span>. <em>Information and Software Technology</em> 57: 277–94. <a href="https://doi.org/10.1016/j.infsof.2014.06.002">https://doi.org/10.1016/j.infsof.2014.06.002</a>.
+</div>
 <div id="ref-SouzaEtAl2011" class="csl-entry" role="listitem">
 Souza, Cleidson R. B. de, Sabrina Marczak, e Rafael Prikladnicki. 2011. <span>«Desenvolvimento Colaborativo de Software»</span>. Em <em>Sistemas Colaborativos</em>, editado por Mariano Pimentel e Hugo Fuks. Rio de Janeiro: Editora Campus/Elsevier.
 </div>
