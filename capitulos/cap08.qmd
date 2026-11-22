@@ -32,7 +32,7 @@ prazo e do custo estimados [@SouzaEtAl2011].
 
 A colaboração organiza-se em torno de **modelos**, abstrações do
 software que está a ser construído: especificações de requisitos,
-diagramas de classes, casos de uso, e o próprio código-fonte. Os modelos
+modelos de dados e o próprio código-fonte. Os modelos
 não são independentes uns dos outros: uma alteração no modelo de dados
 (as tabelas da base de dados), por exemplo, exige normalmente alterações
 correspondentes no código-fonte (o HTML e o JavaScript que a usam), para

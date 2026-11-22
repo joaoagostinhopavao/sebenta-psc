@@ -20,7 +20,7 @@ The previous chapters discussed collaboration in virtual environments and in the
 
 The success of an organisation increasingly depends on the software it uses as a competitive differentiator, and developing that software is rarely an individual activity: several specialists need to work together, coordinate their activities, make decisions and communicate continuously to develop quality software within the estimated time and cost [@SouzaEtAl2011].
 
-Collaboration is organised around **models**, abstractions of the software being built: requirements specifications, class diagrams, use cases, and the source code itself. Models are not independent of one another: a change in the data model (the database tables), for example, usually requires corresponding changes in the source code (the HTML and JavaScript that use it), so that the two remain consistent with each other. This dependency makes coordination between programmers particularly important, since misaligned changes between models tend to generate errors [@SouzaEtAl2011].
+Collaboration is organised around **models**, abstractions of the software being built: requirements specifications, data models and the source code itself. Models are not independent of one another: a change in the data model (the database tables), for example, usually requires corresponding changes in the source code (the HTML and JavaScript that use it), so that the two remain consistent with each other. This dependency makes coordination between programmers particularly important, since misaligned changes between models tend to generate errors [@SouzaEtAl2011].
 
 ### Example: Adding a Field {#sec-08-model-example-en}
 
