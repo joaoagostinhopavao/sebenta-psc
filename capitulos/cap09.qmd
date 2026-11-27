@@ -355,14 +355,16 @@ relatório, passa a formal.
 ### Transmitir conhecimento: a informação e a reconstrução {#sec-09-transmissao}
 
 O conhecimento pode transmitir-se através da informação, quando esta é
-guiada por quem explica, de modo que a outra pessoa forme a ideia que se
-pretende transmitir. Pode pensar-se no conhecimento como um objeto construído
-em LEGO (@fig-09-lego): com as mesmas peças montam-se construções muito
-diferentes. A **informação** são as peças e o modo como encaixam umas nas
-outras. Transmitir é conseguir descrever a construção de modo que a outra
-pessoa monte, do seu lado, a mesma, ou seja, tenha a mesma ideia.
+guiada por quem explica. Pode pensar-se no **conhecimento** como um objeto
+construído em LEGO (@fig-09-lego), a construção que cada pessoa tem na
+cabeça: com as mesmas peças montam-se construções muito diferentes. A
+**informação** são as peças e o modo como encaixam umas nas outras, aquilo
+que passa de uma pessoa para outra. Quem explica descreve o seu conhecimento
+em informação; quem aprende monta, a partir dela, o seu. Transmitir
+conhecimento é passar informação que permita à outra pessoa montar a mesma
+construção, ou seja, ter a mesma ideia.
 
-![A analogia LEGO: o que viaja é a informação, e a construção é remontada por quem a recebe; quem explica compara o resultado e corrige.](../assets/images/cap09/analogia-lego.png){#fig-09-lego fig-pos="H"}
+![A analogia LEGO: o conhecimento de quem explica é descrito em informação, a partir da qual quem aprende monta o seu; quem explica compara o resultado e corrige.](../assets/images/cap09/analogia-lego.png){#fig-09-lego fig-pos="H"}
 
 Quem explica precisa, por isso, de ver o que foi montado, comparar e
 corrigir: na figura, a peça de cima ficou fora do sítio. Contam também as

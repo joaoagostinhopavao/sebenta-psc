@@ -353,14 +353,16 @@ people; when he writes the report, it becomes formal.
 ### Transmitting knowledge: information and reconstruction {#sec-09-transmission-en}
 
 Knowledge can be transmitted through information, when the latter is guided by
-whoever explains, so that the other person forms the idea that is meant to be
-conveyed. Knowledge can be thought of as an object built in LEGO
-(@fig-09-lego-en): the same pieces can be assembled into very different
-constructions. **Information** is the pieces and the way they fit together. To
-transmit is to manage to describe the construction so that the other person
-assembles the same one on their side, that is, has the same idea.
+whoever explains. **Knowledge** can be thought of as an object built in LEGO
+(@fig-09-lego-en), the construction that each person has in their mind: the
+same pieces can be assembled into very different constructions.
+**Information** is the pieces and the way they fit together, that which passes
+from one person to another. The explainer describes their knowledge as
+information; the learner builds their own from it. To transmit knowledge is to
+pass on information that allows the other person to assemble the same
+construction, that is, to have the same idea.
 
-![The LEGO analogy: what travels is information, and the construction is reassembled by whoever receives it; the explainer compares the result and corrects it.](../assets/images/cap09/analogia-lego.png){#fig-09-lego-en fig-pos="H"}
+![The LEGO analogy: the explainer's knowledge is described as information, from which the learner builds their own; the explainer compares the result and corrects it.](../assets/images/cap09/analogia-lego.png){#fig-09-lego-en fig-pos="H"}
 
 Whoever explains therefore needs to see what has been assembled, compare and
 correct: in the figure, the top piece ended up out of place. The pieces the

@@ -16,15 +16,17 @@ LANG = sys.argv[1] if len(sys.argv) > 1 else "pt"
 RAIZ = Path(sys.argv[2] if len(sys.argv) > 2 else "/Users/jpavao/QProjects/Sebenta-PSC")
 T = {
     "pt": dict(
-        paineis=[("Quem explica", "a ideia que\nquer transmitir"),
+        paineis=[("Conhecimento", "de quem explica:\na ideia a transmitir"),
                  ("Informação", "as peças e o modo\ncomo encaixam"),
-                 ("Quem aprende", "a ideia que montou\ndo seu lado")],
+                 ("Conhecimento", "de quem aprende:\na ideia que montou")],
+        verbos=["descreve", "monta"],
         volta="quem explica compara as duas construções e corrige",
         out=RAIZ / "assets/images/cap09/analogia-lego.png"),
     "en": dict(
-        paineis=[("Who explains", "the idea to\nbe conveyed"),
+        paineis=[("Knowledge", "of the explainer:\nthe idea to convey"),
                  ("Information", "the pieces and how\nthey fit together"),
-                 ("Who learns", "the idea built\non their side")],
+                 ("Knowledge", "of the learner:\nthe idea they built")],
+        verbos=["describes", "builds"],
         volta="the explainer compares both constructions and corrects",
         out=RAIZ / "en/assets/images/cap09/analogia-lego.png"),
 }[LANG]
@@ -36,7 +38,7 @@ ax.set_xlim(0, 11)
 ax.set_ylim(0, 5.2)
 ax.set_aspect("equal")
 ax.axis("off")
-L, G, Y, H = 3.0, 0.96, 1.05, 4.05
+L, G, Y, H = 2.8, 1.25, 1.05, 4.05
 xs = [0.04 + k * (L + G) for k in range(3)]
 U, A = 0.52, 0.40
 AZUL = GREY
@@ -77,6 +79,8 @@ peca(x + (L - 2 * U) / 2, Y + 1.22, 2, AZUL, "4")
 seta = dict(arrowstyle="-|>", color=MAGENTA, linewidth=2.5, mutation_scale=22, shrinkA=0, shrinkB=0)
 for k in range(2):
     ax.annotate("", xy=(xs[k + 1] - 0.08, Y + H / 2), xytext=(xs[k] + L + 0.08, Y + H / 2), arrowprops=seta)
+    ax.text(xs[k] + L + G / 2, Y + H / 2 + 0.14, T["verbos"][k], ha="center", va="bottom", color=MAGENTA,
+            fontweight="bold", fontsize=NODE_LABEL_SIZE - 3)
 c1, c3, yb = xs[0] + L / 2, xs[2] + L / 2, 0.55
 ax.plot([c3, c3, c1], [Y - 0.03, yb, yb], color=MAGENTA, linewidth=2, linestyle="--")
 ax.annotate("", xy=(c1, Y - 0.03), xytext=(c1, yb), arrowprops=dict(seta, linestyle="--", linewidth=2))
