@@ -339,7 +339,7 @@ Na recuperação de um episódio distinguem-se três versões (@fig-09-versoes)
 - a **versão real**, o que de facto aconteceu, um conceito abstrato que
   raramente é possível reconstituir por completo;
 - a **versão conhecida**, guardada na mente de quem testemunhou o episódio;
-- a **versão relatada**, o relato elaborado a partir da lembrança dos
+- a **versão relatada**, o relato escrito a partir da lembrança dos
   narradores.
 
 A versão conhecida é **conhecimento tácito**: está na mente de quem o detém e
@@ -350,7 +350,7 @@ consultado por quem não esteve presente. O que Hugo viu na rua é tácito; se o
 contar a um colega, continua tácito, agora em duas pessoas; quando escrever o
 relatório, passa a formal.
 
-![As três versões de um episódio: a versão relatada resulta, com perdas, da versão conhecida e aproxima-se, sem nunca coincidir por completo, do que de facto aconteceu.](../assets/images/cap09/versoes-conhecimento.png){#fig-09-versoes fig-pos="H"}
+![As três versões de um episódio: a versão relatada resulta da escrita, com perdas, da versão conhecida e aproxima-se, sem nunca coincidir por completo, do que de facto aconteceu.](../assets/images/cap09/versoes-conhecimento.png){#fig-09-versoes fig-pos="H"}
 
 ### Transmitir conhecimento: a informação e a reconstrução {#sec-09-transmissao}
 
@@ -375,10 +375,11 @@ remontado por quem a recebe.
 @Borges2011 chama transmissão do conhecimento a dois processos:
 
 - a **socialização**, a explicação oral, que replica o conhecimento noutras
-  mentes, mas o mantém no nível tácito e só chega a quem está presente;
+  mentes, mas o mantém no nível tácito e só chega a quem está presente: o
+  resultado é outra versão conhecida, em quem ouviu;
 - a **externalização**, ou formalização, o registo escrito, que traz o
   conhecimento do nível tácito ao formal e permite partilhá-lo com mais
-  pessoas e expandi-lo.
+  pessoas e expandi-lo: o resultado é a versão relatada.
 
 Em ambos há perdas. Na socialização, quem conta um conto acrescenta um ponto:
 a cada nova transmissão, parte do conhecimento perde-se e o que passa

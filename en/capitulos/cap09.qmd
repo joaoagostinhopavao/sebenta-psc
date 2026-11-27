@@ -337,7 +337,8 @@ In recovering an episode, three versions are distinguished (@fig-09-versions-en)
 - the **real version**, what actually happened, an abstract concept that can
   rarely be fully reconstructed;
 - the **known version**, held in the mind of whoever witnessed the episode;
-- the **reported version**, the account drawn up from the narrators' memory.
+- the **reported version**, the written account drawn up from the narrators'
+  memory.
 
 The known version is **tacit knowledge**: it is in the mind of the person who
 holds it and has not yet been formalised. It is concrete for that person, who
@@ -347,7 +348,7 @@ recorded and can be consulted by those who were not present. What Hugo saw in
 the street is tacit; if he tells a colleague, it remains tacit, now in two
 people; when he writes the report, it becomes formal.
 
-![The three versions of an episode: the reported version results, with losses, from the known version and approaches, without ever fully coinciding with, what actually happened.](../assets/images/cap09/versoes-conhecimento.png){#fig-09-versions-en fig-pos="H"}
+![The three versions of an episode: the reported version results from writing down, with losses, the known version and approaches, without ever fully coinciding with, what actually happened.](../assets/images/cap09/versoes-conhecimento.png){#fig-09-versions-en fig-pos="H"}
 
 ### Transmitting knowledge: information and reconstruction {#sec-09-transmission-en}
 
@@ -372,10 +373,11 @@ knowledge is reassembled by whoever receives it.
 @Borges2011 calls two processes transmission of knowledge:
 
 - **socialisation**, oral explanation, which replicates knowledge in other
-  minds but keeps it at the tacit level and only reaches those present;
+  minds but keeps it at the tacit level and only reaches those present: the
+  result is another known version, in whoever listened;
 - **externalisation**, or formalisation, the written record, which brings
   knowledge from the tacit to the formal level and allows it to be shared with
-  more people and expanded.
+  more people and expanded: the result is the reported version.
 
 Both involve losses. Socialisation suffers from the "game of telephone" effect
 (also known as Chinese whispers): with each new transmission, part of the

@@ -18,15 +18,15 @@ T = {
     "pt": dict(
         caixas=[("Versão real", "o que de facto\naconteceu"),
                 ("Versão conhecida", "na memória de\nquem testemunhou"),
-                ("Versão relatada", "o relato que é\ntransmitido")],
-        setas=["testemunha", "relata,\ncom perdas"],
+                ("Versão relatada", "o relato\nescrito")],
+        setas=["testemunha", "escreve,\ncom perdas"],
         volta="aproxima-se, mas nunca coincide",
         out=RAIZ / "assets/images/cap09/versoes-conhecimento.png"),
     "en": dict(
         caixas=[("Real version", "what actually\nhappened"),
                 ("Known version", "in the memory of\nthe witness"),
-                ("Reported version", "the account that\nis passed on")],
-        setas=["witnesses", "reports,\nwith losses"],
+                ("Reported version", "the written\naccount")],
+        setas=["witnesses", "writes,\nwith losses"],
         volta="approaches, but never coincides",
         out=RAIZ / "en/assets/images/cap09/versoes-conhecimento.png"),
 }[LANG]
